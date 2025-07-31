@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="light"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Đăng nhập - Hệ thống thi thử VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css?v1.0">
+	<!-- Google tag (gtag.js) -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+	</script>
+</head>
+<body class="d-flex align-items-center bg-auth border-top border-top-2 border-primary">
+	<div class="container mb-5">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-5 my-5">
+				<h1 class="text-center mb-5">
+					<img src="/assets/image/favicon/favicon.ico" alt="luyen-thi-vstep-logo" class="navbar-brand-img me-2 mb-1">
+					Đăng nhập hệ thống thi
+				</h1>
+				<form action="/user/login" method="post" autocomplete="off" novalidate="novalidate">
+					
+										
+					<div class="form-group">
+						<label class="form-label" for="user_name">Tài khoản</label>
+						<input type="text" class="form-control" name="user_name" id="user_name" value="" autofocus="">
+																	</div>
+					<div class="form-group">
+						<label class="form-label" for="password">Mật khẩu</label>
+						<input class="form-control" type="password" name="password" id="password">
+																	</div>
+					<button type="submit" class="btn w-100 btn-primary my-3">
+						Đăng nhập
+					</button>
+					<!-- <div class="text-center">hoặc</div>
+					<button id="loginWithGoogle" type="button" class="login-with-google-btn w-100 my-3">
+						Sign in with Google
+					</button> -->
+					<div class="text-center mt-3">
+						<div class="text-body-secondary">
+							Nếu bạn chưa có tài khoản, vui lòng <a href="/user/register">đăng ký tại đây</a>,
+						</div>
+						<div class="text-body-secondary">
+							hoặc <a href="/">quay lại trang chủ tại đây</a>.
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 text-center">
+				<div class="btn-group">
+					<button class="btn btn-light me-1" data-bs-theme-value="light" aria-label="Light">
+						<i class="fe fe-sun"></i> Light
+					</button>
+					<button class="btn btn-light" data-bs-theme-value="dark" aria-label="Dark">
+						<i class="fe fe-moon"></i> Dark
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script type="text/javascript" src="/assets/js/dark-theme-switcher.js"></script><script type="text/javascript" src="/assets/jquery-validation/dist/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/assets/jquery-validation/dist/localization/messages_vi.js"></script>
+<script type="text/javascript">
+	jQuery.validator.addMethod("exactlength", function(value, element, param) {
+		return this.optional(element) || value.length == param;
+	}, $.validator.format("Trường Tài khoản phải có độ dài chính xác {0} ký tự."));
+
+	$("form").validate({
+		rules: {
+			user_name: {
+				required: true,
+				exactlength: 11
+			},
+			password: {
+				required: true,
+				exactlength: 6
+			}
+		},
+		lang: 'vi',
+		errorPlacement: function (error, element) {
+			error.addClass("text-danger");
+			error.insertAfter(element);
+		},
+		submitHandler: function(){
+			return true;
+		}
+	});
+</script>
+
+</body></html>

@@ -1,0 +1,755 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Luyện đề Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>		<style type="text/css">
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 100%;
+			max-width: none;
+		}
+		@media (min-width: 992px) {
+			#offcanvasTranscript,
+			#offcanvasTranslation {
+				width: 70% !important;
+				max-width: 700px;
+			}
+		}
+		.question-block {
+			background-color: #f9f9f9;
+			border-radius: 6px;
+			padding: 1rem;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+		<!-- Navbar phụ nổi -->
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+		<div class="container-fluid">
+
+			<!-- Hàng 1: Quay lại + Bạn đang luyện... + Xin chào -->
+			<div class="row align-items-center mb-2 text-center text-md-start">
+				
+				<!-- Trái: Nút quay lại -->
+				<div class="col-12 col-md-3 mb-2 mb-md-0">
+					<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+						⬅️ Quay lại danh sách đề
+					</button>
+				</div>
+
+				<!-- Giữa: Bạn đang luyện... -->
+				<div class="col-12 col-md-6 text-center">
+					<span class="fw-bold text-muted small d-block">
+						🧾 Bạn đang luyện đề nghe mã số 05 - Part 2					</span>
+					<span class="fw-bold text-muted small d-block">
+						🆔 Mã bài làm: #L85301					</span>
+				</div>
+
+
+				<!-- Phải: Xin chào -->
+				<div class="col-12 col-md-3 text-md-end">
+					<span class="small text-muted fw-bold d-block">
+						👋 Xin chào, phuneo					</span>
+				</div>
+
+			</div>
+
+
+			<!-- Hàng 2: Audio + Nút transcript/dịch -->
+			<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+				<!-- Audio -->
+				<div class="flex-grow-1">
+					<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+						<source src="/assets/nhch/listening/bac3/lp2-1664819146_f3e21323a2997bc44c0b.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+
+				<!-- Nút transcript + dịch -->
+				<div class="d-flex gap-2 flex-wrap align-items-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						👀 Transcript
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			
+	<!-- Offcanvas Transcript -->
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+		<div class="offcanvas-header">
+			<span class="offcanvas-title fw-bold">Transcript</span>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+		</div>
+		<div class="offcanvas-body" style="white-space: pre-wrap;">
+			<p>In this part, you will hear three conversations. The conversations will be played once only. There are four questions for each conversation.<br>
+For each question, choose the right answer A, B, C, or D. Part 2. Questions 9 to 12. First, you will have some time to look at questions 9 to 12. Now we're ready to start.<br>
+Listen and answer questions 9 to 12. You will hear the recording once only. <br>
+Hi, Natasha.<br>
+I see you're going out for a run. You're lucky you don't have to go to work today. Hello, Colin.<br>
+I am going to the office, but I've started running to work instead of taking the bus. It means I can keep fit and save some money. I tried running to work for a while, but I didn't like breathing in all the traffic pollution and I kept getting coughs.<br>
+I soon went back to using public transport. I keep fit at the gym. Well, I found a route that avoids most of the main roads.<br>
+But it's still almost 5km and it must be dangerous. That's why I choose quiet streets. If I could, I'd run in the country.<br>
+That would be lovely, but it would mean leaving it till the weekends. Running gives me a wonderful feeling of freedom. It's just what I need before sitting down in the office every day.<br>
+But surely you don't wear your tracksuit and trainers at work? I keep a suit at the office and change when I arrive. I think it's important to look professional, so I don't mind at all. Anyway, since you're so fit, are you going to join in the big race next month? I'd like to.<br>
+What's the distance? 20km. Anyone can enter and there are prizes for different age groups. Even if I come last, it will still be good fun.<br>
+Running on your own can sometimes get quite lonely. Are you going to take part? Oh yes. I've sent in my application form already.<br>
+I'll get one for you. But I'm not going to train by running to work. I'll run round the park a few times when I get home in the evenings.<br>
+That's safer. OK. Anyway, I must go now or I'll be late.<br>
+Bye! Now you will have some time to review questions 9 to 12. Part 2. Questions 13 to 16. First you will have some time to look at questions 13 to 16.<br>
+Now we're ready to start. Listen and answer questions 13 to 16. You will hear the recording once only.<br>
+Harry Park, you run a travel company which organises adventure holidays in some difficult places. How did you first become interested in adventure travel? Well, my father worked in an insurance company once he had a family but before that he'd spent several years travelling the world and he never stopped telling us about it. His stories were much more exciting than the books I read and they made me want to travel and have adventures of my own.<br>
+And what made you decide to start an adventure travel company? Well, when I was in my twenties I travelled a lot in different countries. I went exploring and climbing in mountains and deserts. I wanted to show other people how wonderful these things were.<br>
+The business has been very successful but when I started it I didn't know if I'd make any money. Your company's called Far and Wide. How did you choose the name? Well, I just called it Park Travel at first but everyone thought that was terribly boring.<br>
+My wife kept suggesting different things but in the end it was a customer who gave me the idea. Far and Wide is also the title of a book that a friend wrote so it reminds me of him too. Great.<br>
+The places you visit are usually very unspoiled, Harry. Some people think it's not a good idea to take tourists there. What would you say to them? Well, most of the places we visit have no inhabitants so we aren't going to spoil people's way of life or bring in things like television and fridges.<br>
+And I make sure that we always take care of the environment. We are careful not to cause pollution so we take all our rubbish away. Some of the things you do are also dangerous.<br>
+Do you enjoy danger? Well, it's not a question of enjoying it. It's just that you can't do what I do without thinking about the possible dangers. I'm never frightened though.<br>
+If I'm taking a group up a mountain or something like that I just concentrate on what I have to do and get on with it. You've been to some fascinating places, Harry. Now you will have some time to review questions 13 to 16.<br>
+Part 2, questions 17 to 20. First you will have some time to look at questions 17 to 20. Now we're ready to start.<br>
+Listen and answer questions 17 to 20. You will hear the recording once only. Now then, Mr. Bickstead, how can I help you? Well, I'm thinking about transferring but I'm not sure.<br>
+I was hoping you could help me make a decision. I'll try. Where are you thinking of transferring to and why do you want to leave Cryptis U? I'm thinking of going to Central University because it's in my hometown.<br>
+I've been kind of homesick this year and I haven't made many friends. I just feel so lonely. So I thought that maybe it'd be better to be closer to my parents and friends and all.<br>
+I see. And would you keep the same major if you transferred? What is it, business administration? Yeah, I would. The credits I've earned here will transfer to Central.<br>
+I've already checked. May I ask why you chose to come to Cryptis University in the first place? Sure. Well, the main reason is you have a great business school and the second reason is that I wanted to get away from home.<br>
+You're right, Mr. Bickstead. We do have an excellent business school but so does Central. The thing is, you've got almost a year under your belt here now.<br>
+At Central, you'll be starting from scratch. Yeah, I know that. But I'm a little bit familiar with Central because I had older friends who went there and I visited it before I came here.<br>
+You know, freshman year is usually the hardest. I remember how homesick I was my first year. I'll tell you, I was ready to pack it in after the first two weeks.<br>
+But the longer I stayed, the more comfortable I felt. My senior year, I was glad I chose to stay. Really? Did it get a lot better your sophomore year? Yes, it did.<br>
+You might well find the same is true for you. Also, even though your credits here will transfer, you will have to take extra courses because Central has different requirements. You'll probably have to go to school for an extra year.<br>
+Hmm, I hadn't thought about that. I'll have to check into it. Maybe I should give it one more year.<br>
+I mean, it's probably good for me to learn to live away from my family and friends, right? Now you will have some time to review questions 17 to 20. That is the end of Part 2.</p>
+		</div>
+	</div>
+
+	<!-- Offcanvas Translation -->
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+		<div class="offcanvas-header">
+			<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+		</div>
+		<div class="offcanvas-body" style="white-space: pre-wrap;">
+			<p>Phần 2 Trong phần này, bạn sẽ nghe ba cuộc hội thoại. Các cuộc hội thoại sẽ chỉ được phát một lần duy nhất. Mỗi cuộc hội thoại có bốn câu hỏi đi kèm. Với mỗi câu hỏi, hãy chọn đáp án đúng A, B, C hoặc D. Phần 2, câu hỏi 9-12 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 9 đến 12. Bây giờ, chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 9 đến 12. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Chào Natasha. Mình thấy cậu đang chuẩn bị đi chạy bộ. Cậu thật may mắn vì hôm nay không phải đi làm. Chào Colin. Mình vẫn đi làm đấy, nhưng mình đã bắt đầu chạy bộ đến chỗ làm thay vì đi xe buýt. Cách này giúp mình giữ gìn sức khỏe và tiết kiệm tiền. Mình cũng từng thử chạy bộ đi làm một thời gian, nhưng mình không thích phải hít khói bụi từ xe cộ và hay bị ho. Sau đó mình quay lại dùng phương tiện công cộng. Mình giữ dáng bằng cách tập gym. À, mình tìm được một tuyến đường tránh hầu hết các con đường chính. Nhưng nó vẫn dài gần 5km, và có vẻ nguy hiểm đấy. Vì vậy mình chọn những con đường yên tĩnh. Nếu có thể, mình muốn chạy bộ ở vùng quê. Điều đó thật tuyệt, nhưng mình chỉ có thể làm vậy vào cuối tuần. Chạy bộ mang lại cho mình cảm giác tự do tuyệt vời. Nó là điều mình cần trước khi ngồi làm việc cả ngày ở văn phòng. Nhưng chắc cậu không mặc đồ thể thao đi làm đâu nhỉ? Mình để sẵn một bộ đồ ở văn phòng và thay đồ khi đến nơi. Mình nghĩ điều quan trọng là phải trông chuyên nghiệp, nên mình không phiền gì cả. Dù sao thì, vì cậu chạy bộ giỏi thế, cậu có định tham gia cuộc đua lớn vào tháng tới không? Mình cũng muốn tham gia. Khoảng cách là bao nhiêu vậy? 20km. Bất kỳ ai cũng có thể tham gia và có giải thưởng cho từng nhóm tuổi. Dù về đích cuối cùng thì cũng vui mà. Chạy bộ một mình đôi khi cũng khá cô đơn. Cậu có tham gia không? Có chứ. Mình đã gửi đơn đăng ký rồi. Mình sẽ lấy một tờ đơn cho cậu. Nhưng mình sẽ không tập luyện bằng cách chạy bộ đi làm đâu. Mình sẽ chạy vòng quanh công viên vài lần vào buổi tối khi về nhà. Như vậy an toàn hơn. Được rồi. Dù sao thì, mình phải đi ngay kẻo muộn mất. Tạm biệt! Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 9 đến 12. Phần 2, câu hỏi 13-16 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 13 đến 16. Bây giờ, chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 13 đến 16. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Harry Park, ông điều hành một công ty du lịch chuyên tổ chức các kỳ nghỉ mạo hiểm ở những nơi khó tiếp cận. Vậy điều gì đã khiến ông quan tâm đến du lịch mạo hiểm? Bố tôi từng làm việc cho một công ty bảo hiểm khi đã có gia đình, nhưng trước đó, ông đã dành vài năm để du lịch khắp thế giới và không bao giờ ngừng kể chuyện về những chuyến đi đó. Những câu chuyện của ông thú vị hơn nhiều so với những cuốn sách tôi đọc, và chúng khiến tôi muốn đi du lịch và tự mình trải nghiệm những cuộc phiêu lưu. Vậy điều gì đã khiến ông quyết định thành lập một công ty du lịch mạo hiểm? Khi còn ở độ tuổi 20, tôi đã đi du lịch rất nhiều ở các quốc gia khác nhau. Tôi khám phá và leo núi ở những vùng núi và sa mạc. Tôi muốn cho người khác thấy những điều tuyệt vời này. Công việc kinh doanh rất thành công, nhưng khi bắt đầu, tôi không biết liệu mình có kiếm được tiền hay không. Công ty của ông có tên là Far and Wide. Ông đã chọn cái tên đó như thế nào? Ban đầu, tôi đặt tên nó là Park Travel, nhưng mọi người đều nghĩ rằng cái tên đó quá nhàm chán. Vợ tôi liên tục đề xuất những cái tên khác nhau, nhưng cuối cùng, một khách hàng đã gợi ý cho tôi ý tưởng này. Far and Wide cũng là tên của một cuốn sách mà một người bạn tôi đã viết, vì vậy nó cũng khiến tôi nhớ đến anh ấy. Những nơi ông đến thường rất hoang sơ, Harry. Một số người cho rằng không nên đưa khách du lịch đến đó. Ông sẽ nói gì với họ? Hầu hết những nơi chúng tôi đến không có cư dân sinh sống, vì vậy chúng tôi không làm ảnh hưởng đến cuộc sống của họ hay mang đến những thứ như tivi và tủ lạnh. Tôi cũng đảm bảo rằng chúng tôi luôn quan tâm đến môi trường. Chúng tôi cẩn thận không gây ô nhiễm và luôn mang rác thải đi. Một số hoạt động của ông cũng khá nguy hiểm. Ông có thích sự mạo hiểm không? Không hẳn là thích. Chỉ là bạn không thể làm những gì tôi làm mà không suy nghĩ về những rủi ro có thể xảy ra. Tôi chưa bao giờ cảm thấy sợ hãi. Nếu tôi dẫn một nhóm leo núi hay làm điều gì tương tự, tôi chỉ tập trung vào những việc cần làm và tiếp tục thực hiện nó. Ông đã đến nhiều nơi thú vị, Harry. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 13 đến 16. Phần 2, câu hỏi 17-20 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 17 đến 20. Bây giờ, chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 17 đến 20. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Vậy, ông Bickstead, tôi có thể giúp gì cho ông? Tôi đang nghĩ đến việc chuyển trường, nhưng tôi chưa chắc chắn. Tôi hy vọng ông có thể giúp tôi đưa ra quyết định. Tôi sẽ cố gắng. Ông định chuyển đến đâu và tại sao ông muốn rời khỏi Đại học Cryptis? Tôi đang nghĩ đến việc chuyển đến Đại học Central vì nó ở quê tôi. Tôi cảm thấy nhớ nhà năm nay và chưa kết bạn được nhiều. Tôi cảm thấy rất cô đơn. Vì vậy, tôi nghĩ có lẽ sẽ tốt hơn nếu ở gần bố mẹ và bạn bè. Tôi hiểu. Nếu chuyển trường, ông có giữ nguyên ngành học không? Hiện tại là quản trị kinh doanh đúng không? Vâng, tôi sẽ giữ nguyên. Các tín chỉ tôi đã tích lũy ở đây có thể được chuyển sang Central. Tôi đã kiểm tra rồi. Tôi có thể hỏi tại sao ban đầu ông lại chọn Đại học Cryptis không? Chắc chắn rồi. Lý do chính là trường có một khoa kinh doanh rất tốt. Lý do thứ hai là tôi muốn đi xa khỏi nhà. Ông nói đúng đấy, ông Bickstead. Chúng tôi có một khoa kinh doanh xuất sắc, nhưng Central cũng vậy. Điều quan trọng là ông đã có gần một năm ở đây. Nếu chuyển đến Central, ông sẽ phải bắt đầu lại từ đầu. Tôi hiểu rồi. Tôi sẽ phải suy nghĩ kỹ về điều đó. Có lẽ tôi nên thử thêm một năm nữa. Ý tôi là, có lẽ học cách sống xa gia đình và bạn bè cũng là điều tốt. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 17 đến 20. Đây là phần kết thúc của Phần 2.</p>
+		</div>
+	</div>
+
+	<div class="row mt-4">
+		<div class="col-12">
+			<div class="card">
+				<div class="card-body">
+
+					<!-- Câu hỏi -->
+					
+					<form id="submitForm" action="/practice/listening/submit/85301" method="post">
+						<input type="hidden" name="listening_answer" id="listening_answer" value="------------">
+
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+								<div class="fw-bold mb-2">
+									Câu 1: How is Natasha going to work today?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer0" id="q0_0" value="0" aria-label="Câu 1 – lựa chọn A" onclick="saveAnswer(203118, 85301, 0, 0)">
+										<label class="form-check-label" for="q0_0">
+											A. She is taking the bus.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer0" id="q0_1" value="1" aria-label="Câu 1 – lựa chọn B" onclick="saveAnswer(203118, 85301, 0, 1)">
+										<label class="form-check-label" for="q0_1">
+											B. She is taking the train.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer0" id="q0_2" value="2" aria-label="Câu 1 – lựa chọn C" onclick="saveAnswer(203118, 85301, 0, 2)">
+										<label class="form-check-label" for="q0_2">
+											C. She is driving her car.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer0" id="q0_3" value="3" aria-label="Câu 1 – lựa chọn D" onclick="saveAnswer(203118, 85301, 0, 3)">
+										<label class="form-check-label" for="q0_3">
+											D. She is running.										</label>
+									</div>
+															</div>
+
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+								<div class="fw-bold mb-2">
+									Câu 2: Why did Colin go back touse public transport instead of running to work?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer1" id="q1_0" value="0" aria-label="Câu 2 – lựa chọn A" onclick="saveAnswer(203118, 85301, 1, 0)">
+										<label class="form-check-label" for="q1_0">
+											A. He found running to work was bad for his health.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer1" id="q1_1" value="1" aria-label="Câu 2 – lựa chọn B" onclick="saveAnswer(203118, 85301, 1, 1)">
+										<label class="form-check-label" for="q1_1">
+											B. He felt tired.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer1" id="q1_2" value="2" aria-label="Câu 2 – lựa chọn C" onclick="saveAnswer(203118, 85301, 1, 2)">
+										<label class="form-check-label" for="q1_2">
+											C. He wanted to save time.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer1" id="q1_3" value="3" aria-label="Câu 2 – lựa chọn D" onclick="saveAnswer(203118, 85301, 1, 3)">
+										<label class="form-check-label" for="q1_3">
+											D. He liked keeping fit at the gym.										</label>
+									</div>
+															</div>
+
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+								<div class="fw-bold mb-2">
+									Câu 3: What does Natasha wear at work?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer2" id="q2_0" value="0" aria-label="Câu 3 – lựa chọn A" onclick="saveAnswer(203118, 85301, 2, 0)">
+										<label class="form-check-label" for="q2_0">
+											A. a shirt and trousers.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer2" id="q2_1" value="1" aria-label="Câu 3 – lựa chọn B" onclick="saveAnswer(203118, 85301, 2, 1)">
+										<label class="form-check-label" for="q2_1">
+											B. a tracksuit and trainers.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer2" id="q2_2" value="2" aria-label="Câu 3 – lựa chọn C" onclick="saveAnswer(203118, 85301, 2, 2)">
+										<label class="form-check-label" for="q2_2">
+											C. a suit.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer2" id="q2_3" value="3" aria-label="Câu 3 – lựa chọn D" onclick="saveAnswer(203118, 85301, 2, 3)">
+										<label class="form-check-label" for="q2_3">
+											D. casual clothes.										</label>
+									</div>
+															</div>
+
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+								<div class="fw-bold mb-2">
+									Câu 4: What does Natasha think about the race next month?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer3" id="q3_0" value="0" aria-label="Câu 4 – lựa chọn A" onclick="saveAnswer(203118, 85301, 3, 0)">
+										<label class="form-check-label" for="q3_0">
+											A. It will make her relaxed.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer3" id="q3_1" value="1" aria-label="Câu 4 – lựa chọn B" onclick="saveAnswer(203118, 85301, 3, 1)">
+										<label class="form-check-label" for="q3_1">
+											B. It will give big prizes.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer3" id="q3_2" value="2" aria-label="Câu 4 – lựa chọn C" onclick="saveAnswer(203118, 85301, 3, 2)">
+										<label class="form-check-label" for="q3_2">
+											C. It will be good fun.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer3" id="q3_3" value="3" aria-label="Câu 4 – lựa chọn D" onclick="saveAnswer(203118, 85301, 3, 3)">
+										<label class="form-check-label" for="q3_3">
+											D. She can make friends at the race.										</label>
+									</div>
+															</div>
+
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+								<div class="fw-bold mb-2">
+									Câu 5: Why did Harry first become interested in adventure travel?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer4" id="q4_0" value="0" aria-label="Câu 5 – lựa chọn A" onclick="saveAnswer(203118, 85301, 4, 0)">
+										<label class="form-check-label" for="q4_0">
+											A. His father gave him adventure stories to read.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer4" id="q4_1" value="1" aria-label="Câu 5 – lựa chọn B" onclick="saveAnswer(203118, 85301, 4, 1)">
+										<label class="form-check-label" for="q4_1">
+											B. His father worked in a travel company.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer4" id="q4_2" value="2" aria-label="Câu 5 – lựa chọn C" onclick="saveAnswer(203118, 85301, 4, 2)">
+										<label class="form-check-label" for="q4_2">
+											C. His father spent several years travelling around the world.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer4" id="q4_3" value="3" aria-label="Câu 5 – lựa chọn D" onclick="saveAnswer(203118, 85301, 4, 3)">
+										<label class="form-check-label" for="q4_3">
+											D. His father talked a lot about the places he'd been to.										</label>
+									</div>
+															</div>
+
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+								<div class="fw-bold mb-2">
+									Câu 6: Why did Harry decide to start an adventure travel company?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer5" id="q5_0" value="0" aria-label="Câu 6 – lựa chọn A" onclick="saveAnswer(203118, 85301, 5, 0)">
+										<label class="form-check-label" for="q5_0">
+											A. He wanted to share his experience with others.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer5" id="q5_1" value="1" aria-label="Câu 6 – lựa chọn B" onclick="saveAnswer(203118, 85301, 5, 1)">
+										<label class="form-check-label" for="q5_1">
+											B. He thought he could make a lot of money.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer5" id="q5_2" value="2" aria-label="Câu 6 – lựa chọn C" onclick="saveAnswer(203118, 85301, 5, 2)">
+										<label class="form-check-label" for="q5_2">
+											C. He wanted to travel to many other different countries.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer5" id="q5_3" value="3" aria-label="Câu 6 – lựa chọn D" onclick="saveAnswer(203118, 85301, 5, 3)">
+										<label class="form-check-label" for="q5_3">
+											D. He hoped to do more travelling himself.										</label>
+									</div>
+															</div>
+
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+								<div class="fw-bold mb-2">
+									Câu 7: Who suggested the name for Harry's company?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer6" id="q6_0" value="0" aria-label="Câu 7 – lựa chọn A" onclick="saveAnswer(203118, 85301, 6, 0)">
+										<label class="form-check-label" for="q6_0">
+											A. a friend										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer6" id="q6_1" value="1" aria-label="Câu 7 – lựa chọn B" onclick="saveAnswer(203118, 85301, 6, 1)">
+										<label class="form-check-label" for="q6_1">
+											B. his wife										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer6" id="q6_2" value="2" aria-label="Câu 7 – lựa chọn C" onclick="saveAnswer(203118, 85301, 6, 2)">
+										<label class="form-check-label" for="q6_2">
+											C. his father										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer6" id="q6_3" value="3" aria-label="Câu 7 – lựa chọn D" onclick="saveAnswer(203118, 85301, 6, 3)">
+										<label class="form-check-label" for="q6_3">
+											D. a customer										</label>
+									</div>
+															</div>
+
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+								<div class="fw-bold mb-2">
+									Câu 8: What does Harry try to do when he visits a place?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer7" id="q7_0" value="0" aria-label="Câu 8 – lựa chọn A" onclick="saveAnswer(203118, 85301, 7, 0)">
+										<label class="form-check-label" for="q7_0">
+											A. avoid damaging the area.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer7" id="q7_1" value="1" aria-label="Câu 8 – lựa chọn B" onclick="saveAnswer(203118, 85301, 7, 1)">
+										<label class="form-check-label" for="q7_1">
+											B. give the local people jobs.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer7" id="q7_2" value="2" aria-label="Câu 8 – lựa chọn C" onclick="saveAnswer(203118, 85301, 7, 2)">
+										<label class="form-check-label" for="q7_2">
+											C. take modern equipment.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer7" id="q7_3" value="3" aria-label="Câu 8 – lựa chọn D" onclick="saveAnswer(203118, 85301, 7, 3)">
+										<label class="form-check-label" for="q7_3">
+											D. bring in things like television and fridges.										</label>
+									</div>
+															</div>
+
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+								<div class="fw-bold mb-2">
+									Câu 9: Why is the student talking to the advisor?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer8" id="q8_0" value="0" aria-label="Câu 9 – lựa chọn A" onclick="saveAnswer(203118, 85301, 8, 0)">
+										<label class="form-check-label" for="q8_0">
+											A. To get advice about transferring to a different university.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer8" id="q8_1" value="1" aria-label="Câu 9 – lựa chọn B" onclick="saveAnswer(203118, 85301, 8, 1)">
+										<label class="form-check-label" for="q8_1">
+											B. To decide which classes would be best to take next quarter.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer8" id="q8_2" value="2" aria-label="Câu 9 – lựa chọn C" onclick="saveAnswer(203118, 85301, 8, 2)">
+										<label class="form-check-label" for="q8_2">
+											C. To ask about the advisor's experiences as an undergraduate.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer8" id="q8_3" value="3" aria-label="Câu 9 – lựa chọn D" onclick="saveAnswer(203118, 85301, 8, 3)">
+										<label class="form-check-label" for="q8_3">
+											D. To determine the best subject for him to major in.										</label>
+									</div>
+															</div>
+
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+								<div class="fw-bold mb-2">
+									Câu 10: Which statement is true about the student?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer9" id="q9_0" value="0" aria-label="Câu 10 – lựa chọn A" onclick="saveAnswer(203118, 85301, 9, 0)">
+										<label class="form-check-label" for="q9_0">
+											A. He wanted to go to a school closer to home.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer9" id="q9_1" value="1" aria-label="Câu 10 – lựa chọn B" onclick="saveAnswer(203118, 85301, 9, 1)">
+										<label class="form-check-label" for="q9_1">
+											B. He is senior at Kryptos University.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer9" id="q9_2" value="2" aria-label="Câu 10 – lựa chọn C" onclick="saveAnswer(203118, 85301, 9, 2)">
+										<label class="form-check-label" for="q9_2">
+											C. He is majoring in accounting.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer9" id="q9_3" value="3" aria-label="Câu 10 – lựa chọn D" onclick="saveAnswer(203118, 85301, 9, 3)">
+										<label class="form-check-label" for="q9_3">
+											D. He has made lots of friends at Kryptos University.										</label>
+									</div>
+															</div>
+
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+								<div class="fw-bold mb-2">
+									Câu 11: What will the student have to do if he transfers?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer10" id="q10_0" value="0" aria-label="Câu 11 – lựa chọn A" onclick="saveAnswer(203118, 85301, 10, 0)">
+										<label class="form-check-label" for="q10_0">
+											A. Visit old friends										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer10" id="q10_1" value="1" aria-label="Câu 11 – lựa chọn B" onclick="saveAnswer(203118, 85301, 10, 1)">
+										<label class="form-check-label" for="q10_1">
+											B. Change majors										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer10" id="q10_2" value="2" aria-label="Câu 11 – lựa chọn C" onclick="saveAnswer(203118, 85301, 10, 2)">
+										<label class="form-check-label" for="q10_2">
+											C. Take extra courses										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer10" id="q10_3" value="3" aria-label="Câu 11 – lựa chọn D" onclick="saveAnswer(203118, 85301, 10, 3)">
+										<label class="form-check-label" for="q10_3">
+											D. Send educational records										</label>
+									</div>
+															</div>
+
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+								<div class="fw-bold mb-2">
+									Câu 12: What will the student probably do next?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer11" id="q11_0" value="0" aria-label="Câu 12 – lựa chọn A" onclick="saveAnswer(203118, 85301, 11, 0)">
+										<label class="form-check-label" for="q11_0">
+											A. He will do research in the lab.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer11" id="q11_1" value="1" aria-label="Câu 12 – lựa chọn B" onclick="saveAnswer(203118, 85301, 11, 1)">
+										<label class="form-check-label" for="q11_1">
+											B. He will move to his the new university.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer11" id="q11_2" value="2" aria-label="Câu 12 – lựa chọn C" onclick="saveAnswer(203118, 85301, 11, 2)">
+										<label class="form-check-label" for="q11_2">
+											C. He will call his parents.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="lanswer11" id="q11_3" value="3" aria-label="Câu 12 – lựa chọn D" onclick="saveAnswer(203118, 85301, 11, 3)">
+										<label class="form-check-label" for="q11_3">
+											D. He will search for more information.										</label>
+									</div>
+															</div>
+
+											</form>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+
+		<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+
+			<!-- Tiến trình câu hỏi -->
+			<div class="d-flex flex-wrap justify-content-center gap-1">
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-0" data-index="0">
+					   1					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-1" data-index="1">
+					   2					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-2" data-index="2">
+					   3					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-3" data-index="3">
+					   4					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-4" data-index="4">
+					   5					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-5" data-index="5">
+					   6					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-6" data-index="6">
+					   7					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-7" data-index="7">
+					   8					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-8" data-index="8">
+					   9					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-9" data-index="9">
+					   10					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-10" data-index="10">
+					   11					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-11" data-index="11">
+					   12					</a>
+							</div>
+
+			<!-- Nút nộp bài -->
+			<div>
+				<button type="submit" form="submitForm" id="btn-submit" class="btn btn-primary fw-bold">
+					📤 Nộp bài
+				</button>
+			</div>
+
+		</div>
+	</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	const userId = 203118;
+	const practiceId = 85301;
+	const storageKey = `listening_answers_${userId}_${practiceId}`;
+	const totalQuestions = 12;
+
+	function saveAnswer(userId, practiceId, index, choice) {
+		let answers = JSON.parse(localStorage.getItem(storageKey)) || Array(totalQuestions).fill('-');
+		answers[index] = choice;
+		localStorage.setItem(storageKey, JSON.stringify(answers));
+		document.getElementById("listening_answer").value = answers.join("");
+
+		// 🔄 Cập nhật màu nút ở footer
+		const btn = document.getElementById(`progress-question-${index}`);
+		if (btn) {
+			btn.classList.remove('btn-outline-secondary');
+			btn.classList.add('btn-success');
+		}
+	}
+
+	function loadAnswers() {
+		let answers = JSON.parse(localStorage.getItem(storageKey)) || Array(totalQuestions).fill('-');
+		document.getElementById("listening_answer").value = answers.join("");
+
+		answers.forEach((choice, index) => {
+			if (choice !== '-') {
+				// ✅ Tích vào radio
+				let radioBtn = document.getElementById(`q${index}_${choice}`);
+				if (radioBtn) radioBtn.checked = true;
+
+				// ✅ Cập nhật màu nút footer
+				const btn = document.getElementById(`progress-question-${index}`);
+				if (btn) {
+					btn.classList.remove('btn-outline-secondary');
+					btn.classList.add('btn-success');
+				}
+			}
+		});
+	}
+
+	document.addEventListener("DOMContentLoaded", loadAnswers);
+
+	document.getElementById('btn-back').addEventListener('click', function (e) {
+		if (confirm("Bạn vẫn chưa nộp bài.\nBạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/listening";
+		}
+	});
+
+	document.getElementById('btn-submit').addEventListener('click', function (e) {
+		const confirmSubmit = confirm("Sau khi nộp, bạn sẽ không thể thay đổi câu trả lời.\nBạn có chắc chắn muốn nộp bài không?");
+		if (!confirmSubmit) {
+			e.preventDefault(); // ❌ Không gửi nếu từ chối
+			return;
+		}
+
+		// ✅ Nếu xác nhận
+		const btn = this;
+		btn.disabled = true;
+		btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Đang nộp bài...';
+		
+		// Form sẽ được submit tự nhiên ở đây
+		document.getElementById('submitForm').submit();
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault(); // ✨ quan trọng
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+
+</script>
+
+
+</body></html>
