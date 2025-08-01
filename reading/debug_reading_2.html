@@ -1,0 +1,533 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 02 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R76864				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p>Popularized by its inclusion on the typical gap-year agenda for high school students after graduation and regarded as another tick on the CV, volunteering has become a trendy way for wealthy westerners to give back to less fortunate communities. However, despite good intentions from participants, volunteering abroad has attracted substantial criticism over the past few years.</p>
+
+<p><b>(A)</b> "Are the volunteers actually providing any benefits to the destination countries?" asks Mark Watson, the Executive Director of Tourism Concern, a charity campaigning on ethical tourism issues. <b>More often than not</b>, the answer is unquestionably no.</p>
+
+<p>The demand for volunteer spots in developing countries has led to hundreds of commercial volunteering organizations springing up. Many claim to have noble intentions but pocket the money for profit and send volunteers on unsatisfying, purpose-built placements.</p>
+
+<p><b>(B)</b> Rather than benefiting local communities, voluntourism can have negative impacts, a number of studies have highlighted. <b>These</b> range from volunteers taking local jobs to child trafficking, where young children are stolen from their families and placed into 'orphanages' to fuel the demand for volunteer placements. These kidnapped children are then subjected to deliberately poor living conditions to elicit higher donations from visiting westerners.</p>
+
+<p>While Watson acknowledges there are companies out there who employ good practices, it's a change in the mindset of would-be volunteers he'd most like to see.</p>
+
+<p>"I talk to a lot of people who say they want to dig wells in Africa. I say what Africa has got quite a lot of is unskilled labor; there are a lot of people out there that can dig wells. The idea that you, as an unskilled worker, have got anything really useful that you can add is slightly arrogant and sort of imperialistic in some ways—white people going out to Africa to help the Africans. I think it's mostly about getting people to be realistic; you're just doing it for yourself, it's a holiday. You're not really going to do anything particularly worthwhile, and that's quite a hard message to get across," says Watson.</p>
+
+<p>Kate Stefanko, Placement Director at People and Places, agrees to an extent, but she thinks volunteering abroad can be beneficial to all concerned if it is done right. "We believe that a carefully placed, thoroughly screened, well-prepared, skilled volunteer can—and does—have a positive impact," says Stefanko. All volunteers through People and Places have to apply for a position. Then, if accepted, the volunteer is matched with an upcoming project that can benefit from their skill set. As a result, well-run efforts can absolutely develop a level of social interaction and understanding that is profound.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p>Việc tình nguyện ở nước ngoài đã trở thành một xu hướng phổ biến, đặc biệt là trong kế hoạch "gap year" của học sinh trung học sau khi tốt nghiệp, và được xem như một điểm cộng trong hồ sơ xin việc. Đây là cách mà những người phương Tây giàu có có thể "đáp lại" các cộng đồng kém may mắn hơn. Tuy nhiên, mặc dù xuất phát từ ý định tốt, hoạt động tình nguyện ở nước ngoài đã vấp phải nhiều chỉ trích trong những năm gần đây.</p>  <p><b>(A)</b> "Liệu các tình nguyện viên có thực sự mang lại lợi ích nào cho các quốc gia tiếp nhận họ không?" - Mark Watson, Giám đốc Điều hành của tổ chức Tourism Concern, một tổ chức từ thiện đấu tranh vì du lịch có đạo đức, đặt câu hỏi. <b>Phần lớn trường hợp</b>, câu trả lời là hoàn toàn không.</p>  <p>Nhu cầu tìm kiếm các vị trí tình nguyện tại các nước đang phát triển đã dẫn đến sự bùng nổ của hàng trăm tổ chức thương mại chuyên về tình nguyện. Nhiều tổ chức trong số này tuyên bố có mục đích cao cả nhưng thực chất lại bỏ túi lợi nhuận và gửi các tình nguyện viên đến những vị trí được tạo ra một cách thiếu thực tế và không hiệu quả.</p>  <p><b>(B)</b> Một số nghiên cứu đã chỉ ra rằng thay vì mang lại lợi ích cho cộng đồng địa phương, du lịch tình nguyện có thể gây ra tác động tiêu cực. <b>Những tác động này</b> bao gồm việc các tình nguyện viên lấy mất công việc của người dân địa phương hoặc thậm chí là buôn bán trẻ em, trong đó trẻ em bị bắt cóc khỏi gia đình và bị đưa vào các "trại trẻ mồ côi" nhằm đáp ứng nhu cầu của các chương trình tình nguyện. Những đứa trẻ bị bắt cóc này sau đó bị đặt vào điều kiện sống khắc nghiệt một cách cố ý để kích thích lòng thương cảm và quyên góp nhiều hơn từ khách du lịch phương Tây.</p>  <p>Mặc dù Watson thừa nhận rằng có những tổ chức hoạt động tốt, nhưng điều ông mong muốn nhất là thay đổi tư duy của những người có ý định tham gia tình nguyện.</p>  <p>"Tôi đã nói chuyện với rất nhiều người muốn đào giếng ở châu Phi. Nhưng tôi nói với họ rằng châu Phi có rất nhiều lao động phổ thông; có rất nhiều người ở đó có thể đào giếng. Việc bạn, một người không có kỹ năng, nghĩ rằng mình có thể đóng góp điều gì đó thực sự hữu ích là một sự kiêu ngạo và mang tính chất thực dân theo một cách nào đó—những người da trắng đến châu Phi để giúp đỡ người dân nơi đây. Tôi nghĩ điều quan trọng nhất là làm cho mọi người thực tế hơn: thực ra bạn chỉ làm điều đó vì bản thân, đó là một kỳ nghỉ. Bạn sẽ không thực sự làm được điều gì đặc biệt có ý nghĩa, và đó là một thông điệp khá khó để truyền tải," Watson chia sẻ.</p>  <p>Kate Stefanko, Giám đốc phụ trách vị trí tình nguyện tại tổ chức People and Places, phần nào đồng ý với quan điểm này, nhưng bà cho rằng nếu được thực hiện đúng cách, tình nguyện quốc tế có thể mang lại lợi ích cho cả hai bên. "Chúng tôi tin rằng một tình nguyện viên được bố trí cẩn thận, sàng lọc kỹ lưỡng, chuẩn bị đầy đủ và có kỹ năng phù hợp có thể—và thực sự—mang lại tác động tích cực," Stefanko nói. Tại People and Places, tất cả tình nguyện viên đều phải nộp đơn xin ứng tuyển. Sau khi được chấp nhận, họ sẽ được ghép nối với một dự án phù hợp với kỹ năng của họ. Nhờ vậy, những nỗ lực được tổ chức tốt có thể thực sự tạo ra một mức độ tương tác xã hội và sự thấu hiểu sâu sắc.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p>Popularized by its inclusion on the typical gap-year agenda for high school students after graduation and regarded as another tick on the CV, volunteering has become a trendy way for wealthy westerners to give back to less fortunate communities. However, despite good intentions from participants, volunteering abroad has attracted substantial criticism over the past few years.</p>
+
+<p><b>(A)</b> "Are the volunteers actually providing any benefits to the destination countries?" asks Mark Watson, the Executive Director of Tourism Concern, a charity campaigning on ethical tourism issues. <b>More often than not</b>, the answer is unquestionably no.</p>
+
+<p>The demand for volunteer spots in developing countries has led to hundreds of commercial volunteering organizations springing up. Many claim to have noble intentions but pocket the money for profit and send volunteers on unsatisfying, purpose-built placements.</p>
+
+<p><b>(B)</b> Rather than benefiting local communities, voluntourism can have negative impacts, a number of studies have highlighted. <b>These</b> range from volunteers taking local jobs to child trafficking, where young children are stolen from their families and placed into 'orphanages' to fuel the demand for volunteer placements. These kidnapped children are then subjected to deliberately poor living conditions to elicit higher donations from visiting westerners.</p>
+
+<p>While Watson acknowledges there are companies out there who employ good practices, it's a change in the mindset of would-be volunteers he'd most like to see.</p>
+
+<p>"I talk to a lot of people who say they want to dig wells in Africa. I say what Africa has got quite a lot of is unskilled labor; there are a lot of people out there that can dig wells. The idea that you, as an unskilled worker, have got anything really useful that you can add is slightly arrogant and sort of imperialistic in some ways—white people going out to Africa to help the Africans. I think it's mostly about getting people to be realistic; you're just doing it for yourself, it's a holiday. You're not really going to do anything particularly worthwhile, and that's quite a hard message to get across," says Watson.</p>
+
+<p>Kate Stefanko, Placement Director at People and Places, agrees to an extent, but she thinks volunteering abroad can be beneficial to all concerned if it is done right. "We believe that a carefully placed, thoroughly screened, well-prepared, skilled volunteer can—and does—have a positive impact," says Stefanko. All volunteers through People and Places have to apply for a position. Then, if accepted, the volunteer is matched with an upcoming project that can benefit from their skill set. As a result, well-run efforts can absolutely develop a level of social interaction and understanding that is profound.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: When do westerners typically do their volunteering?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. After graduating from university															</div>
+																				<div class="ps-4 mb-2">
+																	B. Between secondary school and upper secondary school															</div>
+																				<div class="ps-4 mb-2">
+																	C. While looking for a suitable job															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Between leaving school and starting university</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>When do westerners typically do their volunteering?</strong></p> <p><em>(Khi nào người phương Tây thường tham gia hoạt động tình nguyện?)</em></p>  <ul>     <li>✅ <strong>Between leaving school and starting university.</strong> <br>          (Giữa khoảng thời gian rời trường và bắt đầu đại học.) <br>          → <em>Đúng vì bài đọc đề cập rằng tình nguyện là một hoạt động phổ biến trong năm nghỉ (gap year) sau khi học sinh tốt nghiệp trung học.</em>     </li>     <li>❌ <strong>Between secondary school and upper secondary school.</strong> <br>          (Giữa cấp trung học cơ sở và trung học phổ thông.) <br>          → <em>Sai vì tình nguyện chủ yếu diễn ra sau khi học sinh tốt nghiệp trung học, không phải giữa hai cấp học.</em>     </li>     <li>❌ <strong>After graduating from university.</strong> <br>          (Sau khi tốt nghiệp đại học.) <br>          → <em>Sai vì bài đọc nhấn mạnh đến tình nguyện trong năm nghỉ sau trung học, không phải sau đại học.</em>     </li>     <li>❌ <strong>While looking for a suitable job.</strong> <br>          (Trong khi tìm kiếm công việc phù hợp.) <br>          → <em>Sai vì bài đọc không đề cập đến việc tình nguyện diễn ra trong giai đoạn tìm việc.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: Which of the following would best describe the present attitude towards volunteering abroad?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Disapproving															</div>
+																				<div class="ps-4 mb-2">
+																	B. Frightened															</div>
+																				<div class="ps-4 mb-2">
+																	C. Frustrated															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Changing</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following would best describe the present attitude towards volunteering abroad?</strong></p> <p><em>(Thái độ hiện tại đối với hoạt động tình nguyện ở nước ngoài được mô tả như thế nào?)</em></p>  <ul>     <li>❌ <strong>Frightened.</strong> <br>          (Sợ hãi.) <br>          → <em>Sai vì bài đọc không đề cập đến việc sợ hãi mà chỉ nói về sự thay đổi trong nhận thức.</em>     </li>     <li>✅ <strong>Changing.</strong> <br>          (Đang thay đổi.) <br>          → <em>Đúng vì bài đọc nói về sự chỉ trích ngày càng gia tăng đối với hoạt động tình nguyện nước ngoài và sự thay đổi trong cách nhìn nhận.</em>     </li>     <li>❌ <strong>Disapproving.</strong> <br>          (Không tán thành.) <br>          → <em>Sai vì bài đọc không hoàn toàn phản đối tình nguyện mà nhấn mạnh sự cần thiết của thay đổi.</em>     </li>     <li>❌ <strong>Frustrated.</strong> <br>          (Bực bội.) <br>          → <em>Sai vì bài đọc không nói rằng mọi người cảm thấy bực bội về vấn đề này.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What is “More often than not” in paragraph (A) closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. For a time															</div>
+																				<div class="ps-4 mb-2">
+																	B. All the time															</div>
+																				<div class="ps-4 mb-2">
+																	C. Sometimes															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Most of the time</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What is “More often than not” in paragraph (A) closest in meaning to?</strong></p> <p><em>(Cụm từ "More often than not" trong đoạn (A) có nghĩa gần nhất với?)</em></p>  <ul>     <li>❌ <strong>Sometimes.</strong> <br>          (Thỉnh thoảng.) <br>          → <em>Sai vì "more often than not" có nghĩa là điều gì đó xảy ra thường xuyên hơn là không.</em>     </li>     <li>❌ <strong>All the time.</strong> <br>          (Luôn luôn.) <br>          → <em>Sai vì "more often than not" không có nghĩa là xảy ra mọi lúc.</em>     </li>     <li>❌ <strong>For a time.</strong> <br>          (Trong một khoảng thời gian.) <br>          → <em>Sai vì cụm từ này không đề cập đến một giai đoạn cụ thể.</em>     </li>     <li>✅ <strong>Most of the time.</strong> <br>          (Phần lớn thời gian.) <br>          → <em>Đúng vì "more often than not" có nghĩa là điều gì đó xảy ra trong phần lớn các trường hợp.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: According to the writer, which of the following statements is true about volunteering abroad?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. There are usually purposeful placements in volunteering abroad for profit aims.															</div>
+																				<div class="ps-4 mb-2">
+																	B. The nature of volunteering abroad is claimed to make money for profit.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Commercial purposes may be hidden under the claim of humane purposes of volunteering.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. The need for volunteers in developing countries has grown for the past few years.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the writer, which of the following statements is true about volunteering abroad?</strong></p> <p><em>(Theo tác giả, điều nào sau đây đúng về tình nguyện nước ngoài?)</em></p>  <ul>     <li>❌ <strong>The need for volunteers in developing countries has grown for the past few years.</strong> <br>          (Nhu cầu về tình nguyện viên ở các nước đang phát triển đã tăng trong vài năm qua.) <br>          → <em>Sai vì bài đọc nói về việc tăng số lượng tổ chức cung cấp tình nguyện viên, không phải nhu cầu thực tế.</em>     </li>     <li>✅ <strong>Commercial purposes may be hidden under the claim of humane purposes of volunteering.</strong> <br>          (Mục đích thương mại có thể bị che giấu dưới danh nghĩa mục đích nhân đạo của tình nguyện.) <br>          → <em>Đúng vì bài đọc đề cập đến việc nhiều tổ chức tình nguyện thực chất chỉ nhằm thu lợi nhuận.</em>     </li>     <li>❌ <strong>The nature of volunteering abroad is claimed to make money for profit.</strong> <br>          (Bản chất của tình nguyện nước ngoài được cho là để kiếm tiền lợi nhuận.) <br>          → <em>Sai vì bài đọc không nói tất cả các hoạt động tình nguyện đều có mục đích lợi nhuận.</em>     </li>     <li>❌ <strong>There are usually purposeful placements in volunteering abroad for profit aims.</strong> <br>          (Thường có các vị trí tình nguyện có mục đích phục vụ lợi nhuận.) <br>          → <em>Sai vì bài đọc chỉ đề cập đến một số tổ chức có động cơ thương mại, không phải tất cả.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What does the word “These” in paragraph (B) refer to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Studies on voluntourism															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Drawbacks of voluntourism</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Advantages of voluntourism															</div>
+																				<div class="ps-4 mb-2">
+																	D. Demands for voluntourism															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does the word “These” in paragraph (B) refer to?</strong></p> <p><em>(Từ "These" trong đoạn (B) đề cập đến điều gì?)</em></p>  <ul>     <li>❌ <strong>Advantages of voluntourism.</strong> <br>          (Lợi ích của du lịch tình nguyện.) <br>          → <em>Sai vì "These" không đề cập đến lợi ích mà là những tác động tiêu cực.</em>     </li>     <li>✅ <strong>Drawbacks of voluntourism.</strong> <br>          (Những mặt tiêu cực của du lịch tình nguyện.) <br>          → <em>Đúng vì đoạn (B) đề cập đến các tác động tiêu cực như chiếm công việc của người dân địa phương và nạn buôn bán trẻ em.</em>     </li>     <li>❌ <strong>Studies on voluntourism.</strong> <br>          (Các nghiên cứu về du lịch tình nguyện.) <br>          → <em>Sai vì "These" không chỉ các nghiên cứu, mà chỉ các tác động tiêu cực.</em>     </li>     <li>❌ <strong>Demands for voluntourism.</strong> <br>          (Nhu cầu đối với du lịch tình nguyện.) <br>          → <em>Sai vì từ "These" không đề cập đến nhu cầu mà là những hậu quả xấu của hoạt động này.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: What are children being kept in inadequate living conditions for?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. To legally implement children trafficking															</div>
+																				<div class="ps-4 mb-2">
+																	B. To show the poverty of these places															</div>
+																				<div class="ps-4 mb-2">
+																	C. To reflect their real living standards															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. To get voluntary contributions from visitors</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What are children being kept in inadequate living conditions for?</strong></p> <p><em>(Tại sao trẻ em bị giữ trong điều kiện sống tồi tệ?)</em></p>  <ul>     <li>❌ <strong>To show the poverty of these places.</strong> <br>          (Để thể hiện sự nghèo đói của những nơi này.) <br>          → <em>Sai vì mục đích chính không phải chỉ để thể hiện sự nghèo đói, mà là để thu hút đóng góp tài chính.</em>     </li>     <li>❌ <strong>To reflect their real living standards.</strong> <br>          (Để phản ánh mức sống thực sự của họ.) <br>          → <em>Sai vì điều kiện sống tồi tệ được tạo ra có chủ đích, không phải phản ánh thực tế.</em>     </li>     <li>❌ <strong>To legally implement children trafficking.</strong> <br>          (Để hợp pháp hóa việc buôn bán trẻ em.) <br>          → <em>Sai vì bài đọc nói về việc trẻ em bị bắt cóc để phục vụ du lịch tình nguyện, không phải hợp pháp hóa buôn bán.</em>     </li>     <li>✅ <strong>To get voluntary contributions from visitors.</strong> <br>          (Để nhận được đóng góp từ thiện từ khách du lịch.) <br>          → <em>Đúng vì trẻ em bị đưa vào các trại trẻ mồ côi giả nhằm thu hút lòng thương hại và quyên góp từ du khách.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: According to the passage, what does Mark Watson expect to see regarding volunteering abroad?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. A sense of realism for the volunteers abroad															</div>
+																				<div class="ps-4 mb-2">
+																	B. A good support from potential volunteers															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. A positive transformation in volunteers’ attitudes</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. An acknowledgement from potential volunteers															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the passage, what does Mark Watson expect to see regarding volunteering abroad?</strong></p> <p><em>(Theo bài đọc, Mark Watson mong muốn thấy điều gì liên quan đến tình nguyện nước ngoài?)</em></p>  <ul>     <li>❌ <strong>An acknowledgement from potential volunteers.</strong> <br>          (Sự thừa nhận từ những tình nguyện viên tiềm năng.) <br>          → <em>Sai vì ông ấy không mong sự thừa nhận mà mong có sự thay đổi trong tư duy.</em>     </li>     <li>✅ <strong>A positive transformation in volunteers’ attitudes.</strong> <br>          (Một sự thay đổi tích cực trong thái độ của tình nguyện viên.) <br>          → <em>Đúng vì Watson muốn mọi người nhận thức thực tế về việc họ có thực sự giúp ích hay không.</em>     </li>     <li>❌ <strong>A good support from potential volunteers.</strong> <br>          (Sự hỗ trợ tốt từ các tình nguyện viên tiềm năng.) <br>          → <em>Sai vì ông ấy không đề cập đến việc cần thêm tình nguyện viên, mà muốn thay đổi nhận thức của họ.</em>     </li>     <li>❌ <strong>A sense of realism for the volunteers abroad.</strong> <br>          (Một cảm giác thực tế hơn cho những tình nguyện viên ở nước ngoài.) <br>          → <em>Sai vì mặc dù ông ấy muốn họ thực tế hơn, nhưng trọng tâm vẫn là thay đổi thái độ.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: What message does Mark Watson want to pass to future volunteers through the idea of digging wells?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Volunteers cannot do anything worthy if they only do unskilled work.															</div>
+																				<div class="ps-4 mb-2">
+																	B. It is not rational to think that volunteering abroad is to help the poor.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Would-be volunteers should think more about doing unskilled work.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Volunteering abroad requires thinking about what is actually needed.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What message does Mark Watson want to pass to future volunteers through the idea of digging wells?</strong></p> <p><em>(Mark Watson muốn gửi gắm thông điệp gì đến những tình nguyện viên tương lai qua ví dụ đào giếng?)</em></p>  <ul>     <li>❌ <strong>Would-be volunteers should think more about doing unskilled work.</strong> <br>          (Những tình nguyện viên tương lai nên nghĩ nhiều hơn về việc làm lao động không có tay nghề.) <br>          → <em>Sai vì ông ấy không khuyến khích làm công việc không có kỹ năng, mà nhấn mạnh việc suy nghĩ kỹ về sự cần thiết.</em>     </li>     <li>✅ <strong>Volunteering abroad requires thinking about what is actually needed.</strong> <br>          (Tình nguyện nước ngoài cần suy nghĩ về những gì thực sự cần thiết.) <br>          → <em>Đúng vì ông ấy chỉ trích việc làm tình nguyện không có kỹ năng và nhấn mạnh vào nhu cầu thực tế của địa phương.</em>     </li>     <li>❌ <strong>It is not rational to think that volunteering abroad is to help the poor.</strong> <br>          (Không hợp lý khi nghĩ rằng tình nguyện nước ngoài là để giúp người nghèo.) <br>          → <em>Sai vì ông ấy không phản đối ý tưởng giúp đỡ người khác, mà chỉ muốn nó hiệu quả hơn.</em>     </li>     <li>❌ <strong>Volunteers cannot do anything worthy if they only do unskilled work.</strong> <br>          (Tình nguyện viên không thể làm gì có ích nếu họ chỉ làm những công việc không có tay nghề.) <br>          → <em>Sai vì bài đọc không nói rằng mọi công việc không có tay nghề đều vô ích, chỉ là chúng cần được xem xét kỹ hơn.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: According to Kate Stefanko, volunteering abroad can be valuable if volunteers satisfy the following criteria EXCEPT ______.						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. carefully selected															</div>
+																				<div class="ps-4 mb-2">
+																	B. suitably qualified															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. perfectly matched</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. thoroughly prepared															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to Kate Stefanko, volunteering abroad can be valuable if volunteers satisfy the following criteria EXCEPT ______.</strong></p> <p><em>(Theo Kate Stefanko, tình nguyện nước ngoài có thể có giá trị nếu tình nguyện viên đáp ứng các tiêu chí sau, NGOẠI TRỪ ______.)</em></p>  <ul>     <li>❌ <strong>Carefully selected.</strong> <br>          (Được lựa chọn cẩn thận.) <br>          → <em>Sai vì bài đọc nêu rõ rằng tổ chức của Kate Stefanko yêu cầu tình nguyện viên phải nộp đơn và được lựa chọn cẩn thận.</em>     </li>     <li>❌ <strong>Thoroughly prepared.</strong> <br>          (Được chuẩn bị kỹ lưỡng.) <br>          → <em>Sai vì bài đọc nói rằng những tình nguyện viên cần được chuẩn bị kỹ trước khi tham gia dự án.</em>     </li>     <li>✅ <strong>Perfectly matched.</strong> <br>          (Được kết hợp hoàn hảo.) <br>          → <em>Đúng vì bài đọc chỉ nói rằng tình nguyện viên cần được "matched" (ghép nối) với các dự án phù hợp với kỹ năng, nhưng không yêu cầu "perfectly matched" (hoàn toàn phù hợp).</em>     </li>     <li>❌ <strong>Suitably qualified.</strong> <br>          (Có trình độ phù hợp.) <br>          → <em>Sai vì bài đọc nhấn mạnh rằng tình nguyện viên cần có kỹ năng phù hợp để đóng góp hiệu quả.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: Which of the following sentences would best complete the last paragraph?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. That is to say, volunteering abroad mainly requires the youth enthusiasm if they want to make a real contribution.															</div>
+																				<div class="ps-4 mb-2">
+																	B. This process may lead to significant changes in voluntourism to eliminate possible harm to developing countries.															</div>
+																				<div class="ps-4 mb-2">
+																	C. A sense of humanity and sympathy is highly appreciated to make volunteering abroad worthwhile in every case.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. The whole process can reveal a real face to poverty and vulnerability, and shift consciousness toward the understanding of a shared humanity.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following sentences would best complete the last paragraph?</strong></p> <p><em>(Câu nào sau đây phù hợp nhất để hoàn thành đoạn cuối cùng?)</em></p>  <ul>     
+<li>✅ <strong>The whole process can reveal a real face to poverty and vulnerability, and shift consciousness toward the understanding of a shared humanity. (Toàn bộ quá trình có thể phơi bày bộ mặt thật của đói nghèo và sự mong manh, đồng thời thay đổi nhận thức theo hướng hiểu biết về tính nhân văn chung.)</strong> → Đúng vì nó phản ánh quan điểm của bài đọc rằng tình nguyện có thể hữu ích nếu được thực hiện đúng cách, như Kate Stefanko đã nói về sự chuẩn bị kỹ lưỡng và đóng góp thực sự.</li>     
+<li>❌ <strong>This process may lead to significant changes in voluntourism to eliminate possible harm to developing countries. (Quá trình này có thể dẫn đến những thay đổi lớn trong du lịch tình nguyện để loại bỏ những tác hại có thể xảy ra đối với các nước đang phát triển.)</strong> → Sai vì bài đọc không đề cập đến việc thay đổi chính sách hoặc quy định rộng rãi nào, mà chỉ tập trung vào việc cải thiện ở cấp độ cá nhân và tổ chức.</li>     
+<li>❌ <strong>That is to say, volunteering abroad mainly requires the youth enthusiasm if they want to make a real contribution. (Nói cách khác, tình nguyện ở nước ngoài chủ yếu cần sự nhiệt huyết của tuổi trẻ nếu họ muốn đóng góp thực sự.)</strong> → Sai vì bài đọc nhấn mạnh đến kỹ năng và sự chuẩn bị chứ không chỉ là nhiệt huyết.</li>     
+<li>❌ <strong>A sense of humanity and sympathy is highly appreciated to make volunteering abroad worthwhile in every case. (Tinh thần nhân đạo và cảm thông luôn được đánh giá cao để làm cho việc tình nguyện ở nước ngoài trở nên có ý nghĩa trong mọi trường hợp.)</strong> → Sai vì bài đọc không khẳng định rằng mọi trường hợp tình nguyện đều có ích, mà cần phải được sàng lọc và lên kế hoạch cẩn thận.</li> 
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

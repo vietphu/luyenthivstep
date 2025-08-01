@@ -1,0 +1,584 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 01 - Part 1				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R76863				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> The blood group system was developed by an Austrian scientist in 1900, and in 1927, Takeji Furukawa, a professor at Tokyo Women's Teacher's School, suggested that personality types and blood groups must be related. He backed <b>it</b> with his own observations, and the theory quickly spread in Japan and beyond. While it wasn't a big hit in the Western world, it is taken very seriously in Japan and some other Asian countries. In fact, there have been cases of discrimination based on blood group in workplaces and schools. The Japanese even have a special term for this type of discrimination—<i>bura hara</i>, or blood type harassment. Here is what this theory suggests.</p>
+
+<p><b>Blood Type A Personality</b></p>
+
+<p>These are kind and compassionate individuals who put others' interests and needs before their own. While they may seem calm on the outside, they often suffer from inner anxiety. People with blood type A personality are excellent listeners and make good friends. Although they get along with others quite well, it is often achieved at the expense of their own happiness. To be liked by others, they bottle up their emotions, which takes its toll on their nervous system. It is beneficial for them to take time alone and rest well. The best jobs for this personality type are those that don't require much contact with other people, such as programmers, accountants, or librarians.</p>
+
+<p><b>Blood Type B Personality</b></p>
+
+<p><b>(B)</b> Outgoing and friendly, this type is a people person. Unlike type A, type B doesn't do that at the expense of their own feelings; it comes to them naturally, without any effort. Contact with people doesn't wear them out, and they do great as leaders or in any type of job that requires dealing with people. Type B is highly adaptable; they can understand people well. They are into body language and other methods of <b>deciphering</b> others. People with blood type B personality rely on their intuition and trust themselves. Speaking of discrimination, Korean women consider men with blood type B personality unsuitable for marriage due to their playful and flirty disposition.</p>
+
+<p><b>Blood Type AB Personality</b></p>
+
+<p>Freedom-loving ABs are strong and rational people. They don't worry about little things and can usually assess their life challenges without emotions getting in the way. Despite their love for freedom and independent thinking, they don't have issues when it comes to relationships and are quite popular.</p>
+
+<p><b>Blood Type O Personality</b></p>
+
+<p>This type is described as responsible, practical, rule-conscious, and organized. They make excellent leaders, and their determination helps them achieve their goals. While they are usually liked by other people, they are somewhat loners and need a lot of time alone. Typically, type O individuals are physically strong and can find success in sports.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Hệ thống nhóm máu được phát triển bởi một nhà khoa học người Áo vào năm 1900, và vào năm 1927, Takeji Furukawa, một giáo sư tại Trường Sư phạm Nữ Tokyo, đã đề xuất rằng tính cách và nhóm máu có thể có mối liên hệ với nhau. Ông đã củng cố <b>lý thuyết này</b> bằng những quan sát của riêng mình, và nó nhanh chóng lan rộng ở Nhật Bản và nhiều nơi khác. Mặc dù lý thuyết này không gây tiếng vang lớn ở thế giới phương Tây, nhưng nó lại được coi trọng ở Nhật Bản và một số quốc gia châu Á khác. Trên thực tế, đã có những trường hợp phân biệt đối xử dựa trên nhóm máu tại nơi làm việc và trường học. Người Nhật thậm chí còn có một thuật ngữ đặc biệt để chỉ sự phân biệt này—<i>bura hara</i>, hay còn gọi là quấy rối dựa trên nhóm máu. Dưới đây là những gì lý thuyết này đề xuất.</p>  <p><b>Tính cách nhóm máu A</b></p> <p>Những người thuộc nhóm máu A là những người tốt bụng và giàu lòng trắc ẩn, họ luôn đặt lợi ích và nhu cầu của người khác lên trên bản thân. Dù có vẻ bình tĩnh bên ngoài, nhưng họ thường bị căng thẳng bên trong. Những người có nhóm máu A là những người biết lắng nghe và là những người bạn tốt. Mặc dù họ hòa hợp với mọi người khá tốt, nhưng điều đó thường đạt được bằng cách hy sinh hạnh phúc của chính họ. Để được yêu thích, họ có xu hướng kìm nén cảm xúc của mình, điều này có thể ảnh hưởng đến hệ thần kinh của họ. Vì vậy, họ nên dành thời gian ở một mình và nghỉ ngơi hợp lý. Những công việc phù hợp nhất với nhóm máu này là những công việc không đòi hỏi tiếp xúc nhiều với người khác, chẳng hạn như lập trình viên, kế toán hoặc thủ thư.</p>  <p><b>Tính cách nhóm máu B</b></p> <p><b>(B)</b> Hòa đồng và thân thiện, những người thuộc nhóm máu B là những người hướng ngoại. Không giống như nhóm A, nhóm B không cần phải gồng mình để hòa nhập với người khác; điều đó đến với họ một cách tự nhiên mà không cần nỗ lực. Việc tiếp xúc với mọi người không khiến họ mệt mỏi, và họ có thể trở thành những nhà lãnh đạo giỏi hoặc làm tốt trong bất kỳ công việc nào yêu cầu giao tiếp với con người. Nhóm B rất linh hoạt, họ có khả năng hiểu người khác tốt. Họ quan tâm đến ngôn ngữ cơ thể và các phương pháp <b>giải mã</b> tâm lý của người khác. Những người có nhóm máu B tin vào trực giác và rất tự tin vào bản thân. Nói về sự phân biệt đối xử, phụ nữ Hàn Quốc thường cho rằng đàn ông nhóm máu B không phù hợp để kết hôn vì họ có xu hướng đào hoa và thích tán tỉnh.</p>  <p><b>Tính cách nhóm máu AB</b></p> <p>Những người thuộc nhóm AB yêu thích sự tự do, họ là những người mạnh mẽ và lý trí. Họ không lo lắng về những điều nhỏ nhặt và thường có thể đánh giá các thử thách trong cuộc sống mà không để cảm xúc chi phối. Dù yêu thích tự do và suy nghĩ độc lập, họ không gặp vấn đề trong các mối quan hệ và thường khá được yêu thích.</p>  <p><b>Tính cách nhóm máu O</b></p> <p>Nhóm máu này được mô tả là có trách nhiệm, thực tế, tôn trọng quy tắc và có tổ chức. Họ là những nhà lãnh đạo xuất sắc, và sự quyết tâm của họ giúp họ đạt được mục tiêu. Mặc dù họ thường được người khác yêu thích, nhưng họ lại có xu hướng thích ở một mình và cần nhiều thời gian riêng tư. Thông thường, những người thuộc nhóm máu O có thể chất mạnh mẽ và có thể đạt được thành công trong lĩnh vực thể thao.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>(A)</b> The blood group system was developed by an Austrian scientist in 1900, and in 1927, Takeji Furukawa, a professor at Tokyo Women's Teacher's School, suggested that personality types and blood groups must be related. He backed <b>it</b> with his own observations, and the theory quickly spread in Japan and beyond. While it wasn't a big hit in the Western world, it is taken very seriously in Japan and some other Asian countries. In fact, there have been cases of discrimination based on blood group in workplaces and schools. The Japanese even have a special term for this type of discrimination—<i>bura hara</i>, or blood type harassment. Here is what this theory suggests.</p>
+
+<p><b>Blood Type A Personality</b></p>
+
+<p>These are kind and compassionate individuals who put others' interests and needs before their own. While they may seem calm on the outside, they often suffer from inner anxiety. People with blood type A personality are excellent listeners and make good friends. Although they get along with others quite well, it is often achieved at the expense of their own happiness. To be liked by others, they bottle up their emotions, which takes its toll on their nervous system. It is beneficial for them to take time alone and rest well. The best jobs for this personality type are those that don't require much contact with other people, such as programmers, accountants, or librarians.</p>
+
+<p><b>Blood Type B Personality</b></p>
+
+<p><b>(B)</b> Outgoing and friendly, this type is a people person. Unlike type A, type B doesn't do that at the expense of their own feelings; it comes to them naturally, without any effort. Contact with people doesn't wear them out, and they do great as leaders or in any type of job that requires dealing with people. Type B is highly adaptable; they can understand people well. They are into body language and other methods of <b>deciphering</b> others. People with blood type B personality rely on their intuition and trust themselves. Speaking of discrimination, Korean women consider men with blood type B personality unsuitable for marriage due to their playful and flirty disposition.</p>
+
+<p><b>Blood Type AB Personality</b></p>
+
+<p>Freedom-loving ABs are strong and rational people. They don't worry about little things and can usually assess their life challenges without emotions getting in the way. Despite their love for freedom and independent thinking, they don't have issues when it comes to relationships and are quite popular.</p>
+
+<p><b>Blood Type O Personality</b></p>
+
+<p>This type is described as responsible, practical, rule-conscious, and organized. They make excellent leaders, and their determination helps them achieve their goals. While they are usually liked by other people, they are somewhat loners and need a lot of time alone. Typically, type O individuals are physically strong and can find success in sports.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Which of the following is said about the idea that blood types and personalities are related?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It is used in schools and workplaces to categorize people.															</div>
+																				<div class="ps-4 mb-2">
+																	B. It was originally developed by a Japanese scientist.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Its accuracy has been supported with scientific data.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. It is more popular in Asian countries than in the West.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>1. Which of the following is said about the idea that blood types and personalities are related?</strong></p>
+<p><em>(Điều nào sau đây được nói về ý tưởng rằng nhóm máu và tính cách có liên quan đến nhau?)</em></p>
+
+<ul>
+    <li>❌ <strong>It was originally developed by a Japanese scientist.</strong> <br> 
+        (Nó ban đầu được phát triển bởi một nhà khoa học Nhật Bản.) <br> 
+        → <em>Sai vì hệ thống nhóm máu được phát triển bởi một nhà khoa học Áo vào năm 1900.</em>
+    </li>
+
+    <li>✅ <strong>It is more popular in Asian countries than in the West.</strong> <br> 
+        (Nó phổ biến hơn ở các nước châu Á so với phương Tây.) <br> 
+        → <em>Đúng vì bài đọc đề cập rằng lý thuyết này được xem trọng ở Nhật Bản và một số quốc gia châu Á khác.</em>
+    </li>
+
+    <li>❌ <strong>It is used in schools and workplaces to categorize people.</strong> <br> 
+        (Nó được sử dụng trong trường học và nơi làm việc để phân loại con người.) <br> 
+        → <em>Sai vì bài đọc chỉ nhắc đến sự phân biệt đối xử, không nói rằng nó được dùng để phân loại chính thức.</em>
+    </li>
+
+    <li>❌ <strong>Its accuracy has been supported with scientific data.</strong> <br> 
+        (Độ chính xác của nó đã được hỗ trợ bởi dữ liệu khoa học.) <br> 
+        → <em>Sai vì bài đọc không đề cập đến bằng chứng khoa học nào chứng minh tính chính xác của lý thuyết này.</em>
+    </li>
+</ul>
+							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: What does the word “it” in paragraph (A) refer to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. blood															</div>
+																				<div class="ps-4 mb-2">
+																	B. personality															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. theory</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. school															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does the word “it” in paragraph (A) refer to?</strong></p> <p><em>(Từ "it" trong đoạn (A) đề cập đến điều gì?)</em></p>  <ul>     <li>❌ <strong>school</strong> <br>          (trường học) <br>          → <em>Sai vì "it" không đề cập đến trường học mà đề cập đến một lý thuyết.</em>     </li>      <li>❌ <strong>personality</strong> <br>          (tính cách) <br>          → <em>Sai vì bài đọc nói về một lý thuyết liên quan đến nhóm máu, không phải chỉ riêng tính cách.</em>     </li>      <li>✅ <strong>theory</strong> <br>          (lý thuyết) <br>          → <em>Đúng vì "it" trong câu "He backed it with his own observations" rõ ràng đề cập đến lý thuyết mà giáo sư Furukawa đề xuất.</em>     </li>      <li>❌ <strong>blood</strong> <br>          (máu) <br>          → <em>Sai vì "it" không liên quan trực tiếp đến máu mà là lý thuyết về sự liên kết giữa nhóm máu và tính cách.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What is learnt about blood type A personality?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. They often suppress their own feelings to get on well with others.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. They cannot perform in jobs that require frequent contact with others.															</div>
+																				<div class="ps-4 mb-2">
+																	C. They suffer from anxiety as a result of their inability to communicate.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Trying to communicate with others make them mentally exhausted.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What is learnt about blood type A personality?</strong></p> <p><em>(Điều gì được biết về nhóm máu A?)</em></p>  <ul>     <li>❌ <strong>They suffer from anxiety as a result of their inability to communicate.</strong> <br>          (Họ bị lo lắng do không thể giao tiếp.) <br>          → <em>Sai vì bài đọc không nói rằng họ không thể giao tiếp, mà là họ có thể giao tiếp nhưng hay kìm nén cảm xúc.</em>     </li>      <li>❌ <strong>Trying to communicate with others makes them mentally exhausted.</strong> <br>          (Cố gắng giao tiếp với người khác khiến họ kiệt sức về tinh thần.) <br>          → <em>Sai vì bài đọc không nói rằng giao tiếp khiến họ mệt mỏi, mà chỉ đề cập đến việc họ kìm nén cảm xúc để được yêu thích.</em>     </li>      <li>❌ <strong>They cannot perform in jobs that require frequent contact with others.</strong> <br>          (Họ không thể làm việc trong những công việc yêu cầu tiếp xúc thường xuyên với người khác.) <br>          → <em>Sai vì bài đọc không nói rằng họ không thể làm công việc này, mà chỉ đề xuất rằng họ phù hợp với các công việc ít tiếp xúc hơn.</em>     </li>      <li>✅ <strong>They often suppress their own feelings to get on well with others.</strong> <br>          (Họ thường kìm nén cảm xúc của mình để hòa hợp với người khác.) <br>          → <em>Đúng vì bài đọc nói rõ: "To be liked by others, they bottle up their emotions, which takes its toll on their nervous system."</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: Which blood type personality is intuitive and self-confident?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Type AB															</div>
+																				<div class="ps-4 mb-2">
+																	B. Type A															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Type B</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Type O															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which blood type personality is intuitive and self-confident?</strong></p> <p><em>(Nhóm máu nào có tính直 giác và tự tin?)</em></p>  <ul>     <li>❌ <strong>Type A</strong> <br>          (Nhóm máu A) <br>          → <em>Sai vì bài đọc mô tả nhóm máu A là người hay lo lắng và thường kìm nén cảm xúc, không phải kiểu người tự tin và tin vào trực giác.</em>     </li>      <li>✅ <strong>Type B</strong> <br>          (Nhóm máu B) <br>          → <em>Đúng vì bài đọc mô tả nhóm máu B là người có trực giác tốt và tin tưởng vào bản thân:           "People with blood type B personality rely on their intuition and trust themselves."</em>     </li>      <li>❌ <strong>Type AB</strong> <br>          (Nhóm máu AB) <br>          → <em>Sai vì bài đọc mô tả nhóm máu AB là người lý trí và không bị chi phối bởi cảm xúc, không nhấn mạnh về trực giác hay sự tự tin.</em>     </li>      <li>❌ <strong>Type O</strong> <br>          (Nhóm máu O) <br>          → <em>Sai vì bài đọc nói nhóm máu O có tính trách nhiệm và quyết tâm, không liên quan đến trực giác hay sự tự tin.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: Which blood type personality does not let emotion affect their assessment?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Type AB</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Type O															</div>
+																				<div class="ps-4 mb-2">
+																	C. Type A															</div>
+																				<div class="ps-4 mb-2">
+																	D. Type B															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which blood type personality does not let emotion affect their assessment?</strong></p> <p><em>(Nhóm máu nào không để cảm xúc ảnh hưởng đến đánh giá của họ?)</em></p>  <ul>     <li>❌ <strong>Type A</strong> <br>          (Nhóm máu A) <br>          → <em>Sai vì bài đọc mô tả nhóm máu A là những người nhạy cảm, thường lo lắng và bị ảnh hưởng bởi cảm xúc.</em>     </li>      <li>❌ <strong>Type B</strong> <br>          (Nhóm máu B) <br>          → <em>Sai vì bài đọc mô tả nhóm máu B là người thân thiện, hòa đồng và cảm xúc đóng vai trò trong cách họ tiếp cận người khác.</em>     </li>      <li>✅ <strong>Type AB</strong> <br>          (Nhóm máu AB) <br>          → <em>Đúng vì bài đọc nêu rõ rằng nhóm máu AB là người lý trí và không để cảm xúc ảnh hưởng đến việc đánh giá tình huống:           "They don’t worry about little things and can usually assess their life challenges without emotions getting in the way."</em>     </li>      <li>❌ <strong>Type O</strong> <br>          (Nhóm máu O) <br>          → <em>Sai vì mặc dù nhóm máu O có tính kỷ luật và quyết tâm, bài đọc không đề cập rõ ràng rằng họ tách biệt hoàn toàn cảm xúc khỏi đánh giá của mình.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: What is shared between blood type A personality and blood type B personality?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. They are naturally outgoing.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. They get on well with people.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. They prioritize others’ needs.															</div>
+																				<div class="ps-4 mb-2">
+																	D. They can become great leaders.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What is shared between blood type A personality and blood type B personality?</strong></p> <p><em>(Điểm chung giữa nhóm máu A và nhóm máu B là gì?)</em></p>  <ul>     <li>✅ <strong>They get on well with people.</strong> <br>          (Họ hòa hợp tốt với người khác.) <br>          → <em>Đúng vì bài đọc mô tả nhóm máu A là người lắng nghe tốt, dễ kết bạn,           còn nhóm máu B là người hòa đồng và thân thiện.</em>     </li>      <li>❌ <strong>They are naturally outgoing.</strong> <br>          (Họ là người hướng ngoại một cách tự nhiên.) <br>          → <em>Sai vì nhóm máu A không phải là người hướng ngoại tự nhiên, mà họ cố gắng hòa hợp với người khác bằng cách kìm nén cảm xúc.</em>     </li>      <li>❌ <strong>They can become great leaders.</strong> <br>          (Họ có thể trở thành những nhà lãnh đạo xuất sắc.) <br>          → <em>Sai vì bài đọc chỉ đề cập rằng nhóm máu B có khả năng lãnh đạo, nhưng không nói điều tương tự về nhóm máu A.</em>     </li>      <li>❌ <strong>They prioritize others’ needs.</strong> <br>          (Họ ưu tiên nhu cầu của người khác.) <br>          → <em>Sai vì chỉ nhóm máu A có xu hướng đặt lợi ích của người khác lên trước, trong khi nhóm máu B không làm điều này.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What can the word “deciphering” in paragraph (B) be best replaced by?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. cracking</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. discovering															</div>
+																				<div class="ps-4 mb-2">
+																	C. translating															</div>
+																				<div class="ps-4 mb-2">
+																	D. feeling															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What can the word “deciphering” in paragraph (B) be best replaced by?</strong></p> <p><em>(Từ "deciphering" trong đoạn (B) có thể được thay thế tốt nhất bằng từ nào?)</em></p>  <ul>     <li>❌ <strong>feeling</strong> <br>          (cảm nhận) <br>          → <em>Sai vì "deciphering" có nghĩa là giải mã hoặc hiểu rõ điều gì đó, trong khi "feeling" chỉ liên quan đến cảm giác hoặc cảm xúc.</em>     </li>      <li>✅ <strong>cracking</strong> <br>          (giải mã) <br>          → <em>Đúng vì "deciphering" có nghĩa là tìm ra ý nghĩa của điều gì đó, và "cracking" cũng có nghĩa là phá mã hoặc hiểu được thông tin.</em>     </li>      <li>❌ <strong>translating</strong> <br>          (dịch thuật) <br>          → <em>Sai vì "translating" có nghĩa là chuyển ngữ giữa hai ngôn ngữ, không phù hợp với ngữ cảnh của bài đọc.</em>     </li>      <li>❌ <strong>discovering</strong> <br>          (khám phá) <br>          → <em>Sai vì "discovering" có nghĩa là tìm ra điều gì đó mới, trong khi "deciphering" liên quan đến việc giải nghĩa hoặc hiểu một điều gì đó.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: Which of the following sentences defines an unfamiliar term?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The passage discusses the discrimination against Type B individuals.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. The passage explains the meaning of "bura hara."</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. The passage describes the personality traits of Type A.															</div>
+																				<div class="ps-4 mb-2">
+																	D. The passage compares different blood type personalities.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following sentences defines an unfamiliar term?</strong></p>
+<p><em>(Câu nào sau đây định nghĩa một thuật ngữ chưa quen thuộc?)</em></p>
+
+<ul>
+    <li>✅ <strong>The passage explains the meaning of "bura hara."</strong> <br> 
+        (Đoạn văn giải thích ý nghĩa của "bura hara.") <br> 
+        → <em>Đúng vì bài đọc định nghĩa "bura hara" là sự phân biệt đối xử dựa trên nhóm máu.</em>
+    </li>
+
+    <li>❌ <strong>The passage describes the personality traits of Type A.</strong> <br> 
+        (Đoạn văn mô tả các đặc điểm tính cách của nhóm máu A.) <br> 
+        → <em>Sai vì việc mô tả đặc điểm không phải là định nghĩa một thuật ngữ chưa quen thuộc.</em>
+    </li>
+
+    <li>❌ <strong>The passage discusses the discrimination against Type B individuals.</strong> <br> 
+        (Đoạn văn thảo luận về sự phân biệt đối xử với người nhóm máu B.) <br> 
+        → <em>Sai vì điều này không liên quan đến việc định nghĩa một thuật ngữ mới.</em>
+    </li>
+
+    <li>❌ <strong>The passage compares different blood type personalities.</strong> <br> 
+        (Đoạn văn so sánh các tính cách của các nhóm máu khác nhau.) <br> 
+        → <em>Sai vì so sánh không phải là định nghĩa một thuật ngữ mới.</em>
+    </li>
+</ul>
+							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What is NOT true about blood type O personality?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. They are down-to-earth and often follow the rules. 															</div>
+																				<div class="ps-4 mb-2">
+																	B. They use willpower to achieve what they want.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Their unpopularity with people makes them lonely. </span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Their physical strength gives them advantages in sports.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What is NOT true about blood type O personality?</strong></p> <p><em>(Điều nào KHÔNG đúng về nhóm máu O?)</em></p>  <ul>     <li>❌ <strong>They use willpower to achieve what they want.</strong> <br>          (Họ sử dụng ý chí để đạt được những gì họ muốn.) <br>          → <em>Sai vì bài đọc mô tả nhóm máu O là người quyết tâm và có mục tiêu rõ ràng.</em>     </li>      <li>❌ <strong>Their physical strength gives them advantages in sports.</strong> <br>          (Thể chất mạnh mẽ giúp họ có lợi thế trong thể thao.) <br>          → <em>Sai vì bài đọc nói rằng nhóm máu O thường có thể chất tốt và có thể thành công trong thể thao.</em>     </li>      <li>❌ <strong>They are down-to-earth and often follow the rules.</strong> <br>          (Họ thực tế và thường tuân theo quy tắc.) <br>          → <em>Sai vì bài đọc mô tả nhóm máu O là người có tổ chức và tuân theo quy tắc.</em>     </li>      <li>✅ <strong>Their unpopularity with people makes them lonely.</strong> <br>          (Việc họ không được yêu thích khiến họ cô đơn.) <br>          → <em>Đúng vì bài đọc không nói rằng nhóm máu O không được yêu thích, mà chỉ đề cập rằng họ thường cần thời gian ở một mình.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: Which of the following can serve best as the title of this passage?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Applications of blood group system															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. What your blood type can tell you</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. The blood type personality traits															</div>
+																				<div class="ps-4 mb-2">
+																	D. The blood type personality myth															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following can serve best as the title of this passage?</strong></p> <p><em>(Câu nào sau đây có thể là tiêu đề phù hợp nhất cho bài đọc này?)</em></p>  <ul>     <li>✅ <strong>What your blood type can tell you</strong> <br>          (Nhóm máu của bạn có thể tiết lộ điều gì về bạn) <br>          → <em>Đúng vì bài đọc tập trung vào việc mô tả các đặc điểm tính cách liên quan đến từng nhóm máu.</em>     </li>      <li>❌ <strong>The blood type personality myth</strong> <br>          (Huyền thoại về tính cách theo nhóm máu) <br>          → <em>Sai vì bài đọc không bác bỏ lý thuyết này hay gọi nó là huyền thoại.</em>     </li>      <li>❌ <strong>The blood type personality traits</strong> <br>          (Các đặc điểm tính cách theo nhóm máu) <br>          → <em>Sai vì tiêu đề này quá chung chung, không đủ hấp dẫn để tóm lược nội dung bài đọc.</em>     </li>      <li>❌ <strong>Applications of blood group system</strong> <br>          (Ứng dụng của hệ thống nhóm máu) <br>          → <em>Sai vì bài đọc không nói về các ứng dụng y học hay khoa học của hệ thống nhóm máu.</em>     </li> </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

@@ -1,0 +1,540 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 04 - Part 4				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R76865				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p>The continents may have first risen high above the oceans of the world about 3 billion years ago, researchers say. That's about a billion years earlier than geoscientists had suspected for the emergence of a good chunk of the continents.</p>
+
+<p>Earth is the only known planet whose surface is divided into continents and oceans. Currently, the continents rise an average of about 2.5 miles (4 kilometers) above the seafloor.</p>
+
+<p>The continents are composed of a thick, buoyant crust that's about 21 miles (35 km) deep, on average, whereas the comparatively thin, dense crust of the ocean floor is only an average of about 4 miles (7 km) thick. Because the continents are so thick and buoyant, they are less likely to get dragged downward. That's why so many ancient continental rocks have survived in the Earth's crust. Still, much about the earliest days of the continents, and when and how they formed, remains hotly contested.</p>
+
+<p>"Earth's surface is continually being reworked by tectonics and agents of erosion, so what may have formed long ago may no longer be present," said geologist Cin-Ty Lee at Rice University in Houston, who was not involved in the current study.</p>
+
+<p><b>(A) To shed light on</b> the origins of continents, isotope geochemist Bruno Dhuime at the University of Bristol in England and his colleagues analyzed more than 13,000 samples of rocks from the continental crust. Some of these samples were more than 4 billion years old.</p>
+
+<p>Prior research suggested the first 2 billion years of Earth's 4.5-billion-year history were dominated by volcanic activity that generated the kind of crust now seen on the seafloor. Continent-like crust, which is thick and rich in silica, was thought to only have emerged in great volumes in the past 2 billion years. Determining what the earliest continental crust was like and when it formed can be tricky, because Earth's crust has melted and mixed together over and over again.</p>
+
+<p>The researchers found that when magma cools and crystallizes, the remaining molten rock becomes enriched in silica and rubidium, but less so in strontium. The relative amounts of rubidium and strontium are therefore linked with the amount of silica in rock, and so could be used to extrapolate when in the modern era thick, silica-rich continental crust emerged.</p>
+
+<p><b>(B)</b> The researchers found that modern, silica-rich continental crust first appeared about 3 billion years ago. The thick, buoyant nature of these chunks of crust would have made them rise high above what became the seafloor, Dhuime and his colleagues note online June 22 in the journal Nature Geoscience.</p>
+
+<p><b>(C)</b> "They are showing when continents actually emerged from the oceans," said Lee, who wrote an <b>accompanying</b> news article in Nature Geoscience. "Continents certainly existed early in Earth's history, but perhaps many were submerged."</p>
+
+<p>It remains uncertain why continental crust made its first appearance about 3 billion years ago. One possibility is the onset of plate tectonics—when the plates of rock making up the planet's exterior began moving slowly over the Earth's mantle layer. Plate tectonics would have resulted in wet rock getting shoved down into Earth's interior, eventually helping to form silica-rich magmas that make up much of the continental crust.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p>Các lục địa có thể đã lần đầu tiên nổi cao trên bề mặt đại dương khoảng 3 tỷ năm trước, theo nghiên cứu của các nhà khoa học. Điều này sớm hơn khoảng một tỷ năm so với dự đoán trước đây của các nhà địa chất về thời điểm xuất hiện của phần lớn các lục địa.</p>  <p>Trái Đất là hành tinh duy nhất được biết đến có bề mặt được chia thành lục địa và đại dương. Hiện tại, các lục địa cao trung bình khoảng 2,5 dặm (4 km) so với đáy đại dương.</p>  <p>Các lục địa được cấu tạo từ lớp vỏ dày và nổi, trung bình có độ sâu khoảng 21 dặm (35 km), trong khi lớp vỏ đại dương tương đối mỏng và đặc hơn, chỉ có độ dày trung bình khoảng 4 dặm (7 km). Vì lục địa có lớp vỏ dày và nổi, chúng ít có khả năng bị kéo chìm xuống. Đây là lý do tại sao rất nhiều lớp đá lục địa cổ đại vẫn tồn tại trong vỏ Trái Đất. Tuy nhiên, thời kỳ hình thành sớm nhất của các lục địa, cũng như cách thức và thời điểm chúng xuất hiện, vẫn còn nhiều tranh cãi.</p>  <p>"Bề mặt Trái Đất liên tục bị tác động bởi kiến tạo địa chất và quá trình xói mòn, vì vậy những gì có thể đã hình thành từ lâu có thể không còn tồn tại," nhà địa chất Cin-Ty Lee tại Đại học Rice ở Houston, người không tham gia vào nghiên cứu hiện tại, cho biết.</p>  <p><b>(A) Để làm sáng tỏ</b> nguồn gốc của các lục địa, nhà địa hóa đồng vị Bruno Dhuime tại Đại học Bristol, Anh, cùng các đồng nghiệp của ông đã phân tích hơn 13.000 mẫu đá từ lớp vỏ lục địa. Một số mẫu này có tuổi thọ hơn 4 tỷ năm.</p>  <p>Các nghiên cứu trước đây cho thấy trong 2 tỷ năm đầu tiên của lịch sử 4,5 tỷ năm của Trái Đất, hoạt động núi lửa chiếm ưu thế, tạo ra loại vỏ tương tự như vỏ đáy đại dương hiện nay. Vỏ lục địa, vốn dày và giàu silica, được cho là chỉ xuất hiện với khối lượng lớn trong vòng 2 tỷ năm qua. Việc xác định thành phần của lớp vỏ lục địa đầu tiên và thời điểm nó hình thành là một thách thức, vì lớp vỏ Trái Đất liên tục bị nóng chảy và tái kết hợp.</p>  <p>Các nhà nghiên cứu phát hiện ra rằng khi dung nham nguội đi và kết tinh, phần đá nóng chảy còn lại trở nên giàu silica và rubidi, nhưng ít stronxi hơn. Do đó, tỷ lệ rubidi và stronxi có liên quan đến lượng silica trong đá, và có thể được sử dụng để suy luận thời điểm lớp vỏ lục địa dày, giàu silica xuất hiện.</p>  <p><b>(B)</b> Các nhà nghiên cứu phát hiện ra rằng lớp vỏ lục địa hiện đại, giàu silica, lần đầu tiên xuất hiện khoảng 3 tỷ năm trước. Với đặc tính dày và nổi của chúng, những khối vỏ này có thể đã trồi lên cao trên bề mặt đáy đại dương, theo Dhuime và các đồng nghiệp, được công bố trực tuyến vào ngày 22 tháng 6 trên tạp chí Nature Geoscience.</p>  <p><b>(C)</b> "Họ đang cho thấy thời điểm các lục địa thực sự trồi lên khỏi đại dương," Lee, người đã viết một bài báo <b>đính kèm</b> trên tạp chí Nature Geoscience, cho biết. "Các lục địa chắc chắn đã tồn tại từ rất sớm trong lịch sử Trái Đất, nhưng có thể nhiều trong số đó vẫn bị chìm dưới nước."</p>  <p>Hiện vẫn chưa rõ lý do tại sao lớp vỏ lục địa lại lần đầu tiên xuất hiện khoảng 3 tỷ năm trước. Một giả thuyết là sự khởi đầu của quá trình kiến tạo mảng—khi các mảng đá trên bề mặt Trái Đất bắt đầu di chuyển chậm trên lớp manti của hành tinh. Kiến tạo mảng có thể đã đẩy các khối đá ẩm xuống sâu vào bên trong Trái Đất, cuối cùng giúp hình thành các dòng dung nham giàu silica, tạo nên phần lớn lớp vỏ lục địa.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p>The continents may have first risen high above the oceans of the world about 3 billion years ago, researchers say. That's about a billion years earlier than geoscientists had suspected for the emergence of a good chunk of the continents.</p>
+
+<p>Earth is the only known planet whose surface is divided into continents and oceans. Currently, the continents rise an average of about 2.5 miles (4 kilometers) above the seafloor.</p>
+
+<p>The continents are composed of a thick, buoyant crust that's about 21 miles (35 km) deep, on average, whereas the comparatively thin, dense crust of the ocean floor is only an average of about 4 miles (7 km) thick. Because the continents are so thick and buoyant, they are less likely to get dragged downward. That's why so many ancient continental rocks have survived in the Earth's crust. Still, much about the earliest days of the continents, and when and how they formed, remains hotly contested.</p>
+
+<p>"Earth's surface is continually being reworked by tectonics and agents of erosion, so what may have formed long ago may no longer be present," said geologist Cin-Ty Lee at Rice University in Houston, who was not involved in the current study.</p>
+
+<p><b>(A) To shed light on</b> the origins of continents, isotope geochemist Bruno Dhuime at the University of Bristol in England and his colleagues analyzed more than 13,000 samples of rocks from the continental crust. Some of these samples were more than 4 billion years old.</p>
+
+<p>Prior research suggested the first 2 billion years of Earth's 4.5-billion-year history were dominated by volcanic activity that generated the kind of crust now seen on the seafloor. Continent-like crust, which is thick and rich in silica, was thought to only have emerged in great volumes in the past 2 billion years. Determining what the earliest continental crust was like and when it formed can be tricky, because Earth's crust has melted and mixed together over and over again.</p>
+
+<p>The researchers found that when magma cools and crystallizes, the remaining molten rock becomes enriched in silica and rubidium, but less so in strontium. The relative amounts of rubidium and strontium are therefore linked with the amount of silica in rock, and so could be used to extrapolate when in the modern era thick, silica-rich continental crust emerged.</p>
+
+<p><b>(B)</b> The researchers found that modern, silica-rich continental crust first appeared about 3 billion years ago. The thick, buoyant nature of these chunks of crust would have made them rise high above what became the seafloor, Dhuime and his colleagues note online June 22 in the journal Nature Geoscience.</p>
+
+<p><b>(C)</b> "They are showing when continents actually emerged from the oceans," said Lee, who wrote an <b>accompanying</b> news article in Nature Geoscience. "Continents certainly existed early in Earth's history, but perhaps many were submerged."</p>
+
+<p>It remains uncertain why continental crust made its first appearance about 3 billion years ago. One possibility is the onset of plate tectonics—when the plates of rock making up the planet's exterior began moving slowly over the Earth's mantle layer. Plate tectonics would have resulted in wet rock getting shoved down into Earth's interior, eventually helping to form silica-rich magmas that make up much of the continental crust.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: According to the geoscientists, when were the continents assumed to first rise above the oceans?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 4 billion years ago															</div>
+																				<div class="ps-4 mb-2">
+																	B. 1 billion years ago															</div>
+																				<div class="ps-4 mb-2">
+																	C. 2 billion years ago  															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. 3 billion years ago</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the geoscientists, when were the continents assumed to first rise above the oceans?</strong></p> <p><em>(Theo các nhà địa chất học, khi nào các lục địa được cho là lần đầu tiên nhô lên khỏi đại dương?)</em></p>  <ul>     <li>❌ <strong>1 billion years ago.</strong> <br>          (1 tỷ năm trước.) <br>          → <em>Sai vì bài đọc đề cập rằng các lục địa lần đầu tiên nhô lên khoảng 3 tỷ năm trước.</em>     </li>     <li>❌ <strong>2 billion years ago.</strong> <br>          (2 tỷ năm trước.) <br>          → <em>Sai vì các nhà khoa học trước đây cho rằng điều này xảy ra khoảng 2 tỷ năm trước, nhưng nghiên cứu mới đã sửa lại là 3 tỷ năm trước.</em>     </li>     <li>✅ <strong>3 billion years ago.</strong> <br>          (3 tỷ năm trước.) <br>          → <em>Đúng vì đoạn đầu bài đọc có câu: "The continents may have first risen high above the oceans of the world about 3 billion years ago."</em>     </li>     <li>❌ <strong>4 billion years ago.</strong> <br>          (4 tỷ năm trước.) <br>          → <em>Sai vì không có thông tin nào trong bài đọc cho thấy các lục địa xuất hiện sớm như vậy.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: What is true about the continents?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. They are made of thick and underlying crust.															</div>
+																				<div class="ps-4 mb-2">
+																	B. They rise about four miles above the seafloor.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Their crust is dense and has average thickness.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Their crust is five times thicker than the ocean floor crust.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What is true about the continents?</strong></p> <p><em>(Điều nào đúng về các lục địa?)</em></p>  <ul>     <li>❌ <strong>They rise about four miles above the seafloor.</strong> <br>          (Chúng nhô lên khoảng 4 dặm so với đáy biển.) <br>          → <em>Sai vì bài đọc đề cập rằng các lục địa nhô lên trung bình khoảng 2,5 dặm (~4km), không phải 4 dặm.</em>     </li>     <li>✅ <strong>Their crust is five times thicker than the ocean floor crust.</strong> <br>          (Vỏ của chúng dày gấp 5 lần vỏ đáy đại dương.) <br>          → <em>Đúng vì bài đọc nói rằng vỏ lục địa dày trung bình 35 km, trong khi vỏ đại dương chỉ dày khoảng 7 km (35 km / 7 km = 5 lần).</em>     </li>     <li>❌ <strong>They are made of thick and underlying crust.</strong> <br>          (Chúng được tạo thành từ lớp vỏ dày và nằm bên dưới.) <br>          → <em>Sai vì "underlying crust" không chính xác trong ngữ cảnh này. Bài đọc mô tả vỏ lục địa dày và nổi (buoyant), không phải nằm bên dưới.</em>     </li>     <li>❌ <strong>Their crust is dense and has average thickness.</strong> <br>          (Vỏ của chúng đặc và có độ dày trung bình.) <br>          → <em>Sai vì vỏ lục địa có mật độ thấp hơn vỏ đại dương và dày hơn đáng kể, không phải có "độ dày trung bình".</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What can be claimed about the time continents were formed?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It is beyond human’s knowledge.															</div>
+																				<div class="ps-4 mb-2">
+																	B. It is put forward in a contest.															</div>
+																				<div class="ps-4 mb-2">
+																	C. It was dated from the earliest days.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. It is subject to argument.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What can be claimed about the time continents were formed?</strong></p> <p><em>(Điều gì có thể được khẳng định về thời điểm các lục địa được hình thành?)</em></p>  <ul>     <li>❌ <strong>It was dated from the earliest days.</strong> <br>          (Nó được xác định từ những ngày đầu tiên.) <br>          → <em>Sai vì bài đọc nói rằng thời điểm các lục địa hình thành vẫn đang được tranh luận, không phải từ những ngày đầu tiên của Trái Đất.</em>     </li>     <li>❌ <strong>It is put forward in a contest.</strong> <br>          (Nó được đưa ra trong một cuộc thi.) <br>          → <em>Sai vì không có cuộc thi nào liên quan đến việc xác định thời điểm hình thành lục địa.</em>     </li>     <li>✅ <strong>It is subject to argument.</strong> <br>          (Nó vẫn còn là một vấn đề tranh luận.) <br>          → <em>Đúng vì bài đọc đề cập rằng thời điểm hình thành lục địa vẫn là một vấn đề gây tranh cãi giữa các nhà khoa học.</em>     </li>     <li>❌ <strong>It is beyond human’s knowledge.</strong> <br>          (Nó vượt quá sự hiểu biết của con người.) <br>          → <em>Sai vì các nhà khoa học đã có một số giả thuyết và nghiên cứu về vấn đề này, dù vẫn còn tranh cãi.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What does the phrase “To shed light on” in paragraph (A) mean?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. To ignite															</div>
+																				<div class="ps-4 mb-2">
+																	B. To release															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. To clarify</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. To illustrate															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does the phrase “To shed light on” in paragraph (A) mean?</strong></p> <p><em>(Cụm từ "To shed light on" trong đoạn (A) có nghĩa là gì?)</em></p>  <ul>     <li>✅ <strong>To clarify.</strong> <br>          (Làm rõ.) <br>          → <em>Đúng vì "To shed light on" có nghĩa là giúp làm sáng tỏ hoặc giải thích một vấn đề.</em>     </li>     <li>❌ <strong>To ignite.</strong> <br>          (Châm ngòi, đốt cháy.) <br>          → <em>Sai vì "shed light on" không liên quan đến việc tạo ra lửa hay kích thích một phản ứng.</em>     </li>     <li>❌ <strong>To illustrate.</strong> <br>          (Minh họa.) <br>          → <em>Sai vì "illustrate" có nghĩa là cung cấp hình ảnh hoặc ví dụ, nhưng không mang nghĩa giải thích cặn kẽ.</em>     </li>     <li>❌ <strong>To release.</strong> <br>          (Phát hành, giải phóng.) <br>          → <em>Sai vì "shed light on" không mang ý nghĩa giải phóng hay phát hành cái gì đó.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: According to the passage, how was the crust of the seafloor formed?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Through volcanic activity.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Through continental erosion.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Through tectonic compression.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Through silica deposition.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the passage, how was the crust of the seafloor formed?</strong></p> <p><em>(Theo bài đọc, vỏ đáy đại dương được hình thành như thế nào?)</em></p>  <ul>     <li>✅ <strong>Through volcanic activity.</strong> <br>          (Thông qua hoạt động núi lửa.) <br>          → <em>Đúng vì bài đọc đề cập rằng trong 2 tỷ năm đầu tiên của lịch sử Trái Đất, hoạt động núi lửa đã tạo ra loại vỏ giống như vỏ đại dương ngày nay.</em>     </li>     <li>❌ <strong>Through continental erosion.</strong> <br>          (Thông qua quá trình xói mòn lục địa.) <br>          → <em>Sai vì bài đọc không đề cập đến việc xói mòn lục địa là nguyên nhân hình thành vỏ đại dương.</em>     </li>     <li>❌ <strong>Through silica deposition.</strong> <br>          (Thông qua quá trình lắng đọng silica.) <br>          → <em>Sai vì bài đọc chỉ nói silica giàu trong vỏ lục địa, không liên quan đến sự hình thành vỏ đại dương.</em>     </li>     <li>❌ <strong>Through tectonic compression.</strong> <br>          (Thông qua sự nén của kiến tạo địa chất.) <br>          → <em>Sai vì bài đọc không đề cập đến sự nén kiến tạo là nguyên nhân chính của sự hình thành vỏ đại dương.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: What happens when magma cools and crystallizes?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Strontium’s volume boosts.															</div>
+																				<div class="ps-4 mb-2">
+																	B. The molten rock diminishes in silica.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. The volume of silica in rock extends.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Rubidium volume gradually plunges.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What happens when magma cools and crystallizes?</strong></p> <p><em>(Điều gì xảy ra khi magma nguội và kết tinh?)</em></p>  <ul>     <li>❌ <strong>The molten rock diminishes in silica.</strong> <br>          (Đá nóng chảy giảm hàm lượng silica.) <br>          → <em>Sai vì bài đọc nói rằng khi magma nguội, lượng silica trong đá tăng lên, không giảm đi.</em>     </li>     <li>✅ <strong>The volume of silica in rock extends.</strong> <br>          (Lượng silica trong đá tăng lên.) <br>          → <em>Đúng vì bài đọc nêu rõ rằng khi magma nguội và kết tinh, phần còn lại của đá nóng chảy trở nên giàu silica hơn.</em>     </li>     <li>❌ <strong>Strontium’s volume boosts.</strong> <br>          (Lượng strontium tăng lên.) <br>          → <em>Sai vì bài đọc đề cập rằng khi magma nguội, tỷ lệ rubidium và strontium thay đổi, nhưng không nói rằng strontium tăng lên.</em>     </li>     <li>❌ <strong>Rubidium volume gradually plunges.</strong> <br>          (Lượng rubidium giảm dần.) <br>          → <em>Sai vì bài đọc nói rằng lượng rubidium tăng lên khi magma nguội, chứ không giảm.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What can be inferred from the sentence “The thick, buoyant nature of these chunks of crust would have made them rise high above what became the seafloor” in paragraph (B)?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The thick and buoyant chunks of crust are the cause of seafloor rising.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. The seafloor is composed of comparatively thin crust.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. The thick and floating crust rose lower than what made the seafloor.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Floating crust supported the continents to rise from the oceans.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What can be inferred from the sentence “The thick, buoyant nature of these chunks of crust would have made them rise high above what became the seafloor” in paragraph (B)?</strong></p> <p><em>(Có thể suy ra điều gì từ câu “Bản chất dày và nổi của những mảng vỏ này sẽ khiến chúng nổi cao trên những gì trở thành đáy biển” trong đoạn (B)?)</em></p>  <ul>     <li>✅ <strong>The seafloor is composed of comparatively thin crust.</strong> <br>          (Đáy đại dương được cấu tạo từ lớp vỏ mỏng hơn tương đối.) <br>          → <em>Đúng vì bài đọc đề cập rằng vỏ lục địa dày khoảng 35 km, trong khi vỏ đại dương chỉ khoảng 7 km, cho thấy vỏ đại dương mỏng hơn nhiều.</em>     </li>     <li>❌ <strong>The thick and floating crust rose lower than what made the seafloor.</strong> <br>          (Lớp vỏ dày và nổi lên thấp hơn so với đáy biển.) <br>          → <em>Sai vì bài đọc nói rằng lớp vỏ này nổi lên cao hơn đáy biển, không phải thấp hơn.</em>     </li>     <li>❌ <strong>Floating crust supported the continents to rise from the oceans.</strong> <br>          (Lớp vỏ nổi hỗ trợ lục địa trồi lên từ đại dương.) <br>          → <em>Sai vì không có thông tin nào trong bài đọc nói rằng lớp vỏ nổi đã hỗ trợ lục địa trồi lên.</em>     </li>     <li>❌ <strong>The thick and buoyant chunks of crust are the cause of seafloor rising.</strong> <br>          (Những mảng vỏ dày và nổi là nguyên nhân khiến đáy biển nâng lên.) <br>          → <em>Sai vì bài đọc nói rằng vỏ lục địa dày nổi cao trên đáy biển, không phải làm đáy biển nâng lên.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: What is “accompanying” in paragraph (C) closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Supplementary</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Following															</div>
+																				<div class="ps-4 mb-2">
+																	C. Cooperating															</div>
+																				<div class="ps-4 mb-2">
+																	D. Concurrent															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What is “accompanying” in paragraph (C) closest in meaning to?</strong></p> <p><em>(Từ "accompanying" trong đoạn (C) có nghĩa gần nhất với từ nào?)</em></p>  <ul>     <li>❌ <strong>Cooperating.</strong> <br>          (Hợp tác.) <br>          → <em>Sai vì "accompanying" không mang ý nghĩa hợp tác, mà là đi kèm với điều gì đó.</em>     </li>     <li>❌ <strong>Concurrent.</strong> <br>          (Đồng thời.) <br>          → <em>Sai vì "concurrent" có nghĩa là xảy ra cùng lúc, nhưng không có nghĩa là đi kèm.</em>     </li>     <li>✅ <strong>Supplementary.</strong> <br>          (Bổ sung, đi kèm.) <br>          → <em>Đúng vì trong bài đọc, "accompanying" được dùng để mô tả bài báo bổ sung thêm thông tin về nghiên cứu.</em>     </li>     <li>❌ <strong>Following.</strong> <br>          (Theo sau.) <br>          → <em>Sai vì "following" chỉ có nghĩa là đi sau hoặc tiếp theo, không mang nghĩa bổ sung.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What can be concluded from the passage about the appearance of continental crust about 3 billion years ago?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The movement of the rock plates finally made up the minority of continental crust.															</div>
+																				<div class="ps-4 mb-2">
+																	B. The moment plate tectonics began properly marked the appearance of continental crust.															</div>
+																				<div class="ps-4 mb-2">
+																	C. No theory can be proposed for the reason why continental crust occurred three billion years ago.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. That the plate tectonics moved over the Earth’s outer layer probably helps form lots of the continental crust.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What can be concluded from the passage about the appearance of continental crust about 3 billion years ago?</strong></p> <p><em>(Điều gì có thể được kết luận từ bài đọc về sự xuất hiện của vỏ lục địa khoảng 3 tỷ năm trước?)</em></p>  <ul>     <li>❌ <strong>The moment plate tectonics began properly marked the appearance of continental crust.</strong> <br>          (Thời điểm kiến tạo mảng bắt đầu chính thức đánh dấu sự xuất hiện của vỏ lục địa.) <br>          → <em>Sai vì bài đọc nói rằng kiến tạo mảng có thể là một nguyên nhân, nhưng không khẳng định đó là dấu mốc cụ thể cho sự xuất hiện của vỏ lục địa.</em>     </li>     <li>✅ <strong>That the plate tectonics moved over the Earth’s outer layer probably helps form lots of the continental crust.</strong> <br>          (Việc các mảng kiến tạo di chuyển trên lớp ngoài của Trái Đất có thể giúp hình thành nhiều vỏ lục địa.) <br>          → <em>Đúng vì bài đọc đề cập rằng sự chuyển động của các mảng kiến tạo có thể đã đẩy đá ướt xuống lớp trong của Trái Đất, góp phần tạo ra magma giàu silica - thành phần chính của vỏ lục địa.</em>     </li>     <li>❌ <strong>No theory can be proposed for the reason why continental crust occurred three billion years ago.</strong> <br>          (Không có giả thuyết nào được đưa ra để giải thích lý do vỏ lục địa xuất hiện cách đây 3 tỷ năm.) <br>          → <em>Sai vì bài đọc có đưa ra một số giả thuyết về kiến tạo mảng là nguyên nhân tiềm năng.</em>     </li>     <li>❌ <strong>The movement of the rock plates finally made up the minority of continental crust.</strong> <br>          (Sự chuyển động của các mảng đá cuối cùng chỉ tạo ra một phần nhỏ của vỏ lục địa.) <br>          → <em>Sai vì bài đọc không nói rằng sự chuyển động của các mảng kiến tạo chỉ đóng góp một phần nhỏ vào sự hình thành vỏ lục địa.</em>     </li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: Which of the following best describes the organization of this passage?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. A general presentation followed by a detailed discussion of both sides of an issue.															</div>
+																				<div class="ps-4 mb-2">
+																	B. A discussion of different aspects raised from some theories about the question.															</div>
+																				<div class="ps-4 mb-2">
+																	C. A list of possible explanations to a question followed by a detailed discussion.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. A general statement of an issue followed by detailed possible explanations.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following best describes the organization of this passage?</strong></p> <p><em>(Cách tổ chức của bài đọc này được mô tả tốt nhất bằng phương án nào?)</em></p>  <ul>     <li>❌ <strong>A general presentation followed by a detailed discussion of both sides of an issue.</strong> <br>          (Một phần giới thiệu chung, sau đó là thảo luận chi tiết về hai mặt của một vấn đề.) <br>          → <em>Sai vì bài đọc không đề cập đến hai mặt của một vấn đề mà chỉ tập trung vào sự hình thành của vỏ lục địa.</em>     </li>     <li>✅ <strong>A general statement of an issue followed by detailed possible explanations.</strong> <br>          (Một tuyên bố chung về một vấn đề, sau đó là các lời giải thích chi tiết có thể có.) <br>          → <em>Đúng vì bài đọc bắt đầu bằng việc giới thiệu về sự xuất hiện của vỏ lục địa, sau đó cung cấp các giả thuyết và lời giải thích chi tiết.</em>     </li>     <li>❌ <strong>A list of possible explanations to a question followed by a detailed discussion.</strong> <br>          (Một danh sách các lời giải thích có thể có cho một câu hỏi, sau đó là một cuộc thảo luận chi tiết.) <br>          → <em>Sai vì bài đọc không chỉ liệt kê danh sách các giả thuyết mà còn trình bày thông tin theo trình tự logic.</em>     </li>     <li>❌ <strong>A discussion of different aspects raised from some theories about the question.</strong> <br>          (Một cuộc thảo luận về các khía cạnh khác nhau được nêu ra từ một số lý thuyết về câu hỏi.) <br>          → <em>Sai vì bài đọc tập trung vào một vấn đề cụ thể và không trình bày nhiều khía cạnh từ các lý thuyết khác nhau.</em>     </li> </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

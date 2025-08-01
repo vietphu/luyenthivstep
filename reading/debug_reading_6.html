@@ -1,0 +1,642 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 06 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R76845				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> The development of jazz can be seen as part of the larger continuum of American popular music, especially dance music. In the twenties, jazz became the hottest new thing in dance music, much as ragtime had at the turn of the century, and as would rhythm and blues in the fifties, rock in the fifties, and disco in the seventies.</p><p><b>(B)</b> But two characteristics distinguish jazz from other dance music. The first is <b>improvisation</b>, the changing of a musical phrase according to the player's inspiration. Like all artists, jazz musicians strive for an individual style, and the improvise or paraphrase is a jazz musician's main opportunity to display his or her individuality. In early jazz, musicians often improvised melodies collectively, thus creating a kind of <b>polyphony</b>. There was little soloing as such, although some New Orleans players, particularly <b>cornet player</b> Buddy Bolden, achieved local fame for their ability to improvise a solo. Later the idea of the chorus-long or <b>multichorus </b>solo took hold. Louis Armstrong's instrumental brilliance, demonstrated through extended solos, was a major influence in this development. Even in the early twenties, however, some jazz bands had featured soloists. Similarly, show orchestras and carnival bands often included one or two such <b>"get-off'' musicians</b>. Unimproved, completely structured jazz does exist, but the ability of the best jazz musicians to create music of great cohesion and beauty during performance has been a hallmark of the music and its major source of inspiration and change.</p><p><b>(C)</b> The second distinguishing characteristic of jazz is a rhythmic drive that was initially called "hot" and later "swing". In playing hot, a musician <b>consciously </b>departs from strict meter to create a relaxed sense of phrasing that also emphasizes the underlying rhythms. ("Rough" tone and use of moderate vibrato also contributed to a hot sound.) Not all jazz is hot, however, many early bands played <b>unadorned </b>published arrangements of popular songs. Still, the proclivity to play hot distinguished the jazz musician from other instrumentalists.</p>	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Sự phát triển của nhạc jazz có thể được xem như một phần của dòng chảy rộng lớn hơn trong nền âm nhạc đại chúng Mỹ, đặc biệt là nhạc khiêu vũ. Vào những năm 1920, jazz trở thành xu hướng mới nóng nhất trong âm nhạc khiêu vũ, giống như ragtime vào đầu thế kỷ, hay như rhythm and blues vào những năm 1950, rock vào những năm 1950, và disco vào những năm 1970.</p>  <p><b>(B)</b> Nhưng có hai đặc điểm giúp jazz khác biệt với các thể loại nhạc khiêu vũ khác. Đầu tiên là <b>ngẫu hứng</b>, tức là thay đổi một cụm nhạc dựa theo cảm hứng của người chơi. Giống như mọi nghệ sĩ khác, nhạc sĩ jazz luôn hướng tới một phong cách cá nhân, và việc ngẫu hứng hoặc phóng tác chính là cơ hội chính để họ thể hiện dấu ấn cá nhân của mình. Trong jazz thời kỳ đầu, các nhạc sĩ thường cùng nhau ngẫu hứng giai điệu, tạo ra một dạng <b>đa âm</b>. Khi đó, ít có phần độc tấu, mặc dù một số nghệ sĩ New Orleans, đặc biệt là <b>nghệ sĩ kèn cornet</b> Buddy Bolden, đã nổi danh ở địa phương nhờ khả năng ngẫu hứng solo của họ. Sau này, khái niệm độc tấu kéo dài trong một đoạn nhạc hoặc <b>độc tấu nhiều đoạn</b> trở nên phổ biến. Tài năng xuất chúng của Louis Armstrong, được thể hiện qua các phần độc tấu kéo dài, đã có ảnh hưởng lớn đến sự phát triển này. Tuy nhiên, ngay từ đầu những năm 1920, một số ban nhạc jazz đã có những nghệ sĩ độc tấu. Tương tự, các dàn nhạc sân khấu và ban nhạc lễ hội cũng thường có một hoặc hai <b>nghệ sĩ "bứt phá"</b> như vậy. Nhạc jazz không ngẫu hứng và hoàn toàn theo cấu trúc cũng tồn tại, nhưng khả năng của những nhạc sĩ jazz xuất sắc trong việc tạo ra âm nhạc gắn kết và đầy cảm hứng ngay trong khi biểu diễn đã trở thành dấu ấn của dòng nhạc này, đồng thời là nguồn cảm hứng và sự đổi mới chính.</p>  <p><b>(C)</b> Đặc điểm thứ hai giúp jazz trở nên khác biệt là nhịp điệu mạnh mẽ, ban đầu được gọi là "hot" và sau này là "swing". Khi chơi theo phong cách "hot", một nhạc sĩ <b>cố ý</b> phá vỡ nhịp điệu cứng nhắc để tạo ra cảm giác phrasing thư giãn nhưng vẫn nhấn mạnh nhịp nền. (Âm thanh "thô ráp" và việc sử dụng rung nhẹ cũng góp phần tạo nên phong cách hot.) Tuy nhiên, không phải tất cả nhạc jazz đều theo phong cách hot; nhiều ban nhạc thời kỳ đầu chỉ chơi những bản phối đơn giản của các bài hát phổ biến. Dù vậy, khuynh hướng chơi theo phong cách hot đã giúp nhạc sĩ jazz khác biệt với những nghệ sĩ nhạc cụ khác.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>(A)</b> The development of jazz can be seen as part of the larger continuum of American popular music, especially dance music. In the twenties, jazz became the hottest new thing in dance music, much as ragtime had at the turn of the century, and as would rhythm and blues in the fifties, rock in the fifties, and disco in the seventies.</p><p><b>(B)</b> But two characteristics distinguish jazz from other dance music. The first is <b>improvisation</b>, the changing of a musical phrase according to the player's inspiration. Like all artists, jazz musicians strive for an individual style, and the improvise or paraphrase is a jazz musician's main opportunity to display his or her individuality. In early jazz, musicians often improvised melodies collectively, thus creating a kind of <b>polyphony</b>. There was little soloing as such, although some New Orleans players, particularly <b>cornet player</b> Buddy Bolden, achieved local fame for their ability to improvise a solo. Later the idea of the chorus-long or <b>multichorus </b>solo took hold. Louis Armstrong's instrumental brilliance, demonstrated through extended solos, was a major influence in this development. Even in the early twenties, however, some jazz bands had featured soloists. Similarly, show orchestras and carnival bands often included one or two such <b>"get-off'' musicians</b>. Unimproved, completely structured jazz does exist, but the ability of the best jazz musicians to create music of great cohesion and beauty during performance has been a hallmark of the music and its major source of inspiration and change.</p><p><b>(C)</b> The second distinguishing characteristic of jazz is a rhythmic drive that was initially called "hot" and later "swing". In playing hot, a musician <b>consciously </b>departs from strict meter to create a relaxed sense of phrasing that also emphasizes the underlying rhythms. ("Rough" tone and use of moderate vibrato also contributed to a hot sound.) Not all jazz is hot, however, many early bands played <b>unadorned </b>published arrangements of popular songs. Still, the proclivity to play hot distinguished the jazz musician from other instrumentalists.</p>			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: The passage answers which of the following questions?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Why is dancing closely related to popular music in the United States?															</div>
+																				<div class="ps-4 mb-2">
+																	B. What instruments comprised a typical jazz band of the 1920's?															</div>
+																				<div class="ps-4 mb-2">
+																	C. Which early jazz musicians most influenced rhythmand blues music?															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. What are the differences between jazz and other forms of music?</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The passage answers which of the following questions?</strong> (Bài đọc trả lời câu hỏi nào sau đây?)</p>  
+                     <ul>     
+                         <li>❌ <strong>Which early jazz musicians most influenced rhythm and blues music?</strong> (Những nhạc sĩ jazz thời kỳ đầu nào có ảnh hưởng lớn nhất đến nhạc rhythm and blues?)  
+                             → Sai vì bài đọc không đề cập cụ thể đến sự ảnh hưởng của nhạc sĩ jazz đối với rhythm and blues, mà chỉ nói về sự phát triển của jazz trong bối cảnh âm nhạc đại chúng Mỹ.  
+                         </li>     
+                         <li>✅ <strong>What are the differences between jazz and other forms of music?</strong> (Những điểm khác biệt giữa jazz và các thể loại nhạc khác là gì?)  
+                             → Đúng vì bài đọc tập trung vào hai đặc điểm chính giúp phân biệt jazz với các thể loại nhạc khác: **ngẫu hứng (improvisation)** và **nhịp điệu mạnh mẽ (rhythmic drive)**.  
+                         </li>     
+                         <li>❌ <strong>Why is dancing closely related to popular music in the United States?</strong> (Tại sao khiêu vũ có mối liên hệ mật thiết với nhạc đại chúng ở Mỹ?)  
+                             → Sai vì bài đọc có đề cập đến nhạc jazz như một phần của dòng nhạc khiêu vũ, nhưng không tập trung giải thích mối quan hệ giữa khiêu vũ và nhạc đại chúng.  
+                         </li>     
+                         <li>❌ <strong>What instruments comprised a typical jazz band of the 1920's?</strong> (Những nhạc cụ nào tạo nên một ban nhạc jazz điển hình vào những năm 1920?)  
+                             → Sai vì bài đọc không liệt kê cụ thể các nhạc cụ trong một ban nhạc jazz thập niên 1920.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: Which ofthe following appeared before jazz as a popular music for dancing?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Ragtime</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Rhythm and blues 															</div>
+																				<div class="ps-4 mb-2">
+																	C. Rock 															</div>
+																				<div class="ps-4 mb-2">
+																	D. Disco 															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following appeared before jazz as a popular music for dancing?</strong> (Thể loại nhạc nào sau đây xuất hiện trước jazz như một dòng nhạc khiêu vũ phổ biến?)</p>  
+                     <ul>     
+                         <li>❌ <strong>Disco</strong> (Nhạc disco)  
+                             → Sai vì disco chỉ xuất hiện vào những năm 1970, trong khi jazz đã phổ biến từ những năm 1920.  
+                         </li>     
+                         <li>❌ <strong>Rock</strong> (Nhạc rock)  
+                             → Sai vì rock trở nên phổ biến vào những năm 1950, sau jazz.  
+                         </li>     
+                         <li>❌ <strong>Rhythm and blues</strong> (Nhạc R&amp;B)  
+                             → Sai vì rhythm and blues xuất hiện vào những năm 1950, muộn hơn jazz rất nhiều.  
+                         </li>     
+                         <li>✅ <strong>Ragtime</strong> (Nhạc ragtime)  
+                             → Đúng vì đoạn (A) có đề cập rằng "In the twenties, jazz became the hottest new thing in dance music, much as ragtime had at the turn of the century." ("Vào những năm 1920, jazz trở thành xu hướng mới trong nhạc khiêu vũ, giống như ragtime vào đầu thế kỷ.") Điều này chứng tỏ ragtime đã xuất hiện trước jazz như một thể loại nhạc khiêu vũ phổ biến.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: According to the passage, jazz musicians are able to demonstrate their individualartistry mainly by?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. creating musical variations while performing</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. reading music with great skill															</div>
+																				<div class="ps-4 mb-2">
+																	C. being able to play all types of popular music															</div>
+																				<div class="ps-4 mb-2">
+																	D. preparing musical arrangements															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the passage, jazz musicians are able to demonstrate their individual artistry mainly by?</strong> (Theo bài đọc, các nhạc sĩ jazz có thể thể hiện nghệ thuật cá nhân của họ chủ yếu bằng cách nào?)</p>  
+                     <ul>     
+                         <li>✅ <strong>Creating musical variations while performing</strong> (Tạo ra các biến tấu âm nhạc trong khi biểu diễn)  
+                             → Đúng vì đoạn (B) nói rằng "The first is <b>improvisation</b>, the changing of a musical phrase according to the player's inspiration." ("Đặc điểm đầu tiên là <b>ngẫu hứng</b>, tức là thay đổi một cụm nhạc dựa theo cảm hứng của người chơi.") Điều này chứng tỏ nhạc sĩ jazz thể hiện cá tính nghệ thuật của mình thông qua việc tạo ra các biến tấu trong khi chơi nhạc.  
+                         </li>     
+                         <li>❌ <strong>Preparing musical arrangements</strong> (Chuẩn bị bản phối nhạc)  
+                             → Sai vì bài đọc nhấn mạnh vào khả năng ngẫu hứng khi chơi nhạc chứ không phải việc chuẩn bị bản phối từ trước.  
+                         </li>     
+                         <li>❌ <strong>Reading music with great skill</strong> (Đọc nhạc một cách điêu luyện)  
+                             → Sai vì mặc dù kỹ năng đọc nhạc quan trọng, nhưng điều làm cho nhạc jazz đặc biệt là sự ứng biến chứ không phải chỉ đơn thuần đọc nhạc một cách chính xác.  
+                         </li>     
+                         <li>❌ <strong>Being able to play all types of popular music</strong> (Có thể chơi tất cả các thể loại nhạc đại chúng)  
+                             → Sai vì bài đọc không đề cập đến việc nhạc sĩ jazz phải có khả năng chơi tất cả các thể loại nhạc đại chúng.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: Which of the following was the function of "get-off" musicians?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Assist the other band members in packing up after a performance															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Provide solo performances in a band or orchestra</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Teach dance routines created for new music															</div>
+																				<div class="ps-4 mb-2">
+																	D. Lead the band															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following was the function of "get-off" musicians?</strong> (Chức năng của các nhạc sĩ "get-off" là gì?)</p>  
+                     <ul>     
+                         <li>❌ <strong>Assist the other band members in packing up after a performance</strong> (Hỗ trợ các thành viên khác trong ban nhạc thu dọn sau buổi biểu diễn)  
+                             → Sai vì "get-off" musicians không liên quan đến công việc hậu cần sau buổi diễn, mà là những nghệ sĩ độc tấu.  
+                         </li>     
+                         <li>❌ <strong>Teach dance routines created for new music</strong> (Dạy các động tác nhảy được tạo ra cho nhạc mới)  
+                             → Sai vì bài đọc không đề cập đến việc những nhạc sĩ này tham gia vào việc dạy nhảy.  
+                         </li>     
+                         <li>❌ <strong>Lead the band</strong> (Dẫn dắt ban nhạc)  
+                             → Sai vì "get-off" musicians không phải là nhạc trưởng hay người dẫn dắt ban nhạc.  
+                         </li>     
+                         <li>✅ <strong>Provide solo performances in a band or orchestra</strong> (Biểu diễn độc tấu trong một ban nhạc hoặc dàn nhạc)  
+                             → Đúng vì đoạn (B) nói rằng "Similarly, show orchestras and carnival bands often included one or two such <b>‘get-off’ musicians</b>." ("Tương tự, các dàn nhạc sân khấu và ban nhạc lễ hội cũng thường có một hoặc hai <b>nhạc sĩ 'get-off'</b>.") Điều này cho thấy những nhạc sĩ này có vai trò biểu diễn độc tấu trong ban nhạc hoặc dàn nhạc.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: Which two types of music emerged during the same era?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Jazz/Dance</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Dance/Rhythm &amp; Blues															</div>
+																				<div class="ps-4 mb-2">
+																	C. Rock/Rhythm &amp; Blues															</div>
+																				<div class="ps-4 mb-2">
+																	D. Jazz/Rock															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which two types of music emerged during the same era?</strong> (Hai thể loại nhạc nào xuất hiện trong cùng một thời kỳ?)</p>  
+                     <ul>     
+                         <li>✅ <strong>Jazz/Dance</strong> (Nhạc jazz và nhạc khiêu vũ)  
+                             → Đúng vì đoạn (A) nói rằng "In the twenties, jazz became the hottest new thing in dance music." ("Vào những năm 1920, jazz trở thành xu hướng mới nhất trong nhạc khiêu vũ.") Điều này cho thấy jazz và nhạc khiêu vũ cùng phát triển trong cùng một thời kỳ.  
+                         </li>     
+                         <li>❌ <strong>Rock/Rhythm &amp; Blues</strong> (Nhạc rock và nhạc R&amp;B)  
+                             → Sai vì rock và rhythm &amp; blues phát triển vào những năm 1950, muộn hơn jazz và nhạc khiêu vũ.  
+                         </li>     
+                         <li>❌ <strong>Dance/Rhythm &amp; Blues</strong> (Nhạc khiêu vũ và nhạc R&amp;B)  
+                             → Sai vì bài đọc không đề cập đến việc nhạc R&amp;B phát triển cùng thời với nhạc khiêu vũ.  
+                         </li>     
+                         <li>❌ <strong>Jazz/Rock</strong> (Nhạc jazz và nhạc rock)  
+                             → Sai vì rock chỉ xuất hiện vào những năm 1950, trong khi jazz đã phổ biến từ những năm 1920.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Louis Armstrong was mentioned as an influential musician in which jazz style?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Structured jazz															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Hot jazz / Swing jazz</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Big band jazz															</div>
+																				<div class="ps-4 mb-2">
+																	D. Chorus-based jazz															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Louis Armstrong was mentioned as an influential musician in which jazz style?</strong> (Louis Armstrong được nhắc đến như một nhạc sĩ có ảnh hưởng trong phong cách jazz nào?)</p>  
+                     <ul>     
+                         <li>✅ <strong>Hot jazz / Swing jazz</strong> (Nhạc jazz "hot" / Nhạc swing)  
+                             → Đúng vì đoạn (B) nói rằng "Louis Armstrong's instrumental brilliance, demonstrated through extended solos, was a major influence in this development." ("Tài năng xuất sắc của Louis Armstrong, được thể hiện qua các phần độc tấu kéo dài, đã có ảnh hưởng lớn đến sự phát triển này.") Điều này chứng tỏ ông có ảnh hưởng lớn đến phong cách **hot jazz và swing jazz**, vốn nhấn mạnh vào sự ngẫu hứng và nhịp điệu mạnh mẽ.  
+                         </li>     
+                         <li>❌ <strong>Chorus-based jazz</strong> (Nhạc jazz dựa trên đoạn điệp khúc)  
+                             → Sai vì bài đọc có đề cập đến "chorus-long or multichorus solo" nhưng không nói rằng Louis Armstrong là người phát triển riêng phong cách này.  
+                         </li>     
+                         <li>❌ <strong>Structured jazz</strong> (Nhạc jazz có cấu trúc chặt chẽ)  
+                             → Sai vì Louis Armstrong nổi tiếng với khả năng ngẫu hứng chứ không phải với nhạc jazz được sắp xếp chặt chẽ.  
+                         </li>     
+                         <li>❌ <strong>Big band jazz</strong> (Nhạc jazz dàn nhạc lớn)  
+                             → Sai vì "big band jazz" liên quan đến các dàn nhạc jazz lớn vào thập niên 1930-1940, trong khi Louis Armstrong được nhắc đến với vai trò tiên phong trong **hot jazz và swing jazz**.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: The word "consciously" is closest in meaning to						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. carelessly 															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. purposely</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. easily 															</div>
+																				<div class="ps-4 mb-2">
+																	D. periodically 															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "consciously" is closest in meaning to:</strong> (Từ "consciously" có nghĩa gần nhất với từ nào?)</p>  
+                     <ul>     
+                         <li>❌ <strong>carelessly</strong> (Một cách bất cẩn)  
+                             → Sai vì "carelessly" có nghĩa là làm điều gì đó không cẩn thận, trong khi "consciously" có nghĩa là có chủ đích.  
+                         </li>     
+                         <li>❌ <strong>easily</strong> (Một cách dễ dàng)  
+                             → Sai vì "easily" chỉ mức độ dễ dàng của hành động, trong khi "consciously" liên quan đến ý thức và chủ đích khi thực hiện.  
+                         </li>     
+                         <li>❌ <strong>periodically</strong> (Một cách định kỳ)  
+                             → Sai vì "periodically" đề cập đến điều gì đó xảy ra theo chu kỳ, không liên quan đến ý thức hay sự cố ý của người thực hiện.  
+                         </li>     
+                         <li>✅ <strong>purposely</strong> (Một cách có chủ đích)  
+                             → Đúng vì "consciously" có nghĩa là làm điều gì đó với sự nhận thức và chủ đích, đồng nghĩa với "purposely". Trong đoạn văn, "consciously" được dùng để mô tả cách nhạc sĩ jazz **cố ý** phá vỡ nhịp điệu truyền thống để tạo ra phong cách phrasing độc đáo.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: The word "unadorned" is closest in meaning to						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. lovely 															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. plain </span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. inexpensive															</div>
+																				<div class="ps-4 mb-2">
+																	D. disorganized 															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "unadorned" is closest in meaning to:</strong> (Từ "unadorned" có nghĩa gần nhất với từ nào?)</p>  
+                     <ul>     
+                         <li>❌ <strong>lovely</strong> (Đẹp, đáng yêu)  
+                             → Sai vì "unadorned" có nghĩa là không được trang trí, trong khi "lovely" lại mang nghĩa tích cực về mặt thẩm mỹ.  
+                         </li>     
+                         <li>✅ <strong>plain</strong> (Đơn giản, không trang trí)  
+                             → Đúng vì "unadorned" có nghĩa là không được tô điểm hoặc làm đẹp, giống với nghĩa của "plain". Trong bài đọc, từ này được dùng để mô tả những bản nhạc jazz đơn giản, không có sự biến tấu phức tạp.  
+                         </li>     
+                         <li>❌ <strong>disorganized</strong> (Lộn xộn, thiếu tổ chức)  
+                             → Sai vì "unadorned" không liên quan đến sự thiếu tổ chức, mà chỉ mô tả sự đơn giản, không có trang trí thêm.  
+                         </li>     
+                         <li>❌ <strong>inexpensive</strong> (Không đắt tiền)  
+                             → Sai vì "unadorned" không mang nghĩa về giá trị tiền bạc mà chỉ mô tả sự tối giản trong hình thức.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: Which of the following terms is defined in the passage?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. improvisation</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. multichorus															</div>
+																				<div class="ps-4 mb-2">
+																	C. polyphony 															</div>
+																				<div class="ps-4 mb-2">
+																	D. cornet player 															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following terms is defined in the passage?</strong> (Thuật ngữ nào sau đây được định nghĩa trong bài đọc?)</p>  
+                     <ul>     
+                         <li>✅ <strong>improvisation</strong> (Ngẫu hứng)  
+                             → Đúng vì đoạn (B) định nghĩa rõ ràng thuật ngữ này: "The first is <b>improvisation</b>, the changing of a musical phrase according to the player's inspiration." ("Đặc điểm đầu tiên là <b>ngẫu hứng</b>, tức là thay đổi một cụm nhạc dựa theo cảm hứng của người chơi.")  
+                         </li>     
+                         <li>❌ <strong>polyphony</strong> (Đa âm)  
+                             → Sai vì bài đọc có nhắc đến từ này nhưng không đưa ra định nghĩa rõ ràng, chỉ mô tả cách nó được sử dụng trong jazz.  
+                         </li>     
+                         <li>❌ <strong>cornet player</strong> (Nhạc công kèn cornet)  
+                             → Sai vì "cornet player" được dùng để mô tả nhạc sĩ Buddy Bolden nhưng không có định nghĩa cụ thể trong bài.  
+                         </li>     
+                         <li>❌ <strong>multichorus</strong> (Độc tấu nhiều đoạn)  
+                             → Sai vì thuật ngữ này được đề cập nhưng không có định nghĩa rõ ràng trong bài đọc.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: The topic of the passage is developed primarily by means of						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. providing biographies of famous musician															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. dividing the discussion into two major areas</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. describing historical events in sequence															</div>
+																				<div class="ps-4 mb-2">
+																	D. presenting contrasting points of views															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The topic of the passage is developed primarily by means of:</strong> (Chủ đề của bài đọc được phát triển chủ yếu bằng cách nào?)</p>  
+                     <ul>     
+                         <li>✅ <strong>dividing the discussion into two major areas</strong> (Chia cuộc thảo luận thành hai lĩnh vực chính)  
+                             → Đúng vì bài đọc chia nội dung thành hai đặc điểm chính giúp phân biệt jazz với các thể loại nhạc khác: **ngẫu hứng (improvisation)** và **nhịp điệu mạnh mẽ (rhythmic drive)**. Mỗi đặc điểm được trình bày trong một đoạn riêng biệt.  
+                         </li>     
+                         <li>❌ <strong>presenting contrasting points of views</strong> (Trình bày các quan điểm đối lập)  
+                             → Sai vì bài đọc không đưa ra các quan điểm trái ngược nhau về jazz mà chỉ mô tả các đặc điểm của thể loại này.  
+                         </li>     
+                         <li>❌ <strong>providing biographies of famous musicians</strong> (Cung cấp tiểu sử của các nhạc sĩ nổi tiếng)  
+                             → Sai vì bài đọc chỉ đề cập đến một số nhạc sĩ như Louis Armstrong và Buddy Bolden, nhưng không cung cấp tiểu sử đầy đủ của họ.  
+                         </li>     
+                         <li>❌ <strong>describing historical events in sequence</strong> (Mô tả các sự kiện lịch sử theo trình tự thời gian)  
+                             → Sai vì bài đọc không tập trung vào việc trình bày lịch sử phát triển của jazz theo trình tự thời gian mà nhấn mạnh vào các đặc điểm chính của thể loại này.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

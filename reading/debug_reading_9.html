@@ -1,0 +1,656 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 09 - Part 1				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R76870				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Beads were probably the first durable ornaments humans possessed, and the intimate relationship they had with their owners is reflected in the fact that beads are among the most common items found in ancient archaeological sites. In the past, just as today, men, women, and children <b>adorned</b> themselves with beads. In some cultures still, certain beads are often worn from birth until death, and then are buried with their owners for the afterlife. Abrasion due to daily wear alters the surface features of beads, and if they are buried for long, the effects of corrosion can further change their appearance. Thus, interest is imparted to the bead both by use and the effects of time.</p>
+
+<p><b>(B)</b> Besides their wearability, either as jewelry or incorporated into articles of <b>attire</b>, beads possess the desirable characteristics of every collectible: they are durable, portable, available in infinite variety, and often valuable in their original cultural context as well as in today's market. Pleasing to look at and touch, beads come in shapes, colors, and materials that almost compel one to handle them and to sort them.</p>
+
+<p><b>(C)</b> Beads are miniature bundles of secrets waiting to be revealed: their history, manufacture, cultural context, economic role, and ornamental use are all points of information one hopes to <b>unravel</b>. Even the most <b>mundane</b> beads may have traveled vast distances and witnessed many human experiences. The bead researcher must gather information from many diverse fields. In addition to having to be a generalist while specializing in what may seem to be a narrow field, the researcher is faced with the problem of primary materials that have little or no documentation. Many ancient beads that are of ethnographic interest have often been separated from their original cultural context.</p>
+
+<p><b>(D)</b> Though often regarded as the "small change of civilizations," beads have been a part of every culture, and they can often be used to date archaeological sites and to designate the degree of mercantile, technological, and cultural sophistication.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Hạt chuỗi có lẽ là món đồ trang sức bền đầu tiên mà con người sở hữu, và mối quan hệ gắn bó mật thiết giữa chúng với chủ nhân được phản ánh qua thực tế rằng hạt chuỗi là một trong những vật dụng phổ biến nhất được tìm thấy tại các địa điểm khảo cổ cổ đại. Ngày xưa cũng như ngày nay, đàn ông, phụ nữ và trẻ em đều <b>trang trí</b> bản thân bằng hạt chuỗi. Trong một số nền văn hóa, một số loại hạt chuỗi thậm chí còn được đeo từ khi sinh ra cho đến khi chết, và sau đó được chôn cùng với chủ nhân để sử dụng trong thế giới bên kia. Sự mài mòn do sử dụng hàng ngày có thể làm thay đổi bề mặt của hạt chuỗi, và nếu bị chôn vùi lâu dài, tác động của sự ăn mòn có thể khiến chúng biến đổi hơn nữa. Vì vậy, giá trị của hạt chuỗi không chỉ đến từ việc sử dụng mà còn từ dấu ấn của thời gian.</p>  <p><b>(B)</b> Ngoài đặc tính có thể đeo được, dù là trang sức hay được kết hợp vào các món đồ <b>trang phục</b>, hạt chuỗi còn có những đặc điểm hấp dẫn của một món đồ sưu tầm: chúng bền, dễ mang theo, có vô số biến thể, và thường có giá trị trong cả bối cảnh văn hóa nguyên bản cũng như trên thị trường ngày nay. Hạt chuỗi có tính thẩm mỹ cao và mang lại cảm giác dễ chịu khi chạm vào, với hình dạng, màu sắc và chất liệu đa dạng đến mức khiến người ta muốn cầm, ngắm nhìn và phân loại chúng.</p>  <p><b>(C)</b> Hạt chuỗi là những bí ẩn tí hon chờ được khám phá: lịch sử, quy trình chế tác, bối cảnh văn hóa, vai trò kinh tế và giá trị trang trí của chúng đều là những thông tin mà người ta mong muốn <b>lý giải</b>. Ngay cả những hạt chuỗi <b>bình thường</b> nhất cũng có thể đã đi qua những quãng đường dài và chứng kiến nhiều sự kiện của con người. Nhà nghiên cứu hạt chuỗi phải thu thập thông tin từ nhiều lĩnh vực khác nhau. Ngoài việc phải có kiến thức tổng quát trong khi chuyên sâu vào một lĩnh vực tưởng chừng như hẹp, họ còn phải đối mặt với vấn đề tài liệu gốc rất ít hoặc thậm chí không có. Nhiều hạt chuỗi cổ đại có giá trị dân tộc học thường đã bị tách rời khỏi bối cảnh văn hóa nguyên bản của chúng.</p>  <p><b>(D)</b> Dù thường được coi là "đơn vị tiền tệ nhỏ của các nền văn minh," hạt chuỗi đã xuất hiện trong mọi nền văn hóa, và chúng thường có thể được sử dụng để xác định niên đại của các địa điểm khảo cổ cũng như đánh giá mức độ phát triển thương mại, công nghệ và văn hóa.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>(A)</b> Beads were probably the first durable ornaments humans possessed, and the intimate relationship they had with their owners is reflected in the fact that beads are among the most common items found in ancient archaeological sites. In the past, just as today, men, women, and children <b>adorned</b> themselves with beads. In some cultures still, certain beads are often worn from birth until death, and then are buried with their owners for the afterlife. Abrasion due to daily wear alters the surface features of beads, and if they are buried for long, the effects of corrosion can further change their appearance. Thus, interest is imparted to the bead both by use and the effects of time.</p>
+
+<p><b>(B)</b> Besides their wearability, either as jewelry or incorporated into articles of <b>attire</b>, beads possess the desirable characteristics of every collectible: they are durable, portable, available in infinite variety, and often valuable in their original cultural context as well as in today's market. Pleasing to look at and touch, beads come in shapes, colors, and materials that almost compel one to handle them and to sort them.</p>
+
+<p><b>(C)</b> Beads are miniature bundles of secrets waiting to be revealed: their history, manufacture, cultural context, economic role, and ornamental use are all points of information one hopes to <b>unravel</b>. Even the most <b>mundane</b> beads may have traveled vast distances and witnessed many human experiences. The bead researcher must gather information from many diverse fields. In addition to having to be a generalist while specializing in what may seem to be a narrow field, the researcher is faced with the problem of primary materials that have little or no documentation. Many ancient beads that are of ethnographic interest have often been separated from their original cultural context.</p>
+
+<p><b>(D)</b> Though often regarded as the "small change of civilizations," beads have been a part of every culture, and they can often be used to date archaeological sites and to designate the degree of mercantile, technological, and cultural sophistication.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What is the main subject of the passage?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. The reasons for studying beads</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Different types of beads															</div>
+																				<div class="ps-4 mb-2">
+																	C. How beads are made															</div>
+																				<div class="ps-4 mb-2">
+																	D. Materials used in making beads															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What is the main subject of the passage?</strong> (Chủ đề chính của bài đọc là gì?)</p>  
+                     <ul>     
+                         <li>❌ <strong>Materials used in making beads</strong> (Các vật liệu được sử dụng để làm hạt chuỗi)  
+                             → Sai vì bài đọc không tập trung vào các loại vật liệu để làm hạt chuỗi mà đề cập đến vai trò của chúng trong văn hóa và khảo cổ học.  
+                         </li>     
+                         <li>❌ <strong>How beads are made</strong> (Cách làm hạt chuỗi)  
+                             → Sai vì bài đọc không mô tả chi tiết quy trình sản xuất hạt chuỗi mà tập trung vào ý nghĩa và giá trị của chúng.  
+                         </li>     
+                         <li>✅ <strong>The reasons for studying beads</strong> (Những lý do để nghiên cứu hạt chuỗi)  
+                             → Đúng vì bài đọc trình bày nhiều khía cạnh khác nhau về hạt chuỗi, bao gồm ý nghĩa khảo cổ học, văn hóa, lịch sử và giá trị nghiên cứu của chúng. Đoạn (C) nhấn mạnh rằng: "Beads are miniature bundles of secrets waiting to be revealed" ("Hạt chuỗi là những bí ẩn tí hon chờ được khám phá"), cho thấy mục tiêu của bài viết là nhấn mạnh lý do và tầm quan trọng của việc nghiên cứu hạt chuỗi.  
+                         </li>     
+                         <li>❌ <strong>Different types of beads</strong> (Các loại hạt chuỗi khác nhau)  
+                             → Sai vì bài đọc không tập trung vào việc phân loại các loại hạt chuỗi mà chủ yếu nói về ý nghĩa của chúng trong lịch sử và khảo cổ học.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: The word "adorned" in paragraph (A) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. embellished															</div>
+																				<div class="ps-4 mb-2">
+																	B. enhanced															</div>
+																				<div class="ps-4 mb-2">
+																	C. ornamented															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. decorated</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "adorned" in paragraph (A) is closest in meaning to?</strong> (Từ "adorned" trong đoạn (A) có nghĩa gần nhất với từ nào?)</p>  
+                     <ul>     
+                         <li>❌ <strong>enhanced</strong> (Nâng cao, cải thiện)  
+                             → Sai vì "enhanced" có nghĩa là cải thiện hoặc làm cho thứ gì đó trở nên tốt hơn, trong khi "adorned" có nghĩa là trang trí, làm đẹp.  
+                         </li>     
+                         <li>✅ <strong>decorated</strong> (Trang trí)  
+                             → Đúng vì đoạn (A) viết: "men, women, and children <b>adorned</b> themselves with beads." ("Đàn ông, phụ nữ và trẻ em đều <b>trang trí</b> bản thân bằng hạt chuỗi.") Trong ngữ cảnh này, "adorned" có nghĩa là làm đẹp hoặc trang trí bằng cách đeo hạt chuỗi, và từ đồng nghĩa phù hợp nhất là "decorated".  
+                         </li>     
+                         <li>❌ <strong>embellished</strong> (Tô điểm, thêm thắt)  
+                             → Sai vì "embellished" thường mang ý nghĩa thêm chi tiết hoặc làm cho thứ gì đó trở nên đẹp hơn với những yếu tố bổ sung, nhưng không hoàn toàn đồng nghĩa với "adorned" trong ngữ cảnh này.  
+                         </li>     
+                         <li>❌ <strong>ornamented</strong> (Trang trí công phu)  
+                             → Sai vì "ornamented" thường mang ý nghĩa trang trí công phu hoặc có nhiều chi tiết phức tạp, trong khi "adorned" chỉ đơn giản là làm đẹp bằng hạt chuỗi.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: The word "attire" in paragraph (B) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. ritual															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. clothing</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. importance															</div>
+																				<div class="ps-4 mb-2">
+																	D. history															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "attire" in paragraph (B) is closest in meaning to?</strong> (Từ "attire" trong đoạn (B) có nghĩa gần nhất với từ nào?)</p>  
+                     <ul>     
+                         <li>❌ <strong>ritual</strong> (Nghi lễ)  
+                             → Sai vì "ritual" liên quan đến các nghi thức hoặc phong tục, trong khi "attire" đề cập đến quần áo hoặc trang phục.  
+                         </li>     
+                         <li>❌ <strong>importance</strong> (Tầm quan trọng)  
+                             → Sai vì "attire" không liên quan đến mức độ quan trọng, mà nói về trang phục hoặc quần áo.  
+                         </li>     
+                         <li>✅ <strong>clothing</strong> (Quần áo)  
+                             → Đúng vì đoạn (B) viết: "Besides their wearability, either as jewelry or incorporated into articles of <b>attire</b>." ("Ngoài đặc tính có thể đeo được, dù là trang sức hay được kết hợp vào các món đồ <b>trang phục</b>.") Trong ngữ cảnh này, "attire" có nghĩa là quần áo hoặc trang phục, và từ đồng nghĩa phù hợp nhất là "clothing".  
+                         </li>     
+                         <li>❌ <strong>history</strong> (Lịch sử)  
+                             → Sai vì "attire" không liên quan đến lịch sử mà chỉ nói về trang phục hoặc quần áo.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: All of the following are given as characteristics of collectible objects EXCEPT?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. value															</div>
+																				<div class="ps-4 mb-2">
+																	B. durability															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. scarcity</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. portability															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>All of the following are given as characteristics of collectible objects EXCEPT?</strong> (Tất cả những đặc điểm sau đây đều được đề cập là đặc điểm của đồ sưu tầm, NGOẠI TRỪ?)</p>  
+                     <ul>     
+                         <li>❌ <strong>durability</strong> (Độ bền)  
+                             → Sai vì đoạn (B) viết: "Beads possess the desirable characteristics of every collectible: they are <b>durable</b>, portable, available in infinite variety, and often valuable in their original cultural context as well as in today's market." ("Hạt chuỗi có những đặc điểm hấp dẫn của một món đồ sưu tầm: chúng <b>bền</b>, dễ mang theo, có vô số biến thể, và thường có giá trị trong cả bối cảnh văn hóa nguyên bản cũng như trên thị trường ngày nay.")  
+                         </li>     
+                         <li>❌ <strong>portability</strong> (Tính dễ mang theo)  
+                             → Sai vì bài đọc cũng đề cập đến "portable" (dễ mang theo) như một đặc điểm quan trọng của đồ sưu tầm.  
+                         </li>     
+                         <li>❌ <strong>value</strong> (Giá trị)  
+                             → Sai vì bài đọc cũng nhấn mạnh rằng hạt chuỗi có giá trị trong cả bối cảnh văn hóa lẫn thị trường hiện nay.  
+                         </li>     
+                         <li>✅ <strong>scarcity</strong> (Sự khan hiếm)  
+                             → Đúng vì đoạn (B) không đề cập đến "scarcity" (sự khan hiếm) như một yếu tố của đồ sưu tầm. Thay vào đó, bài đọc nhấn mạnh rằng hạt chuỗi có sự đa dạng vô hạn ("infinite variety"), điều này trái ngược với sự khan hiếm.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: According to the passage, all of the following are factors that make people want to touch beads EXCEPT?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the shape															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. the odor</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. the material															</div>
+																				<div class="ps-4 mb-2">
+																	D. the color															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the passage, all of the following are factors that make people want to touch beads EXCEPT?</strong> (Theo bài đọc, tất cả các yếu tố sau đều khiến con người muốn chạm vào hạt chuỗi, NGOẠI TRỪ?)</p>  
+                     <ul>     
+                         <li>❌ <strong>the shape</strong> (Hình dạng)  
+                             → Sai vì đoạn (B) viết: "Pleasing to look at and touch, beads come in <b>shapes</b>, colors, and materials that almost compel one to handle them and to sort them." ("Hạt chuỗi có hình dạng, màu sắc và chất liệu đa dạng đến mức khiến người ta muốn cầm, ngắm nhìn và phân loại chúng.") Điều này chứng tỏ hình dạng là một yếu tố quan trọng.  
+                         </li>     
+                         <li>❌ <strong>the color</strong> (Màu sắc)  
+                             → Sai vì bài đọc cũng đề cập đến "colors" (màu sắc) như một yếu tố khiến hạt chuỗi trở nên hấp dẫn để chạm vào.  
+                         </li>     
+                         <li>❌ <strong>the material</strong> (Chất liệu)  
+                             → Sai vì chất liệu cũng là một yếu tố quan trọng được nhắc đến trong bài đọc.  
+                         </li>     
+                         <li>✅ <strong>the odor</strong> (Mùi hương)  
+                             → Đúng vì bài đọc không đề cập đến "odor" (mùi hương) như một yếu tố ảnh hưởng đến sự hấp dẫn của hạt chuỗi. Chỉ có hình dạng, màu sắc và chất liệu được đề cập.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: The word "unravel" in paragraph (C) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. communicate															</div>
+																				<div class="ps-4 mb-2">
+																	B. transport															</div>
+																				<div class="ps-4 mb-2">
+																	C. improve															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. discover</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "unravel" in paragraph (C) is closest in meaning to?</strong> (Từ "unravel" trong đoạn (C) có nghĩa gần nhất với từ nào?)</p>  
+                     <ul>     
+                         <li>❌ <strong>communicate</strong> (Giao tiếp)  
+                             → Sai vì "unravel" có nghĩa là khám phá hoặc làm sáng tỏ một điều gì đó, không liên quan đến việc giao tiếp.  
+                         </li>     
+                         <li>❌ <strong>transport</strong> (Vận chuyển)  
+                             → Sai vì "unravel" không liên quan đến vận chuyển hay di chuyển bất kỳ thứ gì.  
+                         </li>     
+                         <li>❌ <strong>improve</strong> (Cải thiện)  
+                             → Sai vì "unravel" không mang nghĩa cải thiện hay làm cho một thứ gì đó tốt hơn.  
+                         </li>     
+                         <li>✅ <strong>discover</strong> (Khám phá)  
+                             → Đúng vì đoạn (C) viết: "Beads are miniature bundles of secrets waiting to be revealed: their history, manufacture, cultural context, economic role, and ornamental use are all points of information one hopes to <b>unravel</b>." ("Hạt chuỗi là những bí ẩn tí hon chờ được khám phá: lịch sử, quy trình chế tác, bối cảnh văn hóa, vai trò kinh tế và giá trị trang trí của chúng đều là những thông tin mà người ta mong muốn <b>lý giải</b>.") Trong ngữ cảnh này, "unravel" có nghĩa là khám phá hoặc làm sáng tỏ, đồng nghĩa với "discover".  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: The word "mundane" in paragraph (C) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. ordinary</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. beautiful															</div>
+																				<div class="ps-4 mb-2">
+																	C. carved															</div>
+																				<div class="ps-4 mb-2">
+																	D. heavy															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "mundane" in paragraph (C) is closest in meaning to?</strong> (Từ "mundane" trong đoạn (C) có nghĩa gần nhất với từ nào?)</p>  
+                     <ul>     
+                         <li>❌ <strong>carved</strong> (Được chạm khắc)  
+                             → Sai vì "mundane" không mang nghĩa liên quan đến điêu khắc hay chạm khắc.  
+                         </li>     
+                         <li>❌ <strong>beautiful</strong> (Đẹp)  
+                             → Sai vì "mundane" thường mang ý nghĩa tầm thường, bình thường, không có gì đặc biệt, trái ngược với "beautiful".  
+                         </li>     
+                         <li>✅ <strong>ordinary</strong> (Bình thường)  
+                             → Đúng vì đoạn (C) viết: "Even the most <b>mundane</b> beads may have traveled vast distances and witnessed many human experiences." ("Ngay cả những hạt chuỗi <b>bình thường</b> nhất cũng có thể đã đi qua những quãng đường dài và chứng kiến nhiều sự kiện của con người.") Trong ngữ cảnh này, "mundane" có nghĩa là bình thường, không có gì đặc biệt, đồng nghĩa với "ordinary".  
+                         </li>     
+                         <li>❌ <strong>heavy</strong> (Nặng)  
+                             → Sai vì "mundane" không có nghĩa liên quan đến trọng lượng hay độ nặng nhẹ.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: It is difficult to trace the history of certain ancient beads because they _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. have been moved from their original locations</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. have been buried underground															</div>
+																				<div class="ps-4 mb-2">
+																	C. are frequently lost															</div>
+																				<div class="ps-4 mb-2">
+																	D. are small in size															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>It is difficult to trace the history of certain ancient beads because they _____.</strong> (Thật khó để truy tìm lịch sử của một số hạt chuỗi cổ đại vì chúng _____.)</p>  
+                     <ul>     
+                         <li>❌ <strong>are small in size</strong> (Có kích thước nhỏ)  
+                             → Sai vì bài đọc không đề cập đến việc kích thước nhỏ là lý do khiến hạt chuỗi cổ khó được truy xuất lịch sử.  
+                         </li>     
+                         <li>❌ <strong>have been buried underground</strong> (Đã bị chôn vùi dưới lòng đất)  
+                             → Sai vì mặc dù hạt chuỗi có thể bị chôn vùi, nhưng bài đọc không nêu đây là lý do chính khiến việc truy tìm lịch sử của chúng trở nên khó khăn.  
+                         </li>     
+                         <li>✅ <strong>have been moved from their original locations</strong> (Đã bị di dời khỏi vị trí ban đầu của chúng)  
+                             → Đúng vì đoạn (C) viết: "Many ancient beads that are of ethnographic interest have often been <b>separated from their original cultural context</b>." ("Nhiều hạt chuỗi cổ đại có giá trị dân tộc học thường đã bị <b>tách rời khỏi bối cảnh văn hóa nguyên bản</b> của chúng.") Điều này chứng tỏ việc di dời khỏi vị trí ban đầu khiến việc truy tìm lịch sử của chúng trở nên khó khăn.  
+                         </li>     
+                         <li>❌ <strong>are frequently lost</strong> (Thường xuyên bị mất)  
+                             → Sai vì bài đọc không đề cập đến việc hạt chuỗi thường bị mất là lý do chính khiến chúng khó truy xuất lịch sử.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: Knowledge of the history of some beads may be useful in the studies done by which of the following?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Anthropologist</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Economists															</div>
+																				<div class="ps-4 mb-2">
+																	C. Agricultural experts															</div>
+																				<div class="ps-4 mb-2">
+																	D. Medical researchers															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Knowledge of the history of some beads may be useful in the studies done by which of the following?</strong> (Kiến thức về lịch sử của một số hạt chuỗi có thể hữu ích trong các nghiên cứu của ai dưới đây?)</p>  
+                     <ul>     
+                         <li>✅ <strong>Anthropologist</strong> (Nhà nhân chủng học)  
+                             → Đúng vì đoạn (D) viết: "Beads have been a part of every culture, and they can often be used to date archaeological sites and to designate the degree of mercantile, technological, and cultural sophistication." ("Hạt chuỗi đã xuất hiện trong mọi nền văn hóa, và chúng thường có thể được sử dụng để xác định niên đại của các địa điểm khảo cổ cũng như đánh giá mức độ phát triển thương mại, công nghệ và văn hóa.") Điều này cho thấy hạt chuỗi có giá trị trong lĩnh vực nhân chủng học và khảo cổ học.  
+                         </li>     
+                         <li>❌ <strong>Agricultural experts</strong> (Chuyên gia nông nghiệp)  
+                             → Sai vì bài đọc không đề cập đến bất kỳ nghiên cứu nào liên quan đến nông nghiệp.  
+                         </li>     
+                         <li>❌ <strong>Medical researchers</strong> (Các nhà nghiên cứu y học)  
+                             → Sai vì hạt chuỗi không liên quan đến nghiên cứu y học.  
+                         </li>     
+                         <li>❌ <strong>Economists</strong> (Các nhà kinh tế học)  
+                             → Sai vì mặc dù hạt chuỗi có giá trị trên thị trường, bài đọc không đề cập đến nghiên cứu kinh tế mà tập trung vào khảo cổ học và nhân chủng học.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: Where in the passage does the author describe why the appearance of beads may change?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Paragraph (A)</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Paragraph (B)															</div>
+																				<div class="ps-4 mb-2">
+																	C. Paragraph (D)															</div>
+																				<div class="ps-4 mb-2">
+																	D. Paragraph (C)															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Where in the passage does the author describe why the appearance of beads may change?</strong> (Ở đoạn nào trong bài đọc tác giả mô tả lý do tại sao diện mạo của hạt chuỗi có thể thay đổi?)</p>  
+                     <ul>     
+                         <li>✅ <strong>Paragraph (A)</strong>  
+                             → Đúng vì đoạn (A) viết: "Abrasion due to daily wear alters the surface features of beads, and if they are buried for long, the effects of corrosion can further change their appearance." ("Sự mài mòn do sử dụng hàng ngày có thể làm thay đổi bề mặt của hạt chuỗi, và nếu bị chôn vùi lâu dài, tác động của sự ăn mòn có thể khiến chúng biến đổi hơn nữa.") Điều này cho thấy tác giả đã mô tả lý do tại sao diện mạo của hạt chuỗi có thể thay đổi theo thời gian.  
+                         </li>     
+                         <li>❌ <strong>Paragraph (B)</strong>  
+                             → Sai vì đoạn (B) tập trung vào đặc điểm của hạt chuỗi như đồ sưu tầm chứ không đề cập đến sự thay đổi diện mạo của chúng.  
+                         </li>     
+                         <li>❌ <strong>Paragraph (C)</strong>  
+                             → Sai vì đoạn (C) nói về lịch sử và bối cảnh văn hóa của hạt chuỗi, không đề cập đến việc diện mạo của chúng thay đổi.  
+                         </li>     
+                         <li>❌ <strong>Paragraph (D)</strong>  
+                             → Sai vì đoạn (D) nói về giá trị khảo cổ của hạt chuỗi, không đề cập đến lý do khiến chúng thay đổi diện mạo.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

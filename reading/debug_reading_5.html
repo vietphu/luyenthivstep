@@ -1,0 +1,639 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 05 - Part 1				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R76866				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A) </b>It is estimated that over 99 percent of all species that ever existed have become extinct. What causes extinction? When a species is no longer adapted to a changed environment, <b>it</b> may perish. The exact causes of a species' death vary from situation to situation. Rapid ecological change may render an environment hostile to a species. For example, temperatures may change and a species may not be able to adapt. Food resources may be affected by environmental changes, which will then cause problems for a species requiring these resources. Other species may become better adapted to an environment, resulting in competition and, <b>ultimately</b>, in the death of a species. The fossil record reveals that extinction has occurred throughout the history of Earth. Recent analyses have also revealed that on some occasions many species became extinct at the same time—a mass extinction. One of the best-known examples of mass extinction occurred 65 million years ago with the <b>demise</b> of dinosaurs and many other forms of life.</p>
+
+<p><b>(B) </b>Perhaps the largest mass extinction was the one that occurred 225 million years ago, when approximately 95 percent of all species died. Mass extinctions can be caused by a relatively rapid change in the environment and can be worsened by the close interrelationship of many species. If, for example, something were to happen to destroy much of the <b>plankton</b> in the oceans, then the oxygen content of Earth would drop, affecting even organisms not living in the oceans. Such a change would probably lead to a mass extinction.</p>
+
+<p><b>(C) </b>One interesting, and controversial, <b>finding</b> is that extinctions during the past 250 million years have tended to be more intense every 26 million years. This periodic extinction might be due to the intersection of the Earth's orbit with a cloud of comets, but this theory is purely speculative. Some researchers have also speculated that extinction may often be random. That is, certain species may be eliminated and others may survive for no particular reason. A species' survival may have nothing to do with its ability or inability to adapt. If so, some of evolutionary history may reflect a sequence of essentially random events.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A) </b>Ước tính hơn 99% tất cả các loài từng tồn tại đã bị tuyệt chủng. Điều gì gây ra sự tuyệt chủng? Khi một loài không còn thích nghi được với môi trường đã thay đổi, <b>nó</b> có thể bị diệt vong. Nguyên nhân chính xác dẫn đến sự biến mất của một loài khác nhau tùy từng trường hợp. Những thay đổi sinh thái nhanh chóng có thể khiến môi trường trở nên không thể sống được đối với một loài. Ví dụ, nhiệt độ có thể thay đổi, và một loài có thể không kịp thích nghi. Nguồn thức ăn cũng có thể bị ảnh hưởng bởi các biến đổi môi trường, gây khó khăn cho những loài phụ thuộc vào nguồn tài nguyên này. Những loài khác có thể thích nghi tốt hơn với môi trường, dẫn đến sự cạnh tranh và, <b>cuối cùng</b>, là sự diệt vong của một loài. Hồ sơ hóa thạch cho thấy sự tuyệt chủng đã xảy ra trong suốt lịch sử Trái Đất. Các phân tích gần đây cũng tiết lộ rằng, vào một số thời điểm, nhiều loài đã tuyệt chủng cùng một lúc—một sự tuyệt chủng hàng loạt. Một trong những ví dụ nổi tiếng nhất về sự tuyệt chủng hàng loạt xảy ra cách đây 65 triệu năm với <b>sự biến mất</b> của khủng long và nhiều dạng sống khác.</p>  <p><b>(B) </b>Có lẽ sự tuyệt chủng hàng loạt lớn nhất xảy ra cách đây 225 triệu năm, khi khoảng 95% tất cả các loài bị diệt vong. Sự tuyệt chủng hàng loạt có thể do những thay đổi tương đối nhanh chóng trong môi trường và có thể trở nên nghiêm trọng hơn do mối quan hệ mật thiết giữa nhiều loài. Ví dụ, nếu một sự kiện nào đó khiến phần lớn <b>phiêu sinh vật</b> trong đại dương bị hủy diệt, thì lượng oxy trên Trái Đất sẽ giảm xuống, ảnh hưởng đến cả những sinh vật không sống trong đại dương. Một sự thay đổi như vậy có thể dẫn đến một sự tuyệt chủng hàng loạt.</p>  <p><b>(C) </b>Một <b>phát hiện</b> thú vị và còn nhiều tranh cãi là các sự kiện tuyệt chủng trong 250 triệu năm qua có xu hướng trở nên dữ dội hơn theo chu kỳ 26 triệu năm. Sự tuyệt chủng theo chu kỳ này có thể liên quan đến việc quỹ đạo của Trái Đất giao với một đám mây sao chổi, nhưng lý thuyết này chỉ là suy đoán. Một số nhà nghiên cứu cũng cho rằng sự tuyệt chủng thường có thể mang tính ngẫu nhiên. Nghĩa là, một số loài có thể bị loại bỏ, trong khi những loài khác sống sót mà không có lý do cụ thể. Sự sống sót của một loài có thể không liên quan gì đến khả năng hay không thể thích nghi của nó. Nếu vậy, một phần của lịch sử tiến hóa có thể phản ánh một chuỗi các sự kiện ngẫu nhiên về bản chất.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>(A) </b>It is estimated that over 99 percent of all species that ever existed have become extinct. What causes extinction? When a species is no longer adapted to a changed environment, <b>it</b> may perish. The exact causes of a species' death vary from situation to situation. Rapid ecological change may render an environment hostile to a species. For example, temperatures may change and a species may not be able to adapt. Food resources may be affected by environmental changes, which will then cause problems for a species requiring these resources. Other species may become better adapted to an environment, resulting in competition and, <b>ultimately</b>, in the death of a species. The fossil record reveals that extinction has occurred throughout the history of Earth. Recent analyses have also revealed that on some occasions many species became extinct at the same time—a mass extinction. One of the best-known examples of mass extinction occurred 65 million years ago with the <b>demise</b> of dinosaurs and many other forms of life.</p>
+
+<p><b>(B) </b>Perhaps the largest mass extinction was the one that occurred 225 million years ago, when approximately 95 percent of all species died. Mass extinctions can be caused by a relatively rapid change in the environment and can be worsened by the close interrelationship of many species. If, for example, something were to happen to destroy much of the <b>plankton</b> in the oceans, then the oxygen content of Earth would drop, affecting even organisms not living in the oceans. Such a change would probably lead to a mass extinction.</p>
+
+<p><b>(C) </b>One interesting, and controversial, <b>finding</b> is that extinctions during the past 250 million years have tended to be more intense every 26 million years. This periodic extinction might be due to the intersection of the Earth's orbit with a cloud of comets, but this theory is purely speculative. Some researchers have also speculated that extinction may often be random. That is, certain species may be eliminated and others may survive for no particular reason. A species' survival may have nothing to do with its ability or inability to adapt. If so, some of evolutionary history may reflect a sequence of essentially random events.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: The word "it" in paragraph (A) refers to						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. extinction 															</div>
+																				<div class="ps-4 mb-2">
+																	B. 99 percent															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. species</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. environment 															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "it" in paragraph (A) refers to:</strong> (Từ "it" trong đoạn (A) ám chỉ đến điều gì?)</p>  
+                     <ul>     
+                         <li>❌ <strong>environment</strong> (Môi trường)  
+                             → Sai vì từ "it" không đề cập đến môi trường, mà đến một đối tượng bị ảnh hưởng bởi môi trường. 
+                         </li>     
+                         <li>✅ <strong>species</strong> (Loài)  
+                             → Đúng vì câu trong bài đọc có nội dung: 
+                             "When a species is no longer adapted to a changed environment, <b>it</b> may perish." 
+                             ("Khi một loài không còn thích nghi với môi trường thay đổi, <b>nó</b> có thể bị diệt vong.") 
+                             Từ "it" ở đây rõ ràng đề cập đến "species" (loài). 
+                         </li>     
+                         <li>❌ <strong>extinction</strong> (Sự tuyệt chủng)  
+                             → Sai vì "it" không thay thế cho "extinction", mà đang nói về chủ thể bị ảnh hưởng dẫn đến tuyệt chủng. 
+                         </li>     
+                         <li>❌ <strong>99 percent</strong> (99 phần trăm)  
+                             → Sai vì "99 percent" chỉ là một con số thống kê, không phải chủ thể bị tuyệt chủng. 
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: The word "ultimately" in paragraph (A) is closest in meaning to						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. infortunately															</div>
+																				<div class="ps-4 mb-2">
+																	B. exceptionally															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. eventually</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. dramatically															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "ultimately" in paragraph (A) is closest in meaning to:</strong> (Từ "ultimately" trong đoạn (A) có nghĩa gần nhất với từ nào?)</p>  
+                     <ul>     
+                         <li>❌ <strong>exceptionally</strong> (Một cách đặc biệt, khác thường)  
+                             → Sai vì "exceptionally" mang ý nghĩa về sự vượt trội hoặc khác thường, không phù hợp với ngữ cảnh của từ "ultimately". 
+                         </li>     
+                         <li>❌ <strong>dramatically</strong> (Một cách đáng kể, mạnh mẽ)  
+                             → Sai vì "dramatically" thường chỉ sự thay đổi lớn hoặc đột ngột, không đồng nghĩa với "ultimately". 
+                         </li>     
+                         <li>✅ <strong>eventually</strong> (Cuối cùng, rốt cuộc)  
+                             → Đúng vì "ultimately" có nghĩa là "cuối cùng" hoặc "rốt cuộc", giống với "eventually". Trong đoạn văn, từ này diễn tả kết quả cuối cùng của sự tuyệt chủng sau quá trình cạnh tranh. 
+                         </li>     
+                         <li>❌ <strong>unfortunately</strong> (Thật không may)  
+                             → Sai vì "unfortunately" mang ý nghĩa diễn đạt sự tiếc nuối hoặc điều không mong muốn, không phù hợp với nghĩa của "ultimately". 
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What does the author say in paragraph (A) regarding most species in Earth's history?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. They have remained basically unchanged from their original forms.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. They are no longer in existence.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. They have been able to adapt to ecological changes.															</div>
+																				<div class="ps-4 mb-2">
+																	D. They have caused rapid change in the environment.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does the author say in paragraph (A) regarding most species in Earth's history?</strong> (Tác giả nói gì trong đoạn (A) về hầu hết các loài trong lịch sử Trái Đất?)</p>  
+                     <ul>     
+                         <li>❌ <strong>They have remained basically unchanged from their original forms.</strong> (Chúng về cơ bản không thay đổi so với hình dạng ban đầu.)  
+                             → Sai vì đoạn văn nói về sự tuyệt chủng của các loài, không đề cập đến việc chúng giữ nguyên hình dạng ban đầu. 
+                         </li>     
+                         <li>❌ <strong>They have been able to adapt to ecological changes.</strong> (Chúng đã có thể thích nghi với những thay đổi sinh thái.)  
+                             → Sai vì tác giả nhấn mạnh rằng nhiều loài không thể thích nghi với môi trường thay đổi và đã tuyệt chủng. 
+                         </li>     
+                         <li>❌ <strong>They have caused rapid change in the environment.</strong> (Chúng đã gây ra sự thay đổi nhanh chóng trong môi trường.)  
+                             → Sai vì đoạn văn không nói rằng các loài là nguyên nhân gây ra thay đổi môi trường, mà chỉ đề cập đến tác động của môi trường lên các loài. 
+                         </li>     
+                         <li>✅ <strong>They are no longer in existence.</strong> (Chúng không còn tồn tại nữa.)  
+                             → Đúng vì đoạn văn mở đầu với câu: "It is estimated that over 99 percent of all species that ever existed have become extinct." ("Ước tính hơn 99% tất cả các loài từng tồn tại đã bị tuyệt chủng.") Điều này khẳng định rằng phần lớn các loài trong lịch sử Trái Đất không còn tồn tại nữa. 
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: Which of the following is NOT mentioned in paragraph (A) as resulting from rapid ecological change? 						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Introduction of new species </span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Availability of food resources															</div>
+																				<div class="ps-4 mb-2">
+																	C. Competition among species															</div>
+																				<div class="ps-4 mb-2">
+																	D. Temperature changes 															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following is NOT mentioned in paragraph (A) as resulting from rapid ecological change?</strong> (Điều nào sau đây KHÔNG được đề cập trong đoạn (A) là kết quả của sự thay đổi sinh thái nhanh chóng?)</p>  
+                     <ul>     
+                         <li>❌ <strong>Temperature changes</strong> (Sự thay đổi nhiệt độ)  
+                             → Sai vì đoạn (A) có đề cập: "For example, temperatures may change and a species may not be able to adapt." ("Ví dụ, nhiệt độ có thể thay đổi và một loài có thể không kịp thích nghi.") Điều này chứng tỏ sự thay đổi nhiệt độ là một kết quả của sự thay đổi sinh thái. 
+                         </li>     
+                         <li>❌ <strong>Availability of food resources</strong> (Sự sẵn có của nguồn thức ăn)  
+                             → Sai vì đoạn (A) có nhắc đến: "Food resources may be affected by environmental changes, which will then cause problems for a species requiring these resources." ("Nguồn thức ăn có thể bị ảnh hưởng bởi các biến đổi môi trường, gây khó khăn cho những loài phụ thuộc vào nguồn tài nguyên này.") 
+                         </li>     
+                         <li>✅ <strong>Introduction of new species</strong> (Sự xuất hiện của các loài mới)  
+                             → Đúng vì đoạn (A) không hề đề cập đến sự xuất hiện của các loài mới như một hệ quả của sự thay đổi sinh thái. Nó chỉ nói về việc một số loài thích nghi tốt hơn với môi trường, nhưng không nói rằng có loài mới xuất hiện. 
+                         </li>     
+                         <li>❌ <strong>Competition among species</strong> (Sự cạnh tranh giữa các loài)  
+                             → Sai vì đoạn (A) đề cập: "Other species may become better adapted to an environment, resulting in competition and, ultimately, in the death of a species." ("Những loài khác có thể thích nghi tốt hơn với môi trường, dẫn đến sự cạnh tranh và, cuối cùng, là sự diệt vong của một loài.") Điều này chứng tỏ sự cạnh tranh giữa các loài là một kết quả của thay đổi sinh thái. 
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: The word "demise" in paragraph (A) is closest in meaning to						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. death</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. help															</div>
+																				<div class="ps-4 mb-2">
+																	C. change															</div>
+																				<div class="ps-4 mb-2">
+																	D. recovery															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "demise" in paragraph (A) is closest in meaning to:</strong> (Từ "demise" trong đoạn (A) có nghĩa gần nhất với từ nào?)</p>  
+                     <ul>     
+                         <li>❌ <strong>change</strong> (Sự thay đổi)  
+                             → Sai vì "demise" không mang nghĩa thay đổi, mà chỉ sự kết thúc hoặc sự chết chóc.  
+                         </li>     
+                         <li>❌ <strong>recovery</strong> (Sự hồi phục)  
+                             → Sai vì "demise" là một từ có nghĩa tiêu cực, ngược lại với "recovery" vốn mang nghĩa hồi phục và cải thiện.  
+                         </li>     
+                         <li>❌ <strong>help</strong> (Sự giúp đỡ)  
+                             → Sai vì "demise" không liên quan đến hành động giúp đỡ, mà đề cập đến sự sụp đổ hoặc chấm dứt.  
+                         </li>     
+                         <li>✅ <strong>death</strong> (Cái chết)  
+                             → Đúng vì trong ngữ cảnh đoạn văn, "demise" được sử dụng để nói về sự tuyệt chủng của khủng long và nhiều dạng sống khác. Đây là nghĩa phù hợp nhất với "death".  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Why is "plankton" in paragraph (B) mentioned?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. To demonstrate the interdependence of different species.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. To point out that certain species could never become extinct.															</div>
+																				<div class="ps-4 mb-2">
+																	C. To emphasize the importance of food resources inpreventing mass extinction.															</div>
+																				<div class="ps-4 mb-2">
+																	D. To illustrate a comparison between organisms thatlive on the land and those that live in the ocean.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Why is "plankton" in paragraph (B) mentioned?</strong> (Tại sao "sinh vật phù du" được đề cập trong đoạn B?)</p> 
+<ul> 
+<li>✅ <strong>To demonstrate the interdependence of different species. (Để chứng minh sự phụ thuộc lẫn nhau giữa các loài khác nhau.)</strong> → Đúng. Ví dụ về sinh vật phù du được dùng để chỉ ra rằng nếu một loài bị ảnh hưởng, nhiều loài khác cũng sẽ chịu tác động, cho thấy mối liên kết giữa các loài.</li> 
+<li>❌ <strong>To emphasize the importance of food resources in preventing mass extinction. (Để nhấn mạnh tầm quan trọng của nguồn thực phẩm trong việc ngăn chặn tuyệt chủng hàng loạt.)</strong> → Sai. Đoạn này không đề cập đến ngăn chặn tuyệt chủng hay vai trò của thực phẩm.</li> 
+<li>❌ <strong>To illustrate a comparison between organisms that live on the land and those that live in the ocean. (Để minh họa sự so sánh giữa sinh vật sống trên cạn và dưới nước.)</strong> → Sai. Không có sự so sánh nào như vậy trong đoạn văn.</li> 
+<li>❌ <strong>To point out that certain species could never become extinct. (Để chỉ ra rằng một số loài không bao giờ có thể tuyệt chủng.)</strong> → Sai. Đoạn văn nói về sự phụ thuộc lẫn nhau dẫn đến tuyệt chủng, không phải sự miễn nhiễm với tuyệt chủng.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: According to paragraph (B), evidence from fossils suggests that						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. extinction of species has occurred from time to time throughout Earth's history.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. extinctions on Earth have generally been massive.															</div>
+																				<div class="ps-4 mb-2">
+																	C. dinosaurs became extinct much earlier than scientists originally believed.															</div>
+																				<div class="ps-4 mb-2">
+																	D. there has been only one mass extinction in Earth's history.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to paragraph (B), evidence from fossils suggests that...</strong> (Theo đoạn B, bằng chứng từ hóa thạch cho thấy...)</p> 
+<ul> 
+<li>✅ <strong>extinction of species has occurred from time to time throughout Earth\'s history. (Sự tuyệt chủng của các loài đã xảy ra theo thời gian trong suốt lịch sử Trái Đất.)</strong> → Đúng. Đoạn văn nói rõ rằng hồ sơ hóa thạch cho thấy tuyệt chủng đã xảy ra trong suốt lịch sử Trái Đất, không chỉ một lần.</li> 
+<li>❌ <strong>extinctions on Earth have generally been massive. (Sự tuyệt chủng trên Trái Đất thường là hàng loạt.)</strong> → Sai. Mặc dù có đề cập đến các đợt tuyệt chủng hàng loạt, nhưng không phải tất cả các đợt tuyệt chủng đều là hàng loạt.</li> 
+<li>❌ <strong>there has been only one mass extinction in Earth\'s history. (Chỉ có một đợt tuyệt chủng hàng loạt trong lịch sử Trái Đất.)</strong> → Sai. Đoạn văn đề cập đến nhiều đợt tuyệt chủng, bao gồm cả đợt 65 triệu năm trước và một đợt lớn hơn 225 triệu năm trước.</li> 
+<li>❌ <strong>dinosaurs became extinct much earlier than scientists originally believed. (Khủng long đã tuyệt chủng sớm hơn nhiều so với các nhà khoa học từng nghĩ.)</strong> → Sai. Đoạn văn không đề cập đến việc thay đổi niên đại tuyệt chủng của khủng long.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: The word "finding" in paragraph (C) is closest in meaning to						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. ongoing experiment															</div>
+																				<div class="ps-4 mb-2">
+																	B. published information															</div>
+																				<div class="ps-4 mb-2">
+																	C. research method															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. scientific discovery</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "finding" in paragraph (C) is closest in meaning to:</strong> (Từ "finding" trong đoạn (C) có nghĩa gần nhất với từ nào?)</p>  
+                     <ul>     
+                         <li>❌ <strong>published information</strong> (Thông tin đã được công bố)  
+                             → Sai vì "finding" ám chỉ kết quả hoặc khám phá từ nghiên cứu, không đơn thuần là thông tin đã được xuất bản.  
+                         </li>     
+                         <li>❌ <strong>research method</strong> (Phương pháp nghiên cứu)  
+                             → Sai vì "finding" đề cập đến kết quả của nghiên cứu, không phải phương pháp nghiên cứu được sử dụng.  
+                         </li>     
+                         <li>❌ <strong>ongoing experiment</strong> (Thí nghiệm đang diễn ra)  
+                             → Sai vì "finding" là kết quả cuối cùng từ một nghiên cứu, không phải là một thí nghiệm đang diễn ra.  
+                         </li>     
+                         <li>✅ <strong>scientific discovery</strong> (Khám phá khoa học)  
+                             → Đúng vì "finding" trong ngữ cảnh đoạn (C) đề cập đến một khám phá mới được phát hiện qua nghiên cứu khoa học về các sự kiện tuyệt chủng định kỳ.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: In paragraph (B), the author makes which of the following statements about aspecies' survival?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It is associated with astronomical conditions.															</div>
+																				<div class="ps-4 mb-2">
+																	B. It reflects the interrelationship of many species.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. It may depend on chance events.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. It does not vary greatly from species to species.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (B), the author makes which of the following statements about a species' survival?</strong> (Trong đoạn (B), tác giả đưa ra phát biểu nào sau đây về sự sống sót của một loài?)</p>  
+                     <ul>     
+                         <li>❌ <strong>It reflects the interrelationship of many species.</strong> (Nó phản ánh mối quan hệ giữa nhiều loài.)  
+                             → Sai vì mặc dù đoạn (B) đề cập đến sự phụ thuộc giữa các loài, nhưng nó không nói rằng sự sống sót của một loài là sự phản ánh của mối quan hệ này.  
+                         </li>     
+                         <li>✅ <strong>It may depend on chance events.</strong> (Nó có thể phụ thuộc vào các sự kiện ngẫu nhiên.)  
+                             → Đúng vì đoạn (B) nói rằng "Some researchers have also speculated that extinction may often be random." ("Một số nhà nghiên cứu cũng cho rằng sự tuyệt chủng thường có thể mang tính ngẫu nhiên.") Điều này cho thấy sự sống sót của một loài có thể phụ thuộc vào yếu tố may rủi.  
+                         </li>     
+                         <li>❌ <strong>It does not vary greatly from species to species.</strong> (Nó không thay đổi nhiều giữa các loài.)  
+                             → Sai vì đoạn văn không khẳng định rằng sự sống sót của các loài là tương tự nhau. Ngược lại, nó nhấn mạnh rằng sự sống sót có thể do nhiều yếu tố khác nhau quyết định.  
+                         </li>     
+                         <li>❌ <strong>It is associated with astronomical conditions.</strong> (Nó có liên quan đến điều kiện thiên văn.)  
+                             → Sai vì mặc dù đoạn (C) đề cập đến giả thuyết về quỹ đạo Trái Đất giao với một đám mây sao chổi, nhưng đoạn (B) không đề cập đến điều kiện thiên văn nào liên quan đến sự sống sót của loài.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: According to the passage, it is believed that the largest extinction of a species occurred						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 250 million years ago															</div>
+																				<div class="ps-4 mb-2">
+																	B. 65 million years ago 															</div>
+																				<div class="ps-4 mb-2">
+																	C. 26 million years ago 															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. 225 million years ago </span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the passage, it is believed that the largest extinction of a species occurred:</strong> (Theo bài đọc, người ta tin rằng sự tuyệt chủng lớn nhất của một loài đã xảy ra vào thời điểm nào?)</p>  
+                     <ul>     
+                         <li>❌ <strong>26 million years ago</strong> (26 triệu năm trước)  
+                             → Sai vì con số 26 triệu năm chỉ được đề cập trong đoạn (C) liên quan đến chu kỳ tuyệt chủng, không phải sự kiện tuyệt chủng lớn nhất.  
+                         </li>     
+                         <li>❌ <strong>65 million years ago</strong> (65 triệu năm trước)  
+                             → Sai vì sự kiện tuyệt chủng này liên quan đến sự biến mất của khủng long, nhưng nó không phải là cuộc tuyệt chủng lớn nhất.  
+                         </li>     
+                         <li>✅ <strong>225 million years ago</strong> (225 triệu năm trước)  
+                             → Đúng vì đoạn (B) đề cập rằng "Perhaps the largest mass extinction was the one that occurred 225 million years ago, when approximately 95 percent of all species died." ("Có lẽ sự tuyệt chủng hàng loạt lớn nhất xảy ra cách đây 225 triệu năm, khi khoảng 95% tất cả các loài bị diệt vong.")  
+                         </li>     
+                         <li>❌ <strong>250 million years ago</strong> (250 triệu năm trước)  
+                             → Sai vì đoạn (C) chỉ đề cập đến các sự kiện tuyệt chủng trong 250 triệu năm qua mà không nói về một sự kiện cụ thể vào 250 triệu năm trước.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>
