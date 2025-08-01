@@ -1,0 +1,89 @@
+[
+  {
+    "id": 1,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about going out.\n- How often do you go out? Why?\n- Who do you usually go out with? Why?\n- Where do you often go when you go out? Why?\nNow, let’s talk about a special place you would always want to return to.\n- Can you describe that place?\n- Did you go there alone or with someone else?\n- What makes you want to return to that place?\n",
+    "prompt_vi": "Hãy nói về việc đi chơi.\n- Bạn thường đi chơi bao lâu một lần? Tại sao?\n- Bạn thường đi chơi với ai? Vì sao lại với người đó?\n- Khi đi chơi, bạn thường đi đâu? Vì sao lại chọn nơi đó?\nGiờ, hãy nói về một nơi đặc biệt mà bạn luôn muốn quay lại.\n- Bạn có thể miêu tả nơi đó không?\n- Bạn đã đến đó một mình hay với ai đó?\n- Điều gì khiến bạn muốn quay trở lại nơi đó?\n"
+  },
+  {
+    "id": 2,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: A school is planning to invest money in improving the quality of education. Three areas are suggested: teachers, students, and facilities. Which area do you think the school should invest in? Why?",
+    "prompt_vi": "Tình huống: Một trường học đang có kế hoạch đầu tư tiền để nâng cao chất lượng giáo dục. Ba lĩnh vực được đề xuất là: giáo viên, học sinh và cơ sở vật chất. Theo bạn, trường nên đầu tư vào lĩnh vực nào? Tại sao?"
+  },
+  {
+    "id": 3,
+    "part": 3,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 3 là 4 phút.",
+    "prompt_en": "Topic: Working in pairs helps students learn better at school.\n\nGives students the opportunity to learn from others\nHelps students become more active\nPair work\nYour own ideas\nImproves students' social skills and interaction\n\nFollow-up questions:\n1. In what situations should pair work be used at school, and why?\n2. What are some possible disadvantages of working in pairs?\n3. How can teachers improve the effectiveness of pair work activities?\n",
+    "prompt_vi": "Chủ đề: Làm việc theo cặp giúp học sinh học tốt hơn ở trường.\n\n\nGives students the opportunity to learn from others\nHelps students become more active\nPair work\nYour own ideas\nImproves students' social skills and interaction\n\nCâu hỏi gợi ý:\n1. Những tình huống nào ở trường nên áp dụng làm việc theo cặp? Tại sao?\n2. Một số bất lợi khi làm việc theo cặp là gì?\n3. Giáo viên có thể làm gì để nâng cao hiệu quả của các hoạt động làm việc theo cặp?",
+    "idea_map": {
+      "main": "Pair work",
+      "branches": [
+        "Gives students the opportunity to learn from others",
+        "Helps students become more active",
+        "Your own ideas",
+        "Improves students' social skills and interaction"
+      ]
+    },
+    "follow_up_questions_en": [
+      "1. In what situations should pair work be used at school, and why?",
+      "2. What are some possible disadvantages of working in pairs?",
+      "3. How can teachers improve the effectiveness of pair work activities?"
+    ],
+    "follow_up_questions_vi": [
+      "1. Những tình huống nào ở trường nên áp dụng làm việc theo cặp? Tại sao?",
+      "2. Một số bất lợi khi làm việc theo cặp là gì?",
+      "3. Giáo viên có thể làm gì để nâng cao hiệu quả của các hoạt động làm việc theo cặp?"
+    ]
+  },
+  {
+    "id": 4,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about holidays.\n- What did you do on your last holiday?\n- Who do you prefer spending your holidays with?\n- Do you prefer going on holidays abroad?\nNow, let's talk about TV programs.\n- How many hours a day do you watch television?\n- What kinds of programs do you like?\n- Do you prefer watching television alone or with others? Why?\n",
+    "prompt_vi": "Hãy nói về các kỳ nghỉ.\n- Bạn đã làm gì trong kỳ nghỉ gần đây nhất?\n- Bạn thích dành kỳ nghỉ với ai?\n- Bạn có thích đi nghỉ ở nước ngoài không?\nGiờ, hãy nói về các chương trình truyền hình.\n- Mỗi ngày bạn xem tivi bao nhiêu tiếng?\n- Bạn thích những loại chương trình nào?\n- Bạn thích xem tivi một mình hay với người khác? Vì sao?"
+  },
+  {
+    "id": 5,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: If you won a lottery of 1 billion VND, what would you do with the money? Three options are suggested: buying a new house, starting a business, and depositing the money in the bank. Which option do you think is the best choice? Why?",
+    "prompt_vi": "Tình huống: Nếu bạn trúng xổ số 1 tỷ đồng, bạn sẽ làm gì với số tiền đó? Ba lựa chọn được đề xuất là: mua nhà mới, bắt đầu kinh doanh và gửi tiền vào ngân hàng. Theo bạn, lựa chọn nào là tốt nhất? Tại sao?"
+  },
+  {
+    "id": 6,
+    "part": 3,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 3 là 4 phút.",
+    "prompt_en": "Topic: Online courses\n\nProvide new learning experience\nBe independent in learning\nOnline courses\nYour own ideas\nBe more convenient to study\n\nFollow-up questions:\n1. What are the advantages of online courses compared to traditional classes?\n2. What challenges do students face when learning online?\n3. How can online learning be improved in the future?\n",
+    "prompt_vi": "Chủ đề: Các khóa học trực tuyến\n\n\nProvide new learning experience\nBe independent in learning\nOnline courses\nYour own ideas\nBe more convenient to study\n\nCâu hỏi gợi ý:\n1. Ưu điểm của các khóa học trực tuyến so với lớp học truyền thống là gì?\n2. Học sinh gặp phải những khó khăn gì khi học trực tuyến?\n3. Làm thế nào để cải thiện việc học trực tuyến trong tương lai?",
+    "idea_map": {
+      "main": "Online courses",
+      "branches": [
+        "Provide new learning experience",
+        "Be independent in learning",
+        "Your own ideas",
+        "Be more convenient to study"
+      ]
+    },
+    "follow_up_questions_en": [
+      "1. What are the advantages of online courses compared to traditional classes?",
+      "2. What challenges do students face when learning online?",
+      "3. How can online learning be improved in the future?"
+    ],
+    "follow_up_questions_vi": [
+      "1. Ưu điểm của các khóa học trực tuyến so với lớp học truyền thống là gì?",
+      "2. Học sinh gặp phải những khó khăn gì khi học trực tuyến?",
+      "3. Làm thế nào để cải thiện việc học trực tuyến trong tương lai?"
+    ]
+  },
+  {
+    "id": 7,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about birthdays.\n- When is your birthday?\n- What do you usually do on your birthday?\n- What is your favorite family celebration? Why?\nNow, let's talk about public transportation.\n- What is the best way to travel in your town or city?\n- What is your favorite means of transportation?\n- Do you think people should use public transportation more? Why?",
+    "prompt_vi": "Hãy nói về sinh nhật.\n- Sinh nhật bạn vào ngày nào?\n- Bạn thường làm gì vào ngày sinh nhật?\n- Bạn thích dịp lễ gia đình nào nhất? Vì sao?\nGiờ, hãy nói về giao thông công cộng.\n- Theo bạn, phương tiện nào là tốt nhất để di chuyển trong thành phố?\n- Phương tiện giao thông nào bạn yêu thích nhất?\n- Bạn có nghĩ mọi người nên sử dụng phương tiện công cộng nhiều hơn không? Tại sao?"
+  }
+]
