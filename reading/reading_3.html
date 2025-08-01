@@ -1,0 +1,629 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Luyện đề Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>		<style type="text/css">
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 100%;
+			max-width: none;
+		}
+		@media (min-width: 992px) {
+			#offcanvasTranscript,
+			#offcanvasTranslation {
+				width: 70% !important;
+				max-width: 700px;
+			}
+		}
+		.question-block {
+			background-color: #f9f9f9;
+			border-radius: 6px;
+			padding: 1rem;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+		<!-- Navbar phụ nổi -->
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+		<div class="container-fluid">
+			<div class="row align-items-center text-center text-md-start">
+				<div class="col-12 col-md-3 mb-2 mb-md-0">
+					<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+						⬅️ Quay lại danh sách đề
+					</button>
+				</div>
+				<div class="col-12 col-md-6 text-center">
+					<span class="fw-bold text-muted small d-block">
+						📘 Bạn đang luyện đề đọc mã số 03 - Part 3					</span>
+					<span class="fw-bold text-muted small d-block">
+						🆔 Mã bài làm: #R76486					</span>
+				</div>
+				<div class="col-12 col-md-3 text-md-end">
+					<span class="small text-muted fw-bold d-block mb-2">
+						👋 Xin chào, phuneo					</span>
+					<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+						<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+							📄 Xem bài đọc
+						</button>
+						<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+							🌐 Dịch tiếng Việt
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+	<!-- Offcanvas Transcript -->
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+		<div class="offcanvas-header">
+			<span class="offcanvas-title fw-bold">Bài đọc</span>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+		</div>
+		<div class="offcanvas-body">
+			<p>Bees are an intricate part of the pollination process. Honeybees account for more than 80 percent of the pollination that most vegetables, fruits, and legumes need, the University of Minnesota Extension states on its website. Normally found on spring, summer, and fall blossoms, bees use the nectar and pollen they collect for sustenance and hive warmth. In fact, freezing temperatures kill bees if they don't warm themselves within their hive.</p>
+
+<p><b>(A)</b> Bees are cold-blooded; they rely on outside temperatures to regulate their body heat. As a result, honeybees typically <b>emerge</b> from their protective hives during the daytime, commonly between 8 a.m. and 5 p.m. They fly only when the air temperature is above 13 to 16 degrees Celsius. Freezing temperatures essentially lock bee muscles in place; their wings cannot beat correctly for proper and safe flight. Being in dropping temperatures causes exposure and normally leads to death. Freezing temperatures also affect nectar viscosity. Even if bees could fly in cold temperatures, flower nectar may be too thick for them to collect or the flowers may be closed in response to the weather.</p>
+
+<p><b>(B)</b> A typical beehive maintains an interior temperature of about 33 to 35 degrees Celsius. When freezing temperatures arrive, bees can survive only if they remain inside the hive in a large group, much like penguins huddling together during winter. Clustering, however, does not generate enough heat to combat death from freezing. Bees consume the honey reserves within the hive to create more heat. If bees leave the hive during a cold period, they usually freeze before returning.</p>
+
+<p><b>(C)</b> Bees use freezing temperatures to their advantage for hive population control. Specific bees, called drones, are used simply for reproduction; they allow the queen bee to create numerous eggs during the warm months. By autumn, the drones are not needed. Worker bees remove them from the hive. With cold weather setting in, exposed drones freeze, effectively controlling the hive's population. A hive may lose up to one-half of its population during winter months. This constant hive rejuvenation allows the queen to produce more worker bees for increased nectar and pollen collection.</p>
+
+<p><b>(D)</b> Your home may have structural cavities that bees find desirable for a hive. If you find a hive hidden in your home's walls, do not attempt to disturb it. Any vibration or disturbance to <b>the colony</b> easily agitates the bees, causing possible stings and major injury or death to humans with allergic reactions. Contact a professional bee removal company. It may be possible for the professionals to use freezing weather as a hive removal strategy. They can open the hive to the freezing elements. That process avoids the use of pesticides and ensures the safety of your home.</p>
+		</div>
+	</div>
+
+	<!-- Offcanvas Translation -->
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+		<div class="offcanvas-header">
+			<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+		</div>
+		<div class="offcanvas-body">
+			<p>Ong là một phần không thể thiếu trong quá trình thụ phấn. Theo trang web của Đại học Minnesota Extension, ong mật chiếm hơn 80% quá trình thụ phấn mà hầu hết các loại rau, trái cây và cây họ đậu cần đến. Thông thường, chúng được tìm thấy trên những bông hoa vào mùa xuân, mùa hè và mùa thu, sử dụng mật hoa và phấn hoa thu thập được để duy trì sự sống và giữ ấm tổ. Thực tế, nếu không thể tự làm ấm bên trong tổ, ong có thể chết khi nhiệt độ xuống quá thấp.</p>  <p><b>(A)</b> Ong là loài động vật máu lạnh; chúng dựa vào nhiệt độ bên ngoài để điều chỉnh thân nhiệt. Do đó, ong mật thường <b>rời tổ</b> bảo vệ của chúng vào ban ngày, phổ biến nhất là từ 8 giờ sáng đến 5 giờ chiều. Chúng chỉ bay khi nhiệt độ không khí trên 13 đến 16 độ C. Khi trời lạnh giá, cơ bắp của ong bị cứng lại, khiến cánh không thể đập đúng cách để bay an toàn. Nếu bị phơi nhiễm trong điều kiện nhiệt độ giảm đột ngột, ong thường sẽ chết. Nhiệt độ đóng băng cũng ảnh hưởng đến độ nhớt của mật hoa. Ngay cả khi có thể bay trong thời tiết lạnh, mật hoa có thể quá đặc để chúng thu thập hoặc hoa có thể khép lại để phản ứng với thời tiết.</p>  <p><b>(B)</b> Một tổ ong điển hình duy trì nhiệt độ bên trong khoảng 33 đến 35 độ C. Khi nhiệt độ đóng băng đến, ong chỉ có thể sống sót nếu chúng ở bên trong tổ theo nhóm lớn, giống như chim cánh cụt tụ tập vào mùa đông. Tuy nhiên, việc tụ tập không đủ để tạo ra lượng nhiệt cần thiết nhằm chống lại cái lạnh. Ong phải tiêu thụ nguồn mật ong dự trữ trong tổ để tạo ra nhiệt. Nếu ong rời tổ trong thời gian lạnh giá, chúng thường bị đóng băng trước khi có thể quay về.</p>  <p><b>(C)</b> Ong sử dụng nhiệt độ đóng băng như một cách để kiểm soát dân số tổ. Một số ong đặc biệt, gọi là ong đực (drones), chỉ có vai trò trong sinh sản; chúng giúp ong chúa tạo ra nhiều trứng trong những tháng ấm áp. Đến mùa thu, ong đực không còn cần thiết nữa. Những con ong thợ sẽ đuổi chúng ra khỏi tổ. Khi thời tiết lạnh đến, những con ong đực bị bỏ rơi sẽ bị đóng băng, giúp kiểm soát số lượng ong trong tổ. Một tổ ong có thể mất tới một nửa dân số trong những tháng mùa đông. Việc đổi mới liên tục này giúp ong chúa có thể sản sinh nhiều ong thợ hơn, nhằm tăng cường khả năng thu thập mật hoa và phấn hoa.</p>  <p><b>(D)</b> Ngôi nhà của bạn có thể có những khoang trống trong cấu trúc mà ong thấy phù hợp để làm tổ. Nếu bạn phát hiện một tổ ong ẩn bên trong tường nhà mình, đừng cố gắng làm phiền chúng. Bất kỳ rung động hay tác động nào đến <b>đàn ong</b> đều có thể khiến chúng bị kích động, dẫn đến nguy cơ bị đốt và gây thương tích nghiêm trọng, thậm chí tử vong đối với những người bị dị ứng. Hãy liên hệ với một công ty chuyên về loại bỏ tổ ong. Trong một số trường hợp, các chuyên gia có thể tận dụng thời tiết lạnh để loại bỏ tổ ong một cách an toàn. Họ có thể mở tổ ong ra để tiếp xúc với nhiệt độ đóng băng, qua đó tránh việc sử dụng thuốc trừ sâu và đảm bảo an toàn cho ngôi nhà của bạn.</p>		</div>
+	</div>
+
+	<div class="row mt-4">
+		<!-- Cột trái: Bài đọc -->
+		<div class="col-md-6 mb-4">
+			<div class="card">
+				<div class="card-body">
+					<p class="card-title fw-bold">Bài đọc</p>
+					<p>Bees are an intricate part of the pollination process. Honeybees account for more than 80 percent of the pollination that most vegetables, fruits, and legumes need, the University of Minnesota Extension states on its website. Normally found on spring, summer, and fall blossoms, bees use the nectar and pollen they collect for sustenance and hive warmth. In fact, freezing temperatures kill bees if they don't warm themselves within their hive.</p>
+
+<p><b>(A)</b> Bees are cold-blooded; they rely on outside temperatures to regulate their body heat. As a result, honeybees typically <b>emerge</b> from their protective hives during the daytime, commonly between 8 a.m. and 5 p.m. They fly only when the air temperature is above 13 to 16 degrees Celsius. Freezing temperatures essentially lock bee muscles in place; their wings cannot beat correctly for proper and safe flight. Being in dropping temperatures causes exposure and normally leads to death. Freezing temperatures also affect nectar viscosity. Even if bees could fly in cold temperatures, flower nectar may be too thick for them to collect or the flowers may be closed in response to the weather.</p>
+
+<p><b>(B)</b> A typical beehive maintains an interior temperature of about 33 to 35 degrees Celsius. When freezing temperatures arrive, bees can survive only if they remain inside the hive in a large group, much like penguins huddling together during winter. Clustering, however, does not generate enough heat to combat death from freezing. Bees consume the honey reserves within the hive to create more heat. If bees leave the hive during a cold period, they usually freeze before returning.</p>
+
+<p><b>(C)</b> Bees use freezing temperatures to their advantage for hive population control. Specific bees, called drones, are used simply for reproduction; they allow the queen bee to create numerous eggs during the warm months. By autumn, the drones are not needed. Worker bees remove them from the hive. With cold weather setting in, exposed drones freeze, effectively controlling the hive's population. A hive may lose up to one-half of its population during winter months. This constant hive rejuvenation allows the queen to produce more worker bees for increased nectar and pollen collection.</p>
+
+<p><b>(D)</b> Your home may have structural cavities that bees find desirable for a hive. If you find a hive hidden in your home's walls, do not attempt to disturb it. Any vibration or disturbance to <b>the colony</b> easily agitates the bees, causing possible stings and major injury or death to humans with allergic reactions. Contact a professional bee removal company. It may be possible for the professionals to use freezing weather as a hive removal strategy. They can open the hive to the freezing elements. That process avoids the use of pesticides and ensures the safety of your home.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Cột phải: Câu hỏi -->
+		<div class="col-md-6">
+			<div class="card h-100">
+				<div class="card-body">
+					
+					<form id="submitForm" action="/practice/reading/submit/76486" method="post">
+						<input type="hidden" name="reading_answer" id="reading_answer" value="----------">
+
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+								<div class="fw-bold mb-2">
+									Câu 1: What is the best title of the passage?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer0" id="q0_0" value="0" aria-label="Câu 1 – lựa chọn A" onclick="saveAnswer(203118, 76486, 0, 0)">
+										<label class="form-check-label" for="q0_0">
+											A. How do bees produce honey in winter?										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer0" id="q0_1" value="1" aria-label="Câu 1 – lựa chọn B" onclick="saveAnswer(203118, 76486, 0, 1)">
+										<label class="form-check-label" for="q0_1">
+											B. Do freezing temperatures completely kill bees?										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer0" id="q0_2" value="2" aria-label="Câu 1 – lựa chọn C" onclick="saveAnswer(203118, 76486, 0, 2)">
+										<label class="form-check-label" for="q0_2">
+											C. How can humans protect their homes from beehives?										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer0" id="q0_3" value="3" aria-label="Câu 1 – lựa chọn D" onclick="saveAnswer(203118, 76486, 0, 3)">
+										<label class="form-check-label" for="q0_3">
+											D. How do bees survive freezing temperatures?										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+								<div class="fw-bold mb-2">
+									Câu 2: What percentage of pollination is contributed by honeybees?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer1" id="q1_0" value="0" aria-label="Câu 2 – lựa chọn A" onclick="saveAnswer(203118, 76486, 1, 0)">
+										<label class="form-check-label" for="q1_0">
+											A. About three quarters										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer1" id="q1_1" value="1" aria-label="Câu 2 – lựa chọn B" onclick="saveAnswer(203118, 76486, 1, 1)">
+										<label class="form-check-label" for="q1_1">
+											B. A half										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer1" id="q1_2" value="2" aria-label="Câu 2 – lựa chọn C" onclick="saveAnswer(203118, 76486, 1, 2)">
+										<label class="form-check-label" for="q1_2">
+											C. About one third										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer1" id="q1_3" value="3" aria-label="Câu 2 – lựa chọn D" onclick="saveAnswer(203118, 76486, 1, 3)">
+										<label class="form-check-label" for="q1_3">
+											D. Over four fifths										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+								<div class="fw-bold mb-2">
+									Câu 3: What do bees use the nectar and pollen they have collected for?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer2" id="q2_0" value="0" aria-label="Câu 3 – lựa chọn A" onclick="saveAnswer(203118, 76486, 2, 0)">
+										<label class="form-check-label" for="q2_0">
+											A. To regain nutrition and heat up their hive										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer2" id="q2_1" value="1" aria-label="Câu 3 – lựa chọn B" onclick="saveAnswer(203118, 76486, 2, 1)">
+										<label class="form-check-label" for="q2_1">
+											B. To defend themselves and heat up their hive										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer2" id="q2_2" value="2" aria-label="Câu 3 – lựa chọn C" onclick="saveAnswer(203118, 76486, 2, 2)">
+										<label class="form-check-label" for="q2_2">
+											C. To warm themselves and protect their hive										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer2" id="q2_3" value="3" aria-label="Câu 3 – lựa chọn D" onclick="saveAnswer(203118, 76486, 2, 3)">
+										<label class="form-check-label" for="q2_3">
+											D. To restore nutrition and protect their hive										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+								<div class="fw-bold mb-2">
+									Câu 4: What is “emerge” in paragraph (A) closest in meaning to?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer3" id="q3_0" value="0" aria-label="Câu 4 – lựa chọn A" onclick="saveAnswer(203118, 76486, 3, 0)">
+										<label class="form-check-label" for="q3_0">
+											A. escape										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer3" id="q3_1" value="1" aria-label="Câu 4 – lựa chọn B" onclick="saveAnswer(203118, 76486, 3, 1)">
+										<label class="form-check-label" for="q3_1">
+											B. activate										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer3" id="q3_2" value="2" aria-label="Câu 4 – lựa chọn C" onclick="saveAnswer(203118, 76486, 3, 2)">
+										<label class="form-check-label" for="q3_2">
+											C. disappear										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer3" id="q3_3" value="3" aria-label="Câu 4 – lựa chọn D" onclick="saveAnswer(203118, 76486, 3, 3)">
+										<label class="form-check-label" for="q3_3">
+											D. appear										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+								<div class="fw-bold mb-2">
+									Câu 5: According to the passage, freezing temperatures affect the following factors EXCEPT ______.								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer4" id="q4_0" value="0" aria-label="Câu 5 – lựa chọn A" onclick="saveAnswer(203118, 76486, 4, 0)">
+										<label class="form-check-label" for="q4_0">
+											A. bee muscles										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer4" id="q4_1" value="1" aria-label="Câu 5 – lựa chọn B" onclick="saveAnswer(203118, 76486, 4, 1)">
+										<label class="form-check-label" for="q4_1">
+											B. bee flight										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer4" id="q4_2" value="2" aria-label="Câu 5 – lựa chọn C" onclick="saveAnswer(203118, 76486, 4, 2)">
+										<label class="form-check-label" for="q4_2">
+											C. nectar viscosity										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer4" id="q4_3" value="3" aria-label="Câu 5 – lựa chọn D" onclick="saveAnswer(203118, 76486, 4, 3)">
+										<label class="form-check-label" for="q4_3">
+											D. bee blood										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+								<div class="fw-bold mb-2">
+									Câu 6: In paragraph (B), what best paraphrases the sentence “Clustering, however, does not generate enough heat to combatdeath from freezing”?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer5" id="q5_0" value="0" aria-label="Câu 6 – lựa chọn A" onclick="saveAnswer(203118, 76486, 5, 0)">
+										<label class="form-check-label" for="q5_0">
+											A. Clustering is one way to produce heat against dropping temperatures.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer5" id="q5_1" value="1" aria-label="Câu 6 – lựa chọn B" onclick="saveAnswer(203118, 76486, 5, 1)">
+										<label class="form-check-label" for="q5_1">
+											B. There exist other methods to protect bees from death in freezing temperatures.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer5" id="q5_2" value="2" aria-label="Câu 6 – lựa chọn C" onclick="saveAnswer(203118, 76486, 5, 2)">
+										<label class="form-check-label" for="q5_2">
+											C. Even grouping, the bees will still die if the temperature is low enough.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer5" id="q5_3" value="3" aria-label="Câu 6 – lựa chọn D" onclick="saveAnswer(203118, 76486, 5, 3)">
+										<label class="form-check-label" for="q5_3">
+											D. Enough heat can be generated if bees are likely to form bigger groups in their hive.										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+								<div class="fw-bold mb-2">
+									Câu 7: What is the main idea of paragraph (C)?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer6" id="q6_0" value="0" aria-label="Câu 7 – lựa chọn A" onclick="saveAnswer(203118, 76486, 6, 0)">
+										<label class="form-check-label" for="q6_0">
+											A. Bees can regulate their hive population more easily in freezing temperatures.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer6" id="q6_1" value="1" aria-label="Câu 7 – lựa chọn B" onclick="saveAnswer(203118, 76486, 6, 1)">
+										<label class="form-check-label" for="q6_1">
+											B. Freezing weather helps reduce the number of bees in the hive.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer6" id="q6_2" value="2" aria-label="Câu 7 – lựa chọn C" onclick="saveAnswer(203118, 76486, 6, 2)">
+										<label class="form-check-label" for="q6_2">
+											C. The queen bee is responsible for producing more worker bees.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer6" id="q6_3" value="3" aria-label="Câu 7 – lựa chọn D" onclick="saveAnswer(203118, 76486, 6, 3)">
+										<label class="form-check-label" for="q6_3">
+											D. There are different roles for bees in the hive.										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+								<div class="fw-bold mb-2">
+									Câu 8: According to the passage, what will be displaced from the hive in cold weather?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer7" id="q7_0" value="0" aria-label="Câu 8 – lựa chọn A" onclick="saveAnswer(203118, 76486, 7, 0)">
+										<label class="form-check-label" for="q7_0">
+											A. Bee eggs										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer7" id="q7_1" value="1" aria-label="Câu 8 – lựa chọn B" onclick="saveAnswer(203118, 76486, 7, 1)">
+										<label class="form-check-label" for="q7_1">
+											B. The queen										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer7" id="q7_2" value="2" aria-label="Câu 8 – lựa chọn C" onclick="saveAnswer(203118, 76486, 7, 2)">
+										<label class="form-check-label" for="q7_2">
+											C. Drones										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer7" id="q7_3" value="3" aria-label="Câu 8 – lựa chọn D" onclick="saveAnswer(203118, 76486, 7, 3)">
+										<label class="form-check-label" for="q7_3">
+											D. Bee workers										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+								<div class="fw-bold mb-2">
+									Câu 9: The phrase “the colony” in paragraph (D) can refer to ______.								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer8" id="q8_0" value="0" aria-label="Câu 9 – lựa chọn A" onclick="saveAnswer(203118, 76486, 8, 0)">
+										<label class="form-check-label" for="q8_0">
+											A. the structural cavity										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer8" id="q8_1" value="1" aria-label="Câu 9 – lựa chọn B" onclick="saveAnswer(203118, 76486, 8, 1)">
+										<label class="form-check-label" for="q8_1">
+											B. bee removal company										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer8" id="q8_2" value="2" aria-label="Câu 9 – lựa chọn C" onclick="saveAnswer(203118, 76486, 8, 2)">
+										<label class="form-check-label" for="q8_2">
+											C. the home’s wall										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer8" id="q8_3" value="3" aria-label="Câu 9 – lựa chọn D" onclick="saveAnswer(203118, 76486, 8, 3)">
+										<label class="form-check-label" for="q8_3">
+											D. the hive										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+								<div class="fw-bold mb-2">
+									Câu 10: According to the passage, which of the following information is true?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer9" id="q9_0" value="0" aria-label="Câu 10 – lựa chọn A" onclick="saveAnswer(203118, 76486, 9, 0)">
+										<label class="form-check-label" for="q9_0">
+											A. It is noise disturbing the hive on your home’s walls.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer9" id="q9_1" value="1" aria-label="Câu 10 – lựa chọn B" onclick="saveAnswer(203118, 76486, 9, 1)">
+										<label class="form-check-label" for="q9_1">
+											B. Bees can withstand the freezing weather only by gathering in the hive.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer9" id="q9_2" value="2" aria-label="Câu 10 – lựa chọn C" onclick="saveAnswer(203118, 76486, 9, 2)">
+										<label class="form-check-label" for="q9_2">
+											C. Winter is the perfect time for bees to collect the nectar and pollen.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer9" id="q9_3" value="3" aria-label="Câu 10 – lựa chọn D" onclick="saveAnswer(203118, 76486, 9, 3)">
+										<label class="form-check-label" for="q9_3">
+											D. Bees may die as they carry thick flower nectar in dropping temperatures.										</label>
+									</div>
+															</div>
+											</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+		<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+			<div class="d-flex flex-wrap justify-content-center gap-1">
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-0" data-index="0">
+					   1					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-1" data-index="1">
+					   2					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-2" data-index="2">
+					   3					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-3" data-index="3">
+					   4					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-4" data-index="4">
+					   5					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-5" data-index="5">
+					   6					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-6" data-index="6">
+					   7					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-7" data-index="7">
+					   8					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-8" data-index="8">
+					   9					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-9" data-index="9">
+					   10					</a>
+							</div>
+			<div>
+				<button type="submit" form="submitForm" id="btn-submit" class="btn btn-primary fw-bold">
+					📤 Nộp bài
+				</button>
+			</div>
+		</div>
+	</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	const userId = 203118;
+	const practiceId = 76486;
+	const storageKey = `reading_answers_${userId}_${practiceId}`;
+	const totalQuestions = 10;
+
+	function saveAnswer(userId, practiceId, index, choice) {
+		let answers = JSON.parse(localStorage.getItem(storageKey)) || Array(totalQuestions).fill('-');
+		answers[index] = choice;
+		localStorage.setItem(storageKey, JSON.stringify(answers));
+		document.getElementById("reading_answer").value = answers.join("");
+
+		const btn = document.getElementById(`progress-question-${index}`);
+		if (btn) {
+			btn.classList.remove('btn-outline-secondary');
+			btn.classList.add('btn-success');
+		}
+	}
+
+	function loadAnswers() {
+		let answers = JSON.parse(localStorage.getItem(storageKey)) || Array(totalQuestions).fill('-');
+		document.getElementById("reading_answer").value = answers.join("");
+
+		answers.forEach((choice, index) => {
+			if (choice !== '-') {
+				let radioBtn = document.getElementById(`q${index}_${choice}`);
+				if (radioBtn) radioBtn.checked = true;
+
+				const btn = document.getElementById(`progress-question-${index}`);
+				if (btn) {
+					btn.classList.remove('btn-outline-secondary');
+					btn.classList.add('btn-success');
+				}
+			}
+		});
+	}
+
+	document.addEventListener("DOMContentLoaded", loadAnswers);
+
+	document.getElementById('btn-back').addEventListener('click', function (e) {
+		if (confirm("Bạn vẫn chưa nộp bài.\nBạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.getElementById('btn-submit').addEventListener('click', function (e) {
+		const confirmSubmit = confirm("Sau khi nộp, bạn sẽ không thể thay đổi câu trả lời.\nBạn có chắc chắn muốn nộp bài không?");
+		if (!confirmSubmit) {
+			e.preventDefault();
+			return;
+		}
+		const btn = this;
+		btn.disabled = true;
+		btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Đang nộp bài...';
+		document.getElementById('submitForm').submit();
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -120;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+
+
+</body></html>

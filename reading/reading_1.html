@@ -1,0 +1,645 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Luyện đề Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>		<style type="text/css">
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 100%;
+			max-width: none;
+		}
+		@media (min-width: 992px) {
+			#offcanvasTranscript,
+			#offcanvasTranslation {
+				width: 70% !important;
+				max-width: 700px;
+			}
+		}
+		.question-block {
+			background-color: #f9f9f9;
+			border-radius: 6px;
+			padding: 1rem;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+		<!-- Navbar phụ nổi -->
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+		<div class="container-fluid">
+			<div class="row align-items-center text-center text-md-start">
+				<div class="col-12 col-md-3 mb-2 mb-md-0">
+					<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+						⬅️ Quay lại danh sách đề
+					</button>
+				</div>
+				<div class="col-12 col-md-6 text-center">
+					<span class="fw-bold text-muted small d-block">
+						📘 Bạn đang luyện đề đọc mã số 01 - Part 1					</span>
+					<span class="fw-bold text-muted small d-block">
+						🆔 Mã bài làm: #R76485					</span>
+				</div>
+				<div class="col-12 col-md-3 text-md-end">
+					<span class="small text-muted fw-bold d-block mb-2">
+						👋 Xin chào, phuneo					</span>
+					<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+						<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+							📄 Xem bài đọc
+						</button>
+						<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+							🌐 Dịch tiếng Việt
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+	<!-- Offcanvas Transcript -->
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+		<div class="offcanvas-header">
+			<span class="offcanvas-title fw-bold">Bài đọc</span>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+		</div>
+		<div class="offcanvas-body">
+			<p><b>(A)</b> The blood group system was developed by an Austrian scientist in 1900, and in 1927, Takeji Furukawa, a professor at Tokyo Women's Teacher's School, suggested that personality types and blood groups must be related. He backed <b>it</b> with his own observations, and the theory quickly spread in Japan and beyond. While it wasn't a big hit in the Western world, it is taken very seriously in Japan and some other Asian countries. In fact, there have been cases of discrimination based on blood group in workplaces and schools. The Japanese even have a special term for this type of discrimination—<i>bura hara</i>, or blood type harassment. Here is what this theory suggests.</p>
+
+<p><b>Blood Type A Personality</b></p>
+
+<p>These are kind and compassionate individuals who put others' interests and needs before their own. While they may seem calm on the outside, they often suffer from inner anxiety. People with blood type A personality are excellent listeners and make good friends. Although they get along with others quite well, it is often achieved at the expense of their own happiness. To be liked by others, they bottle up their emotions, which takes its toll on their nervous system. It is beneficial for them to take time alone and rest well. The best jobs for this personality type are those that don't require much contact with other people, such as programmers, accountants, or librarians.</p>
+
+<p><b>Blood Type B Personality</b></p>
+
+<p><b>(B)</b> Outgoing and friendly, this type is a people person. Unlike type A, type B doesn't do that at the expense of their own feelings; it comes to them naturally, without any effort. Contact with people doesn't wear them out, and they do great as leaders or in any type of job that requires dealing with people. Type B is highly adaptable; they can understand people well. They are into body language and other methods of <b>deciphering</b> others. People with blood type B personality rely on their intuition and trust themselves. Speaking of discrimination, Korean women consider men with blood type B personality unsuitable for marriage due to their playful and flirty disposition.</p>
+
+<p><b>Blood Type AB Personality</b></p>
+
+<p>Freedom-loving ABs are strong and rational people. They don't worry about little things and can usually assess their life challenges without emotions getting in the way. Despite their love for freedom and independent thinking, they don't have issues when it comes to relationships and are quite popular.</p>
+
+<p><b>Blood Type O Personality</b></p>
+
+<p>This type is described as responsible, practical, rule-conscious, and organized. They make excellent leaders, and their determination helps them achieve their goals. While they are usually liked by other people, they are somewhat loners and need a lot of time alone. Typically, type O individuals are physically strong and can find success in sports.</p>
+		</div>
+	</div>
+
+	<!-- Offcanvas Translation -->
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+		<div class="offcanvas-header">
+			<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+		</div>
+		<div class="offcanvas-body">
+			<p><b>(A)</b> Hệ thống nhóm máu được phát triển bởi một nhà khoa học người Áo vào năm 1900, và vào năm 1927, Takeji Furukawa, một giáo sư tại Trường Sư phạm Nữ Tokyo, đã đề xuất rằng tính cách và nhóm máu có thể có mối liên hệ với nhau. Ông đã củng cố <b>lý thuyết này</b> bằng những quan sát của riêng mình, và nó nhanh chóng lan rộng ở Nhật Bản và nhiều nơi khác. Mặc dù lý thuyết này không gây tiếng vang lớn ở thế giới phương Tây, nhưng nó lại được coi trọng ở Nhật Bản và một số quốc gia châu Á khác. Trên thực tế, đã có những trường hợp phân biệt đối xử dựa trên nhóm máu tại nơi làm việc và trường học. Người Nhật thậm chí còn có một thuật ngữ đặc biệt để chỉ sự phân biệt này—<i>bura hara</i>, hay còn gọi là quấy rối dựa trên nhóm máu. Dưới đây là những gì lý thuyết này đề xuất.</p>  <p><b>Tính cách nhóm máu A</b></p> <p>Những người thuộc nhóm máu A là những người tốt bụng và giàu lòng trắc ẩn, họ luôn đặt lợi ích và nhu cầu của người khác lên trên bản thân. Dù có vẻ bình tĩnh bên ngoài, nhưng họ thường bị căng thẳng bên trong. Những người có nhóm máu A là những người biết lắng nghe và là những người bạn tốt. Mặc dù họ hòa hợp với mọi người khá tốt, nhưng điều đó thường đạt được bằng cách hy sinh hạnh phúc của chính họ. Để được yêu thích, họ có xu hướng kìm nén cảm xúc của mình, điều này có thể ảnh hưởng đến hệ thần kinh của họ. Vì vậy, họ nên dành thời gian ở một mình và nghỉ ngơi hợp lý. Những công việc phù hợp nhất với nhóm máu này là những công việc không đòi hỏi tiếp xúc nhiều với người khác, chẳng hạn như lập trình viên, kế toán hoặc thủ thư.</p>  <p><b>Tính cách nhóm máu B</b></p> <p><b>(B)</b> Hòa đồng và thân thiện, những người thuộc nhóm máu B là những người hướng ngoại. Không giống như nhóm A, nhóm B không cần phải gồng mình để hòa nhập với người khác; điều đó đến với họ một cách tự nhiên mà không cần nỗ lực. Việc tiếp xúc với mọi người không khiến họ mệt mỏi, và họ có thể trở thành những nhà lãnh đạo giỏi hoặc làm tốt trong bất kỳ công việc nào yêu cầu giao tiếp với con người. Nhóm B rất linh hoạt, họ có khả năng hiểu người khác tốt. Họ quan tâm đến ngôn ngữ cơ thể và các phương pháp <b>giải mã</b> tâm lý của người khác. Những người có nhóm máu B tin vào trực giác và rất tự tin vào bản thân. Nói về sự phân biệt đối xử, phụ nữ Hàn Quốc thường cho rằng đàn ông nhóm máu B không phù hợp để kết hôn vì họ có xu hướng đào hoa và thích tán tỉnh.</p>  <p><b>Tính cách nhóm máu AB</b></p> <p>Những người thuộc nhóm AB yêu thích sự tự do, họ là những người mạnh mẽ và lý trí. Họ không lo lắng về những điều nhỏ nhặt và thường có thể đánh giá các thử thách trong cuộc sống mà không để cảm xúc chi phối. Dù yêu thích tự do và suy nghĩ độc lập, họ không gặp vấn đề trong các mối quan hệ và thường khá được yêu thích.</p>  <p><b>Tính cách nhóm máu O</b></p> <p>Nhóm máu này được mô tả là có trách nhiệm, thực tế, tôn trọng quy tắc và có tổ chức. Họ là những nhà lãnh đạo xuất sắc, và sự quyết tâm của họ giúp họ đạt được mục tiêu. Mặc dù họ thường được người khác yêu thích, nhưng họ lại có xu hướng thích ở một mình và cần nhiều thời gian riêng tư. Thông thường, những người thuộc nhóm máu O có thể chất mạnh mẽ và có thể đạt được thành công trong lĩnh vực thể thao.</p>		</div>
+	</div>
+
+	<div class="row mt-4">
+		<!-- Cột trái: Bài đọc -->
+		<div class="col-md-6 mb-4">
+			<div class="card">
+				<div class="card-body">
+					<p class="card-title fw-bold">Bài đọc</p>
+					<p><b>(A)</b> The blood group system was developed by an Austrian scientist in 1900, and in 1927, Takeji Furukawa, a professor at Tokyo Women's Teacher's School, suggested that personality types and blood groups must be related. He backed <b>it</b> with his own observations, and the theory quickly spread in Japan and beyond. While it wasn't a big hit in the Western world, it is taken very seriously in Japan and some other Asian countries. In fact, there have been cases of discrimination based on blood group in workplaces and schools. The Japanese even have a special term for this type of discrimination—<i>bura hara</i>, or blood type harassment. Here is what this theory suggests.</p>
+
+<p><b>Blood Type A Personality</b></p>
+
+<p>These are kind and compassionate individuals who put others' interests and needs before their own. While they may seem calm on the outside, they often suffer from inner anxiety. People with blood type A personality are excellent listeners and make good friends. Although they get along with others quite well, it is often achieved at the expense of their own happiness. To be liked by others, they bottle up their emotions, which takes its toll on their nervous system. It is beneficial for them to take time alone and rest well. The best jobs for this personality type are those that don't require much contact with other people, such as programmers, accountants, or librarians.</p>
+
+<p><b>Blood Type B Personality</b></p>
+
+<p><b>(B)</b> Outgoing and friendly, this type is a people person. Unlike type A, type B doesn't do that at the expense of their own feelings; it comes to them naturally, without any effort. Contact with people doesn't wear them out, and they do great as leaders or in any type of job that requires dealing with people. Type B is highly adaptable; they can understand people well. They are into body language and other methods of <b>deciphering</b> others. People with blood type B personality rely on their intuition and trust themselves. Speaking of discrimination, Korean women consider men with blood type B personality unsuitable for marriage due to their playful and flirty disposition.</p>
+
+<p><b>Blood Type AB Personality</b></p>
+
+<p>Freedom-loving ABs are strong and rational people. They don't worry about little things and can usually assess their life challenges without emotions getting in the way. Despite their love for freedom and independent thinking, they don't have issues when it comes to relationships and are quite popular.</p>
+
+<p><b>Blood Type O Personality</b></p>
+
+<p>This type is described as responsible, practical, rule-conscious, and organized. They make excellent leaders, and their determination helps them achieve their goals. While they are usually liked by other people, they are somewhat loners and need a lot of time alone. Typically, type O individuals are physically strong and can find success in sports.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Cột phải: Câu hỏi -->
+		<div class="col-md-6">
+			<div class="card h-100">
+				<div class="card-body">
+					
+					<form id="submitForm" action="/practice/reading/submit/76485" method="post">
+						<input type="hidden" name="reading_answer" id="reading_answer" value="----------">
+
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+								<div class="fw-bold mb-2">
+									Câu 1: Which of the following is said about the idea that blood types and personalities are related?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer0" id="q0_0" value="0" aria-label="Câu 1 – lựa chọn A" onclick="saveAnswer(203118, 76485, 0, 0)">
+										<label class="form-check-label" for="q0_0">
+											A. It is more popular in Asian countries than in the West.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer0" id="q0_1" value="1" aria-label="Câu 1 – lựa chọn B" onclick="saveAnswer(203118, 76485, 0, 1)">
+										<label class="form-check-label" for="q0_1">
+											B. It was originally developed by a Japanese scientist.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer0" id="q0_2" value="2" aria-label="Câu 1 – lựa chọn C" onclick="saveAnswer(203118, 76485, 0, 2)">
+										<label class="form-check-label" for="q0_2">
+											C. Its accuracy has been supported with scientific data.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer0" id="q0_3" value="3" aria-label="Câu 1 – lựa chọn D" onclick="saveAnswer(203118, 76485, 0, 3)">
+										<label class="form-check-label" for="q0_3">
+											D. It is used in schools and workplaces to categorize people.										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+								<div class="fw-bold mb-2">
+									Câu 2: What does the word “it” in paragraph (A) refer to?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer1" id="q1_0" value="0" aria-label="Câu 2 – lựa chọn A" onclick="saveAnswer(203118, 76485, 1, 0)">
+										<label class="form-check-label" for="q1_0">
+											A. blood										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer1" id="q1_1" value="1" aria-label="Câu 2 – lựa chọn B" onclick="saveAnswer(203118, 76485, 1, 1)">
+										<label class="form-check-label" for="q1_1">
+											B. school										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer1" id="q1_2" value="2" aria-label="Câu 2 – lựa chọn C" onclick="saveAnswer(203118, 76485, 1, 2)">
+										<label class="form-check-label" for="q1_2">
+											C. theory										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer1" id="q1_3" value="3" aria-label="Câu 2 – lựa chọn D" onclick="saveAnswer(203118, 76485, 1, 3)">
+										<label class="form-check-label" for="q1_3">
+											D. personality										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+								<div class="fw-bold mb-2">
+									Câu 3: What is learnt about blood type A personality?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer2" id="q2_0" value="0" aria-label="Câu 3 – lựa chọn A" onclick="saveAnswer(203118, 76485, 2, 0)">
+										<label class="form-check-label" for="q2_0">
+											A. They cannot perform in jobs that require frequent contact with others.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer2" id="q2_1" value="1" aria-label="Câu 3 – lựa chọn B" onclick="saveAnswer(203118, 76485, 2, 1)">
+										<label class="form-check-label" for="q2_1">
+											B. They suffer from anxiety as a result of their inability to communicate.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer2" id="q2_2" value="2" aria-label="Câu 3 – lựa chọn C" onclick="saveAnswer(203118, 76485, 2, 2)">
+										<label class="form-check-label" for="q2_2">
+											C. Trying to communicate with others make them mentally exhausted.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer2" id="q2_3" value="3" aria-label="Câu 3 – lựa chọn D" onclick="saveAnswer(203118, 76485, 2, 3)">
+										<label class="form-check-label" for="q2_3">
+											D. They often suppress their own feelings to get on well with others.										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+								<div class="fw-bold mb-2">
+									Câu 4: Which blood type personality is intuitive and self-confident?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer3" id="q3_0" value="0" aria-label="Câu 4 – lựa chọn A" onclick="saveAnswer(203118, 76485, 3, 0)">
+										<label class="form-check-label" for="q3_0">
+											A. Type A										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer3" id="q3_1" value="1" aria-label="Câu 4 – lựa chọn B" onclick="saveAnswer(203118, 76485, 3, 1)">
+										<label class="form-check-label" for="q3_1">
+											B. Type O										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer3" id="q3_2" value="2" aria-label="Câu 4 – lựa chọn C" onclick="saveAnswer(203118, 76485, 3, 2)">
+										<label class="form-check-label" for="q3_2">
+											C. Type AB										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer3" id="q3_3" value="3" aria-label="Câu 4 – lựa chọn D" onclick="saveAnswer(203118, 76485, 3, 3)">
+										<label class="form-check-label" for="q3_3">
+											D. Type B										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+								<div class="fw-bold mb-2">
+									Câu 5: Which blood type personality does not let emotion affect their assessment?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer4" id="q4_0" value="0" aria-label="Câu 5 – lựa chọn A" onclick="saveAnswer(203118, 76485, 4, 0)">
+										<label class="form-check-label" for="q4_0">
+											A. Type B										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer4" id="q4_1" value="1" aria-label="Câu 5 – lựa chọn B" onclick="saveAnswer(203118, 76485, 4, 1)">
+										<label class="form-check-label" for="q4_1">
+											B. Type AB										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer4" id="q4_2" value="2" aria-label="Câu 5 – lựa chọn C" onclick="saveAnswer(203118, 76485, 4, 2)">
+										<label class="form-check-label" for="q4_2">
+											C. Type O										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer4" id="q4_3" value="3" aria-label="Câu 5 – lựa chọn D" onclick="saveAnswer(203118, 76485, 4, 3)">
+										<label class="form-check-label" for="q4_3">
+											D. Type A										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+								<div class="fw-bold mb-2">
+									Câu 6: What is shared between blood type A personality and blood type B personality?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer5" id="q5_0" value="0" aria-label="Câu 6 – lựa chọn A" onclick="saveAnswer(203118, 76485, 5, 0)">
+										<label class="form-check-label" for="q5_0">
+											A. They prioritize others’ needs.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer5" id="q5_1" value="1" aria-label="Câu 6 – lựa chọn B" onclick="saveAnswer(203118, 76485, 5, 1)">
+										<label class="form-check-label" for="q5_1">
+											B. They get on well with people.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer5" id="q5_2" value="2" aria-label="Câu 6 – lựa chọn C" onclick="saveAnswer(203118, 76485, 5, 2)">
+										<label class="form-check-label" for="q5_2">
+											C. They are naturally outgoing.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer5" id="q5_3" value="3" aria-label="Câu 6 – lựa chọn D" onclick="saveAnswer(203118, 76485, 5, 3)">
+										<label class="form-check-label" for="q5_3">
+											D. They can become great leaders.										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+								<div class="fw-bold mb-2">
+									Câu 7: What can the word “deciphering” in paragraph (B) be best replaced by?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer6" id="q6_0" value="0" aria-label="Câu 7 – lựa chọn A" onclick="saveAnswer(203118, 76485, 6, 0)">
+										<label class="form-check-label" for="q6_0">
+											A. cracking										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer6" id="q6_1" value="1" aria-label="Câu 7 – lựa chọn B" onclick="saveAnswer(203118, 76485, 6, 1)">
+										<label class="form-check-label" for="q6_1">
+											B. discovering										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer6" id="q6_2" value="2" aria-label="Câu 7 – lựa chọn C" onclick="saveAnswer(203118, 76485, 6, 2)">
+										<label class="form-check-label" for="q6_2">
+											C. feeling										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer6" id="q6_3" value="3" aria-label="Câu 7 – lựa chọn D" onclick="saveAnswer(203118, 76485, 6, 3)">
+										<label class="form-check-label" for="q6_3">
+											D. translating										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+								<div class="fw-bold mb-2">
+									Câu 8: Which of the following sentences defines an unfamiliar term?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer7" id="q7_0" value="0" aria-label="Câu 8 – lựa chọn A" onclick="saveAnswer(203118, 76485, 7, 0)">
+										<label class="form-check-label" for="q7_0">
+											A. The passage discusses the discrimination against Type B individuals.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer7" id="q7_1" value="1" aria-label="Câu 8 – lựa chọn B" onclick="saveAnswer(203118, 76485, 7, 1)">
+										<label class="form-check-label" for="q7_1">
+											B. The passage explains the meaning of "bura hara."										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer7" id="q7_2" value="2" aria-label="Câu 8 – lựa chọn C" onclick="saveAnswer(203118, 76485, 7, 2)">
+										<label class="form-check-label" for="q7_2">
+											C. The passage compares different blood type personalities.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer7" id="q7_3" value="3" aria-label="Câu 8 – lựa chọn D" onclick="saveAnswer(203118, 76485, 7, 3)">
+										<label class="form-check-label" for="q7_3">
+											D. The passage describes the personality traits of Type A.										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+								<div class="fw-bold mb-2">
+									Câu 9: What is NOT true about blood type O personality?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer8" id="q8_0" value="0" aria-label="Câu 9 – lựa chọn A" onclick="saveAnswer(203118, 76485, 8, 0)">
+										<label class="form-check-label" for="q8_0">
+											A. Their physical strength gives them advantages in sports.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer8" id="q8_1" value="1" aria-label="Câu 9 – lựa chọn B" onclick="saveAnswer(203118, 76485, 8, 1)">
+										<label class="form-check-label" for="q8_1">
+											B. They are down-to-earth and often follow the rules. 										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer8" id="q8_2" value="2" aria-label="Câu 9 – lựa chọn C" onclick="saveAnswer(203118, 76485, 8, 2)">
+										<label class="form-check-label" for="q8_2">
+											C. Their unpopularity with people makes them lonely. 										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer8" id="q8_3" value="3" aria-label="Câu 9 – lựa chọn D" onclick="saveAnswer(203118, 76485, 8, 3)">
+										<label class="form-check-label" for="q8_3">
+											D. They use willpower to achieve what they want.										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+								<div class="fw-bold mb-2">
+									Câu 10: Which of the following can serve best as the title of this passage?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer9" id="q9_0" value="0" aria-label="Câu 10 – lựa chọn A" onclick="saveAnswer(203118, 76485, 9, 0)">
+										<label class="form-check-label" for="q9_0">
+											A. The blood type personality myth										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer9" id="q9_1" value="1" aria-label="Câu 10 – lựa chọn B" onclick="saveAnswer(203118, 76485, 9, 1)">
+										<label class="form-check-label" for="q9_1">
+											B. Applications of blood group system										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer9" id="q9_2" value="2" aria-label="Câu 10 – lựa chọn C" onclick="saveAnswer(203118, 76485, 9, 2)">
+										<label class="form-check-label" for="q9_2">
+											C. The blood type personality traits										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer9" id="q9_3" value="3" aria-label="Câu 10 – lựa chọn D" onclick="saveAnswer(203118, 76485, 9, 3)">
+										<label class="form-check-label" for="q9_3">
+											D. What your blood type can tell you										</label>
+									</div>
+															</div>
+											</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+		<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+			<div class="d-flex flex-wrap justify-content-center gap-1">
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-0" data-index="0">
+					   1					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-1" data-index="1">
+					   2					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-2" data-index="2">
+					   3					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-3" data-index="3">
+					   4					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-4" data-index="4">
+					   5					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-5" data-index="5">
+					   6					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-6" data-index="6">
+					   7					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-7" data-index="7">
+					   8					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-8" data-index="8">
+					   9					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-9" data-index="9">
+					   10					</a>
+							</div>
+			<div>
+				<button type="submit" form="submitForm" id="btn-submit" class="btn btn-primary fw-bold">
+					📤 Nộp bài
+				</button>
+			</div>
+		</div>
+	</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	const userId = 203118;
+	const practiceId = 76485;
+	const storageKey = `reading_answers_${userId}_${practiceId}`;
+	const totalQuestions = 10;
+
+	function saveAnswer(userId, practiceId, index, choice) {
+		let answers = JSON.parse(localStorage.getItem(storageKey)) || Array(totalQuestions).fill('-');
+		answers[index] = choice;
+		localStorage.setItem(storageKey, JSON.stringify(answers));
+		document.getElementById("reading_answer").value = answers.join("");
+
+		const btn = document.getElementById(`progress-question-${index}`);
+		if (btn) {
+			btn.classList.remove('btn-outline-secondary');
+			btn.classList.add('btn-success');
+		}
+	}
+
+	function loadAnswers() {
+		let answers = JSON.parse(localStorage.getItem(storageKey)) || Array(totalQuestions).fill('-');
+		document.getElementById("reading_answer").value = answers.join("");
+
+		answers.forEach((choice, index) => {
+			if (choice !== '-') {
+				let radioBtn = document.getElementById(`q${index}_${choice}`);
+				if (radioBtn) radioBtn.checked = true;
+
+				const btn = document.getElementById(`progress-question-${index}`);
+				if (btn) {
+					btn.classList.remove('btn-outline-secondary');
+					btn.classList.add('btn-success');
+				}
+			}
+		});
+	}
+
+	document.addEventListener("DOMContentLoaded", loadAnswers);
+
+	document.getElementById('btn-back').addEventListener('click', function (e) {
+		if (confirm("Bạn vẫn chưa nộp bài.\nBạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.getElementById('btn-submit').addEventListener('click', function (e) {
+		const confirmSubmit = confirm("Sau khi nộp, bạn sẽ không thể thay đổi câu trả lời.\nBạn có chắc chắn muốn nộp bài không?");
+		if (!confirmSubmit) {
+			e.preventDefault();
+			return;
+		}
+		const btn = this;
+		btn.disabled = true;
+		btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Đang nộp bài...';
+		document.getElementById('submitForm').submit();
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -120;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+
+
+</body></html>

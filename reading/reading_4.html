@@ -1,0 +1,649 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Luyện đề Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>		<style type="text/css">
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 100%;
+			max-width: none;
+		}
+		@media (min-width: 992px) {
+			#offcanvasTranscript,
+			#offcanvasTranslation {
+				width: 70% !important;
+				max-width: 700px;
+			}
+		}
+		.question-block {
+			background-color: #f9f9f9;
+			border-radius: 6px;
+			padding: 1rem;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+		<!-- Navbar phụ nổi -->
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+		<div class="container-fluid">
+			<div class="row align-items-center text-center text-md-start">
+				<div class="col-12 col-md-3 mb-2 mb-md-0">
+					<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+						⬅️ Quay lại danh sách đề
+					</button>
+				</div>
+				<div class="col-12 col-md-6 text-center">
+					<span class="fw-bold text-muted small d-block">
+						📘 Bạn đang luyện đề đọc mã số 04 - Part 4					</span>
+					<span class="fw-bold text-muted small d-block">
+						🆔 Mã bài làm: #R74127					</span>
+				</div>
+				<div class="col-12 col-md-3 text-md-end">
+					<span class="small text-muted fw-bold d-block mb-2">
+						👋 Xin chào, phuneo					</span>
+					<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+						<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+							📄 Xem bài đọc
+						</button>
+						<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+							🌐 Dịch tiếng Việt
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+	<!-- Offcanvas Transcript -->
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+		<div class="offcanvas-header">
+			<span class="offcanvas-title fw-bold">Bài đọc</span>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+		</div>
+		<div class="offcanvas-body">
+			<p>The continents may have first risen high above the oceans of the world about 3 billion years ago, researchers say. That's about a billion years earlier than geoscientists had suspected for the emergence of a good chunk of the continents.</p>
+
+<p>Earth is the only known planet whose surface is divided into continents and oceans. Currently, the continents rise an average of about 2.5 miles (4 kilometers) above the seafloor.</p>
+
+<p>The continents are composed of a thick, buoyant crust that's about 21 miles (35 km) deep, on average, whereas the comparatively thin, dense crust of the ocean floor is only an average of about 4 miles (7 km) thick. Because the continents are so thick and buoyant, they are less likely to get dragged downward. That's why so many ancient continental rocks have survived in the Earth's crust. Still, much about the earliest days of the continents, and when and how they formed, remains hotly contested.</p>
+
+<p>"Earth's surface is continually being reworked by tectonics and agents of erosion, so what may have formed long ago may no longer be present," said geologist Cin-Ty Lee at Rice University in Houston, who was not involved in the current study.</p>
+
+<p><b>(A) To shed light on</b> the origins of continents, isotope geochemist Bruno Dhuime at the University of Bristol in England and his colleagues analyzed more than 13,000 samples of rocks from the continental crust. Some of these samples were more than 4 billion years old.</p>
+
+<p>Prior research suggested the first 2 billion years of Earth's 4.5-billion-year history were dominated by volcanic activity that generated the kind of crust now seen on the seafloor. Continent-like crust, which is thick and rich in silica, was thought to only have emerged in great volumes in the past 2 billion years. Determining what the earliest continental crust was like and when it formed can be tricky, because Earth's crust has melted and mixed together over and over again.</p>
+
+<p>The researchers found that when magma cools and crystallizes, the remaining molten rock becomes enriched in silica and rubidium, but less so in strontium. The relative amounts of rubidium and strontium are therefore linked with the amount of silica in rock, and so could be used to extrapolate when in the modern era thick, silica-rich continental crust emerged.</p>
+
+<p><b>(B)</b> The researchers found that modern, silica-rich continental crust first appeared about 3 billion years ago. The thick, buoyant nature of these chunks of crust would have made them rise high above what became the seafloor, Dhuime and his colleagues note online June 22 in the journal Nature Geoscience.</p>
+
+<p><b>(C)</b> "They are showing when continents actually emerged from the oceans," said Lee, who wrote an <b>accompanying</b> news article in Nature Geoscience. "Continents certainly existed early in Earth's history, but perhaps many were submerged."</p>
+
+<p>It remains uncertain why continental crust made its first appearance about 3 billion years ago. One possibility is the onset of plate tectonics—when the plates of rock making up the planet's exterior began moving slowly over the Earth's mantle layer. Plate tectonics would have resulted in wet rock getting shoved down into Earth's interior, eventually helping to form silica-rich magmas that make up much of the continental crust.</p>
+		</div>
+	</div>
+
+	<!-- Offcanvas Translation -->
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+		<div class="offcanvas-header">
+			<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+		</div>
+		<div class="offcanvas-body">
+			<p>Các lục địa có thể đã lần đầu tiên nổi cao trên bề mặt đại dương khoảng 3 tỷ năm trước, theo nghiên cứu của các nhà khoa học. Điều này sớm hơn khoảng một tỷ năm so với dự đoán trước đây của các nhà địa chất về thời điểm xuất hiện của phần lớn các lục địa.</p>  <p>Trái Đất là hành tinh duy nhất được biết đến có bề mặt được chia thành lục địa và đại dương. Hiện tại, các lục địa cao trung bình khoảng 2,5 dặm (4 km) so với đáy đại dương.</p>  <p>Các lục địa được cấu tạo từ lớp vỏ dày và nổi, trung bình có độ sâu khoảng 21 dặm (35 km), trong khi lớp vỏ đại dương tương đối mỏng và đặc hơn, chỉ có độ dày trung bình khoảng 4 dặm (7 km). Vì lục địa có lớp vỏ dày và nổi, chúng ít có khả năng bị kéo chìm xuống. Đây là lý do tại sao rất nhiều lớp đá lục địa cổ đại vẫn tồn tại trong vỏ Trái Đất. Tuy nhiên, thời kỳ hình thành sớm nhất của các lục địa, cũng như cách thức và thời điểm chúng xuất hiện, vẫn còn nhiều tranh cãi.</p>  <p>"Bề mặt Trái Đất liên tục bị tác động bởi kiến tạo địa chất và quá trình xói mòn, vì vậy những gì có thể đã hình thành từ lâu có thể không còn tồn tại," nhà địa chất Cin-Ty Lee tại Đại học Rice ở Houston, người không tham gia vào nghiên cứu hiện tại, cho biết.</p>  <p><b>(A) Để làm sáng tỏ</b> nguồn gốc của các lục địa, nhà địa hóa đồng vị Bruno Dhuime tại Đại học Bristol, Anh, cùng các đồng nghiệp của ông đã phân tích hơn 13.000 mẫu đá từ lớp vỏ lục địa. Một số mẫu này có tuổi thọ hơn 4 tỷ năm.</p>  <p>Các nghiên cứu trước đây cho thấy trong 2 tỷ năm đầu tiên của lịch sử 4,5 tỷ năm của Trái Đất, hoạt động núi lửa chiếm ưu thế, tạo ra loại vỏ tương tự như vỏ đáy đại dương hiện nay. Vỏ lục địa, vốn dày và giàu silica, được cho là chỉ xuất hiện với khối lượng lớn trong vòng 2 tỷ năm qua. Việc xác định thành phần của lớp vỏ lục địa đầu tiên và thời điểm nó hình thành là một thách thức, vì lớp vỏ Trái Đất liên tục bị nóng chảy và tái kết hợp.</p>  <p>Các nhà nghiên cứu phát hiện ra rằng khi dung nham nguội đi và kết tinh, phần đá nóng chảy còn lại trở nên giàu silica và rubidi, nhưng ít stronxi hơn. Do đó, tỷ lệ rubidi và stronxi có liên quan đến lượng silica trong đá, và có thể được sử dụng để suy luận thời điểm lớp vỏ lục địa dày, giàu silica xuất hiện.</p>  <p><b>(B)</b> Các nhà nghiên cứu phát hiện ra rằng lớp vỏ lục địa hiện đại, giàu silica, lần đầu tiên xuất hiện khoảng 3 tỷ năm trước. Với đặc tính dày và nổi của chúng, những khối vỏ này có thể đã trồi lên cao trên bề mặt đáy đại dương, theo Dhuime và các đồng nghiệp, được công bố trực tuyến vào ngày 22 tháng 6 trên tạp chí Nature Geoscience.</p>  <p><b>(C)</b> "Họ đang cho thấy thời điểm các lục địa thực sự trồi lên khỏi đại dương," Lee, người đã viết một bài báo <b>đính kèm</b> trên tạp chí Nature Geoscience, cho biết. "Các lục địa chắc chắn đã tồn tại từ rất sớm trong lịch sử Trái Đất, nhưng có thể nhiều trong số đó vẫn bị chìm dưới nước."</p>  <p>Hiện vẫn chưa rõ lý do tại sao lớp vỏ lục địa lại lần đầu tiên xuất hiện khoảng 3 tỷ năm trước. Một giả thuyết là sự khởi đầu của quá trình kiến tạo mảng—khi các mảng đá trên bề mặt Trái Đất bắt đầu di chuyển chậm trên lớp manti của hành tinh. Kiến tạo mảng có thể đã đẩy các khối đá ẩm xuống sâu vào bên trong Trái Đất, cuối cùng giúp hình thành các dòng dung nham giàu silica, tạo nên phần lớn lớp vỏ lục địa.</p>		</div>
+	</div>
+
+	<div class="row mt-4">
+		<!-- Cột trái: Bài đọc -->
+		<div class="col-md-6 mb-4">
+			<div class="card">
+				<div class="card-body">
+					<p class="card-title fw-bold">Bài đọc</p>
+					<p>The continents may have first risen high above the oceans of the world about 3 billion years ago, researchers say. That's about a billion years earlier than geoscientists had suspected for the emergence of a good chunk of the continents.</p>
+
+<p>Earth is the only known planet whose surface is divided into continents and oceans. Currently, the continents rise an average of about 2.5 miles (4 kilometers) above the seafloor.</p>
+
+<p>The continents are composed of a thick, buoyant crust that's about 21 miles (35 km) deep, on average, whereas the comparatively thin, dense crust of the ocean floor is only an average of about 4 miles (7 km) thick. Because the continents are so thick and buoyant, they are less likely to get dragged downward. That's why so many ancient continental rocks have survived in the Earth's crust. Still, much about the earliest days of the continents, and when and how they formed, remains hotly contested.</p>
+
+<p>"Earth's surface is continually being reworked by tectonics and agents of erosion, so what may have formed long ago may no longer be present," said geologist Cin-Ty Lee at Rice University in Houston, who was not involved in the current study.</p>
+
+<p><b>(A) To shed light on</b> the origins of continents, isotope geochemist Bruno Dhuime at the University of Bristol in England and his colleagues analyzed more than 13,000 samples of rocks from the continental crust. Some of these samples were more than 4 billion years old.</p>
+
+<p>Prior research suggested the first 2 billion years of Earth's 4.5-billion-year history were dominated by volcanic activity that generated the kind of crust now seen on the seafloor. Continent-like crust, which is thick and rich in silica, was thought to only have emerged in great volumes in the past 2 billion years. Determining what the earliest continental crust was like and when it formed can be tricky, because Earth's crust has melted and mixed together over and over again.</p>
+
+<p>The researchers found that when magma cools and crystallizes, the remaining molten rock becomes enriched in silica and rubidium, but less so in strontium. The relative amounts of rubidium and strontium are therefore linked with the amount of silica in rock, and so could be used to extrapolate when in the modern era thick, silica-rich continental crust emerged.</p>
+
+<p><b>(B)</b> The researchers found that modern, silica-rich continental crust first appeared about 3 billion years ago. The thick, buoyant nature of these chunks of crust would have made them rise high above what became the seafloor, Dhuime and his colleagues note online June 22 in the journal Nature Geoscience.</p>
+
+<p><b>(C)</b> "They are showing when continents actually emerged from the oceans," said Lee, who wrote an <b>accompanying</b> news article in Nature Geoscience. "Continents certainly existed early in Earth's history, but perhaps many were submerged."</p>
+
+<p>It remains uncertain why continental crust made its first appearance about 3 billion years ago. One possibility is the onset of plate tectonics—when the plates of rock making up the planet's exterior began moving slowly over the Earth's mantle layer. Plate tectonics would have resulted in wet rock getting shoved down into Earth's interior, eventually helping to form silica-rich magmas that make up much of the continental crust.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Cột phải: Câu hỏi -->
+		<div class="col-md-6">
+			<div class="card h-100">
+				<div class="card-body">
+					
+					<form id="submitForm" action="/practice/reading/submit/74127" method="post">
+						<input type="hidden" name="reading_answer" id="reading_answer" value="----------">
+
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+								<div class="fw-bold mb-2">
+									Câu 1: According to the geoscientists, when were the continents assumed to first rise above the oceans?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer0" id="q0_0" value="0" aria-label="Câu 1 – lựa chọn A" onclick="saveAnswer(203118, 74127, 0, 0)">
+										<label class="form-check-label" for="q0_0">
+											A. 2 billion years ago  										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer0" id="q0_1" value="1" aria-label="Câu 1 – lựa chọn B" onclick="saveAnswer(203118, 74127, 0, 1)">
+										<label class="form-check-label" for="q0_1">
+											B. 1 billion years ago										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer0" id="q0_2" value="2" aria-label="Câu 1 – lựa chọn C" onclick="saveAnswer(203118, 74127, 0, 2)">
+										<label class="form-check-label" for="q0_2">
+											C. 4 billion years ago										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer0" id="q0_3" value="3" aria-label="Câu 1 – lựa chọn D" onclick="saveAnswer(203118, 74127, 0, 3)">
+										<label class="form-check-label" for="q0_3">
+											D. 3 billion years ago										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+								<div class="fw-bold mb-2">
+									Câu 2: What is true about the continents?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer1" id="q1_0" value="0" aria-label="Câu 2 – lựa chọn A" onclick="saveAnswer(203118, 74127, 1, 0)">
+										<label class="form-check-label" for="q1_0">
+											A. Their crust is five times thicker than the ocean floor crust.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer1" id="q1_1" value="1" aria-label="Câu 2 – lựa chọn B" onclick="saveAnswer(203118, 74127, 1, 1)">
+										<label class="form-check-label" for="q1_1">
+											B. They rise about four miles above the seafloor.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer1" id="q1_2" value="2" aria-label="Câu 2 – lựa chọn C" onclick="saveAnswer(203118, 74127, 1, 2)">
+										<label class="form-check-label" for="q1_2">
+											C. They are made of thick and underlying crust.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer1" id="q1_3" value="3" aria-label="Câu 2 – lựa chọn D" onclick="saveAnswer(203118, 74127, 1, 3)">
+										<label class="form-check-label" for="q1_3">
+											D. Their crust is dense and has average thickness.										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+								<div class="fw-bold mb-2">
+									Câu 3: What can be claimed about the time continents were formed?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer2" id="q2_0" value="0" aria-label="Câu 3 – lựa chọn A" onclick="saveAnswer(203118, 74127, 2, 0)">
+										<label class="form-check-label" for="q2_0">
+											A. It is put forward in a contest.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer2" id="q2_1" value="1" aria-label="Câu 3 – lựa chọn B" onclick="saveAnswer(203118, 74127, 2, 1)">
+										<label class="form-check-label" for="q2_1">
+											B. It is beyond human’s knowledge.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer2" id="q2_2" value="2" aria-label="Câu 3 – lựa chọn C" onclick="saveAnswer(203118, 74127, 2, 2)">
+										<label class="form-check-label" for="q2_2">
+											C. It was dated from the earliest days.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer2" id="q2_3" value="3" aria-label="Câu 3 – lựa chọn D" onclick="saveAnswer(203118, 74127, 2, 3)">
+										<label class="form-check-label" for="q2_3">
+											D. It is subject to argument.										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+								<div class="fw-bold mb-2">
+									Câu 4: What does the phrase “To shed light on” in paragraph (A) mean?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer3" id="q3_0" value="0" aria-label="Câu 4 – lựa chọn A" onclick="saveAnswer(203118, 74127, 3, 0)">
+										<label class="form-check-label" for="q3_0">
+											A. To release										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer3" id="q3_1" value="1" aria-label="Câu 4 – lựa chọn B" onclick="saveAnswer(203118, 74127, 3, 1)">
+										<label class="form-check-label" for="q3_1">
+											B. To illustrate										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer3" id="q3_2" value="2" aria-label="Câu 4 – lựa chọn C" onclick="saveAnswer(203118, 74127, 3, 2)">
+										<label class="form-check-label" for="q3_2">
+											C. To ignite										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer3" id="q3_3" value="3" aria-label="Câu 4 – lựa chọn D" onclick="saveAnswer(203118, 74127, 3, 3)">
+										<label class="form-check-label" for="q3_3">
+											D. To clarify										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+								<div class="fw-bold mb-2">
+									Câu 5: According to the passage, how was the crust of the seafloor formed?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer4" id="q4_0" value="0" aria-label="Câu 5 – lựa chọn A" onclick="saveAnswer(203118, 74127, 4, 0)">
+										<label class="form-check-label" for="q4_0">
+											A. Through silica deposition.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer4" id="q4_1" value="1" aria-label="Câu 5 – lựa chọn B" onclick="saveAnswer(203118, 74127, 4, 1)">
+										<label class="form-check-label" for="q4_1">
+											B. Through continental erosion.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer4" id="q4_2" value="2" aria-label="Câu 5 – lựa chọn C" onclick="saveAnswer(203118, 74127, 4, 2)">
+										<label class="form-check-label" for="q4_2">
+											C. Through volcanic activity.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer4" id="q4_3" value="3" aria-label="Câu 5 – lựa chọn D" onclick="saveAnswer(203118, 74127, 4, 3)">
+										<label class="form-check-label" for="q4_3">
+											D. Through tectonic compression.										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+								<div class="fw-bold mb-2">
+									Câu 6: What happens when magma cools and crystallizes?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer5" id="q5_0" value="0" aria-label="Câu 6 – lựa chọn A" onclick="saveAnswer(203118, 74127, 5, 0)">
+										<label class="form-check-label" for="q5_0">
+											A. The molten rock diminishes in silica.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer5" id="q5_1" value="1" aria-label="Câu 6 – lựa chọn B" onclick="saveAnswer(203118, 74127, 5, 1)">
+										<label class="form-check-label" for="q5_1">
+											B. Strontium’s volume boosts.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer5" id="q5_2" value="2" aria-label="Câu 6 – lựa chọn C" onclick="saveAnswer(203118, 74127, 5, 2)">
+										<label class="form-check-label" for="q5_2">
+											C. Rubidium volume gradually plunges.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer5" id="q5_3" value="3" aria-label="Câu 6 – lựa chọn D" onclick="saveAnswer(203118, 74127, 5, 3)">
+										<label class="form-check-label" for="q5_3">
+											D. The volume of silica in rock extends.										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+								<div class="fw-bold mb-2">
+									Câu 7: What can be inferred from the sentence “The thick, buoyant nature of these chunks of crust would have made them rise high above what became the seafloor” in paragraph (B)?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer6" id="q6_0" value="0" aria-label="Câu 7 – lựa chọn A" onclick="saveAnswer(203118, 74127, 6, 0)">
+										<label class="form-check-label" for="q6_0">
+											A. The thick and buoyant chunks of crust are the cause of seafloor rising.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer6" id="q6_1" value="1" aria-label="Câu 7 – lựa chọn B" onclick="saveAnswer(203118, 74127, 6, 1)">
+										<label class="form-check-label" for="q6_1">
+											B. The thick and floating crust rose lower than what made the seafloor.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer6" id="q6_2" value="2" aria-label="Câu 7 – lựa chọn C" onclick="saveAnswer(203118, 74127, 6, 2)">
+										<label class="form-check-label" for="q6_2">
+											C. The seafloor is composed of comparatively thin crust.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer6" id="q6_3" value="3" aria-label="Câu 7 – lựa chọn D" onclick="saveAnswer(203118, 74127, 6, 3)">
+										<label class="form-check-label" for="q6_3">
+											D. Floating crust supported the continents to rise from the oceans.										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+								<div class="fw-bold mb-2">
+									Câu 8: What is “accompanying” in paragraph (C) closest in meaning to?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer7" id="q7_0" value="0" aria-label="Câu 8 – lựa chọn A" onclick="saveAnswer(203118, 74127, 7, 0)">
+										<label class="form-check-label" for="q7_0">
+											A. Concurrent										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer7" id="q7_1" value="1" aria-label="Câu 8 – lựa chọn B" onclick="saveAnswer(203118, 74127, 7, 1)">
+										<label class="form-check-label" for="q7_1">
+											B. Cooperating										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer7" id="q7_2" value="2" aria-label="Câu 8 – lựa chọn C" onclick="saveAnswer(203118, 74127, 7, 2)">
+										<label class="form-check-label" for="q7_2">
+											C. Supplementary										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer7" id="q7_3" value="3" aria-label="Câu 8 – lựa chọn D" onclick="saveAnswer(203118, 74127, 7, 3)">
+										<label class="form-check-label" for="q7_3">
+											D. Following										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+								<div class="fw-bold mb-2">
+									Câu 9: What can be concluded from the passage about the appearance of continental crust about 3 billion years ago?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer8" id="q8_0" value="0" aria-label="Câu 9 – lựa chọn A" onclick="saveAnswer(203118, 74127, 8, 0)">
+										<label class="form-check-label" for="q8_0">
+											A. The movement of the rock plates finally made up the minority of continental crust.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer8" id="q8_1" value="1" aria-label="Câu 9 – lựa chọn B" onclick="saveAnswer(203118, 74127, 8, 1)">
+										<label class="form-check-label" for="q8_1">
+											B. The moment plate tectonics began properly marked the appearance of continental crust.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer8" id="q8_2" value="2" aria-label="Câu 9 – lựa chọn C" onclick="saveAnswer(203118, 74127, 8, 2)">
+										<label class="form-check-label" for="q8_2">
+											C. That the plate tectonics moved over the Earth’s outer layer probably helps form lots of the continental crust.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer8" id="q8_3" value="3" aria-label="Câu 9 – lựa chọn D" onclick="saveAnswer(203118, 74127, 8, 3)">
+										<label class="form-check-label" for="q8_3">
+											D. No theory can be proposed for the reason why continental crust occurred three billion years ago.										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+								<div class="fw-bold mb-2">
+									Câu 10: Which of the following best describes the organization of this passage?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer9" id="q9_0" value="0" aria-label="Câu 10 – lựa chọn A" onclick="saveAnswer(203118, 74127, 9, 0)">
+										<label class="form-check-label" for="q9_0">
+											A. A discussion of different aspects raised from some theories about the question.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer9" id="q9_1" value="1" aria-label="Câu 10 – lựa chọn B" onclick="saveAnswer(203118, 74127, 9, 1)">
+										<label class="form-check-label" for="q9_1">
+											B. A general statement of an issue followed by detailed possible explanations.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer9" id="q9_2" value="2" aria-label="Câu 10 – lựa chọn C" onclick="saveAnswer(203118, 74127, 9, 2)">
+										<label class="form-check-label" for="q9_2">
+											C. A general presentation followed by a detailed discussion of both sides of an issue.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer9" id="q9_3" value="3" aria-label="Câu 10 – lựa chọn D" onclick="saveAnswer(203118, 74127, 9, 3)">
+										<label class="form-check-label" for="q9_3">
+											D. A list of possible explanations to a question followed by a detailed discussion.										</label>
+									</div>
+															</div>
+											</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+		<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+			<div class="d-flex flex-wrap justify-content-center gap-1">
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-0" data-index="0">
+					   1					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-1" data-index="1">
+					   2					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-2" data-index="2">
+					   3					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-3" data-index="3">
+					   4					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-4" data-index="4">
+					   5					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-5" data-index="5">
+					   6					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-6" data-index="6">
+					   7					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-7" data-index="7">
+					   8					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-8" data-index="8">
+					   9					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-9" data-index="9">
+					   10					</a>
+							</div>
+			<div>
+				<button type="submit" form="submitForm" id="btn-submit" class="btn btn-primary fw-bold">
+					📤 Nộp bài
+				</button>
+			</div>
+		</div>
+	</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	const userId = 203118;
+	const practiceId = 74127;
+	const storageKey = `reading_answers_${userId}_${practiceId}`;
+	const totalQuestions = 10;
+
+	function saveAnswer(userId, practiceId, index, choice) {
+		let answers = JSON.parse(localStorage.getItem(storageKey)) || Array(totalQuestions).fill('-');
+		answers[index] = choice;
+		localStorage.setItem(storageKey, JSON.stringify(answers));
+		document.getElementById("reading_answer").value = answers.join("");
+
+		const btn = document.getElementById(`progress-question-${index}`);
+		if (btn) {
+			btn.classList.remove('btn-outline-secondary');
+			btn.classList.add('btn-success');
+		}
+	}
+
+	function loadAnswers() {
+		let answers = JSON.parse(localStorage.getItem(storageKey)) || Array(totalQuestions).fill('-');
+		document.getElementById("reading_answer").value = answers.join("");
+
+		answers.forEach((choice, index) => {
+			if (choice !== '-') {
+				let radioBtn = document.getElementById(`q${index}_${choice}`);
+				if (radioBtn) radioBtn.checked = true;
+
+				const btn = document.getElementById(`progress-question-${index}`);
+				if (btn) {
+					btn.classList.remove('btn-outline-secondary');
+					btn.classList.add('btn-success');
+				}
+			}
+		});
+	}
+
+	document.addEventListener("DOMContentLoaded", loadAnswers);
+
+	document.getElementById('btn-back').addEventListener('click', function (e) {
+		if (confirm("Bạn vẫn chưa nộp bài.\nBạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.getElementById('btn-submit').addEventListener('click', function (e) {
+		const confirmSubmit = confirm("Sau khi nộp, bạn sẽ không thể thay đổi câu trả lời.\nBạn có chắc chắn muốn nộp bài không?");
+		if (!confirmSubmit) {
+			e.preventDefault();
+			return;
+		}
+		const btn = this;
+		btn.disabled = true;
+		btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Đang nộp bài...';
+		document.getElementById('submitForm').submit();
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -120;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+
+
+</body></html>

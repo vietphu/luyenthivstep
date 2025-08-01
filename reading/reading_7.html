@@ -1,0 +1,637 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Luyện đề Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>		<style type="text/css">
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 100%;
+			max-width: none;
+		}
+		@media (min-width: 992px) {
+			#offcanvasTranscript,
+			#offcanvasTranslation {
+				width: 70% !important;
+				max-width: 700px;
+			}
+		}
+		.question-block {
+			background-color: #f9f9f9;
+			border-radius: 6px;
+			padding: 1rem;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+		<!-- Navbar phụ nổi -->
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+		<div class="container-fluid">
+			<div class="row align-items-center text-center text-md-start">
+				<div class="col-12 col-md-3 mb-2 mb-md-0">
+					<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+						⬅️ Quay lại danh sách đề
+					</button>
+				</div>
+				<div class="col-12 col-md-6 text-center">
+					<span class="fw-bold text-muted small d-block">
+						📘 Bạn đang luyện đề đọc mã số 07 - Part 3					</span>
+					<span class="fw-bold text-muted small d-block">
+						🆔 Mã bài làm: #R74126					</span>
+				</div>
+				<div class="col-12 col-md-3 text-md-end">
+					<span class="small text-muted fw-bold d-block mb-2">
+						👋 Xin chào, phuneo					</span>
+					<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+						<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+							📄 Xem bài đọc
+						</button>
+						<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+							🌐 Dịch tiếng Việt
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+	<!-- Offcanvas Transcript -->
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+		<div class="offcanvas-header">
+			<span class="offcanvas-title fw-bold">Bài đọc</span>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+		</div>
+		<div class="offcanvas-body">
+			<p><b>(A)</b> Once upon a time, designers showed new styles and designs to clients through sketches. After the dress was completed, <b>it</b> was displayed on a wooden dummy. Fashion dolls are said to be the first means of circulating the latest dress styles. Fashion dolls were used to show upcoming styles and designs to the customers. The dolls were illustrated with new styles and dressed up with jewellery as well as hair and dress styles.</p>
+
+<p>Charles Worth, British couturier in Paris, came up with the idea of the living mannequin. When he opened his own store, his wife modelled his creations in the salon. When the idea worked, he employed mannequins who walked about in the salon or down the runway to show his collections to consumers. In early 1911, living models began to be used as a regular part of fashion promotions for retailers as well as manufacturers in the earliest fashion shows. Worth started his own salon in 1858, and in 1911, living models were used.</p>
+
+<p><b>(B) Apparel</b> manufacturers need a platform to promote products to the target audience. Fashion shows play a vital role in marketing clothes and conveying recent fashion trends. Nothing is constant in fashion. Designs and styles keep changing. Fashion shows help in creating interest among the public to spread awareness about new arrivals in design and style. These shows help to draw public attention. Fashion marketing scrutinises fashion trends, coordinates sales and promotes goods. It is necessary to grant exposure to various trends and styles of clothing. Fashion marketing is likely to notify the public about recent changing trends and about what is in fashion.</p>
+
+<p>Fashion designers forecast trends. They attend trade shows or visit manufacturers to select fabrics and trims. Designers conduct fittings and adjustments on samples of their designs and the end product is marketed to clothing retailers. Fashion designers aim at inspiring the target audience to purchase the products.</p>
+
+<p>Through these shows, fashion designers can express their creative skills and talent in designing various types of clothes. The individual talent of designers is exposed, and they get an opportunity to promote their creations.</p>
+
+<p>By participating in these shows, retailers can gain various insights into different designs and styles of clothing from designers. The knowledge gained from these shows helps retailers incorporate ideas into their boutiques. Using the latest fashion software tools, designers can put designs on three-dimensional images.</p>
+
+<p>Everyone likes to track everyday fashion. Fashion gives designers a chance to be independent in ideas. It boosts confidence in the wearer. Fashion is a form of expression for both the creator and the wearer. It helps people of similar aesthetics to bond.</p>
+		</div>
+	</div>
+
+	<!-- Offcanvas Translation -->
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+		<div class="offcanvas-header">
+			<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+		</div>
+		<div class="offcanvas-body">
+			<p><b>(A)</b> Ngày xưa, các nhà thiết kế giới thiệu những phong cách và mẫu thiết kế mới cho khách hàng thông qua các bản phác thảo. Sau khi chiếc váy hoàn thành, <b>nó</b> được trưng bày trên một ma-nơ-canh bằng gỗ. Người ta cho rằng búp bê thời trang là phương tiện đầu tiên để truyền bá các kiểu váy mới nhất. Những con búp bê này được sử dụng để giới thiệu các phong cách và thiết kế sắp ra mắt cho khách hàng. Chúng được minh họa với các kiểu dáng mới, được trang trí bằng trang sức cũng như tạo kiểu tóc và trang phục.</p>  <p>Charles Worth, một nhà thiết kế thời trang người Anh ở Paris, đã đưa ra ý tưởng về ma-nơ-canh sống. Khi mở cửa hàng riêng, ông đã để vợ mình trình diễn các thiết kế của ông trong phòng trưng bày. Khi ý tưởng này thành công, ông đã thuê các người mẫu để đi lại trong salon hoặc sải bước trên sàn diễn nhằm giới thiệu bộ sưu tập của mình tới khách hàng. Vào đầu năm 1911, người mẫu sống bắt đầu được sử dụng như một phần thường xuyên trong các chiến dịch quảng bá thời trang cho các nhà bán lẻ cũng như nhà sản xuất trong những buổi trình diễn thời trang đầu tiên. Worth mở salon riêng vào năm 1858, và đến năm 1911, người mẫu sống đã được sử dụng.</p>  <p><b>(B)</b> Các nhà sản xuất <b>trang phục</b> cần một nền tảng để quảng bá sản phẩm tới khách hàng mục tiêu. Các buổi trình diễn thời trang đóng vai trò quan trọng trong việc tiếp thị quần áo và truyền tải các xu hướng thời trang mới nhất. Trong thời trang, không có gì là cố định. Thiết kế và phong cách luôn thay đổi. Các buổi trình diễn thời trang giúp công chúng quan tâm hơn và nâng cao nhận thức về những mẫu thiết kế và phong cách mới. Những chương trình này thu hút sự chú ý của công chúng. Tiếp thị thời trang phân tích các xu hướng thời trang, phối hợp bán hàng và quảng bá sản phẩm. Việc quảng bá các xu hướng và phong cách thời trang khác nhau là cần thiết để tạo sự nhận diện.</p>  <p>Các nhà thiết kế thời trang dự đoán xu hướng bằng cách tham gia các hội chợ thương mại hoặc đến thăm các nhà sản xuất để lựa chọn vải và phụ kiện. Họ thực hiện các buổi thử trang phục và điều chỉnh trên các mẫu thiết kế trước khi sản phẩm cuối cùng được tiếp thị đến các nhà bán lẻ. Mục tiêu của các nhà thiết kế thời trang là truyền cảm hứng cho khách hàng mục tiêu để họ mua sản phẩm.</p>  <p>Thông qua các buổi trình diễn này, các nhà thiết kế thời trang có thể thể hiện kỹ năng sáng tạo và tài năng của mình trong việc thiết kế nhiều loại trang phục khác nhau. Cá tính của từng nhà thiết kế được bộc lộ, đồng thời họ có cơ hội quảng bá những sáng tạo của mình.</p>  <p>Bằng cách tham gia những buổi trình diễn này, các nhà bán lẻ có thể thu thập nhiều thông tin chi tiết về các thiết kế và phong cách thời trang khác nhau từ các nhà thiết kế. Kiến thức thu được từ các chương trình này giúp họ đưa ra những ý tưởng mới vào cửa hàng của mình. Nhờ sử dụng các công cụ phần mềm thời trang mới nhất, các nhà thiết kế có thể tạo ra những thiết kế trên hình ảnh ba chiều.</p>  <p>Mọi người đều thích theo dõi xu hướng thời trang hàng ngày. Thời trang mang đến cho các nhà thiết kế cơ hội tự do sáng tạo. Nó cũng giúp tăng sự tự tin cho người mặc. Thời trang là một hình thức thể hiện bản thân, cả đối với người sáng tạo và người sử dụng. Nó giúp kết nối những người có cùng gu thẩm mỹ.</p>		</div>
+	</div>
+
+	<div class="row mt-4">
+		<!-- Cột trái: Bài đọc -->
+		<div class="col-md-6 mb-4">
+			<div class="card">
+				<div class="card-body">
+					<p class="card-title fw-bold">Bài đọc</p>
+					<p><b>(A)</b> Once upon a time, designers showed new styles and designs to clients through sketches. After the dress was completed, <b>it</b> was displayed on a wooden dummy. Fashion dolls are said to be the first means of circulating the latest dress styles. Fashion dolls were used to show upcoming styles and designs to the customers. The dolls were illustrated with new styles and dressed up with jewellery as well as hair and dress styles.</p>
+
+<p>Charles Worth, British couturier in Paris, came up with the idea of the living mannequin. When he opened his own store, his wife modelled his creations in the salon. When the idea worked, he employed mannequins who walked about in the salon or down the runway to show his collections to consumers. In early 1911, living models began to be used as a regular part of fashion promotions for retailers as well as manufacturers in the earliest fashion shows. Worth started his own salon in 1858, and in 1911, living models were used.</p>
+
+<p><b>(B) Apparel</b> manufacturers need a platform to promote products to the target audience. Fashion shows play a vital role in marketing clothes and conveying recent fashion trends. Nothing is constant in fashion. Designs and styles keep changing. Fashion shows help in creating interest among the public to spread awareness about new arrivals in design and style. These shows help to draw public attention. Fashion marketing scrutinises fashion trends, coordinates sales and promotes goods. It is necessary to grant exposure to various trends and styles of clothing. Fashion marketing is likely to notify the public about recent changing trends and about what is in fashion.</p>
+
+<p>Fashion designers forecast trends. They attend trade shows or visit manufacturers to select fabrics and trims. Designers conduct fittings and adjustments on samples of their designs and the end product is marketed to clothing retailers. Fashion designers aim at inspiring the target audience to purchase the products.</p>
+
+<p>Through these shows, fashion designers can express their creative skills and talent in designing various types of clothes. The individual talent of designers is exposed, and they get an opportunity to promote their creations.</p>
+
+<p>By participating in these shows, retailers can gain various insights into different designs and styles of clothing from designers. The knowledge gained from these shows helps retailers incorporate ideas into their boutiques. Using the latest fashion software tools, designers can put designs on three-dimensional images.</p>
+
+<p>Everyone likes to track everyday fashion. Fashion gives designers a chance to be independent in ideas. It boosts confidence in the wearer. Fashion is a form of expression for both the creator and the wearer. It helps people of similar aesthetics to bond.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Cột phải: Câu hỏi -->
+		<div class="col-md-6">
+			<div class="card h-100">
+				<div class="card-body">
+					
+					<form id="submitForm" action="/practice/reading/submit/74126" method="post">
+						<input type="hidden" name="reading_answer" id="reading_answer" value="----------">
+
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+								<div class="fw-bold mb-2">
+									Câu 1: Which of the following would be the best title for this article?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer0" id="q0_0" value="0" aria-label="Câu 1 – lựa chọn A" onclick="saveAnswer(203118, 74126, 0, 0)">
+										<label class="form-check-label" for="q0_0">
+											A. Using living models in fashion										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer0" id="q0_1" value="1" aria-label="Câu 1 – lựa chọn B" onclick="saveAnswer(203118, 74126, 0, 1)">
+										<label class="form-check-label" for="q0_1">
+											B. What should a designers do for a fashion show										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer0" id="q0_2" value="2" aria-label="Câu 1 – lựa chọn C" onclick="saveAnswer(203118, 74126, 0, 2)">
+										<label class="form-check-label" for="q0_2">
+											C. Fashion marketing by different models										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer0" id="q0_3" value="3" aria-label="Câu 1 – lựa chọn D" onclick="saveAnswer(203118, 74126, 0, 3)">
+										<label class="form-check-label" for="q0_3">
+											D. Fashion Show in the Apparel Industry										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+								<div class="fw-bold mb-2">
+									Câu 2: What does the word "it" in paragraph (A) refer to?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer1" id="q1_0" value="0" aria-label="Câu 2 – lựa chọn A" onclick="saveAnswer(203118, 74126, 1, 0)">
+										<label class="form-check-label" for="q1_0">
+											A. wooden dummy 										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer1" id="q1_1" value="1" aria-label="Câu 2 – lựa chọn B" onclick="saveAnswer(203118, 74126, 1, 1)">
+										<label class="form-check-label" for="q1_1">
+											B. style										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer1" id="q1_2" value="2" aria-label="Câu 2 – lựa chọn C" onclick="saveAnswer(203118, 74126, 1, 2)">
+										<label class="form-check-label" for="q1_2">
+											C. designer 										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer1" id="q1_3" value="3" aria-label="Câu 2 – lựa chọn D" onclick="saveAnswer(203118, 74126, 1, 3)">
+										<label class="form-check-label" for="q1_3">
+											D. dress										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+								<div class="fw-bold mb-2">
+									Câu 3: When did the British couturier start his own salon? 								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer2" id="q2_0" value="0" aria-label="Câu 3 – lựa chọn A" onclick="saveAnswer(203118, 74126, 2, 0)">
+										<label class="form-check-label" for="q2_0">
+											A. Early 1911 										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer2" id="q2_1" value="1" aria-label="Câu 3 – lựa chọn B" onclick="saveAnswer(203118, 74126, 2, 1)">
+										<label class="form-check-label" for="q2_1">
+											B. Early 1858 										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer2" id="q2_2" value="2" aria-label="Câu 3 – lựa chọn C" onclick="saveAnswer(203118, 74126, 2, 2)">
+										<label class="form-check-label" for="q2_2">
+											C. 1858										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer2" id="q2_3" value="3" aria-label="Câu 3 – lựa chọn D" onclick="saveAnswer(203118, 74126, 2, 3)">
+										<label class="form-check-label" for="q2_3">
+											D. 1911 										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+								<div class="fw-bold mb-2">
+									Câu 4: In 1911, who benefited from livingmodels as regular part of fashion promotions?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer3" id="q3_0" value="0" aria-label="Câu 4 – lựa chọn A" onclick="saveAnswer(203118, 74126, 3, 0)">
+										<label class="form-check-label" for="q3_0">
+											A. Retailers and designers										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer3" id="q3_1" value="1" aria-label="Câu 4 – lựa chọn B" onclick="saveAnswer(203118, 74126, 3, 1)">
+										<label class="form-check-label" for="q3_1">
+											B. Manufacturers and retailers										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer3" id="q3_2" value="2" aria-label="Câu 4 – lựa chọn C" onclick="saveAnswer(203118, 74126, 3, 2)">
+										<label class="form-check-label" for="q3_2">
+											C. Whole saler and manufacturers										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer3" id="q3_3" value="3" aria-label="Câu 4 – lựa chọn D" onclick="saveAnswer(203118, 74126, 3, 3)">
+										<label class="form-check-label" for="q3_3">
+											D. Living models and manufacturers										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+								<div class="fw-bold mb-2">
+									Câu 5: In paragraph (B), which of the following words can best replace the word "Apparel"?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer4" id="q4_0" value="0" aria-label="Câu 5 – lựa chọn A" onclick="saveAnswer(203118, 74126, 4, 0)">
+										<label class="form-check-label" for="q4_0">
+											A. Strength										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer4" id="q4_1" value="1" aria-label="Câu 5 – lựa chọn B" onclick="saveAnswer(203118, 74126, 4, 1)">
+										<label class="form-check-label" for="q4_1">
+											B. Sketches										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer4" id="q4_2" value="2" aria-label="Câu 5 – lựa chọn C" onclick="saveAnswer(203118, 74126, 4, 2)">
+										<label class="form-check-label" for="q4_2">
+											C. Jewelry										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer4" id="q4_3" value="3" aria-label="Câu 5 – lựa chọn D" onclick="saveAnswer(203118, 74126, 4, 3)">
+										<label class="form-check-label" for="q4_3">
+											D. Clothes										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+								<div class="fw-bold mb-2">
+									Câu 6: Which of the following best describes the tone of the author in this passage?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer5" id="q5_0" value="0" aria-label="Câu 6 – lựa chọn A" onclick="saveAnswer(203118, 74126, 5, 0)">
+										<label class="form-check-label" for="q5_0">
+											A. concerned										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer5" id="q5_1" value="1" aria-label="Câu 6 – lựa chọn B" onclick="saveAnswer(203118, 74126, 5, 1)">
+										<label class="form-check-label" for="q5_1">
+											B. indifferent										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer5" id="q5_2" value="2" aria-label="Câu 6 – lựa chọn C" onclick="saveAnswer(203118, 74126, 5, 2)">
+										<label class="form-check-label" for="q5_2">
+											C. pessimistic										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer5" id="q5_3" value="3" aria-label="Câu 6 – lựa chọn D" onclick="saveAnswer(203118, 74126, 5, 3)">
+										<label class="form-check-label" for="q5_3">
+											D. skeptical										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+								<div class="fw-bold mb-2">
+									Câu 7: Which of the following does NOT refer the role of fashion?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer6" id="q6_0" value="0" aria-label="Câu 7 – lựa chọn A" onclick="saveAnswer(203118, 74126, 6, 0)">
+										<label class="form-check-label" for="q6_0">
+											A. Giving an opportunity for designers to be independent in their thoughts.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer6" id="q6_1" value="1" aria-label="Câu 7 – lựa chọn B" onclick="saveAnswer(203118, 74126, 6, 1)">
+										<label class="form-check-label" for="q6_1">
+											B. Being a means of expression for the creator and the wearer.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer6" id="q6_2" value="2" aria-label="Câu 7 – lựa chọn C" onclick="saveAnswer(203118, 74126, 6, 2)">
+										<label class="form-check-label" for="q6_2">
+											C. Helping the wearer become more confident.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer6" id="q6_3" value="3" aria-label="Câu 7 – lựa chọn D" onclick="saveAnswer(203118, 74126, 6, 3)">
+										<label class="form-check-label" for="q6_3">
+											D. Boosting creativeness for the wearer.										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+								<div class="fw-bold mb-2">
+									Câu 8: Which of the following statement is NOT mentioned as the aim of the fashion marketing?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer7" id="q7_0" value="0" aria-label="Câu 8 – lựa chọn A" onclick="saveAnswer(203118, 74126, 7, 0)">
+										<label class="form-check-label" for="q7_0">
+											A. coordinate sales										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer7" id="q7_1" value="1" aria-label="Câu 8 – lựa chọn B" onclick="saveAnswer(203118, 74126, 7, 1)">
+										<label class="form-check-label" for="q7_1">
+											B. scrutinises fashion trends										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer7" id="q7_2" value="2" aria-label="Câu 8 – lựa chọn C" onclick="saveAnswer(203118, 74126, 7, 2)">
+										<label class="form-check-label" for="q7_2">
+											C. promote goods										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer7" id="q7_3" value="3" aria-label="Câu 8 – lựa chọn D" onclick="saveAnswer(203118, 74126, 7, 3)">
+										<label class="form-check-label" for="q7_3">
+											D. increase the amount of clothing										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+								<div class="fw-bold mb-2">
+									Câu 9: Why do retailers attend fashion shows?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer8" id="q8_0" value="0" aria-label="Câu 9 – lựa chọn A" onclick="saveAnswer(203118, 74126, 8, 0)">
+										<label class="form-check-label" for="q8_0">
+											A. They can express their branding identity through fashion shows.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer8" id="q8_1" value="1" aria-label="Câu 9 – lựa chọn B" onclick="saveAnswer(203118, 74126, 8, 1)">
+										<label class="form-check-label" for="q8_1">
+											B. They participate in networking with designers and manufacturers.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer8" id="q8_2" value="2" aria-label="Câu 9 – lựa chọn C" onclick="saveAnswer(203118, 74126, 8, 2)">
+										<label class="form-check-label" for="q8_2">
+											C. They get inspiration to select new clothing styles for their boutiques.										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer8" id="q8_3" value="3" aria-label="Câu 9 – lựa chọn D" onclick="saveAnswer(203118, 74126, 8, 3)">
+										<label class="form-check-label" for="q8_3">
+											D. They can gain a variety of fashion knowledge which may help them run their shops.										</label>
+									</div>
+															</div>
+													
+							<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+								<div class="fw-bold mb-2">
+									Câu 10: What are the two main things that a fashion designer can express when participating in a fashion show?								</div>
+
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer9" id="q9_0" value="0" aria-label="Câu 10 – lựa chọn A" onclick="saveAnswer(203118, 74126, 9, 0)">
+										<label class="form-check-label" for="q9_0">
+											A. creativeness and designing talent										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer9" id="q9_1" value="1" aria-label="Câu 10 – lựa chọn B" onclick="saveAnswer(203118, 74126, 9, 1)">
+										<label class="form-check-label" for="q9_1">
+											B. fame and designing ability										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer9" id="q9_2" value="2" aria-label="Câu 10 – lựa chọn C" onclick="saveAnswer(203118, 74126, 9, 2)">
+										<label class="form-check-label" for="q9_2">
+											C. creativeness and income										</label>
+									</div>
+																										<div class="form-check ps-5 mb-2">
+										<input class="form-check-input" type="radio" name="ranswer9" id="q9_3" value="3" aria-label="Câu 10 – lựa chọn D" onclick="saveAnswer(203118, 74126, 9, 3)">
+										<label class="form-check-label" for="q9_3">
+											D. designing talent and fame										</label>
+									</div>
+															</div>
+											</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+		<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+			<div class="d-flex flex-wrap justify-content-center gap-1">
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-0" data-index="0">
+					   1					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-1" data-index="1">
+					   2					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-2" data-index="2">
+					   3					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-3" data-index="3">
+					   4					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-4" data-index="4">
+					   5					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-5" data-index="5">
+					   6					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-6" data-index="6">
+					   7					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-7" data-index="7">
+					   8					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-8" data-index="8">
+					   9					</a>
+														<a class="btn btn-footer btn mx-1 btn-outline-secondary" id="progress-question-9" data-index="9">
+					   10					</a>
+							</div>
+			<div>
+				<button type="submit" form="submitForm" id="btn-submit" class="btn btn-primary fw-bold">
+					📤 Nộp bài
+				</button>
+			</div>
+		</div>
+	</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	const userId = 203118;
+	const practiceId = 74126;
+	const storageKey = `reading_answers_${userId}_${practiceId}`;
+	const totalQuestions = 10;
+
+	function saveAnswer(userId, practiceId, index, choice) {
+		let answers = JSON.parse(localStorage.getItem(storageKey)) || Array(totalQuestions).fill('-');
+		answers[index] = choice;
+		localStorage.setItem(storageKey, JSON.stringify(answers));
+		document.getElementById("reading_answer").value = answers.join("");
+
+		const btn = document.getElementById(`progress-question-${index}`);
+		if (btn) {
+			btn.classList.remove('btn-outline-secondary');
+			btn.classList.add('btn-success');
+		}
+	}
+
+	function loadAnswers() {
+		let answers = JSON.parse(localStorage.getItem(storageKey)) || Array(totalQuestions).fill('-');
+		document.getElementById("reading_answer").value = answers.join("");
+
+		answers.forEach((choice, index) => {
+			if (choice !== '-') {
+				let radioBtn = document.getElementById(`q${index}_${choice}`);
+				if (radioBtn) radioBtn.checked = true;
+
+				const btn = document.getElementById(`progress-question-${index}`);
+				if (btn) {
+					btn.classList.remove('btn-outline-secondary');
+					btn.classList.add('btn-success');
+				}
+			}
+		});
+	}
+
+	document.addEventListener("DOMContentLoaded", loadAnswers);
+
+	document.getElementById('btn-back').addEventListener('click', function (e) {
+		if (confirm("Bạn vẫn chưa nộp bài.\nBạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.getElementById('btn-submit').addEventListener('click', function (e) {
+		const confirmSubmit = confirm("Sau khi nộp, bạn sẽ không thể thay đổi câu trả lời.\nBạn có chắc chắn muốn nộp bài không?");
+		if (!confirmSubmit) {
+			e.preventDefault();
+			return;
+		}
+		const btn = this;
+		btn.disabled = true;
+		btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Đang nộp bài...';
+		document.getElementById('submitForm').submit();
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -120;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+
+
+</body></html>
