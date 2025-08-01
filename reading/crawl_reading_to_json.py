@@ -13,9 +13,19 @@ async def extract_reading_info(page, idx):
         reading_text = '\n'.join([await p.inner_text() for p in reading_paragraphs])
     except:
         reading_text = None
-    # Dịch tiếng Việt
+
+    # Click nút "Dịch tiếng Việt" để lấy nội dung dịch
     try:
+        btn_translate = await page.query_selector('#toggleTranslationBtn')
+        if btn_translate:
+            await btn_translate.click()
+            await asyncio.sleep(1)  # Đợi offcanvas mở ra
         dich_viet = await page.inner_text('#offcanvasTranslation .offcanvas-body')
+        # Đóng popup dịch tiếng Việt bằng cách click nút đóng
+        btn_close = await page.query_selector('#offcanvasTranslation .btn-close')
+        if btn_close:
+            await btn_close.click()
+            await asyncio.sleep(0.5)  # Đợi popup đóng
     except:
         dich_viet = None
     # Danh sách câu hỏi
@@ -35,24 +45,45 @@ async def extract_reading_info(page, idx):
             })
         except:
             continue
+
     # Click "Nộp bài" để lấy đáp án và giải thích
     answers = []
     try:
-        submit_btn = await page.query_selector('form#submitForm button[type="submit"]')
-        if submit_btn:
-            await submit_btn.click()
-            await page.wait_for_load_state('networkidle')
-            # Giải thích/đáp án sau khi nộp bài
-            answer_blocks = await page.query_selector_all('.question-block')
-            for ab in answer_blocks:
-                try:
-                    explanation = await ab.query_selector('.alert.alert-info')
-                    answer_text = await explanation.inner_text() if explanation else None
-                    answers.append({"explanation": answer_text})
-                except:
-                    answers.append({"explanation": None})
+        # Chỉ xử lý dialog một lần khi click submit
+        async def handle_dialog(dialog):
+            await dialog.accept()
+        btn_submit = await page.query_selector('#btn-submit')
+        if btn_submit:
+            page.once("dialog", handle_dialog)
+            await btn_submit.click()
+            # Chờ đến khi đáp án xuất hiện (tối đa 5s)
+            try:
+                await page.wait_for_selector('.alert.alert-info', timeout=5000)
+            except:
+                await asyncio.sleep(3)  # Nếu không xuất hiện, vẫn chờ thêm
+        # Lưu lại HTML của trang sau khi nộp bài để phân tích
+        html_after_submit = await page.content()
+        with open(f"reading/debug_reading_{idx}.html", "w", encoding="utf-8") as f:
+            f.write(html_after_submit)
+        # Sau khi nộp bài, lấy giải thích/đáp án cho từng câu hỏi
+        answer_blocks = await page.query_selector_all('.question-block')
+        for ab in answer_blocks:
+            try:
+                # Đáp án đúng
+                correct_span = await ab.query_selector('span.text-success')
+                correct_answer = await correct_span.inner_text() if correct_span else None
+                # Giải thích chi tiết
+                explanation_div = await ab.query_selector('div.mt-4')
+                explanation_html = await explanation_div.inner_text() if explanation_div else None
+                answers.append({
+                    "answer": correct_answer,
+                    "explanation": explanation_html
+                })
+            except:
+                answers.append({"answer": None, "explanation": None})
     except:
         answers = []
+
     return {
         "index": idx,
         "reading_text": reading_text,
