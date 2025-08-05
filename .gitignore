@@ -1,5 +1,6 @@
 # Ignore Python virtual environments
 venv/
+.venv/
 # Ignore audio files and large data
 listening/audio/
 # Ignore pyc and cache
