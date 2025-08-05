@@ -13,7 +13,10 @@ PASSWORD = "541287"
 async def crawl_listening():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
-        page = await browser.new_page()
+        # Set user-agent giống Chrome thật
+        user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+        context = await browser.new_context(user_agent=user_agent)
+        page = await context.new_page()
         # Đăng nhập
         await page.goto("https://luyenthivstep.vn/user/login")
         await page.fill('input[name="user_name"]', USERNAME)
@@ -22,11 +25,25 @@ async def crawl_listening():
         await page.wait_for_load_state('networkidle')
 
         data = []
-        for i in range(1, 2):
+        for i in range(1, 43):
+            import random
             url = f"https://luyenthivstep.vn/practice/listening/{i}"
             print(f"Đang crawl đề nghe số {i}: {url}")
-            await page.goto(url)
-            await page.wait_for_load_state('networkidle')
+            # Thêm delay ngẫu nhiên giữa các lần crawl
+            await asyncio.sleep(random.uniform(2, 5))
+            try:
+                await page.goto(url)
+                await page.wait_for_load_state('networkidle')
+                # Di chuyển chuột ngẫu nhiên trên trang để giả lập hành vi người dùng
+                width = page.viewport_size['width'] if page.viewport_size else 1200
+                height = page.viewport_size['height'] if page.viewport_size else 800
+                for _ in range(random.randint(1, 3)):
+                    x = random.randint(0, width-1)
+                    y = random.randint(0, height-1)
+                    await page.mouse.move(x, y)
+            except Exception as e:
+                print(f"[SKIP] Đề {i} - Lỗi truy cập trang {url}: {e}")
+                continue
 
             # Lấy thông tin đề nghe trước khi nộp bài
             page_content = await page.content()
@@ -87,18 +104,24 @@ async def crawl_listening():
                     await submit_button.click()
                     # Chờ trang đáp án hiện ra (tối đa 5s)
                     try:
-                        await page.wait_for_selector('.alert.alert-info', timeout=5000)
+                        await page.wait_for_load_state('networkidle', timeout=5000)
                     except:
                         await asyncio.sleep(2)
+                    # Lưu HTML kết quả, bọc trong try/except để tránh lỗi khi trang chuyển hướng
+                    try:
+                        result_html_path = os.path.join(RESULT_DIR, f"listening_{i}_result.html")
+                        html_result = await page.content()
+                        with open(result_html_path, "w", encoding="utf-8") as rf:
+                            rf.write(html_result)
+                    except Exception as e:
+                        print(f"[SKIP] Đề {i} - Không lấy được nội dung kết quả ở {url}: {e}")
+                        continue
                 else:
-                    print(f"Không tìm thấy nút 'Nộp bài' ở {url}")
+                    print(f"[SKIP] Đề {i} - Không tìm thấy nút 'Nộp bài' ở {url}")
+                    continue
             except Exception as e:
-                print(f"Playwright error for {url}: {e}")
-            # Lưu HTML kết quả
-            result_html_path = os.path.join(RESULT_DIR, f"listening_{i}_result.html")
-            html_result = await page.content()
-            with open(result_html_path, "w", encoding="utf-8") as rf:
-                rf.write(html_result)
+                print(f"[SKIP] Đề {i} - Playwright error for {url}: {e}")
+                continue
 
             # Phân tích đáp án và giải thích từ HTML kết quả
             from bs4 import BeautifulSoup
@@ -139,27 +162,7 @@ async def crawl_listening():
                 "questions": question_outputs
             })
 
-            # Click nút 'Nộp bài' và xử lý dialog xác nhận
-            try:
-                async def handle_dialog(dialog):
-                    await dialog.accept()
-                submit_button = await page.query_selector("button:has-text('Nộp bài')")
-                if submit_button:
-                    page.once("dialog", handle_dialog)
-                    await submit_button.click()
-                    # Chờ trang đáp án hiện ra (tối đa 5s)
-                    try:
-                        await page.wait_for_selector('.alert.alert-info', timeout=5000)
-                    except:
-                        await asyncio.sleep(2)
-                else:
-                    print(f"Không tìm thấy nút 'Nộp bài' ở {url}")
-            except Exception as e:
-                print(f"Playwright error for {url}: {e}")
-            # Lưu HTML kết quả
-            result_html_path = os.path.join(RESULT_DIR, f"listening_{i}_result.html")
-            with open(result_html_path, "w", encoding="utf-8") as rf:
-                rf.write(await page.content())
+            # ...existing code...
         # Lưu dữ liệu đề nghe ra file json
         with open("listening/listening_output.json", "w", encoding="utf-8") as jf:
             json.dump(data, jf, ensure_ascii=False, indent=2)
