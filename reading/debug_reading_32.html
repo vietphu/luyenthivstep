@@ -1,0 +1,634 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 32 - Part 4				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79945				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>THE UNITED NATIONS</b></p>
+
+<p><b>(A)</b> When the United Nations was first formed in 1945, only 51 countries were members. Now, <i>however</i>, the United Nations is truly a world organization. In fact, today almost every nation in the <i>world</i> is a member of the UN. The main goal of the United Nations is to bring different nations <i>together</i> to promote peace and justice in the world. The UN also works to make the world a safe and secure place.</p>
+
+<p><b>(B)</b> It is important to remember that the UN is not a "world government." This means that the UN does not make laws for different countries to follow. It also does not enforce laws made by governments. However, the UN does hold regular votes on global policies and issues. Also, like a government, the UN is divided into different branches, or sections. <b>Considering that the UN is such a large organization, it makes sense that it needs to be separated into different pieces to be effective.</b> There are six <b>branches</b> in the United Nations. Below, the first three branches of the UN are discussed. In a later chapter, the other three divisions will be explained.</p>
+
+<p><b>(C)</b> The main branch is called the "General Assembly." In this branch, all members of the United Nations are represented. Each member country has one vote. These votes are counted when the UN has meetings about world issues. For example, if there is a problem in a certain area of the world or in a particular country, the UN will vote on how to best solve the problem. <b>At least two-thirds of all member countries, that is 67 percent, must agree on how to resolve the problem in order for the UN to take action.</b> If less than two-thirds of the voting countries agree, no immediate action is taken.</p>
+
+<p><b>(D)</b> Another branch of the UN is the Security Council. The main purpose of this department is to maintain international peace and keep the world secure. In this branch, there are only fifteen members. Five of these members are permanent. The permanent members are China, France, Russia, the United Kingdom (Britain), and the United States. The other ten members are elected by the General Assembly for two-year terms.</p>
+
+<p>The third important branch of the UN is the Economic and Social Council. This branch works to help monitor the world economy. It also works to resolve social issues around the world. For example, issues of concern for the Economic and Social Council are violations of human rights, the fight against international crime such as selling illegal drugs, and destruction of the environment. There are 54 government representatives serving on this council. These members are elected by the General Assembly to serve for three-year terms. Council members are elected to represent certain areas of the world, so the council has fourteen members from Africa, eleven from Asia, ten from South America, and nineteen from Europe and North America.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>LIÊN HỢP QUỐC</b></p>   <p><b>(A)</b> Khi Liên Hợp Quốc (LHQ) được thành lập lần đầu tiên vào năm 1945, chỉ có 51 quốc gia là thành viên. Tuy nhiên, <i>hiện nay</i>, Liên Hợp Quốc thực sự là một tổ chức toàn cầu. Trên thực tế, ngày nay hầu như mọi quốc gia trên <i>thế giới</i> đều là thành viên của LHQ. Mục tiêu chính của Liên Hợp Quốc là tập hợp các quốc gia <i>lại với nhau</i> để thúc đẩy hòa bình và công lý trên thế giới. LHQ cũng nỗ lực để làm cho thế giới trở thành một nơi an toàn và ổn định.</p>   <p><b>(B)</b> Điều quan trọng cần nhớ là LHQ không phải là một "chính phủ thế giới." Điều này có nghĩa là LHQ không ban hành luật để các quốc gia phải tuân theo. LHQ cũng không thực thi luật do các chính phủ ban hành. Tuy nhiên, LHQ thường xuyên tổ chức các cuộc bỏ phiếu về các chính sách và vấn đề toàn cầu. Ngoài ra, giống như một chính phủ, LHQ được chia thành các nhánh hoặc bộ phận khác nhau. <b>Xét đến việc LHQ là một tổ chức lớn như vậy, việc phân chia thành các bộ phận khác nhau để hoạt động hiệu quả là điều hợp lý.</b> Liên Hợp Quốc có sáu <b>nhánh</b>. Dưới đây là ba nhánh đầu tiên của LHQ sẽ được giới thiệu. Trong chương sau, ba nhánh còn lại sẽ được giải thích.</p>   <p><b>(C)</b> Nhánh chính của LHQ được gọi là "Đại Hội Đồng." Trong nhánh này, tất cả các thành viên của Liên Hợp Quốc đều có đại diện. Mỗi quốc gia thành viên có một phiếu bầu. Các phiếu này được tính khi LHQ tổ chức các cuộc họp về các vấn đề toàn cầu. Ví dụ, nếu có một vấn đề ở một khu vực nhất định trên thế giới hoặc trong một quốc gia cụ thể, LHQ sẽ tổ chức bỏ phiếu để tìm cách giải quyết vấn đề đó. <b>Ít nhất hai phần ba tổng số quốc gia thành viên, tức là 67%, phải đồng ý với giải pháp thì LHQ mới có thể thực hiện hành động.</b> Nếu có ít hơn hai phần ba số quốc gia bỏ phiếu đồng ý, thì sẽ không có hành động ngay lập tức nào được thực hiện.</p>   <p><b>(D)</b> Một nhánh khác của LHQ là Hội đồng Bảo an. Mục tiêu chính của bộ phận này là duy trì hòa bình quốc tế và đảm bảo an ninh thế giới. Trong nhánh này, chỉ có mười lăm thành viên. Năm trong số đó là thành viên thường trực. Các thành viên thường trực bao gồm Trung Quốc, Pháp, Nga, Vương quốc Anh (Anh) và Hoa Kỳ. Mười thành viên còn lại được Đại Hội Đồng bầu chọn với nhiệm kỳ hai năm.</p>   <p>Nhánh quan trọng thứ ba của LHQ là Hội đồng Kinh tế và Xã hội. Nhánh này có nhiệm vụ giám sát nền kinh tế thế giới. Ngoài ra, nó còn giải quyết các vấn đề xã hội trên toàn cầu. Ví dụ, các vấn đề mà Hội đồng Kinh tế và Xã hội quan tâm bao gồm vi phạm nhân quyền, cuộc chiến chống tội phạm quốc tế như buôn bán ma túy bất hợp pháp và sự hủy hoại môi trường. Có 54 đại diện chính phủ phục vụ trong hội đồng này. Các thành viên này do Đại Hội Đồng bầu chọn và có nhiệm kỳ ba năm. Các thành viên của hội đồng được bầu để đại diện cho các khu vực khác nhau trên thế giới, trong đó có mười bốn thành viên đến từ Châu Phi, mười một thành viên từ Châu Á, mười thành viên từ Nam Mỹ, và mười chín thành viên từ Châu Âu và Bắc Mỹ.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>THE UNITED NATIONS</b></p>
+
+<p><b>(A)</b> When the United Nations was first formed in 1945, only 51 countries were members. Now, <i>however</i>, the United Nations is truly a world organization. In fact, today almost every nation in the <i>world</i> is a member of the UN. The main goal of the United Nations is to bring different nations <i>together</i> to promote peace and justice in the world. The UN also works to make the world a safe and secure place.</p>
+
+<p><b>(B)</b> It is important to remember that the UN is not a "world government." This means that the UN does not make laws for different countries to follow. It also does not enforce laws made by governments. However, the UN does hold regular votes on global policies and issues. Also, like a government, the UN is divided into different branches, or sections. <b>Considering that the UN is such a large organization, it makes sense that it needs to be separated into different pieces to be effective.</b> There are six <b>branches</b> in the United Nations. Below, the first three branches of the UN are discussed. In a later chapter, the other three divisions will be explained.</p>
+
+<p><b>(C)</b> The main branch is called the "General Assembly." In this branch, all members of the United Nations are represented. Each member country has one vote. These votes are counted when the UN has meetings about world issues. For example, if there is a problem in a certain area of the world or in a particular country, the UN will vote on how to best solve the problem. <b>At least two-thirds of all member countries, that is 67 percent, must agree on how to resolve the problem in order for the UN to take action.</b> If less than two-thirds of the voting countries agree, no immediate action is taken.</p>
+
+<p><b>(D)</b> Another branch of the UN is the Security Council. The main purpose of this department is to maintain international peace and keep the world secure. In this branch, there are only fifteen members. Five of these members are permanent. The permanent members are China, France, Russia, the United Kingdom (Britain), and the United States. The other ten members are elected by the General Assembly for two-year terms.</p>
+
+<p>The third important branch of the UN is the Economic and Social Council. This branch works to help monitor the world economy. It also works to resolve social issues around the world. For example, issues of concern for the Economic and Social Council are violations of human rights, the fight against international crime such as selling illegal drugs, and destruction of the environment. There are 54 government representatives serving on this council. These members are elected by the General Assembly to serve for three-year terms. Council members are elected to represent certain areas of the world, so the council has fourteen members from Africa, eleven from Asia, ten from South America, and nineteen from Europe and North America.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: The word "branches" in paragraph (B) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. growing parts															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. divisions</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. places of separation															</div>
+																				<div class="ps-4 mb-2">
+																	D. locations															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "branches" in paragraph (B) is closest in meaning to?</strong>  
+(Từ "branches" trong đoạn (B) có nghĩa gần nhất với từ nào?)</p>
+
+<ul>
+<li>❌ <strong>growing parts</strong> (những phần đang phát triển) → Sai, vì "branches" trong ngữ cảnh này không liên quan đến sự phát triển của cây cối hay các phần đang phát triển.</li>  
+
+<li>❌ <strong>locations</strong> (địa điểm) → Sai, vì "branches" không đề cập đến vị trí địa lý hay nơi chốn cụ thể.</li>  
+
+<li>✅ <strong>divisions</strong> (các bộ phận) → Đúng, vì trong bài đọc, "branches" được sử dụng để chỉ các bộ phận khác nhau của Liên Hợp Quốc. Đây là cách sử dụng phổ biến khi nói về các nhánh của một tổ chức.</li>  
+
+<li>❌ <strong>places of separation</strong> (nơi phân tách) → Sai, vì "branches" không có nghĩa là nơi mà một cái gì đó bị tách ra.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: The word "maintain" in paragraph (D) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. develop															</div>
+																				<div class="ps-4 mb-2">
+																	B. argue															</div>
+																				<div class="ps-4 mb-2">
+																	C. hold on to															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. preserve</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "maintain" in paragraph (D) is closest in meaning to?</strong>  
+(Từ "maintain" trong đoạn (D) có nghĩa gần nhất với từ nào?)</p>
+
+<ul>
+<li>❌ <strong>hold on to</strong> (giữ chặt) → Sai, vì "hold on to" thường mang nghĩa nắm giữ hoặc bám vào một thứ gì đó một cách vật lý, không phù hợp với ngữ cảnh trong đoạn văn.</li>  
+
+<li>✅ <strong>preserve</strong> (bảo tồn, duy trì) → Đúng, vì trong đoạn văn, "maintain" được dùng với nghĩa duy trì hòa bình quốc tế, tương đồng với nghĩa của "preserve".</li>  
+
+<li>❌ <strong>develop</strong> (phát triển) → Sai, vì "develop" có nghĩa là mở rộng hoặc làm cho một thứ gì đó trở nên tiên tiến hơn, không đồng nghĩa với "maintain" trong ngữ cảnh này.</li>  
+
+<li>❌ <strong>argue</strong> (tranh luận) → Sai, vì "argue" liên quan đến việc tranh luận hoặc bàn cãi, không liên quan đến nghĩa của "maintain".</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: The pronoun "it" in paragraph (D) refers to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. the Economic and Social Council</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. the General Assembly of the UN															</div>
+																				<div class="ps-4 mb-2">
+																	C. the monitors															</div>
+																				<div class="ps-4 mb-2">
+																	D. the world economy															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The pronoun "it" in paragraph (D) refers to?</strong>  
+(Đại từ "it" trong đoạn (D) đề cập đến gì?)</p>
+
+<ul>
+<li>❌ <strong>the world economy</strong> (nền kinh tế thế giới) → Sai, vì đoạn văn nói về một tổ chức, không phải nền kinh tế toàn cầu.</li>  
+
+<li>❌ <strong>the General Assembly of the UN</strong> (Đại Hội Đồng LHQ) → Sai, vì trong đoạn văn, "it" không liên quan đến Đại Hội Đồng.</li>  
+
+<li>❌ <strong>the monitors</strong> (các giám sát viên) → Sai, vì không có đề cập nào về giám sát viên trong ngữ cảnh này.</li>  
+
+<li>✅ <strong>the Economic and Social Council</strong> (Hội đồng Kinh tế và Xã hội) → Đúng, vì "it" trong đoạn văn đề cập đến tổ chức chịu trách nhiệm giám sát nền kinh tế và các vấn đề xã hội toàn cầu.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: In paragraph (B), why does the writer include the highlighted sentence: "Considering that the UN is such a large organization, it makes sense that it needs to be separated into different pieces to be effective."?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. To say that there are a total of six branches in the UN															</div>
+																				<div class="ps-4 mb-2">
+																	B. To argue for the UN as a world government															</div>
+																				<div class="ps-4 mb-2">
+																	C. To explain how the voting works in the UN															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. To defend the reasoning behind separating the UN into different sections</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (B), why does the writer include the highlighted sentence: "Considering that the UN is such a large organization, it makes sense that it needs to be separated into different pieces to be effective."?</strong>  
+(Trong đoạn (B), tại sao tác giả lại đưa vào câu: "Xét đến việc LHQ là một tổ chức lớn như vậy, việc phân chia thành các bộ phận khác nhau để hoạt động hiệu quả là điều hợp lý.")</p>
+
+<ul>
+<li>✅ <strong>To defend the reasoning behind separating the UN into different sections</strong> (Để giải thích lý do hợp lý của việc chia LHQ thành các bộ phận khác nhau) → Đúng, vì câu này giúp người đọc hiểu tại sao LHQ lại được chia thành nhiều nhánh để hoạt động hiệu quả hơn.</li>  
+
+<li>❌ <strong>To argue for the UN as a world government</strong> (Để lập luận rằng LHQ là một chính phủ toàn cầu) → Sai, vì câu này không khẳng định rằng LHQ là một chính phủ thế giới.</li>  
+
+<li>❌ <strong>To say that there are a total of six branches in the UN</strong> (Để nói rằng LHQ có tổng cộng sáu nhánh) → Sai, vì câu này chỉ đưa ra lý do chia nhánh, không nêu con số cụ thể.</li>  
+
+<li>❌ <strong>To explain how the voting works in the UN</strong> (Để giải thích cách bỏ phiếu hoạt động trong LHQ) → Sai, vì câu này không đề cập đến hệ thống bỏ phiếu của LHQ.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: How does the author argue that the UN is a true global organization?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. There are 51 nations involved.															</div>
+																				<div class="ps-4 mb-2">
+																	B. It allows each country to vote.															</div>
+																				<div class="ps-4 mb-2">
+																	C. It acts as a global government.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. It includes almost all countries in the world.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>How does the author argue that the UN is a true global organization?</strong>  
+(Tác giả lập luận như thế nào để chứng minh rằng LHQ là một tổ chức toàn cầu thực sự?)</p>
+
+<ul>
+<li>❌ <strong>There are 51 nations involved.</strong> (Có 51 quốc gia tham gia.) → Sai, vì con số 51 chỉ đúng vào năm 1945, trong khi hiện nay gần như tất cả các quốc gia trên thế giới là thành viên.</li>  
+
+<li>❌ <strong>It allows each country to vote.</strong> (LHQ cho phép mỗi quốc gia bỏ phiếu.) → Sai, vì điều này chỉ mô tả cách hoạt động của Đại Hội Đồng, không phải là bằng chứng chính cho thấy LHQ là một tổ chức toàn cầu.</li>  
+
+<li>✅ <strong>It includes almost all countries in the world.</strong> (LHQ bao gồm hầu hết các quốc gia trên thế giới.) → Đúng, vì bài đọc nhấn mạnh rằng gần như mọi quốc gia đều là thành viên của LHQ, điều này chứng minh tính toàn cầu của tổ chức.</li>  
+
+<li>❌ <strong>It acts as a global government.</strong> (LHQ hoạt động như một chính phủ toàn cầu.) → Sai, vì bài đọc khẳng định rõ rằng LHQ không phải là một "chính phủ thế giới".</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: According to the passage, which region has the most representatives in the Economic and Social Council?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Africa															</div>
+																				<div class="ps-4 mb-2">
+																	B. South America															</div>
+																				<div class="ps-4 mb-2">
+																	C. Asia															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Europe and North America</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the passage, which region has the most representatives in the Economic and Social Council?</strong>  
+(Theo bài đọc, khu vực nào có nhiều đại diện nhất trong Hội đồng Kinh tế và Xã hội?)</p>
+
+<ul>
+<li>✅ <strong>Europe and North America</strong> (Châu Âu và Bắc Mỹ) → Đúng, vì bài đọc nói rằng khu vực này có 19 đại diện, cao nhất trong số các khu vực.</li>  
+
+<li>❌ <strong>Asia</strong> (Châu Á) → Sai, vì Châu Á chỉ có 11 đại diện.</li>  
+
+<li>❌ <strong>South America</strong> (Nam Mỹ) → Sai, vì Nam Mỹ chỉ có 10 đại diện.</li>  
+
+<li>❌ <strong>Africa</strong> (Châu Phi) → Sai, vì Châu Phi có 14 đại diện.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: According to the passage, how many members of the Security Council serve on a rotating basis?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. 10</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. 5															</div>
+																				<div class="ps-4 mb-2">
+																	C. 15															</div>
+																				<div class="ps-4 mb-2">
+																	D. 20															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the passage, how many members of the Security Council serve on a rotating basis?</strong>  
+(Theo bài đọc, có bao nhiêu thành viên của Hội đồng Bảo an phục vụ theo chế độ luân phiên?)</p>
+
+<ul>
+<li>❌ <strong>15</strong> → Sai, vì Hội đồng Bảo an có tổng cộng 15 thành viên, nhưng không phải tất cả đều luân phiên.</li>  
+
+<li>❌ <strong>5</strong> → Sai, vì 5 thành viên này là thành viên thường trực, không thay đổi.</li>  
+
+<li>❌ <strong>20</strong> → Sai, vì con số này không liên quan đến cấu trúc Hội đồng Bảo an.</li>  
+
+<li>✅ <strong>10</strong> → Đúng, vì có 10 thành viên luân phiên được Đại Hội Đồng bầu chọn với nhiệm kỳ hai năm.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: Which sentence below best explains the highlighted sentence in paragraph (C): "At least two-thirds of all member countries, that is 67 percent, must agree on how to resolve the problem in order for the UN to take action."?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. A certain number of members must vote the same way in order for the assembly to do something.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. At least 66 percent of the General Assembly votes whenever the UN is asked to take action.															</div>
+																				<div class="ps-4 mb-2">
+																	C. The United Nations cannot take action right away because the General Assembly always has to meet together and vote.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Countries that vote in the General Assembly of the UN seldom agree, so immediate action on issues is not taken.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which sentence below best explains the highlighted sentence in paragraph (C): "At least two-thirds of all member countries, that is 67 percent, must agree on how to resolve the problem in order for the UN to take action."?</strong>  
+(Câu nào dưới đây giải thích chính xác nhất cho câu in đậm trong đoạn (C): "Ít nhất hai phần ba tổng số quốc gia thành viên, tức là 67%, phải đồng ý về cách giải quyết vấn đề để LHQ thực hiện hành động.")</p>
+
+<ul>
+<li>❌ <strong>The United Nations cannot take action right away because the General Assembly always has to meet together and vote.</strong> → Sai, vì LHQ có thể họp khẩn cấp khi cần thiết.</li>  
+
+<li>❌ <strong>At least 66 percent of the General Assembly votes whenever the UN is asked to take action.</strong> → Sai, vì tỷ lệ chính xác là 67%.</li>  
+
+<li>✅ <strong>A certain number of members must vote the same way in order for the assembly to do something.</strong> → Đúng, vì quy định yêu cầu ít nhất hai phần ba số phiếu đồng ý để hành động được thực hiện.</li>  
+
+<li>❌ <strong>Countries that vote in the General Assembly of the UN seldom agree, so immediate action on issues is not taken.</strong> → Sai, vì không có thông tin nào nói rằng các quốc gia hiếm khi đồng ý.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: Where would the following sentence best fit in paragraph (D)? "If the Council feels that international peace is being threatened, the fifteen members will try to outline a way to resolve the situation in a peaceful manner."						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. At the beginning of the paragraph															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. At the end of the paragraph</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Before discussing the ten rotating members															</div>
+																				<div class="ps-4 mb-2">
+																	D. Before mentioning the five permanent members															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Where would the following sentence best fit in paragraph (D)? "If the Council feels that international peace is being threatened, the fifteen members will try to outline a way to resolve the situation in a peaceful manner."</strong>  
+(Câu sau nên được đặt ở đâu trong đoạn (D) để phù hợp nhất? "Nếu Hội đồng cảm thấy hòa bình quốc tế đang bị đe dọa, mười lăm thành viên sẽ cố gắng đề ra cách giải quyết tình huống một cách hòa bình.")</p>
+
+<ul>
+<li>❌ <strong>Before mentioning the five permanent members</strong> (Trước khi đề cập đến 5 thành viên thường trực) → Sai, vì câu này nói về cách Hội đồng xử lý tình huống, không liên quan trực tiếp đến thành viên thường trực.</li>  
+
+<li>❌ <strong>Before discussing the ten rotating members</strong> (Trước khi nói về 10 thành viên luân phiên) → Sai, vì nó không phải là lời giới thiệu về thành viên luân phiên.</li>  
+
+<li>❌ <strong>At the beginning of the paragraph</strong> (Đầu đoạn văn) → Sai, vì mở đầu đoạn đã giới thiệu về Hội đồng Bảo an.</li>  
+
+<li>✅ <strong>At the end of the paragraph</strong> (Cuối đoạn văn) → Đúng, vì câu này bổ sung ý nghĩa về chức năng của Hội đồng Bảo an sau khi đã giới thiệu thành viên.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: What does the author imply when he explains that the UN is not a world government?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Many people mistakenly think that the UN is really a type of government.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. The UN would probably work better if it did function as a government.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Some larger countries would like the UN to be a government.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Countries do not like governments.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does the author imply when he explains that the UN is not a world government?</strong>  
+(Tác giả ngụ ý điều gì khi giải thích rằng LHQ không phải là một chính phủ thế giới?)</p>
+
+<ul>
+<li>❌ <strong>The UN would probably work better if it did function as a government.</strong> (LHQ có lẽ sẽ hoạt động hiệu quả hơn nếu nó hoạt động như một chính phủ.) → Sai, vì bài đọc không đưa ra lập luận nào như vậy.</li>  
+
+<li>❌ <strong>Some larger countries would like the UN to be a government.</strong> (Một số quốc gia lớn muốn LHQ trở thành một chính phủ.) → Sai, vì bài đọc không đề cập đến mong muốn này.</li>  
+
+<li>✅ <strong>Many people mistakenly think that the UN is really a type of government.</strong> (Nhiều người nhầm lẫn rằng LHQ thực sự là một loại chính phủ.) → Đúng, vì bài đọc nhấn mạnh rằng LHQ không ban hành hoặc thực thi luật như một chính phủ.</li>  
+
+<li>❌ <strong>Countries do not like governments.</strong> (Các quốc gia không thích chính phủ.) → Sai, vì bài đọc không đưa ra tuyên bố nào như vậy.</li>  
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 38 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79952				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Floods are second only to fire as the most common of all natural disasters. <b>They</b> occur almost everywhere in the world, resulting in widespread damage and even death. Consequently, scientists have long tried to perfect their ability to predict floods. So far, the best that scientists can do is to recognize the potential for flooding in certain conditions. There are several conditions, from deep snow on the ground to human error, that can cause flooding.</p>
+
+<p><b>(B)</b> The first cause of flooding is deep snow on the ground. When deep snow melts, it creates a large amount of water. Although deep snow alone rarely causes floods, when it occurs together with heavy rain and sudden warmer weather, it can lead to serious flooding. If there is a fast snow melt on top of frozen or very wet ground, flooding is more likely to occur than when the ground is not frozen. Frozen ground or ground that is very wet and already saturated with water cannot absorb the additional water created by the melting snow. Melting snow also contributes to high water levels in rivers and streams. Whenever rivers are already at their full capacity of water, heavy rains will result in the rivers overflowing and flooding the surrounding land.</p>
+
+<p><b>(C)</b> Secondly, rivers that are covered in ice can also lead to flooding. When ice begins to melt, the surface of the ice cracks and breaks into large pieces. These pieces of ice move and float down the river. They can form a dam in the river, causing the water behind the dam to rise and flood the land upstream. If the dam breaks suddenly, then the large amount of water held behind the dam can flood the areas downstream too.</p>
+
+<p><b>(D)</b> Broken ice dams are not the only dam problems that can cause flooding. Those carelessly constructed by humans can also result in floods. When a large human-made dam breaks or fails to hold the water collected behind it, the results can be <b>devastating</b>. Dams hold such massive amounts of water that when they suddenly break, the destructive force is similar to that of a great <b>tidal wave</b>. Unleashed dam waters can travel tens of kilometres, cover the ground in metres of mud and debris, and drown and crush everything and every creature in their path.</p>
+
+<p><b>(E)</b> Although scientists cannot always predict exactly when floods will occur, they have a good understanding of the conditions that make flooding likely. Deep snow, ice-covered rivers, and weak dams are all strong conditions for potential flooding. Hopefully, this knowledge of why floods happen can help us reduce the damage they cause.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Lũ lụt chỉ đứng sau hỏa hoạn trong danh sách các thảm họa thiên nhiên phổ biến nhất. <b>Chúng</b> xảy ra ở hầu hết mọi nơi trên thế giới, gây ra thiệt hại nghiêm trọng và thậm chí cả thương vong. Do đó, các nhà khoa học từ lâu đã cố gắng hoàn thiện khả năng dự đoán lũ lụt. Cho đến nay, điều tốt nhất mà họ có thể làm là nhận diện khả năng xảy ra lũ lụt trong những điều kiện nhất định. Có nhiều yếu tố có thể gây ra lũ lụt, từ lớp tuyết dày trên mặt đất đến những sai lầm của con người.</p>   <p><b>(B)</b> Nguyên nhân đầu tiên của lũ lụt là lớp tuyết dày trên mặt đất. Khi tuyết tan, nó tạo ra một lượng nước lớn. Mặc dù tuyết dày hiếm khi gây lũ lụt, nhưng khi nó tan chảy cùng với mưa lớn và thời tiết đột ngột ấm lên, nó có thể dẫn đến tình trạng lũ nghiêm trọng. Nếu tuyết tan nhanh trên mặt đất bị đóng băng hoặc đã quá ẩm ướt, nguy cơ lũ lụt sẽ cao hơn so với khi mặt đất khô ráo. Mặt đất đóng băng hoặc quá ẩm và đã bão hòa nước không thể hấp thụ thêm lượng nước từ tuyết tan. Tuyết tan cũng góp phần làm tăng mực nước trong sông và suối. Khi mực nước sông đã đạt mức tối đa, mưa lớn sẽ khiến sông tràn bờ và gây lũ lụt cho các vùng đất xung quanh.</p>   <p><b>(C)</b> Thứ hai, những con sông bị phủ băng cũng có thể dẫn đến lũ lụt. Khi băng bắt đầu tan, bề mặt băng nứt vỡ thành từng mảng lớn. Những tảng băng này di chuyển và trôi theo dòng sông. Chúng có thể tạo thành một con đập băng, khiến nước phía sau dâng cao và làm ngập các vùng đất ở thượng nguồn. Nếu con đập băng này vỡ đột ngột, một lượng nước lớn tích tụ phía sau có thể gây lũ lụt nghiêm trọng cho khu vực hạ lưu.</p>   <p><b>(D)</b> Các con đập băng bị vỡ không phải là vấn đề duy nhất có thể gây ra lũ lụt. Những con đập do con người xây dựng một cách cẩu thả cũng có thể dẫn đến thảm họa. Khi một con đập nhân tạo lớn bị vỡ hoặc không thể giữ được lượng nước tích tụ phía sau nó, hậu quả có thể vô cùng <b>tàn khốc</b>. Các con đập chứa một lượng nước khổng lồ, vì vậy khi chúng đột ngột vỡ, sức tàn phá của nó tương đương với một <b>sóng thần</b> khổng lồ. Lượng nước từ đập tràn ra có thể di chuyển hàng chục km, nhấn chìm mặt đất dưới nhiều mét bùn và mảnh vỡ, cuốn trôi và phá hủy tất cả mọi thứ trên đường đi của nó.</p>   <p><b>(E)</b> Mặc dù các nhà khoa học không phải lúc nào cũng có thể dự đoán chính xác thời điểm xảy ra lũ lụt, nhưng họ có sự hiểu biết rõ ràng về các điều kiện có thể dẫn đến lũ lụt. Tuyết dày, sông bị đóng băng và những con đập yếu đều là những yếu tố nguy hiểm có thể gây lũ lụt. Hy vọng rằng hiểu biết về nguyên nhân gây lũ lụt sẽ giúp chúng ta giảm thiểu thiệt hại mà chúng gây ra.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>(A)</b> Floods are second only to fire as the most common of all natural disasters. <b>They</b> occur almost everywhere in the world, resulting in widespread damage and even death. Consequently, scientists have long tried to perfect their ability to predict floods. So far, the best that scientists can do is to recognize the potential for flooding in certain conditions. There are several conditions, from deep snow on the ground to human error, that can cause flooding.</p>
+
+<p><b>(B)</b> The first cause of flooding is deep snow on the ground. When deep snow melts, it creates a large amount of water. Although deep snow alone rarely causes floods, when it occurs together with heavy rain and sudden warmer weather, it can lead to serious flooding. If there is a fast snow melt on top of frozen or very wet ground, flooding is more likely to occur than when the ground is not frozen. Frozen ground or ground that is very wet and already saturated with water cannot absorb the additional water created by the melting snow. Melting snow also contributes to high water levels in rivers and streams. Whenever rivers are already at their full capacity of water, heavy rains will result in the rivers overflowing and flooding the surrounding land.</p>
+
+<p><b>(C)</b> Secondly, rivers that are covered in ice can also lead to flooding. When ice begins to melt, the surface of the ice cracks and breaks into large pieces. These pieces of ice move and float down the river. They can form a dam in the river, causing the water behind the dam to rise and flood the land upstream. If the dam breaks suddenly, then the large amount of water held behind the dam can flood the areas downstream too.</p>
+
+<p><b>(D)</b> Broken ice dams are not the only dam problems that can cause flooding. Those carelessly constructed by humans can also result in floods. When a large human-made dam breaks or fails to hold the water collected behind it, the results can be <b>devastating</b>. Dams hold such massive amounts of water that when they suddenly break, the destructive force is similar to that of a great <b>tidal wave</b>. Unleashed dam waters can travel tens of kilometres, cover the ground in metres of mud and debris, and drown and crush everything and every creature in their path.</p>
+
+<p><b>(E)</b> Although scientists cannot always predict exactly when floods will occur, they have a good understanding of the conditions that make flooding likely. Deep snow, ice-covered rivers, and weak dams are all strong conditions for potential flooding. Hopefully, this knowledge of why floods happen can help us reduce the damage they cause.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What is the second most common natural disaster?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. flood</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. rain															</div>
+																				<div class="ps-4 mb-2">
+																	C. fire															</div>
+																				<div class="ps-4 mb-2">
+																	D. tidal wave															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What is the second most common natural disaster?</strong> (Thảm họa thiên nhiên phổ biến thứ hai là gì?)</p>
+<ul>
+<li>✅ <strong>flood (Lũ lụt)</strong> → Đúng. Theo đoạn (A), "Floods are second only to fire as the most common of all natural disasters." (Lũ lụt chỉ đứng sau hỏa hoạn trong danh sách các thảm họa thiên nhiên phổ biến nhất).</li>
+<li>❌ <strong>fire (Hỏa hoạn)</strong> → Sai. Hỏa hoạn là thảm họa phổ biến nhất chứ không phải thứ hai.</li>
+<li>❌ <strong>tidal wave (Sóng thần)</strong> → Sai. Sóng thần không được đề cập là thảm họa phổ biến thứ hai.</li>
+<li>❌ <strong>rain (Mưa)</strong> → Sai. Mưa không phải là một thảm họa thiên nhiên mà chỉ là một hiện tượng thời tiết.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: In paragraph (A), what does the word 'they' refer to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. disasters															</div>
+																				<div class="ps-4 mb-2">
+																	B. conditions															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. floods</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. scientists															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (A), what does the word "they" refer to?</strong> (Trong đoạn (A), từ "they" ám chỉ điều gì?)</p>
+<ul>
+<li>✅ <strong>floods (Lũ lụt)</strong> → Đúng. Trong câu đầu tiên của đoạn (A), từ "they" được sử dụng để chỉ "Floods" trong câu trước đó.</li>
+<li>❌ <strong>disasters (Thảm họa)</strong> → Sai. "They" không ám chỉ tất cả các thảm họa mà chỉ nói riêng về lũ lụt.</li>
+<li>❌ <strong>scientists (Các nhà khoa học)</strong> → Sai. Không có bằng chứng nào trong đoạn (A) cho thấy từ "they" ám chỉ các nhà khoa học.</li>
+<li>❌ <strong>conditions (Điều kiện)</strong> → Sai. Từ "they" không liên quan đến các điều kiện gây lũ lụt.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: How does deep snow contribute to flooding?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. snow that melts in wet weather causes flooding.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. melting snow combining with considerable amount of rain and sudden increase in temperature leads to flooding.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. melting snow that creates a large amount of water causes flooding.															</div>
+																				<div class="ps-4 mb-2">
+																	D. freezing water causes flooding.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>How does deep snow contribute to flooding?</strong> (Tuyết dày góp phần gây ra lũ lụt như thế nào?)</p>
+<ul>
+<li>❌ <strong>melting snow that creates a large amount of water causes flooding.</strong> (Tuyết tan tạo ra một lượng nước lớn gây lũ lụt.) → Sai. Chỉ tuyết tan không đủ để gây lũ lụt mà cần kết hợp với các yếu tố khác.</li>
+<li>❌ <strong>freezing water causes flooding.</strong> (Nước đóng băng gây lũ lụt.) → Sai. Nước đóng băng không phải là nguyên nhân gây lũ.</li>
+<li>✅ <strong>melting snow combining with considerable amount of rain and sudden increase in temperature leads to flooding.</strong> (Tuyết tan kết hợp với lượng mưa lớn và sự tăng nhiệt độ đột ngột dẫn đến lũ lụt.) → Đúng. Theo đoạn (B), khi tuyết tan nhanh cùng với mưa lớn và nhiệt độ tăng, nó có thể gây ra lũ nghiêm trọng.</li>
+<li>❌ <strong>snow that melts in wet weather causes flooding.</strong> (Tuyết tan trong thời tiết ẩm gây lũ lụt.) → Sai. Điều này không đầy đủ, vì phải có mưa lớn và nhiệt độ tăng.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: Why does saturated ground contribute to flooding problems?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. it remains frozen															</div>
+																				<div class="ps-4 mb-2">
+																	B. the ground is too hard, so the water runs off															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. the ground cannot absorb more water</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. the ground forms a kind of dam															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Why does saturated ground contribute to flooding problems?</strong> (Tại sao mặt đất bão hòa nước lại góp phần gây ra lũ lụt?)</p>
+<ul>
+<li>✅ <strong>The ground cannot absorb more water.</strong> (Mặt đất không thể hấp thụ thêm nước.) → Đúng. Theo đoạn (B), khi mặt đất đã bão hòa nước, nó không thể hấp thụ thêm nước từ tuyết tan, khiến nước dồn vào sông suối và gây lũ.</li>
+<li>❌ <strong>The ground is too hard, so the water runs off.</strong> (Mặt đất quá cứng, khiến nước chảy tràn.) → Sai. Mặt đất bị bão hòa nước chứ không phải quá cứng.</li>
+<li>❌ <strong>The ground forms a kind of dam.</strong> (Mặt đất tạo thành một con đập tự nhiên.) → Sai. Không có thông tin nào trong bài đọc đề cập đến điều này.</li>
+<li>❌ <strong>It remains frozen.</strong> (Nó vẫn đóng băng.) → Sai. Lũ lụt xảy ra khi tuyết tan, không phải khi mặt đất đóng băng.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: How does a frozen river contribute to flooding?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The ice in the river cracks causing the water to overflow.															</div>
+																				<div class="ps-4 mb-2">
+																	B. The water behind the ice dam collects and when the dam breaks, it causes flooding upstream.															</div>
+																				<div class="ps-4 mb-2">
+																	C. The ice in the river melts too quickly and causes a flood.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. The ice in the river cracks into pieces that eventually create a dam causing the water to overflow.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>How does a frozen river contribute to flooding?</strong> (Sông bị đóng băng góp phần gây ra lũ lụt như thế nào?)</p>
+<ul>
+<li>❌ <strong>The ice in the river melts too quickly and causes a flood.</strong> (Băng trong sông tan quá nhanh và gây lũ lụt.) → Sai. Không phải tốc độ tan chảy của băng mà là các tảng băng vỡ mới gây ra lũ.</li>
+<li>❌ <strong>The ice in the river cracks causing the water to overflow.</strong> (Băng trong sông nứt khiến nước tràn bờ.) → Sai. Chỉ riêng việc băng nứt không đủ để gây lũ.</li>
+<li>✅ <strong>The ice in the river cracks into pieces that eventually create a dam causing the water to overflow.</strong> (Băng trong sông nứt thành các mảng tạo thành một con đập băng, khiến nước tràn bờ.) → Đúng. Theo đoạn (C), khi băng vỡ thành từng tảng lớn và tạo thành con đập băng, nước sẽ bị giữ lại và có thể gây lũ.</li>
+<li>❌ <strong>The water behind the ice dam collects and when the dam breaks, it causes flooding upstream.</strong> (Nước tích tụ phía sau đập băng và khi đập vỡ, nó gây lũ ngược dòng.) → Sai. Khi đập băng vỡ, nó thường gây lũ hạ lưu chứ không phải ngược dòng.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Why does the writer mention 'tidal wave' in paragraph (D)?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. to criticize dam designers															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. to compare the force of a broken human-made dam</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. to emphasize the effects of natural disasters															</div>
+																				<div class="ps-4 mb-2">
+																	D. to introduce another natural disaster															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Why does the writer mention "tidal wave" in paragraph (D)?</strong> (Tại sao tác giả đề cập đến "sóng thần" trong đoạn (D)?)</p>
+<ul>
+<li>✅ <strong>to compare the force of a broken human-made dam (để so sánh sức mạnh của một con đập nhân tạo bị vỡ)</strong> → Đúng. Theo đoạn (D), tác giả so sánh nước từ một con đập bị vỡ có thể có sức tàn phá như một cơn sóng thần khổng lồ.</li>
+<li>❌ <strong>to introduce another natural disaster (để giới thiệu một thảm họa thiên nhiên khác)</strong> → Sai. Tác giả không đề cập đến sóng thần như một thảm họa riêng biệt.</li>
+<li>❌ <strong>to emphasize the effects of natural disasters (để nhấn mạnh tác động của các thảm họa thiên nhiên)</strong> → Sai. Tác giả chỉ tập trung vào tác động của con đập bị vỡ, không phải tất cả các thảm họa.</li>
+<li>❌ <strong>to criticize dam designers (để chỉ trích các nhà thiết kế đập)</strong> → Sai. Không có thông tin nào trong bài đọc cho thấy tác giả đang chỉ trích các nhà thiết kế đập.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: How far can dam water travel when it is unleashed from a broken dam?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. tens of kilometres</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. tens of thousands of kilometres downstream															</div>
+																				<div class="ps-4 mb-2">
+																	C. less than 10 kilometres															</div>
+																				<div class="ps-4 mb-2">
+																	D. thousands of kilometres															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>How far can dam water travel when it is unleashed from a broken dam?</strong> (Nước từ một con đập bị vỡ có thể di chuyển bao xa?)</p>
+<ul>
+<li>❌ <strong>less than 10 kilometres (dưới 10 km)</strong> → Sai. Nước từ đập bị vỡ có thể di chuyển xa hơn 10 km.</li>
+<li>✅ <strong>tens of kilometres (hàng chục km)</strong> → Đúng. Theo đoạn (D), nước từ một con đập bị vỡ có thể di chuyển hàng chục km.</li>
+<li>❌ <strong>thousands of kilometres (hàng nghìn km)</strong> → Sai. Không có thông tin nào cho thấy nước có thể di chuyển xa như vậy.</li>
+<li>❌ <strong>tens of thousands of kilometres downstream (hàng chục nghìn km về phía hạ lưu)</strong> → Sai. Điều này không hợp lý và không được đề cập trong bài.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: In paragraph (D), the word 'devastating' is closest in meaning to...?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. disastrous</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. uncountable															</div>
+																				<div class="ps-4 mb-2">
+																	C. fabulous															</div>
+																				<div class="ps-4 mb-2">
+																	D. priceless															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (D), the word "devastating" is closest in meaning to...?</strong> (Trong đoạn (D), từ "devastating" có nghĩa gần nhất với từ nào?)</p>
+<ul>
+<li>❌ <strong>fabulous (tuyệt vời)</strong> → Sai. "Devastating" có nghĩa là tàn phá, không phải tuyệt vời.</li>
+<li>❌ <strong>uncountable (không thể đếm được)</strong> → Sai. "Devastating" không liên quan đến số lượng.</li>
+<li>❌ <strong>priceless (vô giá)</strong> → Sai. "Devastating" không có nghĩa là vô giá.</li>
+<li>✅ <strong>disastrous (thảm khốc, tàn phá)</strong> → Đúng. "Devastating" có nghĩa là gây ra hậu quả nghiêm trọng, tương tự như "disastrous".</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: According to the passage, which of the following is NOT mentioned as a cause of flooding?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. broken dams															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. poorly built roads</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. melting snow															</div>
+																				<div class="ps-4 mb-2">
+																	D. ice-covered rivers															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the passage, which of the following is NOT mentioned as a cause of flooding?</strong> (Theo bài đọc, điều nào sau đây KHÔNG được đề cập là nguyên nhân gây lũ lụt?)</p>
+<ul>
+<li>❌ <strong>melting snow (tuyết tan)</strong> → Sai. Đoạn (B) nói rằng tuyết tan có thể góp phần gây ra lũ lụt.</li>
+<li>❌ <strong>ice-covered rivers (sông bị đóng băng)</strong> → Sai. Đoạn (C) giải thích cách các con sông bị đóng băng có thể dẫn đến lũ lụt.</li>
+<li>❌ <strong>broken dams (đập bị vỡ)</strong> → Sai. Đoạn (D) mô tả cách các con đập nhân tạo bị vỡ có thể gây ra lũ lụt.</li>
+<li>✅ <strong>poorly built roads (đường được xây dựng kém chất lượng)</strong> → Đúng. Không có thông tin nào trong bài đề cập đến đường sá là nguyên nhân gây lũ lụt.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: What can be inferred from paragraph (E)?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Scientists have limited knowledge about floods.															</div>
+																				<div class="ps-4 mb-2">
+																	B. There are only three conditions that contribute to flooding.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Potential flooding cannot be accurately predicted.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. The impact of floods can be minimized if their causes are understood.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What can be inferred from paragraph (E)?</strong> (Điều gì có thể suy ra từ đoạn (E)?)</p>
+<ul>
+<li>❌ <strong>Scientists have limited knowledge about floods. (Các nhà khoa học có kiến thức hạn chế về lũ lụt.)</strong> → Sai. Đoạn (E) cho thấy các nhà khoa học có sự hiểu biết tốt về nguyên nhân gây lũ lụt.</li>
+<li>❌ <strong>Potential flooding cannot be accurately predicted. (Không thể dự đoán chính xác khả năng xảy ra lũ lụt.)</strong> → Sai. Mặc dù không thể dự đoán chính xác thời điểm xảy ra lũ, nhưng các điều kiện gây lũ có thể được xác định.</li>
+<li>✅ <strong>The impact of floods can be minimized if their causes are understood. (Tác động của lũ lụt có thể giảm thiểu nếu chúng ta hiểu rõ nguyên nhân của chúng.)</strong> → Đúng. Đoạn (E) nhấn mạnh rằng hiểu biết về nguyên nhân gây lũ có thể giúp giảm thiểu thiệt hại.</li>
+<li>❌ <strong>There are only three conditions that contribute to flooding. (Chỉ có ba điều kiện gây ra lũ lụt.)</strong> → Sai. Mặc dù bài đọc đề cập đến ba yếu tố chính, nhưng không khẳng định rằng chỉ có ba nguyên nhân này.</li>
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

@@ -1,0 +1,588 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 30 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79943				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>MY FIRST BIKE</b></p>
+
+<p><b>(A)</b> My biking beginnings can be summed up in two words: teenage love. My first girlfriend <i>was</i> small with short blonde hair, and I was mad about her. Our <b>romance</b> came to an abrupt end, <i>however</i>, when she started going out with another guy in my hometown, Crieff. He rode a 50 cc <i>road</i> motorbike first and then a 125. While I had always walked my girlfriend home, suddenly she was riding back with this guy.</p>
+
+<p><b>(B)</b> I was nearly sixteen by then and already heartbroken. Then one day, on the way back from a shopping trip to Perth with my mum, we passed Buchan's, the local bike shop. There was a light <i>blue</i> 50 cc bike on display right at the front of the shop. I didn't know what make it was or if it was <i>any</i> good. <b>Such trivialities</b> were irrelevant to me. All I knew was that I could get it in three months' time when I turned sixteen and was allowed to ride it. Maybe I could even win my girlfriend back.</p>
+
+<p>I'd ridden my first bike when I was about six. My father arranged for a tiny red Honda 50 cc, and we headed off to a field that belonged to a family friend. I clambered on and shot off. I thought <i>it</i> was just the best thing. There was one large heap of straw. I thought I would have a go. I came racing towards the adults, shot right through the gap in the straw. I was thrilled to hear the adults scream and elated that I had frightened them. It was my first time on a motorbike. It was exciting, and I wanted more.</p>
+
+<p>So when I looked through Buchan's window in Perth that day, it suddenly all made sense to me. I can't remember whether it was to win back my ex-girlfriend's heart or not, but more than anything else, it meant that instead of having to walk everywhere, I could ride my motorbike to school, to the games fields at the bottom of Crieff, and when I went out at weekends.</p>
+
+<p><b>(C)</b> I started to fantasize about <b>it</b>. I spent all my waking hours thinking about getting on and starting up the bike, putting on the helmet, and riding around Crieff. I couldn't sleep. Driven to desperation by my desire for a bike, I made a series of promises to my mum: I won't leave town. I'll be very safe. I won't take any risks. I won't do anything stupid. But in fact, I was making the promises up—I never thought about keeping them.</p>
+
+<p><b>(D)</b> Crieff is a small town, and my whole childhood was spent walking around it. It was great, but I was reaching that age when children become aware of the possibilities of <b>venturing further afield</b>. Unless, like us, you went everywhere by bicycle. With so many beautiful places nearby, the idea of getting a motorbike was too much to resist.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>CHIẾC XE MÁY ĐẦU TIÊN CỦA TÔI</b></p>   <p><b>(A)</b> Những ngày đầu đi xe máy của tôi có thể được gói gọn trong hai từ: tình yêu tuổi teen. Bạn gái đầu tiên của tôi <i>rất</i> nhỏ nhắn với mái tóc vàng ngắn, và tôi đã mê cô ấy như điếu đổ. <b>Chuyện tình</b> của chúng tôi kết thúc đột ngột, <i>tuy nhiên</i>, khi cô ấy bắt đầu hẹn hò với một chàng trai khác ở thị trấn quê tôi, Crieff. Anh ta đi một chiếc xe máy đường phố 50 cc trước, rồi sau đó là 125 cc. Trong khi tôi luôn là người đi bộ đưa cô ấy về nhà, thì bỗng nhiên cô ấy lại ngồi sau xe của anh ta.</p>   <p><b>(B)</b> Khi đó tôi gần mười sáu tuổi và đã tan nát cõi lòng. Rồi một ngày, trên đường về nhà từ chuyến mua sắm ở Perth cùng mẹ, chúng tôi đi ngang qua cửa hàng xe máy Buchan. Ngay phía trước cửa hàng là một chiếc xe 50 cc màu <i>xanh nhạt</i> đang được trưng bày. Tôi không biết đó là hãng nào hay liệu nó có <i>tốt</i> hay không. <b>Những điều vụn vặt đó</b> chẳng quan trọng với tôi. Tất cả những gì tôi biết là tôi có thể sở hữu nó sau ba tháng nữa khi tôi tròn mười sáu tuổi và được phép lái. Có lẽ tôi thậm chí có thể giành lại trái tim bạn gái cũ của mình.</p>   <p>Tôi đã lái chiếc xe máy đầu tiên của mình khi khoảng sáu tuổi. Bố tôi đã chuẩn bị một chiếc Honda 50 cc màu đỏ tí hon, và chúng tôi đến một cánh đồng thuộc sở hữu của một người bạn trong gia đình. Tôi leo lên xe và lao đi. Tôi nghĩ <i>chiếc xe</i> đó thật tuyệt vời. Trên đồng có một đống rơm lớn. Tôi quyết định thử thách bản thân. Tôi lao nhanh về phía những người lớn, xuyên thẳng qua khe hở trong đống rơm. Tôi phấn khích khi nghe họ hét lên và hạnh phúc vì đã khiến họ giật mình. Đó là lần đầu tiên tôi lái một chiếc xe máy. Cảm giác thật hồi hộp, và tôi muốn có thêm nhiều trải nghiệm như vậy.</p>   <p>Vì vậy, khi tôi nhìn qua cửa kính cửa hàng Buchan ở Perth vào ngày hôm đó, mọi thứ bỗng nhiên trở nên rất rõ ràng. Tôi không nhớ liệu mình có thực sự muốn lấy lại trái tim của bạn gái cũ hay không, nhưng hơn bất cứ điều gì, tôi biết rằng thay vì phải đi bộ khắp nơi, tôi có thể lái xe máy đến trường, đến sân thể thao ở cuối thị trấn Crieff, và khi đi chơi vào cuối tuần.</p>   <p><b>(C)</b> Tôi bắt đầu mơ mộng về <b>chiếc xe</b>. Tôi dành tất cả thời gian thức của mình để nghĩ về việc leo lên xe, khởi động, đội mũ bảo hiểm và chạy quanh Crieff. Tôi không thể ngủ được. Quá khao khát có một chiếc xe máy, tôi đã đưa ra hàng loạt lời hứa với mẹ: Con sẽ không rời khỏi thị trấn. Con sẽ lái xe thật an toàn. Con sẽ không mạo hiểm. Con sẽ không làm điều gì ngu ngốc. Nhưng thực tế, tôi chỉ đang bịa ra những lời hứa đó—tôi chưa bao giờ nghĩ đến việc thực sự giữ chúng.</p>   <p><b>(D)</b> Crieff là một thị trấn nhỏ, và suốt thời thơ ấu, tôi chỉ đi bộ quanh đó. Điều đó thật tuyệt, nhưng tôi đã đến độ tuổi mà những đứa trẻ bắt đầu nhận ra những khả năng của việc <b>khám phá những nơi xa hơn</b>. Trừ khi, giống như chúng tôi, bạn đi xe đạp đến mọi nơi. Với quá nhiều địa điểm tuyệt đẹp ở gần, ý tưởng sở hữu một chiếc xe máy thật khó để cưỡng lại.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>MY FIRST BIKE</b></p>
+
+<p><b>(A)</b> My biking beginnings can be summed up in two words: teenage love. My first girlfriend <i>was</i> small with short blonde hair, and I was mad about her. Our <b>romance</b> came to an abrupt end, <i>however</i>, when she started going out with another guy in my hometown, Crieff. He rode a 50 cc <i>road</i> motorbike first and then a 125. While I had always walked my girlfriend home, suddenly she was riding back with this guy.</p>
+
+<p><b>(B)</b> I was nearly sixteen by then and already heartbroken. Then one day, on the way back from a shopping trip to Perth with my mum, we passed Buchan's, the local bike shop. There was a light <i>blue</i> 50 cc bike on display right at the front of the shop. I didn't know what make it was or if it was <i>any</i> good. <b>Such trivialities</b> were irrelevant to me. All I knew was that I could get it in three months' time when I turned sixteen and was allowed to ride it. Maybe I could even win my girlfriend back.</p>
+
+<p>I'd ridden my first bike when I was about six. My father arranged for a tiny red Honda 50 cc, and we headed off to a field that belonged to a family friend. I clambered on and shot off. I thought <i>it</i> was just the best thing. There was one large heap of straw. I thought I would have a go. I came racing towards the adults, shot right through the gap in the straw. I was thrilled to hear the adults scream and elated that I had frightened them. It was my first time on a motorbike. It was exciting, and I wanted more.</p>
+
+<p>So when I looked through Buchan's window in Perth that day, it suddenly all made sense to me. I can't remember whether it was to win back my ex-girlfriend's heart or not, but more than anything else, it meant that instead of having to walk everywhere, I could ride my motorbike to school, to the games fields at the bottom of Crieff, and when I went out at weekends.</p>
+
+<p><b>(C)</b> I started to fantasize about <b>it</b>. I spent all my waking hours thinking about getting on and starting up the bike, putting on the helmet, and riding around Crieff. I couldn't sleep. Driven to desperation by my desire for a bike, I made a series of promises to my mum: I won't leave town. I'll be very safe. I won't take any risks. I won't do anything stupid. But in fact, I was making the promises up—I never thought about keeping them.</p>
+
+<p><b>(D)</b> Crieff is a small town, and my whole childhood was spent walking around it. It was great, but I was reaching that age when children become aware of the possibilities of <b>venturing further afield</b>. Unless, like us, you went everywhere by bicycle. With so many beautiful places nearby, the idea of getting a motorbike was too much to resist.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: The word "romance" in paragraph (A) could be best replaced by?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. love affair</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. fascination															</div>
+																				<div class="ps-4 mb-2">
+																	C. lover															</div>
+																				<div class="ps-4 mb-2">
+																	D. charm															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "romance" in paragraph (A) could be best replaced by?</strong> (Từ "romance" trong đoạn (A) có thể được thay thế tốt nhất bằng từ nào?)</p> 
+<ul> 
+<li>✅ <strong>Love affair</strong> (Chuyện tình yêu) → Đúng, vì "romance" có nghĩa là một mối quan hệ yêu đương hoặc chuyện tình cảm.</li> 
+<li>❌ <strong>Fascination</strong> (Sự mê hoặc) → Sai, vì "fascination" có nghĩa là sự hấp dẫn mạnh mẽ nhưng không liên quan đến tình yêu.</li> 
+<li>❌ <strong>Charm</strong> (Sự quyến rũ) → Sai, vì "charm" có nghĩa là sự thu hút hoặc duyên dáng, không phải là một mối quan hệ.</li> 
+<li>❌ <strong>Lover</strong> (Người yêu) → Sai, vì "lover" chỉ một người trong mối quan hệ yêu đương, không phải bản thân mối quan hệ.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: Why did Ewan's relationship with his first girlfriend finish?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He was upset by her behavior.															</div>
+																				<div class="ps-4 mb-2">
+																	B. He made her angry.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. She met someone with a motorbike.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. She didn't enjoy walking.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Why did Ewan's relationship with his first girlfriend finish?</strong> (Tại sao mối quan hệ của Ewan với bạn gái đầu tiên kết thúc?)</p> 
+<ul> 
+<li>❌ <strong>She didn't enjoy walking.</strong> (Cô ấy không thích đi bộ.) → Sai, vì bài đọc không đề cập đến việc cô ấy không thích đi bộ.</li> 
+<li>✅ <strong>She met someone with a motorbike.</strong> (Cô ấy gặp một người có xe máy.) → Đúng, vì bài đọc nói rằng cô ấy bắt đầu hẹn hò với một chàng trai khác có xe máy.</li> 
+<li>❌ <strong>He was upset by her behavior.</strong> (Anh ấy khó chịu vì hành vi của cô ấy.) → Sai, vì lý do chia tay không liên quan đến hành vi của cô gái.</li> 
+<li>❌ <strong>He made her angry.</strong> (Anh ấy làm cô ấy tức giận.) → Sai, vì không có chi tiết nào cho thấy Ewan khiến cô ấy tức giận.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What does "such trivialities" in paragraph (B) refer to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the bike’s price															</div>
+																				<div class="ps-4 mb-2">
+																	B. his mother's attitude to the bike															</div>
+																				<div class="ps-4 mb-2">
+																	C. the bike’s size and color															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. the bike’s quality and its manufacturer</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does "such trivialities" in paragraph (B) refer to?</strong> ("Những điều vụn vặt đó" trong đoạn (B) đề cập đến điều gì?)</p> 
+<ul> 
+<li>❌ <strong>His mother's attitude to the bike.</strong> (Thái độ của mẹ anh ấy đối với chiếc xe.) → Sai, vì bài đọc không đề cập đến quan điểm của mẹ Ewan.</li> 
+<li>❌ <strong>The bike’s size and color.</strong> (Kích thước và màu sắc của xe máy.) → Sai, vì bài đọc không đề cập đến kích thước và màu sắc là những điều không quan trọng với Ewan.</li> 
+<li>❌ <strong>The bike’s price.</strong> (Giá của chiếc xe.) → Sai, vì bài đọc không đề cập đến giá cả là yếu tố Ewan bỏ qua.</li> 
+<li>✅ <strong>The bike’s quality and its manufacturer.</strong> (Chất lượng của xe và nhà sản xuất của nó.) → Đúng, vì bài đọc nói rằng Ewan không quan tâm đến hãng xe và chất lượng của nó.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: Why didn't Ewan buy the bike immediately?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He didn't know if his girlfriend would like it.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. He wasn't old enough to ride it.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. He hadn't learnt how to ride it.															</div>
+																				<div class="ps-4 mb-2">
+																	D. He couldn't afford it.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Why didn't Ewan buy the bike immediately?</strong> (Tại sao Ewan không mua xe ngay lập tức?)</p> 
+<ul> 
+<li>❌ <strong>He couldn't afford it.</strong> (Anh ấy không đủ tiền mua.) → Sai, vì bài đọc không đề cập đến việc Ewan không đủ tiền mua xe.</li> 
+<li>✅ <strong>He wasn't old enough to ride it.</strong> (Anh ấy chưa đủ tuổi để lái xe.) → Đúng, vì bài đọc nói rằng anh ấy phải đợi đến khi đủ 16 tuổi mới được phép lái xe.</li> 
+<li>❌ <strong>He hadn't learnt how to ride it.</strong> (Anh ấy chưa học cách lái xe.) → Sai, vì bài đọc cho thấy Ewan đã từng lái xe máy từ khi còn nhỏ.</li> 
+<li>❌ <strong>He didn't know if his girlfriend would like it.</strong> (Anh ấy không biết bạn gái có thích nó không.) → Sai, vì lý do chính khiến anh không mua ngay không liên quan đến ý kiến của bạn gái.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: The adults were frightened the first time Ewan rode a motorbike because they thought _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the bike was too fast.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. he was going to have an accident.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. the bike was too big for him.															</div>
+																				<div class="ps-4 mb-2">
+																	D. the bike was too noisy.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The adults were frightened the first time Ewan rode a motorbike because they thought _____</strong> (Những người lớn đã hoảng sợ lần đầu tiên Ewan lái xe máy vì họ nghĩ rằng _____)</p> 
+<ul> 
+<li>❌ <strong>The bike was too noisy.</strong> (Chiếc xe quá ồn.) → Sai, vì bài đọc không đề cập đến tiếng ồn của chiếc xe máy.</li> 
+<li>❌ <strong>The bike was too fast.</strong> (Chiếc xe quá nhanh.) → Sai, vì không có chi tiết nào nói rằng chiếc xe quá nhanh.</li> 
+<li>✅ <strong>He was going to have an accident.</strong> (Anh ấy sắp gặp tai nạn.) → Đúng, vì bài đọc nói rằng Ewan lao về phía họ và khiến họ hét lên vì sợ anh gặp tai nạn.</li> 
+<li>❌ <strong>The bike was too big for him.</strong> (Chiếc xe quá lớn đối với anh ấy.) → Sai, vì bài đọc không đề cập đến kích thước của chiếc xe là nguyên nhân gây lo lắng.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: What was Ewan's main reason for buying the motorbike?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It was good for his image.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. It was a useful means of transport.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. It was less expensive than a car.															</div>
+																				<div class="ps-4 mb-2">
+																	D. It would help his relationship with his girlfriend.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What was Ewan's main reason for buying the motorbike?</strong> (Lý do chính khiến Ewan mua xe máy là gì?)</p> 
+<ul> 
+<li>❌ <strong>It was less expensive than a car.</strong> (Nó rẻ hơn một chiếc ô tô.) → Sai, vì bài đọc không đề cập đến giá cả là yếu tố quyết định.</li> 
+<li>❌ <strong>It would help his relationship with his girlfriend.</strong> (Nó sẽ giúp mối quan hệ của anh ấy với bạn gái tốt hơn.) → Sai, vì dù ban đầu anh ấy nghĩ đến điều này, nhưng lý do chính vẫn là sự tiện lợi của xe máy.</li> 
+<li>❌ <strong>It was good for his image.</strong> (Nó tốt cho hình ảnh của anh ấy.) → Sai, vì bài đọc không nói rằng Ewan mua xe máy để gây ấn tượng với người khác.</li> 
+<li>✅ <strong>It was a useful means of transport.</strong> (Nó là một phương tiện di chuyển hữu ích.) → Đúng, vì Ewan mua xe máy chủ yếu để không phải đi bộ khắp nơi.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: How did Ewan's desire for the bike affect his behaviour?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He spent a lot of time riding a friend's bike.															</div>
+																				<div class="ps-4 mb-2">
+																	B. He invented reasons for buying the bike.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. He couldn't think about anything else.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. He spent more time talking to his mother.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>How did Ewan's desire for the bike affect his behaviour?</strong> (Niềm khao khát có được chiếc xe máy đã ảnh hưởng đến hành vi của Ewan như thế nào?)</p> 
+<ul> 
+<li>✅ <strong>He couldn't think about anything else.</strong> (Anh ấy không thể nghĩ đến bất cứ điều gì khác.) → Đúng, vì bài đọc nói rằng Ewan dành toàn bộ thời gian để mơ tưởng về chiếc xe.</li> 
+<li>❌ <strong>He spent more time talking to his mother.</strong> (Anh ấy dành nhiều thời gian nói chuyện với mẹ hơn.) → Sai, vì bài đọc không đề cập đến việc anh ấy dành nhiều thời gian nói chuyện với mẹ.</li> 
+<li>❌ <strong>He invented reasons for buying the bike.</strong> (Anh ấy bịa lý do để mua xe máy.) → Sai, vì Ewan đã nói những lời hứa với mẹ nhưng không thực sự có ý định giữ lời.</li> 
+<li>❌ <strong>He spent a lot of time riding a friend's bike.</strong> (Anh ấy dành nhiều thời gian lái xe của bạn.) → Sai, vì bài đọc không nói rằng Ewan lái xe của ai khác.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: The word "it" in paragraph (C) refers to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the helmet															</div>
+																				<div class="ps-4 mb-2">
+																	B. his hometown Crieff															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. the bike</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. his desperation															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "it" in paragraph (C) refers to?</strong> (Từ "it" trong đoạn (C) ám chỉ điều gì?)</p> 
+<ul> 
+<li>✅ <strong>The bike.</strong> (Chiếc xe máy.) → Đúng, vì câu trước đó Ewan đã mơ tưởng về việc lái chiếc xe.</li> 
+<li>❌ <strong>The helmet.</strong> (Chiếc mũ bảo hiểm.) → Sai, vì Ewan chỉ đề cập đến mũ bảo hiểm như một phần của việc lái xe.</li> 
+<li>❌ <strong>His hometown Crieff.</strong> (Thị trấn Crieff quê anh ấy.) → Sai, vì "it" không ám chỉ địa điểm.</li> 
+<li>❌ <strong>His desperation.</strong> (Sự tuyệt vọng của anh ấy.) → Sai, vì "it" không nói về cảm xúc mà nói về vật cụ thể.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What does Ewan mean by saying "venturing further afield" in paragraph (D)?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. becoming more independent															</div>
+																				<div class="ps-4 mb-2">
+																	B. living somewhere different															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. travelling to more distant places</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. taking greater risks															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does Ewan mean by saying "venturing further afield" in paragraph (D)?</strong> (Ewan có ý gì khi nói "venturing further afield" trong đoạn (D)?)</p> 
+<ul> 
+<li>❌ <strong>Taking greater risks.</strong> (Chấp nhận rủi ro lớn hơn.) → Sai, vì Ewan không nói về việc chấp nhận rủi ro mà là khám phá những nơi xa hơn.</li> 
+<li>❌ <strong>Becoming more independent.</strong> (Trở nên độc lập hơn.) → Sai, vì bài đọc không nói rằng Ewan muốn tự lập hơn.</li> 
+<li>✅ <strong>Travelling to more distant places.</strong> (Đi đến những nơi xa hơn.) → Đúng, vì bài đọc nói rằng Ewan muốn khám phá những nơi ngoài thị trấn nhỏ của mình.</li> 
+<li>❌ <strong>Living somewhere different.</strong> (Sống ở một nơi khác.) → Sai, vì bài đọc không đề cập đến việc Ewan muốn chuyển chỗ ở.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: Who, according to the whole passage, was most against Ewan getting a motorbike?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. his father															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. his mother</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. his friends															</div>
+																				<div class="ps-4 mb-2">
+																	D. his first girlfriend															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Who, according to the whole passage, was most against Ewan getting a motorbike?</strong> (Theo toàn bộ bài đọc, ai là người phản đối Ewan mua xe máy nhất?)</p> 
+<ul> 
+<li>❌ <strong>His first girlfriend.</strong> (Bạn gái đầu tiên của anh ấy.) → Sai, vì bài đọc không nói rằng bạn gái cũ phản đối anh mua xe.</li> 
+<li>❌ <strong>His father.</strong> (Bố anh ấy.) → Sai, vì bài đọc không đề cập đến quan điểm của bố anh ấy về chiếc xe.</li> 
+<li>✅ <strong>His mother.</strong> (Mẹ anh ấy.) → Đúng, vì Ewan đã phải thuyết phục mẹ và đưa ra nhiều lời hứa để có thể mua xe.</li> 
+<li>❌ <strong>His friends.</strong> (Bạn bè của anh ấy.) → Sai, vì bài đọc không đề cập đến sự phản đối từ bạn bè.</li> 
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

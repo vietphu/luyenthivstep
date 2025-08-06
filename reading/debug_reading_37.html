@@ -1,0 +1,654 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 37 - Part 1				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79951				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>Social Networks</b></p>
+
+<p>Do the names MySpace, Facebook, and Orkut ring a bell? They probably do because they are some of the most popular sites on the internet today. These sites are all called "social networking" sites because they help people meet and discuss things online.</p>
+
+<p><b>(A)</b> Each of these social networking sites has its own strengths: MySpace is especially popular among teenagers, Facebook is popular among college-age people, Orkut is especially loved in Brazil, and <b>CyWorld</b> is the site to visit in South Korea. The common thread between all of these social networks is that they provide a place for people to interact, rather than a place to go to read or listen to content.</p>
+
+<p><b>Web 2.0</b></p>
+
+<p>Social networks are considered to be web 2.0. What does this mean? To understand this, it's important to understand what the original web did (often called web 1.0). Back in the 1990s, the internet—or web—was primarily a place to read articles, listen to music, and get information.</p>
+
+<p><b>(B)</b> Most people didn't contribute to the sites. <b>They</b> just "browsed" the sites and took advantage of the information or resources provided. Of course, some people did create their own sites. However, creating a site was difficult. You needed to know basic HTML coding (the original language the internet uses to "code" pages). It certainly wasn't something most people wanted to do, as even a basic page could take hours to get just right.</p>
+
+<p>Things began to get easier when blogs (short for "web logs") were introduced. With blogs, many more people began writing "posts," as well as commenting on other people's blogs.</p>
+
+<p><b>MySpace Surprises Everybody</b></p>
+
+<p><b>(C)</b> In 2003, a site named MySpace took the internet by storm. It was trying to <b>mimic</b> the most popular features of Friendster, the first social networking site. It quickly became popular among young users, and the rest was history. Soon, everyone was trying to develop a social networking site. The sites didn't provide content for people to enjoy; they helped people create, communicate, and share what they loved, including music, images, and videos.</p>
+
+<p><b>Key to Success</b></p>
+
+<p>Relying on users to create content is the key to the success of web 2.0 companies. Besides the social networking sites discussed here, other huge success stories include: Wikipedia, Digg.com, and the latest success—Twitter. All of these companies rely on the desire of users to communicate with each other, thereby creating the content that others want to consume.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>Mạng Xã Hội</b></p>   <p>Bạn có thấy những cái tên MySpace, Facebook và Orkut quen thuộc không? Chắc hẳn có, vì chúng là một trong những trang web phổ biến nhất trên internet hiện nay. Những trang web này được gọi là "mạng xã hội" vì chúng giúp mọi người gặp gỡ và thảo luận trực tuyến.</p>   <p><b>(A)</b> Mỗi mạng xã hội này đều có thế mạnh riêng: MySpace đặc biệt phổ biến trong giới thanh thiếu niên, Facebook phổ biến với những người trong độ tuổi đại học, Orkut được yêu thích nhất ở Brazil, và <b>CyWorld</b> là trang web được ưa chuộng tại Hàn Quốc. Điểm chung giữa tất cả các mạng xã hội này là chúng cung cấp một nơi để mọi người tương tác, thay vì chỉ đơn thuần là nơi đọc hoặc nghe nội dung.</p>   <p><b>Web 2.0</b></p>   <p>Các mạng xã hội được coi là một phần của web 2.0. Điều này có nghĩa là gì? Để hiểu điều này, trước tiên chúng ta cần hiểu về phiên bản web ban đầu (thường được gọi là web 1.0). Vào những năm 1990, internet—hay web—chủ yếu là một nơi để đọc bài viết, nghe nhạc và tìm kiếm thông tin.</p>   <p><b>(B)</b> Hầu hết mọi người không đóng góp nội dung cho các trang web. <b>Họ</b> chỉ đơn giản "duyệt web" và tận dụng thông tin hoặc tài nguyên có sẵn. Tất nhiên, cũng có một số người tạo trang web của riêng mình. Tuy nhiên, việc tạo một trang web không hề dễ dàng. Bạn cần biết các kiến thức cơ bản về HTML (ngôn ngữ lập trình mà internet sử dụng để "mã hóa" các trang). Chắc chắn đây không phải là việc mà đa số mọi người muốn làm, vì ngay cả một trang web đơn giản cũng có thể mất hàng giờ để hoàn thiện.</p>   <p>Mọi thứ bắt đầu trở nên dễ dàng hơn khi blog (viết tắt của "web logs") ra đời. Với blog, nhiều người hơn bắt đầu viết các "bài đăng" cũng như bình luận trên blog của người khác.</p>   <p><b>MySpace Gây Bất Ngờ Cho Mọi Người</b></p>   <p><b>(C)</b> Năm 2003, một trang web có tên MySpace đã làm bùng nổ internet. Trang web này cố gắng <b>bắt chước</b> các tính năng phổ biến nhất của Friendster, mạng xã hội đầu tiên. Nó nhanh chóng trở nên phổ biến trong giới trẻ, và phần còn lại đã trở thành lịch sử. Không lâu sau, ai cũng cố gắng phát triển một mạng xã hội riêng. Những trang web này không cung cấp nội dung cho người dùng thưởng thức; thay vào đó, chúng giúp người dùng tạo nội dung, giao tiếp và chia sẻ những gì họ yêu thích, bao gồm âm nhạc, hình ảnh và video.</p>   <p><b>Chìa Khóa Thành Công</b></p>   <p>Việc dựa vào người dùng để tạo nội dung chính là chìa khóa thành công của các công ty web 2.0. Bên cạnh các mạng xã hội được đề cập ở trên, những câu chuyện thành công lớn khác bao gồm: Wikipedia, Digg.com và thành công mới nhất—Twitter. Tất cả các công ty này đều dựa vào mong muốn của người dùng để giao tiếp với nhau, qua đó tạo ra nội dung mà những người khác muốn thưởng thức.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>Social Networks</b></p>
+
+<p>Do the names MySpace, Facebook, and Orkut ring a bell? They probably do because they are some of the most popular sites on the internet today. These sites are all called "social networking" sites because they help people meet and discuss things online.</p>
+
+<p><b>(A)</b> Each of these social networking sites has its own strengths: MySpace is especially popular among teenagers, Facebook is popular among college-age people, Orkut is especially loved in Brazil, and <b>CyWorld</b> is the site to visit in South Korea. The common thread between all of these social networks is that they provide a place for people to interact, rather than a place to go to read or listen to content.</p>
+
+<p><b>Web 2.0</b></p>
+
+<p>Social networks are considered to be web 2.0. What does this mean? To understand this, it's important to understand what the original web did (often called web 1.0). Back in the 1990s, the internet—or web—was primarily a place to read articles, listen to music, and get information.</p>
+
+<p><b>(B)</b> Most people didn't contribute to the sites. <b>They</b> just "browsed" the sites and took advantage of the information or resources provided. Of course, some people did create their own sites. However, creating a site was difficult. You needed to know basic HTML coding (the original language the internet uses to "code" pages). It certainly wasn't something most people wanted to do, as even a basic page could take hours to get just right.</p>
+
+<p>Things began to get easier when blogs (short for "web logs") were introduced. With blogs, many more people began writing "posts," as well as commenting on other people's blogs.</p>
+
+<p><b>MySpace Surprises Everybody</b></p>
+
+<p><b>(C)</b> In 2003, a site named MySpace took the internet by storm. It was trying to <b>mimic</b> the most popular features of Friendster, the first social networking site. It quickly became popular among young users, and the rest was history. Soon, everyone was trying to develop a social networking site. The sites didn't provide content for people to enjoy; they helped people create, communicate, and share what they loved, including music, images, and videos.</p>
+
+<p><b>Key to Success</b></p>
+
+<p>Relying on users to create content is the key to the success of web 2.0 companies. Besides the social networking sites discussed here, other huge success stories include: Wikipedia, Digg.com, and the latest success—Twitter. All of these companies rely on the desire of users to communicate with each other, thereby creating the content that others want to consume.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Which social networking site is NOT mentioned in the passage?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. LinkedIn</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Friendster															</div>
+																				<div class="ps-4 mb-2">
+																	C. MySpace															</div>
+																				<div class="ps-4 mb-2">
+																	D. Facebook															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which social networking site is NOT mentioned in the passage?</strong>  
+(Trang mạng xã hội nào KHÔNG được đề cập trong bài đọc?)</p>
+
+<ul>
+<li>❌ <strong>MySpace</strong> → Sai, vì MySpace được nhắc đến nhiều lần trong bài.</li>  
+
+<li>✅ <strong>LinkedIn</strong> → Đúng, vì LinkedIn không được đề cập trong bài đọc.</li>  
+
+<li>❌ <strong>Facebook</strong> → Sai, vì Facebook cũng được nhắc đến.</li>  
+
+<li>❌ <strong>Friendster</strong> → Sai, vì Friendster được đề cập như một mạng xã hội đầu tiên.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: Where is Orkut especially popular?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. In Japan															</div>
+																				<div class="ps-4 mb-2">
+																	B. In the United States															</div>
+																				<div class="ps-4 mb-2">
+																	C. In South Korea															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. In Brazil</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Where is Orkut especially popular?</strong>  
+(Orkut đặc biệt phổ biến ở đâu?)</p>
+
+<ul>
+<li>❌ <strong>In Japan</strong> (Ở Nhật Bản) → Sai, vì bài đọc không nhắc đến Orkut ở Nhật Bản.</li>  
+
+<li>❌ <strong>In South Korea</strong> (Ở Hàn Quốc) → Sai, vì CyWorld mới là mạng xã hội phổ biến ở Hàn Quốc.</li>  
+
+<li>❌ <strong>In the United States</strong> (Ở Hoa Kỳ) → Sai, vì Orkut không phổ biến ở Mỹ.</li>  
+
+<li>✅ <strong>In Brazil</strong> (Ở Brazil) → Đúng, vì bài đọc nói rằng Orkut rất được yêu thích ở Brazil.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: Why does the writer mention CyWorld in paragraph (A)?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. to give an example of a strong point of a social networking site</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. to emphasize the importance social networking sites															</div>
+																				<div class="ps-4 mb-2">
+																	C. to demonstrate the popularity of social networking sites															</div>
+																				<div class="ps-4 mb-2">
+																	D. to express the common feature of social networking sites															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Why does the writer mention CyWorld in paragraph (A)?</strong>  
+(Tại sao tác giả đề cập đến CyWorld trong đoạn (A)?)</p>
+
+<ul>
+<li>✅ <strong>To give an example of a strong point of a social networking site</strong> (Để đưa ra ví dụ về điểm mạnh của một mạng xã hội) → Đúng, vì bài đọc liệt kê CyWorld như một ví dụ về mạng xã hội phổ biến ở Hàn Quốc.</li>  
+
+<li>❌ <strong>To emphasize the importance of social networking sites</strong> (Để nhấn mạnh tầm quan trọng của mạng xã hội) → Sai, vì bài đọc không tập trung vào tầm quan trọng mà chỉ mô tả các đặc điểm của chúng.</li>  
+
+<li>❌ <strong>To demonstrate the popularity of social networking sites</strong> (Để chứng minh sự phổ biến của mạng xã hội) → Sai, vì câu này không nói về mức độ phổ biến chung mà về điểm mạnh của từng mạng.</li>  
+
+<li>❌ <strong>To express the common feature of social networking sites</strong> (Để thể hiện đặc điểm chung của mạng xã hội) → Sai, vì câu này không nhằm mục đích nêu ra điểm chung của tất cả các mạng xã hội.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: Which phrase best describes what users do on social networking sites?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. They interact with other people.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. They code pages in HTML.															</div>
+																				<div class="ps-4 mb-2">
+																	C. They browse articles and other content.															</div>
+																				<div class="ps-4 mb-2">
+																	D. They comment other people's blog.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which phrase best describes what users do on social networking sites?</strong>  
+(Cụm từ nào mô tả chính xác nhất những gì người dùng làm trên mạng xã hội?)</p>
+
+<ul>
+<li>❌ <strong>They comment on other people's blogs.</strong> (Họ bình luận trên blog của người khác.) → Sai, vì bình luận trên blog phổ biến trên blog cá nhân, không phải mạng xã hội.</li>  
+
+<li>❌ <strong>They code pages in HTML.</strong> (Họ lập trình trang web bằng HTML.) → Sai, vì mạng xã hội không yêu cầu người dùng phải lập trình.</li>  
+
+<li>❌ <strong>They browse articles and other content.</strong> (Họ duyệt bài viết và nội dung khác.) → Sai, vì đây là đặc điểm của web 1.0 chứ không phải web 2.0.</li>  
+
+<li>✅ <strong>They interact with other people.</strong> (Họ tương tác với những người khác.) → Đúng, vì mạng xã hội giúp người dùng kết nối và giao tiếp với nhau.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What was the primary purpose of the original web?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Browsing content</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Interacting with other people															</div>
+																				<div class="ps-4 mb-2">
+																	C. Creating pages in HTML															</div>
+																				<div class="ps-4 mb-2">
+																	D. Writing on blogs															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What was the primary purpose of the original web?</strong>  
+(Mục đích chính của web ban đầu là gì?)</p>
+
+<ul>
+<li>❌ <strong>Interacting with other people</strong> (Tương tác với người khác) → Sai, vì web ban đầu chủ yếu là nơi cung cấp thông tin, không phải để giao tiếp.</li>  
+
+<li>✅ <strong>Browsing content</strong> (Duyệt nội dung) → Đúng, vì web 1.0 chủ yếu là nơi để đọc bài viết, nghe nhạc và tìm kiếm thông tin.</li>  
+
+<li>❌ <strong>Creating pages in HTML</strong> (Tạo trang web bằng HTML) → Sai, vì rất ít người dùng có khả năng tạo trang web HTML.</li>  
+
+<li>❌ <strong>Writing on blogs</strong> (Viết blog) → Sai, vì blog chỉ trở nên phổ biến sau này, không phải trong giai đoạn web 1.0.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: In paragraph (B), what does the word 'they' refer to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the sites															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. most people</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. social networks															</div>
+																				<div class="ps-4 mb-2">
+																	D. resources															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (B), what does the word "they" refer to?</strong>  
+(Trong đoạn (B), từ "they" dùng để chỉ điều gì?)</p>
+
+<ul>
+<li>❌ <strong>resources</strong> (tài nguyên) → Sai, vì từ "they" không đề cập đến tài nguyên trên web.</li>  
+
+<li>❌ <strong>the sites</strong> (các trang web) → Sai, vì từ "they" không nhắc đến trang web cụ thể nào.</li>  
+
+<li>✅ <strong>most people</strong> (đa số mọi người) → Đúng, vì từ "they" dùng để chỉ đa số người dùng internet, những người chỉ duyệt nội dung mà không tạo trang web.</li>  
+
+<li>❌ <strong>social networks</strong> (mạng xã hội) → Sai, vì từ "they" trong đoạn văn không đề cập đến mạng xã hội.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: In paragraph (C), the word 'mimic' is closest in meaning to...?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. eliminate															</div>
+																				<div class="ps-4 mb-2">
+																	B. utilize															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. imitate</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. imagine															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (C), the word "mimic" is closest in meaning to...?</strong>  
+(Trong đoạn (C), từ "mimic" có nghĩa gần nhất với từ nào?)</p>
+
+<ul>
+<li>✅ <strong>imitate</strong> (bắt chước) → Đúng, vì bài đọc nói rằng MySpace đã bắt chước các tính năng của Friendster.</li>  
+
+<li>❌ <strong>imagine</strong> (tưởng tượng) → Sai, vì "mimic" có nghĩa là làm theo, không phải tưởng tượng.</li>  
+
+<li>❌ <strong>eliminate</strong> (loại bỏ) → Sai, vì "mimic" không có nghĩa là loại bỏ điều gì.</li>  
+
+<li>❌ <strong>utilize</strong> (sử dụng) → Sai, vì "mimic" không có nghĩa là tận dụng hay sử dụng.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: What does the writer imply about MySpace?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It was the first social networking site.															</div>
+																				<div class="ps-4 mb-2">
+																	B. People could enjoy the content it provided.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. It was successful.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. It destroyed the internet like a storm.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does the writer imply about MySpace?</strong>  
+(Tác giả ngụ ý điều gì về MySpace?)</p>
+
+<ul>
+<li>❌ <strong>It was the first social networking site.</strong> (Nó là mạng xã hội đầu tiên.) → Sai, vì Friendster mới là mạng xã hội đầu tiên.</li>  
+
+<li>✅ <strong>It was successful.</strong> (Nó đã thành công.) → Đúng, vì bài đọc nói rằng MySpace phát triển mạnh mẽ sau khi ra mắt.</li>  
+
+<li>❌ <strong>People could enjoy the content it provided.</strong> (Người dùng có thể thưởng thức nội dung mà nó cung cấp.) → Sai, vì MySpace không tự tạo nội dung, mà dựa vào người dùng tạo nội dung.</li>  
+
+<li>❌ <strong>It destroyed the internet like a storm.</strong> (Nó phá hủy internet như một cơn bão.) → Sai, vì mặc dù bài đọc nói rằng MySpace "took the internet by storm" (làm bùng nổ internet), nhưng đó là theo nghĩa tích cực, không phải phá hủy.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What is the most important factor for Web 2.0 companies to succeed?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Users' desire to communicate with each other</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Users' intelligence															</div>
+																				<div class="ps-4 mb-2">
+																	C. Users' desire to learn coding															</div>
+																				<div class="ps-4 mb-2">
+																	D. Users' desire to read interesting content written by professionals															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What is the most important factor for Web 2.0 companies to succeed?</strong>  
+(Yếu tố quan trọng nhất để các công ty Web 2.0 thành công là gì?)</p>
+
+<ul>
+<li>✅ <strong>Users' desire to communicate with each other</strong> (Mong muốn của người dùng để giao tiếp với nhau) → Đúng, vì bài đọc nói rằng Web 2.0 dựa vào người dùng để tạo nội dung và giao tiếp.</li>  
+
+<li>❌ <strong>Users' desire to read interesting content written by professionals</strong> (Mong muốn của người dùng đọc nội dung thú vị do chuyên gia viết) → Sai, vì Web 2.0 tập trung vào nội dung do người dùng tạo ra, không phải nội dung từ chuyên gia.</li>  
+
+<li>❌ <strong>Users' desire to learn coding</strong> (Mong muốn của người dùng học lập trình) → Sai, vì Web 2.0 giúp người dùng dễ dàng tạo nội dung mà không cần biết lập trình.</li>  
+
+<li>❌ <strong>Users' intelligence</strong> (Trí thông minh của người dùng) → Sai, vì trí thông minh không phải là yếu tố quan trọng giúp Web 2.0 thành công.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: What is the writer's purpose?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. to persuade people to develop social networking sites															</div>
+																				<div class="ps-4 mb-2">
+																	B. to advertise for web 2.0 companies															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. to give information about social networking sites</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. to criticize social networking sites															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What is the writer's purpose?</strong>  
+(Mục đích của tác giả là gì?)</p>
+
+<ul>
+<li>❌ <strong>To advertise for Web 2.0 companies</strong> (Quảng cáo cho các công ty Web 2.0) → Sai, vì bài đọc không mang tính quảng cáo mà chỉ cung cấp thông tin.</li>  
+
+<li>❌ <strong>To persuade people to develop social networking sites</strong> (Thuyết phục mọi người phát triển mạng xã hội) → Sai, vì bài đọc không kêu gọi phát triển mạng xã hội mà chỉ mô tả sự phát triển của chúng.</li>  
+
+<li>✅ <strong>To give information about social networking sites</strong> (Cung cấp thông tin về mạng xã hội) → Đúng, vì bài đọc chủ yếu nói về sự phát triển và đặc điểm của các mạng xã hội.</li>  
+
+<li>❌ <strong>To criticize social networking sites</strong> (Chỉ trích mạng xã hội) → Sai, vì bài đọc không chỉ trích mà chỉ cung cấp thông tin trung lập.</li>  
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

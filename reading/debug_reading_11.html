@@ -1,0 +1,652 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 11 - Part 3				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79923				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> In the United States in the early 1800s, individual state governments had more <b>effect</b> on the economy than did the federal government. States granted charters to manufacturing, banking, mining, and transportation firms and participated in the construction of various internal improvements such as canals, turnpikes, and railroads. The states encouraged internal improvements in two <b>distinct</b> ways: first, by actually establishing state companies to build such improvements; second, by providing part of the capital for mixed public-private companies setting out to make a profit.</p>
+
+<p><b>(B)</b> In the early nineteenth century, state governments also engaged in a surprisingly large amount of direct regulatory activity, including extensive licensing and inspection programs. Licensing targets reflected both similarities in and differences between the economy of the nineteenth century and that of today: in the nineteenth century, state regulation through licensing fell especially on peddlers, innkeepers, and retail merchants of various kinds. The perishable commodities of trade generally came under state inspection, and such important frontier staples as lumber and gunpowder were also subject to state control. Finally, state governments experimented with direct labor and business regulations designed to help individual laborers and consumers, including <b>setting</b> maximum limits on working hours and restrictions on price-fixing by businesses.</p>
+
+<p><b>(C)</b> Although the states dominated economic activity during this period, the federal government was not inactive. Its goals were the facilitation of western settlement and the development of native industries. Toward these <b>ends</b>, the federal government pursued several courses of action. It established a national bank to stabilize banking activities in the country and, in part, to provide a relatively easy money supply to the frontier, where it was greatly needed for settlement. It permitted access to public western lands on increasingly easy terms, culminating in the Homestead Act of 1862, by which title to land could be claimed on the basis of residence alone. Finally, it set up a system of tariffs that was basically protectionist in effect, although maneuvering for position by various regional interests produced frequent changes in tariff rates throughout the nineteenth century.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Ở Hoa Kỳ vào đầu những năm 1800, chính quyền của từng bang có <b>tác động</b> đến nền kinh tế nhiều hơn so với chính phủ liên bang. Các bang cấp giấy phép hoạt động cho các công ty sản xuất, ngân hàng, khai khoáng và vận tải, đồng thời tham gia vào việc xây dựng nhiều công trình nội bộ như kênh đào, đường cao tốc và đường sắt. Các bang khuyến khích phát triển cơ sở hạ tầng theo hai cách <b>riêng biệt</b>: thứ nhất, bằng cách thành lập các công ty của bang để trực tiếp xây dựng các công trình này; thứ hai, bằng cách cung cấp một phần vốn cho các công ty công-tư hợp tác nhằm thu lợi nhuận.</p>  <p><b>(B)</b> Vào đầu thế kỷ XIX, chính quyền bang cũng tham gia vào một lượng đáng kể các hoạt động quản lý trực tiếp, bao gồm các chương trình cấp phép và kiểm tra quy mô lớn. Đối tượng được cấp phép phản ánh cả những điểm tương đồng và khác biệt giữa nền kinh tế thế kỷ XIX và nền kinh tế ngày nay: vào thế kỷ XIX, quy định của bang thông qua cấp phép chủ yếu áp dụng đối với những người bán hàng rong, chủ quán trọ và các loại thương nhân bán lẻ khác nhau. Các mặt hàng dễ hư hỏng trong thương mại thường thuộc diện kiểm tra của bang, và những mặt hàng thiết yếu ở khu vực biên giới như gỗ và thuốc súng cũng bị kiểm soát chặt chẽ. Cuối cùng, chính quyền bang đã thử nghiệm các quy định trực tiếp về lao động và doanh nghiệp nhằm hỗ trợ người lao động và người tiêu dùng, bao gồm cả <b>quy định</b> mức giới hạn tối đa về giờ làm việc và hạn chế việc doanh nghiệp thao túng giá cả.</p>  <p><b>(C)</b> Mặc dù các bang chiếm ưu thế trong hoạt động kinh tế trong thời kỳ này, nhưng chính phủ liên bang cũng không hoàn toàn đứng ngoài cuộc. Mục tiêu của chính phủ là thúc đẩy việc định cư ở miền Tây và phát triển các ngành công nghiệp nội địa. Để đạt được những <b>mục tiêu</b> này, chính phủ liên bang đã thực hiện một số biện pháp. Chính phủ thành lập một ngân hàng quốc gia nhằm ổn định hoạt động ngân hàng trong cả nước và một phần để cung cấp nguồn tiền dễ tiếp cận hơn cho khu vực biên giới, nơi rất cần vốn để phát triển khu định cư. Chính phủ cũng mở quyền tiếp cận đất công ở miền Tây với các điều kiện ngày càng dễ dàng hơn, đỉnh điểm là Đạo luật Homestead năm 1862, theo đó người dân có thể được cấp quyền sở hữu đất chỉ dựa trên việc cư trú tại đó. Cuối cùng, chính phủ thiết lập một hệ thống thuế quan với tác động chủ yếu mang tính bảo hộ, mặc dù những cuộc cạnh tranh vị thế giữa các khu vực đã dẫn đến sự thay đổi thường xuyên trong mức thuế suất suốt thế kỷ XIX.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>(A)</b> In the United States in the early 1800s, individual state governments had more <b>effect</b> on the economy than did the federal government. States granted charters to manufacturing, banking, mining, and transportation firms and participated in the construction of various internal improvements such as canals, turnpikes, and railroads. The states encouraged internal improvements in two <b>distinct</b> ways: first, by actually establishing state companies to build such improvements; second, by providing part of the capital for mixed public-private companies setting out to make a profit.</p>
+
+<p><b>(B)</b> In the early nineteenth century, state governments also engaged in a surprisingly large amount of direct regulatory activity, including extensive licensing and inspection programs. Licensing targets reflected both similarities in and differences between the economy of the nineteenth century and that of today: in the nineteenth century, state regulation through licensing fell especially on peddlers, innkeepers, and retail merchants of various kinds. The perishable commodities of trade generally came under state inspection, and such important frontier staples as lumber and gunpowder were also subject to state control. Finally, state governments experimented with direct labor and business regulations designed to help individual laborers and consumers, including <b>setting</b> maximum limits on working hours and restrictions on price-fixing by businesses.</p>
+
+<p><b>(C)</b> Although the states dominated economic activity during this period, the federal government was not inactive. Its goals were the facilitation of western settlement and the development of native industries. Toward these <b>ends</b>, the federal government pursued several courses of action. It established a national bank to stabilize banking activities in the country and, in part, to provide a relatively easy money supply to the frontier, where it was greatly needed for settlement. It permitted access to public western lands on increasingly easy terms, culminating in the Homestead Act of 1862, by which title to land could be claimed on the basis of residence alone. Finally, it set up a system of tariffs that was basically protectionist in effect, although maneuvering for position by various regional interests produced frequent changes in tariff rates throughout the nineteenth century.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What does the passage mainly discuss?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Regulatory activity by state governments															</div>
+																				<div class="ps-4 mb-2">
+																	B. States' rights versus federal rights															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. The roles of state and federal governments in the economy of the nineteenth century</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. The participation of state governments in railroad, canal, and turnpike construction															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does the passage mainly discuss?</strong> (Bài đọc chủ yếu thảo luận về điều gì?)</p>  
+                     <ul>     
+                         <li>❌ <strong>States' rights versus federal rights.</strong> (Quyền của bang so với quyền của chính phủ liên bang.)  
+                             → Sai vì bài đọc không tập trung vào việc so sánh quyền lực giữa bang và liên bang mà chủ yếu nói về vai trò của mỗi bên trong nền kinh tế thế kỷ XIX.  
+                         </li>     
+                         <li>❌ <strong>The participation of state governments in railroad, canal, and turnpike construction.</strong> (Sự tham gia của chính quyền bang vào việc xây dựng đường sắt, kênh đào và đường cao tốc.)  
+                             → Sai vì mặc dù có đề cập đến việc chính quyền bang đầu tư vào cơ sở hạ tầng, nhưng đây không phải là nội dung chính của bài đọc.  
+                         </li>     
+                         <li>✅ <strong>The roles of state and federal governments in the economy of the nineteenth century.</strong> (Vai trò của chính quyền bang và liên bang trong nền kinh tế thế kỷ XIX.)  
+                             → Đúng vì bài đọc thảo luận chi tiết về cách các bang và chính phủ liên bang tác động đến nền kinh tế, bao gồm cấp phép, đầu tư hạ tầng, thuế quan và ngân hàng quốc gia.  
+                         </li>     
+                         <li>❌ <strong>Regulatory activity by state governments.</strong> (Các hoạt động quản lý của chính quyền bang.)  
+                             → Sai vì mặc dù đoạn (B) đề cập đến các quy định của bang, nhưng bài đọc không chỉ tập trung vào vấn đề này mà còn nói về chính quyền liên bang.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: The word "effect" in paragraph (A) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. argument															</div>
+																				<div class="ps-4 mb-2">
+																	B. value															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. influence</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. restraint															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "effect" in paragraph (A) is closest in meaning to?</strong> (Từ "effect" trong đoạn (A) có nghĩa gần nhất với từ nào?)</p>  
+                     <ul>     
+                         <li>❌ <strong>value</strong> (Giá trị)  
+                             → Sai vì "effect" trong ngữ cảnh này không mang nghĩa về giá trị hay mức độ quan trọng mà liên quan đến tác động.  
+                         </li>     
+                         <li>❌ <strong>argument</strong> (Lý luận, tranh luận)  
+                             → Sai vì "effect" không liên quan đến tranh luận hay lý luận mà mô tả tác động của chính quyền bang đối với nền kinh tế.  
+                         </li>     
+                         <li>✅ <strong>influence</strong> (Ảnh hưởng, tác động)  
+                             → Đúng vì đoạn (A) viết: "In the United States in the early 1800s, individual state governments had more <b>effect</b> on the economy than did the federal government." ("Ở Hoa Kỳ vào đầu những năm 1800, chính quyền bang có <b>tác động</b> đến nền kinh tế nhiều hơn so với chính phủ liên bang.") Trong ngữ cảnh này, "effect" đồng nghĩa với "influence", có nghĩa là ảnh hưởng hoặc tác động đến điều gì đó.  
+                         </li>     
+                         <li>❌ <strong>restraint</strong> (Sự kiềm chế, hạn chế)  
+                             → Sai vì "effect" trong ngữ cảnh này không có nghĩa là giới hạn hay kiểm soát điều gì.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: All of the following are mentioned in the passage as areas that involved state governments in the nineteenth century EXCEPT?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. banking															</div>
+																				<div class="ps-4 mb-2">
+																	B. manufacturing															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. higher education</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. mining															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>All of the following are mentioned in the passage as areas that involved state governments in the nineteenth century EXCEPT?</strong> (Tất cả các lĩnh vực sau đây đều được đề cập trong bài đọc là có sự tham gia của chính quyền bang vào thế kỷ XIX, NGOẠI TRỪ?)</p>  
+                     <ul>     
+                         <li>❌ <strong>mining</strong> (Khai khoáng)  
+                             → Sai vì đoạn (A) viết: "States granted charters to manufacturing, banking, mining, and transportation firms..." ("Các bang cấp giấy phép hoạt động cho các công ty sản xuất, ngân hàng, khai khoáng và vận tải..."). Điều này cho thấy chính quyền bang có liên quan đến ngành khai khoáng.  
+                         </li>     
+                         <li>❌ <strong>banking</strong> (Ngân hàng)  
+                             → Sai vì đoạn (A) cũng đề cập đến việc chính quyền bang cấp phép hoạt động cho ngân hàng, chứng tỏ sự tham gia của họ vào lĩnh vực này.  
+                         </li>     
+                         <li>❌ <strong>manufacturing</strong> (Sản xuất)  
+                             → Sai vì chính quyền bang đã cấp giấy phép hoạt động cho các công ty sản xuất, theo như bài đọc đã đề cập.  
+                         </li>     
+                         <li>✅ <strong>higher education</strong> (Giáo dục đại học)  
+                             → Đúng vì không có phần nào trong bài đọc đề cập đến sự tham gia của chính quyền bang vào giáo dục đại học trong thế kỷ XIX. Đây là phương án đúng vì nó không được nhắc đến trong bài đọc.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: The word "distinct" in paragraph (A) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. alarming															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. separate</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. innovative															</div>
+																				<div class="ps-4 mb-2">
+																	D. provocative															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "distinct" in paragraph (A) is closest in meaning to?</strong> (Từ "distinct" trong đoạn (A) có nghĩa gần nhất với từ nào?)</p>  
+                     <ul>     
+                         <li>✅ <strong>separate</strong> (Riêng biệt, tách biệt)  
+                             → Đúng vì đoạn (A) viết: "The states encouraged internal improvements in two <b>distinct</b> ways..." ("Các bang khuyến khích phát triển cơ sở hạ tầng theo hai cách <b>riêng biệt</b>..."). Trong ngữ cảnh này, "distinct" mang nghĩa là hai phương pháp khác nhau, đồng nghĩa với "separate".  
+                         </li>     
+                         <li>❌ <strong>innovative</strong> (Sáng tạo, đổi mới)  
+                             → Sai vì "distinct" không có nghĩa là đổi mới hay mang tính sáng tạo.  
+                         </li>     
+                         <li>❌ <strong>alarming</strong> (Đáng báo động)  
+                             → Sai vì "distinct" không có nghĩa là gây lo lắng hay đáng báo động.  
+                         </li>     
+                         <li>❌ <strong>provocative</strong> (Khiêu khích, kích động)  
+                             → Sai vì "distinct" không liên quan đến hành động kích động hay gây tranh cãi.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: It can be inferred from the first paragraph that in the nineteenth century canals and railroads were _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. much more expensive to build than they had been previously															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. sometimes built in part by state companies</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. built with money that came from the federal government															</div>
+																				<div class="ps-4 mb-2">
+																	D. built predominantly in the western part of the country															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>It can be inferred from the first paragraph that in the nineteenth century canals and railroads were _____.</strong> (Có thể suy ra từ đoạn đầu tiên rằng vào thế kỷ XIX, kênh đào và đường sắt đã được ____.)</p>  
+                     <ul>     
+                         <li>❌ <strong>built with money that came from the federal government.</strong> (Xây dựng bằng tiền từ chính phủ liên bang.)  
+                             → Sai vì đoạn (A) nhấn mạnh rằng các bang đóng vai trò chính trong việc cấp vốn cho các dự án cơ sở hạ tầng, chứ không phải chính phủ liên bang.  
+                         </li>     
+                         <li>❌ <strong>much more expensive to build than they had been previously.</strong> (Đắt đỏ hơn nhiều để xây dựng so với trước đây.)  
+                             → Sai vì bài đọc không đề cập đến chi phí so sánh của các dự án kênh đào và đường sắt qua các thời kỳ.  
+                         </li>     
+                         <li>❌ <strong>built predominantly in the western part of the country.</strong> (Chủ yếu được xây dựng ở miền Tây đất nước.)  
+                             → Sai vì bài đọc không giới hạn phạm vi xây dựng kênh đào và đường sắt chỉ ở miền Tây.  
+                         </li>     
+                         <li>✅ <strong>sometimes built in part by state companies.</strong> (Đôi khi được xây dựng một phần bởi các công ty của bang.)  
+                             → Đúng vì đoạn (A) viết: "The states encouraged internal improvements in two <b>distinct</b> ways: first, by actually establishing state companies to build such improvements..." ("Các bang khuyến khích phát triển cơ sở hạ tầng theo hai cách <b>riêng biệt</b>: thứ nhất, bằng cách thành lập các công ty của bang để trực tiếp xây dựng các công trình này..."). Điều này chứng tỏ một số dự án kênh đào và đường sắt đã được xây dựng bởi các công ty của bang.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: The regulatory activities of state governments included all of the following EXCEPT?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Regulating banking activities</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Licensing of retail merchants															</div>
+																				<div class="ps-4 mb-2">
+																	C. Inspecting perishable trade commodities															</div>
+																				<div class="ps-4 mb-2">
+																	D. Imposing limits on price fixing															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The regulatory activities of state governments included all of the following EXCEPT?</strong> (Các hoạt động quản lý của chính quyền bang bao gồm tất cả các điều sau, NGOẠI TRỪ?)</p>  
+                     <ul>     
+                         <li>❌ <strong>Licensing of retail merchants.</strong> (Cấp phép cho các thương nhân bán lẻ.)  
+                             → Sai vì đoạn (B) viết: "state regulation through licensing fell especially on peddlers, innkeepers, and retail merchants of various kinds." ("quy định của bang thông qua cấp phép chủ yếu áp dụng đối với những người bán hàng rong, chủ quán trọ và các loại thương nhân bán lẻ khác nhau.") Điều này cho thấy chính quyền bang đã thực hiện cấp phép cho các thương nhân bán lẻ.  
+                         </li>     
+                         <li>❌ <strong>Inspecting perishable trade commodities.</strong> (Kiểm tra các mặt hàng thương mại dễ hư hỏng.)  
+                             → Sai vì đoạn (B) cũng đề cập: "The perishable commodities of trade generally came under state inspection." ("Các mặt hàng dễ hư hỏng trong thương mại thường thuộc diện kiểm tra của bang.")  
+                         </li>     
+                         <li>❌ <strong>Imposing limits on price fixing.</strong> (Áp đặt giới hạn đối với việc thao túng giá cả.)  
+                             → Sai vì bài đọc nhắc đến việc các bang đã thử nghiệm "restrictions on price-fixing by businesses" ("hạn chế việc doanh nghiệp thao túng giá cả").  
+                         </li>     
+                         <li>✅ <strong>Regulating banking activities.</strong> (Quy định các hoạt động ngân hàng.)  
+                             → Đúng vì đoạn (B) không đề cập đến việc chính quyền bang trực tiếp quản lý ngân hàng. Thay vào đó, đoạn (C) nói về việc chính phủ liên bang thành lập một ngân hàng quốc gia để ổn định hoạt động ngân hàng trong cả nước.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: The word "setting" in paragraph (B) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. avoiding															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. establishing</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. discussing															</div>
+																				<div class="ps-4 mb-2">
+																	D. analyzing															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "setting" in paragraph (B) is closest in meaning to?</strong> (Từ "setting" trong đoạn (B) có nghĩa gần nhất với từ nào?)</p>  
+                     <ul>     
+                         <li>❌ <strong>discussing</strong> (Thảo luận)  
+                             → Sai vì "setting" không có nghĩa là thảo luận về một vấn đề mà là thiết lập hoặc quy định điều gì đó.  
+                         </li>     
+                         <li>❌ <strong>analyzing</strong> (Phân tích)  
+                             → Sai vì trong ngữ cảnh này, "setting" không mang nghĩa phân tích mà có nghĩa là đặt ra hoặc quy định.  
+                         </li>     
+                         <li>✅ <strong>establishing</strong> (Thiết lập, quy định)  
+                             → Đúng vì đoạn (B) viết: "state governments experimented with direct labor and business regulations, including <b>setting</b> maximum limits on working hours." ("chính quyền bang đã thử nghiệm các quy định lao động và kinh doanh trực tiếp, bao gồm cả <b>việc thiết lập</b> giới hạn tối đa về giờ làm việc.") Ở đây, "setting" có nghĩa là quy định hoặc thiết lập, đồng nghĩa với "establishing".  
+                         </li>     
+                         <li>❌ <strong>avoiding</strong> (Tránh né)  
+                             → Sai vì "setting" không mang nghĩa là tránh né hay né tránh điều gì.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: The word "ends" in paragraph (C) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. goals</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. decisions															</div>
+																				<div class="ps-4 mb-2">
+																	C. services															</div>
+																				<div class="ps-4 mb-2">
+																	D. benefits															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "ends" in paragraph (C) is closest in meaning to?</strong> (Từ "ends" trong đoạn (C) có nghĩa gần nhất với từ nào?)</p>  
+                     <ul>     
+                         <li>❌ <strong>benefits</strong> (Lợi ích)  
+                             → Sai vì "ends" trong ngữ cảnh này không có nghĩa là lợi ích đạt được mà là mục tiêu cần hướng tới.  
+                         </li>     
+                         <li>❌ <strong>decisions</strong> (Quyết định)  
+                             → Sai vì "ends" không mang ý nghĩa liên quan đến việc đưa ra quyết định.  
+                         </li>     
+                         <li>❌ <strong>services</strong> (Dịch vụ)  
+                             → Sai vì "ends" không có nghĩa là các dịch vụ cung cấp cho người dân hay doanh nghiệp.  
+                         </li>     
+                         <li>✅ <strong>goals</strong> (Mục tiêu)  
+                             → Đúng vì đoạn (C) viết: "Its goals were the facilitation of western settlement and the development of native industries. Toward these <b>ends</b>, the federal government pursued several courses of action." ("Mục tiêu của chính phủ là thúc đẩy việc định cư ở miền Tây và phát triển các ngành công nghiệp nội địa. Để đạt được những <b>mục tiêu</b> này, chính phủ liên bang đã thực hiện một số biện pháp.") Ở đây, "ends" đồng nghĩa với "goals" (mục tiêu).  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: According to the passage, which of the following is true of the Homestead Act of 1862?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It was a law first passed by state governments in the West.															</div>
+																				<div class="ps-4 mb-2">
+																	B. It increased the money supply in the West.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. It granted settlers easier access to land ownership in the West.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. It established tariffs in a number of regions.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the passage, which of the following is true of the Homestead Act of 1862?</strong> (Theo bài đọc, điều nào sau đây đúng về Đạo luật Homestead năm 1862?)</p>  
+                     <ul>     
+                         <li>✅ <strong>It granted settlers easier access to land ownership in the West.</strong> (Nó cấp cho những người định cư quyền sở hữu đất dễ dàng hơn ở miền Tây.)  
+                             → Đúng vì đoạn (C) viết: "It permitted access to public western lands on increasingly easy terms, culminating in the Homestead Act of 1862, by which title to land could be claimed on the basis of residence alone." ("Chính phủ mở quyền tiếp cận đất công ở miền Tây với các điều kiện ngày càng dễ dàng hơn, đỉnh điểm là Đạo luật Homestead năm 1862, theo đó người dân có thể được cấp quyền sở hữu đất chỉ dựa trên việc cư trú tại đó.")  
+                         </li>     
+                         <li>❌ <strong>It was a law first passed by state governments in the West.</strong> (Nó là một đạo luật đầu tiên được thông qua bởi chính quyền bang ở miền Tây.)  
+                             → Sai vì Đạo luật Homestead được ban hành bởi chính phủ liên bang, không phải chính quyền bang.  
+                         </li>     
+                         <li>❌ <strong>It increased the money supply in the West.</strong> (Nó làm tăng lượng tiền cung ứng ở miền Tây.)  
+                             → Sai vì đoạn (C) không nói rằng Đạo luật Homestead có tác động đến lượng tiền cung ứng, mà chỉ giúp tiếp cận đất đai dễ dàng hơn.  
+                         </li>     
+                         <li>❌ <strong>It established tariffs in a number of regions.</strong> (Nó thiết lập thuế quan ở một số khu vực.)  
+                             → Sai vì đoạn (C) nói về việc thiết lập thuế quan nhưng không liên quan đến Đạo luật Homestead.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: Which of the following activities was the responsibility of the federal government in the nineteenth century?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Determining the conditions under which individuals worked															</div>
+																				<div class="ps-4 mb-2">
+																	B. Control of the manufacture of gunpowder															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Regulation of the supply of money</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Inspection of western land development															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following activities was the responsibility of the federal government in the nineteenth century?</strong> (Hoạt động nào sau đây thuộc trách nhiệm của chính phủ liên bang vào thế kỷ XIX?)</p>  
+                     <ul>     
+                         <li>❌ <strong>Control of the manufacture of gunpowder.</strong> (Kiểm soát việc sản xuất thuốc súng.)  
+                             → Sai vì đoạn (B) viết: "such important frontier staples as lumber and gunpowder were also subject to state control." ("các mặt hàng thiết yếu ở khu vực biên giới như gỗ và thuốc súng cũng bị kiểm soát chặt chẽ bởi chính quyền bang.") Điều này cho thấy chính quyền bang, không phải chính phủ liên bang, chịu trách nhiệm về thuốc súng.  
+                         </li>     
+                         <li>❌ <strong>Determining the conditions under which individuals worked.</strong> (Xác định điều kiện làm việc của cá nhân.)  
+                             → Sai vì đoạn (B) cũng đề cập rằng chính quyền bang có trách nhiệm thiết lập giới hạn giờ làm việc, không phải chính phủ liên bang.  
+                         </li>     
+                         <li>✅ <strong>Regulation of the supply of money.</strong> (Quy định về nguồn cung tiền.)  
+                             → Đúng vì đoạn (C) viết: "It established a national bank to stabilize banking activities in the country and, in part, to provide a relatively easy money supply to the frontier." ("Chính phủ thành lập một ngân hàng quốc gia nhằm ổn định hoạt động ngân hàng trong cả nước và một phần để cung cấp nguồn tiền dễ tiếp cận hơn cho khu vực biên giới.") Điều này cho thấy chính phủ liên bang chịu trách nhiệm điều chỉnh nguồn cung tiền.  
+                         </li>     
+                         <li>❌ <strong>Inspection of western land development.</strong> (Kiểm tra sự phát triển đất đai ở miền Tây.)  
+                             → Sai vì đoạn (C) đề cập đến việc chính phủ cho phép tiếp cận đất công ở miền Tây nhưng không nói rằng họ chịu trách nhiệm kiểm tra sự phát triển đất đai.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

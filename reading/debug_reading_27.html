@@ -1,0 +1,588 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 27 - Part 3				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79940				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>COAST TO COAST</b></p>
+
+<p><b>(A)</b> A 27-year-old graphic designer from Oxfordshire, England, completed a record-breaking journey across Australia yesterday. It was a 5,800-kilometre odyssey, and he travelled the entire distance on a skateboard. David Cornthwaite, who started skateboarding less than two years ago, decided on his epic journey after waking up one morning and realizing he hated his job. "I thought, the only thing keeping me going is the skate to and from work. I was a bit <b>disillusioned</b>, and I was looking for something new," he said. "I saw a Lonely Planet guide to Australia. There was a map on the back. Perth was on one side and Brisbane on the other, and I thought, 'that'll do'."</p>
+
+<p><b>(B)</b> He decided to prepare by skateboarding from John O'Groats to Land's End, the two points furthest apart on the British mainland. That 1,442-kilometre trek, which he finished in June, took just over a month, during which an infected blister swelled to the size of a tennis ball.</p>
+
+<p><b>(C)</b> Crossing Australia on a skateboard brought unique challenges. The wind caused by huge road trains—the articulated lorries that thunder across the Outback—was so powerful that he was sometimes blown off his board. Multiple blisters and aching ankles, toes, and feet kept him in almost constant pain for the last six weeks. "I feel like an old man. I'm not sure that anyone has ever had this many blisters," he said. Temperatures of 40°C and above meant that he used more than a dozen tubes of factor-30 sunscreen.</p>
+
+<p><b>(D)</b> "There have been moments where I thought, 'this is ridiculous, I have to rest,' but I never contemplated giving up." He has worn through 13 pairs of shoes and has an over-developed right calf muscle, which he compares to a giant chicken fillet.</p>
+
+<p><b>(E)</b> Skating an average of 50 kilometres a day and reaching speeds of up to 50 kph on downhill runs, he left Perth, Western Australia, and skated across the fearsome Nullarbor Plain into South Australia. After reaching Adelaide, he made his way to Melbourne and from there to Sydney. A support team of seven people trailed him all the way in a four-wheel-drive vehicle, which carried camping equipment for night stops. The journey shattered the previous record for a long-distance skateboard, set by an American, Jack Smith, who covered 4,800 kilometres across the US in 2003.</p>
+
+<p><b>(F)</b> David Cornthwaite was less than three kilometres from the end of his epic journey when he hit a hole and was thrown off his skateboard, suffering cuts and bruises to his shoulders, knees, hips, and elbows. "I was only going at 40 kph at the time, so although it wasn't pretty, it could have been a lot worse," he said. In the short term, he hopes to spend the next few days surfing on the Gold Coast, south of Brisbane, to build up some much-needed upper body strength. "I've got huge legs but a skinny body—it's a bit ridiculous. I need to give my body a chance to warm down, and surfing sounds ideal. For the time being, I'm hanging up my skateboard." In the longer term, he plans to give motivational speeches and write a book. Another long-distance journey is also on the cards. "I'm certainly not going back to the day job," he said.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>XUYÊN QUA LỤC ĐỊA</b></p>   <p><b>(A)</b> Một nhà thiết kế đồ họa 27 tuổi đến từ Oxfordshire, Anh, đã hoàn thành một chuyến hành trình lập kỷ lục xuyên qua nước Úc vào ngày hôm qua. Đó là một hành trình kéo dài 5.800 km, và anh đã di chuyển toàn bộ quãng đường bằng ván trượt. David Cornthwaite, người mới bắt đầu trượt ván chưa đầy hai năm trước, đã quyết định thực hiện chuyến đi đầy thử thách này sau khi thức dậy một buổi sáng và nhận ra rằng anh ghét công việc của mình. "Tôi nghĩ, điều duy nhất khiến tôi tiếp tục là chuyến trượt ván đến và từ nơi làm việc. Tôi cảm thấy hơi <b>vỡ mộng</b> và đang tìm kiếm điều gì đó mới mẻ," anh nói. "Tôi nhìn thấy một cuốn hướng dẫn Lonely Planet về nước Úc. Ở mặt sau có một tấm bản đồ. Perth ở một bên và Brisbane ở bên kia, và tôi nghĩ, 'được rồi, vậy là đủ'."</p>   <p><b>(B)</b> Anh quyết định chuẩn bị bằng cách trượt ván từ John O'Groats đến Land's End, hai điểm xa nhất trên lãnh thổ nước Anh. Hành trình dài 1.442 km đó, mà anh hoàn thành vào tháng 6, kéo dài hơn một tháng, trong thời gian đó một vết phồng rộp bị nhiễm trùng đã sưng to bằng một quả bóng tennis.</p>   <p><b>(C)</b> Băng qua nước Úc bằng ván trượt mang lại những thử thách độc nhất. Những cơn gió do các xe tải khổng lồ—các xe đầu kéo chạy rầm rập trên vùng hẻo lánh—tạo ra mạnh đến mức đôi khi anh bị thổi bay khỏi ván trượt. Những vết phồng rộp, cùng với tình trạng đau nhức mắt cá chân, ngón chân và bàn chân khiến anh đau đớn gần như liên tục trong sáu tuần cuối cùng. "Tôi cảm thấy như một ông già. Tôi không chắc liệu có ai từng có nhiều vết phồng rộp như thế này chưa," anh nói. Nhiệt độ lên tới 40°C trở lên khiến anh phải sử dụng hơn một tá tuýp kem chống nắng SPF 30.</p>   <p><b>(D)</b> "Có những lúc tôi nghĩ, 'điều này thật điên rồ, mình phải nghỉ ngơi,' nhưng tôi chưa bao giờ nghĩ đến việc bỏ cuộc." Anh đã mòn hết 13 đôi giày và cơ bắp bắp chân phải phát triển quá mức, mà anh ví như một miếng ức gà khổng lồ.</p>   <p><b>(E)</b> Trượt ván trung bình 50 km mỗi ngày và đạt tốc độ lên tới 50 km/h khi xuống dốc, anh rời Perth, Tây Úc, và băng qua vùng đồng bằng Nullarbor đáng sợ để vào Nam Úc. Sau khi đến Adelaide, anh tiếp tục đi đến Melbourne và từ đó đến Sydney. Một nhóm hỗ trợ gồm bảy người theo sát anh trên một chiếc xe địa hình bốn bánh, mang theo thiết bị cắm trại để nghỉ qua đêm. Chuyến hành trình này đã phá vỡ kỷ lục trước đó về quãng đường trượt ván dài nhất, do một người Mỹ, Jack Smith, thiết lập khi anh đi qua 4.800 km trên nước Mỹ vào năm 2003.</p>   <p><b>(F)</b> David Cornthwaite còn chưa đến ba km cuối cùng của hành trình thì vấp phải một cái hố và bị hất khỏi ván trượt, khiến anh bị trầy xước và bầm tím ở vai, đầu gối, hông và khuỷu tay. "Lúc đó tôi chỉ đi với tốc độ 40 km/h thôi, nên dù không đẹp đẽ gì, nhưng mọi thứ có thể đã tệ hơn rất nhiều," anh nói. Trước mắt, anh hy vọng sẽ dành vài ngày tới để lướt sóng ở Gold Coast, phía nam Brisbane, để tăng cường sức mạnh cho phần thân trên vốn đang rất yếu. "Chân tôi thì to mà người tôi thì gầy—trông hơi kỳ quặc. Tôi cần cho cơ thể cơ hội để hồi phục, và lướt sóng có vẻ là lý tưởng nhất. Hiện tại, tôi sẽ tạm gác ván trượt của mình." Về lâu dài, anh có kế hoạch thực hiện các bài diễn thuyết truyền động lực và viết một cuốn sách. Một hành trình dài khác cũng đang nằm trong kế hoạch. "Tôi chắc chắn sẽ không quay lại công việc cũ," anh nói.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>COAST TO COAST</b></p>
+
+<p><b>(A)</b> A 27-year-old graphic designer from Oxfordshire, England, completed a record-breaking journey across Australia yesterday. It was a 5,800-kilometre odyssey, and he travelled the entire distance on a skateboard. David Cornthwaite, who started skateboarding less than two years ago, decided on his epic journey after waking up one morning and realizing he hated his job. "I thought, the only thing keeping me going is the skate to and from work. I was a bit <b>disillusioned</b>, and I was looking for something new," he said. "I saw a Lonely Planet guide to Australia. There was a map on the back. Perth was on one side and Brisbane on the other, and I thought, 'that'll do'."</p>
+
+<p><b>(B)</b> He decided to prepare by skateboarding from John O'Groats to Land's End, the two points furthest apart on the British mainland. That 1,442-kilometre trek, which he finished in June, took just over a month, during which an infected blister swelled to the size of a tennis ball.</p>
+
+<p><b>(C)</b> Crossing Australia on a skateboard brought unique challenges. The wind caused by huge road trains—the articulated lorries that thunder across the Outback—was so powerful that he was sometimes blown off his board. Multiple blisters and aching ankles, toes, and feet kept him in almost constant pain for the last six weeks. "I feel like an old man. I'm not sure that anyone has ever had this many blisters," he said. Temperatures of 40°C and above meant that he used more than a dozen tubes of factor-30 sunscreen.</p>
+
+<p><b>(D)</b> "There have been moments where I thought, 'this is ridiculous, I have to rest,' but I never contemplated giving up." He has worn through 13 pairs of shoes and has an over-developed right calf muscle, which he compares to a giant chicken fillet.</p>
+
+<p><b>(E)</b> Skating an average of 50 kilometres a day and reaching speeds of up to 50 kph on downhill runs, he left Perth, Western Australia, and skated across the fearsome Nullarbor Plain into South Australia. After reaching Adelaide, he made his way to Melbourne and from there to Sydney. A support team of seven people trailed him all the way in a four-wheel-drive vehicle, which carried camping equipment for night stops. The journey shattered the previous record for a long-distance skateboard, set by an American, Jack Smith, who covered 4,800 kilometres across the US in 2003.</p>
+
+<p><b>(F)</b> David Cornthwaite was less than three kilometres from the end of his epic journey when he hit a hole and was thrown off his skateboard, suffering cuts and bruises to his shoulders, knees, hips, and elbows. "I was only going at 40 kph at the time, so although it wasn't pretty, it could have been a lot worse," he said. In the short term, he hopes to spend the next few days surfing on the Gold Coast, south of Brisbane, to build up some much-needed upper body strength. "I've got huge legs but a skinny body—it's a bit ridiculous. I need to give my body a chance to warm down, and surfing sounds ideal. For the time being, I'm hanging up my skateboard." In the longer term, he plans to give motivational speeches and write a book. Another long-distance journey is also on the cards. "I'm certainly not going back to the day job," he said.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Why did David Comthwaite decide to skateboard across Australia?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. He was bored with his life and wanted to try something different.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. He was an experienced skateboarder.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Somebody gave him a guidebook about Australia.															</div>
+																				<div class="ps-4 mb-2">
+																	D. He wanted to break a world record.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Why did David Comthwaite decide to skateboard across Australia?</strong> (Tại sao David Comthwaite quyết định trượt ván qua nước Úc?)</p>
+<ul>
+<li>❌ <strong>He was an experienced skateboarder.</strong> (Anh ấy là một vận động viên trượt ván có kinh nghiệm.) → Sai, vì anh ấy mới bắt đầu trượt ván chưa đầy hai năm trước.</li>
+<li>❌ <strong>He wanted to break a world record.</strong> (Anh ấy muốn phá kỷ lục thế giới.) → Sai, vì mục tiêu ban đầu của anh ấy không phải là lập kỷ lục.</li>
+<li>✅ <strong>He was bored with his life and wanted to try something different.</strong> (Anh ấy chán cuộc sống của mình và muốn thử điều gì đó khác biệt.) → Đúng, vì anh ấy nhận ra rằng mình ghét công việc của mình và đang tìm kiếm một điều mới mẻ.</li>
+<li>❌ <strong>Somebody gave him a guidebook about Australia.</strong> (Ai đó đã đưa cho anh ấy một cuốn hướng dẫn về nước Úc.) → Sai, vì anh ấy tự mình nhìn thấy một cuốn hướng dẫn Lonely Planet về nước Úc và nảy ra ý tưởng.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: The word "disillusioned" in paragraph (A) can be best replaced by _____?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. delighted															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. disappointed</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. embarrassed															</div>
+																				<div class="ps-4 mb-2">
+																	D. fascinated															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "disillusioned" in paragraph (A) can be best replaced by _____?</strong> (Từ "disillusioned" trong đoạn (A) có thể được thay thế tốt nhất bằng từ nào?)</p>
+<ul>
+<li>✅ <strong>disappointed</strong> (thất vọng) → Đúng, vì trong ngữ cảnh, David cảm thấy chán nản và không hài lòng với công việc của mình.</li>
+<li>❌ <strong>embarrassed</strong> (xấu hổ) → Sai, vì không có chi tiết nào cho thấy anh ấy cảm thấy xấu hổ.</li>
+<li>❌ <strong>fascinated</strong> (bị cuốn hút) → Sai, vì anh ấy không cảm thấy thích thú hay bị thu hút.</li>
+<li>❌ <strong>delighted</strong> (vui mừng) → Sai, vì anh ấy đang tìm kiếm một điều mới mẻ do cảm thấy không hài lòng.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: How was David's preparation in Britain?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. successful, but more difficult than he had realised.															</div>
+																				<div class="ps-4 mb-2">
+																	B. unsuccessful because he got injured.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. successful, but painful.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. successful, but more time-consuming than planned.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>How was David's preparation in Britain?</strong> (Việc chuẩn bị của David ở Anh như thế nào?)</p>
+<ul>
+<li>✅ <strong>successful, but painful.</strong> (Thành công, nhưng đau đớn.) → Đúng, vì anh ấy đã hoàn thành chuyến đi 1.442 km nhưng bị vết phồng rộp sưng to bằng quả bóng tennis.</li>
+<li>❌ <strong>successful, but more time-consuming than planned.</strong> (Thành công, nhưng tốn nhiều thời gian hơn dự định.) → Sai, vì không có chi tiết nào đề cập đến việc kéo dài thời gian so với kế hoạch.</li>
+<li>❌ <strong>successful, but more difficult than he had realised.</strong> (Thành công, nhưng khó hơn anh ấy tưởng.) → Sai, vì anh ấy biết trước rằng đây là một thử thách.</li>
+<li>❌ <strong>unsuccessful because he got injured.</strong> (Không thành công vì anh ấy bị thương.) → Sai, vì anh ấy hoàn thành chuyến đi dù bị đau.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What made David fall off his skateboard several times in Australia?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. thunderstorms in the Outback															</div>
+																				<div class="ps-4 mb-2">
+																	B. the trains that race across the Outback															</div>
+																				<div class="ps-4 mb-2">
+																	C. the injuries on his feet															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. the wind created by huge lorries going past</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What made David fall off his skateboard several times in Australia?</strong> (Điều gì khiến David bị ngã khỏi ván trượt nhiều lần ở Úc?)</p>
+<ul>
+<li>❌ <strong>thunderstorms in the Outback</strong> (Những cơn bão trong vùng hẻo lánh.) → Sai, vì không có đề cập đến bão.</li>
+<li>❌ <strong>the trains that race across the Outback</strong> (Những chuyến tàu chạy qua vùng hẻo lánh.) → Sai, vì không có chuyến tàu nào được nhắc đến.</li>
+<li>❌ <strong>the injuries on his feet</strong> (Những vết thương trên chân.) → Sai, vì mặc dù anh ấy bị đau, nhưng điều này không khiến anh ấy bị ngã.</li>
+<li>✅ <strong>the wind created by huge lorries going past</strong> (Gió do những chiếc xe tải khổng lồ chạy qua tạo ra.) → Đúng, vì anh ấy bị thổi bay khỏi ván trượt do gió mạnh từ các xe đầu kéo.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: At times, how did David feel during his journey?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. needed a new pair of shoes.															</div>
+																				<div class="ps-4 mb-2">
+																	B. wanted to give up completely.															</div>
+																				<div class="ps-4 mb-2">
+																	C. wanted to get out of the sun.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. needed to stop for a while.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>At times, how did David feel during his journey?</strong> (Trong một số thời điểm, David cảm thấy như thế nào trong hành trình của mình?)</p>
+<ul>
+<li>✅ <strong>needed to stop for a while.</strong> (Cần dừng lại một lúc.) → Đúng, vì anh ấy có lúc nghĩ rằng "điều này thật điên rồ, mình phải nghỉ ngơi," nhưng chưa bao giờ nghĩ đến việc bỏ cuộc.</li>
+<li>❌ <strong>wanted to give up completely.</strong> (Muốn bỏ cuộc hoàn toàn.) → Sai, vì anh ấy không bao giờ nghĩ đến việc từ bỏ.</li>
+<li>❌ <strong>wanted to get out of the sun.</strong> (Muốn tránh nắng.) → Sai, vì mặc dù thời tiết nóng nhưng đây không phải là lý do khiến anh ấy muốn dừng lại.</li>
+<li>❌ <strong>needed a new pair of shoes.</strong> (Cần một đôi giày mới.) → Sai, vì mặc dù anh ấy mòn hết 13 đôi giày, nhưng đây không phải lý do chính khiến anh ấy cảm thấy cần nghỉ ngơi.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: During the journey, where did David sleep at night?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. in a four-wheel drive vehicle															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. in a tent</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. outdoors on the Nullarbor Plain															</div>
+																				<div class="ps-4 mb-2">
+																	D. in the homes of his supporters															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>During the journey, where did David sleep at night?</strong> (Trong suốt hành trình, David ngủ ở đâu vào ban đêm?)</p>
+<ul>
+<li>❌ <strong>in a four-wheel drive vehicle</strong> (trong một chiếc xe địa hình bốn bánh) → Sai, vì nhóm hỗ trợ của anh ấy sử dụng xe bốn bánh để mang theo thiết bị cắm trại, nhưng anh ấy không ngủ trong xe.</li>
+<li>✅ <strong>in a tent</strong> (trong lều) → Đúng, vì nhóm hỗ trợ mang theo thiết bị cắm trại để David nghỉ qua đêm.</li>
+<li>❌ <strong>outdoors on the Nullarbor Plain</strong> (ngoài trời trên vùng đồng bằng Nullarbor) → Sai, vì không có chi tiết nào cho thấy anh ấy ngủ ngoài trời mà không có lều.</li>
+<li>❌ <strong>in the homes of his supporters</strong> (trong nhà của những người ủng hộ) → Sai, vì anh ấy không đề cập đến việc ở trong nhà người khác.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: Why did David fall off his skateboard near the end of his journey?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. he was exhausted and in pain.															</div>
+																				<div class="ps-4 mb-2">
+																	B. he was going too fast his journey.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. he didn't see a hole in the road.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. he was thinking about finishing his journey.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Why did David fall off his skateboard near the end of his journey?</strong> (Tại sao David bị ngã khỏi ván trượt gần cuối hành trình?)</p>
+<ul>
+<li>❌ <strong>he was going too fast his journey.</strong> (Anh ấy đi quá nhanh.) → Sai, vì mặc dù tốc độ của anh ấy là 40 km/h, nhưng lý do ngã không phải do đi quá nhanh.</li>
+<li>❌ <strong>he was exhausted and in pain.</strong> (Anh ấy kiệt sức và đau đớn.) → Sai, vì dù anh ấy rất đau đớn, nhưng đây không phải nguyên nhân trực tiếp khiến anh ấy bị ngã.</li>
+<li>✅ <strong>he didn’t see a hole in the road.</strong> (Anh ấy không nhìn thấy một cái hố trên đường.) → Đúng, vì anh ấy vấp phải một cái hố và bị hất khỏi ván trượt.</li>
+<li>❌ <strong>he was thinking about finishing his journey.</strong> (Anh ấy đang nghĩ về việc hoàn thành hành trình.) → Sai, vì không có chi tiết nào cho thấy anh ấy mất tập trung vì nghĩ đến đích đến.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: Why does David think surfing is a good thing to do after his journey?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He can stay close to Brisbane.															</div>
+																				<div class="ps-4 mb-2">
+																	B. He needs to keep his legs strong.															</div>
+																				<div class="ps-4 mb-2">
+																	C. He's always wanted to surf on the Gold Coast.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. He wants to strengthen the top half of his body.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Why does David think surfing is a good thing to do after his journey?</strong> (Tại sao David nghĩ rằng lướt sóng là một điều tốt để làm sau hành trình của mình?)</p>
+<ul>
+<li>❌ <strong>He can stay close to Brisbane.</strong> (Anh ấy có thể ở gần Brisbane.) → Sai, vì mục đích chính của anh ấy không phải là ở gần Brisbane.</li>
+<li>❌ <strong>He’s always wanted to surf on the Gold Coast.</strong> (Anh ấy luôn muốn lướt sóng ở Gold Coast.) → Sai, vì không có thông tin nào cho thấy anh ấy có ước mơ lướt sóng ở đó.</li>
+<li>✅ <strong>He wants to strengthen the top half of his body.</strong> (Anh ấy muốn tăng cường sức mạnh cho phần trên cơ thể.) → Đúng, vì anh ấy nói rằng chân anh ấy rất to nhưng phần thân trên rất yếu, và lướt sóng sẽ giúp cải thiện điều đó.</li>
+<li>❌ <strong>He needs to keep his legs strong.</strong> (Anh ấy cần giữ cho đôi chân mạnh mẽ.) → Sai, vì anh ấy tập trung vào việc tăng cường phần trên cơ thể, không phải đôi chân.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What does David hope to do eventually?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. put his skateboard away															</div>
+																				<div class="ps-4 mb-2">
+																	B. return to work as a designer															</div>
+																				<div class="ps-4 mb-2">
+																	C. persuade other people to make long-distance journeys															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. encourage other people to feel more positive about themselves</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does David hope to do eventually?</strong> (Cuối cùng David hy vọng sẽ làm gì?)</p>
+<ul>
+<li>✅ <strong>encourage other people to feel more positive about themselves</strong> (Khuyến khích người khác có thái độ tích cực hơn về bản thân họ.) → Đúng, vì anh ấy có kế hoạch thực hiện các bài diễn thuyết truyền động lực để truyền cảm hứng cho người khác.</li>
+<li>❌ <strong>put his skateboard away</strong> (Cất ván trượt của mình đi.) → Sai, vì mặc dù anh ấy nói rằng sẽ "tạm gác ván trượt", nhưng anh ấy vẫn có kế hoạch thực hiện một chuyến hành trình dài khác.</li>
+<li>❌ <strong>return to work as a designer</strong> (Trở lại làm công việc thiết kế.) → Sai, vì anh ấy khẳng định rằng chắc chắn sẽ không quay lại công việc cũ.</li>
+<li>❌ <strong>persuade other people to make long-distance journeys</strong> (Thuyết phục người khác thực hiện những chuyến hành trình dài.) → Sai, vì anh ấy muốn truyền động lực hơn là thuyết phục người khác làm theo.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: According to the text, where does David plan to surf in the next few days?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Melbourne															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Gold Coast</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Adelaide															</div>
+																				<div class="ps-4 mb-2">
+																	D. Perth															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the text, where does David plan to surf in the next few days?</strong> (Theo bài đọc, David dự định lướt sóng ở đâu trong vài ngày tới?)</p>
+<ul>
+<li>❌ <strong>Perth</strong> → Sai, vì Perth là nơi anh ấy bắt đầu hành trình chứ không phải nơi anh ấy dự định lướt sóng.</li>
+<li>❌ <strong>Adelaide</strong> → Sai, vì Adelaide là một trong những điểm dừng chân của anh ấy, không phải nơi anh ấy dự định lướt sóng.</li>
+<li>❌ <strong>Melbourne</strong> → Sai, vì Melbourne là một trong những thành phố anh ấy đi qua, nhưng không phải điểm đến cho việc lướt sóng.</li>
+<li>✅ <strong>Gold Coast</strong> → Đúng, vì anh ấy nói rằng sẽ dành vài ngày tới để lướt sóng tại Gold Coast, phía nam Brisbane.</li>
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

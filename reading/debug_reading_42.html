@@ -1,0 +1,580 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 42 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79956				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> In 1969, a key milestone in space travel was reached when Neil Armstrong set foot on the moon. In 2001, another landmark event took place when the first civilian traveled into space as a paying tourist.</p>
+
+<p><b>(B)</b> As a teenager, Dennis Tito dreamed of visiting outer space. As a young man, he aspired to become an astronaut and earned a bachelor's and a master's degree in aerospace engineering. However, Tito did not have all the qualities necessary to become a professional astronaut, so instead, he went to work as a space engineer in one of NASA's laboratories for five years. Later, Tito set up his own financial investment company and, eventually, he became a multi-millionaire. Later in life, the ex-rocket engineer, still passionate about space travel, began looking into ways to make a trip into space.</p>
+
+<p><b>(C)</b> In the early 1990s, the Soviet Space Agency was offering tickets for a visit to the Mir space station to anyone who could afford it. Tito jumped at the chance for this once-in-a-lifetime experience. Due to political and economic changes in the former Soviet Union, however, Tito's trip was postponed, and later, Mir was decommissioned. In 2001, Tito's dream finally came true when he paid a rumored $20 million and took off aboard a Soyuz rocket to deliver supplies to the International Space Station, a joint venture between the space agencies of Japan, Canada, Europe, Russia, and the U.S.</p>
+
+<p><b>(D)</b> In preparation for the trip, Tito trained at the Gagarin Cosmonauts Training Center at Star City in Russia. There, he underwent eight months of physical fitness training, weightless simulations, and a variety of other exercises to prepare him for space travel. Although the Russians believed that Tito was adequately prepared for the trip, NASA thought otherwise. Dennis Tito had to sign an agreement with international space officials taking financial responsibility for any equipment he damaged or broke on his trip. He was also barred from entering any part of the space station owned by the U.S. unless escorted.</p>
+
+<p><b>(E)</b> Although Tito made history and paved the way for the future of space tourism, factors such as cost and the amount of training required stand in the way of space vacations becoming an option for most people in the near future. In spite of this, Japanese and North American market data show that there is definite public interest in space travel. In a 1993 survey of 3,030 Japanese, 80 percent of those under the age of forty said they would like to visit space at least once. Seventy percent of this group would pay up to three months' salary for the trip. In 1995, 1,020 households in North America were surveyed, and of those, 60 percent who were interested were under forty years of age. Just over 45 percent said they would pay three months' salary, around 18 percent said they would pay six months' salary, and nearly 11 percent would pay a year's salary. Two-thirds of those who want to visit space would like to do so several times. Since the nature of this type of travel makes it hazardous to humans, it would have to be restricted to those who are physically fit and able to take responsibility for the risks involved.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Năm 1969, một cột mốc quan trọng trong hành trình chinh phục không gian đã được thiết lập khi Neil Armstrong đặt chân lên mặt trăng. Đến năm 2001, một sự kiện mang tính đột phá khác diễn ra khi lần đầu tiên một thường dân du hành vào không gian với tư cách là khách du lịch trả phí.</p>   <p><b>(B)</b> Khi còn là một thiếu niên, Dennis Tito đã mơ ước được đặt chân vào không gian. Khi trưởng thành, ông khao khát trở thành phi hành gia và đã lấy bằng cử nhân và thạc sĩ về kỹ thuật hàng không vũ trụ. Tuy nhiên, Tito không có đầy đủ các tố chất cần thiết để trở thành một phi hành gia chuyên nghiệp, vì vậy ông quyết định làm kỹ sư không gian tại một trong các phòng thí nghiệm của NASA trong vòng năm năm. Sau đó, Tito thành lập công ty đầu tư tài chính của riêng mình và cuối cùng trở thành một triệu phú. Dù đã chuyển hướng sự nghiệp, nhưng niềm đam mê du hành vũ trụ vẫn cháy bỏng trong ông, thúc đẩy ông tìm cách thực hiện một chuyến bay vào không gian.</p>   <p><b>(C)</b> Đầu những năm 1990, Cơ quan Vũ trụ Liên Xô bắt đầu chào bán vé tham quan trạm vũ trụ Mir cho bất kỳ ai có đủ khả năng tài chính. Tito không bỏ lỡ cơ hội có một không hai này. Tuy nhiên, do những thay đổi về chính trị và kinh tế tại Liên Xô cũ, chuyến đi của ông bị hoãn lại, và sau đó, trạm Mir bị ngừng hoạt động. Năm 2001, giấc mơ của Tito cuối cùng đã thành hiện thực khi ông chi ra số tiền được đồn đoán là 20 triệu USD để lên tàu vũ trụ Soyuz, tham gia nhiệm vụ vận chuyển hàng tiếp tế đến Trạm Vũ trụ Quốc tế (ISS), một dự án hợp tác giữa các cơ quan vũ trụ của Nhật Bản, Canada, Châu Âu, Nga và Hoa Kỳ.</p>   <p><b>(D)</b> Để chuẩn bị cho chuyến đi, Tito đã tham gia huấn luyện tại Trung tâm Huấn luyện Phi hành gia Gagarin ở Star City, Nga. Tại đây, ông trải qua tám tháng rèn luyện thể lực, mô phỏng môi trường không trọng lực và thực hiện nhiều bài tập khác để chuẩn bị cho chuyến du hành vũ trụ. Dù phía Nga tin rằng Tito đã sẵn sàng cho chuyến bay, nhưng NASA lại không nghĩ vậy. Dennis Tito buộc phải ký một thỏa thuận với các quan chức không gian quốc tế, cam kết chịu trách nhiệm tài chính nếu làm hỏng hoặc phá hủy bất kỳ thiết bị nào trong chuyến đi. Ngoài ra, ông cũng bị cấm đi vào bất kỳ khu vực nào thuộc quyền sở hữu của Hoa Kỳ trên trạm vũ trụ mà không có người hộ tống.</p>   <p><b>(E)</b> Dù Tito đã đi vào lịch sử và mở đường cho ngành du lịch vũ trụ trong tương lai, nhưng các yếu tố như chi phí và thời gian đào tạo cần thiết vẫn là rào cản khiến việc du hành không gian chưa thể trở thành lựa chọn phổ biến đối với đa số mọi người trong tương lai gần. Dù vậy, dữ liệu thị trường từ Nhật Bản và Bắc Mỹ cho thấy công chúng có sự quan tâm rõ rệt đến du lịch vũ trụ. Trong một cuộc khảo sát năm 1993 với 3.030 người Nhật Bản, 80% số người dưới 40 tuổi cho biết họ muốn ít nhất một lần được đặt chân vào không gian. Trong số đó, 70% sẵn sàng chi trả số tiền tương đương ba tháng lương cho chuyến đi. Năm 1995, một cuộc khảo sát với 1.020 hộ gia đình tại Bắc Mỹ cho thấy 60% những người quan tâm đến du hành vũ trụ đều dưới 40 tuổi. Hơn 45% sẵn sàng trả ba tháng lương, khoảng 18% chấp nhận chi trả sáu tháng lương, và gần 11% sẵn sàng bỏ ra cả một năm lương. Hai phần ba số người muốn du hành vũ trụ cho biết họ mong muốn được thực hiện điều đó nhiều lần. Vì bản chất nguy hiểm của loại hình du lịch này, nó sẽ phải giới hạn đối với những người có thể trạng tốt và đủ khả năng chịu trách nhiệm cho các rủi ro có thể xảy ra.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>(A)</b> In 1969, a key milestone in space travel was reached when Neil Armstrong set foot on the moon. In 2001, another landmark event took place when the first civilian traveled into space as a paying tourist.</p>
+
+<p><b>(B)</b> As a teenager, Dennis Tito dreamed of visiting outer space. As a young man, he aspired to become an astronaut and earned a bachelor's and a master's degree in aerospace engineering. However, Tito did not have all the qualities necessary to become a professional astronaut, so instead, he went to work as a space engineer in one of NASA's laboratories for five years. Later, Tito set up his own financial investment company and, eventually, he became a multi-millionaire. Later in life, the ex-rocket engineer, still passionate about space travel, began looking into ways to make a trip into space.</p>
+
+<p><b>(C)</b> In the early 1990s, the Soviet Space Agency was offering tickets for a visit to the Mir space station to anyone who could afford it. Tito jumped at the chance for this once-in-a-lifetime experience. Due to political and economic changes in the former Soviet Union, however, Tito's trip was postponed, and later, Mir was decommissioned. In 2001, Tito's dream finally came true when he paid a rumored $20 million and took off aboard a Soyuz rocket to deliver supplies to the International Space Station, a joint venture between the space agencies of Japan, Canada, Europe, Russia, and the U.S.</p>
+
+<p><b>(D)</b> In preparation for the trip, Tito trained at the Gagarin Cosmonauts Training Center at Star City in Russia. There, he underwent eight months of physical fitness training, weightless simulations, and a variety of other exercises to prepare him for space travel. Although the Russians believed that Tito was adequately prepared for the trip, NASA thought otherwise. Dennis Tito had to sign an agreement with international space officials taking financial responsibility for any equipment he damaged or broke on his trip. He was also barred from entering any part of the space station owned by the U.S. unless escorted.</p>
+
+<p><b>(E)</b> Although Tito made history and paved the way for the future of space tourism, factors such as cost and the amount of training required stand in the way of space vacations becoming an option for most people in the near future. In spite of this, Japanese and North American market data show that there is definite public interest in space travel. In a 1993 survey of 3,030 Japanese, 80 percent of those under the age of forty said they would like to visit space at least once. Seventy percent of this group would pay up to three months' salary for the trip. In 1995, 1,020 households in North America were surveyed, and of those, 60 percent who were interested were under forty years of age. Just over 45 percent said they would pay three months' salary, around 18 percent said they would pay six months' salary, and nearly 11 percent would pay a year's salary. Two-thirds of those who want to visit space would like to do so several times. Since the nature of this type of travel makes it hazardous to humans, it would have to be restricted to those who are physically fit and able to take responsibility for the risks involved.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: According to paragraph (A), what was the most significant event in 1969?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Neil Armstrong set foot on the moon.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Scientists planned to travel to space.															</div>
+																				<div class="ps-4 mb-2">
+																	C. The dream of space travel became true.															</div>
+																				<div class="ps-4 mb-2">
+																	D. People started to concern space travel.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to paragraph (A), what was the most significant event in 1969?</strong> (Theo đoạn (A), sự kiện quan trọng nhất năm 1969 là gì?)</p>
+<ul>
+<li>❌ <strong>Scientists planned to travel to space. (Các nhà khoa học lên kế hoạch du hành vũ trụ.)</strong> → Sai. Không có thông tin nào trong đoạn (A) đề cập đến việc các nhà khoa học lập kế hoạch du hành vũ trụ vào năm 1969.</li>
+<li>❌ <strong>People started to concern space travel. (Mọi người bắt đầu quan tâm đến du hành vũ trụ.)</strong> → Sai. Du hành vũ trụ đã được quan tâm trước đó, nhưng sự kiện quan trọng nhất được đề cập không phải là sự quan tâm của mọi người.</li>
+<li>❌ <strong>The dream of space travel became true. (Giấc mơ du hành vũ trụ đã trở thành hiện thực.)</strong> → Sai. Câu này quá chung chung và không nêu chính xác sự kiện được đề cập.</li>
+<li>✅ <strong>Neil Armstrong set foot on the moon. (Neil Armstrong đặt chân lên mặt trăng.)</strong> → Đúng. Đoạn (A) nêu rõ rằng vào năm 1969, Neil Armstrong đã đặt chân lên mặt trăng, đánh dấu một cột mốc quan trọng trong lịch sử du hành vũ trụ.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: In paragraph (B), when did Dennis Tito first dream of becoming an astronaut?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. When he was at university.															</div>
+																				<div class="ps-4 mb-2">
+																	B. When he was at kindergarten.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. When he was a teenager.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. When he was at primary school.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (B), when did Dennis Tito first dream of becoming an astronaut?</strong> (Theo đoạn (B), Dennis Tito lần đầu tiên mơ ước trở thành phi hành gia khi nào?)</p>
+<ul>
+<li>❌ <strong>When he was at kindergarten. (Khi ông ấy học mẫu giáo.)</strong> → Sai. Không có thông tin nào trong bài nói rằng ông mơ ước trở thành phi hành gia khi còn học mẫu giáo.</li>
+<li>❌ <strong>When he was at primary school. (Khi ông ấy học tiểu học.)</strong> → Sai. Đoạn (B) chỉ nói rằng Tito đã có ước mơ này khi còn là thiếu niên, không phải lúc học tiểu học.</li>
+<li>✅ <strong>When he was a teenager. (Khi ông ấy là một thiếu niên.)</strong> → Đúng. Đoạn (B) nêu rõ rằng Tito đã mơ ước du hành vũ trụ từ khi còn là một thiếu niên.</li>
+<li>❌ <strong>When he was at university. (Khi ông ấy học đại học.)</strong> → Sai. Ông ấy có học ngành kỹ thuật hàng không vũ trụ ở đại học, nhưng giấc mơ trở thành phi hành gia đã xuất hiện trước đó.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: Dennis Tito made the first trip as a space tourist _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. in the late '60s.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. this century.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. in the late '50s.															</div>
+																				<div class="ps-4 mb-2">
+																	D. in the early '90s.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Dennis Tito made the first trip as a space tourist _____</strong> (Dennis Tito thực hiện chuyến du hành vũ trụ đầu tiên với tư cách là khách du lịch vũ trụ _____.)</p>
+<ul>
+<li>❌ <strong>in the late '60s. (vào cuối những năm 60.)</strong> → Sai. Chuyến bay của ông diễn ra vào năm 2001, không phải cuối những năm 60.</li>
+<li>❌ <strong>in the early '90s. (vào đầu những năm 90.)</strong> → Sai. Vào những năm 90, ông đã lên kế hoạch, nhưng chuyến bay thực sự không diễn ra vào thời điểm đó.</li>
+<li>✅ <strong>this century. (vào thế kỷ này.)</strong> → Đúng. Dennis Tito đã bay vào không gian vào năm 2001, thuộc thế kỷ 21.</li>
+<li>❌ <strong>in the late '50s. (vào cuối những năm 50.)</strong> → Sai. Cuối những năm 50, chương trình không gian vẫn chưa có khái niệm du lịch vũ trụ.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: Which of the following statements about Dennis Tito is NOT true?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. He is now an astronaut for NASA.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. He used to dream of travelling to outer space.															</div>
+																				<div class="ps-4 mb-2">
+																	C. He eventually became a very wealthy man.															</div>
+																				<div class="ps-4 mb-2">
+																	D. He has an advanced degree in aerospace engineering.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following statements about Dennis Tito is NOT true?</strong> (Câu nào sau đây về Dennis Tito là không đúng?)</p>
+<ul>
+<li>✅ <strong>He is now an astronaut for NASA. (Ông ấy hiện là một phi hành gia của NASA.)</strong> → Sai. Dennis Tito chưa bao giờ là phi hành gia chuyên nghiệp của NASA.</li>
+<li>❌ <strong>He has an advanced degree in aerospace engineering. (Ông ấy có bằng cấp cao về kỹ thuật hàng không vũ trụ.)</strong> → Đúng. Ông có bằng cử nhân và thạc sĩ về kỹ thuật hàng không vũ trụ.</li>
+<li>❌ <strong>He eventually became a very wealthy man. (Cuối cùng ông ấy trở thành một người rất giàu có.)</strong> → Đúng. Ông đã thành lập công ty đầu tư tài chính và trở thành triệu phú.</li>
+<li>❌ <strong>He used to dream of travelling to outer space. (Ông ấy từng mơ ước được du hành vào không gian.)</strong> → Đúng. Ông đã có giấc mơ này từ khi còn là thiếu niên.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: In paragraph (C), Tito's first trip into space was with _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the Americans/SOYUZ															</div>
+																				<div class="ps-4 mb-2">
+																	B. the Japanese agency															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. members of the former Soviet Union/ the Mir space station</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. the Russian/ the International Space Station.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (C), Tito's first trip into space was with _____.</strong> (Theo đoạn (C), chuyến du hành vũ trụ đầu tiên của Tito là với _____.)</p>
+<ul>
+<li>❌ <strong>the Russian/ the International Space Station. (Người Nga/Trạm Vũ trụ Quốc tế.)</strong> → Sai. Tito bay trên tàu Soyuz của Nga nhưng chuyến bay đầu tiên của ông được lên kế hoạch với trạm vũ trụ Mir, không phải ISS.</li>
+<li>❌ <strong>the Americans/SOYUZ. (Người Mỹ/SOYUZ.)</strong> → Sai. Ông không bay với NASA mà với cơ quan vũ trụ Nga.</li>
+<li>✅ <strong>members of the former Soviet Union/ the Mir space station. (Các thành viên của Liên Xô cũ/Trạm vũ trụ Mir.)</strong> → Đúng. Ban đầu ông dự định bay tới trạm vũ trụ Mir trước khi nó ngừng hoạt động.</li>
+<li>❌ <strong>the Japanese agency. (Cơ quan vũ trụ Nhật Bản.)</strong> → Sai. Ông không bay với cơ quan vũ trụ Nhật Bản.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Which of the following describes NASA's feelings about Tito's trip into space?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. extremely proud															</div>
+																				<div class="ps-4 mb-2">
+																	B. disappointed															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. very concerned</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. somewhat eager															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following describes NASA's feelings about Tito's trip into space?</strong> (Cảm nhận của NASA về chuyến du hành vũ trụ của Tito là gì?)</p>
+<ul>
+<li>❌ <strong>extremely proud. (Rất tự hào.)</strong> → Sai. NASA không tự hào về chuyến đi của Tito, thậm chí còn lo ngại về nó.</li>
+<li>❌ <strong>somewhat eager. (Hơi háo hức.)</strong> → Sai. NASA không mong đợi chuyến đi này, mà thực tế là họ rất lo ngại.</li>
+<li>✅ <strong>very concerned. (Rất lo ngại.)</strong> → Đúng. Đoạn (D) cho thấy NASA nghi ngờ về khả năng của Tito và yêu cầu ông ký thỏa thuận chịu trách nhiệm tài chính.</li>
+<li>❌ <strong>disappointed. (Thất vọng.)</strong> → Sai. NASA không thất vọng mà lo ngại về tính an toàn của chuyến bay.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: According to the survey in paragraph (E), which of the following is true?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Only people under the age of forty are interested in space travel.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Seventy percent of Japanese would pay up to three months' salary for the trip.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Eighty percent of all those interviewed would be interested in travelling to space.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Seventy percent of Japanese would pay three quarters of their annual salary to visit space.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the survey in paragraph (E), which of the following is true?</strong> (Theo khảo sát trong đoạn (E), điều nào sau đây là đúng?)</p>
+<ul>
+<li>❌ <strong>Eighty percent of all those interviewed would be interested in travelling to space. (80% tổng số người được phỏng vấn quan tâm đến du hành vũ trụ.)</strong> → Sai. Số liệu 80% chỉ áp dụng cho những người Nhật dưới 40 tuổi.</li>
+<li>✅ <strong>Seventy percent of Japanese would pay up to three months' salary for the trip. (70% người Nhật sẽ trả tối đa ba tháng lương cho chuyến đi.)</strong> → Đúng. Đoạn (E) nêu rõ điều này.</li>
+<li>❌ <strong>Only people under the age of forty are interested in space travel. (Chỉ những người dưới 40 tuổi quan tâm đến du hành vũ trụ.)</strong> → Sai. Mặc dù phần lớn là những người trẻ tuổi, nhưng không có nghĩa là những người lớn tuổi không quan tâm.</li>
+<li>❌ <strong>Seventy percent of Japanese would pay three quarters of their annual salary to visit space. (70% người Nhật sẽ trả ba phần tư lương năm để du hành vũ trụ.)</strong> → Sai. Họ chỉ sẵn sàng trả ba tháng lương, không phải ba phần tư lương năm.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: According to paragraph (E), what is true about the North American survey on space travel?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Seventy - five percent of those surveyed would be interested in travelling to space.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Most of the people interested in space travel were under the age of forty.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Nearly sixty percent of those surveyed were interested in a vacation in space travel.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Most people would pay a year's salary to visit space as a tourist.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to paragraph (E), what is true about the North American survey on space travel?</strong> (Theo đoạn (E), điều nào đúng về cuộc khảo sát ở Bắc Mỹ về du hành vũ trụ?)</p>
+<ul>
+<li>❌ <strong>Seventy - five percent of those surveyed would be interested in travelling to space. (75% số người được khảo sát quan tâm đến du hành vũ trụ.)</strong> → Sai. Không có dữ liệu nào đề cập đến con số 75% trong đoạn (E).</li>
+<li>❌ <strong>Most people would pay a year's salary to visit space as a tourist. (Phần lớn mọi người sẽ trả một năm lương để đi du hành vũ trụ.)</strong> → Sai. Chỉ gần 11% số người được hỏi sẵn sàng trả một năm lương.</li>
+<li>✅ <strong>Most of the people interested in space travel were under the age of forty. (Phần lớn những người quan tâm đến du hành vũ trụ đều dưới 40 tuổi.)</strong> → Đúng. Đoạn (E) cho thấy rằng hầu hết những người quan tâm đến du hành vũ trụ đều dưới 40 tuổi.</li>
+<li>❌ <strong>Nearly sixty percent of those surveyed were interested in a vacation in space travel. (Gần 60% số người được khảo sát quan tâm đến kỳ nghỉ trên không gian.)</strong> → Sai. 60% chỉ áp dụng cho một nhóm người dưới 40 tuổi.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: According to paragraph (D), who doubted that Tito was sufficiently trained for space travel?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. NASA</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. European Training Center															</div>
+																				<div class="ps-4 mb-2">
+																	C. Japanese Training Center															</div>
+																				<div class="ps-4 mb-2">
+																	D. Russian Training Center															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to paragraph (D), who doubted that Tito was sufficiently trained for space travel?</strong> (Theo đoạn (D), ai nghi ngờ rằng Tito chưa được huấn luyện đủ để du hành vũ trụ?)</p>
+<ul>
+<li>❌ <strong>Russian Training Center. (Trung tâm Huấn luyện Nga.)</strong> → Sai. Nga tin rằng Tito đã sẵn sàng cho chuyến bay.</li>
+<li>❌ <strong>Japanese Training Center. (Trung tâm Huấn luyện Nhật Bản.)</strong> → Sai. Nhật Bản không liên quan đến việc đào tạo Tito.</li>
+<li>❌ <strong>European Training Center. (Trung tâm Huấn luyện Châu Âu.)</strong> → Sai. Không có thông tin nào trong đoạn (D) đề cập đến trung tâm huấn luyện châu Âu.</li>
+<li>✅ <strong>NASA. (Cơ quan Hàng không Vũ trụ Hoa Kỳ.)</strong> → Đúng. NASA lo ngại về khả năng của Tito và yêu cầu ông ký cam kết chịu trách nhiệm tài chính.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: What is the biggest obstacle to becoming a space tourist in the near future?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. health</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. age															</div>
+																				<div class="ps-4 mb-2">
+																	C. wealth															</div>
+																				<div class="ps-4 mb-2">
+																	D. youth															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What is the biggest obstacle to becoming a space tourist in the near future?</strong> (Trở ngại lớn nhất để trở thành khách du lịch vũ trụ trong tương lai gần là gì?)</p>
+<ul>
+<li>✅ <strong>health. (Sức khỏe.)</strong> → Đúng. Du hành vũ trụ là hoạt động nguy hiểm, nên chỉ những người có thể trạng tốt mới có thể tham gia.</li>
+<li>❌ <strong>wealth. (Sự giàu có.)</strong> → Sai. Mặc dù chi phí là một yếu tố quan trọng, nhưng sức khỏe là điều kiện tiên quyết.</li>
+<li>❌ <strong>youth. (Tuổi trẻ.)</strong> → Sai. Không có thông tin nào chỉ ra rằng chỉ những người trẻ mới có thể du hành vũ trụ.</li>
+<li>❌ <strong>age. (Tuổi tác.)</strong> → Sai. Dù phần lớn người quan tâm là dưới 40 tuổi, nhưng trở ngại chính là sức khỏe, không phải tuổi tác.</li>
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

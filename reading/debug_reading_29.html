@@ -1,0 +1,585 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 29 - Part 1				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79942				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>The hugs that keep on giving</b></p>
+
+<p><b>(A)</b> Every weekend over the past 10 months, Nguyen Bao Ngoc has been walking around Sword Lake in Hanoi, dressed as Doraemon, a popular Japanese comic book character that is half cat, half robot. Stretching his arms out, he tries to hug as many strangers as possible. <b>Some</b> stop to hug him back before putting money into one of the boxes that his friends are holding. Others walk faster and avoid eye contact with him. Ngoc, 23, says he started the "Hug Me" (<i>Ôm tôi đi</i>) campaign in February, inspired by the Free Hugs social movement in Australia. The difference is that his hugs are not free because he wants to raise money to help children in poor and remote areas across the country.</p>
+
+<p><b>(B)</b> The <b>senior</b> college student, who is studying to become a TV reporter, has been doing charity work for three years. In one of his most successful efforts, he worked as a <i>xe ôm</i> (motorbike taxi) driver in his free time and donated all the money he earned to poor families in his hometown in Quang Binh Province. But "Hug Me," Ngoc says, is his favorite because, with it, he can capture the attention of his peers. "Young people my age have been more into social media than real life. We may cry over a sad story on Facebook, but when we witness the same story in real life, we can be <b>indifferent</b>."</p>
+
+<p>As hugging in public is not very common in Vietnam, Ngoc wears a costume so that strangers will not feel uncomfortable. Doraemon the cat is, in fact, famous for its friendliness and kindness. Sometimes, for a change, he also dresses as a bee or a puppy.</p>
+
+<p><b>(C)</b> Many students who gave him a hug donated more than VND 5,000, which is what he hopes to receive, allowing the campaign to earn between $50 and $200 each week. Some also brought old clothes and books. Ngoc has organized two trips to bring gifts and food to children in Quang Binh and the northern mountainous province of Yen Bai this year. The <b>third</b> has been planned for December.</p>
+
+<p>Ngoc has been diagnosed with first-stage bone marrow cancer, but he says his condition is "stable." He does not want to be defined by his illness. Having cancer is not the motivation for him to help others. "I'd do it anyway. I want people to see me as a student doing charity work, not a cancer patient doing charity work."</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>Những cái ôm lan tỏa yêu thương</b></p>   <p><b>(A)</b> Mỗi cuối tuần trong suốt 10 tháng qua, Nguyễn Bảo Ngọc đều đi bộ quanh Hồ Gươm ở Hà Nội, mặc trang phục Doraemon, nhân vật truyện tranh Nhật Bản nổi tiếng – một chú mèo máy nửa mèo, nửa robot. Dang rộng tay, cô cố gắng ôm càng nhiều người lạ càng tốt. <b>Một số</b> người dừng lại để ôm cô rồi bỏ tiền vào một trong những thùng quyên góp mà bạn bè cô đang cầm. Những người khác thì đi nhanh hơn và tránh nhìn vào mắt cô. Ngọc, 23 tuổi, cho biết cô bắt đầu chiến dịch "Hug Me" (<i>Ôm tôi đi</i>) vào tháng Hai, lấy cảm hứng từ phong trào Free Hugs tại Úc. Sự khác biệt là những cái ôm của cô không miễn phí vì cô muốn gây quỹ giúp đỡ trẻ em ở các khu vực nghèo và vùng sâu vùng xa trên cả nước.</p>   <p><b>(B)</b> Là một sinh viên năm cuối đang theo học để trở thành phóng viên truyền hình, Ngọc đã làm công tác từ thiện trong suốt ba năm qua. Trong một trong những hoạt động thành công nhất của mình, cô đã chạy <i>xe ôm</i> trong thời gian rảnh và quyên góp toàn bộ số tiền kiếm được cho các gia đình nghèo ở quê hương cô tại Quảng Bình. Nhưng "Hug Me," theo Ngọc, là dự án cô yêu thích nhất vì qua đó, cô có thể thu hút sự quan tâm của các bạn đồng trang lứa. "Những người trẻ tuổi như tôi thường quan tâm đến mạng xã hội hơn là cuộc sống thực. Chúng ta có thể rơi nước mắt trước một câu chuyện buồn trên Facebook, nhưng khi chứng kiến câu chuyện tương tự ngoài đời, chúng ta có thể trở nên <b>thờ ơ</b>."</p>   <p>Vì ôm người lạ giữa nơi công cộng không phải là điều phổ biến ở Việt Nam, Ngọc mặc trang phục hóa trang để khiến mọi người cảm thấy thoải mái hơn. Thực tế, chú mèo Doraemon rất nổi tiếng với sự thân thiện và tốt bụng. Đôi khi, để thay đổi, cô cũng hóa trang thành chú ong hoặc cún con.</p>   <p><b>(C)</b> Nhiều sinh viên đã ôm cô và quyên góp hơn 5.000 VNĐ, mức quyên góp mà cô mong đợi, giúp chiến dịch thu về từ 50 đến 200 đô la mỗi tuần. Một số còn mang theo quần áo cũ và sách để ủng hộ. Ngọc đã tổ chức hai chuyến đi để mang quà và thực phẩm đến trẻ em ở Quảng Bình và tỉnh miền núi phía Bắc Yên Bái trong năm nay. Chuyến đi <b>thứ ba</b> dự kiến sẽ diễn ra vào tháng 12.</p>   <p>Ngọc đã được chẩn đoán mắc ung thư tủy xương giai đoạn đầu, nhưng cô nói rằng tình trạng của mình "ổn định". Cô không muốn bị định nghĩa bởi căn bệnh của mình. Việc mắc bệnh ung thư không phải là động lực khiến cô giúp đỡ người khác. "Dù sao đi nữa tôi vẫn sẽ làm điều này. Tôi muốn mọi người nhìn nhận tôi như một sinh viên làm từ thiện, chứ không phải một bệnh nhân ung thư làm từ thiện."</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>The hugs that keep on giving</b></p>
+
+<p><b>(A)</b> Every weekend over the past 10 months, Nguyen Bao Ngoc has been walking around Sword Lake in Hanoi, dressed as Doraemon, a popular Japanese comic book character that is half cat, half robot. Stretching his arms out, he tries to hug as many strangers as possible. <b>Some</b> stop to hug him back before putting money into one of the boxes that his friends are holding. Others walk faster and avoid eye contact with him. Ngoc, 23, says he started the "Hug Me" (<i>Ôm tôi đi</i>) campaign in February, inspired by the Free Hugs social movement in Australia. The difference is that his hugs are not free because he wants to raise money to help children in poor and remote areas across the country.</p>
+
+<p><b>(B)</b> The <b>senior</b> college student, who is studying to become a TV reporter, has been doing charity work for three years. In one of his most successful efforts, he worked as a <i>xe ôm</i> (motorbike taxi) driver in his free time and donated all the money he earned to poor families in his hometown in Quang Binh Province. But "Hug Me," Ngoc says, is his favorite because, with it, he can capture the attention of his peers. "Young people my age have been more into social media than real life. We may cry over a sad story on Facebook, but when we witness the same story in real life, we can be <b>indifferent</b>."</p>
+
+<p>As hugging in public is not very common in Vietnam, Ngoc wears a costume so that strangers will not feel uncomfortable. Doraemon the cat is, in fact, famous for its friendliness and kindness. Sometimes, for a change, he also dresses as a bee or a puppy.</p>
+
+<p><b>(C)</b> Many students who gave him a hug donated more than VND 5,000, which is what he hopes to receive, allowing the campaign to earn between $50 and $200 each week. Some also brought old clothes and books. Ngoc has organized two trips to bring gifts and food to children in Quang Binh and the northern mountainous province of Yen Bai this year. The <b>third</b> has been planned for December.</p>
+
+<p>Ngoc has been diagnosed with first-stage bone marrow cancer, but he says his condition is "stable." He does not want to be defined by his illness. Having cancer is not the motivation for him to help others. "I'd do it anyway. I want people to see me as a student doing charity work, not a cancer patient doing charity work."</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Why does Ngoc start the "Hug Me" campaign?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. to pay for his tuition fee at college															</div>
+																				<div class="ps-4 mb-2">
+																	B. to offer free hugs															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. to raise money for charity</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. to initiate a social movement in Australia															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Why does Ngoc start the "Hug Me" campaign?</strong> (Tại sao Ngọc bắt đầu chiến dịch "Hug Me"?)</p> 
+<ul> 
+<li>❌ <strong>to initiate a social movement in Australia</strong> (để khởi xướng một phong trào xã hội tại Úc) → Sai, vì Ngọc lấy cảm hứng từ phong trào Free Hugs ở Úc, nhưng chiến dịch của anh không nhằm bắt đầu một phong trào mới ở đó.</li> 
+<li>❌ <strong>to offer free hugs</strong> (để cung cấp những cái ôm miễn phí) → Sai, vì Ngọc không cung cấp ôm miễn phí mà dùng chúng để gây quỹ từ thiện.</li> 
+<li>✅ <strong>to raise money for charity</strong> (để gây quỹ từ thiện) → Đúng, vì Ngọc tổ chức chiến dịch để quyên tiền giúp trẻ em nghèo và vùng sâu vùng xa.</li> 
+<li>❌ <strong>to pay for his tuition fee at college</strong> (để trả học phí đại học) → Sai, vì mục đích chính của chiến dịch không phải là để trang trải chi phí cá nhân.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: The word "some" in paragraph (A) refers to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. boxes															</div>
+																				<div class="ps-4 mb-2">
+																	B. children															</div>
+																				<div class="ps-4 mb-2">
+																	C. friends															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. strangers</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "some" in paragraph (A) refers to?</strong> (Từ "some" trong đoạn (A) ám chỉ điều gì?)</p> 
+<ul> 
+<li>❌ <strong>friends</strong> (bạn bè) → Sai, vì từ "some" không ám chỉ bạn bè của Ngọc mà ám chỉ những người lạ dừng lại ôm anh ấy.</li> 
+<li>❌ <strong>children</strong> (trẻ em) → Sai, vì trong đoạn văn không đề cập đến trẻ em là những người nhận ôm.</li> 
+<li>✅ <strong>strangers</strong> (người lạ) → Đúng, vì "some" ám chỉ một số người lạ đã dừng lại để ôm Ngọc và quyên góp tiền.</li> 
+<li>❌ <strong>boxes</strong> (những chiếc hộp) → Sai, vì từ "some" không ám chỉ hộp quyên góp mà đề cập đến con người.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: The word "senior" in paragraph (B) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. superior															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. last-year</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. leading															</div>
+																				<div class="ps-4 mb-2">
+																	D. advanced															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "senior" in paragraph (B) is closest in meaning to?</strong> (Từ "senior" trong đoạn (B) có nghĩa gần nhất với?)</p> 
+<ul> 
+<li>✅ <strong>last-year</strong> (năm cuối) → Đúng, vì từ "senior" trong ngữ cảnh này ám chỉ Ngọc là sinh viên năm cuối.</li> 
+<li>❌ <strong>superior</strong> (cấp trên) → Sai, vì "senior" không chỉ sự vượt trội hay cấp bậc trong trường hợp này.</li> 
+<li>❌ <strong>advanced</strong> (cao cấp) → Sai, vì "senior" không có nghĩa là trình độ cao hơn.</li> 
+<li>❌ <strong>leading</strong> (dẫn đầu) → Sai, vì "senior" không có nghĩa là người đứng đầu trong ngữ cảnh này.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: The word "indifferent" in paragraph (B) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. responsive															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. uncaring</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. concerned															</div>
+																				<div class="ps-4 mb-2">
+																	D. dissimilar															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "indifferent" in paragraph (B) is closest in meaning to?</strong> (Từ "indifferent" trong đoạn (B) có nghĩa gần nhất với?)</p> 
+<ul> 
+<li>✅ <strong>uncaring</strong> (thờ ơ) → Đúng, vì "indifferent" có nghĩa là không quan tâm hoặc thờ ơ trước điều gì đó.</li> 
+<li>❌ <strong>concerned</strong> (quan tâm) → Sai, vì "indifferent" mang nghĩa trái ngược với "concerned".</li> 
+<li>❌ <strong>dissimilar</strong> (không giống nhau) → Sai, vì "indifferent" không có nghĩa là khác nhau.</li> 
+<li>❌ <strong>responsive</strong> (phản ứng nhanh) → Sai, vì "indifferent" ám chỉ sự vô cảm, không phản ứng.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What character might probably not represent a costume that Ngoc dresses?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. a bee															</div>
+																				<div class="ps-4 mb-2">
+																	B. a cat															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. a panda</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. a puppy															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What character might probably not represent a costume that Ngoc dresses?</strong> (Nhân vật nào có thể không phải là một trang phục mà Ngọc mặc?)</p> 
+<ul> 
+<li>❌ <strong>a cat</strong> (một con mèo) → Sai, vì Ngọc đã từng mặc trang phục Doraemon, một nhân vật mèo máy nổi tiếng.</li> 
+<li>❌ <strong>a bee</strong> (một con ong) → Sai, vì trong bài có đề cập rằng Ngọc đã từng hóa trang thành một chú ong.</li> 
+<li>❌ <strong>a puppy</strong> (một chú cún) → Sai, vì bài viết có nhắc đến việc Ngọc mặc trang phục cún con.</li> 
+<li>✅ <strong>a panda</strong> (một con gấu trúc) → Đúng, vì trong bài không có đề cập đến việc Ngọc mặc trang phục gấu trúc.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: How much is the "Hug Me" campaign expected to earn a month?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. $50 and $200															</div>
+																				<div class="ps-4 mb-2">
+																	B. VND5,000															</div>
+																				<div class="ps-4 mb-2">
+																	C. free															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. $200 and $800</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>How much is the "Hug Me" campaign expected to earn a month?</strong> (Chiến dịch "Hug Me" dự kiến kiếm được bao nhiêu tiền mỗi tháng?)</p> 
+<ul> 
+<li>❌ <strong>VND5,000</strong> → Sai, vì đây chỉ là mức quyên góp trung bình mà mỗi người ủng hộ có thể đóng góp.</li> 
+<li>❌ <strong>$50 and $200</strong> → Sai, vì đây là số tiền chiến dịch thu được mỗi tuần, không phải mỗi tháng.</li> 
+<li>✅ <strong>$200 and $800</strong> → Đúng, vì nếu chiến dịch kiếm được từ $50 đến $200 mỗi tuần, thì tổng cộng mỗi tháng sẽ rơi vào khoảng $200 đến $800.</li> 
+<li>❌ <strong>free</strong> → Sai, vì chiến dịch không cung cấp những cái ôm miễn phí mà nhằm gây quỹ.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: The word "third" in paragraph (C) refers to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. province															</div>
+																				<div class="ps-4 mb-2">
+																	B. campaign															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. trip</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. month															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "third" in paragraph (C) refers to?</strong> (Từ "third" trong đoạn (C) đề cập đến điều gì?)</p> 
+<ul> 
+<li>❌ <strong>province</strong> (tỉnh) → Sai, vì từ "third" không đề cập đến một tỉnh.</li> 
+<li>❌ <strong>campaign</strong> (chiến dịch) → Sai, vì không có thông tin về chiến dịch thứ ba.</li> 
+<li>✅ <strong>trip</strong> (chuyến đi) → Đúng, vì trong đoạn (C), từ "third" đề cập đến chuyến đi thứ ba mà Ngọc lên kế hoạch.</li> 
+<li>❌ <strong>month</strong> (tháng) → Sai, vì từ "third" không liên quan đến thời gian.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: In which space (marked (A), (B), (C), and (D) in the passage) will the following sentence fit? "I want to live and love in the real world, not the virtual world," he added.						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. D															</div>
+																				<div class="ps-4 mb-2">
+																	B. A															</div>
+																				<div class="ps-4 mb-2">
+																	C. C															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. B</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In which space (marked (A), (B), (C), and (D) in the passage) will the following sentence fit?</strong> 
+"I want to live and love in the real world, not the virtual world," he added. (Câu này phù hợp với đoạn nào trong bài đọc?)</p> 
+<ul> 
+<li>❌ <strong>(A)</strong> → Sai, vì đoạn (A) tập trung vào việc Ngọc bắt đầu chiến dịch "Hug Me".</li> 
+<li>✅ <strong>(B)</strong> → Đúng, vì đoạn (B) nói về sự khác biệt giữa mạng xã hội và cuộc sống thực, và câu này phù hợp với ý tưởng đó.</li> 
+<li>❌ <strong>(C)</strong> → Sai, vì đoạn (C) đề cập đến số tiền quyên góp và các chuyến đi từ thiện.</li> 
+<li>❌ <strong>(D)</strong> → Sai, vì đoạn (D) tập trung vào tình trạng sức khỏe của Ngọc.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What does Ngoc mean when he says, "I want people to see me as a student doing charity work, not a cancer patient doing charity work"?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. any student with such illness can do more to help other people															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. he does not like being remembered by his illness</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. having cancer motivates him to do charity work															</div>
+																				<div class="ps-4 mb-2">
+																	D. he is a student who helps cancer people															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does Ngoc mean when he says, "I want people to see me as a student doing charity work, not a cancer patient doing charity work"?</strong> (Ngọc có ý gì khi nói câu này?)</p> 
+<ul> 
+<li>❌ <strong>having cancer motivates him to do charity work</strong> (Bị ung thư là động lực khiến anh làm từ thiện) → Sai, vì Ngọc khẳng định rằng anh sẽ làm từ thiện dù có bệnh hay không.</li> 
+<li>✅ <strong>he does not like being remembered by his illness</strong> (Anh không muốn mọi người nhớ đến mình vì bệnh tình) → Đúng, vì anh muốn được nhìn nhận như một sinh viên làm từ thiện thay vì một bệnh nhân ung thư làm từ thiện.</li> 
+<li>❌ <strong>any student with such illness can do more to help other people</strong> (Bất kỳ sinh viên nào mắc bệnh này đều có thể giúp đỡ người khác nhiều hơn) → Sai, vì Ngọc không nói rằng sinh viên mắc bệnh ung thư phải làm từ thiện.</li> 
+<li>❌ <strong>he is a student who helps cancer people</strong> (Anh là một sinh viên giúp đỡ bệnh nhân ung thư) → Sai, vì anh làm từ thiện cho trẻ em nghèo, không phải chỉ giúp đỡ bệnh nhân ung thư.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: In which section does the author mention Nguyen Bao Ngoc’s health condition?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. (C)															</div>
+																				<div class="ps-4 mb-2">
+																	B. (B)															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. (D)</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. (A)															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In which section does the author mention Nguyen Bao Ngoc’s health condition?</strong> (Phần nào trong bài đọc đề cập đến tình trạng sức khỏe của Nguyễn Bảo Ngọc?)</p> 
+<ul> 
+<li>❌ <strong>(A)</strong> → Sai, vì đoạn (A) tập trung vào lý do Ngọc bắt đầu chiến dịch "Hug Me".</li> 
+<li>❌ <strong>(B)</strong> → Sai, vì đoạn (B) nói về kinh nghiệm làm từ thiện trước đây của Ngọc.</li> 
+<li>❌ <strong>(C)</strong> → Sai, vì đoạn (C) đề cập đến số tiền quyên góp và các chuyến đi từ thiện.</li> 
+<li>✅ <strong>(D)</strong> → Đúng, vì đoạn (D) đề cập đến tình trạng sức khỏe của Ngọc và việc anh không muốn bị định nghĩa bởi căn bệnh của mình.</li> 
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

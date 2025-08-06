@@ -1,0 +1,580 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 47 - Part 3				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79961				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> For hundreds of years, people around the world have linked turmeric to healing properties and cosmetic benefits. <b>The bright, yellow-orange spice</b> is related to <b>ginger</b>. It's available as a ground spice or in supplements and other beauty and dermatology products. Turmeric gets its health benefits primarily because of <b>curcumin</b>, a <b>bioactive component</b>. Curcumin has <b>anti-inflammatory</b> and <b>antioxidant properties</b>. Modern scientific research is just beginning to study the positive impact of turmeric, but many believe it has several beneficial uses for the skin. Here are some ways turmeric may benefit your skin.</p>
+
+<p><b>(B)</b> Turmeric contains <b>antioxidants</b> and anti-inflammatory components. These characteristics may provide <b>glow</b> and luster to the skin. Turmeric may also revive your skin by bringing out its natural glow. You may want to try a turmeric face mask at home to see if the spice has any positive effects on your skin. You can mix small amounts of Greek yogurt, honey, and turmeric together and apply it to your face. Keep the mask on for 15 minutes and then wash it off with water.</p>
+
+<p><b>(C)</b> The curcumin found in turmeric can help wounds heal by decreasing inflammation and oxidation. It also lowers the response of your body to cutaneous wounds. This results in your wounds healing more quickly. Studies have found that turmeric can positively affect tissue and collagen as well. The journal <i>Life Sciences</i> recommends applying curcumin as an optimized formula to best work on skin wounds.</p>
+
+<p><b>(D)</b> The antioxidant and anti-inflammatory qualities of turmeric may help your psoriasis by controlling flares and other symptoms. You may want to try a turmeric face mask to help reduce acne and any resulting scars. The anti-inflammatory qualities can target your pores and calm the skin. Turmeric is also known to reduce scarring. This combination of uses may help your face clear up from acne breakouts.</p>
+
+<p><b>(E)</b> There are risks of using turmeric. When using turmeric, you need to be careful about the dosage, the type of product you use, and how it might react to other medications you take. Turmeric has a low bioavailability. This means that your metabolism burns it off quickly, and your body doesn't absorb much. Avoid taking too much turmeric at one time and wait to see how your body reacts before taking more. If you take other medications, discuss the use of turmeric with your doctor. When applied to the skin, turmeric can temporarily stain the skin or leave a yellow residue. This is normal. But if you're allergic, direct skin contact can cause irritation, redness, and swelling.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Trong hàng trăm năm, con người trên khắp thế giới đã liên kết nghệ với các đặc tính chữa bệnh và lợi ích làm đẹp. <b>Loại gia vị màu vàng cam sáng</b> này có họ hàng với <b>gừng</b>. Nghệ có sẵn dưới dạng bột hoặc trong các loại thực phẩm chức năng, sản phẩm làm đẹp và da liễu khác. Nghệ có lợi ích cho sức khỏe chủ yếu nhờ <b>curcumin</b>, một <b>thành phần hoạt tính sinh học</b>. Curcumin có đặc tính <b>chống viêm</b> và <b>chống oxy hóa</b>. Nghiên cứu khoa học hiện đại mới chỉ bắt đầu khám phá tác động tích cực của nghệ, nhưng nhiều người tin rằng nghệ có nhiều công dụng có lợi cho làn da. Dưới đây là một số cách mà nghệ có thể giúp ích cho làn da của bạn.</p>   <p><b>(B)</b> Nghệ chứa <b>chất chống oxy hóa</b> và các thành phần chống viêm. Những đặc tính này có thể mang lại <b>sự rạng rỡ</b> và sức sống cho làn da. Nghệ cũng có thể giúp phục hồi làn da bằng cách làm nổi bật vẻ đẹp tự nhiên của nó. Bạn có thể thử làm mặt nạ nghệ tại nhà để xem loại gia vị này có tác động tích cực nào đến làn da hay không. Bạn có thể trộn một lượng nhỏ sữa chua Hy Lạp, mật ong và nghệ, sau đó thoa lên mặt. Giữ nguyên mặt nạ trong 15 phút rồi rửa sạch bằng nước.</p>   <p><b>(C)</b> Curcumin có trong nghệ có thể giúp vết thương mau lành bằng cách giảm viêm và oxy hóa. Nó cũng làm giảm phản ứng của cơ thể đối với các vết thương trên da, giúp vết thương lành nhanh hơn. Các nghiên cứu đã phát hiện rằng nghệ có thể tác động tích cực đến mô và collagen. Tạp chí <i>Life Sciences</i> khuyến nghị nên sử dụng curcumin dưới dạng công thức tối ưu để đạt hiệu quả tốt nhất khi điều trị vết thương trên da.</p>   <p><b>(D)</b> Các đặc tính chống oxy hóa và chống viêm của nghệ có thể giúp kiểm soát các đợt bùng phát bệnh vẩy nến và các triệu chứng khác. Bạn cũng có thể thử đắp mặt nạ nghệ để giúp giảm mụn trứng cá và các vết sẹo do mụn để lại. Các đặc tính chống viêm có thể tác động đến lỗ chân lông và làm dịu da. Nghệ cũng được biết đến với khả năng giảm sẹo. Sự kết hợp của các công dụng này có thể giúp da mặt của bạn sạch hơn và hạn chế mụn.</p>   <p><b>(E)</b> Việc sử dụng nghệ cũng có một số rủi ro. Khi dùng nghệ, bạn cần cẩn trọng về liều lượng, loại sản phẩm sử dụng và cách nghệ có thể tương tác với các loại thuốc khác mà bạn đang dùng. Nghệ có sinh khả dụng thấp, có nghĩa là cơ thể chuyển hóa nó nhanh chóng và không hấp thụ nhiều. Hãy tránh dùng quá nhiều nghệ cùng một lúc và chờ xem cơ thể phản ứng như thế nào trước khi dùng thêm. Nếu bạn đang dùng thuốc khác, hãy tham khảo ý kiến bác sĩ trước khi sử dụng nghệ. Khi thoa lên da, nghệ có thể tạm thời làm ố vàng da hoặc để lại cặn màu vàng. Đây là hiện tượng bình thường. Tuy nhiên, nếu bạn bị dị ứng, tiếp xúc trực tiếp với nghệ có thể gây kích ứng, mẩn đỏ và sưng tấy.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>(A)</b> For hundreds of years, people around the world have linked turmeric to healing properties and cosmetic benefits. <b>The bright, yellow-orange spice</b> is related to <b>ginger</b>. It's available as a ground spice or in supplements and other beauty and dermatology products. Turmeric gets its health benefits primarily because of <b>curcumin</b>, a <b>bioactive component</b>. Curcumin has <b>anti-inflammatory</b> and <b>antioxidant properties</b>. Modern scientific research is just beginning to study the positive impact of turmeric, but many believe it has several beneficial uses for the skin. Here are some ways turmeric may benefit your skin.</p>
+
+<p><b>(B)</b> Turmeric contains <b>antioxidants</b> and anti-inflammatory components. These characteristics may provide <b>glow</b> and luster to the skin. Turmeric may also revive your skin by bringing out its natural glow. You may want to try a turmeric face mask at home to see if the spice has any positive effects on your skin. You can mix small amounts of Greek yogurt, honey, and turmeric together and apply it to your face. Keep the mask on for 15 minutes and then wash it off with water.</p>
+
+<p><b>(C)</b> The curcumin found in turmeric can help wounds heal by decreasing inflammation and oxidation. It also lowers the response of your body to cutaneous wounds. This results in your wounds healing more quickly. Studies have found that turmeric can positively affect tissue and collagen as well. The journal <i>Life Sciences</i> recommends applying curcumin as an optimized formula to best work on skin wounds.</p>
+
+<p><b>(D)</b> The antioxidant and anti-inflammatory qualities of turmeric may help your psoriasis by controlling flares and other symptoms. You may want to try a turmeric face mask to help reduce acne and any resulting scars. The anti-inflammatory qualities can target your pores and calm the skin. Turmeric is also known to reduce scarring. This combination of uses may help your face clear up from acne breakouts.</p>
+
+<p><b>(E)</b> There are risks of using turmeric. When using turmeric, you need to be careful about the dosage, the type of product you use, and how it might react to other medications you take. Turmeric has a low bioavailability. This means that your metabolism burns it off quickly, and your body doesn't absorb much. Avoid taking too much turmeric at one time and wait to see how your body reacts before taking more. If you take other medications, discuss the use of turmeric with your doctor. When applied to the skin, turmeric can temporarily stain the skin or leave a yellow residue. This is normal. But if you're allergic, direct skin contact can cause irritation, redness, and swelling.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Why does the author mention 'ginger' in paragraph (A)?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. To differentiate ginger from turmeric</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. To help readers imagine easily what turmerics look like															</div>
+																				<div class="ps-4 mb-2">
+																	C. To show the characteristics of ginger															</div>
+																				<div class="ps-4 mb-2">
+																	D. To prove the benefits of ginger															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Why does the author mention "ginger" in paragraph (A)?</strong> (Tại sao tác giả nhắc đến "gừng" trong đoạn (A)?)</p>
+<ul>
+<li>❌ <strong>To help readers imagine easily what turmeric looks like. (Để giúp người đọc dễ hình dung nghệ trông như thế nào.)</strong> → Sai. Tác giả không dùng gừng để giúp người đọc hình dung nghệ.</li>
+<li>✅ <strong>To differentiate ginger from turmeric. (Để phân biệt gừng với nghệ.)</strong> → Đúng. Tác giả đề cập đến gừng vì nghệ có họ hàng với gừng nhưng là một loại gia vị khác.</li>
+<li>❌ <strong>To show the characteristics of ginger. (Để cho thấy đặc điểm của gừng.)</strong> → Sai. Bài đọc tập trung vào nghệ, không phải gừng.</li>
+<li>❌ <strong>To prove the benefits of ginger. (Để chứng minh lợi ích của gừng.)</strong> → Sai. Tác giả không đề cập đến lợi ích của gừng.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: In paragraph (A), what does the word 'it' refer to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. ginger															</div>
+																				<div class="ps-4 mb-2">
+																	B. product															</div>
+																				<div class="ps-4 mb-2">
+																	C. ground spice															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. turmeric</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (A), what does the word "it" refer to?</strong> (Trong đoạn (A), từ "it" đề cập đến điều gì?)</p>
+<ul>
+<li>❌ <strong>ginger. (Gừng.)</strong> → Sai. Câu văn không nói "it" là gừng.</li>
+<li>❌ <strong>product. (Sản phẩm.)</strong> → Sai. "It" không chỉ bất kỳ sản phẩm nào.</li>
+<li>❌ <strong>ground spice. (Gia vị nghiền.)</strong> → Sai. Mặc dù nghệ có dạng gia vị nghiền, nhưng "it" đề cập đến nghệ.</li>
+<li>✅ <strong>turmeric. (Nghệ.)</strong> → Đúng. "It" trong câu văn nhắc đến nghệ.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What is the main component that gives turmeric its health benefits?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. curcumin</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. antioxidant properties															</div>
+																				<div class="ps-4 mb-2">
+																	C. anti-inflammatory															</div>
+																				<div class="ps-4 mb-2">
+																	D. colour															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What is the main component that gives turmeric its health benefits?</strong> (Thành phần chính mang lại lợi ích sức khỏe của nghệ là gì?)</p>
+<ul>
+<li>✅ <strong>curcumin. (Curcumin.)</strong> → Đúng. Curcumin là thành phần hoạt tính sinh học mang lại các đặc tính chống viêm và chống oxy hóa cho nghệ.</li>
+<li>❌ <strong>anti-inflammatory. (Chống viêm.)</strong> → Sai. Đây là một đặc tính của nghệ, không phải thành phần chính.</li>
+<li>❌ <strong>antioxidant properties. (Tính chất chống oxy hóa.)</strong> → Sai. Đây cũng là một đặc tính, không phải thành phần cụ thể.</li>
+<li>❌ <strong>colour. (Màu sắc.)</strong> → Sai. Màu sắc không phải là yếu tố mang lại lợi ích sức khỏe.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: In paragraph (B), which of the following words can best replace the word 'glow'?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. dark															</div>
+																				<div class="ps-4 mb-2">
+																	B. smooth															</div>
+																				<div class="ps-4 mb-2">
+																	C. flawless															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. bright</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (B), which of the following words can best replace the word "glow"?</strong> (Trong đoạn (B), từ nào có thể thay thế tốt nhất cho từ "glow"?)</p>
+<ul>
+<li>❌ <strong>smooth. (Mịn màng.)</strong> → Sai. "Glow" liên quan đến độ sáng, không phải kết cấu da.</li>
+<li>❌ <strong>dark. (Tối màu.)</strong> → Sai. "Glow" mang nghĩa sáng, không phải tối.</li>
+<li>✅ <strong>bright. (Sáng.)</strong> → Đúng. "Glow" có nghĩa là sự sáng bóng, rạng rỡ.</li>
+<li>❌ <strong>flawless. (Hoàn hảo, không tì vết.)</strong> → Sai. "Glow" không mang ý nghĩa không có khuyết điểm.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: According to paragraph (D), what may a turmeric face mask do?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. heal the wound															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. reduce acne and resulting scars</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. control flare and other symptoms															</div>
+																				<div class="ps-4 mb-2">
+																	D. clear up breakouts and acne															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to paragraph (D), what may a turmeric face mask do?</strong> (Theo đoạn (D), mặt nạ nghệ có thể làm gì?)</p>
+<ul>
+<li>✅ <strong>reduce acne and resulting scars. (Giảm mụn trứng cá và vết sẹo do mụn để lại.)</strong> → Đúng. Nghệ có đặc tính chống viêm giúp làm dịu da và giảm mụn.</li>
+<li>❌ <strong>clear up breakouts and acne. (Làm sạch mụn trứng cá và bùng phát mụn.)</strong> → Sai. Mặt nạ nghệ giúp giảm mụn nhưng không hoàn toàn làm sạch bùng phát mụn.</li>
+<li>❌ <strong>control flare and other symptoms. (Kiểm soát các đợt bùng phát và triệu chứng khác.)</strong> → Sai. Điều này đúng với bệnh vẩy nến hơn là mụn.</li>
+<li>❌ <strong>heal the wound. (Chữa lành vết thương.)</strong> → Sai. Nghệ có thể hỗ trợ lành vết thương nhưng không phải là công dụng chính của mặt nạ nghệ.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Which of the following is NOT a benefit of turmeric?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. clearing up the acne															</div>
+																				<div class="ps-4 mb-2">
+																	B. reducing scars															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. calm the mind</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. healing the wound															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following is NOT a benefit of turmeric?</strong> (Lợi ích nào sau đây KHÔNG phải là lợi ích của nghệ?)</p>
+<ul>
+<li>❌ <strong>healing the wound. (Chữa lành vết thương.)</strong> → Sai. Curcumin trong nghệ có thể giúp vết thương mau lành bằng cách giảm viêm và oxy hóa.</li>
+<li>✅ <strong>calm the mind. (Làm dịu tâm trí.)</strong> → Đúng. Bài đọc không đề cập đến tác dụng làm dịu tâm trí của nghệ.</li>
+<li>❌ <strong>clearing up the acne. (Làm sạch mụn trứng cá.)</strong> → Sai. Nghệ có thể giúp giảm viêm, kiểm soát mụn trứng cá và làm mờ sẹo.</li>
+<li>❌ <strong>reducing scars. (Giảm sẹo.)</strong> → Sai. Nghệ được biết đến với khả năng giảm sẹo và tái tạo làn da.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What should be carefully considered when using turmeric?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. dosage and time															</div>
+																				<div class="ps-4 mb-2">
+																	B. dosage, type of product and ingredience															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. dosage, type of product and other medications</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. dosage and other medications															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What should be carefully considered when using turmeric?</strong> (Điều gì cần cân nhắc cẩn thận khi sử dụng nghệ?)</p>
+<ul>
+<li>❌ <strong>dosage and time. (Liều lượng và thời gian.)</strong> → Sai. Bài đọc không đề cập đến thời gian sử dụng nghệ.</li>
+<li>✅ <strong>dosage, type of product and other medications. (Liều lượng, loại sản phẩm và các loại thuốc khác.)</strong> → Đúng. Bài đọc nhấn mạnh rằng cần chú ý đến liều lượng, loại nghệ sử dụng và các loại thuốc khác đang dùng để tránh tác dụng phụ.</li>
+<li>❌ <strong>dosage, type of product and ingredience. (Liều lượng, loại sản phẩm và thành phần.)</strong> → Sai. Thành phần không phải là yếu tố chính cần cân nhắc.</li>
+<li>❌ <strong>dosage and other medications. (Liều lượng và các loại thuốc khác.)</strong> → Sai. Cần xem xét cả loại sản phẩm, không chỉ liều lượng và thuốc.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: Which of the following is NOT a common symptom of turmeric allergy?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Fever</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Irriation															</div>
+																				<div class="ps-4 mb-2">
+																	C. Swelling															</div>
+																				<div class="ps-4 mb-2">
+																	D. Redness															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following is NOT a common symptom of turmeric allergy?</strong> (Triệu chứng nào sau đây KHÔNG phải là triệu chứng phổ biến của dị ứng nghệ?)</p>
+<ul>
+<li>❌ <strong>Irriation. (Kích ứng.)</strong> → Sai. Nghệ có thể gây kích ứng da nếu tiếp xúc trực tiếp với những người bị dị ứng.</li>
+<li>❌ <strong>Redness. (Mẩn đỏ.)</strong> → Sai. Dị ứng nghệ có thể gây đỏ da.</li>
+<li>❌ <strong>Swelling. (Sưng tấy.)</strong> → Sai. Nghệ có thể gây sưng da nếu bị dị ứng.</li>
+<li>✅ <strong>Fever. (Sốt.)</strong> → Đúng. Bài đọc không đề cập đến sốt là triệu chứng của dị ứng nghệ.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: According to the passage, which part of the body benefits the most from turmeric?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. nail															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. skin</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. hair															</div>
+																				<div class="ps-4 mb-2">
+																	D. face															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the passage, which part of the body benefits the most from turmeric?</strong> (Theo bài đọc, bộ phận nào trên cơ thể được hưởng lợi nhiều nhất từ nghệ?)</p>
+<ul>
+<li>❌ <strong>face. (Khuôn mặt.)</strong> → Sai. Mặc dù nghệ có thể dùng làm mặt nạ dưỡng da, nhưng bài đọc tập trung vào lợi ích chung cho làn da.</li>
+<li>✅ <strong>skin. (Làn da.)</strong> → Đúng. Nghệ có lợi cho làn da nhờ đặc tính chống viêm, chống oxy hóa và hỗ trợ làm lành vết thương.</li>
+<li>❌ <strong>hair. (Tóc.)</strong> → Sai. Bài đọc không đề cập đến lợi ích của nghệ đối với tóc.</li>
+<li>❌ <strong>nail. (Móng tay.)</strong> → Sai. Nghệ không được nhắc đến là có lợi cho móng tay.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: What is the passage mainly about?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. What turmeric can bring to you?</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Some notes when using tumeric															</div>
+																				<div class="ps-4 mb-2">
+																	C. Different kinds of tumeric															</div>
+																				<div class="ps-4 mb-2">
+																	D. Risk of using turmeric															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What is the passage mainly about?</strong> (Bài đọc chủ yếu nói về điều gì?)</p>
+<ul>
+<li>✅ <strong>What turmeric can bring to you? (Những lợi ích của nghệ đối với bạn.)</strong> → Đúng. Bài đọc đề cập đến các lợi ích của nghệ đối với sức khỏe và làn da.</li>
+<li>❌ <strong>Different kinds of turmeric. (Các loại nghệ khác nhau.)</strong> → Sai. Bài đọc không so sánh các loại nghệ.</li>
+<li>❌ <strong>Risk of using turmeric. (Rủi ro khi sử dụng nghệ.)</strong> → Sai. Mặc dù có đề cập đến rủi ro, nhưng đó không phải là nội dung chính.</li>
+<li>❌ <strong>Some notes when using turmeric. (Một số lưu ý khi sử dụng nghệ.)</strong> → Sai. Bài đọc tập trung vào lợi ích hơn là hướng dẫn sử dụng.</li>
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

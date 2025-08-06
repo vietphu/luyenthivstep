@@ -1,0 +1,584 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 28 - Part 4				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79941				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>On Tour with the London Symphony Orchestra</b></p>
+
+<p><b>(A)</b> "Footballers and musicians are in the same business. They both do stressful jobs in front of critical audiences. The only difference is that football crowds are noisier," says Rod Franks. And he should know. Franks started his working life with Leeds United Football Club, then neatly changed direction, started playing the trumpet instead of football, and is now <b>principal</b> trumpeter with the LSO (London Symphony Orchestra). Franks might have made a further observation about the similarities between orchestras and football clubs: it is playing away that presents the real challenges.</p>
+
+<p>London's oldest orchestra has been playing away since it was formed almost a century ago. Nowadays, the orchestra's trips abroad are limited to tours of a maximum of two and a half weeks. But since touring is clearly expensive and presents major organizational and technical problems, why bother to tour at all? Clive Gillinson, the managing director, says: "A great international orchestra needs to work with the greatest conductors and soloists. No recording company will record a conductor or soloist if he or she is only known in one territory—they need an international reputation. So for the recording side to work, you have to visit the key markets; you need to tour."</p>
+
+<p><b>(B)</b> By touring with projects or festivals, Gillinson is able to create an event, not just provide a series of concerts. <b>It</b> is more expensive to do, but when you leave town, you are not so easily forgotten.</p>
+
+<p><b>(C)</b> For Sue Mallet, the orchestra's administrator, the difficulties of her job lie in getting a symphony orchestra and its instruments on stage, on time, and in one piece. However well she plans each tour—and she does her planning <b>with scientific accuracy</b>—events sometimes take an unexpected turn. On one occasion, a concert had been advertised for the wrong night, and on another, the lorry carrying the instruments from the airport to the concert hall broke down and got stuck in snow.</p>
+
+<p><b>(D)</b> It is a tiring and stressful business flying around the world, and yet, on balance, it is one of the rewards of the job. Certain moments are <b>unforgettable</b>. At the end of a concert in Moscow, an enthusiastic audience had brought the orchestra to its feet. As one of the musicians was about to sit down, an elderly lady in the front row pressed a piece of paper into his hand. It said, in simple English, what lovely music the orchestra had made.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>Trên Chuyến Lưu Diễn Cùng Dàn Nhạc Giao Hưởng London</b></p>   <p><b>(A)</b> "Cầu thủ bóng đá và nhạc công đều làm trong cùng một lĩnh vực. Cả hai đều thực hiện những công việc căng thẳng trước khán giả đầy phê phán. Chỉ có một điểm khác biệt là đám đông hâm mộ bóng đá thì ồn ào hơn," Rod Franks nói. Và anh ấy chắc chắn biết rõ điều này. Franks bắt đầu sự nghiệp của mình tại Câu lạc bộ Bóng đá Leeds United, sau đó chuyển hướng một cách gọn gàng, bắt đầu chơi kèn trumpet thay vì bóng đá, và hiện tại là <b>trưởng</b> nhạc công kèn trumpet của Dàn nhạc Giao hưởng London (LSO). Franks có thể đã đưa ra một nhận xét khác về sự tương đồng giữa dàn nhạc và câu lạc bộ bóng đá: việc biểu diễn ở nơi khác chính là thử thách thực sự.</p>   <p>Dàn nhạc lâu đời nhất London đã biểu diễn ở nước ngoài kể từ khi được thành lập gần một thế kỷ trước. Ngày nay, các chuyến lưu diễn của dàn nhạc được giới hạn trong khoảng tối đa hai tuần rưỡi. Nhưng vì lưu diễn rõ ràng là tốn kém và đòi hỏi phải giải quyết nhiều vấn đề tổ chức cũng như kỹ thuật lớn, vậy tại sao lại phải lưu diễn? Clive Gillinson, giám đốc điều hành, giải thích: "Một dàn nhạc quốc tế vĩ đại cần làm việc với những nhạc trưởng và nghệ sĩ độc tấu xuất sắc nhất. Không có hãng thu âm nào sẵn sàng thu âm với một nhạc trưởng hoặc nghệ sĩ độc tấu nếu họ chỉ được biết đến ở một khu vực—họ cần danh tiếng quốc tế. Vì vậy, để thành công trong lĩnh vực thu âm, bạn cần đến những thị trường quan trọng; bạn cần phải lưu diễn."</p>   <p><b>(B)</b> Bằng cách lưu diễn với các dự án hoặc lễ hội, Gillinson có thể tạo ra một sự kiện thực thụ, chứ không chỉ đơn giản là một chuỗi buổi hòa nhạc. <b>Cách này</b> tốn kém hơn, nhưng khi bạn rời khỏi một thành phố, bạn sẽ không dễ dàng bị lãng quên.</p>   <p><b>(C)</b> Đối với Sue Mallet, quản lý của dàn nhạc, những khó khăn trong công việc của cô ấy nằm ở việc đảm bảo một dàn nhạc giao hưởng cùng với toàn bộ nhạc cụ có thể xuất hiện trên sân khấu đúng giờ và nguyên vẹn. Cho dù cô ấy có lên kế hoạch tỉ mỉ <b>với độ chính xác khoa học</b> đến đâu, đôi khi những sự kiện bất ngờ vẫn xảy ra. Có lần, một buổi hòa nhạc đã bị quảng cáo nhầm ngày, và trong một lần khác, chiếc xe tải chở nhạc cụ từ sân bay đến khán phòng bị hỏng và mắc kẹt trong tuyết.</p>   <p><b>(D)</b> Việc bay vòng quanh thế giới là một công việc mệt mỏi và căng thẳng, nhưng nhìn chung, đó cũng là một trong những phần thưởng của nghề này. Một số khoảnh khắc thực sự <b>không thể nào quên</b>. Vào cuối một buổi hòa nhạc ở Moscow, khán giả nhiệt tình đã khiến cả dàn nhạc phải đứng dậy chào. Khi một trong những nhạc công chuẩn bị ngồi xuống, một bà cụ ở hàng ghế đầu đã nhét vào tay anh một mẩu giấy. Trên đó viết bằng tiếng Anh đơn giản rằng dàn nhạc đã tạo ra một bản nhạc tuyệt vời đến nhường nào.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>On Tour with the London Symphony Orchestra</b></p>
+
+<p><b>(A)</b> "Footballers and musicians are in the same business. They both do stressful jobs in front of critical audiences. The only difference is that football crowds are noisier," says Rod Franks. And he should know. Franks started his working life with Leeds United Football Club, then neatly changed direction, started playing the trumpet instead of football, and is now <b>principal</b> trumpeter with the LSO (London Symphony Orchestra). Franks might have made a further observation about the similarities between orchestras and football clubs: it is playing away that presents the real challenges.</p>
+
+<p>London's oldest orchestra has been playing away since it was formed almost a century ago. Nowadays, the orchestra's trips abroad are limited to tours of a maximum of two and a half weeks. But since touring is clearly expensive and presents major organizational and technical problems, why bother to tour at all? Clive Gillinson, the managing director, says: "A great international orchestra needs to work with the greatest conductors and soloists. No recording company will record a conductor or soloist if he or she is only known in one territory—they need an international reputation. So for the recording side to work, you have to visit the key markets; you need to tour."</p>
+
+<p><b>(B)</b> By touring with projects or festivals, Gillinson is able to create an event, not just provide a series of concerts. <b>It</b> is more expensive to do, but when you leave town, you are not so easily forgotten.</p>
+
+<p><b>(C)</b> For Sue Mallet, the orchestra's administrator, the difficulties of her job lie in getting a symphony orchestra and its instruments on stage, on time, and in one piece. However well she plans each tour—and she does her planning <b>with scientific accuracy</b>—events sometimes take an unexpected turn. On one occasion, a concert had been advertised for the wrong night, and on another, the lorry carrying the instruments from the airport to the concert hall broke down and got stuck in snow.</p>
+
+<p><b>(D)</b> It is a tiring and stressful business flying around the world, and yet, on balance, it is one of the rewards of the job. Certain moments are <b>unforgettable</b>. At the end of a concert in Moscow, an enthusiastic audience had brought the orchestra to its feet. As one of the musicians was about to sit down, an elderly lady in the front row pressed a piece of paper into his hand. It said, in simple English, what lovely music the orchestra had made.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What do footballers and musicians have in common?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. They enjoy extremely noisy audiences.															</div>
+																				<div class="ps-4 mb-2">
+																	B. They receive too much unfair criticism.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Their work abroad earns a lot of praise.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. They experience tension in their work.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What do footballers and musicians have in common?</strong> (Cầu thủ bóng đá và nhạc công có điểm gì chung?)</p> 
+<ul> 
+<li>❌ <strong>Their work abroad earns a lot of praise.</strong> (Công việc của họ ở nước ngoài nhận được rất nhiều lời khen ngợi.) → Sai, vì không có thông tin nào trong đoạn văn nói rằng họ luôn được khen ngợi khi làm việc ở nước ngoài.</li> 
+<li>❌ <strong>They receive too much unfair criticism.</strong> (Họ nhận quá nhiều chỉ trích không công bằng.) → Sai, vì đoạn văn không đề cập đến việc cả hai nhóm này bị chỉ trích nhiều.</li> 
+<li>❌ <strong>They enjoy extremely noisy audiences.</strong> (Họ thích những khán giả ồn ào.) → Sai, vì chỉ có khán giả bóng đá là ồn ào, nhạc công không có đặc điểm này.</li> 
+<li>✅ <strong>They experience tension in their work.</strong> (Họ trải qua căng thẳng trong công việc.) → Đúng, vì câu đầu tiên của đoạn (A) đề cập đến việc cả cầu thủ bóng đá và nhạc công đều có công việc căng thẳng trước khán giả.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: What are we told about Rod Franks?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He used to be a professional trumpeter.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. He switched from one career to another.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. He disliked his original choice of career.															</div>
+																				<div class="ps-4 mb-2">
+																	D. He used to be the director of a football club.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What are we told about Rod Franks?</strong> (Chúng ta biết được điều gì về Rod Franks?)</p> 
+<ul> 
+<li>❌ <strong>He used to be the director of a football club.</strong> (Ông từng là giám đốc của một câu lạc bộ bóng đá.) → Sai, vì ông từng làm việc ở Leeds United nhưng không phải là giám đốc.</li> 
+<li>✅ <strong>He switched from one career to another.</strong> (Ông ấy chuyển từ một nghề sang nghề khác.) → Đúng, vì Rod Franks ban đầu làm việc trong bóng đá nhưng sau đó trở thành nhạc công.</li> 
+<li>❌ <strong>He used to be a professional trumpeter.</strong> (Ông từng là một nghệ sĩ trumpet chuyên nghiệp.) → Sai, vì ông chỉ trở thành nhạc công chuyên nghiệp sau khi từ bỏ bóng đá.</li> 
+<li>❌ <strong>He disliked his original choice of career.</strong> (Ông không thích công việc đầu tiên của mình.) → Sai, vì không có thông tin nào nói rằng ông ấy ghét công việc đầu tiên của mình.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: Before joining London Symphony Orchestra, Rod Franks worked for _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. an event organizing firm															</div>
+																				<div class="ps-4 mb-2">
+																	B. a consulting firm															</div>
+																				<div class="ps-4 mb-2">
+																	C. a travel agency															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. a football club</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Before joining London Symphony Orchestra, Rod Franks worked for _____?</strong> (Trước khi gia nhập Dàn nhạc Giao hưởng London, Rod Franks đã làm việc ở đâu?)</p> 
+<ul> 
+<li>✅ <strong>a football club</strong> (một câu lạc bộ bóng đá) → Đúng, vì đoạn (A) đề cập rằng ông ấy từng làm việc cho Leeds United.</li> 
+<li>❌ <strong>a travel agency</strong> (một công ty du lịch) → Sai, vì không có thông tin nào nói rằng ông ấy làm trong lĩnh vực du lịch.</li> 
+<li>❌ <strong>a consulting firm</strong> (một công ty tư vấn) → Sai, vì công việc của ông ấy không liên quan đến tư vấn.</li> 
+<li>❌ <strong>an event organizing firm</strong> (một công ty tổ chức sự kiện) → Sai, vì ông ấy không làm việc trong lĩnh vực tổ chức sự kiện.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: The word "principal" in paragraph (A) can be best replaced by?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. original															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. main</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. prime															</div>
+																				<div class="ps-4 mb-2">
+																	D. initial															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "principal" in paragraph (A) can be best replaced by?</strong> (Từ "principal" trong đoạn (A) có thể được thay thế tốt nhất bằng từ nào?)</p> 
+<ul> 
+<li>❌ <strong>original</strong> (ban đầu) → Sai, vì "principal" ở đây mang nghĩa "chính" hoặc "quan trọng nhất", không phải "ban đầu".</li> 
+<li>✅ <strong>main</strong> (chính) → Đúng, vì "principal trumpeter" có nghĩa là nhạc công kèn trumpet chính của dàn nhạc.</li> 
+<li>❌ <strong>prime</strong> (hàng đầu) → Sai, mặc dù nghĩa gần đúng nhưng từ "prime" thường được dùng cho vị trí hàng đầu về tầm quan trọng.</li> 
+<li>❌ <strong>initial</strong> (đầu tiên) → Sai, vì từ này mang nghĩa "bắt đầu", không phải "chính yếu".</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: The LSO began playing abroad _____?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. only fairly recently.															</div>
+																				<div class="ps-4 mb-2">
+																	B. over a hundred years ago.															</div>
+																				<div class="ps-4 mb-2">
+																	C. when it needed money.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. when it was first set up.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The LSO began playing abroad _____?</strong> (Dàn nhạc Giao hưởng London bắt đầu biểu diễn ở nước ngoài khi nào?)</p> 
+<ul> 
+<li>❌ <strong>only fairly recently.</strong> (chỉ mới gần đây.) → Sai, vì dàn nhạc đã biểu diễn quốc tế từ gần một thế kỷ trước.</li> 
+<li>❌ <strong>over a hundred years ago.</strong> (hơn một trăm năm trước.) → Sai, vì đoạn văn không nói chính xác là hơn 100 năm trước.</li> 
+<li>✅ <strong>when it was first set up.</strong> (khi nó mới được thành lập.) → Đúng, vì đoạn (A) nói rằng dàn nhạc đã biểu diễn quốc tế từ khi được thành lập.</li> 
+<li>❌ <strong>when it needed money.</strong> (khi nó cần tiền.) → Sai, vì không có thông tin nào cho thấy động cơ tài chính là lý do chính cho việc lưu diễn.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Orchestras have to travel abroad _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. to play with foreign conductors.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. to make themselves better known.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. to record with foreign companies.															</div>
+																				<div class="ps-4 mb-2">
+																	D. to record with new solo players.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Orchestras have to travel abroad _____</strong> (Các dàn nhạc phải đi lưu diễn nước ngoài để _____)</p> 
+<ul> 
+<li>❌ <strong>to play with foreign conductors.</strong> (để chơi cùng các nhạc trưởng nước ngoài) → Sai, vì lý do chính không phải để làm việc với các nhạc trưởng nước ngoài.</li> 
+<li>❌ <strong>to record with foreign companies.</strong> (để thu âm với các công ty nước ngoài) → Sai, vì thu âm không phải là mục tiêu chính của các chuyến lưu diễn.</li> 
+<li>✅ <strong>to make themselves better known.</strong> (để làm cho họ được biết đến nhiều hơn) → Đúng, vì đoạn (A) nhấn mạnh rằng các dàn nhạc phải lưu diễn để xây dựng danh tiếng quốc tế.</li> 
+<li>❌ <strong>to record with new solo players.</strong> (để thu âm với các nghệ sĩ độc tấu mới) → Sai, vì mục đích không phải là thu âm với nghệ sĩ mới.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What does "It" in paragraph (B) refer to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. providing more than just concerts</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. visiting the most important markets															</div>
+																				<div class="ps-4 mb-2">
+																	C. the expense of touring in a country															</div>
+																				<div class="ps-4 mb-2">
+																	D. organising a number of recordings															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does "It" in paragraph (B) refer to?</strong> ("It" trong đoạn (B) đề cập đến điều gì?)</p> 
+<ul> 
+<li>❌ <strong>organising a number of recordings.</strong> (tổ chức một số buổi thu âm) → Sai, vì đoạn (B) không đề cập đến việc thu âm.</li> 
+<li>❌ <strong>visiting the most important markets.</strong> (đến thăm các thị trường quan trọng nhất) → Sai, vì điều này không phù hợp với ngữ cảnh.</li> 
+<li>❌ <strong>the expense of touring in a country.</strong> (chi phí lưu diễn trong một quốc gia) → Sai, vì từ "It" không đề cập đến chi phí.</li> 
+<li>✅ <strong>providing more than just concerts.</strong> (cung cấp nhiều hơn chỉ là các buổi hòa nhạc) → Đúng, vì đoạn văn nói về việc lưu diễn theo dự án để tạo ra một sự kiện đáng nhớ.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: Sue Mallet's arrangements for the LSO can be _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. spoilt by very careless planning.															</div>
+																				<div class="ps-4 mb-2">
+																	B. spoilt by overlooking tiny details.															</div>
+																				<div class="ps-4 mb-2">
+																	C. made difficult by awkward players.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. affected by external circumstances.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Sue Mallet's arrangements for the LSO can be _____</strong> (Sự sắp xếp của Sue Mallet cho LSO có thể bị _____)</p> 
+<ul> 
+<li>✅ <strong>affected by external circumstances.</strong> (bị ảnh hưởng bởi các yếu tố bên ngoài) → Đúng, vì đoạn (C) đề cập đến việc các sự kiện bất ngờ có thể làm gián đoạn kế hoạch.</li> 
+<li>❌ <strong>made difficult by awkward players.</strong> (bị gây khó khăn bởi các nhạc công khó chịu) → Sai, vì đoạn văn không nói về nhạc công gây ra vấn đề.</li> 
+<li>❌ <strong>spoilt by overlooking tiny details.</strong> (bị hủy hoại do bỏ qua các chi tiết nhỏ) → Sai, vì đoạn văn không đề cập đến việc cô ấy thiếu chú ý đến chi tiết.</li> 
+<li>❌ <strong>spoilt by very careless planning.</strong> (bị hủy hoại do lập kế hoạch bất cẩn) → Sai, vì đoạn (C) nhấn mạnh rằng cô ấy lên kế hoạch rất tỉ mỉ.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What does the phrase "with scientific accuracy" in paragraph (C) suggest about Sue Mallet’s planning?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. She used to be a scientist.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. The details are excellent.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Her figures are correct.															</div>
+																				<div class="ps-4 mb-2">
+																	D. It's very neat and tidy.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does the phrase "with scientific accuracy" in paragraph (C) suggest about Sue Mallet’s planning?</strong> (Cụm từ "với độ chính xác khoa học" trong đoạn (C) gợi ý điều gì về kế hoạch của Sue Mallet?)</p> 
+<ul> 
+<li>❌ <strong>It's very neat and tidy.</strong> (Nó rất gọn gàng và ngăn nắp.) → Sai, vì không chỉ đơn giản là sự gọn gàng.</li> 
+<li>❌ <strong>Her figures are correct.</strong> (Các con số của cô ấy chính xác.) → Sai, vì không có đề cập đến số liệu.</li> 
+<li>❌ <strong>She used to be a scientist.</strong> (Cô ấy từng là một nhà khoa học.) → Sai, vì cụm từ chỉ là phép ẩn dụ cho việc lập kế hoạch cẩn thận.</li> 
+<li>✅ <strong>The details are excellent.</strong> (Các chi tiết được làm rất tốt.) → Đúng, vì "scientific accuracy" ở đây có nghĩa là cô ấy lập kế hoạch rất chi tiết và chính xác.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: According to the writer, what made a certain moment "unforgettable" in paragraph (D)?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the fact that a message was in English															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. an individual's appreciation</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. the fact that the orchestra stood up															</div>
+																				<div class="ps-4 mb-2">
+																	D. the enthusiastic applause															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the writer, what made a certain moment "unforgettable" in paragraph (D)?</strong> (Theo tác giả, điều gì làm cho một khoảnh khắc trở nên "không thể nào quên" trong đoạn (D)?)</p> 
+<ul> 
+<li>❌ <strong>the fact that the orchestra stood up.</strong> (việc cả dàn nhạc đứng dậy) → Sai, vì điều này xảy ra do phản ứng của khán giả.</li> 
+<li>✅ <strong>an individual's appreciation.</strong> (sự trân trọng của một cá nhân) → Đúng, vì khoảnh khắc đặc biệt là khi một bà cụ đã đưa một mẩu giấy với lời khen về âm nhạc của dàn nhạc.</li> 
+<li>❌ <strong>the enthusiastic applause.</strong> (tiếng vỗ tay nhiệt tình) → Sai, vì điều làm cho khoảnh khắc đặc biệt không chỉ là tiếng vỗ tay.</li> 
+<li>❌ <strong>the fact that a message was in English.</strong> (việc thông điệp được viết bằng tiếng Anh) → Sai, vì điều đặc biệt không phải là ngôn ngữ mà là hành động của bà cụ.</li> 
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

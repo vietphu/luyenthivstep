@@ -1,0 +1,576 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 46 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79960				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> During the seventeenth and eighteenth centuries, almost nothing was written about the contributions of women during the colonial period and the early history of the newly formed United States. Lacking the right to vote and absent from the seats of power, women were not considered an important force in history. Anne Bradstreet wrote some significant poetry in the seventeenth century, Mercy Otis Warren produced the best <b>contemporary</b> history of the American Revolution, and Abigail Adams penned important letters showing she exercised great political influence over her husband, John, the second President of the United States. But little or no notice was taken of these contributions. During these centuries, women remained invisible in history books.</p>
+
+<p><b>(B)</b> Throughout the nineteenth century, this lack of visibility continued, despite the efforts of female authors writing about women. These writers, like most of their male counterparts, were amateur historians. Their writings were <b>celebratory</b> in nature, and <b>they</b> were uncritical in their selection and use of sources.</p>
+
+<p><b>(C)</b> During the nineteenth century, however, certain feminists showed a keen sense of history by keeping records of activities in which women were engaged. National, regional, and local women's organizations compiled accounts of their doings. Personal correspondence, newspaper clippings, and souvenirs were saved and stored. These sources formed the core of the two greatest collections of women's history in the United States—one at the Elizabeth and Arthur Schlesinger Library at Radcliffe College, and the other at the Sophia Smith Collection at Smith College. Such sources have provided valuable materials for later generations of historians.</p>
+
+<p><b>(D)</b> Despite the gathering of more information about ordinary women during the nineteenth century, most of the writing about women conformed to the "great women" theory of history, just as much of mainstream American history concentrated on "great men." To demonstrate that women were making significant contributions to American life, female authors singled out women leaders and wrote biographies, or else important women produced their autobiographies. Most of these leaders were involved in public life as reformers or activists working for women's right to vote, or as authors, and were not <b>representative</b> at all of the great number of ordinary women. The lives of ordinary people continued, generally, to be untold in the American histories being published.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Trong suốt thế kỷ XVII và XVIII, hầu như không có tài liệu nào viết về những đóng góp của phụ nữ trong thời kỳ thuộc địa và giai đoạn đầu lịch sử của Hợp chúng quốc Hoa Kỳ mới thành lập. Khi không có quyền bầu cử và vắng mặt trong các vị trí quyền lực, phụ nữ không được coi là một lực lượng quan trọng trong lịch sử. Anne Bradstreet đã viết một số bài thơ có giá trị vào thế kỷ XVII, Mercy Otis Warren đã viết một tác phẩm lịch sử <b>đương thời</b> xuất sắc về Cách mạng Mỹ, và Abigail Adams đã viết những bức thư quan trọng cho thấy bà có ảnh hưởng chính trị lớn đối với chồng mình, John Adams, Tổng thống thứ hai của Hoa Kỳ. Tuy nhiên, những đóng góp này hầu như không được ghi nhận. Trong suốt hai thế kỷ đó, phụ nữ vẫn là những nhân vật vô hình trong các cuốn sách lịch sử.</p>   <p><b>(B)</b> Trong suốt thế kỷ XIX, sự thiếu vắng này vẫn tiếp diễn, mặc dù đã có những nỗ lực từ các nữ tác giả viết về phụ nữ. Những nhà văn này, giống như hầu hết các đồng nghiệp nam của họ, đều là những nhà sử học nghiệp dư. Các tác phẩm của họ mang tính <b>tôn vinh</b>, và <b>họ</b> không có sự chọn lọc hoặc đánh giá phê bình trong việc sử dụng nguồn tài liệu.</p>   <p><b>(C)</b> Tuy nhiên, trong thế kỷ XIX, một số nhà nữ quyền đã thể hiện sự nhạy bén trong lịch sử bằng cách lưu giữ hồ sơ về các hoạt động mà phụ nữ tham gia. Các tổ chức phụ nữ ở cấp quốc gia, khu vực và địa phương đã biên soạn những tài liệu về hoạt động của họ. Thư từ cá nhân, bài báo cắt từ báo chí và các kỷ vật được lưu giữ và bảo quản. Những tài liệu này đã hình thành nên hai bộ sưu tập lịch sử phụ nữ quan trọng nhất ở Hoa Kỳ—một tại Thư viện Elizabeth và Arthur Schlesinger ở Radcliffe College, và một tại Bộ sưu tập Sophia Smith ở Smith College. Những nguồn tư liệu này đã cung cấp tài liệu quý giá cho các thế hệ sử gia sau này.</p>   <p><b>(D)</b> Mặc dù đã có nhiều thông tin hơn về những người phụ nữ bình thường trong thế kỷ XIX, nhưng hầu hết các tác phẩm viết về phụ nữ vẫn tuân theo lý thuyết "phụ nữ vĩ đại" trong lịch sử, giống như cách mà phần lớn lịch sử Hoa Kỳ tập trung vào các "vĩ nhân". Để chứng minh rằng phụ nữ đã có những đóng góp đáng kể cho đời sống nước Mỹ, các nữ tác giả đã chọn ra những phụ nữ lãnh đạo và viết tiểu sử về họ, hoặc chính những phụ nữ quan trọng này tự viết hồi ký về cuộc đời mình. Hầu hết những nhà lãnh đạo này đều tham gia vào đời sống công chúng với tư cách là những nhà cải cách hoặc nhà hoạt động đấu tranh cho quyền bầu cử của phụ nữ, hoặc là các nhà văn, và họ không <b>đại diện</b> cho số đông phụ nữ bình thường. Cuộc sống của những người phụ nữ bình thường vẫn tiếp tục bị bỏ quên trong các cuốn sách lịch sử Hoa Kỳ được xuất bản.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>(A)</b> During the seventeenth and eighteenth centuries, almost nothing was written about the contributions of women during the colonial period and the early history of the newly formed United States. Lacking the right to vote and absent from the seats of power, women were not considered an important force in history. Anne Bradstreet wrote some significant poetry in the seventeenth century, Mercy Otis Warren produced the best <b>contemporary</b> history of the American Revolution, and Abigail Adams penned important letters showing she exercised great political influence over her husband, John, the second President of the United States. But little or no notice was taken of these contributions. During these centuries, women remained invisible in history books.</p>
+
+<p><b>(B)</b> Throughout the nineteenth century, this lack of visibility continued, despite the efforts of female authors writing about women. These writers, like most of their male counterparts, were amateur historians. Their writings were <b>celebratory</b> in nature, and <b>they</b> were uncritical in their selection and use of sources.</p>
+
+<p><b>(C)</b> During the nineteenth century, however, certain feminists showed a keen sense of history by keeping records of activities in which women were engaged. National, regional, and local women's organizations compiled accounts of their doings. Personal correspondence, newspaper clippings, and souvenirs were saved and stored. These sources formed the core of the two greatest collections of women's history in the United States—one at the Elizabeth and Arthur Schlesinger Library at Radcliffe College, and the other at the Sophia Smith Collection at Smith College. Such sources have provided valuable materials for later generations of historians.</p>
+
+<p><b>(D)</b> Despite the gathering of more information about ordinary women during the nineteenth century, most of the writing about women conformed to the "great women" theory of history, just as much of mainstream American history concentrated on "great men." To demonstrate that women were making significant contributions to American life, female authors singled out women leaders and wrote biographies, or else important women produced their autobiographies. Most of these leaders were involved in public life as reformers or activists working for women's right to vote, or as authors, and were not <b>representative</b> at all of the great number of ordinary women. The lives of ordinary people continued, generally, to be untold in the American histories being published.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What does the passage mainly discuss?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. The place of American women in written histories</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. The "great women" approach to history used by American historians															</div>
+																				<div class="ps-4 mb-2">
+																	C. The role of literature in early American histories															</div>
+																				<div class="ps-4 mb-2">
+																	D. The keen sense of history shown by American women															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does the passage mainly discuss?</strong> (Bài đọc chủ yếu thảo luận về điều gì?)</p>
+<ul>
+<li>❌ <strong>The role of literature in early American histories. (Vai trò của văn học trong lịch sử Hoa Kỳ thời kỳ đầu.)</strong> → Sai. Bài đọc không tập trung vào văn học mà là sự hiện diện của phụ nữ trong lịch sử.</li>
+<li>✅ <strong>The place of American women in written histories. (Vị trí của phụ nữ Hoa Kỳ trong các tư liệu lịch sử được viết.)</strong> → Đúng. Bài đọc đề cập đến việc phụ nữ ít được ghi nhận trong các tài liệu lịch sử.</li>
+<li>❌ <strong>The keen sense of history shown by American women. (Nhận thức sắc bén về lịch sử của phụ nữ Hoa Kỳ.)</strong> → Sai. Mặc dù có một số nhà nữ quyền quan tâm đến lịch sử, nhưng đây không phải là trọng tâm chính.</li>
+<li>❌ <strong>The "great women" approach to history used by American historians. (Cách tiếp cận "phụ nữ vĩ đại" trong lịch sử của các nhà sử học Hoa Kỳ.)</strong> → Sai. Bài đọc có đề cập đến điều này nhưng không phải ý chính.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: In paragraph (A), the word 'contemporary' is closest in meaning to...?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. informative															</div>
+																				<div class="ps-4 mb-2">
+																	B. thoughtful															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. written at that time</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. faultfinding															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (A), the word "contemporary" is closest in meaning to...?</strong> (Trong đoạn (A), từ "contemporary" có nghĩa gần nhất với từ nào?)</p>
+<ul>
+<li>❌ <strong>informative. (Cung cấp thông tin.)</strong> → Sai. "Contemporary" không có nghĩa là cung cấp thông tin.</li>
+<li>✅ <strong>written at that time. (Được viết vào thời điểm đó.)</strong> → Đúng. "Contemporary" có nghĩa là cùng thời điểm xảy ra sự kiện.</li>
+<li>❌ <strong>thoughtful. (Sâu sắc.)</strong> → Sai. "Contemporary" không liên quan đến việc thể hiện sự sâu sắc.</li>
+<li>❌ <strong>faultfinding. (Chỉ trích.)</strong> → Sai. "Contemporary" không mang nghĩa chỉ trích.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: In paragraph (A), why does the author mention Bradstreet, Warren, and Adams?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. only three women were able to get their writing published															</div>
+																				<div class="ps-4 mb-2">
+																	B. a woman's status was changed by marriage															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. even the contributions of outstanding women were ignored</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. poetry produced by women was more readily accepted than other writing by women															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (A), why does the author mention Bradstreet, Warren, and Adams?</strong> (Tại sao tác giả đề cập đến Bradstreet, Warren và Adams trong đoạn A?)</p>
+<ul>
+<li>❌ <strong>a woman's status was changed by marriage. (Tình trạng của một người phụ nữ thay đổi sau khi kết hôn.)</strong> → Sai. Bài đọc không đề cập đến hôn nhân.</li>
+<li>✅ <strong>even the contributions of outstanding women were ignored. (Ngay cả những đóng góp của phụ nữ nổi bật cũng bị bỏ qua.)</strong> → Đúng. Tác giả sử dụng ba phụ nữ này làm ví dụ về việc phụ nữ bị lãng quên trong lịch sử.</li>
+<li>❌ <strong>only three women were able to get their writing published. (Chỉ có ba phụ nữ có thể xuất bản tác phẩm của họ.)</strong> → Sai. Không có thông tin nào trong bài đọc đề cập đến điều này.</li>
+<li>❌ <strong>poetry produced by women was more readily accepted than other writing by women. (Thơ của phụ nữ dễ được chấp nhận hơn so với các tác phẩm khác của họ.)</strong> → Sai. Bài đọc không so sánh giữa thơ và các thể loại khác.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: In paragraph (B), the word 'celebratory' is closest in meaning to...?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. religious															</div>
+																				<div class="ps-4 mb-2">
+																	B. serious															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. full of praise</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. related to parties															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (B), the word "celebratory" is closest in meaning to...?</strong> (Trong đoạn (B), từ "celebratory" có nghĩa gần nhất với từ nào?)</p>
+<ul>
+<li>❌ <strong>related to parties. (Liên quan đến tiệc tùng.)</strong> → Sai. "Celebratory" không đề cập đến tiệc tùng.</li>
+<li>❌ <strong>religious. (Tôn giáo.)</strong> → Sai. Từ này không liên quan đến tôn giáo.</li>
+<li>❌ <strong>serious. (Nghiêm túc.)</strong> → Sai. "Celebratory" không có nghĩa là nghiêm túc.</li>
+<li>✅ <strong>full of praise. (Đầy lời ca ngợi.)</strong> → Đúng. "Celebratory" trong ngữ cảnh này có nghĩa là ca ngợi những thành tựu của phụ nữ.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: In paragraph (B), what does the word 'they' refer to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. authors</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. counterparts															</div>
+																				<div class="ps-4 mb-2">
+																	C. efforts															</div>
+																				<div class="ps-4 mb-2">
+																	D. sources															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (B), what does the word "they" refer to?</strong> (Trong đoạn (B), từ "they" ám chỉ đến điều gì?)</p>
+<ul>
+<li>❌ <strong>efforts. (Những nỗ lực.)</strong> → Sai. "They" không đề cập đến nỗ lực.</li>
+<li>✅ <strong>authors. (Các tác giả.)</strong> → Đúng. "They" ám chỉ đến các tác giả nữ đang viết về phụ nữ.</li>
+<li>❌ <strong>counterparts. (Những người đồng cấp.)</strong> → Sai. Không có thông tin nào cho thấy "they" đề cập đến counterparts.</li>
+<li>❌ <strong>sources. (Nguồn tư liệu.)</strong> → Sai. "They" không ám chỉ các nguồn tư liệu.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: In paragraph (B), what weakness in nineteenth-century histories does the author mention?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. They were printed on poor-quality paper.															</div>
+																				<div class="ps-4 mb-2">
+																	B. They put too much emphasis on daily activities.															</div>
+																				<div class="ps-4 mb-2">
+																	C. They left out discussion of the influence of money on politics.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. The sources of the information they were based on were not necessarily accurate.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (B), what weakness in nineteenth-century histories does the author mention?</strong> (Trong đoạn (B), tác giả đề cập đến điểm yếu nào trong các tư liệu lịch sử thế kỷ XIX?)</p>
+<ul>
+<li>❌ <strong>They put too much emphasis on daily activities. (Họ tập trung quá nhiều vào các hoạt động hàng ngày.)</strong> → Sai. Không có thông tin nào trong bài đề cập đến điều này.</li>
+<li>❌ <strong>They left out discussion of the influence of money on politics. (Họ bỏ qua ảnh hưởng của tiền bạc đối với chính trị.)</strong> → Sai. Tác giả không đề cập đến yếu tố tiền bạc.</li>
+<li>✅ <strong>The sources of the information they were based on were not necessarily accurate. (Các nguồn thông tin mà họ dựa vào không nhất thiết phải chính xác.)</strong> → Đúng. Các nhà sử học nghiệp dư trong thế kỷ XIX không có sự chọn lọc và đánh giá phê bình đối với nguồn tư liệu.</li>
+<li>❌ <strong>They were printed on poor-quality paper. (Họ được in trên giấy chất lượng kém.)</strong> → Sai. Bài đọc không nhắc đến chất lượng giấy.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: Based on paragraph (C), which of the following would most likely have been collected by nineteenth-century feminist organizations?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Biographies of John Adams															</div>
+																				<div class="ps-4 mb-2">
+																	B. Newspaper accounts of presidential election results															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Letters from a mother to a daughter advising her how to handle a family problem</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Books about famous graduates of the country's first college															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Based on paragraph (C), which of the following would most likely have been collected by nineteenth-century feminist organizations?</strong> (Dựa trên đoạn (C), tài liệu nào dưới đây có khả năng cao nhất đã được các tổ chức nữ quyền thế kỷ XIX thu thập?)</p>
+<ul>
+<li>❌ <strong>Newspaper accounts of presidential election results. (Các bài báo về kết quả bầu cử tổng thống.)</strong> → Sai. Bài đọc không đề cập đến chính trị tổng thống.</li>
+<li>❌ <strong>Biographies of John Adams. (Tiểu sử của John Adams.)</strong> → Sai. Tiểu sử của một tổng thống nam không thuộc lĩnh vực quan tâm chính của các tổ chức nữ quyền.</li>
+<li>✅ <strong>Letters from a mother to a daughter advising her how to handle a family problem. (Thư từ một người mẹ gửi con gái, hướng dẫn cách giải quyết vấn đề gia đình.)</strong> → Đúng. Thư từ cá nhân của phụ nữ là một trong những loại tài liệu được lưu trữ.</li>
+<li>❌ <strong>Books about famous graduates of the country's first college. (Sách về những cựu sinh viên nổi tiếng của trường đại học đầu tiên của quốc gia.)</strong> → Sai. Đây không phải là chủ đề chính của tài liệu lịch sử phụ nữ.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: In paragraph (C), how were the nineteenth-century women's history materials in the Schlesinger Library and the Sophia Smith Collection used?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. They were combined and published in a multivolume encyclopedia.															</div>
+																				<div class="ps-4 mb-2">
+																	B. They were shared among women's colleges throughout the United States.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. They provided valuable information for twentieth-century historical researchers.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. They formed the basis of college courses in the nineteenth century.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (C), how were the nineteenth-century women's history materials in the Schlesinger Library and the Sophia Smith Collection used?</strong> (Trong đoạn (C), tài liệu lịch sử phụ nữ thế kỷ XIX trong Thư viện Schlesinger và Bộ sưu tập Sophia Smith đã được sử dụng như thế nào?)</p>
+<ul>
+<li>❌ <strong>They were combined and published in a multivolume encyclopedia. (Chúng được kết hợp và xuất bản thành một bộ bách khoa toàn thư nhiều tập.)</strong> → Sai. Không có thông tin nào nói rằng chúng được xuất bản dưới dạng bách khoa toàn thư.</li>
+<li>❌ <strong>They formed the basis of college courses in the nineteenth century. (Chúng là cơ sở cho các khóa học đại học trong thế kỷ XIX.)</strong> → Sai. Chúng chỉ trở thành nguồn tư liệu hữu ích cho các thế hệ sau.</li>
+<li>✅ <strong>They provided valuable information for twentieth-century historical researchers. (Chúng cung cấp thông tin quý giá cho các nhà nghiên cứu lịch sử thế kỷ XX.)</strong> → Đúng. Bài đọc đề cập đến việc các tài liệu này đã giúp các thế hệ sử gia sau này.</li>
+<li>❌ <strong>They were shared among women's colleges throughout the United States. (Chúng được chia sẻ giữa các trường đại học dành cho phụ nữ trên khắp Hoa Kỳ.)</strong> → Sai. Không có thông tin nào trong bài đọc đề cập đến điều này.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: In paragraph (D), which of the following is NOT mentioned as a possible role of nineteenth-century 'great women'?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. politicians</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. activists for women's rights															</div>
+																				<div class="ps-4 mb-2">
+																	C. authors															</div>
+																				<div class="ps-4 mb-2">
+																	D. reformers															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (D), which of the following is NOT mentioned as a possible role of nineteenth-century 'great women'?</strong> (Trong đoạn (D), vai trò nào dưới đây KHÔNG được đề cập đến như một vai trò có thể có của 'phụ nữ vĩ đại' thế kỷ XIX?)</p>
+<ul>
+<li>✅ <strong>politicians. (Chính trị gia.)</strong> → Đúng. Bài đọc không đề cập đến việc phụ nữ thế kỷ XIX hoạt động như các chính trị gia.</li>
+<li>❌ <strong>authors. (Tác giả.)</strong> → Sai. Phụ nữ thế kỷ XIX có thể là tác giả viết sách.</li>
+<li>❌ <strong>reformers. (Nhà cải cách.)</strong> → Sai. Nhiều phụ nữ thế kỷ XIX hoạt động như nhà cải cách.</li>
+<li>❌ <strong>activists for women's rights. (Nhà hoạt động đấu tranh cho quyền phụ nữ.)</strong> → Sai. Đây là một trong những vai trò quan trọng của họ.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: In paragraph (D), the word 'representative' is closest in meaning to...?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. supportive															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. typical</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. satisfied															</div>
+																				<div class="ps-4 mb-2">
+																	D. distinctive															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (D), the word "representative" is closest in meaning to...?</strong> (Trong đoạn (D), từ "representative" có nghĩa gần nhất với từ nào?)</p>
+<ul>
+<li>✅ <strong>typical. (Tiêu biểu.)</strong> → Đúng. "Representative" trong ngữ cảnh này có nghĩa là điển hình hoặc đại diện.</li>
+<li>❌ <strong>satisfied. (Hài lòng.)</strong> → Sai. "Representative" không có nghĩa là hài lòng.</li>
+<li>❌ <strong>supportive. (Ủng hộ.)</strong> → Sai. "Representative" không có nghĩa là hỗ trợ.</li>
+<li>❌ <strong>distinctive. (Khác biệt.)</strong> → Sai. "Representative" không có nghĩa là khác biệt.</li>
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

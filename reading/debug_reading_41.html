@@ -1,0 +1,588 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 41 - Part 1				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79955				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>The Association of Southeast Asian Nations (ASEAN)</b></p>
+
+<p><b>(A)</b> The Association of Southeast Asian Nations (ASEAN) is the main political and economic organization for that area. The leaders' summit is their last meeting before the launch of the ASEAN Economic Community, or AEC, on December 31.</p>
+
+<p><b>(B)</b> The AEC will be equivalent to the world's seventh-largest economy. <b>It</b> was set up to create a highly competitive single market and production area. Organizers hope it will ease the movement of capital, goods, investment, services, and skilled labor across ASEAN countries. The goal is to make the whole area more competitive and economically successful.</p>
+
+<p><b>(C)</b> But some business leaders have low expectations for the ASEAN summit. Anthony Nelson is a director at the US-ASEAN Business Council in Washington. He believes that security will be an important issue at the meetings, especially after the terrorist attacks in Paris last week. "The November summit includes the East Asia Summit, which primarily focuses on political and security issues. So that's going to be a big part of what is actually going on around the summit. A lot of the work that business gets really involved in tends to happen around the ASEAN economic ministers' meeting in August." But the AEC may have only limited influence on business activity when it comes into being next year. Experts expect little to change at first because there is still much to be done.</p>
+
+<p><b>(D)</b> "The ASEAN Single Window, which is a customs project, is still very much a work in progress. But beginning next year, they will start limited trials with five of the ten ASEAN countries. And there have been past mutual recognition agreements for <b>credentials</b> of skilled professionals. But there's still a lot of work to be done in terms of actually <b>implementing</b> those agreements."</p>
+
+<p><b>(E)</b> Some critics say the AEC will mainly help businesses, not the majority of people in Southeast Asia. Earlier this year, the ASEAN Civil Society Conference and ASEAN Peoples' Forum expressed concern about regional economic <b>integration</b>. In a statement, the group said such a move would mean unequal and unsustainable economic growth. This, it said, would result "in worsening poverty and inequalities of wealth."</p>
+
+<p><b>(F)</b> Jerald Joseph is co-chair of the ASEAN People's Forum. He says people crossing borders to find employment need more protection. He said: "Cross-border migrant workers don't have the same level of protection or interest in the whole negotiation. So that's a little bit of a pity, a wasted chance, if it's not reflected in the coming document." The 27<sup>th</sup> ASEAN Summit includes the organization's partners. Nations including China, India, Japan, and the United States are to attend.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>Hiệp Hội Các Quốc Gia Đông Nam Á (ASEAN)</b></p>   <p><b>(A)</b> Hiệp hội các quốc gia Đông Nam Á (ASEAN) là tổ chức chính trị và kinh tế quan trọng nhất của khu vực này. Hội nghị thượng đỉnh của các nhà lãnh đạo là cuộc họp cuối cùng trước khi Cộng đồng Kinh tế ASEAN (AEC) chính thức ra mắt vào ngày 31 tháng 12.</p>   <p><b>(B)</b> AEC sẽ tương đương với nền kinh tế lớn thứ bảy trên thế giới. <b>Nó</b> được thành lập nhằm tạo ra một thị trường đơn nhất có tính cạnh tranh cao và một khu vực sản xuất chung. Các nhà tổ chức hy vọng rằng AEC sẽ giúp việc di chuyển vốn, hàng hóa, đầu tư, dịch vụ và lao động có tay nghề cao giữa các quốc gia ASEAN trở nên dễ dàng hơn. Mục tiêu là làm cho toàn khu vực trở nên cạnh tranh hơn và thành công hơn về mặt kinh tế.</p>   <p><b>(C)</b> Tuy nhiên, một số lãnh đạo doanh nghiệp không kỳ vọng cao vào hội nghị thượng đỉnh ASEAN lần này. Anthony Nelson, giám đốc Hội đồng Kinh doanh Mỹ-ASEAN tại Washington, tin rằng vấn đề an ninh sẽ là một trọng tâm quan trọng tại các cuộc họp, đặc biệt là sau các cuộc tấn công khủng bố ở Paris vào tuần trước. "Hội nghị thượng đỉnh tháng 11 bao gồm Hội nghị thượng đỉnh Đông Á, vốn chủ yếu tập trung vào các vấn đề chính trị và an ninh. Vì vậy, đó sẽ là một phần quan trọng của những gì diễn ra trong hội nghị thượng đỉnh. Phần lớn công việc liên quan đến kinh doanh thường được giải quyết trong cuộc họp của các bộ trưởng kinh tế ASEAN vào tháng 8." Nhưng khi AEC chính thức được triển khai vào năm tới, nó có thể chỉ có ảnh hưởng hạn chế đến hoạt động kinh doanh. Các chuyên gia dự đoán sẽ có rất ít thay đổi ban đầu vì vẫn còn nhiều việc phải làm.</p>   <p><b>(D)</b> "Dự án Cửa sổ Đơn ASEAN (ASEAN Single Window), một sáng kiến về hải quan, vẫn đang trong quá trình hoàn thiện. Nhưng bắt đầu từ năm sau, họ sẽ triển khai thử nghiệm giới hạn với năm trong số mười quốc gia ASEAN. Ngoài ra, trước đây cũng đã có các thỏa thuận công nhận lẫn nhau về <b>chứng chỉ</b> của các chuyên gia có tay nghề cao. Tuy nhiên, vẫn còn nhiều việc phải làm để thực sự <b>triển khai</b> các thỏa thuận đó."</p>   <p><b>(E)</b> Một số nhà phê bình cho rằng AEC chủ yếu mang lại lợi ích cho doanh nghiệp chứ không phải cho phần lớn người dân Đông Nam Á. Đầu năm nay, Hội nghị Xã hội Dân sự ASEAN và Diễn đàn Nhân dân ASEAN đã bày tỏ lo ngại về việc <b>hội nhập</b> kinh tế khu vực. Trong một tuyên bố, nhóm này cho rằng bước đi này sẽ dẫn đến tăng trưởng kinh tế không đồng đều và không bền vững. Điều này, theo họ, sẽ khiến "tình trạng nghèo đói gia tăng và bất bình đẳng về tài sản trở nên trầm trọng hơn."</p>   <p><b>(F)</b> Jerald Joseph, đồng chủ tịch Diễn đàn Nhân dân ASEAN, cho rằng những người di cư qua biên giới để tìm việc làm cần được bảo vệ nhiều hơn. Ông nói: "Người lao động di cư xuyên biên giới không được hưởng cùng mức độ bảo vệ hoặc sự quan tâm trong toàn bộ quá trình đàm phán. Vì vậy, thật đáng tiếc nếu điều đó không được phản ánh trong văn kiện sắp tới." Hội nghị thượng đỉnh ASEAN lần thứ 27 có sự tham gia của các đối tác của tổ chức. Các quốc gia như Trung Quốc, Ấn Độ, Nhật Bản và Hoa Kỳ sẽ tham dự.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>The Association of Southeast Asian Nations (ASEAN)</b></p>
+
+<p><b>(A)</b> The Association of Southeast Asian Nations (ASEAN) is the main political and economic organization for that area. The leaders' summit is their last meeting before the launch of the ASEAN Economic Community, or AEC, on December 31.</p>
+
+<p><b>(B)</b> The AEC will be equivalent to the world's seventh-largest economy. <b>It</b> was set up to create a highly competitive single market and production area. Organizers hope it will ease the movement of capital, goods, investment, services, and skilled labor across ASEAN countries. The goal is to make the whole area more competitive and economically successful.</p>
+
+<p><b>(C)</b> But some business leaders have low expectations for the ASEAN summit. Anthony Nelson is a director at the US-ASEAN Business Council in Washington. He believes that security will be an important issue at the meetings, especially after the terrorist attacks in Paris last week. "The November summit includes the East Asia Summit, which primarily focuses on political and security issues. So that's going to be a big part of what is actually going on around the summit. A lot of the work that business gets really involved in tends to happen around the ASEAN economic ministers' meeting in August." But the AEC may have only limited influence on business activity when it comes into being next year. Experts expect little to change at first because there is still much to be done.</p>
+
+<p><b>(D)</b> "The ASEAN Single Window, which is a customs project, is still very much a work in progress. But beginning next year, they will start limited trials with five of the ten ASEAN countries. And there have been past mutual recognition agreements for <b>credentials</b> of skilled professionals. But there's still a lot of work to be done in terms of actually <b>implementing</b> those agreements."</p>
+
+<p><b>(E)</b> Some critics say the AEC will mainly help businesses, not the majority of people in Southeast Asia. Earlier this year, the ASEAN Civil Society Conference and ASEAN Peoples' Forum expressed concern about regional economic <b>integration</b>. In a statement, the group said such a move would mean unequal and unsustainable economic growth. This, it said, would result "in worsening poverty and inequalities of wealth."</p>
+
+<p><b>(F)</b> Jerald Joseph is co-chair of the ASEAN People's Forum. He says people crossing borders to find employment need more protection. He said: "Cross-border migrant workers don't have the same level of protection or interest in the whole negotiation. So that's a little bit of a pity, a wasted chance, if it's not reflected in the coming document." The 27<sup>th</sup> ASEAN Summit includes the organization's partners. Nations including China, India, Japan, and the United States are to attend.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: ASEAN is the main political and economic organization in?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. East Asia															</div>
+																				<div class="ps-4 mb-2">
+																	B. West Asia															</div>
+																				<div class="ps-4 mb-2">
+																	C. North Asia															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Southeast Asia</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>ASEAN is the main political and economic organization in?</strong> (ASEAN là tổ chức chính trị và kinh tế chính ở khu vực nào?)</p>
+<ul>
+<li>❌ <strong>East Asia (Đông Á)</strong> → Sai. Đông Á bao gồm các quốc gia như Trung Quốc, Nhật Bản và Hàn Quốc, không phải khu vực ASEAN.</li>
+<li>✅ <strong>Southeast Asia (Đông Nam Á)</strong> → Đúng. Đoạn (A) của bài đọc nêu rõ ASEAN là tổ chức chính trị và kinh tế quan trọng nhất của Đông Nam Á.</li>
+<li>❌ <strong>West Asia (Tây Á)</strong> → Sai. Tây Á là khu vực Trung Đông, không liên quan đến ASEAN.</li>
+<li>❌ <strong>North Asia (Bắc Á)</strong> → Sai. Bắc Á chủ yếu bao gồm Nga và các nước lân cận.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: In paragraph (B), what does the word 'It' refer to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. ASEAN															</div>
+																				<div class="ps-4 mb-2">
+																	B. Business Council															</div>
+																				<div class="ps-4 mb-2">
+																	C. Organizer															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. AEC</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (B), what does the word "It" refer to?</strong> (Trong đoạn (B), từ "It" đề cập đến điều gì?)</p>
+<ul>
+<li>❌ <strong>ASEAN</strong> → Sai. ASEAN là tổ chức chung, nhưng "It" ở đây không nói về tổ chức mà về một dự án cụ thể.</li>
+<li>❌ <strong>Organizer (Nhà tổ chức)</strong> → Sai. Câu văn không đề cập đến tổ chức cụ thể.</li>
+<li>✅ <strong>AEC (Cộng đồng Kinh tế ASEAN)</strong> → Đúng. Đoạn (B) nói về AEC và sử dụng "It" để nhắc lại AEC.</li>
+<li>❌ <strong>Business Council (Hội đồng Kinh doanh)</strong> → Sai. Hội đồng này không phải là đối tượng chính của câu.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: According to Anthony Nelson, what is the most important issue at the meetings?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Business															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Security</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Economy															</div>
+																				<div class="ps-4 mb-2">
+																	D. Climate change															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to Anthony Nelson, what is the most important issue at the meetings?</strong> (Theo Anthony Nelson, vấn đề quan trọng nhất tại các cuộc họp là gì?)</p>
+<ul>
+<li>✅ <strong>Security (An ninh)</strong> → Đúng. Đoạn (C) nêu rõ Anthony Nelson tin rằng vấn đề an ninh sẽ là trọng tâm chính, đặc biệt là sau các vụ tấn công khủng bố ở Paris.</li>
+<li>❌ <strong>Climate change (Biến đổi khí hậu)</strong> → Sai. Bài đọc không đề cập đến biến đổi khí hậu như một vấn đề chính tại hội nghị.</li>
+<li>❌ <strong>Business (Kinh doanh)</strong> → Sai. Anthony Nelson cho rằng kinh doanh thường được bàn trong cuộc họp của các bộ trưởng kinh tế vào tháng 8.</li>
+<li>❌ <strong>Economy (Kinh tế)</strong> → Sai. Mặc dù AEC liên quan đến kinh tế, nhưng vấn đề an ninh được nhấn mạnh hơn.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: According to the passage, what issue is typically discussed at the ASEAN economic ministers' meeting?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Economy															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Business</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Security															</div>
+																				<div class="ps-4 mb-2">
+																	D. Climate change															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the passage, what issue is typically discussed at the ASEAN economic ministers meeting?</strong> (Theo bài đọc, vấn đề nào thường được thảo luận tại cuộc họp các bộ trưởng kinh tế ASEAN?)</p>
+<ul>
+<li>❌ <strong>Security (An ninh)</strong> → Sai. Vấn đề an ninh thường được thảo luận tại Hội nghị thượng đỉnh Đông Á.</li>
+<li>❌ <strong>Climate change (Biến đổi khí hậu)</strong> → Sai. Không có đề cập nào đến biến đổi khí hậu trong bài đọc.</li>
+<li>✅ <strong>Business (Kinh doanh)</strong> → Đúng. Đoạn (C) nêu rõ phần lớn công việc liên quan đến kinh doanh được thảo luận trong cuộc họp của các bộ trưởng kinh tế vào tháng 8.</li>
+<li>❌ <strong>Economy (Kinh tế)</strong> → Sai. Mặc dù AEC là một tổ chức kinh tế, nhưng câu hỏi hỏi về nội dung của cuộc họp bộ trưởng, nơi kinh doanh là trọng tâm.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: According to paragraph (D), how many ASEAN countries will start limited trials?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 7															</div>
+																				<div class="ps-4 mb-2">
+																	B. 10															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. 5</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. 3															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to paragraph (D), how many ASEAN countries will start limited trials?</strong> (Theo đoạn (D), bao nhiêu quốc gia ASEAN sẽ bắt đầu thử nghiệm giới hạn?)</p>
+<ul>
+<li>❌ <strong>3</strong> → Sai. Không có thông tin nào đề cập đến con số này.</li>
+<li>✅ <strong>5</strong> → Đúng. Đoạn (D) nêu rõ rằng thử nghiệm giới hạn sẽ được triển khai với 5 trong số 10 quốc gia ASEAN.</li>
+<li>❌ <strong>7</strong> → Sai. Bài đọc không đề cập đến 7 quốc gia.</li>
+<li>❌ <strong>10</strong> → Sai. Chỉ có một phần của ASEAN (5 quốc gia) tham gia thử nghiệm ban đầu.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: In paragraph (D), the word 'credentials' is closest in meaning to...?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. invitations															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. certificates</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. letters															</div>
+																				<div class="ps-4 mb-2">
+																	D. salutations															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (D), the word "credentials" is closest in meaning to...?</strong> (Trong đoạn (D), từ "credentials" có nghĩa gần nhất với từ nào?)</p>
+<ul>
+<li>❌ <strong>letters (thư)</strong> → Sai. "Letters" có nghĩa là thư từ, không liên quan đến chứng chỉ chuyên môn.</li>
+<li>❌ <strong>salutations (lời chào hỏi)</strong> → Sai. "Salutations" dùng để chỉ lời chào, không phải chứng chỉ hoặc bằng cấp.</li>
+<li>❌ <strong>invitations (lời mời)</strong> → Sai. "Invitations" là lời mời, không phải chứng nhận chuyên môn.</li>
+<li>✅ <strong>certificates (chứng chỉ)</strong> → Đúng. Trong ngữ cảnh của đoạn (D), "credentials" đề cập đến chứng chỉ của các chuyên gia có tay nghề cao.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: In paragraph (D), the word 'implementing' is closest in meaning to...?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. concentrating															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. carrying out</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. producing															</div>
+																				<div class="ps-4 mb-2">
+																	D. focusing															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (D), the word "implementing" is closest in meaning to...?</strong> (Trong đoạn (D), từ "implementing" có nghĩa gần nhất với từ nào?)</p>
+<ul>
+<li>✅ <strong>carrying out (thực hiện)</strong> → Đúng. "Implementing" có nghĩa là thực hiện hoặc triển khai một kế hoạch hoặc chính sách.</li>
+<li>❌ <strong>producing (sản xuất)</strong> → Sai. "Producing" có nghĩa là sản xuất, không phù hợp trong ngữ cảnh.</li>
+<li>❌ <strong>concentrating (tập trung)</strong> → Sai. "Concentrating" có nghĩa là tập trung vào một việc gì đó, không phải thực hiện.</li>
+<li>❌ <strong>focusing (tập trung)</strong> → Sai. "Focusing" cũng có nghĩa là tập trung, nhưng không đồng nghĩa với "implementing".</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: In paragraph (E), the word 'integration' is closest in meaning to...?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. combination</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. contribution															</div>
+																				<div class="ps-4 mb-2">
+																	C. separation															</div>
+																				<div class="ps-4 mb-2">
+																	D. utilization															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (E), the word "integration" is closest in meaning to...?</strong> (Trong đoạn (E), từ "integration" có nghĩa gần nhất với từ nào?)</p>
+<ul>
+<li>❌ <strong>utilization (sử dụng)</strong> → Sai. "Utilization" có nghĩa là sử dụng, không phải là sự hội nhập.</li>
+<li>❌ <strong>contribution (đóng góp)</strong> → Sai. "Contribution" có nghĩa là sự đóng góp, không liên quan đến hội nhập kinh tế.</li>
+<li>✅ <strong>combination (kết hợp, hội nhập)</strong> → Đúng. "Integration" trong ngữ cảnh của bài đọc có nghĩa là sự hội nhập hoặc kết hợp các nền kinh tế trong khu vực.</li>
+<li>❌ <strong>separation (tách biệt)</strong> → Sai. "Integration" mang ý nghĩa kết hợp, trái nghĩa với "separation".</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: According to the passage, what factor could slow down economic growth?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the recession															</div>
+																				<div class="ps-4 mb-2">
+																	B. the employment															</div>
+																				<div class="ps-4 mb-2">
+																	C. the poverty															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. the move</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the passage, what factor could slow down economic growth?</strong> (Theo bài đọc, yếu tố nào có thể làm chậm tăng trưởng kinh tế?)</p>
+<ul>
+<li>❌ <strong>the recession (suy thoái kinh tế)</strong> → Sai. Bài đọc không đề cập đến suy thoái kinh tế như một yếu tố cụ thể gây ảnh hưởng.</li>
+<li>❌ <strong>the poverty (nghèo đói)</strong> → Sai. Mặc dù bài đọc đề cập đến nghèo đói, nhưng nó không phải là yếu tố chính gây chậm tăng trưởng kinh tế.</li>
+<li>✅ <strong>the move (bước đi, sự thay đổi)</strong> → Đúng. Đoạn (E) nói về việc hội nhập kinh tế có thể dẫn đến tăng trưởng không đồng đều và có thể gây ra tác động tiêu cực đến nền kinh tế.</li>
+<li>❌ <strong>the employment (việc làm)</strong> → Sai. Việc làm không được nhắc đến là nguyên nhân chính gây chậm tăng trưởng kinh tế.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: According to the passage, who needs more protection when crossing borders?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. residents															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. immigrants</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. tourists															</div>
+																				<div class="ps-4 mb-2">
+																	D. travellers															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the passage, who needs more protection when crossing borders?</strong> (Theo bài đọc, ai cần được bảo vệ nhiều hơn khi vượt biên giới?)</p>
+<ul>
+<li>❌ <strong>travellers (du khách)</strong> → Sai. Du khách thường có quyền lợi được bảo vệ nhưng không phải là đối tượng chính trong bài đọc.</li>
+<li>✅ <strong>immigrants (người nhập cư)</strong> → Đúng. Đoạn (F) đề cập đến người lao động nhập cư xuyên biên giới không được bảo vệ đầy đủ.</li>
+<li>❌ <strong>residents (cư dân)</strong> → Sai. Cư dân ở mỗi quốc gia không gặp vấn đề khi di chuyển trong nước.</li>
+<li>❌ <strong>tourists (khách du lịch)</strong> → Sai. Khách du lịch không phải là nhóm cần bảo vệ nhiều nhất trong vấn đề lao động di cư.</li>
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

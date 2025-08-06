@@ -1,0 +1,646 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 34 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79947				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>MY FIRST LOVE</b></p>
+
+<p><b>(A)</b> During the baking hot months of the summer holidays, my mother and I used to escape to one of the scattered lakes north of Prince Albert. In its magic surroundings, we used to spend the long summer days in the open air, swimming and canoeing or just lying dreaming in the sun. In the evening, the lake was always a bright, luminous grey after the unbelievable sunset colours had <b>faded</b>.</p>
+
+<p>The last summer before we returned to England was particularly enchanted. For one thing, I was in love for the first time. No one can ever convince me that a fifteen-year-old cannot experience true love. I loved then as never since, with all my heart and without doubts or reservations or pretence.</p>
+
+<p>My boyfriend Don worked in Saskatoon, but the lake was "his place" - the strange and beautiful wilderness drew him with an obsessive urgency, so I suspected it was not to see me that he got on his motorcycle as many Fridays as he possibly could, and drove three hundred-odd miles along the pitted prairie roads to spend the weekends at our place.</p>
+
+<p>Sometimes he couldn't come, and the joy would go out of everything until Monday, when I could start looking forward to Friday again. He could never let us know in advance, as we were too far from civilization to have a phone or even a telegraph service. Besides, Don was hard up, and sometimes worked overtime at weekends.</p>
+
+<p><b>(B)</b> One Friday night a storm broke out. I lay in bed and listened to the thunder and the rain beating on the roof. I tried not to expect Don that night, hoping he would have enough sense to wait until the storm ended. Yet in my fearful imagination, I couldn't help but picture Don battling the storm. His motorbike seemed, in my thoughts, frail enough to be blown onto its side by the first gust that struck <b>it</b>. I thought of Don pinned under it, skidding, his face pressed into the mud.</p>
+
+<p>I crawled back into bed, trying to close my throat against the tears. But when my mother, prompted by the deep sympathy and understanding between us, came in to me, she kissed my cheek and found it wet. "Don't get upset, Jane," she said softly. "He may still come."</p>
+
+<p>When she had tucked me in and gone, I lay thinking about Don, about the danger of the roads - you couldn't ride or walk along them safely after heavy rain; your feet would slip from under you. The roads in Northern Canada are not like the friendly, well-populated English ones, where there are always farmhouses within walking distance and cars driving along them day and night.</p>
+
+<p><b>(C)</b> It was hours later that I suddenly realized the sound of the roaring engine was real. The storm was dying. I lay absolutely still, <b>relief and pain fighting for ascendancy within me</b>, each in itself overwhelming enough to freeze the breath in my lungs as I heard Don's heavy tired footsteps on the wooden stairs.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>MỐI TÌNH ĐẦU CỦA TÔI</b></p>   <p><b>(A)</b> Trong những tháng hè oi bức, mẹ tôi và tôi thường trốn đến một trong những hồ nước rải rác ở phía bắc Prince Albert. Giữa khung cảnh huyền diệu ấy, chúng tôi dành những ngày hè dài ngoài trời, bơi lội, chèo xuồng, hoặc chỉ đơn giản là nằm dài mơ mộng dưới ánh nắng. Khi hoàng hôn tuyệt đẹp dần <b>phai nhạt</b>, mặt hồ buổi tối luôn sáng rực một màu xám lấp lánh.</p>   <p>Mùa hè cuối cùng trước khi chúng tôi trở về Anh đặc biệt đẹp như cổ tích. Một phần là vì tôi đã yêu lần đầu tiên. Không ai có thể thuyết phục tôi rằng một đứa trẻ mười lăm tuổi không thể trải nghiệm tình yêu đích thực. Khi ấy, tôi yêu bằng tất cả trái tim mình, không một chút nghi ngờ, không do dự, không giả vờ.</p>   <p>Bạn trai tôi, Don, làm việc ở Saskatoon, nhưng hồ nước ấy là "chốn riêng" của anh ấy—vùng hoang dã kỳ lạ và đẹp đẽ ấy như có một sức hút mãnh liệt đối với anh. Vì vậy, tôi nghi ngờ rằng không phải vì tôi mà anh đã lên xe mô tô vào mỗi thứ Sáu có thể, lái hơn ba trăm dặm trên những con đường đầy ổ gà của vùng thảo nguyên để đến dành cuối tuần ở nơi chúng tôi ở.</p>   <p>Đôi khi anh không thể đến, và niềm vui trong tôi như tan biến cho đến tận thứ Hai, khi tôi có thể bắt đầu mong chờ đến thứ Sáu một lần nữa. Anh không bao giờ có thể báo trước, vì nơi chúng tôi ở quá xa nền văn minh đến mức không có điện thoại hay thậm chí là dịch vụ điện tín. Hơn nữa, Don cũng không dư dả, đôi khi anh phải làm thêm vào cuối tuần.</p>   <p><b>(B)</b> Một đêm thứ Sáu, một cơn bão bất ngờ ập đến. Tôi nằm trên giường lắng nghe tiếng sấm rền và tiếng mưa trút xuống mái nhà. Tôi cố không hy vọng Don sẽ đến vào đêm đó, mong rằng anh đủ tỉnh táo để đợi cơn bão qua đi. Thế nhưng trong trí tưởng tượng đầy lo lắng của mình, tôi không thể không hình dung cảnh Don đang vật lộn với cơn bão. Chiếc xe máy của anh trong suy nghĩ của tôi mỏng manh đến mức có thể bị cơn gió đầu tiên quật ngã. Tôi nghĩ đến cảnh Don bị mắc kẹt dưới xe, trượt đi, gương mặt úp xuống bùn đất.</p>   <p>Tôi bò trở lại giường, cố nén tiếng nấc nghẹn ngào. Nhưng khi mẹ tôi, với sự thấu hiểu và đồng cảm sâu sắc giữa hai mẹ con, bước vào phòng và hôn lên má tôi, bà phát hiện ra nó đã ướt đẫm. "Đừng buồn, Jane," mẹ tôi nhẹ nhàng nói. "Có thể cậu ấy vẫn sẽ đến."</p>   <p>Khi mẹ đắp chăn cho tôi rồi rời đi, tôi nằm đó nghĩ về Don, về sự nguy hiểm của những con đường—sau cơn mưa lớn, bạn không thể lái xe hay đi bộ an toàn trên đó; đôi chân bạn có thể trượt ngã bất cứ lúc nào. Những con đường ở miền Bắc Canada không giống như những con đường thân thiện và đông đúc ở Anh, nơi luôn có những trang trại gần đó và xe cộ qua lại suốt ngày đêm.</p>   <p><b>(C)</b> Nhiều giờ sau, tôi chợt nhận ra tiếng động cơ gầm rú không còn là tưởng tượng nữa. Cơn bão đang dần tan. Tôi nằm im lặng tuyệt đối, <b>sự nhẹ nhõm và nỗi đau tranh giành vị trí trong tôi</b>, mỗi cảm xúc đều đủ mạnh mẽ để khiến hơi thở tôi như đông cứng lại khi nghe thấy tiếng bước chân nặng nề, mệt mỏi của Don trên những bậc cầu thang gỗ.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>MY FIRST LOVE</b></p>
+
+<p><b>(A)</b> During the baking hot months of the summer holidays, my mother and I used to escape to one of the scattered lakes north of Prince Albert. In its magic surroundings, we used to spend the long summer days in the open air, swimming and canoeing or just lying dreaming in the sun. In the evening, the lake was always a bright, luminous grey after the unbelievable sunset colours had <b>faded</b>.</p>
+
+<p>The last summer before we returned to England was particularly enchanted. For one thing, I was in love for the first time. No one can ever convince me that a fifteen-year-old cannot experience true love. I loved then as never since, with all my heart and without doubts or reservations or pretence.</p>
+
+<p>My boyfriend Don worked in Saskatoon, but the lake was "his place" - the strange and beautiful wilderness drew him with an obsessive urgency, so I suspected it was not to see me that he got on his motorcycle as many Fridays as he possibly could, and drove three hundred-odd miles along the pitted prairie roads to spend the weekends at our place.</p>
+
+<p>Sometimes he couldn't come, and the joy would go out of everything until Monday, when I could start looking forward to Friday again. He could never let us know in advance, as we were too far from civilization to have a phone or even a telegraph service. Besides, Don was hard up, and sometimes worked overtime at weekends.</p>
+
+<p><b>(B)</b> One Friday night a storm broke out. I lay in bed and listened to the thunder and the rain beating on the roof. I tried not to expect Don that night, hoping he would have enough sense to wait until the storm ended. Yet in my fearful imagination, I couldn't help but picture Don battling the storm. His motorbike seemed, in my thoughts, frail enough to be blown onto its side by the first gust that struck <b>it</b>. I thought of Don pinned under it, skidding, his face pressed into the mud.</p>
+
+<p>I crawled back into bed, trying to close my throat against the tears. But when my mother, prompted by the deep sympathy and understanding between us, came in to me, she kissed my cheek and found it wet. "Don't get upset, Jane," she said softly. "He may still come."</p>
+
+<p>When she had tucked me in and gone, I lay thinking about Don, about the danger of the roads - you couldn't ride or walk along them safely after heavy rain; your feet would slip from under you. The roads in Northern Canada are not like the friendly, well-populated English ones, where there are always farmhouses within walking distance and cars driving along them day and night.</p>
+
+<p><b>(C)</b> It was hours later that I suddenly realized the sound of the roaring engine was real. The storm was dying. I lay absolutely still, <b>relief and pain fighting for ascendancy within me</b>, each in itself overwhelming enough to freeze the breath in my lungs as I heard Don's heavy tired footsteps on the wooden stairs.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Every summer, Jane used to spend _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. near the lake</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. by the sea side															</div>
+																				<div class="ps-4 mb-2">
+																	C. in the village															</div>
+																				<div class="ps-4 mb-2">
+																	D. in the camp															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Every summer, Jane used to spend _____.</strong>  
+(Mỗi mùa hè, Jane thường dành thời gian ở _____.)</p>
+
+<ul>
+<li>❌ <strong>in the camp</strong> (trong trại) → Sai, vì bài đọc không đề cập đến việc Jane ở trong trại.</li>  
+
+<li>❌ <strong>by the sea side</strong> (bên bờ biển) → Sai, vì địa điểm được nhắc đến trong bài là hồ nước, không phải bờ biển.</li>  
+
+<li>✅ <strong>near the lake</strong> (gần hồ nước) → Đúng, vì bài đọc mô tả rằng Jane và mẹ thường trốn đến một trong những hồ nước phía bắc Prince Albert để tận hưởng mùa hè.</li>  
+
+<li>❌ <strong>in the village</strong> (trong làng) → Sai, vì Jane không dành mùa hè ở làng mà ở gần hồ nước.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: The word 'faded' in paragraph (A) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. darken															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. disappeared</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. clear															</div>
+																				<div class="ps-4 mb-2">
+																	D. brightened															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "faded" in paragraph (A) is closest in meaning to?</strong>  
+(Từ "faded" trong đoạn (A) có nghĩa gần nhất với?)</p>
+
+<ul>
+<li>❌ <strong>clear</strong> (rõ ràng) → Sai, vì "faded" có nghĩa là mờ dần hoặc biến mất.</li>  
+
+<li>❌ <strong>brightened</strong> (sáng lên) → Sai, vì "faded" mang nghĩa ngược lại với "brightened".</li>  
+
+<li>❌ <strong>darken</strong> (tối đi) → Sai, vì "faded" không có nghĩa làm tối đi.</li>  
+
+<li>✅ <strong>disappeared</strong> (biến mất) → Đúng, vì "faded" trong ngữ cảnh này có nghĩa là màu sắc của hoàng hôn dần biến mất.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: Jane's last summer was particularly fascinating because...						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. she spent it in the magic surroundings.															</div>
+																				<div class="ps-4 mb-2">
+																	B. she enjoyed unbelievable sunset by the lake.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. she first loved someone.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. she had a lot of fun in the open air.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Jane's last summer was particularly fascinating because...</strong>  
+(Mùa hè cuối cùng của Jane đặc biệt thú vị vì...)</p>
+
+<ul>
+<li>❌ <strong>she spent it in the magic surroundings.</strong> (cô ấy đã trải qua nó trong khung cảnh huyền diệu.) → Sai, vì điều này đúng nhưng không phải là lý do chính khiến mùa hè đặc biệt.</li>  
+
+<li>❌ <strong>she had a lot of fun in the open air.</strong> (cô ấy đã có nhiều niềm vui ngoài trời.) → Sai, vì đây là hoạt động thường xuyên, không phải điều khiến mùa hè này đặc biệt.</li>  
+
+<li>❌ <strong>she enjoyed unbelievable sunset by the lake.</strong> (cô ấy thưởng thức những hoàng hôn tuyệt đẹp bên hồ.) → Sai, vì hoàng hôn tuyệt đẹp không phải là điều khiến mùa hè đặc biệt.</li>  
+
+<li>✅ <strong>she first loved someone.</strong> (cô ấy lần đầu tiên yêu một người.) → Đúng, vì bài đọc nhấn mạnh rằng mùa hè này đặc biệt vì Jane đã yêu lần đầu tiên.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: Jane believes love at fifteen is _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. full of reservations.															</div>
+																				<div class="ps-4 mb-2">
+																	B. associated with doubts.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. a sincere deep feeling.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. connected with pretence.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Jane believes love at fifteen is _____.</strong>  
+(Jane tin rằng tình yêu ở tuổi 15 là _____.)</p>
+
+<ul>
+<li>✅ <strong>a sincere deep feeling.</strong> (một cảm xúc chân thành và sâu sắc.) → Đúng, vì Jane tin rằng tình yêu của mình là chân thành, không nghi ngờ, không giả vờ.</li>  
+
+<li>❌ <strong>associated with doubts.</strong> (liên quan đến sự nghi ngờ.) → Sai, vì Jane khẳng định rằng tình yêu này không có sự nghi ngờ.</li>  
+
+<li>❌ <strong>full of reservations.</strong> (đầy sự dè dặt.) → Sai, vì Jane yêu bằng cả trái tim mà không có sự dè dặt nào.</li>  
+
+<li>❌ <strong>connected with pretence.</strong> (liên quan đến sự giả vờ.) → Sai, vì Jane nhấn mạnh rằng tình yêu của cô ấy là thật, không giả vờ.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What made Don travel three hundred-odd miles every weekend?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. He was attracted by the beauty of the lake.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. He was fond of spending weekends with his friends.															</div>
+																				<div class="ps-4 mb-2">
+																	C. He was fond of riding his motorcycle.															</div>
+																				<div class="ps-4 mb-2">
+																	D. He was desperate to see the author before she left.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What made Don travel three hundred-odd miles every weekend?</strong>  
+(Điều gì khiến Don đi hơn 300 dặm vào mỗi cuối tuần?)</p>
+
+<ul>
+<li>❌ <strong>He was desperate to see the author before she left.</strong> (Anh ấy tuyệt vọng muốn gặp tác giả trước khi cô rời đi.) → Sai, vì bài đọc không đề cập đến việc Jane sắp rời đi.</li>  
+
+<li>❌ <strong>He was fond of riding his motorcycle.</strong> (Anh ấy thích lái xe mô tô.) → Sai, vì bài đọc không nói rằng Don thích đi xe máy mà chỉ nhấn mạnh quãng đường dài anh ấy đi.</li>  
+
+<li>✅ <strong>He was attracted by the beauty of the lake.</strong> (Anh ấy bị thu hút bởi vẻ đẹp của hồ.) → Đúng, vì bài đọc đề cập rằng hồ là "chốn riêng" của Don và anh ấy bị thu hút bởi vùng hoang dã này.</li>  
+
+<li>❌ <strong>He was fond of spending weekends with his friends.</strong> (Anh ấy thích dành cuối tuần với bạn bè.) → Sai, vì Don đến hồ không phải để gặp bạn bè mà vì vẻ đẹp của nơi này.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Sometimes Don didn't come to see Jane and her mother because he _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. had given up hope of seeing the author.															</div>
+																				<div class="ps-4 mb-2">
+																	B. thought that they were too far from civilization.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. worked to make some extra money.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. hated travelling in exhausting conditions.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Sometimes Don didn't come to see Jane and her mother because he _____.</strong>  
+(Đôi khi Don không đến thăm Jane và mẹ cô ấy vì anh ấy _____.)</p>
+
+<ul>
+<li>❌ <strong>thought that they were too far from civilization.</strong> (nghĩ rằng họ ở quá xa nền văn minh.) → Sai, vì Don thường xuyên đến dù nơi đó rất xa nền văn minh.</li>  
+
+<li>✅ <strong>worked to make some extra money.</strong> (làm việc để kiếm thêm tiền.) → Đúng, vì bài đọc nói rằng Don đôi khi phải làm thêm vào cuối tuần để có thêm thu nhập.</li>  
+
+<li>❌ <strong>had given up hope of seeing the author.</strong> (đã từ bỏ hy vọng gặp tác giả.) → Sai, vì Don vẫn thường xuyên đến gặp Jane khi có thể.</li>  
+
+<li>❌ <strong>hated travelling in exhausting conditions.</strong> (ghét đi du lịch trong điều kiện mệt mỏi.) → Sai, vì Don vẫn đi xa bất chấp điều kiện khó khăn.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: The pronoun 'it' in paragraph (B) refers to...?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the mud															</div>
+																				<div class="ps-4 mb-2">
+																	B. the first gust															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. the motorbike</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. the storm															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The pronoun "it" in paragraph (B) refers to...?</strong>  
+(Đại từ "it" trong đoạn (B) đề cập đến...?)</p>
+
+<ul>
+<li>✅ <strong>the motorbike</strong> (chiếc xe máy) → Đúng, vì "it" trong câu "His motorbike seemed, in my thoughts, frail enough to be blown onto its side by the first gust that struck it" đề cập đến chiếc xe máy của Don.</li>  
+
+<li>❌ <strong>the first gust</strong> (cơn gió đầu tiên) → Sai, vì "it" là thứ bị tác động bởi cơn gió.</li>  
+
+<li>❌ <strong>the storm</strong> (cơn bão) → Sai, vì cơn bão là thứ gây ra tác động, không phải đối tượng bị ảnh hưởng.</li>  
+
+<li>❌ <strong>the mud</strong> (bùn đất) → Sai, vì "it" không thể hiện ý nghĩa liên quan đến bùn đất.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: Mother came into Jane's room during the storm because she _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. felt Jane was afraid of the thunder.															</div>
+																				<div class="ps-4 mb-2">
+																	B. heard Jane walking in the room.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. felt Jane was worried about Don.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. heard Jane crying in her bed.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Mother came into Jane's room during the storm because she _____.</strong>  
+(Mẹ vào phòng Jane trong cơn bão vì bà _____.)</p>
+
+<ul>
+<li>❌ <strong>felt Jane was afraid of the thunder.</strong> (cảm thấy Jane sợ sấm sét.) → Sai, vì bài đọc không đề cập đến việc Jane sợ tiếng sấm.</li>  
+
+<li>✅ <strong>felt Jane was worried about Don.</strong> (cảm thấy Jane lo lắng cho Don.) → Đúng, vì mẹ Jane nhận ra cô ấy đang khóc vì lo lắng cho Don và an ủi cô.</li>  
+
+<li>❌ <strong>heard Jane walking in the room.</strong> (nghe thấy Jane đi lại trong phòng.) → Sai, vì bài đọc không đề cập đến việc Jane đi lại trong phòng.</li>  
+
+<li>❌ <strong>heard Jane crying in her bed.</strong> (nghe thấy Jane khóc trên giường.) → Sai, vì mẹ Jane chỉ phát hiện Jane đang khóc sau khi hôn lên má cô ấy.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: According to the author the roads in Northern Canada were _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. muddy															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. lonely</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. busy															</div>
+																				<div class="ps-4 mb-2">
+																	D. slippery															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the author, the roads in Northern Canada were _____.</strong>  
+(Theo tác giả, các con đường ở Bắc Canada _____.)</p>
+
+<ul>
+<li>❌ <strong>slippery</strong> (trơn trượt) → Sai, vì bài đọc không nhấn mạnh tính chất trơn trượt.</li>  
+
+<li>❌ <strong>muddy</strong> (lầy lội) → Sai, vì bài đọc mô tả đường nguy hiểm sau cơn mưa nhưng không nhấn mạnh yếu tố bùn lầy.</li>  
+
+<li>✅ <strong>lonely</strong> (vắng vẻ) → Đúng, vì bài đọc so sánh các con đường ở Bắc Canada với những con đường đông đúc ở Anh và nói rằng ở Canada, không có nhà cửa gần kề hay xe cộ qua lại thường xuyên.</li>  
+
+<li>❌ <strong>busy</strong> (đông đúc) → Sai, vì các con đường này ngược lại với sự đông đúc.</li>  
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: What does the phrase '... relief and pain fighting for ascendancy within me!' in paragraph (C) mean?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. overwhelming pain.															</div>
+																				<div class="ps-4 mb-2">
+																	B. relief as a prevailing emotion.															</div>
+																				<div class="ps-4 mb-2">
+																	C. neither relief nor pain.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. relief and pain alternately.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does the phrase "... relief and pain fighting for ascendancy within me!" in paragraph (C) mean?</strong>  
+(Cụm từ "... sự nhẹ nhõm và nỗi đau tranh giành vị trí trong tôi!" trong đoạn (C) có nghĩa là gì?)</p>
+
+<ul>
+<li>❌ <strong>overwhelming pain.</strong> (nỗi đau choáng ngợp.) → Sai, vì cụm từ này mô tả cả nỗi đau và sự nhẹ nhõm, không chỉ nỗi đau.</li>  
+
+<li>✅ <strong>relief and pain alternately.</strong> (sự nhẹ nhõm và nỗi đau xen kẽ.) → Đúng, vì bài đọc mô tả Jane vừa cảm thấy nhẹ nhõm vì Don đến nơi an toàn, vừa cảm thấy đau đớn vì lo lắng trước đó.</li>  
+
+<li>❌ <strong>relief as a prevailing emotion.</strong> (sự nhẹ nhõm là cảm xúc chiếm ưu thế.) → Sai, vì không có cảm xúc nào chiếm ưu thế.</li>  
+
+<li>❌ <strong>neither relief nor pain.</strong> (không phải sự nhẹ nhõm cũng không phải nỗi đau.) → Sai, vì Jane cảm nhận cả hai cảm xúc này cùng một lúc.</li>  
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

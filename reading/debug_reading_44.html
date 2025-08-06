@@ -1,0 +1,584 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 44 - Part 4				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79958				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Garbage cans are not magical portals. Trash does not disappear when you toss it in a can. Yet, the average American throws away an estimated 1,600 pounds of waste each year. If there are no magic garbage fairies, where does all that trash go? There are four methods to managing waste: recycling, landfilling, composting, and incinerating. Each method has its strengths and weaknesses. Let's take a quick look at each.</p>
+
+<p><b>(B)</b> Recycling is the process of turning waste into new materials. For example, used paper can be turned into paperboard, which can be used to make book covers. Recycling can reduce pollution, save materials, and lower energy use. Yet, some argue that recycling wastes energy. They believe that collecting, processing, and converting waste uses more energy than it saves. Still, most people agree that recycling is better for the planet than landfilling.</p>
+
+<p><b>(C)</b> Landfilling is the oldest method of managing waste. In its simplest form, landfilling is when people bury garbage in a hole. Over time, the practice of landfilling has advanced. Garbage is <b>compacted</b> before it is thrown into the hole. In this way, more garbage can fit in each landfill. Large liners are placed at the bottom of landfills so that toxic garbage juice doesn't get into the groundwater. Sadly, these liners don't always work. Landfills may pollute the local water supply. Not to mention that all of that garbage stinks. Nobody wants to live next to a landfill. This makes it hard to find new locations for landfills.</p>
+
+<p><b>(D)</b> As landfill space decreases, interest in composting grows. Composting is when people pile up organic matter, such as food waste, and allow it to decompose. The product of this decomposition is compost. Compost can be added to the soil to make it richer and better for growing crops. While composting is easy to do on-site somewhere like home or school, it's hard to do after the garbage gets mixed up. This is because plastic and other inorganic materials must be removed from the compost pile, or they will pollute the soil. There's a lot of plastic in garbage, which makes it hard to compost on a large scale.</p>
+
+<p><b>(E)</b> One thing that is easier to do is burning garbage. There are two main ways to incinerate waste. The first is to create or harvest a fuel from the waste, such as methane gas, and burn the fuel. The second is to burn the waste directly. The heat from the <b>incineration</b> process can boil water, which can power steam generators. Unfortunately, burning garbage pollutes the air. Also, some critics worry that incinerators destroy valuable resources that could be recycled.</p>
+
+<p><b>(F)</b> Usually, the community where you live manages waste. Once you put your garbage in that can, what happens to it is beyond your control. But you can make choices while it is still in your possession. You can choose to recycle, you can choose to compost, or you can choose to let someone else deal with it. The choice is yours.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Thùng rác không phải là cánh cổng thần kỳ. Rác thải không biến mất khi bạn ném nó vào thùng. Thế nhưng, trung bình mỗi người Mỹ thải ra khoảng 1.600 pound rác mỗi năm. Nếu không có những "nàng tiên rác" thần kỳ, thì tất cả số rác đó đi đâu? Có bốn phương pháp để quản lý rác thải: tái chế, chôn lấp, ủ phân compost và đốt rác. Mỗi phương pháp đều có những ưu và nhược điểm riêng. Hãy cùng điểm qua từng phương pháp một.</p>   <p><b>(B)</b> Tái chế là quá trình biến rác thải thành nguyên liệu mới. Ví dụ, giấy đã qua sử dụng có thể được tái chế thành bìa giấy để làm bìa sách. Tái chế giúp giảm ô nhiễm, tiết kiệm nguyên liệu và giảm tiêu thụ năng lượng. Tuy nhiên, một số người cho rằng tái chế tốn nhiều năng lượng. Họ tin rằng việc thu gom, xử lý và chuyển đổi rác thải tiêu tốn nhiều năng lượng hơn là lợi ích mà nó mang lại. Dù vậy, hầu hết mọi người đều đồng ý rằng tái chế tốt hơn cho hành tinh so với chôn lấp rác thải.</p>   <p><b>(C)</b> Chôn lấp rác là phương pháp quản lý rác thải lâu đời nhất. Ở dạng đơn giản nhất, chôn lấp có nghĩa là vùi rác xuống một cái hố. Theo thời gian, phương pháp chôn lấp đã phát triển. Rác thải được <b>nén</b> lại trước khi được đổ vào hố, giúp chứa được nhiều rác hơn trong mỗi bãi rác. Các lớp lót lớn được đặt ở đáy bãi rác để ngăn nước rỉ rác độc hại thấm vào nguồn nước ngầm. Đáng tiếc, những lớp lót này không phải lúc nào cũng hiệu quả. Bãi rác có thể làm ô nhiễm nguồn nước địa phương. Chưa kể đến việc rác thải bốc mùi hôi thối. Không ai muốn sống cạnh một bãi rác, khiến việc tìm địa điểm mới để chôn lấp trở nên khó khăn.</p>   <p><b>(D)</b> Khi diện tích bãi rác ngày càng thu hẹp, sự quan tâm đến ủ phân compost ngày càng tăng. Ủ phân compost là quá trình chất đống các vật liệu hữu cơ như rác thực phẩm và để chúng phân hủy tự nhiên. Sản phẩm cuối cùng của quá trình này là phân compost, có thể bổ sung vào đất để làm giàu dinh dưỡng, giúp cây trồng phát triển tốt hơn. Trong khi việc ủ phân rất dễ thực hiện tại nhà hoặc trường học, thì lại rất khó để thực hiện khi rác đã bị trộn lẫn. Lý do là vì nhựa và các vật liệu vô cơ khác phải được loại bỏ khỏi đống ủ, nếu không chúng sẽ làm ô nhiễm đất. Có rất nhiều nhựa trong rác thải, khiến việc ủ phân quy mô lớn trở nên khó khăn.</p>   <p><b>(E)</b> Một phương pháp dễ thực hiện hơn là đốt rác. Có hai cách chính để đốt rác thải. Cách thứ nhất là tạo ra hoặc thu hoạch nhiên liệu từ rác, chẳng hạn như khí methane, và đốt cháy nhiên liệu đó. Cách thứ hai là đốt trực tiếp rác thải. Nhiệt lượng từ quá trình <b>đốt rác</b> có thể làm sôi nước, từ đó tạo ra hơi nước để vận hành máy phát điện. Tuy nhiên, việc đốt rác lại gây ô nhiễm không khí. Ngoài ra, một số nhà phê bình lo ngại rằng lò đốt có thể phá hủy các tài nguyên có giá trị đáng lẽ nên được tái chế.</p>   <p><b>(F)</b> Thông thường, chính quyền địa phương nơi bạn sinh sống sẽ quản lý rác thải. Khi bạn đã bỏ rác vào thùng, chuyện gì xảy ra tiếp theo là nằm ngoài tầm kiểm soát của bạn. Tuy nhiên, bạn vẫn có thể đưa ra quyết định khi rác thải còn trong tay. Bạn có thể chọn tái chế, bạn có thể chọn ủ phân compost, hoặc bạn có thể chọn để người khác xử lý chúng. Lựa chọn là của bạn.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>(A)</b> Garbage cans are not magical portals. Trash does not disappear when you toss it in a can. Yet, the average American throws away an estimated 1,600 pounds of waste each year. If there are no magic garbage fairies, where does all that trash go? There are four methods to managing waste: recycling, landfilling, composting, and incinerating. Each method has its strengths and weaknesses. Let's take a quick look at each.</p>
+
+<p><b>(B)</b> Recycling is the process of turning waste into new materials. For example, used paper can be turned into paperboard, which can be used to make book covers. Recycling can reduce pollution, save materials, and lower energy use. Yet, some argue that recycling wastes energy. They believe that collecting, processing, and converting waste uses more energy than it saves. Still, most people agree that recycling is better for the planet than landfilling.</p>
+
+<p><b>(C)</b> Landfilling is the oldest method of managing waste. In its simplest form, landfilling is when people bury garbage in a hole. Over time, the practice of landfilling has advanced. Garbage is <b>compacted</b> before it is thrown into the hole. In this way, more garbage can fit in each landfill. Large liners are placed at the bottom of landfills so that toxic garbage juice doesn't get into the groundwater. Sadly, these liners don't always work. Landfills may pollute the local water supply. Not to mention that all of that garbage stinks. Nobody wants to live next to a landfill. This makes it hard to find new locations for landfills.</p>
+
+<p><b>(D)</b> As landfill space decreases, interest in composting grows. Composting is when people pile up organic matter, such as food waste, and allow it to decompose. The product of this decomposition is compost. Compost can be added to the soil to make it richer and better for growing crops. While composting is easy to do on-site somewhere like home or school, it's hard to do after the garbage gets mixed up. This is because plastic and other inorganic materials must be removed from the compost pile, or they will pollute the soil. There's a lot of plastic in garbage, which makes it hard to compost on a large scale.</p>
+
+<p><b>(E)</b> One thing that is easier to do is burning garbage. There are two main ways to incinerate waste. The first is to create or harvest a fuel from the waste, such as methane gas, and burn the fuel. The second is to burn the waste directly. The heat from the <b>incineration</b> process can boil water, which can power steam generators. Unfortunately, burning garbage pollutes the air. Also, some critics worry that incinerators destroy valuable resources that could be recycled.</p>
+
+<p><b>(F)</b> Usually, the community where you live manages waste. Once you put your garbage in that can, what happens to it is beyond your control. But you can make choices while it is still in your possession. You can choose to recycle, you can choose to compost, or you can choose to let someone else deal with it. The choice is yours.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Which best explains why the author begins the text by talking about magical garbage fairies?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He is putting a common misconception to rest.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. He is trying to get the reader's attention.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. He is addressing his concern in a serious way.															</div>
+																				<div class="ps-4 mb-2">
+																	D. He is supporting his argument with evidence.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which best explains why the author begins the text by talking about magical garbage fairies?</strong> (Điều nào giải thích tốt nhất lý do tác giả bắt đầu văn bản bằng việc nói về các nàng tiên rác thần kỳ?)</p>
+<ul>
+<li>❌ <strong>He is putting a common misconception to rest. (Ông ấy đang bác bỏ một quan niệm sai lầm phổ biến.)</strong> → Sai. Tác giả không bác bỏ quan niệm sai lầm, mà chỉ sử dụng hình ảnh ẩn dụ.</li>
+<li>✅ <strong>He is trying to get the reader's attention. (Ông ấy đang cố gắng thu hút sự chú ý của người đọc.)</strong> → Đúng. Việc sử dụng hình ảnh "nàng tiên rác" giúp mở đầu hấp dẫn và thu hút độc giả.</li>
+<li>❌ <strong>He is addressing his concern in a serious way. (Ông ấy đang bày tỏ mối quan tâm của mình một cách nghiêm túc.)</strong> → Sai. Giọng văn đầu đoạn (A) không mang tính nghiêm túc mà mang tính gợi mở và hấp dẫn.</li>
+<li>❌ <strong>He is supporting his argument with evidence. (Ông ấy đang hỗ trợ lập luận của mình bằng bằng chứng.)</strong> → Sai. Đoạn văn không chứa bất kỳ bằng chứng nào để hỗ trợ lập luận.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: In paragraph (C), what does the word 'compacted' most likely mean?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Garbage is put in a can before it is thrown in a hole.															</div>
+																				<div class="ps-4 mb-2">
+																	B. Garbage is put in trucks before it is thrown in a hole.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Garbage is crushed smaller before it is thrown in a hole.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Garbage is burned before it is thrown in a hole.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (C), what does the word "compacted" most likely mean?</strong> (Trong đoạn (C), từ "compacted" có thể có nghĩa là gì?)</p>
+<ul>
+<li>❌ <strong>Garbage is burned before it is thrown in a hole. (Rác bị đốt trước khi được ném vào hố.)</strong> → Sai. Không có thông tin nào trong đoạn văn nói rằng rác bị đốt trước khi chôn.</li>
+<li>❌ <strong>Garbage is put in trucks before it is thrown in a hole. (Rác được đặt vào xe tải trước khi bị ném vào hố.)</strong> → Sai. Xe tải có thể được sử dụng để vận chuyển rác nhưng không liên quan đến từ "compacted".</li>
+<li>✅ <strong>Garbage is crushed smaller before it is thrown in a hole. (Rác được nghiền nhỏ trước khi bị ném vào hố.)</strong> → Đúng. "Compacted" có nghĩa là rác được nén lại để tiết kiệm không gian.</li>
+<li>❌ <strong>Garbage is put in a can before it is thrown in a hole. (Rác được đặt trong thùng trước khi bị ném vào hố.)</strong> → Sai. Rác có thể được đặt trong thùng, nhưng điều đó không đồng nghĩa với việc nén chặt.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: According to paragraph (C), which of the following was NOT mentioned as an issue with landfilling?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Landfills may pollute the wafer supply.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Landfills may pollute the water supply.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. It is difficult to find locations for landfills.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Landfills are smelly.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to paragraph (C), which of the following was NOT mentioned as an issue with landfilling?</strong> (Theo đoạn (C), điều nào sau đây KHÔNG được đề cập là vấn đề của bãi rác?)</p>
+<ul>
+<li>✅ <strong>Landfills may pollute the wafer supply. (Bãi rác có thể làm ô nhiễm nguồn cung cấp bánh xốp.)</strong> → Đúng. "Wafer supply" không có nghĩa trong ngữ cảnh này, có thể do lỗi đánh máy từ "water supply".</li>
+<li>❌ <strong>Landfills are smelly. (Bãi rác có mùi hôi.)</strong> → Sai. Đoạn (C) có nhắc đến mùi hôi của bãi rác.</li>
+<li>❌ <strong>Landfills may pollute the water supply. (Bãi rác có thể làm ô nhiễm nguồn nước.)</strong> → Sai. Đoạn văn đề cập đến vấn đề ô nhiễm nước ngầm do rỉ rác.</li>
+<li>❌ <strong>It is difficult to find locations for landfills. (Rất khó để tìm địa điểm xây dựng bãi rác.)</strong> → Sai. Tác giả đã đề cập đến việc không ai muốn sống gần bãi rác.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What is the main idea of paragraph (D)?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. There is a lot of plastic garbage in landfills.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Composting is good for the soil, but it has limitations.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. The process of composting is very complicated and scientific.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Landfills take up a lot of space.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What is the main idea of paragraph (D)?</strong> (Ý chính của đoạn (D) là gì?)</p>
+<ul>
+<li>❌ <strong>Landfills take up a lot of space. (Bãi rác chiếm nhiều không gian.)</strong> → Sai. Dù đúng, nhưng đoạn văn tập trung vào ủ phân compost.</li>
+<li>✅ <strong>Composting is good for the soil, but it has limitations. (Ủ phân có lợi cho đất nhưng cũng có hạn chế.)</strong> → Đúng. Đoạn (D) mô tả lợi ích và hạn chế của ủ phân.</li>
+<li>❌ <strong>The process of composting is very complicated and scientific. (Quy trình ủ phân rất phức tạp và mang tính khoa học.)</strong> → Sai. Dù có nhắc đến khó khăn khi thực hiện ở quy mô lớn, nhưng không mô tả nó là phức tạp về mặt khoa học.</li>
+<li>❌ <strong>There is a lot of plastic garbage in landfills. (Có rất nhiều rác nhựa trong bãi rác.)</strong> → Sai. Dù đúng, nhưng không phải ý chính của đoạn văn.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: In paragraph (E), what does the word 'incineration' most likely mean?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. To turn waste materials into products like book covers															</div>
+																				<div class="ps-4 mb-2">
+																	B. To bury waste materials in a large hole															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. To burn waste materials and harvest the energy.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. To allow waste products to decompose and become fertilizer															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (E), what does the word "incineration" most likely mean?</strong> (Trong đoạn (E), từ "incineration" có nghĩa gần nhất với?)</p>
+<ul>
+<li>❌ <strong>To bury waste materials in a large hole. (Chôn rác trong một cái hố lớn.)</strong> → Sai. Đây là phương pháp chôn lấp (landfilling), không phải đốt rác.</li>
+<li>❌ <strong>To allow waste products to decompose and become fertilizer. (Cho phép rác thải phân hủy thành phân bón.)</strong> → Sai. Đây là phương pháp ủ phân (composting), không phải đốt rác.</li>
+<li>✅ <strong>To burn waste materials and harvest the energy. (Đốt rác và thu năng lượng.)</strong> → Đúng. "Incineration" là quá trình đốt rác, có thể tạo nhiệt lượng để sản xuất điện.</li>
+<li>❌ <strong>To turn waste materials into products like book covers. (Biến rác thành sản phẩm như bìa sách.)</strong> → Sai. Đây là quy trình tái chế (recycling), không phải đốt rác.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Which conclusion could be supported with text from the passage?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Each method of waste management has its drawbacks.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Recycling is without a doubt the best way to handle waste.															</div>
+																				<div class="ps-4 mb-2">
+																	C. All large cities should create massive compost piles.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Incineration is the best way to process waste.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which conclusion could be supported with text from the passage?</strong> (Kết luận nào có thể được hỗ trợ bởi nội dung trong bài đọc?)</p>
+<ul>
+<li>✅ <strong>Each method of waste management has its drawbacks. (Mỗi phương pháp quản lý rác thải đều có nhược điểm riêng.)</strong> → Đúng. Bài đọc đề cập đến ưu và nhược điểm của tất cả các phương pháp quản lý rác thải.</li>
+<li>❌ <strong>Recycling is without a doubt the best way to handle waste. (Tái chế chắc chắn là cách tốt nhất để xử lý rác thải.)</strong> → Sai. Bài đọc không khẳng định tái chế là phương pháp tốt nhất.</li>
+<li>❌ <strong>Incineration is the best way to process waste. (Đốt rác là cách xử lý rác tốt nhất.)</strong> → Sai. Mặc dù đốt rác có lợi ích, nhưng bài đọc cũng nêu rõ nhược điểm của nó.</li>
+<li>❌ <strong>All large cities should create massive compost piles. (Tất cả các thành phố lớn nên tạo ra những đống ủ phân khổng lồ.)</strong> → Sai. Bài đọc không đưa ra khuyến nghị này mà chỉ đề cập đến những khó khăn khi thực hiện ủ phân quy mô lớn.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: Which best expresses the author's main purpose in writing this?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. To persuade readers that recycling is a waste of resources															</div>
+																				<div class="ps-4 mb-2">
+																	B. To convince readers to recycle and compost															</div>
+																				<div class="ps-4 mb-2">
+																	C. To compare and contrast recycling and land-filling															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. To inform readers of methods of waste management</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which best expresses the author's main purpose in writing this?</strong> (Mục đích chính của tác giả khi viết bài này là gì?)</p>
+<ul>
+<li>❌ <strong>To convince readers to recycle and compost. (Thuyết phục người đọc tái chế và ủ phân.)</strong> → Sai. Tác giả trình bày thông tin về tất cả các phương pháp quản lý rác thải mà không thiên vị phương pháp nào.</li>
+<li>❌ <strong>To persuade readers that recycling is a waste of resources. (Thuyết phục người đọc rằng tái chế là một sự lãng phí tài nguyên.)</strong> → Sai. Bài đọc không hạ thấp vai trò của tái chế.</li>
+<li>❌ <strong>To compare and contrast recycling and land-filling. (So sánh và đối chiếu tái chế và chôn lấp rác.)</strong> → Sai. Mặc dù có đề cập đến tái chế và chôn lấp, nhưng bài đọc cũng nói về các phương pháp khác.</li>
+<li>✅ <strong>To inform readers of methods of waste management. (Cung cấp thông tin cho người đọc về các phương pháp quản lý rác thải.)</strong> → Đúng. Bài đọc giới thiệu bốn phương pháp quản lý rác thải và phân tích ưu, nhược điểm của từng phương pháp.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: Which of the following is NOT mentioned in the text?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. A description of how landfills have advanced over time															</div>
+																				<div class="ps-4 mb-2">
+																	B. A description of the two methods of incinerating trash															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. A description of how trash is collected</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. A description of the uses of compost															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following is NOT mentioned in the text?</strong> (Điều nào sau đây KHÔNG được đề cập trong bài đọc?)</p>
+<ul>
+<li>✅ <strong>A description of how trash is collected. (Mô tả về cách rác được thu gom.)</strong> → Đúng. Bài đọc không nói về quá trình thu gom rác.</li>
+<li>❌ <strong>A description of the uses of compost. (Mô tả về cách sử dụng phân compost.)</strong> → Sai. Đoạn (D) đề cập đến việc sử dụng phân compost để cải thiện chất lượng đất.</li>
+<li>❌ <strong>A description of the two methods of incinerating trash. (Mô tả về hai phương pháp đốt rác.)</strong> → Sai. Đoạn (E) đề cập đến hai phương pháp đốt rác là đốt nhiên liệu từ rác và đốt rác trực tiếp.</li>
+<li>❌ <strong>A description of how landfills have advanced over time. (Mô tả về cách các bãi rác đã phát triển theo thời gian.)</strong> → Sai. Đoạn (C) nói về cách các bãi rác đã cải tiến bằng cách nén rác và sử dụng lớp lót để ngăn ô nhiễm.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: Which best explains why composting is not feasible on a large scale?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It would attract rodents that would spread disease.															</div>
+																				<div class="ps-4 mb-2">
+																	B. People wouldn't want to touch all of that gross rotting food.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Plastic would get into the compost and turn it into a pollutant.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. It would smell too bad in densely populated cities.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which best explains why composting is not feasible on a large scale?</strong> (Điều nào giải thích tốt nhất lý do tại sao ủ phân không khả thi ở quy mô lớn?)</p>
+<ul>
+<li>❌ <strong>People wouldn't want to touch all of that gross rotting food. (Mọi người không muốn chạm vào đống thức ăn thối rữa.)</strong> → Sai. Bài đọc không đề cập đến vấn đề này.</li>
+<li>❌ <strong>It would smell too bad in densely populated cities. (Mùi hôi sẽ quá nặng trong các thành phố đông dân cư.)</strong> → Sai. Mặc dù ủ phân có thể gây mùi, nhưng bài đọc không nói rằng đó là lý do chính khiến nó không khả thi.</li>
+<li>❌ <strong>It would attract rodents that would spread disease. (Nó sẽ thu hút loài gặm nhấm và lây lan dịch bệnh.)</strong> → Sai. Không có thông tin nào trong bài đọc đề cập đến loài gặm nhấm.</li>
+<li>✅ <strong>Plastic would get into the compost and turn it into a pollutant. (Nhựa sẽ lẫn vào đống ủ phân và biến nó thành chất gây ô nhiễm.)</strong> → Đúng. Đoạn (D) nói rằng việc ủ phân ở quy mô lớn rất khó vì phải loại bỏ nhựa và các vật liệu vô cơ khác.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: Which title best expresses the main idea of this text?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The Magic of Recycling: Bringing Back What Was Once Lost															</div>
+																				<div class="ps-4 mb-2">
+																	B. Do Your Part: How to Save the Earth by Recycling and Composting															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Methods of Waste Management: Pros and Cons</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Recycling Land-filling or Composting: Which is Best For You?															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which title best expresses the main idea of this text?</strong> (Tiêu đề nào thể hiện tốt nhất ý chính của bài đọc?)</p>
+<ul>
+<li>❌ <strong>The Magic of Recycling: Bringing Back What Was Once Lost. (Phép màu của tái chế: Đưa những thứ đã mất trở lại.)</strong> → Sai. Bài đọc không chỉ tập trung vào tái chế.</li>
+<li>✅ <strong>Methods of Waste Management: Pros and Cons. (Các phương pháp quản lý rác thải: Ưu và nhược điểm.)</strong> → Đúng. Bài đọc mô tả bốn phương pháp quản lý rác thải và phân tích ưu, nhược điểm của từng phương pháp.</li>
+<li>❌ <strong>Recycling, Landfilling, or Composting: Which is Best For You? (Tái chế, chôn lấp hay ủ phân: Phương pháp nào tốt nhất cho bạn?)</strong> → Sai. Bài đọc không thiên về một phương pháp cụ thể.</li>
+<li>❌ <strong>Do Your Part: How to Save the Earth by Recycling and Composting. (Hãy làm phần của bạn: Cách cứu Trái đất bằng tái chế và ủ phân.)</strong> → Sai. Bài đọc không kêu gọi hành động mà chỉ cung cấp thông tin.</li>
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

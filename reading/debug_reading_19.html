@@ -1,0 +1,580 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 19 - Part 3				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79930				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Social parasitism involves one species relying on another to <b>raise</b> its young. Among vertebrates, the best-known social parasites are birds such as cuckoos and cowbirds. The female lays an egg in a nest belonging to another species and leaves <b>it</b> for the host to rear.</p>
+
+<p><i>The dulotic species of ants, however, are the supreme social parasites.</i> Consider, for example, the unusual behavior of ants belonging to the genus Polyergus. All species of this ant have lost their ability to care for themselves. The workers do not forage for food, feed their brood or queen, or even clean their own nest. To compensate for these deficits, Polyergus ants have become highly specialized in obtaining workers from the related genus Formica to perform these essential tasks.</p>
+
+<p><b>(B)</b> During a raid, several thousand Polyergus workers will travel up to 500 feet in search of a Formica nest. They invade the nest, drive away the queen and her workers, capture the pupal brood, and carry it back to their own colony. The captured brood is then nurtured by the resident Formica workers until the pupae develop and emerge, increasing the Formica population and sustaining the mixed-species nest. The Formica workers forage for food and share it with colony members of both species. They also remove waste and <b>excavate</b> new chambers as the population grows.</p>
+
+<p><b>(C)</b> The full extent of the Polyergus ants' dependence on Formica workers becomes evident when the colony outgrows its current nest. Formica scouts locate a new nesting site, return to the mixed-species colony, and <b>recruit</b> additional Formica nestmates. Over a period of up to seven days, the Formica workers transport all the Polyergus eggs, larvae, pupae, every Polyergus adult, and even the Polyergus queen to the new nest.</p>
+
+<p>Of the approximately 8,000 species of ants in the world, all five species of Polyergus and about 200 species in other genera have evolved some degree of parasitic relationship with other ants.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Ký sinh xã hội là hiện tượng một loài phụ thuộc vào loài khác để <b>nuôi dưỡng</b> con non của mình. Trong số các loài động vật có xương sống, những loài ký sinh xã hội nổi tiếng nhất là các loài chim như chim cu gáy và chim bò. Con cái đẻ trứng vào tổ của một loài khác và để <b>nó</b> cho vật chủ chăm sóc.</p>  <p><i>Tuy nhiên, các loài kiến thuộc nhóm dulotic mới thực sự là những kẻ ký sinh xã hội bậc thầy.</i> Hãy xem xét hành vi đặc biệt của loài kiến thuộc chi <i>Polyergus</i>. Tất cả các loài kiến trong chi này đã mất khả năng tự chăm sóc bản thân. Những con kiến thợ không tìm kiếm thức ăn, không nuôi ấu trùng hoặc chăm sóc kiến chúa, thậm chí không tự dọn dẹp tổ của mình. Để bù đắp cho những thiếu sót này, kiến <i>Polyergus</i> đã phát triển khả năng chuyên biệt trong việc thu thập kiến thợ từ chi kiến <i>Formica</i> có họ hàng gần để thực hiện các nhiệm vụ thiết yếu này.</p>  <p><b>(B)</b> Trong một cuộc tấn công, hàng nghìn con kiến <i>Polyergus</i> có thể di chuyển tới 500 feet (khoảng 150 mét) để tìm kiếm một tổ kiến <i>Formica</i>. Chúng xâm nhập tổ, đuổi kiến chúa và kiến thợ của loài này đi, bắt cóc các nhộng đang phát triển rồi mang về tổ của chúng. Những nhộng bị bắt cóc sau đó được những con kiến <i>Formica</i> cư trú trong tổ nuôi dưỡng cho đến khi chúng phát triển và nở ra, làm tăng dân số loài <i>Formica</i> và duy trì tổ chung giữa hai loài. Các kiến <i>Formica</i> tìm kiếm thức ăn và chia sẻ với các thành viên của cả hai loài. Chúng cũng dọn dẹp chất thải và <b>đào</b> thêm các khoang mới khi dân số tăng lên.</p>  <p><b>(C)</b> Mức độ phụ thuộc hoàn toàn của kiến <i>Polyergus</i> vào kiến <i>Formica</i> trở nên rõ ràng nhất khi tổ phát triển vượt quá sức chứa. Những con kiến <i>Formica</i> trinh sát tìm kiếm một vị trí làm tổ mới, quay trở lại tổ chung và <b>tuyển mộ</b> thêm đồng loại của mình. Trong khoảng thời gian lên đến bảy ngày, kiến <i>Formica</i> vận chuyển tất cả trứng, ấu trùng, nhộng, toàn bộ kiến trưởng thành <i>Polyergus</i>, và thậm chí cả kiến chúa <i>Polyergus</i> đến tổ mới.</p>  <p>Trong số khoảng 8.000 loài kiến trên thế giới, tất cả 5 loài thuộc chi <i>Polyergus</i> và khoảng 200 loài khác thuộc các chi khác đã tiến hóa để hình thành mối quan hệ ký sinh xã hội ở mức độ nhất định với các loài kiến khác.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>(A)</b> Social parasitism involves one species relying on another to <b>raise</b> its young. Among vertebrates, the best-known social parasites are birds such as cuckoos and cowbirds. The female lays an egg in a nest belonging to another species and leaves <b>it</b> for the host to rear.</p>
+
+<p><i>The dulotic species of ants, however, are the supreme social parasites.</i> Consider, for example, the unusual behavior of ants belonging to the genus Polyergus. All species of this ant have lost their ability to care for themselves. The workers do not forage for food, feed their brood or queen, or even clean their own nest. To compensate for these deficits, Polyergus ants have become highly specialized in obtaining workers from the related genus Formica to perform these essential tasks.</p>
+
+<p><b>(B)</b> During a raid, several thousand Polyergus workers will travel up to 500 feet in search of a Formica nest. They invade the nest, drive away the queen and her workers, capture the pupal brood, and carry it back to their own colony. The captured brood is then nurtured by the resident Formica workers until the pupae develop and emerge, increasing the Formica population and sustaining the mixed-species nest. The Formica workers forage for food and share it with colony members of both species. They also remove waste and <b>excavate</b> new chambers as the population grows.</p>
+
+<p><b>(C)</b> The full extent of the Polyergus ants' dependence on Formica workers becomes evident when the colony outgrows its current nest. Formica scouts locate a new nesting site, return to the mixed-species colony, and <b>recruit</b> additional Formica nestmates. Over a period of up to seven days, the Formica workers transport all the Polyergus eggs, larvae, pupae, every Polyergus adult, and even the Polyergus queen to the new nest.</p>
+
+<p>Of the approximately 8,000 species of ants in the world, all five species of Polyergus and about 200 species in other genera have evolved some degree of parasitic relationship with other ants.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Which of the following statements best represents the main idea of the passage?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Ants belonging to the genus Formica are incapable of performing certain tasks.															</div>
+																				<div class="ps-4 mb-2">
+																	B. Polyergus ants frequently leave their nests to build new colonies.															</div>
+																				<div class="ps-4 mb-2">
+																	C. The genus Polyergus is quite similar to the genus Formica.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Ants belonging to the genus Polyergus have an unusual relationship with ants belonging to the genus Formica.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following statements best represents the main idea of the passage?</strong> (Câu nào sau đây thể hiện rõ nhất ý chính của bài đọc?)</p> 
+<ul> 
+<li>❌ <strong>Ants belonging to the genus Formica are incapable of performing certain tasks.</strong> (Loài kiến thuộc chi Formica không thể thực hiện một số nhiệm vụ.) → Sai, vì kiến Formica có thể thực hiện nhiều nhiệm vụ và thậm chí còn hỗ trợ kiến Polyergus.</li> 
+<li>❌ <strong>The genus Polyergus is quite similar to the genus Formica.</strong> (Chi Polyergus khá giống chi Formica.) → Sai, vì hai loài có sự khác biệt lớn, đặc biệt là Polyergus hoàn toàn phụ thuộc vào Formica.</li> 
+<li>✅ <strong>Ants belonging to the genus Polyergus have an unusual relationship with ants belonging to the genus Formica.</strong> (Kiến Polyergus có mối quan hệ bất thường với kiến Formica.) → Đúng, vì bài đọc tập trung vào cách kiến Polyergus phụ thuộc vào Formica để sinh tồn.</li> 
+<li>❌ <strong>Polyergus ants frequently leave their nests to build new colonies.</strong> (Kiến Polyergus thường rời tổ để xây dựng thuộc địa mới.) → Sai, vì chúng không tự xây dựng tổ mà dựa vào kiến Formica để di dời tổ.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: The word "raise" in paragraph (A) is closest in meaning to which of the following?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. rear</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. collect															</div>
+																				<div class="ps-4 mb-2">
+																	C. increase															</div>
+																				<div class="ps-4 mb-2">
+																	D. lift															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "raise" in paragraph (A) is closest in meaning to which of the following?</strong> (Từ "raise" trong đoạn (A) có nghĩa gần nhất với từ nào?)</p> 
+<ul> 
+<li>✅ <strong>rear</strong> (nuôi dưỡng) → Đúng, vì trong bài đọc, từ "raise" được dùng với nghĩa <strong>nuôi dưỡng con non</strong>, giống như "rear".</li> 
+<li>❌ <strong>lift</strong> (nâng lên) → Sai, vì "raise" trong ngữ cảnh này không có nghĩa là nâng một vật lên.</li> 
+<li>❌ <strong>collect</strong> (thu thập) → Sai, vì "raise" không có nghĩa là thu thập thứ gì đó.</li> 
+<li>❌ <strong>increase</strong> (tăng lên) → Sai, vì "raise" trong ngữ cảnh này không có nghĩa là làm tăng số lượng.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: The author mentions cuckoos and cowbirds in paragraph (A) because they _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. are closely related species															</div>
+																				<div class="ps-4 mb-2">
+																	B. share their nests with each other															</div>
+																				<div class="ps-4 mb-2">
+																	C. raise the young of other birds															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. are social parasites</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The author mentions cuckoos and cowbirds in paragraph (A) because they _____?</strong> (Tác giả đề cập đến chim cu gáy và chim bò trong đoạn (A) vì chúng _____?)</p> 
+<ul> 
+<li>❌ <strong>share their nests with each other.</strong> (Chúng chia sẻ tổ với nhau.) → Sai, vì chim cu gáy và chim bò không chia sẻ tổ mà đẻ trứng vào tổ của loài khác.</li> 
+<li>❌ <strong>are closely related species.</strong> (Chúng là những loài có quan hệ gần gũi.) → Sai, vì bài đọc không đề cập đến quan hệ tiến hóa của hai loài này.</li> 
+<li>❌ <strong>raise the young of other birds.</strong> (Chúng nuôi con non của loài chim khác.) → Sai, vì chúng không nuôi con non của loài khác mà gửi trứng cho loài khác nuôi.</li> 
+<li>✅ <strong>are social parasites.</strong> (Là loài ký sinh xã hội.) → Đúng, vì bài đọc đề cập đến chim cu gáy và chim bò như ví dụ điển hình của ký sinh xã hội.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: The word "it" in paragraph (A) refers to which of the following?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. nest															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. egg</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. female															</div>
+																				<div class="ps-4 mb-2">
+																	D. species															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "it" in paragraph (A) refers to which of the following?</strong> (Từ "it" trong đoạn (A) ám chỉ điều gì?)</p> 
+<ul> 
+<li>❌ <strong>species</strong> (loài) → Sai, vì "it" không ám chỉ một loài động vật.</li> 
+<li>❌ <strong>nest</strong> (tổ) → Sai, vì bài đọc không nói rằng tổ bị bỏ lại cho vật chủ nuôi.</li> 
+<li>✅ <strong>egg</strong> (trứng) → Đúng, vì bài đọc nói rằng con chim cái <strong>đẻ trứng vào tổ của loài khác và để "nó" cho vật chủ chăm sóc</strong>. Từ "it" ám chỉ quả trứng.</li> 
+<li>❌ <strong>female</strong> (chim cái) → Sai, vì "it" không ám chỉ con chim cái.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What does the author mean by stating that "The dulotic species of ants are the supreme social parasites" in paragraph (A)?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The Formica have developed specialized roles.															</div>
+																				<div class="ps-4 mb-2">
+																	B. The Formica do not reproduce rapidly enough to care for themselves.															</div>
+																				<div class="ps-4 mb-2">
+																	C. The Polyergus are more highly developed than die Formica.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. The Polyergus are heavily dependent on the Formica.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does the author mean by stating that "The dulotic species of ants are the supreme social parasites" in paragraph (A)?</strong> (Tác giả có ý gì khi nói rằng "Các loài kiến dulotic là những kẻ ký sinh xã hội bậc thầy" trong đoạn (A)?)</p> 
+<ul> 
+<li>❌ <strong>The Polyergus are more highly developed than the Formica.</strong> (Kiến Polyergus phát triển hơn kiến Formica.) → Sai, vì bài đọc không nói rằng Polyergus tiến hóa cao hơn.</li> 
+<li>❌ <strong>The Formica have developed specialized roles.</strong> (Kiến Formica đã phát triển các vai trò chuyên biệt.) → Sai, vì bài đọc tập trung vào sự phụ thuộc của Polyergus, không phải vai trò của Formica.</li> 
+<li>✅ <strong>The Polyergus are heavily dependent on the Formica.</strong> (Kiến Polyergus phụ thuộc rất nhiều vào kiến Formica.) → Đúng, vì bài đọc mô tả <strong>kiến Polyergus không thể tự kiếm ăn hay chăm sóc tổ</strong> mà hoàn toàn dựa vào Formica.</li> 
+<li>❌ <strong>The Formica do not reproduce rapidly enough to care for themselves.</strong> (Kiến Formica không sinh sản đủ nhanh để tự chăm sóc bản thân.) → Sai, vì bài đọc không đề cập đến tốc độ sinh sản của Formica.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Which of the following is a task that an ant of the genus Polyergus might do?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Raid another nest.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Look for food.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Clean its own nest.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Care for the young.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following is a task that an ant of the genus Polyergus might do?</strong> (Nhiệm vụ nào sau đây có thể do một con kiến thuộc chi Polyergus thực hiện?)</p> 
+<ul> 
+<li>❌ <strong>Look for food.</strong> (Tìm kiếm thức ăn.) → Sai, vì bài đọc nói rằng <strong>kiến Polyergus không tự kiếm ăn</strong> mà phụ thuộc vào kiến Formica.</li> 
+<li>✅ <strong>Raid another nest.</strong> (Tấn công tổ khác.) → Đúng, vì bài đọc mô tả <strong>kiến Polyergus thực hiện các cuộc tấn công vào tổ kiến Formica</strong> để bắt cóc nhộng.</li> 
+<li>❌ <strong>Care for the young.</strong> (Chăm sóc con non.) → Sai, vì bài đọc nói rằng <strong>kiến Polyergus không nuôi dưỡng ấu trùng</strong>, mà kiến Formica làm việc này.</li> 
+<li>❌ <strong>Clean its own nest.</strong> (Dọn dẹp tổ của chính nó.) → Sai, vì bài đọc nói rằng <strong>kiến Formica đảm nhiệm việc dọn dẹp tổ</strong>, không phải Polyergus.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: The word "excavate" in paragraph (B) is closest in meaning to which of the following?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. dig</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. find															</div>
+																				<div class="ps-4 mb-2">
+																	C. clean															</div>
+																				<div class="ps-4 mb-2">
+																	D. repair															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "excavate" in paragraph (B) is closest in meaning to which of the following?</strong> (Từ "excavate" trong đoạn (B) có nghĩa gần nhất với từ nào?)</p> 
+<ul> 
+<li>❌ <strong>find</strong> (tìm thấy) → Sai, vì "excavate" không có nghĩa là tìm kiếm thứ gì đó.</li> 
+<li>❌ <strong>clean</strong> (làm sạch) → Sai, vì "excavate" không có nghĩa là làm sạch mà là hành động đào bới.</li> 
+<li>❌ <strong>repair</strong> (sửa chữa) → Sai, vì "excavate" không có nghĩa là sửa chữa thứ gì đó.</li> 
+<li>✅ <strong>dig</strong> (đào) → Đúng, vì trong bài đọc, từ "excavate" được dùng để mô tả <strong>kiến Formica đào thêm các khoang mới</strong> khi dân số tăng.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: The word "recruit" in paragraph (C) is closest in meaning to which of the following?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. enlist</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. endure															</div>
+																				<div class="ps-4 mb-2">
+																	C. capture															</div>
+																				<div class="ps-4 mb-2">
+																	D. create															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "recruit" in paragraph (C) is closest in meaning to which of the following?</strong> (Từ "recruit" trong đoạn (C) có nghĩa gần nhất với từ nào?)</p> 
+<ul> 
+<li>❌ <strong>create</strong> (tạo ra) → Sai, vì "recruit" không có nghĩa là tạo ra thứ gì đó.</li> 
+<li>✅ <strong>enlist</strong> (chiêu mộ) → Đúng, vì trong bài đọc, "recruit" được dùng để mô tả <strong>kiến Formica tuyển mộ đồng loại của mình để di dời tổ</strong>.</li> 
+<li>❌ <strong>endure</strong> (chịu đựng) → Sai, vì "recruit" không liên quan đến việc chịu đựng.</li> 
+<li>❌ <strong>capture</strong> (bắt giữ) → Sai, vì "recruit" không có nghĩa là bắt giữ.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What happens when a mixed colony of Polyergus and Formica ants becomes too large?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. The Polyergus and the Formica move to a new nest.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. The Polyergus and the Formica build separate nests.															</div>
+																				<div class="ps-4 mb-2">
+																	C. The Polyergus workers enlarge the existing nest.															</div>
+																				<div class="ps-4 mb-2">
+																	D. The captured Formica workers return to their original nest.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What happens when a mixed colony of Polyergus and Formica ants becomes too large?</strong> (Điều gì xảy ra khi một tổ chung của kiến Polyergus và Formica trở nên quá lớn?)</p> 
+<ul> 
+<li>❌ <strong>The Polyergus workers enlarge the existing nest.</strong> (Kiến Polyergus mở rộng tổ hiện tại.) → Sai, vì bài đọc nói rằng <strong>kiến Polyergus không tự xây dựng hay mở rộng tổ</strong>.</li> 
+<li>❌ <strong>The captured Formica workers return to their original nest.</strong> (Kiến Formica bị bắt trở về tổ ban đầu của chúng.) → Sai, vì kiến Formica không quay lại tổ cũ.</li> 
+<li>❌ <strong>The Polyergus and the Formica build separate nests.</strong> (Kiến Polyergus và Formica xây dựng tổ riêng biệt.) → Sai, vì hai loài này luôn sống chung trong một tổ.</li> 
+<li>✅ <strong>The Polyergus and the Formica move to a new nest.</strong> (Kiến Polyergus và Formica di chuyển đến tổ mới.) → Đúng, vì bài đọc nói rằng <strong>khi tổ trở nên quá tải, kiến Formica tìm kiếm một vị trí mới và di dời toàn bộ tổ</strong>.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: According to the information in the passage, all of the following terms refer to ants belonging to the genus Formica EXCEPT?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. the dulotic species of ants</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. the developing pupae															</div>
+																				<div class="ps-4 mb-2">
+																	C. the worker population															</div>
+																				<div class="ps-4 mb-2">
+																	D. the captured brood															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the information in the passage, all of the following terms refer to ants belonging to the genus Formica EXCEPT?</strong> (Theo thông tin trong bài đọc, tất cả các thuật ngữ sau đây đề cập đến kiến thuộc chi Formica NGOẠI TRỪ?)</p> 
+<ul> 
+<li>✅ <strong>the dulotic species of ants</strong> (các loài kiến dulotic) → Đúng, vì thuật ngữ này đề cập đến kiến Polyergus, không phải Formica.</li> 
+<li>❌ <strong>the captured brood</strong> (lứa nhộng bị bắt) → Sai, vì bài đọc nói rằng <strong>kiến Polyergus bắt cóc nhộng Formica</strong>, nên thuật ngữ này chỉ nhộng Formica.</li> 
+<li>❌ <strong>the developing pupae</strong> (nhộng đang phát triển) → Sai, vì bài đọc nói rằng <strong>nhộng bị bắt cóc là của kiến Formica</strong>.</li> 
+<li>❌ <strong>the worker population</strong> (dân số kiến thợ) → Sai, vì bài đọc nói rằng <strong>kiến thợ Formica thực hiện tất cả nhiệm vụ trong tổ</strong>.</li> 
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

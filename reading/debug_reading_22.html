@@ -1,0 +1,588 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 22 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79933				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>The Reluctant Hero</b></p>
+
+<p><b>(A)</b> The most endearing thing about Aaron Green—and there are many—is his refusal to accept how famous he's about to become. "I can walk down the street and not be hassled, which is really nice. I kind of hope that continues, and I'm sure it will," he says earnestly. He seems genuinely to believe that the job won't change his life. "There's nothing <b>fascinating</b> about my life, and there's absolutely no reason why that should start happening." You can only wish him well.</p>
+
+<p>How lovely it would be if this turned out to be true, but the chances are it won't, and he must know this. Aaron has been cast as the hero in the latest fantasy blockbuster that will hit our screens next year. The first photo of him in his costume was released last week, sparking a frenzy on the Internet.</p>
+
+<p><b>(B)</b> After an award nomination for his last film, Aaron is having the biggest year of his life, but it <b>hasn't gone to his head</b>. "It's nice if your work is praised, but this is all very new to me," he says. "I really like working in this profession and exploring its possibilities. Who knows what the future holds? We could dream about what might happen next, but there's not much point. I'm just enjoying my job and want to do well in it, but that's kind of it, really. No big hassles."</p>
+
+<p>Of all the characters in his last film, which is based on a true story about a group of university students who start an influential blog, Aaron's character is the one who emerges as the most likeable. But he insists that the plot is not as straightforward as it might appear. "What's wonderful about this film is that everyone feels they are the good guy. I don't think anyone in the cast felt they were playing the villain. It was just a group of human beings who had different opinions."</p>
+
+<p><b>(C)</b> It's a typically thoughtful answer from the 27-year-old, who seems to be a bit of a worrier and prefers to avoid watching himself on screen. Doubtless, he doesn't care much for interviews either, but he is so open and engaging that you wouldn’t know it. He felt "a heightened sense of responsibility" playing a real-life person in his last film but had no direct contact with the person concerned. "These people are living and breathing somewhere—of course, that has a great effect on the care with which you approach your work. I kept wondering if he'd come and see the film, if he'd recognize himself in my performance or be angered by it."</p>
+
+<p><b>(D)</b> His performance has a vulnerability that is almost painful to watch. Does he seek out those parts, or do directors see that quality in him? "I don’t know, I think it’s probably a bit of both. I certainly have that unwillingness to lose naivety—to lose that childlike way of looking at the world. I find it a very real and profound theme in my life and, talking to other people my age, I think it’s universal."</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>Người Hùng Miễn Cưỡng</b></p>    <p><b>(A)</b> Điều đáng yêu nhất về Aaron Green—và có rất nhiều điều đáng yêu—là sự từ chối chấp nhận việc anh sắp trở nên nổi tiếng đến mức nào. "Tôi có thể đi dạo trên đường mà không bị ai làm phiền, điều đó thực sự rất tuyệt. Tôi khá hy vọng điều này sẽ tiếp tục, và tôi chắc chắn là nó sẽ vậy," anh ấy nói một cách chân thành. Anh dường như thực sự tin rằng công việc này sẽ không thay đổi cuộc sống của mình. "Không có gì <b>đặc biệt</b> về cuộc sống của tôi, và hoàn toàn không có lý do gì để điều đó bắt đầu xảy ra." Bạn chỉ có thể chúc anh ấy may mắn.</p>    <p>Thật tuyệt nếu điều đó trở thành sự thật, nhưng khả năng là không, và chắc hẳn anh ấy cũng biết điều đó. Aaron đã được chọn vào vai chính trong bộ phim giả tưởng bom tấn mới nhất sẽ ra mắt vào năm sau. Tuần trước, bức ảnh đầu tiên của anh trong bộ trang phục đã được công bố, làm dậy sóng cộng đồng mạng.</p>    <p><b>(B)</b> Sau khi nhận được một đề cử giải thưởng cho bộ phim trước, Aaron đang có năm thành công nhất trong sự nghiệp của mình, nhưng <b>anh ấy không hề kiêu ngạo</b>. "Thật tuyệt nếu công việc của bạn được khen ngợi, nhưng tất cả những điều này đều rất mới mẻ với tôi," anh ấy nói. "Tôi thực sự thích làm việc trong lĩnh vực này và khám phá những khả năng của nó. Ai mà biết được tương lai sẽ ra sao? Chúng ta có thể mơ về những gì có thể xảy ra tiếp theo, nhưng điều đó cũng không có nhiều ý nghĩa. Tôi chỉ đang tận hưởng công việc của mình và muốn làm tốt nó, vậy thôi. Không có rắc rối gì lớn cả."</p>    <p>Trong số tất cả các nhân vật trong bộ phim trước đó, vốn dựa trên một câu chuyện có thật về một nhóm sinh viên đại học lập ra một blog có ảnh hưởng, nhân vật của Aaron là người được khán giả yêu thích nhất. Nhưng anh khẳng định rằng cốt truyện không đơn giản như vẻ bề ngoài. "Điều tuyệt vời về bộ phim này là ai cũng cảm thấy họ là người tốt. Tôi không nghĩ có ai trong dàn diễn viên cảm thấy mình đang đóng vai phản diện. Họ chỉ là một nhóm con người có những quan điểm khác nhau."</p>    <p><b>(C)</b> Đó là một câu trả lời đầy suy tư điển hình của nam diễn viên 27 tuổi này, người có vẻ là một người hay lo lắng và thích tránh xem lại chính mình trên màn ảnh. Chắc chắn, anh ấy cũng không mặn mà với các cuộc phỏng vấn, nhưng anh ấy lại cởi mở và cuốn hút đến mức bạn sẽ không nhận ra điều đó. Khi đóng vai một nhân vật có thật trong bộ phim trước, anh ấy cảm thấy "một trách nhiệm cao độ" nhưng không có liên hệ trực tiếp với người ngoài đời thực. "Những người này vẫn đang sống và hít thở ở đâu đó—tất nhiên, điều đó ảnh hưởng rất nhiều đến sự cẩn trọng mà bạn áp dụng vào công việc của mình. Tôi cứ tự hỏi liệu anh ấy có đến xem phim không, liệu anh ấy có nhận ra mình trong diễn xuất của tôi không hay có tức giận vì nó không."</p>    <p><b>(D)</b> Màn trình diễn của anh ấy có một sự mong manh gần như khiến người ta đau lòng khi xem. Liệu anh ấy có chủ động tìm kiếm những vai diễn như vậy, hay các đạo diễn nhìn thấy phẩm chất đó trong anh? "Tôi không biết, tôi nghĩ có lẽ là cả hai. Tôi chắc chắn có sự do dự trong việc đánh mất sự ngây thơ—đánh mất cách nhìn thế giới bằng đôi mắt của một đứa trẻ. Tôi thấy đó là một chủ đề rất thực tế và sâu sắc trong cuộc sống của mình, và khi nói chuyện với những người cùng tuổi, tôi nghĩ nó mang tính phổ quát."</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>The Reluctant Hero</b></p>
+
+<p><b>(A)</b> The most endearing thing about Aaron Green—and there are many—is his refusal to accept how famous he's about to become. "I can walk down the street and not be hassled, which is really nice. I kind of hope that continues, and I'm sure it will," he says earnestly. He seems genuinely to believe that the job won't change his life. "There's nothing <b>fascinating</b> about my life, and there's absolutely no reason why that should start happening." You can only wish him well.</p>
+
+<p>How lovely it would be if this turned out to be true, but the chances are it won't, and he must know this. Aaron has been cast as the hero in the latest fantasy blockbuster that will hit our screens next year. The first photo of him in his costume was released last week, sparking a frenzy on the Internet.</p>
+
+<p><b>(B)</b> After an award nomination for his last film, Aaron is having the biggest year of his life, but it <b>hasn't gone to his head</b>. "It's nice if your work is praised, but this is all very new to me," he says. "I really like working in this profession and exploring its possibilities. Who knows what the future holds? We could dream about what might happen next, but there's not much point. I'm just enjoying my job and want to do well in it, but that's kind of it, really. No big hassles."</p>
+
+<p>Of all the characters in his last film, which is based on a true story about a group of university students who start an influential blog, Aaron's character is the one who emerges as the most likeable. But he insists that the plot is not as straightforward as it might appear. "What's wonderful about this film is that everyone feels they are the good guy. I don't think anyone in the cast felt they were playing the villain. It was just a group of human beings who had different opinions."</p>
+
+<p><b>(C)</b> It's a typically thoughtful answer from the 27-year-old, who seems to be a bit of a worrier and prefers to avoid watching himself on screen. Doubtless, he doesn't care much for interviews either, but he is so open and engaging that you wouldn’t know it. He felt "a heightened sense of responsibility" playing a real-life person in his last film but had no direct contact with the person concerned. "These people are living and breathing somewhere—of course, that has a great effect on the care with which you approach your work. I kept wondering if he'd come and see the film, if he'd recognize himself in my performance or be angered by it."</p>
+
+<p><b>(D)</b> His performance has a vulnerability that is almost painful to watch. Does he seek out those parts, or do directors see that quality in him? "I don’t know, I think it’s probably a bit of both. I certainly have that unwillingness to lose naivety—to lose that childlike way of looking at the world. I find it a very real and profound theme in my life and, talking to other people my age, I think it’s universal."</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: According to the text, what does Aaron think about his job?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It helps him become famous.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. It can't make his life change.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. It's a boring job.															</div>
+																				<div class="ps-4 mb-2">
+																	D. It brings him many opportunities.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the text, what does Aaron think about his job?</strong> (Theo đoạn văn, Aaron nghĩ gì về công việc của anh ấy?)</p> 
+<ul> 
+<li>❌ <strong>It helps him become famous.</strong> (Nó giúp anh ấy trở nên nổi tiếng.) → Sai, vì trong đoạn (A), Aaron nói rằng anh không nghĩ công việc của mình sẽ thay đổi cuộc sống của anh ấy.</li> 
+<li>✅ <strong>It can't make his life change.</strong> (Nó không thể thay đổi cuộc sống của anh ấy.) → Đúng, vì Aaron tin rằng anh vẫn có thể đi dạo mà không bị làm phiền, và anh hy vọng điều này sẽ tiếp tục.</li> 
+<li>❌ <strong>It's a boring job.</strong> (Đó là một công việc nhàm chán.) → Sai, vì Aaron nói rằng anh ấy thích công việc của mình.</li> 
+<li>❌ <strong>It brings him many opportunities.</strong> (Nó mang lại cho anh ấy nhiều cơ hội.) → Sai, vì đoạn văn không đề cập đến việc anh ấy nhận được nhiều cơ hội từ công việc.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: The word "fascinating" in paragraph (A) can be best replaced by _____?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. interesting</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. ordinary															</div>
+																				<div class="ps-4 mb-2">
+																	C. modern															</div>
+																				<div class="ps-4 mb-2">
+																	D. frightening															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "fascinating" in paragraph (A) can be best replaced by _____?</strong> (Từ "fascinating" trong đoạn (A) có thể được thay thế tốt nhất bằng từ nào?)</p> 
+<ul> 
+<li>❌ <strong>modern</strong> (hiện đại) → Sai, vì "fascinating" có nghĩa là hấp dẫn, thú vị, không phải hiện đại.</li> 
+<li>❌ <strong>ordinary</strong> (bình thường) → Sai, vì "fascinating" mang nghĩa ngược lại với "ordinary".</li> 
+<li>❌ <strong>frightening</strong> (đáng sợ) → Sai, vì "fascinating" không có nghĩa tiêu cực.</li> 
+<li>✅ <strong>interesting</strong> (thú vị) → Đúng, vì "fascinating" có nghĩa là "cực kỳ thú vị", đồng nghĩa với "interesting".</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: In paragraph (A), the writer suggests that he thinks Aaron _____?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. seems confident that he can deal with fame															</div>
+																				<div class="ps-4 mb-2">
+																	B. has a sensible attitude towards fame															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. seems unaware that he's about to become famous</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. has unrealistic ideas about what it's like to be famous															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (A), the writer suggests that he thinks Aaron _____?</strong> (Trong đoạn (A), tác giả gợi ý rằng anh ấy nghĩ Aaron _____?)</p> 
+<ul> 
+<li>❌ <strong>has a sensible attitude towards fame.</strong> (có thái độ hợp lý đối với sự nổi tiếng.) → Sai, vì Aaron có vẻ không thực sự nhận thức được sự thay đổi mà danh tiếng sẽ mang lại.</li> 
+<li>❌ <strong>seems confident that he can deal with fame.</strong> (có vẻ tự tin rằng anh ấy có thể đối phó với sự nổi tiếng.) → Sai, vì Aaron không nghĩ danh tiếng sẽ ảnh hưởng đến anh ấy.</li> 
+<li>✅ <strong>seems unaware that he's about to become famous.</strong> (có vẻ không nhận thức được rằng anh ấy sắp trở nên nổi tiếng.) → Đúng, vì anh ấy nói rằng anh hy vọng cuộc sống của mình sẽ không thay đổi, nhưng thực tế thì điều đó rất khó xảy ra.</li> 
+<li>❌ <strong>has unrealistic ideas about what it's like to be famous.</strong> (có những ý tưởng phi thực tế về việc nổi tiếng như thế nào.) → Sai, vì Aaron không hẳn có ý tưởng phi thực tế, mà chỉ là anh ấy chưa thực sự ý thức được điều đó.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: According to the text, when will Aaron's latest film probably be released?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. in the next 2 years															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. next year</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. in the next 5 years															</div>
+																				<div class="ps-4 mb-2">
+																	D. at the end of this year															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the text, when will Aaron's latest film probably be released?</strong> (Theo đoạn văn, khi nào bộ phim mới nhất của Aaron có thể được phát hành?)</p> 
+<ul> 
+<li>❌ <strong>at the end of this year.</strong> (vào cuối năm nay.) → Sai, vì đoạn văn không đề cập đến việc phim sẽ ra mắt vào cuối năm nay.</li> 
+<li>✅ <strong>next year.</strong> (năm sau.) → Đúng, vì trong đoạn (A), có nói rằng bộ phim mới của Aaron sẽ ra mắt vào năm sau.</li> 
+<li>❌ <strong>in the next 2 years.</strong> (trong 2 năm tới.) → Sai, vì đoạn văn chỉ nhắc đến "năm sau", không phải "2 năm tới".</li> 
+<li>❌ <strong>in the next 5 years.</strong> (trong 5 năm tới.) → Sai, vì bộ phim dự kiến ra mắt sớm hơn nhiều.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: The phrase "hasn't gone to his head" in paragraph (B) suggests that Aaron _____?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. would like to receive great attention															</div>
+																				<div class="ps-4 mb-2">
+																	B. is doubtful whether he will win an award															</div>
+																				<div class="ps-4 mb-2">
+																	C. is used to receiving so much praise															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. doesn't think much about his achievements</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The phrase "hasn't gone to his head" in paragraph (B) suggests that Aaron _____?</strong> (Cụm từ "hasn't gone to his head" trong đoạn (B) gợi ý rằng Aaron _____?)</p> 
+<ul> 
+<li>✅ <strong>doesn't think much about his achievements.</strong> (không nghĩ nhiều về thành tựu của mình.) → Đúng, vì "hasn't gone to his head" có nghĩa là không để danh tiếng làm thay đổi thái độ của mình.</li> 
+<li>❌ <strong>is used to receiving so much praise.</strong> (đã quen với việc nhận được nhiều lời khen ngợi.) → Sai, vì Aaron nói rằng điều này vẫn còn mới mẻ với anh ấy.</li> 
+<li>❌ <strong>is doubtful whether he will win an award.</strong> (nghi ngờ liệu anh ấy có giành được giải thưởng hay không.) → Sai, vì đoạn văn không đề cập đến sự nghi ngờ của Aaron về việc thắng giải.</li> 
+<li>❌ <strong>would like to receive great attention.</strong> (muốn nhận được sự chú ý lớn.) → Sai, vì Aaron có vẻ không quan tâm đến việc trở nên nổi tiếng.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: What does Aaron say about his last film?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. There are clear heroes in it.															</div>
+																				<div class="ps-4 mb-2">
+																	B. There were often disagreements between the actors.															</div>
+																				<div class="ps-4 mb-2">
+																	C. He knows why people liked his character best.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. The plot is not as simple as it may appear.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does Aaron say about his last film?</strong> (Aaron nói gì về bộ phim trước của anh ấy?)</p> 
+<ul> 
+<li>❌ <strong>There are clear heroes in it.</strong> (Có những nhân vật anh hùng rõ ràng trong đó.) → Sai, vì Aaron nói rằng ai cũng nghĩ mình là người tốt, không có nhân vật phản diện rõ ràng.</li> 
+<li>✅ <strong>The plot is not as simple as it may appear.</strong> (Cốt truyện không đơn giản như vẻ bề ngoài.) → Đúng, vì Aaron nhấn mạnh rằng bộ phim có nhiều sắc thái hơn là chỉ có nhân vật tốt và xấu.</li> 
+<li>❌ <strong>He knows why people liked his character best.</strong> (Anh ấy biết tại sao nhân vật của anh ấy được yêu thích nhất.) → Sai, vì anh ấy không nói về lý do tại sao nhân vật của mình được khán giả yêu thích.</li> 
+<li>❌ <strong>There were often disagreements between the actors.</strong> (Có nhiều bất đồng giữa các diễn viên.) → Sai, vì đoạn văn không đề cập đến sự bất đồng giữa các diễn viên.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What makes the writer think that Aaron is a bit of a worrier?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He doesn't like giving interviews.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. He avoids watching his own films.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. He thinks carefully before answering a question.															</div>
+																				<div class="ps-4 mb-2">
+																	D. He feels responsible for the character he plays.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What makes the writer think that Aaron is a bit of a worrier?</strong> (Điều gì khiến tác giả nghĩ rằng Aaron là một người hay lo lắng?)</p> 
+<ul> 
+<li>✅ <strong>He avoids watching his own films.</strong> (Anh ấy tránh xem phim của chính mình.) → Đúng, vì đoạn (C) nói rằng Aaron không thích xem lại mình trên màn ảnh.</li> 
+<li>❌ <strong>He doesn't like giving interviews.</strong> (Anh ấy không thích phỏng vấn.) → Sai, vì mặc dù anh ấy không hứng thú với phỏng vấn, nhưng anh ấy vẫn rất cởi mở khi tham gia.</li> 
+<li>❌ <strong>He feels responsible for the character he plays.</strong> (Anh ấy cảm thấy có trách nhiệm với nhân vật mà anh ấy đóng.) → Sai, vì đây là dấu hiệu của sự tận tâm, không phải lo lắng.</li> 
+<li>❌ <strong>He thinks carefully before answering a question.</strong> (Anh ấy suy nghĩ cẩn thận trước khi trả lời câu hỏi.) → Sai, vì điều này không liên quan đến việc anh ấy lo lắng.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: How did Aaron feel when playing a real-life person in his last film?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. curious															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. highly responsible</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. fantastic															</div>
+																				<div class="ps-4 mb-2">
+																	D. confused															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>How did Aaron feel when playing a real-life person in his last film?</strong> (Aaron cảm thấy thế nào khi đóng vai một nhân vật có thật trong bộ phim trước của anh ấy?)</p> 
+<ul> 
+<li>❌ <strong>curious</strong> (tò mò) → Sai, vì anh ấy không nói rằng anh ấy tò mò về nhân vật này.</li> 
+<li>❌ <strong>fantastic</strong> (tuyệt vời) → Sai, vì anh ấy không đề cập đến việc cảm thấy phấn khích hay hào hứng.</li> 
+<li>❌ <strong>confused</strong> (bối rối) → Sai, vì không có chi tiết nào cho thấy anh ấy bối rối khi đóng vai nhân vật có thật.</li> 
+<li>✅ <strong>highly responsible</strong> (cảm thấy có trách nhiệm cao) → Đúng, vì Aaron nói rằng anh ấy cảm thấy "một trách nhiệm cao độ" khi đóng vai một người thực.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What does Aaron say about playing a real-life person on screen?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He was pleased that the person approved of the fact he was playing it.															</div>
+																				<div class="ps-4 mb-2">
+																	B. He was disappointed that he never met that person.															</div>
+																				<div class="ps-4 mb-2">
+																	C. He was sure that person wouldn't want to see the film.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. He was concerned that the person might feel angry.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does Aaron say about playing a real-life person on screen?</strong> (Aaron nói gì về việc đóng vai một nhân vật có thật trên màn ảnh?)</p> 
+<ul> 
+<li>❌ <strong>He was disappointed that he never met that person.</strong> (Anh ấy thất vọng vì chưa bao giờ gặp người đó.) → Sai, vì anh ấy không nói rằng anh ấy muốn gặp người thật.</li> 
+<li>❌ <strong>He was sure that person wouldn't want to see the film.</strong> (Anh ấy chắc chắn rằng người đó sẽ không muốn xem phim.) → Sai, vì anh ấy không chắc chắn về điều đó.</li> 
+<li>✅ <strong>He was concerned that the person might feel angry.</strong> (Anh ấy lo lắng rằng người đó có thể cảm thấy tức giận.) → Đúng, vì anh ấy nói rằng anh ấy tự hỏi liệu người đó có tức giận về cách anh ấy thể hiện nhân vật không.</li> 
+<li>❌ <strong>He was pleased that the person approved of the fact he was playing it.</strong> (Anh ấy vui mừng vì người đó chấp nhận việc anh ấy đóng vai họ.) → Sai, vì anh ấy không biết người đó có đồng ý hay không.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: According to paragraph (D), what do Aaron and the directors of films have in common?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. the unwillingness to lose naivety</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. the professionalism															</div>
+																				<div class="ps-4 mb-2">
+																	C. the appearance															</div>
+																				<div class="ps-4 mb-2">
+																	D. the fame															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to paragraph (D), what do Aaron and the directors of films have in common?</strong> (Theo đoạn (D), Aaron và các đạo diễn phim có điểm chung gì?)</p> 
+<ul> 
+<li>❌ <strong>the fame</strong> (sự nổi tiếng) → Sai, vì không phải tất cả đạo diễn phim đều nổi tiếng.</li> 
+<li>❌ <strong>the professionalism</strong> (sự chuyên nghiệp) → Sai, vì không có đề cập đến việc Aaron và đạo diễn phim đều chuyên nghiệp.</li> 
+<li>❌ <strong>the appearance</strong> (ngoại hình) → Sai, vì đoạn văn không nhắc đến ngoại hình của Aaron hoặc đạo diễn.</li> 
+<li>✅ <strong>the unwillingness to lose naivety</strong> (sự miễn cưỡng trong việc đánh mất sự ngây thơ) → Đúng, vì Aaron nói rằng anh ấy không muốn mất đi cách nhìn thế giới bằng đôi mắt trẻ thơ, điều mà anh ấy tin là có tính phổ quát.</li> 
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

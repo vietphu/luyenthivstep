@@ -1,0 +1,664 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 12 - Part 4				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R76831				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p>Life is believed to have originated in the early seas less than a billion years after the Earth was formed. Yet another three billion years were to pass before the first plants and animals appeared on the continents. The transition of life from sea to land was perhaps as significant an evolutionary challenge as the origin of life itself.</p>
+
+<p><b>(A)</b> What forms of life were able to make such a <b>drastic</b> change in lifestyle? The traditional view of the first terrestrial organisms is based on megafossils—relatively large specimens of essentially whole plants and animals. Vascular plants, related to modern seed plants and ferns, left the first comprehensive megafossil record. Because of this, it has been widely assumed that the sequence of terrestrialization mirrored the evolution of modern terrestrial ecosystems. In this view, primitive vascular plants first colonized the margins of continental waters, followed by animals that fed on the plants, and lastly by animals that preyed on the plant-eaters. Moreover, the megafossils suggest that terrestrial life appeared and diversified explosively near the boundary between the Silurian and the Devonian periods, a little more than 400 million years ago.</p>
+
+<p><b>(B)</b> Recently, however, paleontologists have been taking a closer look at the sediments below this Silurian-Devonian geological boundary. It turns out that some fossils can be <b>extracted</b> from these sediments by putting the rocks in an acid bath. The technique has uncovered new evidence from sediments that were deposited near the shores of the ancient oceans—plant microfossils and microscopic pieces of small animals. In many <b>instances</b>, the specimens are less than one-tenth of a millimeter in diameter. Although <b>they</b> were <b>entombed</b> in rock for hundreds of millions of years, many fossils still contain organic remains.</p>
+
+<p>These newly discovered fossils have not only revealed the existence of previously unknown organisms, but have also pushed back the dates for the invasion of land by multicellular organisms. Our views about the nature of the early plant and animal communities are now being revised. And with those revisions come new speculations about the first terrestrial life-forms.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p>Người ta tin rằng sự sống đã bắt đầu trong các đại dương nguyên thủy chưa đầy một tỷ năm sau khi Trái Đất được hình thành. Tuy nhiên, phải mất thêm ba tỷ năm nữa trước khi những loài thực vật và động vật đầu tiên xuất hiện trên các lục địa. Sự chuyển đổi của sự sống từ biển lên đất liền có lẽ là một thách thức tiến hóa quan trọng không kém so với sự khởi nguồn của sự sống.</p>  <p><b>(A)</b> Những dạng sự sống nào có thể thực hiện được sự thay đổi <b>mang tính đột phá</b> như vậy trong lối sống? Quan điểm truyền thống về những sinh vật trên cạn đầu tiên dựa trên hóa thạch lớn—các mẫu vật có kích thước tương đối lớn của các loài thực vật và động vật gần như nguyên vẹn. Các loài thực vật có mạch, có quan hệ với thực vật có hạt và dương xỉ ngày nay, đã để lại những bằng chứng hóa thạch lớn đầu tiên. Vì lý do này, người ta cho rằng quá trình chinh phục đất liền phản ánh trình tự tiến hóa của các hệ sinh thái trên cạn hiện đại. Theo quan điểm này, các loài thực vật có mạch nguyên thủy đầu tiên xâm chiếm vùng ven biển lục địa, tiếp theo là các loài động vật ăn thực vật, và cuối cùng là các loài săn mồi. Hơn nữa, các hóa thạch lớn cho thấy sự sống trên cạn xuất hiện và phát triển một cách bùng nổ vào khoảng ranh giới giữa kỷ Silur và kỷ Devon, cách đây hơn 400 triệu năm.</p>  <p><b>(B)</b> Tuy nhiên, gần đây, các nhà cổ sinh vật học đã xem xét kỹ hơn các trầm tích nằm dưới ranh giới địa chất kỷ Silur-Devon này. Họ phát hiện rằng một số hóa thạch có thể được <b>tách chiết</b> từ các lớp trầm tích này bằng cách ngâm đá vào dung dịch axit. Kỹ thuật này đã giúp phát hiện ra những bằng chứng mới từ các trầm tích được lắng đọng gần bờ đại dương cổ đại—các vi hóa thạch thực vật và những mảnh nhỏ của các loài động vật cực nhỏ. Trong nhiều <b>trường hợp</b>, các mẫu vật có đường kính chưa đến một phần mười milimet. Mặc dù <b>chúng</b> đã bị <b>chôn vùi</b> trong đá hàng trăm triệu năm, nhưng nhiều hóa thạch vẫn còn giữ lại tàn dư hữu cơ.</p>  <p>Những hóa thạch mới được phát hiện này không chỉ tiết lộ sự tồn tại của các sinh vật trước đây chưa từng được biết đến mà còn đẩy lùi niên đại của sự xâm chiếm đất liền bởi các sinh vật đa bào. Quan điểm của chúng ta về bản chất của các cộng đồng thực vật và động vật đầu tiên đang được điều chỉnh lại. Và cùng với những điều chỉnh đó là những giả thuyết mới về các dạng sự sống đầu tiên trên cạn.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p>Life is believed to have originated in the early seas less than a billion years after the Earth was formed. Yet another three billion years were to pass before the first plants and animals appeared on the continents. The transition of life from sea to land was perhaps as significant an evolutionary challenge as the origin of life itself.</p>
+
+<p><b>(A)</b> What forms of life were able to make such a <b>drastic</b> change in lifestyle? The traditional view of the first terrestrial organisms is based on megafossils—relatively large specimens of essentially whole plants and animals. Vascular plants, related to modern seed plants and ferns, left the first comprehensive megafossil record. Because of this, it has been widely assumed that the sequence of terrestrialization mirrored the evolution of modern terrestrial ecosystems. In this view, primitive vascular plants first colonized the margins of continental waters, followed by animals that fed on the plants, and lastly by animals that preyed on the plant-eaters. Moreover, the megafossils suggest that terrestrial life appeared and diversified explosively near the boundary between the Silurian and the Devonian periods, a little more than 400 million years ago.</p>
+
+<p><b>(B)</b> Recently, however, paleontologists have been taking a closer look at the sediments below this Silurian-Devonian geological boundary. It turns out that some fossils can be <b>extracted</b> from these sediments by putting the rocks in an acid bath. The technique has uncovered new evidence from sediments that were deposited near the shores of the ancient oceans—plant microfossils and microscopic pieces of small animals. In many <b>instances</b>, the specimens are less than one-tenth of a millimeter in diameter. Although <b>they</b> were <b>entombed</b> in rock for hundreds of millions of years, many fossils still contain organic remains.</p>
+
+<p>These newly discovered fossils have not only revealed the existence of previously unknown organisms, but have also pushed back the dates for the invasion of land by multicellular organisms. Our views about the nature of the early plant and animal communities are now being revised. And with those revisions come new speculations about the first terrestrial life-forms.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: The word "drastic" in paragraph (A) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. radical</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. risky															</div>
+																				<div class="ps-4 mb-2">
+																	C. progressive															</div>
+																				<div class="ps-4 mb-2">
+																	D. widespread															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "drastic" in paragraph (A) is closest in meaning to?</strong> (Từ "drastic" trong đoạn (A) gần nghĩa nhất với?)</p>  
+                     <ul>     
+                         <li>❌ <strong>Widespread.</strong> (Lan rộng.)  
+                             → Sai vì "drastic" có nghĩa là thay đổi mạnh mẽ, quyết liệt, trong khi "widespread" chỉ diễn tả mức độ lan rộng, không phản ánh sự thay đổi lớn.  
+                         </li>     
+                         <li>✅ <strong>Radical.</strong> (Căn bản, triệt để.)  
+                             → Đúng vì "drastic" mô tả sự thay đổi lớn và mạnh mẽ, tương tự như "radical". Trong ngữ cảnh đoạn (A), "drastic change in lifestyle" (sự thay đổi mang tính đột phá trong lối sống) cho thấy một bước ngoặt lớn trong sự tiến hóa.  
+                         </li>     
+                         <li>❌ <strong>Progressive.</strong> (Tiến bộ.)  
+                             → Sai vì "progressive" ám chỉ sự thay đổi dần dần theo hướng tốt hơn, trong khi "drastic" nhấn mạnh sự thay đổi mạnh mẽ và quyết liệt hơn.  
+                         </li>     
+                         <li>❌ <strong>Risky.</strong> (Nguy hiểm, rủi ro.)  
+                             → Sai vì "drastic" không mang ý nghĩa nguy hiểm mà nhấn mạnh vào sự thay đổi lớn.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: According to the theory that the author calls "the traditional view," what was the first form of life to appear on land?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Plant-eating animals															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Vascular plants</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Bacteria															</div>
+																				<div class="ps-4 mb-2">
+																	D. Meat-eating animals															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the theory that the author calls "the traditional view," what was the first form of life to appear on land?</strong> (Theo lý thuyết mà tác giả gọi là "quan điểm truyền thống", dạng sự sống đầu tiên xuất hiện trên đất liền là gì?)</p>  
+                     <ul>     
+                         <li>❌ <strong>Bacteria.</strong> (Vi khuẩn.)  
+                             → Sai vì đoạn (A) không đề cập đến vi khuẩn là sinh vật đầu tiên trên cạn. Quan điểm truyền thống tập trung vào các hóa thạch lớn hơn, không phải vi sinh vật.  
+                         </li>     
+                         <li>❌ <strong>Meat-eating animals.</strong> (Động vật ăn thịt.)  
+                             → Sai vì theo quan điểm truyền thống, thực vật xuất hiện trước, sau đó mới đến các loài động vật ăn thực vật và cuối cùng là động vật ăn thịt.  
+                         </li>     
+                         <li>❌ <strong>Plant-eating animals.</strong> (Động vật ăn thực vật.)  
+                             → Sai vì động vật ăn thực vật chỉ xuất hiện sau khi thực vật đã chiếm lĩnh đất liền.  
+                         </li>     
+                         <li>✅ <strong>Vascular plants.</strong> (Thực vật có mạch.)  
+                             → Đúng vì đoạn (A) nêu rõ rằng "vascular plants, related to modern seed plants and ferns, left the first comprehensive megafossil record" (các loài thực vật có mạch, có quan hệ với thực vật có hạt và dương xỉ ngày nay, đã để lại những bằng chứng hóa thạch lớn đầu tiên). Điều này khẳng định thực vật có mạch là sinh vật đầu tiên xuất hiện trên đất liền theo quan điểm truyền thống.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: According to the passage, what happened about 400 million years ago?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The megafossils were destroyed by floods.															</div>
+																				<div class="ps-4 mb-2">
+																	B. Many terrestrial life-forms died out.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. New life-forms on land developed at a rapid rate.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Life began to develop in the ancient seas.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the passage, what happened about 400 million years ago?</strong> (Theo đoạn văn, điều gì đã xảy ra vào khoảng 400 triệu năm trước?)</p>  
+                     <ul>     
+                         <li>❌ <strong>Many terrestrial life-forms died out.</strong> (Nhiều dạng sống trên cạn bị tuyệt chủng.)  
+                             → Sai vì đoạn văn không đề cập đến sự tuyệt chủng hàng loạt vào thời điểm này, mà chỉ nói về sự xuất hiện và phát triển nhanh chóng của sự sống trên cạn.  
+                         </li>     
+                         <li>✅ <strong>New life-forms on land developed at a rapid rate.</strong> (Các dạng sống mới trên cạn phát triển với tốc độ nhanh.)  
+                             → Đúng vì đoạn (A) nêu rõ rằng "terrestrial life appeared and diversified explosively near the boundary between the Silurian and the Devonian periods, a little more than 400 million years ago." (sự sống trên cạn xuất hiện và phát triển bùng nổ vào khoảng ranh giới giữa kỷ Silur và kỷ Devon, cách đây hơn 400 triệu năm).  
+                         </li>     
+                         <li>❌ <strong>The megafossils were destroyed by floods.</strong> (Các hóa thạch lớn bị phá hủy bởi lũ lụt.)  
+                             → Sai vì không có thông tin nào trong đoạn văn nói rằng các hóa thạch lớn bị phá hủy do lũ lụt.  
+                         </li>     
+                         <li>❌ <strong>Life began to develop in the ancient seas.</strong> (Sự sống bắt đầu phát triển trong các đại dương cổ đại.)  
+                             → Sai vì sự sống đã xuất hiện trong đại dương khoảng 3 tỷ năm trước khi sự sống trên cạn phát triển, không phải vào 400 triệu năm trước.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: The word "extracted" in paragraph (B) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. located															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. removed</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. studied															</div>
+																				<div class="ps-4 mb-2">
+																	D. preserved															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "extracted" in paragraph (B) is closest in meaning to?</strong> (Từ "extracted" trong đoạn (B) có nghĩa gần nhất với từ nào?)</p>  
+                     <ul>     
+                         <li>❌ <strong>located</strong> (định vị, xác định vị trí)  
+                             → Sai vì "extracted" mang ý nghĩa loại bỏ hoặc lấy ra từ một vật thể khác, không phải chỉ xác định vị trí.  
+                         </li>     
+                         <li>❌ <strong>preserved</strong> (bảo tồn)  
+                             → Sai vì "extracted" nghĩa là loại bỏ hoặc chiết xuất ra, trong khi "preserved" mang nghĩa bảo tồn nguyên trạng.  
+                         </li>     
+                         <li>✅ <strong>removed</strong> (loại bỏ, lấy ra)  
+                             → Đúng vì đoạn (B) đề cập đến việc hóa thạch được lấy ra từ đá bằng dung dịch axit: "some fossils can be extracted from these sediments by putting the rocks in an acid bath" (một số hóa thạch có thể được chiết xuất từ các trầm tích này bằng cách ngâm đá vào dung dịch axit).  
+                         </li>     
+                         <li>❌ <strong>studied</strong> (nghiên cứu)  
+                             → Sai vì "extracted" liên quan đến hành động vật lý lấy ra khỏi một vật thể khác, không phải hành động nghiên cứu.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What can be inferred from the passage about the microscopic fossils discovered below the Silurian-Devonian boundary?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. They have not been helpful in understanding the evolution of terrestrial life.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. They are older than the megafossils.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. They were found in approximately the same numbers as vascular plant fossils.															</div>
+																				<div class="ps-4 mb-2">
+																	D. They consist of modern life-forms.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What can be inferred from the passage about the microscopic fossils discovered below the Silurian-Devonian boundary?</strong> (Có thể suy ra điều gì từ đoạn văn về các hóa thạch siêu nhỏ được phát hiện bên dưới ranh giới kỷ Silur-Devon?)</p>  
+                     <ul>     
+                         <li>❌ <strong>They have not been helpful in understanding the evolution of terrestrial life.</strong> (Chúng không có ích trong việc hiểu về sự tiến hóa của sự sống trên cạn.)  
+                             → Sai vì đoạn văn nhấn mạnh rằng những hóa thạch này đã giúp đẩy lùi niên đại của sự xâm chiếm đất liền và cung cấp bằng chứng về các sinh vật chưa từng được biết đến trước đó.  
+                         </li>     
+                         <li>❌ <strong>They were found in approximately the same numbers as vascular plant fossils.</strong> (Chúng được tìm thấy với số lượng xấp xỉ như các hóa thạch thực vật có mạch.)  
+                             → Sai vì không có thông tin nào trong đoạn văn đề cập đến sự so sánh số lượng giữa hai loại hóa thạch này.  
+                         </li>     
+                         <li>✅ <strong>They are older than the megafossils.</strong> (Chúng có niên đại lâu đời hơn các hóa thạch lớn.)  
+                             → Đúng vì đoạn văn đề cập rằng các hóa thạch siêu nhỏ được tìm thấy ở các lớp trầm tích bên dưới ranh giới kỷ Silur-Devon, có nghĩa là chúng có niên đại sớm hơn so với các hóa thạch thực vật có mạch lớn hơn.  
+                         </li>     
+                         <li>❌ <strong>They consist of modern life-forms.</strong> (Chúng bao gồm các dạng sống hiện đại.)  
+                             → Sai vì đoạn văn chỉ ra rằng những hóa thạch này thuộc về các sinh vật từ hàng trăm triệu năm trước, không phải dạng sống hiện đại.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: The word "instances" in paragraph (B) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. reasons															</div>
+																				<div class="ps-4 mb-2">
+																	B. processes															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. cases</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. methods															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "instances" in paragraph (B) is closest in meaning to?</strong> (Từ "instances" trong đoạn (B) có nghĩa gần nhất với từ nào?)</p>  
+                     <ul>     
+                         <li>❌ <strong>methods</strong> (phương pháp)  
+                             → Sai vì "instances" không đề cập đến cách làm hoặc quy trình thực hiện điều gì đó.  
+                         </li>     
+                         <li>❌ <strong>processes</strong> (quá trình)  
+                             → Sai vì "instances" không chỉ một chuỗi các hành động hoặc diễn biến theo trình tự.  
+                         </li>     
+                         <li>✅ <strong>cases</strong> (trường hợp)  
+                             → Đúng vì "instances" trong ngữ cảnh này có nghĩa là các ví dụ hoặc tình huống cụ thể, phù hợp với ý nghĩa của từ "cases".  
+                         </li>     
+                         <li>❌ <strong>reasons</strong> (lý do)  
+                             → Sai vì "instances" không mang nghĩa là nguyên nhân hay lý do của một sự việc nào đó.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: The word "they" in paragraph (B) refers to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. rocks															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. specimens</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. shores															</div>
+																				<div class="ps-4 mb-2">
+																	D. oceans															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "they" in paragraph (B) refers to?</strong> (Từ "they" trong đoạn (B) ám chỉ điều gì?)</p>  
+                     <ul>     
+                         <li>❌ <strong>rocks</strong> (đá)  
+                             → Sai vì "they" không đề cập đến đá mà chỉ đến các sinh vật hóa thạch.  
+                         </li>     
+                         <li>❌ <strong>shores</strong> (bờ biển)  
+                             → Sai vì "they" không nói đến bờ biển mà đến các hóa thạch được tìm thấy trong đá.  
+                         </li>     
+                         <li>❌ <strong>oceans</strong> (đại dương)  
+                             → Sai vì "they" không liên quan đến các đại dương mà là những hóa thạch có kích thước rất nhỏ.  
+                         </li>     
+                         <li>✅ <strong>specimens</strong> (mẫu vật)  
+                             → Đúng vì trong ngữ cảnh đoạn văn, "they" đề cập đến các mẫu vật hóa thạch nhỏ được phát hiện trong đá trầm tích.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: The word "entombed" in paragraph (B) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. trapped</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. produced															</div>
+																				<div class="ps-4 mb-2">
+																	C. crushed															</div>
+																				<div class="ps-4 mb-2">
+																	D. excavated															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "entombed" in paragraph (B) is closest in meaning to?</strong> (Từ "entombed" trong đoạn (B) có nghĩa gần nhất với từ nào?)</p>  
+                     <ul>     
+                         <li>❌ <strong>crushed</strong> (bị nghiền nát)  
+                             → Sai vì "entombed" không mang nghĩa bị nghiền nát, mà là bị chôn vùi hoặc mắc kẹt trong đá.  
+                         </li>     
+                         <li>✅ <strong>trapped</strong> (bị mắc kẹt)  
+                             → Đúng vì "entombed" có nghĩa là bị chôn vùi hoặc mắc kẹt trong đá trầm tích qua hàng triệu năm.  
+                         </li>     
+                         <li>❌ <strong>produced</strong> (được tạo ra)  
+                             → Sai vì "entombed" không liên quan đến sự sản sinh hay tạo ra thứ gì đó, mà đề cập đến việc bị vùi lấp.  
+                         </li>     
+                         <li>❌ <strong>excavated</strong> (được khai quật)  
+                             → Sai vì "entombed" có nghĩa là bị chôn vùi, còn "excavated" mang nghĩa ngược lại là được đào lên hoặc khai quật.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: Which of the following resulted from the discovery of microscopic fossils?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. The time estimate for the first appearance of terrestrial life-forms was revised.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Old techniques for analyzing fossils were found to have new uses.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Assumptions about the locations of ancient seas were changed.															</div>
+																				<div class="ps-4 mb-2">
+																	D. The origins of primitive sea life were explained.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following resulted from the discovery of microscopic fossils?</strong> (Điều nào dưới đây là kết quả của việc phát hiện các hóa thạch siêu nhỏ?)</p>  
+                     <ul>     
+                         <li>✅ <strong>The time estimate for the first appearance of terrestrial life-forms was revised.</strong>  
+                             (Ước tính thời gian xuất hiện đầu tiên của các dạng sống trên cạn đã được điều chỉnh lại.)  
+                             → Đúng vì các hóa thạch mới được tìm thấy đã đẩy lùi niên đại của sự xâm chiếm đất liền bởi các sinh vật đa bào.  
+                         </li>     
+                         <li>❌ <strong>Old techniques for analyzing fossils were found to have new uses.</strong>  
+                             (Các kỹ thuật cũ để phân tích hóa thạch được phát hiện có công dụng mới.)  
+                             → Sai vì bài đọc không đề cập đến việc thay đổi công dụng của các kỹ thuật cũ, mà tập trung vào kết quả của việc phát hiện hóa thạch.  
+                         </li>     
+                         <li>❌ <strong>The origins of primitive sea life were explained.</strong>  
+                             (Nguồn gốc của sự sống biển nguyên thủy đã được giải thích.)  
+                             → Sai vì phát hiện hóa thạch liên quan đến sự sống trên cạn chứ không phải sự sống biển.  
+                         </li>     
+                         <li>❌ <strong>Assumptions about the locations of ancient seas were changed.</strong>  
+                             (Các giả định về vị trí của các đại dương cổ đại đã thay đổi.)  
+                             → Sai vì bài đọc không đề cập đến sự thay đổi trong quan niệm về vị trí của các đại dương cổ đại.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: With which of the following conclusions would the author probably agree?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The discovery of microfossils supports the traditional view of how terrestrial life evolved.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. The evolution of terrestrial life was just as complex as the origin of life itself.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. New species have appeared at the same rate over the course of the last 400 million years.															</div>
+																				<div class="ps-4 mb-2">
+																	D. The technology used by paleontologists is too primitive to make accurate determinations about ages of fossils.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>With which of the following conclusions would the author probably agree?</strong> (Tác giả có thể đồng ý với kết luận nào dưới đây?)</p>  
+                     <ul>     
+                         <li>✅ <strong>The evolution of terrestrial life was just as complex as the origin of life itself.</strong>  
+                             (Sự tiến hóa của sự sống trên cạn phức tạp không kém gì sự khởi nguồn của sự sống.)  
+                             → Đúng vì đoạn đầu của bài đọc nói rằng quá trình chuyển đổi sự sống từ biển lên đất liền là một thách thức tiến hóa quan trọng không kém gì sự khởi nguồn của sự sống.  
+                         </li>     
+                         <li>❌ <strong>The discovery of microfossils supports the traditional view of how terrestrial life evolved.</strong>  
+                             (Việc phát hiện hóa thạch siêu nhỏ ủng hộ quan điểm truyền thống về cách sự sống trên cạn tiến hóa.)  
+                             → Sai vì bài đọc cho thấy rằng các hóa thạch siêu nhỏ đã thay đổi quan điểm về cách sự sống trên cạn xuất hiện, thay vì ủng hộ quan điểm truyền thống.  
+                         </li>     
+                         <li>❌ <strong>New species have appeared at the same rate over the course of the last 400 million years.</strong>  
+                             (Các loài mới đã xuất hiện với tốc độ như nhau trong suốt 400 triệu năm qua.)  
+                             → Sai vì bài đọc không đề cập đến tốc độ xuất hiện của các loài mới trong suốt lịch sử.  
+                         </li>     
+                         <li>❌ <strong>The technology used by paleontologists is too primitive to make accurate determinations about ages of fossils.</strong>  
+                             (Công nghệ mà các nhà cổ sinh vật học sử dụng quá thô sơ để xác định chính xác tuổi của hóa thạch.)  
+                             → Sai vì bài đọc không đề cập đến việc công nghệ của các nhà cổ sinh vật học quá thô sơ để xác định tuổi hóa thạch.  
+                         </li> 
+                     </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

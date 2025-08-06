@@ -1,0 +1,576 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 13 - Part 1				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79924				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p>Phillis Wheatley was born in Gambia, Africa, on May 8, 1753, and passed away in Boston on December 5, 1784. When she was 7 or 8, she was sold as a slave to John and Susanna Wheatley of Boston. She was named after the ship that brought her to America, The Phillis. The Poetry Foundation describes her sale: In August 1761, "in want of a domestic," Susanna Wheatley, ... purchased "a slender, frail female child ... for a trifle" ... The captain of the slave ship believed that the waif was terminally ill, and he wanted ... at least a small profit before she died. ... The family surmised the girl—who was "of slender frame and evidently suffering from a change of climate," nearly naked, with "no other covering than a quantity of dirty carpet about her"—to be "about seven years old ... from the circumstances of shedding her front teeth."</p>
+
+<p>Phillis was very intelligent. The Wheatley family taught her to read and write, and encouraged her to write poetry. Her first poem, "On Messrs. Hussey and Coffin," was published when she was just twelve years old. In 1770, "An Elegiac Poem, on the Death of that Celebrated Divine, and Eminent Servant of Jesus Christ, the Reverend and Learned George Whitefield" made her famous. It was published in Boston, Newport, and Philadelphia.</p>
+
+<p>When she was eighteen, Phillis and Mrs. Wheatley tried to sell a collection containing twenty-eight of her poems. Colonists did not want to buy poetry written by an African. Mrs. Wheatley wrote to England to ask Selina Hastings, Countess of Huntingdon, for help. The countess was a wealthy supporter of evangelical and abolitionist (anti-slavery) causes. She had "Poems on Various Subjects, Religious and Moral" published in England in 1773. This book made Phillis famous in England and the thirteen colonies. She wrote a poem for George Washington in 1775, and he praised her work. They met in 1776. Phillis supported independence for the colonies during the Revolutionary War.</p>
+
+<p>Following the death of her master, Phillis was granted her freedom. She married John Peters, a free Black man, in 1778. She and her husband lost two children as infants. John would be imprisoned for debt in 1784. Phillis and her remaining child died in December of 1784 and were buried in an unmarked grave. Nevertheless, the legacy of Phillis Wheatley lives on. She was the first African American and the first enslaved person in the United States to publish a book. She proved that slaves or former slaves had a valuable voice in the Revolutionary era.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p>Phillis Wheatley sinh ra tại Gambia, châu Phi, vào ngày 8 tháng 5 năm 1753, và qua đời tại Boston vào ngày 5 tháng 12 năm 1784. Khi lên 7 hoặc 8 tuổi, bà bị bán làm nô lệ cho John và Susanna Wheatley ở Boston. Bà được đặt tên theo con tàu đã đưa bà đến Mỹ, <i>The Phillis</i>. Tổ chức <i>The Poetry Foundation</i> mô tả về việc bà bị bán như sau: Vào tháng 8 năm 1761, "vì cần một người giúp việc," Susanna Wheatley ... đã mua "một đứa trẻ mảnh mai, yếu ớt ... với giá rẻ mạt" ... Thuyền trưởng của con tàu buôn nô lệ tin rằng đứa trẻ lang thang này mắc bệnh hiểm nghèo và ông ta muốn ... kiếm được ít nhất một khoản nhỏ trước khi nó qua đời. ... Gia đình Wheatley nhận thấy cô bé—"có dáng người nhỏ bé, rõ ràng đang chịu ảnh hưởng xấu từ sự thay đổi khí hậu," gần như không có quần áo, chỉ được quấn trong một tấm thảm bẩn—có thể khoảng "bảy tuổi ... dựa vào dấu hiệu rụng răng cửa."</p>  <p>Phillis là một người rất thông minh. Gia đình Wheatley đã dạy bà đọc và viết, đồng thời khuyến khích bà sáng tác thơ. Bài thơ đầu tiên của bà, <i>"On Messrs. Hussey and Coffin,"</i> được xuất bản khi bà chỉ mới mười hai tuổi. Năm 1770, bài thơ <i>"An Elegiac Poem, on the Death of that Celebrated Divine, and Eminent Servant of Jesus Christ, the Reverend and Learned George Whitefield"</i> đã khiến bà trở nên nổi tiếng. Bài thơ này được xuất bản tại Boston, Newport và Philadelphia.</p>  <p>Khi Phillis mười tám tuổi, bà và bà Wheatley cố gắng xuất bản một tuyển tập gồm hai mươi tám bài thơ của bà. Tuy nhiên, những người thuộc địa không muốn mua thơ do một người gốc Phi viết. Bà Wheatley đã viết thư đến Anh để nhờ Selina Hastings, Nữ bá tước xứ Huntingdon, giúp đỡ. Nữ bá tước là một người giàu có, ủng hộ phong trào truyền giáo và xóa bỏ chế độ nô lệ. Bà đã giúp xuất bản <i>"Poems on Various Subjects, Religious and Moral"</i> tại Anh vào năm 1773. Cuốn sách này đã giúp Phillis trở nên nổi tiếng ở cả Anh và mười ba thuộc địa của Mỹ. Bà đã viết một bài thơ dành cho George Washington vào năm 1775, và ông đã ca ngợi tác phẩm của bà. Họ gặp nhau vào năm 1776. Phillis ủng hộ nền độc lập của các thuộc địa trong Chiến tranh Cách mạng.</p>  <p>Sau khi chủ nhân của bà qua đời, Phillis được trả tự do. Bà kết hôn với John Peters, một người đàn ông da đen tự do, vào năm 1778. Bà và chồng đã mất hai người con khi còn nhỏ. Năm 1784, John bị tống giam vì nợ nần. Vào tháng 12 năm 1784, Phillis và đứa con còn lại của bà qua đời và được chôn cất trong một ngôi mộ vô danh. Tuy nhiên, di sản của Phillis Wheatley vẫn tồn tại. Bà là người Mỹ gốc Phi đầu tiên và cũng là người nô lệ đầu tiên tại Hoa Kỳ xuất bản một cuốn sách. Bà đã chứng minh rằng những người nô lệ hay cựu nô lệ đều có tiếng nói giá trị trong thời kỳ Cách mạng.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p>Phillis Wheatley was born in Gambia, Africa, on May 8, 1753, and passed away in Boston on December 5, 1784. When she was 7 or 8, she was sold as a slave to John and Susanna Wheatley of Boston. She was named after the ship that brought her to America, The Phillis. The Poetry Foundation describes her sale: In August 1761, "in want of a domestic," Susanna Wheatley, ... purchased "a slender, frail female child ... for a trifle" ... The captain of the slave ship believed that the waif was terminally ill, and he wanted ... at least a small profit before she died. ... The family surmised the girl—who was "of slender frame and evidently suffering from a change of climate," nearly naked, with "no other covering than a quantity of dirty carpet about her"—to be "about seven years old ... from the circumstances of shedding her front teeth."</p>
+
+<p>Phillis was very intelligent. The Wheatley family taught her to read and write, and encouraged her to write poetry. Her first poem, "On Messrs. Hussey and Coffin," was published when she was just twelve years old. In 1770, "An Elegiac Poem, on the Death of that Celebrated Divine, and Eminent Servant of Jesus Christ, the Reverend and Learned George Whitefield" made her famous. It was published in Boston, Newport, and Philadelphia.</p>
+
+<p>When she was eighteen, Phillis and Mrs. Wheatley tried to sell a collection containing twenty-eight of her poems. Colonists did not want to buy poetry written by an African. Mrs. Wheatley wrote to England to ask Selina Hastings, Countess of Huntingdon, for help. The countess was a wealthy supporter of evangelical and abolitionist (anti-slavery) causes. She had "Poems on Various Subjects, Religious and Moral" published in England in 1773. This book made Phillis famous in England and the thirteen colonies. She wrote a poem for George Washington in 1775, and he praised her work. They met in 1776. Phillis supported independence for the colonies during the Revolutionary War.</p>
+
+<p>Following the death of her master, Phillis was granted her freedom. She married John Peters, a free Black man, in 1778. She and her husband lost two children as infants. John would be imprisoned for debt in 1784. Phillis and her remaining child died in December of 1784 and were buried in an unmarked grave. Nevertheless, the legacy of Phillis Wheatley lives on. She was the first African American and the first enslaved person in the United States to publish a book. She proved that slaves or former slaves had a valuable voice in the Revolutionary era.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: It can be inferred from the passage that the Countess of Huntingdon _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. was surprised that Phillis could read and write															</div>
+																				<div class="ps-4 mb-2">
+																	B. didn't care about Phillis' poetry															</div>
+																				<div class="ps-4 mb-2">
+																	C. believed in slavery															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. helped Phillis get her writings published</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>It can be inferred from the passage that the Countess of Huntingdon _____.</strong> (Có thể suy ra từ đoạn văn rằng Nữ bá tước xứ Huntingdon _____.)</p> 
+<ul> 
+<li>✅ <strong>helped Phillis get her writings published.</strong> (Đã giúp Phillis xuất bản các tác phẩm của mình.) → Đúng vì bài đọc nêu rõ rằng bà Wheatley đã liên hệ với Nữ bá tước xứ Huntingdon để nhờ giúp đỡ, và nhờ vậy mà tuyển tập thơ của Phillis được xuất bản tại Anh vào năm 1773.</li> 
+<li>❌ <strong>didn't care about Phillis' poetry.</strong> (Không quan tâm đến thơ của Phillis.) → Sai vì Nữ bá tước đã hỗ trợ xuất bản tuyển tập thơ của Phillis, chứng tỏ bà quan tâm và đánh giá cao tài năng của Phillis.</li> 
+<li>❌ <strong>believed in slavery.</strong> (Tin vào chế độ nô lệ.) → Sai vì bài đọc nói rằng Nữ bá tước là người ủng hộ phong trào xóa bỏ chế độ nô lệ.</li> 
+<li>❌ <strong>was surprised that Phillis could read and write.</strong> (Ngạc nhiên vì Phillis có thể đọc và viết.) → Sai vì bài đọc không đề cập đến việc Nữ bá tước có ngạc nhiên về khả năng của Phillis hay không.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: What question is answered in last paragraph?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. What did Phillis prove?</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Where were Phillis' works published?															</div>
+																				<div class="ps-4 mb-2">
+																	C. Why was Phillis a slave?															</div>
+																				<div class="ps-4 mb-2">
+																	D. Who did Phillis marry?															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What question is answered in last paragraph?</strong> (Câu hỏi nào được trả lời trong đoạn cuối?)</p> 
+<ul> 
+<li>✅ <strong>What did Phillis prove?</strong> (Phillis đã chứng minh điều gì?) → Đúng vì đoạn cuối nêu rõ rằng Phillis Wheatley là người Mỹ gốc Phi đầu tiên và cũng là người nô lệ đầu tiên tại Hoa Kỳ xuất bản một cuốn sách. Bà đã chứng minh rằng những người nô lệ hay cựu nô lệ đều có tiếng nói giá trị trong thời kỳ Cách mạng.</li> 
+<li>❌ <strong>Who did Phillis marry?</strong> (Phillis kết hôn với ai?) → Sai vì thông tin này có trong đoạn trước đó, không phải đoạn cuối.</li> 
+<li>❌ <strong>Where were Phillis' works published?</strong> (Các tác phẩm của Phillis được xuất bản ở đâu?) → Sai vì thông tin này được đề cập trong đoạn giữa của bài đọc.</li> 
+<li>❌ <strong>Why was Phillis a slave?</strong> (Tại sao Phillis là một nô lệ?) → Sai vì đoạn cuối không thảo luận về lý do Phillis trở thành nô lệ.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: Phillis finally became free _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. when she published her poems in England															</div>
+																				<div class="ps-4 mb-2">
+																	B. after meeting the Countess of Huntingdon															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. after her master died</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. when she became wealthy															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Phillis finally became free _____.</strong> (Phillis cuối cùng được tự do khi nào?)</p> 
+<ul> 
+<li>✅ <strong>after her master died</strong> (sau khi chủ nhân của bà qua đời) → Đúng vì đoạn cuối của bài đọc có đề cập rằng Phillis được trả tự do sau khi chủ nhân của bà qua đời.</li> 
+<li>❌ <strong>when she published her poems in England</strong> (khi bà xuất bản thơ của mình ở Anh) → Sai vì việc xuất bản thơ giúp bà nổi tiếng nhưng không giúp bà được tự do.</li> 
+<li>❌ <strong>after meeting the Countess of Huntingdon</strong> (sau khi gặp Nữ bá tước xứ Huntingdon) → Sai vì Nữ bá tước chỉ giúp xuất bản thơ của Phillis, không liên quan đến việc bà được tự do.</li> 
+<li>❌ <strong>when she became wealthy</strong> (khi bà trở nên giàu có) → Sai vì không có bằng chứng nào trong bài đọc cho thấy bà trở nên giàu có.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: Phillis' first attempt at selling her poetry in America (the colonies) was _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. unsuccessful</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. successful															</div>
+																				<div class="ps-4 mb-2">
+																	C. illegal															</div>
+																				<div class="ps-4 mb-2">
+																	D. imaginary															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Phillis' first attempt at selling her poetry in America (the colonies) was _____.</strong> (Nỗ lực đầu tiên của Phillis trong việc bán thơ ở Mỹ - các thuộc địa - là _____.)</p> 
+<ul> 
+<li>✅ <strong>unsuccessful</strong> (không thành công) → Đúng vì đoạn văn nói rằng người thuộc địa không muốn mua thơ của một người gốc Phi.</li> 
+<li>❌ <strong>illegal</strong> (bất hợp pháp) → Sai vì không có thông tin nào trong bài đọc nói rằng việc bán thơ của bà là bất hợp pháp.</li> 
+<li>❌ <strong>imaginary</strong> (tưởng tượng) → Sai vì bà thực sự cố gắng bán thơ của mình, không phải là tưởng tượng.</li> 
+<li>❌ <strong>successful</strong> (thành công) → Sai vì bà không thể bán thơ của mình ở các thuộc địa và phải nhờ đến sự giúp đỡ từ Anh.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: Which of the following is TRUE about Phillis Wheatley?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. She was the first African American enslaved person to visit England.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. She was the first African American and the first enslaved person in the United States to publish a book.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. She was the first African American enslaved person to be able to read and write.															</div>
+																				<div class="ps-4 mb-2">
+																	D. She was the first African American enslaved person to meet George Washington.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following is TRUE about Phillis Wheatley?</strong> (Điều nào sau đây là ĐÚNG về Phillis Wheatley?)</p> 
+<ul> 
+<li>✅ <strong>She was the first African American and the first enslaved person in the United States to publish a book.</strong> (Bà là người Mỹ gốc Phi đầu tiên và cũng là người nô lệ đầu tiên tại Hoa Kỳ xuất bản một cuốn sách.) → Đúng vì đoạn văn cuối cùng trong bài đọc đã khẳng định điều này.</li> 
+<li>❌ <strong>She was the first African American enslaved person to visit England.</strong> (Bà là người Mỹ gốc Phi bị nô lệ đầu tiên đến thăm Anh.) → Sai vì bài đọc không đề cập đến điều này.</li> 
+<li>❌ <strong>She was the first African American enslaved person to be able to read and write.</strong> (Bà là người Mỹ gốc Phi bị nô lệ đầu tiên có thể đọc và viết.) → Sai vì bài đọc không đề cập đến việc bà là người đầu tiên có thể đọc và viết.</li> 
+<li>❌ <strong>She was the first African American enslaved person to meet George Washington.</strong> (Bà là người Mỹ gốc Phi bị nô lệ đầu tiên gặp George Washington.) → Sai vì bài đọc không khẳng định bà là người đầu tiên gặp George Washington.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: The Wheatley family estimated the age of the slave girl they named "Phills" by _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. her color															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. the condition of her teeth</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. her size															</div>
+																				<div class="ps-4 mb-2">
+																	D. her weight															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The Wheatley family estimated the age of the slave girl they named "Phillis" by _____.</strong> (Gia đình Wheatley ước tính tuổi của cô bé nô lệ mà họ đặt tên là "Phillis" bằng cách nào?)</p> 
+<ul> 
+<li>❌ <strong>Her size</strong> (Kích thước cơ thể của cô bé) → Sai, vì bài đọc không đề cập đến việc họ dựa vào kích thước cơ thể để đoán tuổi.</li> 
+<li>✅ <strong>The condition of her teeth</strong> (Tình trạng răng của cô bé) → Đúng, vì đoạn đầu tiên của bài đọc có đề cập rằng họ ước tính tuổi của cô bé dựa vào việc cô ấy đang thay răng cửa.</li> 
+<li>❌ <strong>Her color</strong> (Màu da của cô bé) → Sai, vì màu da không liên quan đến việc xác định tuổi.</li> 
+<li>❌ <strong>Her weight</strong> (Cân nặng của cô bé) → Sai, vì bài đọc không nhắc đến việc sử dụng cân nặng để ước tính tuổi.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: By the age of twelve, Phillis was _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. still not able to read or write															</div>
+																				<div class="ps-4 mb-2">
+																	B. married															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. a published poet</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. no longer a slave															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>By the age of twelve, Phillis was _____.</strong> (Khi Phillis mười hai tuổi, cô ấy đã _____.)</p> 
+<ul> 
+<li>❌ <strong>No longer a slave</strong> (Không còn là nô lệ) → Sai, vì Phillis vẫn là nô lệ cho đến khi chủ của cô qua đời.</li> 
+<li>❌ <strong>Married</strong> (Đã kết hôn) → Sai, vì cô kết hôn với John Peters vào năm 1778, khi đã được trả tự do.</li> 
+<li>✅ <strong>A published poet</strong> (Một nhà thơ đã được xuất bản) → Đúng, vì bài thơ đầu tiên của cô, <i>"On Messrs. Hussey and Coffin"</i>, đã được xuất bản khi cô mới mười hai tuổi.</li> 
+<li>❌ <strong>Still not able to read or write</strong> (Vẫn chưa biết đọc hay viết) → Sai, vì gia đình Wheatley đã dạy cô đọc và viết từ nhỏ.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: The slaveowner who sold Phillis to the Wheatley family believed _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. she was very intelligent															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. she would soon die</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. she was worth a lot of money															</div>
+																				<div class="ps-4 mb-2">
+																	D. she would soon recover from her illness															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The slaveowner who sold Phillis to the Wheatley family believed _____.</strong> (Chủ nô đã bán Phillis cho gia đình Wheatley tin rằng _____.)</p> 
+<ul> 
+<li>❌ <strong>She would soon recover from her illness</strong> (Cô ấy sẽ sớm khỏi bệnh) → Sai, vì chủ nô tin rằng cô bé bị bệnh nặng.</li> 
+<li>❌ <strong>She was very intelligent</strong> (Cô ấy rất thông minh) → Sai, vì người chủ không có nhận định nào về trí tuệ của Phillis khi bán cô.</li> 
+<li>❌ <strong>She was worth a lot of money</strong> (Cô ấy đáng giá rất nhiều tiền) → Sai, vì thực tế Phillis được bán với giá rẻ mạt.</li> 
+<li>✅ <strong>She would soon die</strong> (Cô ấy sẽ sớm qua đời) → Đúng, vì chủ nô tin rằng cô bé mắc bệnh hiểm nghèo và muốn bán cô để thu lại một khoản nhỏ trước khi cô qua đời.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: Who was George Whitefield?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. A military general															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. A preacher whom Phillis admired greatly</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. A slave owner															</div>
+																				<div class="ps-4 mb-2">
+																	D. Phillis' husband															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Who was George Whitefield?</strong> (George Whitefield là ai?)</p> 
+<ul> 
+<li>❌ <strong>A military general</strong> (Một vị tướng quân sự) → Sai, vì Whitefield không phải là tướng quân.</li> 
+<li>✅ <strong>A preacher whom Phillis admired greatly</strong> (Một nhà thuyết giáo mà Phillis rất ngưỡng mộ) → Đúng, vì Phillis đã viết một bài thơ để tưởng nhớ ông.</li> 
+<li>❌ <strong>Phillis' husband</strong> (Chồng của Phillis) → Sai, vì chồng của Phillis là John Peters.</li> 
+<li>❌ <strong>A slave owner</strong> (Một chủ nô) → Sai, vì George Whitefield không phải là chủ nô mà là một nhà truyền giáo nổi tiếng.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: Where is Phillis Wheatley buried?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. No one knows</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Virginia															</div>
+																				<div class="ps-4 mb-2">
+																	C. Africa															</div>
+																				<div class="ps-4 mb-2">
+																	D. Boston															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Where is Phillis Wheatley buried?</strong> (Phillis Wheatley được chôn cất ở đâu?)</p> 
+<ul> 
+<li>✅ <strong>No one knows</strong> (Không ai biết) → Đúng, vì Phillis Wheatley và con của bà được chôn trong một ngôi mộ vô danh.</li> 
+<li>❌ <strong>Africa</strong> (Châu Phi) → Sai, vì Phillis qua đời tại Boston, không phải ở châu Phi.</li> 
+<li>❌ <strong>Boston</strong> → Sai một phần, vì mặc dù bà mất ở Boston, nhưng mộ của bà không có dấu hiệu nhận biết nên không ai biết chính xác vị trí.</li> 
+<li>❌ <strong>Virginia</strong> → Sai, vì bà không sống hay qua đời ở Virginia.</li> 
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

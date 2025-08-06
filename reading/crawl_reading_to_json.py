@@ -102,7 +102,7 @@ async def main():
         await page.click('button[type="submit"]')
         await page.wait_for_load_state('networkidle')
         all_data = []
-        for i in range(1, 10):
+        for i in range(1, 49):
             print(f"Extracting reading {i}")
             data = await extract_reading_info(page, i)
             all_data.append(data)

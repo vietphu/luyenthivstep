@@ -1,0 +1,572 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 15 - Part 3				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79926				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> In addition to their military role, the forts of the nineteenth century provided numerous other benefits for the American West. The establishment of these posts opened new roads and provided protection for <b>daring</b> adventurers, expeditions, and established settlers. Forts also served as bases where enterprising entrepreneurs could bring commerce to the West, providing supplies and refreshments to soldiers as well as to pioneers. Forts like Fort Laramie provided supplies for wagon trains traveling along the natural highways to new frontiers. Some forts became stations for the pony express; still <b>others</b>, such as Fort Davis, were stagecoach stops for weary travelers. All of these functions, of course, suggest that the contributions of the forts to the civilization and development of the West extended beyond patrol duty.</p>
+
+<p><b>(B)</b> Through the establishment of military posts, yet other contributions were made to the development of western culture. Many forts maintained libraries or reading rooms, and some - for example, Fort Davis - had schools. Post chapels provided a setting for religious services and weddings. Throughout the wilderness, post bands provided entertainment and <b>boosted</b> morale. During the last part of the nineteenth century, to reduce expenses, gardening was encouraged at the forts, thus making experimental agriculture another activity of the military. The military stationed at the various forts also played a role in civilian life by assisting in maintaining order, and civilian officials often called on the army for protection.</p>
+
+<p><b>(C)</b> Certainly, among other significant contributions the army made to the improvement of the conditions of life was the investigation of the relationships among health, climate, and architecture. From the earliest colonial times throughout the nineteenth century, disease ranked as the foremost problem in defense. It slowed construction of forts and <b>inhibited</b> their military functions. Official documents from various regions contained numerous reports of illnesses that nearly incapacitated entire garrisons. In response to the problems, detailed observations of architecture and climate and their relationships to the frequency of the occurrence of various diseases were recorded at various posts across the nation by military surgeons.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Ngoài vai trò quân sự, các pháo đài thế kỷ XIX còn mang lại nhiều lợi ích khác cho miền Tây nước Mỹ. Việc thành lập các đồn quân sự này đã mở ra những con đường mới và cung cấp sự bảo vệ cho những nhà thám hiểm <b>gan dạ</b>, các đoàn thám hiểm và những người định cư lâu dài. Các pháo đài cũng đóng vai trò là căn cứ cho những doanh nhân có tầm nhìn xa, mang hoạt động thương mại đến miền Tây, cung cấp nhu yếu phẩm và thực phẩm không chỉ cho binh lính mà còn cho những người tiên phong. Những pháo đài như Fort Laramie cung cấp hàng hóa cho các đoàn xe kéo đi qua những con đường thiên nhiên để đến các vùng biên giới mới. Một số pháo đài trở thành trạm trung chuyển cho dịch vụ vận chuyển thư bằng ngựa, <b>một số khác</b>, như Fort Davis, là trạm dừng chân cho những du khách mệt mỏi trên các chuyến xe ngựa đường dài. Tất cả những chức năng này, tất nhiên, cho thấy rằng đóng góp của các pháo đài đối với quá trình văn minh hóa và phát triển miền Tây không chỉ dừng lại ở nhiệm vụ tuần tra.</p>  <p><b>(B)</b> Thông qua việc thành lập các đồn quân sự, quân đội còn có nhiều đóng góp khác cho sự phát triển của văn hóa miền Tây. Nhiều pháo đài duy trì thư viện hoặc phòng đọc sách, và một số—chẳng hạn như Fort Davis—có trường học. Nhà nguyện tại các đồn quân sự là nơi tổ chức các buổi lễ tôn giáo và đám cưới. Khắp các vùng hoang dã, các ban nhạc quân đội biểu diễn nhằm giải trí và <b>nâng cao</b> tinh thần. Trong những năm cuối thế kỷ XIX, để cắt giảm chi phí, quân đội khuyến khích trồng trọt tại các pháo đài, biến nông nghiệp thử nghiệm thành một hoạt động khác của quân đội. Quân đội đóng tại các pháo đài khác nhau cũng đóng vai trò trong đời sống dân sự bằng cách hỗ trợ duy trì trật tự, và các quan chức dân sự thường nhờ đến sự bảo vệ của quân đội.</p>  <p><b>(C)</b> Chắc chắn, một trong những đóng góp quan trọng khác của quân đội đối với việc cải thiện điều kiện sống là nghiên cứu về mối quan hệ giữa sức khỏe, khí hậu và kiến trúc. Từ thời thuộc địa cho đến cuối thế kỷ XIX, dịch bệnh luôn là vấn đề lớn nhất đối với công tác phòng thủ. Nó làm chậm tiến độ xây dựng các pháo đài và <b>cản trở</b> chức năng quân sự của chúng. Các tài liệu chính thức từ nhiều khu vực khác nhau ghi lại hàng loạt báo cáo về các đợt bùng phát dịch bệnh khiến gần như toàn bộ lực lượng đồn trú bị mất khả năng chiến đấu. Để đối phó với vấn đề này, các bác sĩ quân y đã thực hiện các quan sát chi tiết về kiến trúc, khí hậu và mối liên hệ giữa chúng với tần suất xuất hiện của các loại bệnh khác nhau tại các đồn quân sự trên khắp đất nước.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>(A)</b> In addition to their military role, the forts of the nineteenth century provided numerous other benefits for the American West. The establishment of these posts opened new roads and provided protection for <b>daring</b> adventurers, expeditions, and established settlers. Forts also served as bases where enterprising entrepreneurs could bring commerce to the West, providing supplies and refreshments to soldiers as well as to pioneers. Forts like Fort Laramie provided supplies for wagon trains traveling along the natural highways to new frontiers. Some forts became stations for the pony express; still <b>others</b>, such as Fort Davis, were stagecoach stops for weary travelers. All of these functions, of course, suggest that the contributions of the forts to the civilization and development of the West extended beyond patrol duty.</p>
+
+<p><b>(B)</b> Through the establishment of military posts, yet other contributions were made to the development of western culture. Many forts maintained libraries or reading rooms, and some - for example, Fort Davis - had schools. Post chapels provided a setting for religious services and weddings. Throughout the wilderness, post bands provided entertainment and <b>boosted</b> morale. During the last part of the nineteenth century, to reduce expenses, gardening was encouraged at the forts, thus making experimental agriculture another activity of the military. The military stationed at the various forts also played a role in civilian life by assisting in maintaining order, and civilian officials often called on the army for protection.</p>
+
+<p><b>(C)</b> Certainly, among other significant contributions the army made to the improvement of the conditions of life was the investigation of the relationships among health, climate, and architecture. From the earliest colonial times throughout the nineteenth century, disease ranked as the foremost problem in defense. It slowed construction of forts and <b>inhibited</b> their military functions. Official documents from various regions contained numerous reports of illnesses that nearly incapacitated entire garrisons. In response to the problems, detailed observations of architecture and climate and their relationships to the frequency of the occurrence of various diseases were recorded at various posts across the nation by military surgeons.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Which of the following statements best expresses the main idea of the passage?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Forts were important to the development of the American West.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. By the nineteenth century, forts were no longer used by the military.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Surgeons at forts could not prevent outbreaks of disease.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Life in nineteenth-century forts was very rough.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following statements best expresses the main idea of the passage?</strong> (Câu nào sau đây thể hiện rõ nhất ý chính của đoạn văn?)</p> 
+<ul> 
+<li>✅ <strong>Forts were important to the development of the American West.</strong> (Các pháo đài có vai trò quan trọng trong sự phát triển của miền Tây nước Mỹ.) → Đúng, vì bài đọc nhấn mạnh vai trò của các pháo đài không chỉ trong lĩnh vực quân sự mà còn trong việc phát triển kinh tế, văn hóa và điều kiện sống ở miền Tây nước Mỹ.</li> 
+<li>❌ <strong>By the nineteenth century, forts were no longer used by the military.</strong> (Đến thế kỷ XIX, các pháo đài không còn được quân đội sử dụng.) → Sai, vì bài đọc không đề cập đến việc các pháo đài bị loại bỏ mà ngược lại, chúng vẫn đóng vai trò quan trọng.</li> 
+<li>❌ <strong>Surgeons at forts could not prevent outbreaks of disease.</strong> (Các bác sĩ phẫu thuật tại pháo đài không thể ngăn chặn các đợt bùng phát dịch bệnh.) → Sai, vì mặc dù bệnh dịch là một vấn đề nghiêm trọng, nhưng bài đọc chủ yếu tập trung vào các đóng góp tích cực của các pháo đài.</li> 
+<li>❌ <strong>Life in nineteenth-century forts was very rough.</strong> (Cuộc sống trong các pháo đài thế kỷ XIX rất khắc nghiệt.) → Sai, vì bài đọc không tập trung vào sự khắc nghiệt của cuộc sống trong pháo đài mà nhấn mạnh đến những lợi ích mà chúng mang lại.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: The word "daring" in paragraph (A) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. foolish															</div>
+																				<div class="ps-4 mb-2">
+																	B. lively															</div>
+																				<div class="ps-4 mb-2">
+																	C. lost															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. bold</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "daring" in paragraph (A) is closest in meaning to?</strong> (Từ "daring" trong đoạn (A) có nghĩa gần nhất với từ nào?)</p> 
+<ul> 
+<li>❌ <strong>lost</strong> (bị lạc) → Sai, vì "daring" có nghĩa là táo bạo, dũng cảm, không liên quan đến việc bị lạc.</li> 
+<li>✅ <strong>bold</strong> (táo bạo, dũng cảm) → Đúng, vì "daring" mang ý nghĩa giống với "bold", thể hiện sự can đảm và sẵn sàng đối mặt với thử thách. Trong ngữ cảnh của đoạn văn, "daring adventurers" dùng để mô tả những nhà thám hiểm gan dạ.</li> 
+<li>❌ <strong>lively</strong> (sôi nổi, hoạt bát) → Sai, vì "daring" không mang nghĩa sôi nổi hay hoạt bát, mà liên quan đến sự dũng cảm và chấp nhận rủi ro.</li> 
+<li>❌ <strong>foolish</strong> (ngu ngốc) → Sai, vì "daring" thể hiện sự dũng cảm chứ không phải sự thiếu suy nghĩ hay ngu ngốc.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: Which of the following would a traveler be likely be LEAST likely to obtain at Fort Laramie?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Food															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Formal clothing</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Lodging															</div>
+																				<div class="ps-4 mb-2">
+																	D. Fresh water															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following would a traveler be LEAST likely to obtain at Fort Laramie?</strong> (Khách du hành ít có khả năng nhận được thứ nào nhất tại Fort Laramie?)</p> 
+<ul> 
+<li>❌ <strong>Fresh water</strong> (Nước ngọt) → Sai, vì bài đọc đề cập rằng các pháo đài cung cấp nhu yếu phẩm cho binh lính và những người tiên phong, bao gồm cả thực phẩm và nước uống.</li> 
+<li>❌ <strong>Food</strong> (Thực phẩm) → Sai, vì bài đọc nêu rõ rằng Fort Laramie cung cấp thực phẩm và hàng hóa cho các đoàn xe đi qua miền Tây.</li> 
+<li>✅ <strong>Formal clothing</strong> (Trang phục trang trọng) → Đúng, vì không có thông tin nào trong bài đọc cho thấy Fort Laramie cung cấp quần áo trang trọng. Các pháo đài chủ yếu cung cấp nhu yếu phẩm như thực phẩm, nước và các vật dụng thiết yếu cho hành trình.</li> 
+<li>❌ <strong>Lodging</strong> (Chỗ ở) → Sai, vì một số pháo đài đóng vai trò là trạm dừng chân cho khách du hành mệt mỏi trên những chuyến xe đường dài.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: The word "others" in paragraph (A) refers to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. frontiers															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. forts</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. posts															</div>
+																				<div class="ps-4 mb-2">
+																	D. wagon trains															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "others" in paragraph (A) refers to?</strong> (Từ "others" trong đoạn (A) ám chỉ đến gì?)</p> 
+<ul> 
+<li>❌ <strong>posts</strong> (đồn quân sự) → Sai, vì từ "others" không thay thế cho "posts" mà ám chỉ một danh từ khác.</li> 
+<li>❌ <strong>wagon trains</strong> (đoàn xe kéo) → Sai, vì trong ngữ cảnh bài đọc, "others" không đề cập đến các đoàn xe mà nói về một loại địa điểm cụ thể.</li> 
+<li>❌ <strong>frontiers</strong> (biên giới) → Sai, vì "others" không thay thế cho từ này trong đoạn văn.</li> 
+<li>✅ <strong>forts</strong> (các pháo đài) → Đúng, vì trong đoạn văn, "others" được sử dụng để chỉ các pháo đài khác ngoài Fort Laramie. Câu trong bài đọc nói rằng "Some forts became stations for the pony express; still <strong>others</strong>, such as Fort Davis, were stagecoach stops for weary travelers", trong đó "others" ám chỉ các pháo đài khác.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: The word "boosted" in paragraph (B) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. maintained															</div>
+																				<div class="ps-4 mb-2">
+																	B. established															</div>
+																				<div class="ps-4 mb-2">
+																	C. influenced															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. raised</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "boosted" in paragraph (B) is closest in meaning to?</strong> (Từ "boosted" trong đoạn (B) có nghĩa gần nhất với từ nào?)</p> 
+<ul> 
+<li>❌ <strong>influenced</strong> (tác động, ảnh hưởng) → Sai, vì "boosted" mang nghĩa làm tăng hoặc nâng cao, không chỉ đơn thuần là ảnh hưởng.</li> 
+<li>❌ <strong>established</strong> (thiết lập) → Sai, vì "boosted" không mang nghĩa thiết lập hay tạo ra một cái gì đó mới.</li> 
+<li>✅ <strong>raised</strong> (nâng cao, gia tăng) → Đúng, vì "boosted" có nghĩa là làm tăng hoặc nâng cao, phù hợp với ngữ cảnh của bài đọc, nơi nói về việc các ban nhạc quân đội giúp **nâng cao** tinh thần (boosted morale).</li> 
+<li>❌ <strong>maintained</strong> (duy trì) → Sai, vì "boosted" không mang nghĩa duy trì mà ám chỉ sự gia tăng hoặc cải thiện.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Which of the following is the most likely inference about the decision to promote gardening at forts?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Gardening was a way to occupy otherwise idle soldiers.															</div>
+																				<div class="ps-4 mb-2">
+																	B. The soil near the forts was very fertile.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Food brought in from outside was often spoiled.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. It was expensive to import produce from far away.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following is the most likely inference about the decision to promote gardening at forts?</strong> (Điều nào sau đây là suy luận hợp lý nhất về quyết định khuyến khích trồng trọt tại các pháo đài?)</p> 
+<ul> 
+<li>✅ <strong>It was expensive to import produce from far away.</strong> (Việc nhập thực phẩm từ nơi xa rất tốn kém.) → Đúng, vì bài đọc đề cập rằng quân đội khuyến khích trồng trọt để cắt giảm chi phí, cho thấy việc nhập khẩu thực phẩm từ nơi khác có thể quá tốn kém.</li> 
+<li>❌ <strong>Food brought in from outside was often spoiled.</strong> (Thực phẩm mang từ bên ngoài thường bị hỏng.) → Sai, vì bài đọc không đề cập đến vấn đề thực phẩm bị hỏng, mà nhấn mạnh đến chi phí cao của việc nhập thực phẩm.</li> 
+<li>❌ <strong>Gardening was a way to occupy otherwise idle soldiers.</strong> (Trồng trọt là cách để giữ cho binh lính không bị nhàn rỗi.) → Sai, vì không có thông tin nào trong bài đọc nói rằng trồng trọt được thực hiện để giữ binh lính bận rộn.</li> 
+<li>❌ <strong>The soil near the forts was very fertile.</strong> (Đất gần các pháo đài rất màu mỡ.) → Sai, vì bài đọc không đề cập đến chất lượng đất xung quanh các pháo đài.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: According to the passage, which of the following posed the biggest obstacle to the development of military forts?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Insufficient shelter															</div>
+																				<div class="ps-4 mb-2">
+																	B. Attacks by wild animals															</div>
+																				<div class="ps-4 mb-2">
+																	C. Shortage of materials															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Illness</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the passage, which of the following posed the biggest obstacle to the development of military forts?</strong> (Theo bài đọc, yếu tố nào sau đây là trở ngại lớn nhất đối với sự phát triển của các pháo đài quân sự?)</p> 
+<ul> 
+<li>❌ <strong>Insufficient shelter</strong> (Thiếu nơi trú ẩn) → Sai, vì bài đọc không đề cập đến việc thiếu nơi trú ẩn là một trở ngại lớn đối với các pháo đài.</li> 
+<li>❌ <strong>Shortage of materials</strong> (Thiếu vật liệu) → Sai, vì không có bằng chứng nào trong bài đọc nói rằng vật liệu xây dựng là một vấn đề lớn.</li> 
+<li>❌ <strong>Attacks by wild animals</strong> (Sự tấn công của động vật hoang dã) → Sai, vì bài đọc không nhắc đến việc các pháo đài phải đối mặt với mối đe dọa từ động vật hoang dã.</li> 
+<li>✅ <strong>Illness</strong> (Bệnh tật) → Đúng, vì bài đọc nhấn mạnh rằng **dịch bệnh là vấn đề lớn nhất đối với công tác phòng thủ**, làm chậm tiến độ xây dựng các pháo đài và làm giảm hiệu quả hoạt động quân sự.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: The word "inhibited" in paragraph (C) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. hindered</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. involved															</div>
+																				<div class="ps-4 mb-2">
+																	C. exploited															</div>
+																				<div class="ps-4 mb-2">
+																	D. united															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "inhibited" in paragraph (C) is closest in meaning to?</strong> (Từ "inhibited" trong đoạn (C) có nghĩa gần nhất với từ nào?)</p> 
+<ul> 
+<li>❌ <strong>involved</strong> (liên quan đến) → Sai, vì "inhibited" có nghĩa là ngăn cản hoặc cản trở, không liên quan đến việc tham gia hay liên quan đến điều gì đó.</li> 
+<li>❌ <strong>exploited</strong> (khai thác, lợi dụng) → Sai, vì "inhibited" mang nghĩa tiêu cực là **cản trở**, không phải **khai thác**.</li> 
+<li>❌ <strong>united</strong> (đoàn kết) → Sai, vì "inhibited" không có nghĩa là kết nối hoặc hợp nhất.</li> 
+<li>✅ <strong>hindered</strong> (cản trở) → Đúng, vì trong bài đọc, từ "inhibited" được sử dụng để mô tả việc **dịch bệnh làm chậm tiến độ xây dựng các pháo đài và ảnh hưởng đến chức năng quân sự của chúng**, phù hợp với nghĩa của "hindered" là **cản trở hoặc gây khó khăn**.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: How did the military assist in the investigation of health problems?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. By documenting diseases and their possible causes</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. By experiments with different building materials															</div>
+																				<div class="ps-4 mb-2">
+																	C. By monitoring the soldiers' diets															</div>
+																				<div class="ps-4 mb-2">
+																	D. By registering annual birth and death rates															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>How did the military assist in the investigation of health problems?</strong> (Quân đội đã hỗ trợ điều tra các vấn đề sức khỏe như thế nào?)</p> 
+<ul> 
+<li>❌ <strong>By registering annual birth and death rates</strong> (Bằng cách ghi nhận tỷ lệ sinh và tử vong hàng năm) → Sai, vì bài đọc không đề cập đến việc quân đội thu thập dữ liệu về tỷ lệ sinh và tử vong.</li> 
+<li>❌ <strong>By experiments with different building materials</strong> (Bằng cách thử nghiệm với các vật liệu xây dựng khác nhau) → Sai, vì bài đọc không nói rằng quân đội tiến hành thử nghiệm với vật liệu xây dựng.</li> 
+<li>✅ <strong>By documenting diseases and their possible causes</strong> (Bằng cách ghi chép lại các bệnh tật và nguyên nhân có thể gây bệnh) → Đúng, vì bài đọc nhấn mạnh rằng **các bác sĩ quân y đã thực hiện các quan sát chi tiết về kiến trúc, khí hậu và mối liên hệ của chúng với các bệnh khác nhau tại các pháo đài quân sự**.</li> 
+<li>❌ <strong>By monitoring the soldiers' diets</strong> (Bằng cách theo dõi chế độ ăn uống của binh lính) → Sai, vì bài đọc không đề cập đến việc quân đội giám sát chế độ ăn uống của binh lính như một phần của cuộc điều tra về sức khỏe.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: The author organizes the discussion of forts by _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. explaining their damage to the environment															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. listing their contributions to western life</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. comparing their sizes															</div>
+																				<div class="ps-4 mb-2">
+																	D. describing their locations															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The author organizes the discussion of forts by _____.</strong> (Tác giả tổ chức phần thảo luận về các pháo đài bằng cách ____.)</p> 
+<ul> 
+<li>❌ <strong>describing their locations</strong> (Mô tả vị trí của chúng) → Sai, vì bài đọc không tập trung vào việc mô tả vị trí địa lý của các pháo đài.</li> 
+<li>❌ <strong>comparing their sizes</strong> (So sánh kích thước của chúng) → Sai, vì bài đọc không đưa ra bất kỳ sự so sánh nào về kích thước của các pháo đài.</li> 
+<li>❌ <strong>explaining their damage to the environment</strong> (Giải thích tác động tiêu cực của chúng đến môi trường) → Sai, vì bài đọc không đề cập đến bất kỳ thiệt hại nào mà các pháo đài gây ra cho môi trường.</li> 
+<li>✅ <strong>listing their contributions to western life</strong> (Liệt kê những đóng góp của chúng đối với cuộc sống ở miền Tây) → Đúng, vì bài đọc liệt kê nhiều vai trò của các pháo đài, bao gồm hỗ trợ giao thông, cung cấp nhu yếu phẩm, duy trì trật tự, phát triển nông nghiệp và nghiên cứu về sức khỏe.</li> 
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

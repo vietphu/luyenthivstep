@@ -1,0 +1,576 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 43 - Part 3				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79957				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> During the <b>heyday</b> of the railroads, when America's rail system provided the bulk of the country's passenger and freight transportation, various types of railroad cars were in service to accomplish the varied tasks handled by the railroads. One type of car that was not available for public use prior to the Civil War, however, was a sleeping car; ideas for sleeping cars abounded at the time, but these ideas were unworkable. It unfortunately took the death of a president to make the sleeping car a viable reality.</p>
+
+<p><b>(B)</b> Cabinetmaker George M. Pullman had recognized the demand for sleeping cars and had worked on developing experimental models of sleeping cars in the decade leading up to the Civil War. However, despite the fact that he had made successful test runs on the Chicago and Alton Railroads with his models, he was unable to sell his idea because his models were too wide and too high for existing train stations and bridges. In 1863, after spending time working as a storekeeper in a Colorado mining town, he invested his savings of twenty thousand dollars—a huge fortune at that time and all the money that he had in the world—in a luxurious sleeping car that he named the Pioneer. Pullman and his friend Ben Field built the Pioneer on the site of the present-day Chicago Union Station. For two years, however, the Pioneer sat on a railroad siding, useless because it could not fit through train stations and over bridges.</p>
+
+<p><b>(C)</b> Following President Lincoln's assassination in 1865, the state of Illinois, Lincoln's birthplace, wanted to transport the presidential casket in the finest fashion possible. The Pullman Pioneer was the most elegant car available; in order to make the Pullman part of the presidential funeral train in its run from Springfield to Chicago, the state cut down station platforms and raised bridges to accommodate the luxurious railway car. The Pullman car greatly impressed the funeral party, which included Lincoln's successor as president, General Ulysses S. Grant. Grant later requested the Pioneer for a trip from Detroit to Chicago. To satisfy Grant's request for the Pioneer, the Michigan Central Railroad made improvements on its line to accommodate the wide car, and soon other railroads followed. George Pullman founded the Pullman Palace Car Company in partnership with financier Andrew Carnegie and eventually became a millionaire.</p>
+
+<p><b>(D)</b> Pullman cars were normally a dark "Pullman green," although some were painted in the host railroad's colors. The cars carried individual names but usually did not have visible numbers. In the 1920s, the Pullman Company went through a series of restructuring steps, which in the end resulted in a parent company, Pullman Incorporated, controlling the Pullman Company (which owned and operated sleeping cars) and the Pullman-Standard Car Manufacturing Company.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Trong thời kỳ <b>hoàng kim</b> của ngành đường sắt, khi hệ thống đường sắt Hoa Kỳ cung cấp phần lớn dịch vụ vận chuyển hành khách và hàng hóa của cả nước, nhiều loại toa xe lửa khác nhau đã được đưa vào sử dụng để thực hiện các nhiệm vụ đa dạng mà ngành đường sắt đảm nhận. Tuy nhiên, một loại toa xe không có sẵn cho công chúng trước Nội chiến Hoa Kỳ là toa ngủ; mặc dù có rất nhiều ý tưởng về toa ngủ vào thời điểm đó, nhưng hầu hết đều không khả thi. Đáng tiếc là phải đến cái chết của một vị tổng thống, toa ngủ mới trở thành một thực tế có thể ứng dụng rộng rãi.</p>   <p><b>(B)</b> Thợ đóng tủ George M. Pullman đã nhận ra nhu cầu về toa ngủ và đã nghiên cứu phát triển các mô hình thử nghiệm trong suốt thập kỷ trước Nội chiến. Tuy nhiên, mặc dù ông đã thực hiện các chuyến thử nghiệm thành công trên tuyến đường sắt Chicago và Alton, ông vẫn không thể bán được ý tưởng của mình vì các mẫu toa xe của ông quá rộng và quá cao so với các nhà ga và cầu đường sắt hiện có. Năm 1863, sau một thời gian làm chủ cửa hàng tại một thị trấn khai thác mỏ ở Colorado, ông đã đầu tư toàn bộ số tiền tiết kiệm 20.000 đô la—một gia tài khổng lồ vào thời điểm đó và cũng là toàn bộ tài sản của ông—để chế tạo một toa ngủ sang trọng mà ông đặt tên là Pioneer. Pullman cùng người bạn Ben Field đã chế tạo Pioneer ngay tại địa điểm hiện nay là Ga Union Chicago. Tuy nhiên, trong suốt hai năm, toa Pioneer chỉ nằm yên trên một nhánh đường sắt, vô dụng vì nó không thể đi qua các nhà ga và cầu đường sắt.</p>   <p><b>(C)</b> Sau khi Tổng thống Lincoln bị ám sát vào năm 1865, bang Illinois—nơi Lincoln sinh ra—muốn vận chuyển linh cữu của ông theo cách trang trọng nhất có thể. Toa Pioneer của Pullman là toa xe sang trọng nhất có sẵn vào thời điểm đó; để đưa Pioneer vào đoàn tàu tang lễ trong hành trình từ Springfield đến Chicago, bang đã cắt bớt các bệ ga và nâng cao các cây cầu để phù hợp với toa xe sang trọng này. Chiếc toa Pullman đã gây ấn tượng mạnh với đoàn đưa tang, trong đó có Tổng thống kế nhiệm Lincoln, Tướng Ulysses S. Grant. Sau đó, Grant đã yêu cầu sử dụng Pioneer cho chuyến đi từ Detroit đến Chicago. Để đáp ứng yêu cầu của Grant, tuyến đường sắt Michigan Central đã cải thiện cơ sở hạ tầng để phù hợp với toa xe rộng này, và chẳng bao lâu sau, các tuyến đường sắt khác cũng làm theo. George Pullman sau đó thành lập Công ty Toa Xe Cung Điện Pullman (Pullman Palace Car Company) hợp tác với nhà tài chính Andrew Carnegie và cuối cùng trở thành triệu phú.</p>   <p><b>(D)</b> Các toa xe Pullman thường có màu "xanh lá Pullman" đặc trưng, mặc dù một số toa được sơn theo màu sắc của các tuyến đường sắt chủ quản. Các toa xe mang tên riêng nhưng thường không có số hiệu hiển thị rõ ràng. Vào những năm 1920, Công ty Pullman đã trải qua một loạt các bước tái cơ cấu, và cuối cùng dẫn đến việc thành lập công ty mẹ Pullman Incorporated, công ty này kiểm soát Công ty Pullman (đơn vị sở hữu và vận hành các toa xe ngủ) và Công ty Sản Xuất Toa Xe Pullman-Standard.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>(A)</b> During the <b>heyday</b> of the railroads, when America's rail system provided the bulk of the country's passenger and freight transportation, various types of railroad cars were in service to accomplish the varied tasks handled by the railroads. One type of car that was not available for public use prior to the Civil War, however, was a sleeping car; ideas for sleeping cars abounded at the time, but these ideas were unworkable. It unfortunately took the death of a president to make the sleeping car a viable reality.</p>
+
+<p><b>(B)</b> Cabinetmaker George M. Pullman had recognized the demand for sleeping cars and had worked on developing experimental models of sleeping cars in the decade leading up to the Civil War. However, despite the fact that he had made successful test runs on the Chicago and Alton Railroads with his models, he was unable to sell his idea because his models were too wide and too high for existing train stations and bridges. In 1863, after spending time working as a storekeeper in a Colorado mining town, he invested his savings of twenty thousand dollars—a huge fortune at that time and all the money that he had in the world—in a luxurious sleeping car that he named the Pioneer. Pullman and his friend Ben Field built the Pioneer on the site of the present-day Chicago Union Station. For two years, however, the Pioneer sat on a railroad siding, useless because it could not fit through train stations and over bridges.</p>
+
+<p><b>(C)</b> Following President Lincoln's assassination in 1865, the state of Illinois, Lincoln's birthplace, wanted to transport the presidential casket in the finest fashion possible. The Pullman Pioneer was the most elegant car available; in order to make the Pullman part of the presidential funeral train in its run from Springfield to Chicago, the state cut down station platforms and raised bridges to accommodate the luxurious railway car. The Pullman car greatly impressed the funeral party, which included Lincoln's successor as president, General Ulysses S. Grant. Grant later requested the Pioneer for a trip from Detroit to Chicago. To satisfy Grant's request for the Pioneer, the Michigan Central Railroad made improvements on its line to accommodate the wide car, and soon other railroads followed. George Pullman founded the Pullman Palace Car Company in partnership with financier Andrew Carnegie and eventually became a millionaire.</p>
+
+<p><b>(D)</b> Pullman cars were normally a dark "Pullman green," although some were painted in the host railroad's colors. The cars carried individual names but usually did not have visible numbers. In the 1920s, the Pullman Company went through a series of restructuring steps, which in the end resulted in a parent company, Pullman Incorporated, controlling the Pullman Company (which owned and operated sleeping cars) and the Pullman-Standard Car Manufacturing Company.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Which of the following best states the main idea of the passage?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. George Pullman was the only one to come up with the idea for a sleeping car.															</div>
+																				<div class="ps-4 mb-2">
+																	B. America's railroads used to provide much of the country's transportation.															</div>
+																				<div class="ps-4 mb-2">
+																	C. President Lincoln's assassination in 1865 shocked the nation.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Pullman's idea for a sleeping car became workable after Lincoln's death.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following best states the main idea of the passage?</strong> (Câu nào sau đây thể hiện rõ nhất ý chính của đoạn văn?)</p>
+<ul>
+<li>❌ <strong>America's railroads used to provide much of the country's transportation. (Đường sắt Mỹ từng cung cấp phần lớn dịch vụ vận chuyển của đất nước.)</strong> → Sai. Mặc dù đường sắt đóng vai trò quan trọng, nhưng đây không phải là ý chính của đoạn văn.</li>
+<li>❌ <strong>President Lincoln's assassination in 1865 shocked the nation. (Vụ ám sát Tổng thống Lincoln năm 1865 đã gây chấn động cả nước.)</strong> → Sai. Vụ ám sát là sự kiện quan trọng nhưng không phải trọng tâm của bài.</li>
+<li>❌ <strong>George Pullman was the only one to come up with the idea for a sleeping car. (George Pullman là người duy nhất nghĩ ra ý tưởng về toa ngủ.)</strong> → Sai. Trước ông cũng có nhiều ý tưởng khác, nhưng chúng không khả thi.</li>
+<li>✅ <strong>Pullman's idea for a sleeping car became workable after Lincoln's death. (Ý tưởng toa ngủ của Pullman trở nên khả thi sau khi Lincoln qua đời.)</strong> → Đúng. Chính nhu cầu vận chuyển linh cữu Tổng thống Lincoln đã thúc đẩy việc điều chỉnh hạ tầng để phù hợp với toa Pioneer của Pullman.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: In paragraph (A), the word 'heyday' is closest in meaning to...?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. a period with low prices.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. a period of great success.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. a time for harvest.															</div>
+																				<div class="ps-4 mb-2">
+																	D. a type of railroad schedule.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (A), the word "heyday" is closest in meaning to...?</strong> (Trong đoạn (A), từ "heyday" có nghĩa gần nhất với từ nào?)</p>
+<ul>
+<li>❌ <strong>a time for harvest. (Thời gian thu hoạch.)</strong> → Sai. Không có ý nghĩa nào liên quan đến nông nghiệp.</li>
+<li>❌ <strong>a period with low prices. (Một giai đoạn có giá thấp.)</strong> → Sai. Không liên quan đến giá cả hay tài chính.</li>
+<li>✅ <strong>a period of great success. (Thời kỳ phát triển thịnh vượng.)</strong> → Đúng. "Heyday" có nghĩa là thời kỳ hoàng kim, đỉnh cao của sự phát triển.</li>
+<li>❌ <strong>a type of railroad schedule. (Một loại lịch trình đường sắt.)</strong> → Sai. Không liên quan đến lịch trình tàu hỏa.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: Based on paragraph (A), what can be inferred about sleeping cars before the Civil War?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. were used abundantly.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. were thought to be a good idea.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. were used by presidents.															</div>
+																				<div class="ps-4 mb-2">
+																	D. were only used privately.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Based on paragraph (A), what can be inferred about sleeping cars before the Civil War?</strong> (Dựa trên đoạn (A), điều gì có thể suy ra về toa ngủ trước Nội chiến Hoa Kỳ?)</p>
+<ul>
+<li>❌ <strong>were used abundantly. (Được sử dụng rộng rãi.)</strong> → Sai. Không có toa ngủ nào khả thi để sử dụng rộng rãi trước Nội chiến.</li>
+<li>✅ <strong>were thought to be a good idea. (Được coi là một ý tưởng hay.)</strong> → Đúng. Đã có nhiều ý tưởng về toa ngủ nhưng chưa được thực hiện thành công.</li>
+<li>❌ <strong>were only used privately. (Chỉ được sử dụng riêng tư.)</strong> → Sai. Không có thông tin nào cho thấy các toa ngủ đã được sử dụng riêng trước đó.</li>
+<li>❌ <strong>were used by presidents. (Được sử dụng bởi các tổng thống.)</strong> → Sai. Trước khi Lincoln qua đời, chưa có toa ngủ được thiết kế phù hợp để sử dụng.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What is the main idea of paragraph (B)?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Although Pullman had success in test runs with his sleeping car models, they were not compatible with Chicago's transportation system.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Pullman had invested much money on developing the sleeping cars.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Pullman had recognized the demand for sleeping cars.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Pullman had been successful in selling his sleeping cars.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What is the main idea of paragraph (B)?</strong> (Ý chính của đoạn (B) là gì?)</p>
+<ul>
+<li>❌ <strong>Pullman had been successful in selling his sleeping cars. (Pullman đã thành công trong việc bán các toa ngủ của mình.)</strong> → Sai. Ông không thể bán ý tưởng của mình vì các toa xe không phù hợp với hạ tầng hiện có.</li>
+<li>✅ <strong>Although Pullman had success in test runs with his sleeping car models, they were not compatible with Chicago's transportation system. (Mặc dù Pullman đã thành công trong các thử nghiệm, nhưng các toa xe không phù hợp với hệ thống giao thông của Chicago.)</strong> → Đúng. Các mẫu thử nghiệm của ông không thể đi qua các nhà ga và cầu đường sắt.</li>
+<li>❌ <strong>Pullman had recognized the demand for sleeping cars. (Pullman đã nhận ra nhu cầu về toa ngủ.)</strong> → Sai. Ông đã nhận ra nhu cầu nhưng không thể triển khai ngay.</li>
+<li>❌ <strong>Pullman had invested much money on developing the sleeping cars. (Pullman đã đầu tư rất nhiều tiền vào việc phát triển các toa ngủ.)</strong> → Sai. Ông có đầu tư tiền nhưng ý chính của đoạn là vấn đề tương thích hạ tầng.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What was the initial problem that made Pullman's card unusable?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. They were too large.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. They were too slow.															</div>
+																				<div class="ps-4 mb-2">
+																	C. They were too unusual.															</div>
+																				<div class="ps-4 mb-2">
+																	D. They were too expensive.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What was the initial problem that made Pullman's car unusable?</strong> (Vấn đề ban đầu khiến toa xe của Pullman không thể sử dụng là gì?)</p>
+<ul>
+<li>✅ <strong>They were too large. (Chúng quá lớn.)</strong> → Đúng. Các toa xe của Pullman quá rộng và cao, không thể đi qua các nhà ga và cầu đường sắt.</li>
+<li>❌ <strong>They were too expensive. (Chúng quá đắt.)</strong> → Sai. Giá cả không phải là nguyên nhân chính khiến toa xe không thể sử dụng.</li>
+<li>❌ <strong>They were too slow. (Chúng quá chậm.)</strong> → Sai. Không có đề cập nào về tốc độ của toa xe.</li>
+<li>❌ <strong>They were too unusual. (Chúng quá khác biệt.)</strong> → Sai. Sự khác biệt không phải là vấn đề chính, mà là kích thước không phù hợp.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: What is stated in the passage about George Pullman?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He always lived in Chicago.															</div>
+																				<div class="ps-4 mb-2">
+																	B. He once had a job in a store.															</div>
+																				<div class="ps-4 mb-2">
+																	C. He worked in a mine.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. He saved money for his project.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What is stated in the passage about George Pullman?</strong> (Thông tin nào sau đây về George Pullman được đề cập trong bài đọc?)</p>
+<ul>
+<li>❌ <strong>He once had a job in a store. (Ông từng làm việc trong một cửa hàng.)</strong> → Sai. Mặc dù ông có thời gian sống ở Colorado nhưng không có thông tin nào xác nhận ông làm việc trong cửa hàng.</li>
+<li>❌ <strong>He always lived in Chicago. (Ông luôn sống ở Chicago.)</strong> → Sai. Ông từng làm việc tại Colorado trước khi trở lại Chicago.</li>
+<li>❌ <strong>He worked in a mine. (Ông từng làm việc trong mỏ.)</strong> → Sai. Không có thông tin nào cho thấy ông từng làm việc trong mỏ.</li>
+<li>✅ <strong>He saved money for his project. (Ông đã tiết kiệm tiền cho dự án của mình.)</strong> → Đúng. Ông đã dành toàn bộ số tiền tiết kiệm 20.000 đô la để chế tạo toa ngủ Pioneer.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What is true about the Pullman sleeping cars?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The Pioneer did not cost Pullman a fortune.															</div>
+																				<div class="ps-4 mb-2">
+																	B. The experimental models of sleeping cars had not been successful until 1863.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. The Pioneer was considered to be the most elegant sleeping car compared to others.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. The Pullman car was extremely beneficial because of its fitness through train station and bridges.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What is true about the Pullman sleeping cars?</strong> (Điều nào sau đây đúng về các toa ngủ Pullman?)</p>
+<ul>
+<li>❌ <strong>The experimental models of sleeping cars had not been successful until 1863. (Các mẫu thử nghiệm của toa ngủ không thành công cho đến năm 1863.)</strong> → Sai. Pullman đã có các thử nghiệm thành công trước đó nhưng không thể bán ý tưởng của mình.</li>
+<li>❌ <strong>The Pioneer did not cost Pullman a fortune. (Toa Pioneer không tốn của Pullman một gia tài.)</strong> → Sai. Ông đã đầu tư toàn bộ số tiền tiết kiệm vào việc chế tạo Pioneer.</li>
+<li>✅ <strong>The Pioneer was considered to be the most elegant sleeping car compared to others. (Pioneer được coi là toa ngủ sang trọng nhất so với các toa xe khác.)</strong> → Đúng. Nó là toa xe sang trọng nhất vào thời điểm đó và được sử dụng trong đám tang của Lincoln.</li>
+<li>❌ <strong>The Pullman car was extremely beneficial because of its fitness through train station and bridges. (Toa Pullman cực kỳ hữu ích vì phù hợp với nhà ga và cầu đường sắt.)</strong> → Sai. Ban đầu, toa xe quá rộng và cao, không thể đi qua nhà ga và cầu đường sắt.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: In paragraph (C), why did Illinois choose to use the Pullman in Lincoln's funeral train?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. It was superior to other cars.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. The Pullman Palace Car Company was a major Illinois business.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Ulysses S. Grant requested it.															</div>
+																				<div class="ps-4 mb-2">
+																	D. It was the only railroad car that could make it from Springfield to Chicago.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In paragraph (C), why did Illinois choose to use the Pullman in Lincoln's funeral train?</strong> (Trong đoạn (C), tại sao bang Illinois chọn sử dụng toa Pullman trong đoàn tàu tang lễ của Lincoln?)</p>
+<ul>
+<li>✅ <strong>It was superior to other cars. (Nó vượt trội hơn các toa xe khác.)</strong> → Đúng. Pioneer là toa xe sang trọng nhất vào thời điểm đó, nên được chọn cho đoàn tàu tang lễ.</li>
+<li>❌ <strong>It was the only railroad car that could make it from Springfield to Chicago. (Nó là toa xe duy nhất có thể di chuyển từ Springfield đến Chicago.)</strong> → Sai. Có nhiều toa xe khác, nhưng Pioneer được chọn vì sự sang trọng.</li>
+<li>❌ <strong>Ulysses S. Grant requested it. (Ulysses S. Grant yêu cầu sử dụng nó.)</strong> → Sai. Grant chỉ yêu cầu sử dụng Pioneer sau khi thấy nó trong đám tang của Lincoln.</li>
+<li>❌ <strong>The Pullman Palace Car Company was a major Illinois business. (Công ty Pullman Palace Car là một doanh nghiệp lớn ở Illinois.)</strong> → Sai. Công ty Pullman Palace Car được thành lập sau sự kiện này.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: It can be inferred from the passage that the Michigan Central Railroad _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. controlled the railroad tracks between Detroit and Chicago.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. was the sole manufacturer of the Pioneer.															</div>
+																				<div class="ps-4 mb-2">
+																	C. was the only railroad company to accommodate wider cars.															</div>
+																				<div class="ps-4 mb-2">
+																	D. was owned by George Pullman.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>It can be inferred from the passage that the Michigan Central Railroad _____</strong> (Có thể suy ra từ đoạn văn rằng công ty Michigan Central Railroad _____)</p>
+<ul>
+<li>❌ <strong>was owned by George Pullman. (Thuộc sở hữu của George Pullman.)</strong> → Sai. Không có thông tin nào cho thấy Pullman sở hữu Michigan Central Railroad.</li>
+<li>✅ <strong>controlled the railroad tracks between Detroit and Chicago. (Kiểm soát các tuyến đường sắt giữa Detroit và Chicago.)</strong> → Đúng. Michigan Central Railroad đã cải thiện tuyến đường của họ để phù hợp với toa Pioneer.</li>
+<li>❌ <strong>was the only railroad company to accommodate wider cars. (Là công ty đường sắt duy nhất điều chỉnh để phù hợp với toa xe rộng hơn.)</strong> → Sai. Sau đó, nhiều công ty khác cũng làm điều tương tự.</li>
+<li>❌ <strong>was the sole manufacturer of the Pioneer. (Là nhà sản xuất duy nhất của toa Pioneer.)</strong> → Sai. Toa Pioneer được chế tạo bởi Pullman và Ben Field, không phải Michigan Central Railroad.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: In which academic course would this passage most likely be assigned?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Finance															</div>
+																				<div class="ps-4 mb-2">
+																	B. Engineering															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. History</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Political science															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>In which academic course would this passage most likely be assigned?</strong> (Bài đọc này có thể được sử dụng trong khóa học nào?)</p>
+<ul>
+<li>❌ <strong>Engineering. (Kỹ thuật.)</strong> → Sai. Bài đọc tập trung vào lịch sử đường sắt hơn là khía cạnh kỹ thuật.</li>
+<li>❌ <strong>Political science. (Khoa học chính trị.)</strong> → Sai. Dù có nhắc đến Tổng thống Lincoln, nhưng bài đọc không tập trung vào chính trị.</li>
+<li>❌ <strong>Finance. (Tài chính.)</strong> → Sai. Không có nội dung nào liên quan đến tài chính hoặc đầu tư.</li>
+<li>✅ <strong>History. (Lịch sử.)</strong> → Đúng. Bài đọc nói về sự phát triển của toa ngủ Pullman và sự kiện lịch sử liên quan.</li>
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

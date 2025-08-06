@@ -1,0 +1,576 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 20 - Part 4				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79931				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> The Winterthur Museum is both a collection and a house. There are many museums <b>devoted to</b> the decorative arts and many house museums, but it is rare in the United States to find a great collection displayed in a grand country house. Passed down through successive generations of a single family, Winterthur has been a private estate for more than a century. Even after extensive renovations between 1929 and 1931, the house remained a family residence.</p>
+
+<p>This fact is significant to the museum’s atmosphere and impact. <i>The impression of a lived-in house is apparent to the visitor</i>; the rooms appear as if they were vacated only a short while ago. Whether by the original owners of the furniture or the most recent residents of the house is a matter of personal interpretation. Winterthur remains, then, a house in which a collection of furniture and architectural elements has been <b>assembled</b>. Like an English country house, <b>it</b> is an organic structure; the house itself, as well as the collection and the manner in which it is displayed to visitors, has evolved over the years.</p>
+
+<p>These changes have coincided with <b>developing</b> concepts of American art, increased knowledge among collectors and scholars, and a growing effort to achieve historical authenticity in period-room displays. The rooms at Winterthur have followed this trend while still maintaining the character of a private home.</p>
+
+<p><b>(B)</b> The concept of a period room as a display technique has gradually developed over the years in an effort to present works of art in a setting that enhances their visual impact and provides deeper meaning for viewers. Comparable to the habitat group in a natural history museum, the period room brings the decorative arts to life in an engaging and dynamic way, allowing for the arrangement of objects related by style, date, or place of manufacture.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Bảo tàng Winterthur vừa là một bộ sưu tập vừa là một ngôi nhà. Có nhiều bảo tàng <b>chuyên về</b> nghệ thuật trang trí và nhiều bảo tàng nhà ở, nhưng rất hiếm khi ở Hoa Kỳ có một bộ sưu tập vĩ đại được trưng bày trong một dinh thự đồng quê tráng lệ. Được truyền qua nhiều thế hệ trong cùng một gia đình, Winterthur đã là một điền trang tư nhân trong hơn một thế kỷ. Ngay cả sau khi trải qua quá trình cải tạo lớn từ năm 1929 đến 1931, tòa nhà vẫn là nơi ở của gia đình.</p>  <p>Thực tế này có ý nghĩa quan trọng đối với bầu không khí và sức ảnh hưởng của bảo tàng. <i>Ấn tượng về một ngôi nhà vẫn còn sinh hoạt rõ ràng đối với du khách</i>; các căn phòng trông như thể chỉ vừa mới được rời đi cách đây không lâu. Việc những căn phòng này được bỏ trống bởi chủ nhân ban đầu của các món nội thất hay bởi những cư dân gần đây nhất của ngôi nhà lại là điều phụ thuộc vào cách cảm nhận của mỗi người. Vì vậy, Winterthur vẫn giữ nguyên hình thái một ngôi nhà, trong đó một bộ sưu tập nội thất và các yếu tố kiến trúc đã được <b>tập hợp</b>. Giống như một dinh thự đồng quê kiểu Anh, <b>nó</b> là một cấu trúc phát triển tự nhiên; bản thân tòa nhà, cùng với bộ sưu tập và cách bài trí dành cho du khách, đã không ngừng tiến hóa theo thời gian.</p>  <p>Những thay đổi này trùng hợp với những khái niệm <b>đang phát triển</b> về nghệ thuật Mỹ, sự hiểu biết ngày càng sâu rộng của các nhà sưu tập và học giả, cũng như nỗ lực ngày càng lớn nhằm đạt được tính xác thực lịch sử trong cách trưng bày phòng thời kỳ. Các căn phòng tại Winterthur đã tuân theo xu hướng này trong khi vẫn duy trì đặc trưng của một ngôi nhà riêng tư.</p>  <p><b>(B)</b> Khái niệm về phòng thời kỳ như một kỹ thuật trưng bày đã phát triển dần theo thời gian nhằm trình bày các tác phẩm nghệ thuật trong một không gian giúp nâng cao tác động thị giác và mang lại ý nghĩa sâu sắc hơn cho người xem. Tương tự như nhóm mô hình sinh thái trong bảo tàng lịch sử tự nhiên, phòng thời kỳ giúp nghệ thuật trang trí trở nên sống động theo cách hấp dẫn và linh hoạt, cho phép sắp xếp các đồ vật có liên quan về phong cách, niên đại hoặc nơi sản xuất.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>(A)</b> The Winterthur Museum is both a collection and a house. There are many museums <b>devoted to</b> the decorative arts and many house museums, but it is rare in the United States to find a great collection displayed in a grand country house. Passed down through successive generations of a single family, Winterthur has been a private estate for more than a century. Even after extensive renovations between 1929 and 1931, the house remained a family residence.</p>
+
+<p>This fact is significant to the museum’s atmosphere and impact. <i>The impression of a lived-in house is apparent to the visitor</i>; the rooms appear as if they were vacated only a short while ago. Whether by the original owners of the furniture or the most recent residents of the house is a matter of personal interpretation. Winterthur remains, then, a house in which a collection of furniture and architectural elements has been <b>assembled</b>. Like an English country house, <b>it</b> is an organic structure; the house itself, as well as the collection and the manner in which it is displayed to visitors, has evolved over the years.</p>
+
+<p>These changes have coincided with <b>developing</b> concepts of American art, increased knowledge among collectors and scholars, and a growing effort to achieve historical authenticity in period-room displays. The rooms at Winterthur have followed this trend while still maintaining the character of a private home.</p>
+
+<p><b>(B)</b> The concept of a period room as a display technique has gradually developed over the years in an effort to present works of art in a setting that enhances their visual impact and provides deeper meaning for viewers. Comparable to the habitat group in a natural history museum, the period room brings the decorative arts to life in an engaging and dynamic way, allowing for the arrangement of objects related by style, date, or place of manufacture.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What does the passage mainly discuss?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Historical furniture contained in Winterthur															</div>
+																				<div class="ps-4 mb-2">
+																	B. How Winterthur compares to English country houses															</div>
+																				<div class="ps-4 mb-2">
+																	C. The reason that Winterthur was redesigned															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Elements that make Winterthur an unusual museum</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does the passage mainly discuss?</strong> (Bài đọc chủ yếu thảo luận về điều gì?)</p> 
+<ul> 
+<li>❌ <strong>The reason that Winterthur was redesigned.</strong> (Lý do Winterthur được thiết kế lại.) → Sai, vì bài đọc không tập trung vào lý do cải tạo mà vào đặc điểm độc đáo của bảo tàng.</li> 
+<li>✅ <strong>Elements that make Winterthur an unusual museum.</strong> (Những yếu tố khiến Winterthur trở thành một bảo tàng độc đáo.) → Đúng, vì bài đọc mô tả Winterthur như một bảo tàng vừa là bộ sưu tập nghệ thuật trang trí vừa là một ngôi nhà.</li> 
+<li>❌ <strong>How Winterthur compares to English country houses.</strong> (Cách Winterthur so sánh với các dinh thự đồng quê kiểu Anh.) → Sai, vì bài đọc chỉ đề cập thoáng qua đến sự tương đồng, không phải là chủ đề chính.</li> 
+<li>❌ <strong>Historical furniture contained in Winterthur.</strong> (Nội thất lịch sử có trong Winterthur.) → Sai, vì nội thất là một phần quan trọng nhưng không phải trọng tâm của bài đọc.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: The phrase "devoted to" in paragraph (A) is closest in meaning to which of the following?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. surrounded by															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. specializing in</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. successful with															</div>
+																				<div class="ps-4 mb-2">
+																	D. sentimental about															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The phrase "devoted to" in paragraph (A) is closest in meaning to which of the following?</strong> (Cụm từ "devoted to" trong đoạn (A) có nghĩa gần nhất với từ nào?)</p> 
+<ul> 
+<li>❌ <strong>surrounded by</strong> (bao quanh bởi) → Sai, vì "devoted to" không có nghĩa là bị bao quanh.</li> 
+<li>✅ <strong>specializing in</strong> (chuyên về) → Đúng, vì bài đọc nói về <strong>bảo tàng chuyên về nghệ thuật trang trí</strong>.</li> 
+<li>❌ <strong>successful with</strong> (thành công với) → Sai, vì "devoted to" không liên quan đến thành công.</li> 
+<li>❌ <strong>sentimental about</strong> (có tình cảm với) → Sai, vì "devoted to" không có nghĩa là có cảm xúc với điều gì.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What happened at Winterthur between 1929 and 1931?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The old furniture was replaced.															</div>
+																				<div class="ps-4 mb-2">
+																	B. The owners moved out.															</div>
+																				<div class="ps-4 mb-2">
+																	C. The estate became a museum.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. The house was repaired.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What happened at Winterthur between 1929 and 1931?</strong> (Điều gì đã xảy ra tại Winterthur từ năm 1929 đến 1931?)</p> 
+<ul> 
+<li>❌ <strong>The owners moved out.</strong> (Chủ nhân dọn đi.) → Sai, vì bài đọc nói rằng <strong>Winterthur vẫn là nơi ở của gia đình sau khi cải tạo</strong>.</li> 
+<li>✅ <strong>The house was repaired.</strong> (Ngôi nhà được sửa chữa.) → Đúng, vì bài đọc nói rằng <strong>Winterthur trải qua một đợt cải tạo lớn</strong> trong thời gian này.</li> 
+<li>❌ <strong>The old furniture was replaced.</strong> (Nội thất cũ bị thay thế.) → Sai, vì bài đọc không nói rằng nội thất bị thay thế hoàn toàn.</li> 
+<li>❌ <strong>The estate became a museum.</strong> (Khu điền trang trở thành bảo tàng.) → Sai, vì bài đọc không nói rằng Winterthur trở thành bảo tàng trong giai đoạn này.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What does the author mean by stating "The impression of a lived-in house is apparent to the visitor" in paragraph (A)?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Winterthur is very old.															</div>
+																				<div class="ps-4 mb-2">
+																	B. The furniture at Winterthur looks comfortable.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Winterthur does not look like a typical museum.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Few people visit Winterthur.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does the author mean by stating "The impression of a lived-in house is apparent to the visitor" in paragraph (A)?</strong> (Tác giả có ý gì khi nói rằng "Ấn tượng về một ngôi nhà vẫn còn sinh hoạt rõ ràng đối với du khách" trong đoạn (A)?)</p> 
+<ul> 
+<li>❌ <strong>Winterthur is very old.</strong> (Winterthur rất cũ.) → Sai, vì bài đọc không đề cập đến độ tuổi của Winterthur.</li> 
+<li>❌ <strong>Few people visit Winterthur.</strong> (Ít người ghé thăm Winterthur.) → Sai, vì bài đọc không nói về lượng khách du lịch.</li> 
+<li>✅ <strong>Winterthur does not look like a typical museum.</strong> (Winterthur không giống một bảo tàng điển hình.) → Đúng, vì bài đọc nói rằng <strong>các căn phòng trông như thể vẫn đang được sử dụng</strong>, không giống một bảo tàng truyền thống.</li> 
+<li>❌ <strong>The furniture at Winterthur looks comfortable.</strong> (Nội thất tại Winterthur trông thoải mái.) → Sai, vì bài đọc không đề cập đến mức độ thoải mái của nội thất.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: The word "assembled" in paragraph (A) is closest in meaning to which of the following?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. fundamentally changed															</div>
+																				<div class="ps-4 mb-2">
+																	B. appreciated															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. brought together</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. summoned															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "assembled" in paragraph (A) is closest in meaning to which of the following?</strong> (Từ "assembled" trong đoạn (A) có nghĩa gần nhất với từ nào?)</p> 
+<ul> 
+<li>❌ <strong>summoned</strong> (triệu tập) → Sai, vì "assembled" không có nghĩa là triệu tập ai đó.</li> 
+<li>❌ <strong>appreciated</strong> (được đánh giá cao) → Sai, vì "assembled" không liên quan đến việc đánh giá cao.</li> 
+<li>✅ <strong>brought together</strong> (tập hợp lại) → Đúng, vì bài đọc nói rằng <strong>các yếu tố kiến trúc và nội thất được tập hợp lại tại Winterthur</strong>.</li> 
+<li>❌ <strong>fundamentally changed</strong> (thay đổi hoàn toàn) → Sai, vì "assembled" không có nghĩa là thay đổi điều gì.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: The word "it" in paragraph (A) refers to which of the following?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Winterthur</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. visitor															</div>
+																				<div class="ps-4 mb-2">
+																	C. collection															</div>
+																				<div class="ps-4 mb-2">
+																	D. English country house															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "it" in paragraph (A) refers to which of the following?</strong> (Từ "it" trong đoạn (A) ám chỉ điều gì?)</p> 
+<ul> 
+<li>✅ <strong>Winterthur.</strong> → Đúng, vì bài đọc mô tả Winterthur là một ngôi nhà đồng quê phát triển tự nhiên, và từ "it" trong câu sau đó tiếp tục chỉ đến Winterthur.</li> 
+<li>❌ <strong>collection.</strong> → Sai, vì "it" không ám chỉ bộ sưu tập mà là toàn bộ bảo tàng Winterthur.</li> 
+<li>❌ <strong>English country house.</strong> → Sai, vì bài đọc chỉ so sánh Winterthur với dinh thự đồng quê kiểu Anh, không phải ám chỉ nó là một dinh thự như vậy.</li> 
+<li>❌ <strong>visitor.</strong> → Sai, vì "it" không ám chỉ khách tham quan.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: The word "developing" in paragraph (A) is closest in meaning to which of the following?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. informative															</div>
+																				<div class="ps-4 mb-2">
+																	B. traditional															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. evolving</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. exhibiting															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "developing" in paragraph (A) is closest in meaning to which of the following?</strong> (Từ "developing" trong đoạn (A) có nghĩa gần nhất với từ nào?)</p> 
+<ul> 
+<li>❌ <strong>traditional.</strong> (truyền thống) → Sai, vì "developing" liên quan đến sự thay đổi, không phải giữ nguyên truyền thống.</li> 
+<li>❌ <strong>exhibiting.</strong> (trưng bày) → Sai, vì "developing" không có nghĩa là trưng bày.</li> 
+<li>❌ <strong>informative.</strong> (cung cấp thông tin) → Sai, vì "developing" không có nghĩa là mang tính cung cấp thông tin.</li> 
+<li>✅ <strong>evolving.</strong> (phát triển, tiến hóa) → Đúng, vì bài đọc nói rằng <strong>các khái niệm về nghệ thuật Mỹ liên tục phát triển</strong>.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: According to the passage, objects in a period room are related by all of the following EXCEPT?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. place of manufacture															</div>
+																				<div class="ps-4 mb-2">
+																	B. style															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. past ownership</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. date															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>According to the passage, objects in a period room are related by all of the following EXCEPT?</strong> (Theo bài đọc, các đồ vật trong phòng thời kỳ có mối liên hệ với nhau theo tất cả các tiêu chí sau NGOẠI TRỪ?)</p> 
+<ul> 
+<li>❌ <strong>date.</strong> (niên đại) → Sai, vì bài đọc nói rằng đồ vật trong phòng thời kỳ có thể được sắp xếp theo niên đại.</li> 
+<li>❌ <strong>style.</strong> (phong cách) → Sai, vì đồ vật cũng có thể được sắp xếp theo phong cách.</li> 
+<li>❌ <strong>place of manufacture.</strong> (nơi sản xuất) → Sai, vì bài đọc đề cập đến việc đồ vật có thể được trưng bày theo nơi sản xuất.</li> 
+<li>✅ <strong>past ownership.</strong> (chủ sở hữu trước đây) → Đúng, vì bài đọc không đề cập đến việc sắp xếp đồ vật theo chủ sở hữu trước đó.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What is the relationship between the two paragraphs in the passage?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Each paragraph describes a different historical period.															</div>
+																				<div class="ps-4 mb-2">
+																	B. Each paragraph describes a different approach to the display of objects in a museum.															</div>
+																				<div class="ps-4 mb-2">
+																	C. The second paragraph explains a philosophy of art appreciation that contrasts with the philosophy explained in me first paragraph.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. The second paragraph explains a term that was mentioned in the first paragraph.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What is the relationship between the two paragraphs in the passage?</strong> (Mối quan hệ giữa hai đoạn văn trong bài đọc là gì?)</p> 
+<ul> 
+<li>✅ <strong>The second paragraph explains a term that was mentioned in the first paragraph.</strong> (Đoạn hai giải thích một thuật ngữ được đề cập trong đoạn một.) → Đúng, vì đoạn một mô tả Winterthur như một bảo tàng có phòng thời kỳ, và đoạn hai giải thích khái niệm "phòng thời kỳ".</li> 
+<li>❌ <strong>Each paragraph describes a different approach to the display of objects in a museum.</strong> (Mỗi đoạn mô tả một cách tiếp cận khác nhau để trưng bày vật thể trong bảo tàng.) → Sai, vì cả hai đoạn đều tập trung vào cách bài trí phòng thời kỳ.</li> 
+<li>❌ <strong>The second paragraph explains a philosophy of art appreciation that contrasts with the philosophy explained in the first paragraph.</strong> (Đoạn hai giải thích một triết lý về nghệ thuật trái ngược với đoạn một.) → Sai, vì đoạn hai không đối lập với đoạn một.</li> 
+<li>❌ <strong>Each paragraph describes a different historical period.</strong> (Mỗi đoạn mô tả một thời kỳ lịch sử khác nhau.) → Sai, vì cả hai đoạn đều nói về bảo tàng Winterthur.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: Where in the passage does the author explain why displays at Winterthur have changed?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. At the end of the passage, summarizing the changes over time															</div>
+																				<div class="ps-4 mb-2">
+																	B. In paragraph (B), explaining the period room concept															</div>
+																				<div class="ps-4 mb-2">
+																	C. In the introduction of the passage															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. In paragraph (A), discussing evolving concepts of American art</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Where in the passage does the author explain why displays at Winterthur have changed?</strong> (Tác giả giải thích tại đâu trong bài đọc về lý do các cách trưng bày tại Winterthur thay đổi?)</p> 
+<ul> 
+<li>❌ <strong>In the introduction of the passage.</strong> (Ở phần mở đầu của bài đọc.) → Sai, vì phần mở đầu chỉ giới thiệu Winterthur, không giải thích sự thay đổi trưng bày.</li> 
+<li>✅ <strong>In paragraph (A), discussing evolving concepts of American art.</strong> (Trong đoạn (A), thảo luận về sự phát triển của các khái niệm nghệ thuật Mỹ.) → Đúng, vì bài đọc nói rằng <strong>các cách trưng bày thay đổi cùng với sự phát triển của nghệ thuật Mỹ</strong>.</li> 
+<li>❌ <strong>In paragraph (B), explaining the period room concept.</strong> (Trong đoạn (B), giải thích khái niệm phòng thời kỳ.) → Sai, vì đoạn này tập trung vào khái niệm "phòng thời kỳ", không phải lý do thay đổi trưng bày.</li> 
+<li>❌ <strong>At the end of the passage, summarizing the changes over time.</strong> (Ở cuối bài đọc, tóm tắt sự thay đổi qua thời gian.) → Sai, vì bài đọc không có phần tổng kết sự thay đổi ở cuối.</li> 
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>

@@ -1,0 +1,568 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Đọc hiểu VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style>
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					📖 Xem lại đề đọc mã số 16 - Part 4				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #R79927				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/10				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block mb-2">
+					👋 Xin chào, phuneo				</span>
+				<div class="d-flex gap-2 justify-content-md-end justify-content-center">
+					<button id="toggleTranscriptBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+						📄 Xem bài đọc
+					</button>
+					<button id="toggleTranslationBtn" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+						🌐 Dịch tiếng Việt
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container-fluid">
+			
+<!-- Offcanvas Transcript -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Bài đọc</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Anyone who has handled a fossilized bone knows that it is usually not identical to its modern <b>counterpart</b>, with the most obvious difference being its greater weight. Fossils often possess the characteristics of stone rather than organic materials, which has led to the term "petrifaction" (meaning "to turn into rock"). The implication is that bone, and other tissues, have somehow been turned into stone, and this is certainly the explanation given in some texts. But it is a wrong interpretation; fossils are frequently so dense because the <b>pores</b> and other spaces in the bone have become filled with minerals taken up from the surrounding sediments. Some fossil bones have all the interstitial spaces filled with foreign minerals, including the marrow cavity, if there is one, while others have taken up but little from their surroundings. Most likely, all minerals deposited within the bone have recrystallized from solution due to water percolation. The degree of mineralization appears to be determined by the nature of the environment in which the bone was deposited and not by the antiquity of the bone. For example, the black fossil bones that are so common in many parts of Florida are heavily mineralized, but they are only about 20,000 years old, whereas many of the dinosaur bones from western Canada, which are about 75 million years old, are only partially filled in. Under optimum conditions, the process of mineralization probably takes thousands rather than millions of years, perhaps considerably less.</p>
+
+<p><b>(B)</b> The amount of change that has occurred in fossil bone, even in bone as old as that of dinosaurs, is often remarkably small. We are therefore usually able to see the microscopic structures of the bone, including such fine details as the lacunae where the living bone cells once resided. The natural bone mineral, hydroxyapatite, remains virtually unaltered—<b>it</b> retains the same crystal structure as modern bone. Although nothing remains of the original collagen, some of its component amino acids are usually still <b>detectable</b>, together with amino acids of the noncollagen proteins of bone.</p>
+	</div>
+</div>
+
+<!-- Offcanvas Translation -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		<p><b>(A)</b> Bất kỳ ai từng cầm một mẩu xương hóa thạch đều biết rằng nó thường không giống hệt với <b>đối tác</b> hiện đại của nó, với sự khác biệt rõ ràng nhất là trọng lượng lớn hơn. Hóa thạch thường mang đặc tính của đá hơn là vật liệu hữu cơ, điều này đã dẫn đến thuật ngữ "hóa đá" (có nghĩa là "biến thành đá"). Điều này gợi ý rằng xương và các mô khác đã bằng cách nào đó biến thành đá, và đây chắc chắn là lời giải thích được đưa ra trong một số tài liệu. Tuy nhiên, đây là một cách hiểu sai; xương hóa thạch thường trở nên đặc hơn do các <b>lỗ rỗng</b> và khoảng trống trong xương đã bị lấp đầy bởi khoáng chất hấp thụ từ trầm tích xung quanh. Một số xương hóa thạch có tất cả các khoang kẽ được lấp đầy bởi khoáng chất lạ, bao gồm cả khoang tủy nếu có, trong khi một số khác chỉ hấp thụ một lượng nhỏ từ môi trường xung quanh. Nhiều khả năng, tất cả các khoáng chất lắng đọng trong xương đã kết tinh lại từ dung dịch thông qua quá trình thấm nước. Mức độ khoáng hóa dường như được quyết định bởi môi trường mà xương được chôn vùi, chứ không phải bởi tuổi của xương. Ví dụ, những mẩu xương hóa thạch màu đen rất phổ biến ở nhiều khu vực của Florida có mức khoáng hóa cao, nhưng chúng chỉ khoảng 20.000 năm tuổi, trong khi nhiều xương khủng long từ miền Tây Canada, có niên đại khoảng 75 triệu năm, lại chỉ bị khoáng hóa một phần. Trong điều kiện tối ưu, quá trình khoáng hóa có thể mất hàng nghìn năm thay vì hàng triệu năm, thậm chí có thể nhanh hơn đáng kể.</p>  <p><b>(B)</b> Lượng thay đổi đã xảy ra trong xương hóa thạch, ngay cả với những mẩu xương cổ như xương khủng long, thường rất nhỏ một cách đáng kinh ngạc. Do đó, chúng ta thường có thể quan sát được các cấu trúc vi mô của xương, bao gồm cả những chi tiết nhỏ như các hốc lacunae, nơi từng chứa các tế bào xương sống. Khoáng chất tự nhiên của xương, hydroxyapatite, hầu như không thay đổi—<b>nó</b> vẫn giữ nguyên cấu trúc tinh thể như xương hiện đại. Mặc dù không còn dấu vết của collagen nguyên bản, một số axit amin cấu thành của nó vẫn có thể được <b>phát hiện</b>, cùng với các axit amin của các protein phi collagen trong xương.</p>	</div>
+</div>
+
+<div class="row mt-4">
+	<!-- Cột trái: Bài đọc -->
+	<div class="col-md-6 mb-4">
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title fw-bold">Bài đọc</p>
+				<p><b>(A)</b> Anyone who has handled a fossilized bone knows that it is usually not identical to its modern <b>counterpart</b>, with the most obvious difference being its greater weight. Fossils often possess the characteristics of stone rather than organic materials, which has led to the term "petrifaction" (meaning "to turn into rock"). The implication is that bone, and other tissues, have somehow been turned into stone, and this is certainly the explanation given in some texts. But it is a wrong interpretation; fossils are frequently so dense because the <b>pores</b> and other spaces in the bone have become filled with minerals taken up from the surrounding sediments. Some fossil bones have all the interstitial spaces filled with foreign minerals, including the marrow cavity, if there is one, while others have taken up but little from their surroundings. Most likely, all minerals deposited within the bone have recrystallized from solution due to water percolation. The degree of mineralization appears to be determined by the nature of the environment in which the bone was deposited and not by the antiquity of the bone. For example, the black fossil bones that are so common in many parts of Florida are heavily mineralized, but they are only about 20,000 years old, whereas many of the dinosaur bones from western Canada, which are about 75 million years old, are only partially filled in. Under optimum conditions, the process of mineralization probably takes thousands rather than millions of years, perhaps considerably less.</p>
+
+<p><b>(B)</b> The amount of change that has occurred in fossil bone, even in bone as old as that of dinosaurs, is often remarkably small. We are therefore usually able to see the microscopic structures of the bone, including such fine details as the lacunae where the living bone cells once resided. The natural bone mineral, hydroxyapatite, remains virtually unaltered—<b>it</b> retains the same crystal structure as modern bone. Although nothing remains of the original collagen, some of its component amino acids are usually still <b>detectable</b>, together with amino acids of the noncollagen proteins of bone.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cột phải: Câu hỏi -->
+	<div class="col-md-6">
+		<div class="card h-100">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What does the passage mainly discuss?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The location of fossils in North America															</div>
+																				<div class="ps-4 mb-2">
+																	B. Determining the size and weight of fossils															</div>
+																				<div class="ps-4 mb-2">
+																	C. Procedures for analyzing fossils															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. The composition of fossils</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What does the passage mainly discuss?</strong> (Bài đọc chủ yếu thảo luận về điều gì?)</p> 
+<ul> 
+<li>❌ <strong>The location of fossils in North America</strong> (Vị trí của các hóa thạch ở Bắc Mỹ) → Sai, vì bài đọc không tập trung vào việc mô tả địa điểm tìm thấy hóa thạch, mà chủ yếu nói về thành phần của chúng.</li> 
+<li>✅ <strong>The composition of fossils</strong> (Thành phần của hóa thạch) → Đúng, vì bài đọc giải thích cách khoáng chất thấm vào xương hóa thạch, quá trình khoáng hóa, và mức độ thay đổi của xương hóa thạch theo thời gian.</li> 
+<li>❌ <strong>Determining the size and weight of fossils</strong> (Xác định kích thước và trọng lượng của hóa thạch) → Sai, vì bài đọc chỉ đề cập đến trọng lượng của hóa thạch trong một câu ngắn gọn, chứ không tập trung vào việc xác định kích thước hay trọng lượng của chúng.</li> 
+<li>❌ <strong>Procedures for analyzing fossils</strong> (Quy trình phân tích hóa thạch) → Sai, vì bài đọc không nói về các bước phân tích hóa thạch, mà chỉ tập trung vào thành phần và mức độ thay đổi của chúng.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: The word "counterpart" in paragraph (A) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. change															</div>
+																				<div class="ps-4 mb-2">
+																	B. material															</div>
+																				<div class="ps-4 mb-2">
+																	C. species															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. version</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "counterpart" in paragraph (A) is closest in meaning to?</strong> (Từ "counterpart" trong đoạn (A) có nghĩa gần nhất với từ nào?)</p> 
+<ul> 
+<li>❌ <strong>species</strong> (loài) → Sai, vì "counterpart" không mang nghĩa chỉ một loài sinh vật mà ám chỉ một phiên bản tương ứng.</li> 
+<li>✅ <strong>version</strong> (phiên bản) → Đúng, vì trong ngữ cảnh bài đọc, "counterpart" được dùng để so sánh **xương hóa thạch** với **xương hiện đại tương ứng**. Do đó, nghĩa của từ này gần nhất với "version" (phiên bản).</li> 
+<li>❌ <strong>change</strong> (sự thay đổi) → Sai, vì "counterpart" không có nghĩa là thay đổi mà ám chỉ một thứ tương ứng hoặc tương đương.</li> 
+<li>❌ <strong>material</strong> (vật liệu) → Sai, vì "counterpart" không đề cập đến vật liệu mà nói về một phiên bản tương ứng.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: Why is fossilized bone heavier than ordinary bone?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Bone tissue solidifies with age.															</div>
+																				<div class="ps-4 mb-2">
+																	B. The marrow cavity gradually fills with water.															</div>
+																				<div class="ps-4 mb-2">
+																	C. The organic materials turn to stone.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Minerals fill the spaces within the bone structure.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Why is fossilized bone heavier than ordinary bone?</strong> (Tại sao xương hóa thạch nặng hơn xương bình thường?)</p> 
+<ul> 
+<li>❌ <strong>Bone tissue solidifies with age.</strong> (Mô xương trở nên rắn chắc theo thời gian.) → Sai, vì bài đọc không đề cập đến việc mô xương cứng lại theo tuổi tác.</li> 
+<li>❌ <strong>The marrow cavity gradually fills with water.</strong> (Khoang tủy dần dần đầy nước.) → Sai, vì khoang tủy không đơn giản chỉ bị lấp đầy bởi nước mà chứa khoáng chất từ trầm tích xung quanh.</li> 
+<li>❌ <strong>The organic materials turn to stone.</strong> (Các vật liệu hữu cơ biến thành đá.) → Sai, vì bài đọc khẳng định rằng **đây là cách hiểu sai về quá trình hóa thạch**, thay vào đó, xương hóa thạch nặng hơn do khoáng chất lấp đầy các khoảng trống bên trong.</li> 
+<li>✅ <strong>Minerals fill the spaces within the bone structure.</strong> (Khoáng chất lấp đầy các khoảng trống bên trong cấu trúc xương.) → Đúng, vì bài đọc giải thích rằng **xương hóa thạch trở nên đặc hơn do các lỗ rỗng và khoảng trống trong xương được lấp đầy bởi khoáng chất từ trầm tích xung quanh**.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: The word "pores" in paragraph (A) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. holes</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. tissues															</div>
+																				<div class="ps-4 mb-2">
+																	C. joints															</div>
+																				<div class="ps-4 mb-2">
+																	D. lines															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "pores" in paragraph (A) is closest in meaning to?</strong> (Từ "pores" trong đoạn (A) có nghĩa gần nhất với từ nào?)</p> 
+<ul> 
+<li>❌ <strong>joints</strong> (khớp) → Sai, vì "pores" đề cập đến các lỗ nhỏ trong xương, không phải các khớp nối giữa các xương.</li> 
+<li>❌ <strong>tissues</strong> (mô) → Sai, vì "pores" là các lỗ nhỏ trong xương, không phải mô sinh học.</li> 
+<li>❌ <strong>lines</strong> (đường kẻ, ranh giới) → Sai, vì "pores" không phải là đường kẻ hay ranh giới, mà là các khoảng trống nhỏ.</li> 
+<li>✅ <strong>holes</strong> (lỗ, khoang rỗng) → Đúng, vì bài đọc mô tả rằng **các khoáng chất lấp đầy các "pores" trong xương**, cho thấy rằng từ này có nghĩa gần nhất với "holes" (các lỗ nhỏ).</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What can be inferred about a fossil with a high degree of mineralization?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Many colorful crystals can be found in such a fossil.															</div>
+																				<div class="ps-4 mb-2">
+																	B. Mineralization was complete within one year of the animal's death.															</div>
+																				<div class="ps-4 mb-2">
+																	C. It was discovered in western Canada.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. It was exposed to high concentrations of mineral-rich water over time.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>What can be inferred about a fossil with a high degree of mineralization?</strong> (Điều gì có thể suy ra về một hóa thạch có mức độ khoáng hóa cao?)</p> 
+<ul> 
+<li>✅ <strong>It was exposed to high concentrations of mineral-rich water over time.</strong> (Nó đã tiếp xúc với nồng độ cao của nước giàu khoáng chất theo thời gian.) → Đúng, vì bài đọc giải thích rằng **mức độ khoáng hóa của hóa thạch bị ảnh hưởng bởi môi trường mà nó được chôn vùi**, và khoáng chất lấp đầy các khoảng trống trong xương qua quá trình thấm nước.</li> 
+<li>❌ <strong>Mineralization was complete within one year of the animal's death.</strong> (Quá trình khoáng hóa hoàn tất trong vòng một năm sau khi con vật chết.) → Sai, vì bài đọc đề cập rằng **quá trình khoáng hóa có thể mất hàng nghìn năm, thậm chí lâu hơn**, chứ không hoàn thành chỉ trong một năm.</li> 
+<li>❌ <strong>Many colorful crystals can be found in such a fossil.</strong> (Nhiều tinh thể màu sắc có thể được tìm thấy trong hóa thạch như vậy.) → Sai, vì bài đọc không đề cập đến việc hóa thạch khoáng hóa cao sẽ chứa nhiều tinh thể màu sắc.</li> 
+<li>❌ <strong>It was discovered in western Canada.</strong> (Nó được tìm thấy ở miền Tây Canada.) → Sai, vì bài đọc nói rằng **hóa thạch ở Florida có mức khoáng hóa cao hơn so với hóa thạch ở miền Tây Canada**, chứng tỏ không phải tất cả hóa thạch có khoáng hóa cao đều đến từ Canada.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Which of the following factors is most important in determining the extent of mineralization in fossil bones?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The location of the bone in the animal's body															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Environmental conditions</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. The type of animal the bone came from															</div>
+																				<div class="ps-4 mb-2">
+																	D. The age of fossil															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following factors is most important in determining the extent of mineralization in fossil bones?</strong> (Yếu tố nào quan trọng nhất trong việc xác định mức độ khoáng hóa của xương hóa thạch?)</p> 
+<ul> 
+<li>❌ <strong>The age of the fossil</strong> (Tuổi của hóa thạch) → Sai, vì bài đọc nêu rõ rằng **mức độ khoáng hóa không phụ thuộc vào tuổi của xương**, mà phụ thuộc vào môi trường nơi nó được chôn vùi.</li> 
+<li>✅ <strong>Environmental conditions</strong> (Điều kiện môi trường) → Đúng, vì bài đọc chỉ ra rằng **mức độ khoáng hóa được quyết định bởi môi trường mà xương được chôn vùi**, chứ không phải bởi tuổi của nó.</li> 
+<li>❌ <strong>The location of the bone in the animal's body</strong> (Vị trí của xương trong cơ thể động vật) → Sai, vì bài đọc không đề cập đến việc vị trí của xương trong cơ thể ảnh hưởng đến quá trình khoáng hóa.</li> 
+<li>❌ <strong>The type of animal the bone came from</strong> (Loại động vật mà xương thuộc về) → Sai, vì bài đọc không nói rằng mức độ khoáng hóa phụ thuộc vào loài động vật.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: Why does the author compare fossils found in western Canada to those found in Florida?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. To explain why scientists are especially interested in Canadian fossils.															</div>
+																				<div class="ps-4 mb-2">
+																	B. To discuss the large quantity of fossils found in both places.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. To demonstrate that the degree of mineralization does not indicate a fossil’s age.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. To suggest that fossils found in both places were the same age.															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Why does the author compare fossils found in western Canada to those found in Florida?</strong> (Tại sao tác giả so sánh hóa thạch tìm thấy ở miền Tây Canada với những hóa thạch ở Florida?)</p> 
+<ul> 
+<li>✅ <strong>To demonstrate that the degree of mineralization does not indicate a fossil’s age.</strong> (Để chứng minh rằng mức độ khoáng hóa không phản ánh tuổi của hóa thạch.) → Đúng, vì bài đọc nêu rõ rằng **hóa thạch ở Florida có mức khoáng hóa cao nhưng chỉ khoảng 20.000 năm tuổi, trong khi hóa thạch khủng long ở miền Tây Canada có tuổi đời 75 triệu năm nhưng chỉ bị khoáng hóa một phần**. Điều này cho thấy mức độ khoáng hóa không liên quan đến độ tuổi của hóa thạch.</li> 
+<li>❌ <strong>To discuss the large quantity of fossils found in both places.</strong> (Để thảo luận về số lượng lớn hóa thạch được tìm thấy ở cả hai nơi.) → Sai, vì bài đọc không tập trung vào số lượng hóa thạch ở hai địa điểm này.</li> 
+<li>❌ <strong>To suggest that fossils found in both places were the same age.</strong> (Để gợi ý rằng hóa thạch ở cả hai nơi có cùng độ tuổi.) → Sai, vì bài đọc khẳng định rằng **hóa thạch ở Florida trẻ hơn rất nhiều so với hóa thạch ở Canada**.</li> 
+<li>❌ <strong>To explain why scientists are especially interested in Canadian fossils.</strong> (Để giải thích tại sao các nhà khoa học đặc biệt quan tâm đến hóa thạch ở Canada.) → Sai, vì bài đọc không nhấn mạnh sự quan tâm đặc biệt của các nhà khoa học đối với hóa thạch Canada.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: The word "it" in paragraph (B) refers to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. microscopic structure															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. hydroxyapatite</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. modern bone															</div>
+																				<div class="ps-4 mb-2">
+																	D. crystal structure															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "it" in paragraph (B) refers to?</strong> (Từ "it" trong đoạn (B) ám chỉ đến gì?)</p> 
+<ul> 
+<li>✅ <strong>hydroxyapatite</strong> → Đúng, vì câu văn trong đoạn (B) nói rằng **"The natural bone mineral, hydroxyapatite, remains virtually unaltered—<b>it</b> retains the same crystal structure as modern bone."**. Đại từ "it" ở đây rõ ràng ám chỉ đến "hydroxyapatite".</li> 
+<li>❌ <strong>microscopic structure</strong> → Sai, vì "it" không ám chỉ cấu trúc vi mô của xương.</li> 
+<li>❌ <strong>crystal structure</strong> → Sai, vì "it" không thay thế cho "crystal structure" mà đề cập đến **"hydroxyapatite"**, chất khoáng chính trong xương.</li> 
+<li>❌ <strong>modern bone</strong> → Sai, vì "it" không đại diện cho "modern bone" mà thay thế cho thành phần chính của xương.</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: The word "detectable" in paragraph (B) is closest in meaning to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. active															</div>
+																				<div class="ps-4 mb-2">
+																	B. sizable															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. apparent</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. moist															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>The word "detectable" in paragraph (B) is closest in meaning to?</strong> (Từ "detectable" trong đoạn (B) có nghĩa gần nhất với từ nào?)</p> 
+<ul> 
+<li>❌ <strong>sizable</strong> (có kích thước lớn) → Sai, vì "detectable" không liên quan đến kích thước mà nói về khả năng phát hiện được.</li> 
+<li>❌ <strong>active</strong> (hoạt động) → Sai, vì "detectable" không mang ý nghĩa liên quan đến trạng thái hoạt động.</li> 
+<li>❌ <strong>moist</strong> (ẩm ướt) → Sai, vì "detectable" không mô tả độ ẩm.</li> 
+<li>✅ <strong>apparent</strong> (có thể nhận thấy, rõ ràng) → Đúng, vì "detectable" có nghĩa là **"có thể phát hiện được"**, tương tự như "apparent" (có thể nhận thấy).</li> 
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: Which of the following does NOT survive in fossils?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Hydroxyapatite															</div>
+																				<div class="ps-4 mb-2">
+																	B. Amino acid															</div>
+																				<div class="ps-4 mb-2">
+																	C. Noncollagen proteins															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. The original collagen structure</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+													<hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Which of the following does NOT survive in fossils?</strong> (Thành phần nào sau đây <u>không</u> còn tồn tại trong hóa thạch?)</p> 
+<ul> 
+<li>❌ <strong>Noncollagen proteins</strong> (Các protein phi collagen) → Sai, vì bài đọc nói rằng **một số protein phi collagen vẫn có thể được tìm thấy trong hóa thạch**.</li> 
+<li>❌ <strong>Hydroxyapatite</strong> (Hydroxyapatite) → Sai, vì bài đọc đề cập rằng **hydroxyapatite – khoáng chất tự nhiên trong xương – vẫn giữ nguyên cấu trúc tinh thể trong hóa thạch**.</li> 
+<li>✅ <strong>The original collagen structure</strong> (Cấu trúc collagen nguyên bản) → Đúng, vì bài đọc nói rằng **không còn dấu vết của collagen nguyên bản trong hóa thạch**, mặc dù một số axit amin của nó có thể vẫn còn.</li> 
+<li>❌ <strong>Amino acid</strong> (Axit amin) → Sai, vì bài đọc nói rằng **một số axit amin cấu thành collagen vẫn có thể được phát hiện**.</li> 
+</ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+					</div>
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/reading" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/reading/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.getElementById('btn-back').addEventListener('click', function () {
+		if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+			window.location.href = "/practice/reading";
+		}
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+			if (target) {
+				const yOffset = -95;
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+				window.scrollTo({ top: y, behavior: 'smooth' });
+			}
+		});
+	});
+</script>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	
+
+</body></html>
