@@ -85,5 +85,714 @@
     "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
     "prompt_en": "Let's talk about birthdays.\n- When is your birthday?\n- What do you usually do on your birthday?\n- What is your favorite family celebration? Why?\nNow, let's talk about public transportation.\n- What is the best way to travel in your town or city?\n- What is your favorite means of transportation?\n- Do you think people should use public transportation more? Why?",
     "prompt_vi": "Hãy nói về sinh nhật.\n- Sinh nhật bạn vào ngày nào?\n- Bạn thường làm gì vào ngày sinh nhật?\n- Bạn thích dịp lễ gia đình nào nhất? Vì sao?\nGiờ, hãy nói về giao thông công cộng.\n- Theo bạn, phương tiện nào là tốt nhất để di chuyển trong thành phố?\n- Phương tiện giao thông nào bạn yêu thích nhất?\n- Bạn có nghĩ mọi người nên sử dụng phương tiện công cộng nhiều hơn không? Tại sao?"
+  },
+  {
+    "id": 8,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about music.\n- Do you like music? What kind of music do you like best? Why?\n- What is the most popular kind of music in your country?\n- How is music good or bad for people?\nNow, let's talk about English.\n- Did you learn English at secondary school?\n- What do you think about how English is taught at school now?\n- In what ways has children's English improved nowadays?",
+    "prompt_vi": "Hãy nói về âm nhạc.\n- Bạn có thích âm nhạc không? Bạn thích thể loại nào nhất? Vì sao?\n- Loại nhạc nào phổ biến nhất ở đất nước bạn?\n- Âm nhạc có lợi hay không tốt cho con người như thế nào?\nGiờ, hãy nói về môn tiếng Anh.\n- Bạn có học tiếng Anh ở cấp 2 không?\n- Bạn nghĩ gì về cách dạy tiếng Anh ở trường hiện nay?\n- Tiếng Anh của trẻ em hiện nay đã cải thiện theo những cách nào?"
+  },
+  {
+    "id": 9,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about favorite places.\n- Where do you usually go when you have spare time?\n- Are there many interesting places where you live for people to go at weekends?\n- In what ways is a café a great place for people to enjoy their free time?\nNow, let's talk about school subjects.\n- What subject did you like most when you were at school?\n- Do you think English is a good subject for all students to learn at school? Why?\n- Do you think students are learning too many subjects at school nowadays?",
+    "prompt_vi": "Hãy nói về những địa điểm yêu thích.\n- Khi có thời gian rảnh, bạn thường đi đâu?\n- Nơi bạn sống có nhiều địa điểm thú vị để đi vào cuối tuần không?\n- Vì sao quán cà phê lại là nơi lý tưởng để mọi người thư giãn?\nGiờ, hãy nói về các môn học ở trường.\n- Bạn thích môn học nào nhất khi còn đi học?\n- Bạn có nghĩ tiếng Anh là môn học tốt cho tất cả học sinh không? Vì sao?\n- Bạn có nghĩ học sinh hiện nay đang học quá nhiều môn không?"
+  },
+  {
+    "id": 10,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about your hometown.\n- Where are you from?\n- Do you like living in your hometown?\n- What is it famous for?\nNow, let's talk about your career.\n- What is your job?\n- How long have you been working?\n- Why do you like your job?",
+    "prompt_vi": "Hãy nói về quê hương của bạn.\n- Bạn đến từ đâu?\n- Bạn có thích sống ở quê hương mình không?\n- Nơi đó nổi tiếng về điều gì?\nGiờ, hãy nói về công việc của bạn.\n- Nghề nghiệp của bạn là gì?\n- Bạn đã làm công việc đó bao lâu rồi?\n- Vì sao bạn thích công việc đó?"
+  },
+  {
+    "id": 11,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about your hobby.\n- What do you like doing in your free time?\n- Why do you enjoy doing it?\n- How much time do you spend on it?\nNow, let's talk about English.\n- Do you like English?\n- When did you start learning English?\n- How do you improve your English?",
+    "prompt_vi": "Hãy nói về sở thích của bạn.\n- Bạn thích làm gì khi rảnh?\n- Tại sao bạn thích làm điều đó?\n- Bạn dành bao nhiêu thời gian cho việc đó?\nGiờ, hãy nói về tiếng Anh.\n- Bạn có thích tiếng Anh không?\n- Bạn bắt đầu học tiếng Anh từ khi nào?\n- Bạn cải thiện tiếng Anh bằng cách nào?"
+  },
+  {
+    "id": 12,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about your hometown.\n- When is the best time to visit your hometown? Why?\n- What do you like most about your hometown?\n- Do you think your hometown is the best place to grow up? Why or why not?\nNow, let's talk about friends.\n- What is your best friend like?\n- How did you meet your best friend?\n- In your opinion, what is the most important quality of a good friend?",
+    "prompt_vi": "Hãy nói về quê hương của bạn.\n- Thời điểm nào là lý tưởng nhất để đến quê bạn? Tại sao?\n- Điều bạn thích nhất ở quê bạn là gì?\n- Bạn có nghĩ quê bạn là nơi tốt nhất để trưởng thành không? Vì sao hoặc vì sao không?\nGiờ, hãy nói về bạn bè.\n- Người bạn thân nhất của bạn như thế nào?\n- Bạn gặp người bạn thân đó bằng cách nào?\n- Theo bạn, phẩm chất quan trọng nhất của một người bạn tốt là gì?"
+  },
+  {
+    "id": 13,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about your leisure time.\n- Do you enjoy your leisure time?\n- What do you often do in your free time?\n- Have your leisure activities changed since you were a child?\nNow, let's talk about books.\n- What kinds of books do you like to read?\n- Do you read the same types of books now as you did 5 years ago?\n- When do you think is the best time to read? Why?",
+    "prompt_vi": "Hãy nói về thời gian rảnh của bạn.\n- Bạn có thích thời gian rảnh của mình không?\n- Bạn thường làm gì khi rảnh?\n- Hoạt động lúc rảnh của bạn có thay đổi so với khi còn nhỏ không?\nGiờ, hãy nói về sách.\n- Bạn thích đọc loại sách nào?\n- Hiện tại bạn có đọc cùng thể loại sách như 5 năm trước không?\n- Bạn nghĩ thời điểm nào là lý tưởng để đọc sách? Vì sao?"
+  },
+  {
+    "id": 14,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about social networks.\n- What do you like about social networks?\n- What social networks are you using now? Why?\n- What is your advice for social network users?\nNow, let's talk about fashion.\n- How important is fashion to you?\n- What kinds of clothes do you prefer to wear?\n- Do you ever have to wear things you don't really like? If so, when and why?",
+    "prompt_vi": "Hãy nói về mạng xã hội.\n- Bạn thích điều gì ở mạng xã hội?\n- Hiện tại bạn đang dùng mạng xã hội nào? Tại sao?\n- Bạn có lời khuyên gì cho người dùng mạng xã hội?\nGiờ, hãy nói về thời trang.\n- Thời trang có quan trọng với bạn không?\n- Bạn thích mặc loại trang phục nào?\n- Bạn có khi nào phải mặc đồ mình không thích không? Khi nào và tại sao?"
+  },
+  {
+    "id": 15,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about the rooms in your house.\n- Which room in your house do you like the most?\n- What do you like doing there?\n- Do you like having guests in your room? Why or why not?\nNow, let's talk about sports.\n- Do you play any sports?\n- What sports do you enjoy watching?\n- What sports do you enjoy playing?",
+    "prompt_vi": "Hãy nói về các phòng trong nhà bạn.\n- Bạn thích phòng nào nhất trong nhà?\n- Bạn thích làm gì trong phòng đó?\n- Bạn có thích tiếp khách trong phòng mình không? Vì sao hoặc vì sao không?\nGiờ, hãy nói về thể thao.\n- Bạn có chơi môn thể thao nào không?\n- Bạn thích xem môn thể thao nào?\n- Bạn thích chơi môn thể thao nào?"
+  },
+  {
+    "id": 16,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about your reading habits.\n- Do you enjoy reading? Why or why not?\n- What types of books or magazines do you like reading?\n- Where do you prefer to read?\nNow, let's talk about your free time.\n- What do you like doing in your free time?\n- Who do you enjoy spending your free time with?\n- Where do you prefer to spend your free time?",
+    "prompt_vi": "Hãy nói về thói quen đọc sách của bạn.\n- Bạn có thích đọc sách không? Vì sao hoặc vì sao không?\n- Bạn thích đọc loại sách hoặc tạp chí nào?\n- Bạn thích đọc ở đâu?\nGiờ, hãy nói về thời gian rảnh của bạn.\n- Bạn thích làm gì khi rảnh?\n- Bạn thích dành thời gian rảnh với ai?\n- Bạn thích dành thời gian rảnh ở đâu?"
+  },
+  {
+    "id": 17,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about ways of relaxing.\n- What do you do to relax?\n- Where do you want to go to relax?\n- Do you like relaxing on your own or with others?\nNow, let's talk about rooms at home.\n- Which is the most important room in your house?\n- What makes it important?\n- What do you do in that room?",
+    "prompt_vi": "Hãy nói về cách thư giãn của bạn.\n- Bạn làm gì để thư giãn?\n- Bạn muốn đi đâu để thư giãn?\n- Bạn thích thư giãn một mình hay với người khác?\nGiờ, hãy nói về các phòng trong nhà.\n- Phòng nào quan trọng nhất trong nhà bạn?\n- Điều gì làm cho phòng đó quan trọng?\n- Bạn thường làm gì trong phòng đó?"
+  },
+  {
+    "id": 18,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about films.\n- Do you like watching films?\n- What types of films do you like?\n- Who do you enjoy watching films with?\nNow, let's talk about mobile phones.\n- Do you use a mobile phone?\n- What are the advantages of mobile phones?\n- What are the disadvantages of mobile phones?",
+    "prompt_vi": "Hãy nói về phim ảnh.\n- Bạn có thích xem phim không?\n- Bạn thích thể loại phim nào?\n- Bạn thích xem phim với ai?\nGiờ, hãy nói về điện thoại di động.\n- Bạn có sử dụng điện thoại không?\n- Điện thoại di động có những điểm tốt nào?\n- Điện thoại di động có những điểm chưa tốt nào?"
+  },
+  {
+    "id": 19,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about sports.\n- Do you prefer indoor or outdoor sports? Why?\n- Which sports do you like the most? Why?\n- Why do you think people like playing sports?\nNow, let's talk about fast food.\n- What kind of fast food do you like the most?\n- Is fast food good for your health? Why or why not?\n- In your opinion, why is fast food popular?",
+    "prompt_vi": "Hãy nói về thể thao.\n- Bạn thích thể thao trong nhà hay ngoài trời hơn? Vì sao?\n- Bạn thích môn thể thao nào nhất? Vì sao?\n- Theo bạn, vì sao mọi người thích chơi thể thao?\nGiờ, hãy nói về đồ ăn nhanh.\n- Bạn thích loại đồ ăn nhanh nào nhất?\n- Đồ ăn nhanh có tốt cho sức khỏe không? Vì sao hoặc vì sao không?\n- Theo bạn, vì sao đồ ăn nhanh lại phổ biến?"
+  },
+  {
+    "id": 20,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about habits.\n- What is your typical day like?\n- Do you have any habits that annoy other people?\n- What do you usually do when you feel upset?\nNow, let's talk about the weather.\n- What is the weather like today?\n- Do you prefer hot or cold weather? Why?\n- What activities do you recommend for different types of weather?",
+    "prompt_vi": "Hãy nói về thói quen.\n- Một ngày điển hình của bạn diễn ra như thế nào?\n- Bạn có thói quen nào khiến người khác khó chịu không?\n- Bạn thường làm gì khi cảm thấy buồn bực?\nGiờ, hãy nói về thời tiết.\n- Hôm nay thời tiết thế nào?\n- Bạn thích thời tiết nóng hay lạnh hơn? Vì sao?\n- Bạn có thể gợi ý một số hoạt động phù hợp với các kiểu thời tiết khác nhau không?"
+  },
+  {
+    "id": 21,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about cooking.\n- Who does the cooking in your family?\n- Do you think cooking is a task only women should do? Why or why not?\n- Do you like cooking by yourself? Why or why not?\nNow, let's talk about TV programs.\n- What is the worst TV program you have ever seen?\n- How much TV do you watch every day?\n- What are some advantages of watching TV?",
+    "prompt_vi": "Hãy nói về việc nấu ăn.\n- Ai là người nấu ăn trong gia đình bạn?\n- Bạn có nghĩ nấu ăn chỉ là việc dành cho phụ nữ không? Vì sao hoặc vì sao không?\n- Bạn có thích tự nấu ăn không? Vì sao hoặc vì sao không?\nGiờ, hãy nói về chương trình truyền hình.\n- Chương trình tệ nhất bạn từng xem là gì?\n- Mỗi ngày bạn xem tivi bao lâu?\n- Một số lợi ích của việc xem tivi là gì?"
+  },
+  {
+    "id": 22,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about money.\n- How much did you spend last week?\n- What do you spend most of your money on?\n- Can money buy happiness? Why or why not?\nNow, let's talk about shopping.\n- What is your favorite place to shop?\n- What was the last thing you bought for someone else? Where and why?\n- Do you prefer shopping alone or with others? Why?",
+    "prompt_vi": "Hãy nói về tiền bạc.\n- Tuần trước bạn đã chi tiêu bao nhiêu?\n- Bạn thường chi nhiều tiền nhất vào việc gì?\n- Tiền có mua được hạnh phúc không? Vì sao hoặc vì sao không?\nGiờ, hãy nói về việc mua sắm.\n- Bạn thích mua sắm ở đâu nhất?\n- Món quà gần nhất bạn mua cho người khác là gì? Bạn mua ở đâu và vì sao?\n- Bạn thích đi mua sắm một mình hay với người khác? Vì sao?"
+  },
+  {
+    "id": 23,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about museums.\n- Do you like visiting museums? If yes, how often? If not, why not?\n- What is usually displayed in the museum near your home?\n- How is visiting museums good or bad for young people?\nNow, let's talk about special events in your country.\n- What are some important events in your country?\n- Can you name one or two things people commonly do during these events?\n- Do you think it is a good idea to celebrate all such events in the same way?",
+    "prompt_vi": "Hãy nói về bảo tàng.\n- Bạn có thích tham quan bảo tàng không? Nếu có, bạn thường đi bao lâu một lần? Nếu không, vì sao không?\n- Bảo tàng gần nơi bạn sống thường trưng bày những gì?\n- Tham quan bảo tàng có lợi hay không tốt cho thanh thiếu niên như thế nào?\nGiờ, hãy nói về các sự kiện đặc biệt ở đất nước bạn.\n- Những sự kiện quan trọng ở nước bạn là gì?\n- Bạn có thể kể 1–2 điểm chung mà mọi người thường làm trong các dịp đó không?\n- Bạn có nghĩ nên tổ chức tất cả các dịp đó theo cùng một cách không?"
+  },
+  {
+    "id": 24,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about secondary schools in your area.\n- Are there many secondary schools where you live?\n- What do these schools have in common?\n- In what ways do you think schools play an important role in the Vietnamese education system?\nNow, let's talk about English.\n- When did you start learning English?\n- Do you think English is a good subject for students to learn at school? Why or why not?\n- Do you think students are learning too many subjects nowadays?",
+    "prompt_vi": "Hãy nói về các trường trung học ở nơi bạn sống.\n- Nơi bạn sống có nhiều trường trung học không?\n- Các trường này có điểm gì giống nhau?\n- Theo bạn, các trường học đóng vai trò như thế nào trong hệ thống giáo dục Việt Nam?\nGiờ, hãy nói về tiếng Anh.\n- Bạn bắt đầu học tiếng Anh từ khi nào?\n- Bạn có nghĩ tiếng Anh là môn học tốt cho học sinh ở trường không? Vì sao hoặc vì sao không?\n- Bạn có nghĩ học sinh ngày nay học quá nhiều môn không?"
+  },
+  {
+    "id": 25,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about health.\n- What do people where you live do to keep fit?\n- Do you think they are practicing in the right way?\n- In what ways is going to the gym good or not good for older people?\nNow, let's talk about healthcare services where you live.\n- What do people in your area usually do when they have health problems?\n- Do you think it is good to open private clinics?\n- What are the downsides of having too many private clinics?",
+    "prompt_vi": "Hãy nói về sức khỏe.\n- Người dân nơi bạn sống làm gì để giữ gìn sức khỏe?\n- Bạn có nghĩ họ đang tập luyện đúng cách không?\n- Đi tập gym có lợi hoặc không có lợi thế nào cho người lớn tuổi?\nGiờ, hãy nói về dịch vụ chăm sóc sức khỏe nơi bạn sống.\n- Khi gặp vấn đề về sức khỏe, người dân ở khu vực bạn thường làm gì?\n- Theo bạn, việc mở phòng khám tư có tốt không?\n- Việc có quá nhiều phòng khám tư có nhược điểm gì?"
+  },
+  {
+    "id": 26,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about happiness.\n- What does happiness mean to you?\n- Do you think rich people are always happy?\n- What do you do to make yourself happy?\nNow, let's talk about money.\n- Do you think money is more important than other aspects of life?\n- What would you do if you had a lot of money?\n- What are the downsides of having too much money?",
+    "prompt_vi": "Hãy nói về hạnh phúc.\n- Hạnh phúc có ý nghĩa gì với bạn?\n- Bạn có nghĩ người giàu luôn hạnh phúc không?\n- Bạn thường làm gì để khiến bản thân vui hơn?\nGiờ, hãy nói về tiền bạc.\n- Bạn có nghĩ tiền quan trọng hơn những yếu tố khác trong cuộc sống không?\n- Nếu có nhiều tiền, bạn sẽ làm gì?\n- Có quá nhiều tiền mang lại những bất lợi gì?"
+  },
+  {
+    "id": 27,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about restaurants.\n- Tell me about your favourite restaurant.\n- What is your opinion of foreign food?\n- Why do people like eating out?\nNow, let's talk about relaxation.\n- What activities can people do to relax?\n- How do you usually relax?\n- In what ways can you relax without spending any money?",
+    "prompt_vi": "Hãy nói về nhà hàng.\n- Hãy kể về nhà hàng yêu thích của bạn.\n- Bạn nghĩ gì về đồ ăn nước ngoài?\n- Vì sao mọi người thích đi ăn ngoài?\nGiờ, hãy nói về việc thư giãn.\n- Mọi người có thể làm gì để thư giãn?\n- Bạn thường thư giãn như thế nào?\n- Có thể thư giãn mà không tốn tiền bằng cách nào?"
+  },
+  {
+    "id": 28,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about housework.\n- How do you share housework in your family?\n- Do you think children should help with the housework?\n- What are some activities that your family usually does together?\nNow, let's talk about fashion.\n- Do you try to follow the latest fashion trends?\n- What kinds of clothes do you like to wear?\n- Do you prefer shopping in small stores or supermarkets?",
+    "prompt_vi": "Hãy nói về việc làm việc nhà.\n- Gia đình bạn phân chia việc nhà như thế nào?\n- Bạn có nghĩ trẻ em nên phụ giúp việc nhà không?\n- Gia đình bạn thường làm những việc gì cùng nhau?\nGiờ, hãy nói về thời trang.\n- Bạn có cố gắng theo xu hướng thời trang mới không?\n- Bạn thích mặc loại quần áo nào?\n- Bạn thích mua sắm ở cửa hàng nhỏ hay siêu thị?"
+  },
+  {
+    "id": 29,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about friends.\n- Could you tell me about your best friend?\n- What is important in a friend for you?\n- What kind of people do you enjoy spending time with?\nNow, let's talk about houses.\n- Would you rather live in a big city or in the countryside? Why?\n- Could you describe your house/flat and the rooms in it?\n- Which is your favourite place at home and why?",
+    "prompt_vi": "Hãy nói về bạn bè.\n- Bạn có thể kể về người bạn thân nhất của mình không?\n- Điều gì là quan trọng nhất ở một người bạn theo bạn?\n- Bạn thích dành thời gian với kiểu người như thế nào?\nGiờ, hãy nói về ngôi nhà.\n- Bạn muốn sống ở thành phố lớn hay nông thôn hơn? Vì sao?\n- Bạn có thể mô tả ngôi nhà/căn hộ và các phòng bên trong không?\n- Nơi yêu thích nhất trong nhà của bạn là gì? Vì sao?"
+  },
+  {
+    "id": 30,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about school.\n- What were your favourite subjects or lessons at school? Why?\n- What is an ideal teacher like for you?\n- What are some of your best memories from school years?\nNow, let's talk about jobs.\n- Could you tell me about the job you would like to have in the future?\n- Would you prefer to be self-employed or work for a company? Why?\n- Have you ever had a summer job? If yes, could you tell me about it? If no, would you like to have one this summer? Why or why not?",
+    "prompt_vi": "Hãy nói về trường học.\n- Môn học hoặc tiết học nào bạn thích nhất ở trường? Vì sao?\n- Với bạn, một giáo viên lý tưởng là người như thế nào?\n- Ký ức đẹp nhất của bạn về thời đi học là gì?\nGiờ, hãy nói về công việc.\n- Bạn muốn làm công việc gì trong tương lai?\n- Bạn thích làm việc tự do hay làm nhân viên? Vì sao?\n- Bạn đã từng làm công việc hè chưa? Nếu có, hãy kể về nó. Nếu chưa, bạn có muốn làm vào mùa hè này không? Vì sao hoặc vì sao không?"
+  },
+  {
+    "id": 31,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about food.\n- What do you normally have for breakfast, lunch or dinner?\n- How healthy is your diet?\n- Where do you like to eat? Why?\nNow, let's talk about sports.\n- What do you do to stay fit?\n- How important is sport to your family?\n- What sports are you interested in? Why?",
+    "prompt_vi": "Hãy nói về đồ ăn.\n- Bạn thường ăn gì vào bữa sáng/trưa/tối?\n- Chế độ ăn của bạn có lành mạnh không?\n- Bạn thích ăn ở đâu? Vì sao?\nGiờ, hãy nói về thể thao.\n- Bạn làm gì để giữ gìn sức khỏe?\n- Thể thao có quan trọng với các thành viên trong gia đình bạn không?\n- Bạn thích môn thể thao nào? Vì sao?"
+  },
+  {
+    "id": 32,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about watching TV.\n- Could you tell me about your family's TV viewing habits?\n- What are your favourite TV programmes and why?\n- Which do you prefer: watching a film on TV or going to the cinema? Why?\nNow, let's talk about transport.\n- What is your favourite means of transport and why?\n- What do you think of the traffic in your area or town?\n- Could you give me directions to the nearest shop from here, please?",
+    "prompt_vi": "Hãy nói về việc xem tivi.\n- Bạn có thể kể về thói quen xem tivi của gia đình mình không?\n- Bạn thích chương trình tivi nào nhất? Vì sao?\n- Bạn thích xem phim trên tivi hay ra rạp chiếu phim hơn? Vì sao?\nGiờ, hãy nói về giao thông.\n- Bạn thích phương tiện giao thông nào nhất? Vì sao?\n- Bạn nghĩ gì về tình trạng giao thông ở khu vực bạn sống?\n- Bạn có thể chỉ đường đến cửa hàng gần nhất từ đây không?"
+  },
+  {
+    "id": 33,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about holidays.\n- Could you tell me about a holiday you really enjoyed?\n- What kind of holiday do you prefer and why?\n- What means of transport do you prefer when you go on holiday? Why?\nNow, let's talk about transport.\n- What is your favourite means of transport and why?\n- What do you think of the traffic in your area or town?\n- How do you travel to work or school every day?",
+    "prompt_vi": "Hãy nói về kỳ nghỉ.\n- Bạn có thể kể về một kỳ nghỉ mà bạn rất thích không?\n- Bạn thích kiểu kỳ nghỉ nào nhất? Vì sao?\n- Khi đi nghỉ, bạn thích phương tiện di chuyển nào? Vì sao?\nGiờ, hãy nói về giao thông.\n- Bạn thích phương tiện giao thông nào nhất? Vì sao?\n- Bạn nghĩ gì về giao thông nơi bạn sống?\n- Bạn đi học hoặc đi làm bằng cách nào mỗi ngày?"
+  },
+  {
+    "id": 34,
+    "part": 1,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 1 là 3 phút.",
+    "prompt_en": "Let's talk about holidays.\n- What do you like doing when you are on holiday?\n- Could you tell me about your dream holiday?\n- How do you prepare for a holiday?\nNow, let's talk about food.\n- What does your family usually eat and drink on special occasions (e.g. birthdays, holidays)?\n- Where do you like to eat? Why?\n- Do you prefer traditional restaurants or fast food places? Why?",
+    "prompt_vi": "Hãy nói về kỳ nghỉ.\n- Khi đi nghỉ, bạn thích làm gì?\n- Bạn có thể kể về kỳ nghỉ trong mơ của bạn không?\n- Bạn chuẩn bị gì trước khi đi nghỉ?\nGiờ, hãy nói về đồ ăn.\n- Gia đình bạn thường ăn và uống gì vào các dịp đặc biệt (ví dụ: sinh nhật, ngày lễ)?\n- Bạn thích ăn ở đâu? Vì sao?\n- Bạn thích quán ăn truyền thống hay cửa hàng đồ ăn nhanh hơn? Vì sao?"
+  },
+  {
+    "id": 35,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: You have just received a sum of money from your father as a birthday present. Three options are suggested: saving it for the future, buying a laptop for studying, and buying a fashionable smartphone. What would you do with the money? Why?",
+    "prompt_vi": "Tình huống: Bạn vừa nhận được một khoản tiền từ bố như một món quà sinh nhật. Có ba lựa chọn: tiết kiệm cho tương lai, mua máy tính xách tay để học tập, và mua một chiếc điện thoại thông minh thời trang. Bạn sẽ sử dụng số tiền đó như thế nào? Vì sao?"
+  },
+  {
+    "id": 36,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: An optional subject will be added to the curriculum for secondary students in your city. Three options are suggested: photography, swimming, and dancing. Which one do you think is the best option for secondary students? Why?",
+    "prompt_vi": "Tình huống: Một môn học tự chọn sẽ được thêm vào chương trình cho học sinh cấp hai ở thành phố bạn. Ba lựa chọn được đưa ra: nhiếp ảnh, bơi lội và khiêu vũ. Bạn nghĩ môn nào là phù hợp nhất cho học sinh cấp hai? Vì sao?"
+  },
+  {
+    "id": 37,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: You are going to take your secondary school students to the cinema. There are three types of films: cartoons, action movies, and detective movies. Which type of film do you think is the best choice for them? Why?",
+    "prompt_vi": "Tình huống: Bạn sẽ đưa học sinh cấp hai đi xem phim. Có ba thể loại phim: hoạt hình, hành động và trinh thám. Theo bạn, loại phim nào là lựa chọn tốt nhất? Vì sao?"
+  },
+  {
+    "id": 38,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: Your town plans to organize an Open Festival and many visitors will attend. Three roles are suggested: a tour guide, a traffic instructor, and a master of ceremonies. Which role do you think would suit you best? Why?",
+    "prompt_vi": "Tình huống: Thị trấn của bạn chuẩn bị tổ chức một lễ hội mở rộng với nhiều du khách tham gia. Ba vị trí được gợi ý: hướng dẫn viên du lịch, người điều phối giao thông và người dẫn chương trình. Bạn nghĩ vị trí nào phù hợp với mình nhất? Vì sao?"
+  },
+  {
+    "id": 39,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: Which plan would you choose for your family this weekend? Three options are suggested: going to the cinema, having a meal in a restaurant, and going to the beach. Which one do you think is the best choice? Why?",
+    "prompt_vi": "Tình huống: Cuối tuần này, bạn sẽ chọn kế hoạch nào cho gia đình? Có ba kế hoạch được đề xuất: đi xem phim, ăn tại nhà hàng và đi biển. Bạn sẽ chọn phương án nào? Vì sao?"
+  },
+  {
+    "id": 40,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: Your friend is going on his first date this weekend. What would you advise him to do? Three options are suggested: going to a restaurant, going to the cinema, and going to a shopping mall. Which one would you choose? Why?",
+    "prompt_vi": "Tình huống: Cuối tuần này, bạn của bạn sẽ có buổi hẹn hò đầu tiên. Bạn sẽ khuyên bạn ấy làm gì? Có ba lựa chọn: đi nhà hàng, đi xem phim và đi trung tâm thương mại. Bạn sẽ chọn phương án nào? Vì sao?"
+  },
+  {
+    "id": 41,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: You are choosing a gift for your parents' wedding anniversary. Three options are suggested: a wedding cake, a 3-day trip to the beach, and a family photo album. Which do you think is the best present? Why?",
+    "prompt_vi": "Tình huống: Bạn đang chọn quà tặng nhân dịp kỷ niệm ngày cưới của bố mẹ. Có ba lựa chọn: một chiếc bánh cưới, một chuyến đi biển 3 ngày và một album ảnh gia đình. Theo bạn, món quà nào là ý nghĩa nhất? Vì sao?"
+  },
+  {
+    "id": 42,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: If you won a lottery of 1 billion VND, what would you do with the money? Three options are suggested: putting all the money in a bank, buying valuable things like a car, a house or land, and giving some to charity and traveling around. Which would you choose? Why?",
+    "prompt_vi": "Tình huống: Nếu bạn trúng xổ số 1 tỷ đồng, bạn sẽ làm gì với số tiền đó? Có ba lựa chọn: gửi vào ngân hàng, mua tài sản có giá trị như xe hơi, nhà hoặc đất, và quyên góp cho tổ chức từ thiện rồi đi du lịch. Bạn sẽ chọn phương án nào? Vì sao?"
+  },
+  {
+    "id": 43,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: Some of your friends are visiting you this weekend and you want to do something fun together. Three options are suggested: cook a meal together at your place, go to a local restaurant, or take them out for sightseeing. Which activity would you choose? Why?",
+    "prompt_vi": "Tình huống: Một vài người bạn sẽ đến thăm bạn vào cuối tuần này và bạn muốn làm điều gì đó thú vị cùng họ. Có ba lựa chọn: nấu ăn cùng nhau tại nhà, đi ăn ở nhà hàng địa phương hoặc đưa họ đi tham quan. Bạn sẽ chọn hoạt động nào? Vì sao?"
+  },
+  {
+    "id": 44,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: Your university is offering free courses for graduate students. Three options are suggested: a time-management course, a public speaking course, and a teamwork course. Which one would you choose? Why?",
+    "prompt_vi": "Tình huống: Trường đại học của bạn đang cung cấp các khóa học miễn phí cho sinh viên tốt nghiệp. Có ba lựa chọn: khóa học quản lý thời gian, khóa học thuyết trình trước đám đông và khóa học làm việc nhóm. Bạn sẽ chọn khóa học nào? Vì sao?"
+  },
+  {
+    "id": 45,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: A student wants to find a part-time job where he can practice his English. There are THREE options to choose from: working at a souvenir shop, working at a travel agency, and working at a take-away shop. Which job would be best for him? Why?",
+    "prompt_vi": "Tình huống: Một học sinh muốn tìm công việc bán thời gian để luyện tập tiếng Anh. Có ba lựa chọn: làm ở cửa hàng lưu niệm, làm ở công ty du lịch và làm ở cửa hàng bán đồ mang đi. Theo bạn, công việc nào là phù hợp nhất? Vì sao?"
+  },
+  {
+    "id": 46,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: Your friend is going on a long journey and wants to know how to pass the time. There are THREE options to choose from: talking to other people, reading books, and sleeping. What would you advise your friend to do? Why?",
+    "prompt_vi": "Tình huống: Bạn của bạn sắp có một chuyến đi dài và muốn biết nên làm gì để giết thời gian. Có ba lựa chọn: nói chuyện với người khác, đọc sách và ngủ. Bạn sẽ khuyên bạn ấy chọn cách nào? Vì sao?"
+  },
+  {
+    "id": 47,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: A group of people is planning a trip from Thai Nguyen to Ha Giang. Could you suggest the best means of transport? There are THREE options to choose from: train, boat, and coach. Which one do you think is the best choice? Why?",
+    "prompt_vi": "Tình huống: Một nhóm người đang lên kế hoạch đi từ Thái Nguyên đến Hà Giang. Bạn có thể gợi ý phương tiện di chuyển tốt nhất không? Có ba lựa chọn: tàu hỏa, thuyền và xe khách. Bạn sẽ chọn phương tiện nào? Vì sao?"
+  },
+  {
+    "id": 48,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: Your brother is going to hold his wedding and wants your advice on who should be invited. There are THREE options to choose from: all acquaintances, only close people, and only those who invited him to their weddings. Which option would you recommend? Why?",
+    "prompt_vi": "Tình huống: Anh trai bạn sắp tổ chức đám cưới và muốn bạn tư vấn nên mời ai. Có ba lựa chọn: tất cả người quen, chỉ những người thân thiết và chỉ những người đã từng mời anh ấy. Theo bạn, nên chọn phương án nào? Vì sao?"
+  },
+  {
+    "id": 49,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: Your brother would like your advice on how to lose weight. There are THREE options to choose from: skipping meals, using weight-loss drugs, and exercising regularly. Which do you think is the best choice? Why?",
+    "prompt_vi": "Tình huống: Anh trai bạn muốn bạn tư vấn cách giảm cân. Có ba lựa chọn: bỏ bữa, dùng thuốc giảm cân và tập thể dục thường xuyên. Theo bạn, phương án nào là tốt nhất? Vì sao?"
+  },
+  {
+    "id": 50,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: An optional subject will be added to the curriculum for secondary students in your city. Three options are suggested: cooking, swimming, and sewing. Which one do you think is the best choice for them? Why?",
+    "prompt_vi": "Tình huống: Một môn học tự chọn sẽ được thêm vào chương trình học của học sinh cấp hai ở thành phố bạn. Ba lựa chọn được đưa ra: nấu ăn, bơi lội và may vá. Theo bạn, môn nào là phù hợp nhất? Vì sao?"
+  },
+  {
+    "id": 51,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: You are planning to take your students to participate in outdoor activities. Three options are suggested: visiting the zoo, going camping, and drawing. Which activity do you think is the most suitable for your students? Why?",
+    "prompt_vi": "Tình huống: Bạn đang lên kế hoạch cho học sinh tham gia hoạt động ngoài trời. Có ba lựa chọn: tham quan sở thú, cắm trại và vẽ tranh. Hoạt động nào bạn cho là phù hợp nhất với học sinh? Vì sao?"
+  },
+  {
+    "id": 53,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: You are planning to take your secondary students to join outdoor activities. Three outfit options for girls are suggested: school uniforms, selected tops, and shorts or skirts. Which do you think they would prefer? Why?",
+    "prompt_vi": "Tình huống: Bạn dự định cho học sinh cấp hai tham gia hoạt động ngoài trời. Có ba lựa chọn về trang phục cho nữ sinh: đồng phục, áo được chọn sẵn, và quần short hoặc váy. Theo bạn, các em sẽ thích trang phục nào hơn? Vì sao?"
+  },
+  {
+    "id": 54,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: You are planning a holiday and will be staying in a hotel. You have to decide which feature is most important when choosing a hotel. Three options are suggested: the location of the hotel, the comfort of the hotel room, and a reasonable price. Which one do you consider the most important? Why?",
+    "prompt_vi": "Tình huống: Bạn đang lên kế hoạch đi nghỉ và sẽ ở khách sạn. Bạn cần quyết định yếu tố nào là quan trọng nhất khi chọn khách sạn. Có ba lựa chọn: vị trí khách sạn, sự thoải mái của phòng và giá cả hợp lý. Bạn cho rằng yếu tố nào là quan trọng nhất? Vì sao?"
+  },
+  {
+    "id": 55,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: You are giving a short talk on language learning. You will decide which activity is the best way to learn a new language. There are THREE options for you to choose: joining a class, self-study, and talking to native speakers. Which one would you choose? Why?",
+    "prompt_vi": "Tình huống: Bạn đang thuyết trình ngắn về việc học ngôn ngữ. Bạn sẽ quyết định hoạt động nào là cách tốt nhất để học một ngôn ngữ mới. Có ba lựa chọn: tham gia lớp học, tự học và nói chuyện với người bản ngữ. Bạn sẽ chọn cách nào? Vì sao?"
+  },
+  {
+    "id": 56,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: You have been asked to give a presentation in your English class about a famous city. Decide which aspect you think is the most important to focus on. There are THREE options for you to choose: the city's history, its tourist attractions, and its famous citizens. Which one would you choose? Why?",
+    "prompt_vi": "Tình huống: Bạn được yêu cầu thuyết trình trong lớp tiếng Anh về một thành phố nổi tiếng. Bạn sẽ chọn khía cạnh nào là quan trọng nhất để trình bày? Có ba lựa chọn: lịch sử thành phố, các điểm du lịch và những công dân nổi tiếng. Bạn sẽ chọn nội dung nào? Vì sao?"
+  },
+  {
+    "id": 57,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: Your local council has been given money to add one new entertainment facility to the community in your area. There are THREE options for you to choose: a sports centre, a park with a lake, and a children's playground. Which one would you choose? Why?",
+    "prompt_vi": "Tình huống: Hội đồng địa phương được cấp ngân sách để xây dựng một cơ sở giải trí mới cho cộng đồng. Có ba lựa chọn: trung tâm thể thao, công viên có hồ và sân chơi trẻ em. Bạn sẽ chọn phương án nào? Vì sao?"
+  },
+  {
+    "id": 58,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: You have been asked to advertise a play that is being produced by your school or college. Decide which method you would choose to promote it. There are THREE options: local television, leaflets, and websites. Which one would you choose? Why?",
+    "prompt_vi": "Tình huống: Bạn được yêu cầu quảng bá một vở kịch do trường hoặc lớp bạn tổ chức. Bạn sẽ chọn cách quảng bá nào? Có ba lựa chọn: truyền hình địa phương, tờ rơi và trang web. Bạn sẽ chọn cách nào? Vì sao?"
+  },
+  {
+    "id": 59,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: Your local council wants to make your area more environmentally friendly. Decide which method would be the most effective. There are THREE options for you to choose: putting recycle bins in public places, planting trees, and educating people about the environment. Which one would you choose? Why?",
+    "prompt_vi": "Tình huống: Hội đồng địa phương muốn biến khu vực của bạn trở nên thân thiện với môi trường hơn. Có ba lựa chọn: đặt thùng rác tái chế ở nơi công cộng, trồng cây và tuyên truyền giáo dục người dân về môi trường. Bạn sẽ chọn phương án nào? Vì sao?"
+  },
+  {
+    "id": 60,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: You have been asked to give a presentation in your English class about a famous city. Decide which aspect is the most important to focus on. There are THREE options: the city's history, its tourist attractions, and its famous citizens. Which one would you choose? Why?",
+    "prompt_vi": "Tình huống: Bạn được yêu cầu thuyết trình trong lớp tiếng Anh về một thành phố nổi tiếng. Bạn sẽ chọn khía cạnh nào là quan trọng nhất để tập trung trình bày? Có ba lựa chọn: lịch sử thành phố, các điểm du lịch và những công dân nổi tiếng. Bạn sẽ chọn gì? Vì sao?"
+  },
+  {
+    "id": 61,
+    "part": 2,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 2 là 3 phút.",
+    "prompt_en": "Situation: The government is planning to give an award to individuals from different professions who have made positive contributions to the country. There are THREE options: scientists, politicians, and teachers. Which profession do you think most deserves the award? Why?",
+    "prompt_vi": "Tình huống: Chính phủ dự định trao giải thưởng cho các cá nhân trong các ngành nghề khác nhau có đóng góp tích cực cho đất nước. Có ba lựa chọn: nhà khoa học, chính trị gia và giáo viên. Theo bạn, ngành nghề nào xứng đáng nhận giải nhất? Vì sao?"
+  },
+  {
+    "id": 62,
+    "part": 3,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 3 là 4 phút.",
+    "prompt_en": "Topic: Online courses\n\nProvide new learning experience\nBe independent in learning\nOnline course\nYour own ideas\nBe more convenient to study\n\nFollow-up questions:\n1. What advice would you give someone on how to study English?\n2. Do you think being a student is the best time of your life?\n3. Should a student's university education be free or should the student have to get a loan?",
+    "prompt_vi": "Chủ đề: Khóa học trực tuyến\n\n\nProvide new learning experience\nBe independent in learning\nOnline course\nYour own ideas\nBe more convenient to study\n\nCâu hỏi gợi ý:\n1. Bạn sẽ đưa ra lời khuyên gì cho người học tiếng Anh?\n2. Bạn có nghĩ thời đi học là khoảng thời gian đẹp nhất trong đời không?\n3. Theo bạn, giáo dục đại học nên miễn phí hay sinh viên nên tự vay để học?",
+    "idea_map": {
+      "main": "Online course",
+      "branches": [
+        "Provide new learning experience",
+        "Be independent in learning",
+        "Your own ideas",
+        "Be more convenient to study"
+      ]
+    },
+    "follow_up_questions_en": [
+      "1. What advice would you give someone on how to study English?",
+      "2. Do you think being a student is the best time of your life?",
+      "3. Should a student's university education be free or should the student have to get a loan?"
+    ],
+    "follow_up_questions_vi": [
+      "1. Bạn sẽ đưa ra lời khuyên gì cho người học tiếng Anh?",
+      "2. Bạn có nghĩ thời đi học là khoảng thời gian đẹp nhất trong đời không?",
+      "3. Theo bạn, giáo dục đại học nên miễn phí hay sinh viên nên tự vay để học?"
+    ]
+  },
+  {
+    "id": 63,
+    "part": 3,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 3 là 4 phút.",
+    "prompt_en": "Topic: Examinations\n\nTime consuming\nCostly\nExaminations\nYour own ideas\nUnfair\n\nFollow-up questions:\n1. Do you think schools are necessary?\n2. How have modern technologies changed the way people study?\n3. Do you think traditional schools will disappear in the future because of modern technology?",
+    "prompt_vi": "Chủ đề: Các kỳ thi\n\n\nTime consuming\nCostly\nExaminations\nYour own ideas\nUnfair\n\nCâu hỏi gợi ý:\n1. Bạn có nghĩ trường học là cần thiết không?\n2. Công nghệ hiện đại đã thay đổi cách mọi người học như thế nào?\n3. Bạn có nghĩ trường học truyền thống sẽ biến mất vì công nghệ hiện đại không?",
+    "idea_map": {
+      "main": "Examinations",
+      "branches": [
+        "Time consuming",
+        "Costly",
+        "Your own ideas",
+        "Unfair"
+      ]
+    },
+    "follow_up_questions_en": [
+      "1. Do you think schools are necessary?",
+      "2. How have modern technologies changed the way people study?",
+      "3. Do you think traditional schools will disappear in the future because of modern technology?"
+    ],
+    "follow_up_questions_vi": [
+      "1. Bạn có nghĩ trường học là cần thiết không?",
+      "2. Công nghệ hiện đại đã thay đổi cách mọi người học như thế nào?",
+      "3. Bạn có nghĩ trường học truyền thống sẽ biến mất vì công nghệ hiện đại không?"
+    ]
+  },
+  {
+    "id": 64,
+    "part": 3,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 3 là 4 phút.",
+    "prompt_en": "Topic: It is good to learn about a culture when you learn a language.\n\nLanguage: the best means of culture\nCulture shocks\nLanguage and culture\nYour own ideas\nBetter communication\n\nFollow-up questions:\n1. Do you think it's important to understand other people's cultures?\n2. What would you introduce first to a foreigner about Vietnamese culture?\n3. What would you like to learn about cultures in English-speaking countries?",
+    "prompt_vi": "Chủ đề: Học ngôn ngữ nên đi kèm với tìm hiểu văn hóa\n\n\nLanguage: the best means of culture\nCulture shocks\nLanguage and culture\nYour own ideas\nBetter communication\n\nCâu hỏi gợi ý:\n1. Bạn có nghĩ rằng việc hiểu văn hóa của người khác là cần thiết không?\n2. Nếu có dịp giới thiệu văn hóa Việt Nam cho người nước ngoài, bạn sẽ giới thiệu điều gì trước?\n3. Bạn muốn tìm hiểu điều gì về văn hóa của các nước nói tiếng Anh?",
+    "idea_map": {
+      "main": "Language and culture",
+      "branches": [
+        "Language: the best means of culture",
+        "Culture shocks",
+        "Your own ideas",
+        "Better communication"
+      ]
+    },
+    "follow_up_questions_en": [
+      "1. Do you think it's important to understand other people's cultures?",
+      "2. What would you introduce first to a foreigner about Vietnamese culture?",
+      "3. What would you like to learn about cultures in English-speaking countries?"
+    ],
+    "follow_up_questions_vi": [
+      "1. Bạn có nghĩ rằng việc hiểu văn hóa của người khác là cần thiết không?",
+      "2. Nếu có dịp giới thiệu văn hóa Việt Nam cho người nước ngoài, bạn sẽ giới thiệu điều gì trước?",
+      "3. Bạn muốn tìm hiểu điều gì về văn hóa của các nước nói tiếng Anh?"
+    ]
+  },
+  {
+    "id": 65,
+    "part": 3,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 3 là 4 phút.",
+    "prompt_en": "Topic: Punishment by teachers at school is good for students.\n\nObey teachers\nConcentrate better on study\nPunishment\nYour own ideas\nMinimise misbehaviour\n\nFollow-up questions:\n1. Do you think teachers should use punishment at school?\n2. Do students always obey their teachers after being punished?\n3. What are the downsides of overusing punishment in schools?",
+    "prompt_vi": "Chủ đề: Việc giáo viên phạt học sinh ở trường là điều tốt.\n\n\nObey teachers\nConcentrate better on study\nPunishment\nYour own ideas\nMinimise misbehaviour\n\nCâu hỏi gợi ý:\n1. Bạn có nghĩ giáo viên nên dùng hình phạt trong trường không?\n2. Học sinh có luôn nghe lời giáo viên sau khi bị phạt không?\n3. Những tác hại của việc lạm dụng hình phạt ở trường là gì?",
+    "idea_map": {
+      "main": "Punishment",
+      "branches": [
+        "Obey teachers",
+        "Concentrate better on study",
+        "Your own ideas",
+        "Minimise misbehaviour"
+      ]
+    },
+    "follow_up_questions_en": [
+      "1. Do you think teachers should use punishment at school?",
+      "2. Do students always obey their teachers after being punished?",
+      "3. What are the downsides of overusing punishment in schools?"
+    ],
+    "follow_up_questions_vi": [
+      "1. Bạn có nghĩ giáo viên nên dùng hình phạt trong trường không?",
+      "2. Học sinh có luôn nghe lời giáo viên sau khi bị phạt không?",
+      "3. Những tác hại của việc lạm dụng hình phạt ở trường là gì?"
+    ]
+  },
+  {
+    "id": 66,
+    "part": 3,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 3 là 4 phút.",
+    "prompt_en": "Topic: Smoking should be banned in public places.\n\nSmoker's health\nFinancial burden\nSmoking\nYour own ideas\nSecond-hand smoker's health\n\nFollow-up questions:\n1. Do you smoke?\n2. Why do many people smoke?\n3. What should be done to prevent smoking in public places?",
+    "prompt_vi": "Chủ đề: Hút thuốc nên bị cấm ở nơi công cộng.\n\n\nSmoker's health\nFinancial burden\nSmoking\nYour own ideas\nSecond-hand smoker's health\n\nCâu hỏi gợi ý:\n1. Bạn có hút thuốc không?\n2. Vì sao nhiều người lại muốn hút thuốc?\n3. Cần làm gì để ngăn chặn việc hút thuốc ở nơi công cộng?",
+    "idea_map": {
+      "main": "Smoking",
+      "branches": [
+        "Smoker's health",
+        "Financial burden",
+        "Your own ideas",
+        "Second-hand smoker's health"
+      ]
+    },
+    "follow_up_questions_en": [
+      "1. Do you smoke?",
+      "2. Why do many people smoke?",
+      "3. What should be done to prevent smoking in public places?"
+    ],
+    "follow_up_questions_vi": [
+      "1. Bạn có hút thuốc không?",
+      "2. Vì sao nhiều người lại muốn hút thuốc?",
+      "3. Cần làm gì để ngăn chặn việc hút thuốc ở nơi công cộng?"
+    ]
+  },
+  {
+    "id": 67,
+    "part": 3,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 3 là 4 phút.",
+    "prompt_en": "Topic: Describe a teacher who has influenced you.\n\nHis/her appearance\nHis/her influences\nTeacher\nYour own ideas\nHis/her personality\n\nFollow-up questions:\n1. Do you prefer a strict teacher or an easy-going one?\n2. What is the most important quality of a good teacher?\n3. There is a saying: \"Teaching is a rewarding job.\" What do you think about this opinion?",
+    "prompt_vi": "Chủ đề: Hãy miêu tả một giáo viên đã có ảnh hưởng đến bạn.\n\n\nHis/her appearance\nHis/her influences\nTeacher\nYour own ideas\nHis/her personality\n\nCâu hỏi gợi ý:\n1. Bạn thích giáo viên nghiêm khắc hay dễ tính hơn?\n2. Phẩm chất quan trọng nhất của một giáo viên giỏi là gì?\n3. Có câu nói: \"Dạy học là một nghề cao quý.\" Bạn nghĩ gì về ý kiến này?",
+    "idea_map": {
+      "main": "Teacher",
+      "branches": [
+        "His/her appearance",
+        "His/her influences",
+        "Your own ideas",
+        "His/her personality"
+      ]
+    },
+    "follow_up_questions_en": [
+      "1. Do you prefer a strict teacher or an easy-going one?",
+      "2. What is the most important quality of a good teacher?",
+      "3. There is a saying: \"Teaching is a rewarding job.\" What do you think about this opinion?"
+    ],
+    "follow_up_questions_vi": [
+      "1. Bạn thích giáo viên nghiêm khắc hay dễ tính hơn?",
+      "2. Phẩm chất quan trọng nhất của một giáo viên giỏi là gì?",
+      "3. Có câu nói: \"Dạy học là một nghề cao quý.\" Bạn nghĩ gì về ý kiến này?"
+    ]
+  },
+  {
+    "id": 68,
+    "part": 3,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 3 là 4 phút.",
+    "prompt_en": "Topic: Airplanes are the best means of transport for long-distance travel.\n\nTime-saving\nComfortable\nTravelling by airplane\nYour own ideas\nSafe\n\nFollow-up questions:\n1. Do you think airplanes are the most important means of transport today? Why or why not?\n2. Are there any disadvantages of traveling by airplane?\n3. What can airlines do to improve the flying experience for passengers?",
+    "prompt_vi": "Chủ đề: Máy bay là phương tiện tốt nhất để di chuyển đường dài.\n\n\nTime-saving\nComfortable\nTravelling by airplane\nYour own ideas\nSafe\n\nCâu hỏi gợi ý:\n1. Bạn có nghĩ máy bay là phương tiện quan trọng nhất hiện nay không? Vì sao?\n2. Có những bất lợi nào khi di chuyển bằng máy bay?\n3. Các hãng hàng không nên làm gì để nâng cao trải nghiệm cho hành khách?",
+    "idea_map": {
+      "main": "Travelling by airplane",
+      "branches": [
+        "Time-saving",
+        "Comfortable",
+        "Your own ideas",
+        "Safe"
+      ]
+    },
+    "follow_up_questions_en": [
+      "1. Do you think airplanes are the most important means of transport today? Why or why not?",
+      "2. Are there any disadvantages of traveling by airplane?",
+      "3. What can airlines do to improve the flying experience for passengers?"
+    ],
+    "follow_up_questions_vi": [
+      "1. Bạn có nghĩ máy bay là phương tiện quan trọng nhất hiện nay không? Vì sao?",
+      "2. Có những bất lợi nào khi di chuyển bằng máy bay?",
+      "3. Các hãng hàng không nên làm gì để nâng cao trải nghiệm cho hành khách?"
+    ]
+  },
+  {
+    "id": 69,
+    "part": 3,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 3 là 4 phút.",
+    "prompt_en": "Topic: Traditional festivals carry important cultural values.\n\nHonor community strength\nTeach history and culture\nTraditional festivals\nYour own ideas\nImprove spiritual life\n\nFollow-up questions:\n1. Which local festival in your area or country would be most interesting for a foreign guest?\n2. Do people today appreciate public holidays as much as in the past?\n3. What should the government do to preserve traditional festivals?",
+    "prompt_vi": "Chủ đề: Lễ hội truyền thống mang giá trị văn hóa quan trọng.\n\n\nHonor community strength\nTeach history and culture\nTraditional festivals\nYour own ideas\nImprove spiritual life\n\nCâu hỏi gợi ý:\n1. Theo bạn, lễ hội nào ở địa phương bạn sẽ hấp dẫn nhất với du khách nước ngoài?\n2. Ngày nay, mọi người có còn trân trọng ngày lễ như trước kia không?\n3. Chính phủ nên làm gì để bảo tồn các lễ hội truyền thống?",
+    "idea_map": {
+      "main": "Traditional festivals",
+      "branches": [
+        "Honor community strength",
+        "Teach history and culture",
+        "Your own ideas",
+        "Improve spiritual life"
+      ]
+    },
+    "follow_up_questions_en": [
+      "1. Which local festival in your area or country would be most interesting for a foreign guest?",
+      "2. Do people today appreciate public holidays as much as in the past?",
+      "3. What should the government do to preserve traditional festivals?"
+    ],
+    "follow_up_questions_vi": [
+      "1. Theo bạn, lễ hội nào ở địa phương bạn sẽ hấp dẫn nhất với du khách nước ngoài?",
+      "2. Ngày nay, mọi người có còn trân trọng ngày lễ như trước kia không?",
+      "3. Chính phủ nên làm gì để bảo tồn các lễ hội truyền thống?"
+    ]
+  },
+  {
+    "id": 70,
+    "part": 3,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 3 là 4 phút.",
+    "prompt_en": "Topic: Crimes are increasing in modern society.\n\nUnemployment\nTV programme\nCrime\nYour own ideas\nDVD\n\nFollow-up questions:\n1. What do you think about the rise of violent crime today?\n2. Is prison really the answer to crime? Why?\n3. What can we do to reduce the rate of violent crime in modern society?",
+    "prompt_vi": "Chủ đề: Tội phạm ngày càng gia tăng trong xã hội hiện đại.\n\n\nUnemployment\nTV programme\nCrime\nYour own ideas\nDVD\n\nCâu hỏi gợi ý:\n1. Bạn nghĩ gì về tình trạng tội phạm bạo lực đang gia tăng hiện nay?\n2. Theo bạn, nhà tù có phải là giải pháp cho tội phạm không? Vì sao?\n3. Chúng ta nên làm gì để giảm tội phạm bạo lực trong xã hội hiện đại?",
+    "idea_map": {
+      "main": "Crime",
+      "branches": [
+        "Unemployment",
+        "TV programme",
+        "Your own ideas",
+        "DVD"
+      ]
+    },
+    "follow_up_questions_en": [
+      "1. What do you think about the rise of violent crime today?",
+      "2. Is prison really the answer to crime? Why?",
+      "3. What can we do to reduce the rate of violent crime in modern society?"
+    ],
+    "follow_up_questions_vi": [
+      "1. Bạn nghĩ gì về tình trạng tội phạm bạo lực đang gia tăng hiện nay?",
+      "2. Theo bạn, nhà tù có phải là giải pháp cho tội phạm không? Vì sao?",
+      "3. Chúng ta nên làm gì để giảm tội phạm bạo lực trong xã hội hiện đại?"
+    ]
+  },
+  {
+    "id": 71,
+    "part": 3,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 3 là 4 phút.",
+    "prompt_en": "Topic: Things that affect people's job satisfaction.\n\nQualifications\nRelationship with colleagues\nJob satisfaction\nYour own ideas\nAttitude to work\n\nFollow-up questions:\n1. Do you think companies should promote workers based on experience?\n2. Should employees change jobs often? Why or why not?\n3. What motivates workers more: salary or working conditions?",
+    "prompt_vi": "Chủ đề: Những yếu tố ảnh hưởng đến sự hài lòng trong công việc.\n\n\nQualifications\nRelationship with colleagues\nJob satisfaction\nYour own ideas\nAttitude to work\n\nCâu hỏi gợi ý:\n1. Bạn có nghĩ rằng công ty nên thăng chức cho những người có kinh nghiệm không?\n2. Nhân viên có nên thường xuyên chuyển công ty không? Vì sao hoặc vì sao không?\n3. Điều gì tạo động lực tốt hơn cho người lao động: lương hay điều kiện làm việc?",
+    "idea_map": {
+      "main": "Job satisfaction",
+      "branches": [
+        "Qualifications",
+        "Relationship with colleagues",
+        "Your own ideas",
+        "Attitude to work"
+      ]
+    },
+    "follow_up_questions_en": [
+      "1. Do you think companies should promote workers based on experience?",
+      "2. Should employees change jobs often? Why or why not?",
+      "3. What motivates workers more: salary or working conditions?"
+    ],
+    "follow_up_questions_vi": [
+      "1. Bạn có nghĩ rằng công ty nên thăng chức cho những người có kinh nghiệm không?",
+      "2. Nhân viên có nên thường xuyên chuyển công ty không? Vì sao hoặc vì sao không?",
+      "3. Điều gì tạo động lực tốt hơn cho người lao động: lương hay điều kiện làm việc?"
+    ]
+  },
+  {
+    "id": 72,
+    "part": 3,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 3 là 4 phút.",
+    "prompt_en": "Topic: Living in cities.\n\nFinding work\nTravelling around\nDifficulties for people living in cities\nYour own ideas\nFinding accomodation\n\nFollow-up questions:\n1. Is it a good idea for universities to be located in city centres?\n2. Why do many young people prefer living in big cities?\n3. Do you think the quality of life in cities will improve in the future?",
+    "prompt_vi": "Chủ đề: Cuộc sống ở thành phố.\n\n\nFinding work\nTravelling around\nDifficulties for people living in cities\nYour own ideas\nFinding accomodation\n\nCâu hỏi gợi ý:\n1. Theo bạn, các trường đại học nên đặt ở trung tâm thành phố không?\n2. Vì sao nhiều người trẻ muốn sống ở thành phố lớn?\n3. Bạn có nghĩ rằng chất lượng cuộc sống ở thành phố sẽ tốt hơn trong tương lai không?",
+    "idea_map": {
+      "main": "Difficulties for people living in cities",
+      "branches": [
+        "Finding work",
+        "Travelling around",
+        "Your own ideas",
+        "Finding accomodation"
+      ]
+    },
+    "follow_up_questions_en": [
+      "1. Is it a good idea for universities to be located in city centres?",
+      "2. Why do many young people prefer living in big cities?",
+      "3. Do you think the quality of life in cities will improve in the future?"
+    ],
+    "follow_up_questions_vi": [
+      "1. Theo bạn, các trường đại học nên đặt ở trung tâm thành phố không?",
+      "2. Vì sao nhiều người trẻ muốn sống ở thành phố lớn?",
+      "3. Bạn có nghĩ rằng chất lượng cuộc sống ở thành phố sẽ tốt hơn trong tương lai không?"
+    ]
+  },
+  {
+    "id": 73,
+    "part": 3,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 3 là 4 phút.",
+    "prompt_en": "Topic: Stressful things in life.\n\nJob security\nFamily life\nStressful things\nYour own ideas\nFinances\n\nFollow-up questions:\n1. What do you think is the best way to deal with stress?\n2. Was life easier in the past?\n3. Do you think people should take regular breaks during working hours?",
+    "prompt_vi": "Chủ đề: Những điều gây căng thẳng trong cuộc sống.\n\n\nJob security\nFamily life\nStressful things\nYour own ideas\nFinances\n\nCâu hỏi gợi ý:\n1. Theo bạn, cách tốt nhất để đối phó với căng thẳng là gì?\n2. Cuộc sống trước đây có dễ dàng hơn không?\n3. Bạn có nghĩ mọi người nên nghỉ giải lao thường xuyên trong giờ làm việc không?",
+    "idea_map": {
+      "main": "Stressful things",
+      "branches": [
+        "Job security",
+        "Family life",
+        "Your own ideas",
+        "Finances"
+      ]
+    },
+    "follow_up_questions_en": [
+      "1. What do you think is the best way to deal with stress?",
+      "2. Was life easier in the past?",
+      "3. Do you think people should take regular breaks during working hours?"
+    ],
+    "follow_up_questions_vi": [
+      "1. Theo bạn, cách tốt nhất để đối phó với căng thẳng là gì?",
+      "2. Cuộc sống trước đây có dễ dàng hơn không?",
+      "3. Bạn có nghĩ mọi người nên nghỉ giải lao thường xuyên trong giờ làm việc không?"
+    ]
+  },
+  {
+    "id": 74,
+    "part": 3,
+    "time_limit": "⏱ Thời gian ghi âm tối đa cho Part 3 là 4 phút.",
+    "prompt_en": "Topic: Negative effects of fast food.\n\nLoss of appetite\nIrregular eating time\nFast food\nYour own ideas\nLack of family gathering\n\nFollow-up questions:\n1. Why do people eat fast food?\n2. What health problems are associated with fast food?\n3. Do you think people should be more aware of the risks of eating fast food?",
+    "prompt_vi": "Chủ đề: Tác động tiêu cực của đồ ăn nhanh.\n\n\nLoss of appetite\nIrregular eating time\nFast food\nYour own ideas\nLack of family gathering\n\nCâu hỏi gợi ý:\n1. Vì sao mọi người thích ăn đồ ăn nhanh?\n2. Đồ ăn nhanh có thể gây ra những vấn đề sức khỏe nào?\n3. Bạn có nghĩ mọi người nên nhận thức rõ hơn về rủi ro khi ăn đồ ăn nhanh không?",
+    "idea_map": {
+      "main": "Fast food",
+      "branches": [
+        "Loss of appetite",
+        "Irregular eating time",
+        "Your own ideas",
+        "Lack of family gathering"
+      ]
+    },
+    "follow_up_questions_en": [
+      "1. Why do people eat fast food?",
+      "2. What health problems are associated with fast food?",
+      "3. Do you think people should be more aware of the risks of eating fast food?"
+    ],
+    "follow_up_questions_vi": [
+      "1. Vì sao mọi người thích ăn đồ ăn nhanh?",
+      "2. Đồ ăn nhanh có thể gây ra những vấn đề sức khỏe nào?",
+      "3. Bạn có nghĩ mọi người nên nhận thức rõ hơn về rủi ro khi ăn đồ ăn nhanh không?"
+    ]
   }
 ]
