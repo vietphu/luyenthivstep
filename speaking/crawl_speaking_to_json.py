@@ -99,7 +99,7 @@ async def crawl_speaking():
 
         import random
         results = []
-        for i in range(1, 75):
+        for i in range(1, 164):
             url = f"https://luyenthivstep.vn/practice/speaking/{i}"
             print(f"Đang crawl đề speaking số {i}: {url}")
             # Thêm delay ngẫu nhiên giữa các lần crawl
