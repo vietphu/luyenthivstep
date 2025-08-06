@@ -38,9 +38,13 @@ async def extract_writing(page, idx):
     }
 
 async def crawl_writing():
+    import random
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
-        page = await browser.new_page()
+        # Set user-agent giống Chrome thật
+        user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+        context = await browser.new_context(user_agent=user_agent)
+        page = await context.new_page()
         # Đăng nhập
         await page.goto("https://luyenthivstep.vn/user/login")
         await page.fill('input[name="user_name"]', "VSTEP203118")
@@ -49,10 +53,30 @@ async def crawl_writing():
         await page.wait_for_load_state('networkidle')
 
         results = []
-        for i in range(1, 4):
+        for i in range(1, 75):
             print(f"Đang crawl đề writing số {i}")
-            data = await extract_writing(page, i)
-            results.append(data)
+            # Thêm delay ngẫu nhiên giữa các lần crawl
+            await asyncio.sleep(random.uniform(2, 5))
+            try:
+                url = f"https://luyenthivstep.vn/practice/writing/{i}"
+                await page.goto(url)
+                await page.wait_for_load_state('networkidle')
+                # Di chuyển chuột ngẫu nhiên trên trang để giả lập hành vi người dùng
+                width = page.viewport_size['width'] if page.viewport_size else 1200
+                height = page.viewport_size['height'] if page.viewport_size else 800
+                for _ in range(random.randint(1, 3)):
+                    x = random.randint(0, width-1)
+                    y = random.randint(0, height-1)
+                    await page.mouse.move(x, y)
+            except Exception as e:
+                print(f"[SKIP] Đề writing {i} - Lỗi truy cập trang: {e}")
+                continue
+            try:
+                data = await extract_writing(page, i)
+                results.append(data)
+            except Exception as e:
+                print(f"[SKIP] Đề writing {i} - Lỗi extract dữ liệu: {e}")
+                continue
 
         # Lưu ra file JSON
         with open("writing/writing_prompts.json", "w", encoding="utf-8") as f:

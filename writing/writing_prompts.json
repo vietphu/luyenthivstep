@@ -46,5 +46,917 @@
         "Grammar"
       ]
     }
+  },
+  {
+    "id": 5,
+    "title": "Writing VSTEP - Đề 5",
+    "prompt_en": "You should spend about 20 minutes on this task.\n\nThis is an extract from your pen-friend's postcard:\n\n\nI'm having a busy time at the moment as I have to write lots of Christmas cards to all my friends and relatives.\n\nDo you celebrate Christmas in Vietnam?\nWhat holidays are celebrated in your country?\nWhat is your favourite holiday?\nHow do you celebrate it?\n\nWell, I'd better go now. I've got to help mum with cooking.\nI can't wait to hear from you.\nLots of love,\nDan\n\n\nWrite a letter responding to Dan. In your letter:\n- Answer his questions about Vietnamese holidays.\n- Ask 3 questions about British holidays.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nĐây là một đoạn trích từ bưu thiếp của bạn thân qua thư của bạn.\n\n\nHiện tại mình đang rất bận rộn vì phải viết rất nhiều thiệp Giáng sinh cho bạn bè và người thân.\n\nBạn có tổ chức Giáng sinh ở Việt Nam không?\nNhững ngày lễ nào được tổ chức ở đất nước bạn?\nKỳ nghỉ yêu thích của bạn là gì?\nBạn tổ chức nó như thế nào?\n\nThôi, mình phải đi giúp mẹ nấu ăn rồi.\nMình rất mong nhận được thư từ bạn.\nThương mến,\nDan\n\n\nHãy viết một lá thư trả lời Dan. Trong thư của bạn:\n- Trả lời các câu hỏi của Dan về ngày lễ ở Việt Nam.\n- Hỏi 3 câu hỏi về ngày lễ ở Anh.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "title": "Writing VSTEP - Đề 6",
+    "prompt_en": "You should spend about 40 minutes on this task.\n\nRead the following text from an article about the Internet:\n\n\nIt is evident that the Internet has increasingly brought about significant changes to our life. According to a recent study, the more time people use the Internet, the less time they spend with real human beings. Some people say that instead of seeing the Internet as a way of opening up new communication possibilities worldwide, we should be concerned about the effect it is having on social interactions.\n\n\nWrite an essay for an educated audience discussing the effects of the Internet on human interactions. Support your arguments with reasons and relevant examples.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nĐọc đoạn văn sau từ một bài báo về Internet:\n\n\nRõ ràng Internet ngày càng mang lại những thay đổi đáng kể cho cuộc sống của chúng ta. Theo một nghiên cứu gần đây, càng dành nhiều thời gian trên Internet, con người càng ít thời gian tương tác trực tiếp với người khác. Một số người cho rằng thay vì coi Internet là một cách mở ra cơ hội giao tiếp toàn cầu mới, chúng ta nên quan tâm đến tác động của nó đối với các tương tác xã hội.\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, thảo luận về tác động của Internet đối với sự tương tác giữa con người. Hãy hỗ trợ lập luận của bạn bằng các lý do và ví dụ phù hợp.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "title": "Writing VSTEP - Đề 7",
+    "prompt_en": "You should spend about 20 minutes on this task. You have received this email from an English-speaking friend, Alex. Read part of his email below.\n\n\nSome friends of mine are going backpacking next month around Vietnam. They would like to learn about Vietnamese culture and its history.\n\nWhere should they begin the trip?\nWhat's the easiest way to get around?\nWhere should they stay as they are on a tight budget?\n\n\nWrite an email to Alex responding to his questions and giving advice on travel routes, transportation, and accommodation.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn đã nhận được email này từ một người bạn nói tiếng Anh, Alex. Hãy đọc phần email của anh ấy dưới đây.\n\n\nMột số người bạn của mình sẽ đi du lịch bụi vòng quanh Việt Nam vào tháng tới. Họ muốn tìm hiểu về văn hóa và lịch sử Việt Nam.\n\nHọ nên bắt đầu chuyến đi từ đâu?\nPhương tiện di chuyển thuận tiện nhất là gì?\nHọ nên ở đâu vì ngân sách của họ khá hạn hẹp?\n\n\nHãy viết một email trả lời Alex, đưa ra lời khuyên về lộ trình du lịch, phương tiện di chuyển và chỗ ở.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "title": "Writing VSTEP - Đề 10",
+    "prompt_en": "You should spend about 40 minutes on this task.\n\nRead the following text from an article about the quality of life in large cities.\n\n\nRecent years have witnessed the increasingly deteriorating quality of cities. This phenomenon is largely attributed to population explosion and pollution. Therefore, effective solutions must be proposed to tackle this issue.\n\n\nWrite an essay for an educated audience discussing the causes and potential solutions to this problem. Support your answer with specific reasons and relevant examples.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nĐọc đoạn văn sau từ một bài báo về chất lượng cuộc sống ở các thành phố lớn.\n\n\nNhững năm gần đây chứng kiến sự suy giảm nghiêm trọng về chất lượng cuộc sống ở các thành phố lớn. Hiện tượng này chủ yếu là do bùng nổ dân số và ô nhiễm môi trường. Do đó, cần phải có các giải pháp hiệu quả để giải quyết vấn đề này.\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, thảo luận về nguyên nhân và các giải pháp tiềm năng cho vấn đề này. Hãy hỗ trợ câu trả lời của bạn bằng các lý do cụ thể và ví dụ liên quan.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "title": "Writing VSTEP - Đề 13",
+    "prompt_en": "You should spend about 20 minutes on this task. You have received the following email from your English pen friend, Anne:\n\n\nIt's a really brave step to take a year out of college to come and spend 6 months in the UK!\n\nWhat are you planning to do with your time?\nFind a job?\nLearn some new skills?\n\nWrite back and give me more details of your plans so I can do my best to help you have a good time.\n\n\nWrite an email to Anne, responding to her questions and sharing your plans for your time in the UK.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn đã nhận được email sau từ người bạn thân qua thư người Anh của bạn, Anne:\n\n\nThật là một quyết định dũng cảm khi bạn dành một năm nghỉ học để đến Anh trong 6 tháng!\n\nBạn dự định làm gì trong khoảng thời gian đó?\nTìm một công việc?\nHọc một số kỹ năng mới?\n\nHãy viết thư lại và cho mình biết thêm chi tiết về kế hoạch của bạn để mình có thể giúp bạn tận hưởng khoảng thời gian tuyệt vời ở đây.\n\n\nHãy viết một email trả lời Anne, phản hồi các câu hỏi của cô ấy và chia sẻ kế hoạch của bạn trong thời gian ở Anh.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "title": "Writing VSTEP - Đề 16",
+    "prompt_en": "You should spend about 40 minutes on this task.\n\nRead the following text from an article about vegetarianism.\n\n\nVegetarians tend to avoid consuming meat and fish for the purpose of maintaining good health and due to environmental concerns. It is a fact that several groups of people prefer not to consume any kind of meat or fish, as they believe that being vegetarian brings many benefits for their health and for the world as a whole.\n\n\nWrite an essay for an educated audience discussing your opinions on this viewpoint. Support your answer with specific reasons and relevant examples.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nĐọc đoạn văn sau từ một bài báo về chủ nghĩa ăn chay.\n\n\nNhững người ăn chay thường tránh tiêu thụ thịt và cá để duy trì sức khỏe tốt và do những lo ngại về môi trường. Thực tế là nhiều nhóm người không tiêu thụ bất kỳ loại thịt hay cá nào, vì họ tin rằng việc ăn chay mang lại nhiều lợi ích cho sức khỏe và cho thế giới nói chung.\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, thảo luận về quan điểm của bạn về chủ đề này. Hãy hỗ trợ câu trả lời của bạn bằng các lý do cụ thể và ví dụ liên quan.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "title": "Writing VSTEP - Đề 20",
+    "prompt_en": "You should spend about 40 minutes on this task.\n\nRead the following text from an article about the ways to develop skills for children.\n\n\nChild development is widely accepted as a significant responsibility for parents. It is believed that allowing young children to practice their hobbies or participate in sports is more beneficial for their development than focusing solely on reading books or novels. In other words, engaging in enjoyable activities with children can enhance their skills and creativity more effectively than reading.\n\n\nWrite an essay for an educated audience discussing your opinions on this viewpoint. Support your answer with specific reasons and relevant examples.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nĐọc đoạn văn sau từ một bài báo về các cách phát triển kỹ năng cho trẻ em.\n\n\nViệc nuôi dạy trẻ em được công nhận rộng rãi là một trách nhiệm quan trọng của các bậc cha mẹ. Người ta tin rằng việc cho trẻ thực hành sở thích của mình hoặc tham gia thể thao có lợi hơn cho sự phát triển của chúng so với việc chỉ tập trung vào đọc sách. Nói cách khác, tham gia vào các hoạt động vui chơi cùng trẻ có thể nâng cao kỹ năng và khả năng sáng tạo của chúng hiệu quả hơn so với việc đọc sách.\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, thảo luận về quan điểm của bạn về vấn đề này. Hãy hỗ trợ câu trả lời của bạn bằng các lý do cụ thể và ví dụ liên quan.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "title": "Writing VSTEP - Đề 22",
+    "prompt_en": "You should spend about 40 minutes on this task.\n\nRead the following text from an article about the admission fee of museums.\n\n\nA museum is an entity that preserves the artifacts of history and works as an important representative of a nation's tradition and culture. Thus, the importance of museums in conveying historical facts to the new generation is beyond controversy. However, the question of whether museums should charge an admission fee remains open to debate.\n\n\nWrite an essay for an educated audience discussing whether the advantages of charging an admission fee to museums outweigh the disadvantages. Support your answer with specific reasons and relevant examples.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nĐọc đoạn văn sau từ một bài báo về phí vào cửa của bảo tàng.\n\n\nBảo tàng là một thực thể bảo tồn các hiện vật lịch sử và đóng vai trò như một đại diện quan trọng của truyền thống và văn hóa của một quốc gia. Do đó, tầm quan trọng của bảo tàng trong việc truyền tải các sự kiện lịch sử cho thế hệ mới là không thể tranh cãi. Tuy nhiên, câu hỏi liệu bảo tàng có nên thu phí vào cửa hay không vẫn còn gây tranh cãi.\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, thảo luận về việc liệu lợi ích của việc thu phí vào bảo tàng có vượt trội hơn so với nhược điểm hay không. Hãy hỗ trợ câu trả lời của bạn bằng các lý do cụ thể và ví dụ liên quan.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "title": "Writing VSTEP - Đề 23",
+    "prompt_en": "You should spend about 20 minutes on this task. Read this extract from a letter you have recently sent to a friend:\n\n\nOh, and by the way, don't go to XYZ Restaurant for your birthday. We went there last night - the service was awful and the food was a disaster! I complained to the head waiter but he asked me to put it in writing.\n\n\nWrite a formal letter to the restaurant manager complaining about your experience and requesting appropriate action.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nĐọc đoạn trích sau từ một bức thư bạn đã gửi cho một người bạn gần đây:\n\n\nÀ, nhân tiện, đừng đến nhà hàng XYZ để tổ chức sinh nhật nhé. Chúng tôi đã đến đó tối qua - dịch vụ thì tệ hại và đồ ăn thì thật sự là một thảm họa! Tôi đã phàn nàn với quản lý nhà hàng nhưng anh ta yêu cầu tôi phải viết đơn khiếu nại bằng văn bản.\n\n\nHãy viết một lá thư trang trọng gửi đến quản lý nhà hàng, phàn nàn về trải nghiệm của bạn và yêu cầu có biện pháp xử lý thích hợp.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "title": "Writing VSTEP - Đề 24",
+    "prompt_en": "You should spend about 40 minutes on this task.\n\nRead the following text from an article about the fresh water issue.\n\n\nFresh water has long been a scarce resource in certain regions. However, due to increasing global demand, it has now become a pressing worldwide issue.\n\n\nWrite an essay for an educated audience discussing the causes of rising demand for fresh water and suggesting measures that governments and individuals can take to address this issue. Support your answer with specific reasons and relevant examples.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nĐọc đoạn văn sau từ một bài báo về vấn đề nước ngọt.\n\n\nNước ngọt từ lâu đã là một nguồn tài nguyên khan hiếm ở một số khu vực. Tuy nhiên, do nhu cầu toàn cầu ngày càng tăng, vấn đề này giờ đây đã trở thành một vấn đề cấp bách trên toàn thế giới.\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, thảo luận về nguyên nhân dẫn đến nhu cầu nước ngọt ngày càng tăng và đề xuất các biện pháp mà chính phủ và cá nhân có thể thực hiện để giải quyết vấn đề này. Hãy hỗ trợ câu trả lời của bạn bằng các lý do cụ thể và ví dụ liên quan.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "title": "Writing VSTEP - Đề 25",
+    "prompt_en": "You should spend about 20 minutes on this task. You have read the following information from a Singaporean university, and have decided to apply for a course:\n\n\nThe university welcomes applications to all its courses from overseas students. Please write to the Admissions Officer giving details of the course you wish to apply for and why. Your letter should include an outline of your qualifications and any other relevant information.\n\n\nWrite a formal letter to the Admissions Officer applying for the course, outlining your qualifications and explaining why you are interested in studying at this university.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn đã đọc thông tin sau từ một trường đại học ở Singapore và quyết định nộp đơn ứng tuyển cho một khóa học:\n\n\nTrường đại học hoan nghênh đơn đăng ký từ sinh viên quốc tế cho tất cả các khóa học. Vui lòng viết thư gửi đến Nhân viên Tuyển sinh, cung cấp thông tin chi tiết về khóa học bạn muốn đăng ký và lý do tại sao bạn quan tâm đến khóa học này. Thư của bạn nên bao gồm mô tả về trình độ học vấn và các thông tin liên quan khác.\n\n\nHãy viết một lá thư trang trọng gửi đến Nhân viên Tuyển sinh để ứng tuyển vào khóa học, trình bày trình độ của bạn và giải thích lý do bạn quan tâm đến việc học tại trường đại học này.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "title": "Writing VSTEP - Đề 26",
+    "prompt_en": "You should spend about 40 minutes on this task.\n\nRead the following text from an article about work-life balance.\n\n\nOne of the most significant challenges in the 21st century is maintaining a proper work-life balance. Many people struggle to manage their time effectively, striving to succeed at work while also spending quality time with their families. This issue has become increasingly common in modern society.\n\n\nWrite an essay for an educated audience discussing the causes of this issue and suggesting solutions that individuals and employers can implement to address the problem. Support your answer with specific reasons and relevant examples.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nĐọc đoạn văn sau từ một bài báo về cân bằng giữa công việc và cuộc sống.\n\n\nMột trong những thách thức quan trọng nhất của thế kỷ 21 là duy trì sự cân bằng hợp lý giữa công việc và cuộc sống. Nhiều người gặp khó khăn trong việc quản lý thời gian một cách hiệu quả, vừa muốn thành công trong công việc, vừa muốn dành thời gian chất lượng cho gia đình. Vấn đề này ngày càng trở nên phổ biến trong xã hội hiện đại.\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, thảo luận về nguyên nhân của vấn đề này và đề xuất các giải pháp mà cá nhân và doanh nghiệp có thể thực hiện để giải quyết vấn đề. Hãy hỗ trợ câu trả lời của bạn bằng các lý do cụ thể và ví dụ liên quan.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 28,
+    "title": "Writing VSTEP - Đề 28",
+    "prompt_en": "You should spend about 40 minutes on this task.\n\nRead the following text from an article about sports at school.\n\n\nSports have traditionally been a form of leisure, with a wide variety of games enjoyed across the world. However, in modern times, the role of sports in education has become a topic of debate. Some people believe that sports should be an essential part of school life for children, while others argue that it should be purely optional.\n\n\nWrite an essay for an educated audience discussing both perspectives on whether sports should be a mandatory part of school life or an optional activity. Support your answer with specific reasons and relevant examples.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nĐọc đoạn văn sau từ một bài báo về thể thao trong trường học.\n\n\nThể thao từ lâu đã là một hình thức giải trí, với nhiều trò chơi đa dạng được yêu thích trên khắp thế giới. Tuy nhiên, trong thời đại hiện đại, vai trò của thể thao trong giáo dục đã trở thành một chủ đề gây tranh cãi. Một số người tin rằng thể thao nên là một phần thiết yếu trong đời sống học đường của trẻ em, trong khi những người khác cho rằng nó chỉ nên là một hoạt động tùy chọn.\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, thảo luận về cả hai quan điểm: liệu thể thao có nên là một phần bắt buộc của đời sống học đường hay chỉ là một hoạt động tùy chọn. Hãy hỗ trợ câu trả lời của bạn bằng các lý do cụ thể và ví dụ liên quan.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 30,
+    "title": "Writing VSTEP - Đề 30",
+    "prompt_en": "You should spend about 40 minutes on this task.\n\nRead the following text from an article about zoos.\n\n\nLiving beings are an inseparable part of the natural world, and the treatment of animals remains a controversial issue. Some people feel that keeping animals in captivity, such as in zoos, is always wrong. Others argue that keeping animals in zoos benefits both animals and humans.\n\n\nWrite an essay for an educated audience discussing both perspectives on keeping animals in zoos. Support your answer with specific reasons and relevant examples.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nĐọc đoạn văn sau từ một bài báo về sở thú.\n\n\nSinh vật sống là một phần không thể tách rời của thế giới tự nhiên, và cách đối xử với động vật vẫn là một vấn đề gây tranh cãi. Một số người cho rằng việc nuôi nhốt động vật trong sở thú là hoàn toàn sai trái. Những người khác lại lập luận rằng việc nuôi nhốt động vật trong sở thú mang lại lợi ích cho cả động vật và con người.\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, thảo luận về cả hai quan điểm liên quan đến việc nuôi nhốt động vật trong sở thú. Hãy hỗ trợ câu trả lời của bạn bằng các lý do cụ thể và ví dụ liên quan.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "title": "Writing VSTEP - Đề 31",
+    "prompt_en": "You should spend about 20 minutes on this task. You have received this email from a friend called Bill. Read part of his email below.\n\n\nWell, I have had some health problems recently.\n\nI don't know the exact reason, but I think it may come from my smoking.\nI started smoking a couple of months ago and I'm becoming dependent on it.\nEvery day I smoke a few cigarettes, maybe 4-5.\nCould you please give me some advice?\nI feel quite depressed.\n\n\nWrite an email to Bill, giving him advice on how to quit smoking and offering support.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn đã nhận được email này từ một người bạn tên là Bill. Hãy đọc phần email của anh ấy dưới đây.\n\n\nMình đã gặp một số vấn đề về sức khỏe gần đây.\n\nMình không biết chính xác nguyên nhân, nhưng mình nghĩ có thể là do hút thuốc.\nMình bắt đầu hút thuốc vài tháng trước và giờ mình đang dần trở nên phụ thuộc vào nó.\nMỗi ngày mình hút khoảng 4-5 điếu thuốc.\nBạn có thể cho mình một số lời khuyên được không?\nMình cảm thấy khá chán nản.\n\n\nHãy viết một email gửi Bill, đưa ra lời khuyên về cách bỏ thuốc lá và thể hiện sự hỗ trợ của bạn.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "title": "Writing VSTEP - Đề 32",
+    "prompt_en": "You should spend about 40 minutes on this task.\n\nRead the following text from an article about choices of university students.\n\n\nSome people argue that university students should have the freedom to choose any subject they are passionate about. Others believe that students should be restricted to studying fields that are considered beneficial for the future, such as science and technology.\n\n\nWrite an essay for an educated audience discussing both perspectives on university students’ subject choices. Support your answer with specific reasons and relevant examples.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nĐọc đoạn văn sau từ một bài báo về lựa chọn ngành học của sinh viên đại học.\n\n\nMột số người cho rằng sinh viên đại học nên có quyền tự do lựa chọn bất kỳ môn học nào mà họ đam mê. Những người khác lại tin rằng sinh viên nên bị giới hạn trong các ngành học được coi là có lợi cho tương lai, chẳng hạn như khoa học và công nghệ.\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, thảo luận về cả hai quan điểm liên quan đến lựa chọn ngành học của sinh viên đại học. Hãy hỗ trợ câu trả lời của bạn bằng các lý do cụ thể và ví dụ liên quan.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "title": "Writing VSTEP - Đề 33",
+    "prompt_en": "You should spend about 20 minutes on this task. You have received this email from an English-speaking pen friend.\n\n\nI'm a rock fan. I can listen to rock all day.\n\nWhat about you?\nWhat kind of music do you like?\nWhat is your favourite song and artist?\nPlease write to tell me more about your music taste.\n\n\nWrite an email to your friend responding to their questions and sharing your music preferences.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn đã nhận được email này từ một người bạn thân qua thư nói tiếng Anh.\n\n\nMình là một fan của nhạc rock. Mình có thể nghe nhạc rock cả ngày.\n\nCòn bạn thì sao?\nBạn thích thể loại nhạc nào?\nBài hát và nghệ sĩ yêu thích của bạn là gì?\nHãy viết thư cho mình để kể thêm về sở thích âm nhạc của bạn.\n\n\nHãy viết một email trả lời người bạn của bạn, phản hồi các câu hỏi và chia sẻ về sở thích âm nhạc của bạn.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 34,
+    "title": "Writing VSTEP - Đề 34",
+    "prompt_en": "You should spend about 40 minutes on this task.\n\nRead the following text from an article about ex-prisoners.\n\n\nIt is undeniable that ex-prisoners can reintegrate into society and become responsible, productive citizens. Some former prisoners successfully turn their lives around and contribute positively to society. Many argue that they are the most effective individuals to educate teenagers about the consequences of crime.\n\n\nWrite an essay for an educated audience discussing your opinion on whether ex-prisoners are the best people to educate teenagers about crime. Support your answer with specific reasons and relevant examples.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nĐọc đoạn văn sau từ một bài báo về những người từng là tù nhân.\n\n\nKhông thể phủ nhận rằng những người từng là tù nhân có thể tái hòa nhập xã hội và trở thành những công dân có trách nhiệm, đóng góp tích cực cho cộng đồng. Một số cựu tù nhân đã thành công trong việc thay đổi cuộc sống của họ và mang lại lợi ích cho xã hội. Nhiều người cho rằng họ là những người có hiệu quả nhất trong việc giáo dục thanh thiếu niên về hậu quả của tội phạm.\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, trình bày quan điểm của bạn về việc liệu những cựu tù nhân có phải là những người tốt nhất để giáo dục thanh thiếu niên về tội phạm hay không. Hãy hỗ trợ câu trả lời của bạn bằng các lý do cụ thể và ví dụ liên quan.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 35,
+    "title": "Writing VSTEP - Đề 35",
+    "prompt_en": "You should spend about 20 minutes on this task. You have just received a letter from a friend, Audrey, asking about your new puppy.\n\n\nIt’s great to receive your letter. I’m sorry I haven’t written for a long time. I was busy preparing for final exams. I also try to help my parents with the housework since they are busy all day.\n\nWhat a great news you have a new puppy! I really love puppies because they are cute.\nWhat’s the name of your puppy?\nWhy have you decided to give it that name?\nWho gave you such a wonderful gift?\nAlso, do you have any difficulties looking after it?\n\n\nWrite a letter responding to Audrey.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn vừa nhận được một bức thư từ một người bạn tên là Audrey, hỏi về chú chó con mới của bạn.\n\n\nThật tuyệt khi nhận được thư của bạn. Mình xin lỗi vì đã lâu không viết thư cho bạn. Mình bận rộn chuẩn bị cho kỳ thi cuối kỳ. Mình cũng cố gắng giúp bố mẹ làm việc nhà vì họ bận rộn cả ngày.\n\nThật vui khi biết bạn có một chú chó con mới! Mình thực sự yêu thích chó con vì chúng rất dễ thương.\nTên chú chó của bạn là gì?\nTại sao bạn lại đặt tên đó cho nó?\nAi đã tặng bạn món quà tuyệt vời này?\nBạn có gặp khó khăn gì khi chăm sóc nó không?\n\n\nHãy viết một lá thư trả lời Audrey.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "title": "Writing VSTEP - Đề 36",
+    "prompt_en": "You should spend about 20 minutes on this task. You are the school trip organizer. You received an email from a student, Ethan, asking for some information about next month's trip.\n\n\nI’m really interested in the school trip you are going to organize next month to a historical museum. I’m writing to ask for information about the fee, the date and time so that I can arrange my time to join you. How can we get there and what activities are planned for the visit? Should I bring lunch along?\n\n\nWrite an email responding to Ethan.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn là người tổ chức chuyến đi của trường. Bạn đã nhận được một email từ một học sinh tên Ethan, hỏi thông tin về chuyến đi tháng tới.\n\n\nMình thực sự quan tâm đến chuyến đi của trường mà bạn sẽ tổ chức vào tháng tới đến một bảo tàng lịch sử. Mình viết thư để hỏi về phí tham gia, ngày giờ để có thể sắp xếp thời gian tham gia cùng mọi người. Chúng ta sẽ đi bằng phương tiện gì và có những hoạt động nào được lên kế hoạch cho chuyến tham quan? Mình có cần mang theo bữa trưa không?\n\n\nHãy viết một email trả lời Ethan.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 37,
+    "title": "Writing VSTEP - Đề 37",
+    "prompt_en": "You should spend about 20 minutes on this task. You received a letter from your friend, Joan, telling about her birthday party and asking you to describe your last birthday party.\n\n\nYesterday I had a wonderful birthday party with my family and friends. When I came home from school, I was surprised when I saw a huge birthday cake made by my mother. My house was decorated for the party and all my close friends and relatives were there. We sang birthday songs and enjoyed delicious food. It was a great party.\n\nHow about your last birthday party? What did you do? How did you feel then? Did you enjoy it? Hope to hear from you soon.\n\n\nWrite an email responding to her.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn đã nhận được một lá thư từ người bạn Joan, kể về bữa tiệc sinh nhật của cô ấy và hỏi bạn về bữa tiệc sinh nhật gần nhất của bạn.\n\n\nHôm qua mình đã có một bữa tiệc sinh nhật tuyệt vời cùng gia đình và bạn bè. Khi mình về nhà sau giờ học, mình đã rất ngạc nhiên khi thấy một chiếc bánh sinh nhật khổng lồ do mẹ làm. Nhà mình được trang trí rất đẹp cho bữa tiệc và tất cả bạn bè thân thiết và người thân của mình đều có mặt. Chúng mình hát những bài hát sinh nhật và thưởng thức những món ăn ngon. Đó thực sự là một bữa tiệc tuyệt vời.\n\nCòn bữa tiệc sinh nhật gần nhất của bạn thì sao? Bạn đã làm gì? Bạn cảm thấy thế nào? Bạn có thích nó không? Mình mong sớm nhận được thư từ bạn.\n\n\nHãy viết một email trả lời Joan.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 38,
+    "title": "Writing VSTEP - Đề 38",
+    "prompt_en": "You should spend about 20 minutes on this task. You received a letter from your friend, John, asking for information about a short trip in your country.\n\n\nI’m so excited to let you know that I’ve won the second prize in an art competition in my area. My mum has decided to give me a trip as a present, and I’m thinking of a short trip to your country this summer. Could you give me some advice? I want to travel to beautiful places in your country in 2 weeks with my mum.\n\nWhere should I go? What can we do there? What’s the weather like in your country? Hope to hear from you soon.\n\n\nWrite an email responding to him.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn đã nhận được một lá thư từ người bạn John, hỏi về chuyến du lịch ngắn ngày tại đất nước của bạn.\n\n\nMình rất háo hức thông báo với bạn rằng mình đã giành giải nhì trong một cuộc thi nghệ thuật tại khu vực của mình. Mẹ mình đã quyết định tặng mình một chuyến du lịch làm phần thưởng, và mình đang nghĩ đến việc có một chuyến đi ngắn ngày đến đất nước của bạn vào mùa hè này. Bạn có thể cho mình một số lời khuyên không? Mình muốn đi du lịch đến những nơi đẹp ở đất nước của bạn trong 2 tuần cùng mẹ.\n\nMình nên đi đâu? Bọn mình có thể làm gì ở đó? Thời tiết ở nước bạn như thế nào? Mong sớm nhận được thư từ bạn.\n\n\nHãy viết một email trả lời John.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "title": "Writing VSTEP - Đề 39",
+    "prompt_en": "You should spend about 20 minutes on this task. You received a letter from your friend, Peter, telling about his short trip with his dad.\n\n\nHi, how are you doing? I was feeling excited about the journey on a trip with my dad. This was my first journey on the sea. So I was a bit nervous and was very worried about being sea-sick. Luckily, I was fine on the entire journey, and there were some great moments when I saw the sunrise and sunset. I also took a lot of photos with my dad and new friends on this journey.\n\nWhat about you? Tell me about your last holiday. Did you enjoy it? What are you going to do after the holiday?\n\n\nWrite a letter responding to him.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn đã nhận được một lá thư từ người bạn Peter, kể về chuyến đi ngắn ngày của anh ấy với cha mình.\n\n\nChào bạn, dạo này bạn thế nào? Mình rất háo hức về chuyến đi cùng bố. Đây là lần đầu tiên mình đi du lịch trên biển, vì vậy mình khá lo lắng và sợ bị say sóng. May mắn thay, mình cảm thấy ổn suốt cả chuyến đi, và có những khoảnh khắc tuyệt vời khi mình ngắm bình minh và hoàng hôn. Mình cũng đã chụp rất nhiều ảnh với bố và những người bạn mới trên chuyến đi này.\n\nCòn bạn thì sao? Hãy kể cho mình nghe về kỳ nghỉ gần nhất của bạn. Bạn có thích nó không? Sau kỳ nghỉ, bạn dự định làm gì?\n\n\nHãy viết một lá thư trả lời Peter.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 40,
+    "title": "Writing VSTEP - Đề 40",
+    "prompt_en": "You should spend about 20 minutes on this task. You received a letter from your friend, Joan, asking for some information about your school facilities.\n\n\nThank you very much for letting me know about the one-year student exchange program at your school. I’m thinking of joining this program and hope that we can meet each other at your school next year. I’m quite busy this time with a lot of exams.\n\nHow about you? Do you have to do a lot of tests? Give me some information about the school facilities, library, sports center, your teachers, and your school schedule.\n\n\nWrite a letter responding to him.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn đã nhận được một lá thư từ người bạn Joan, hỏi về cơ sở vật chất tại trường học của bạn.\n\n\nCảm ơn bạn rất nhiều vì đã cho mình biết về chương trình trao đổi sinh viên một năm tại trường bạn. Mình đang cân nhắc tham gia chương trình này và hy vọng chúng ta có thể gặp nhau tại trường vào năm sau. Hiện tại mình đang khá bận rộn với rất nhiều kỳ thi.\n\nCòn bạn thì sao? Bạn có phải làm nhiều bài kiểm tra không? Hãy cho mình biết thêm thông tin về cơ sở vật chất của trường, thư viện, trung tâm thể thao, giáo viên và lịch học của bạn.\n\n\nHãy viết một lá thư trả lời Joan.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 41,
+    "title": "Writing VSTEP - Đề 41",
+    "prompt_en": "You should spend about 20 minutes on this task. You received a letter from your friend, Robert, asking you to buy his tickets for a band performance.\n\n\nNext week, Linkin Park is coming to Hanoi to rock this city. I don’t want to miss my favorite band’s live performance, and I bought two tickets last month. I had planned to enjoy the performance with my brother, but I have to cancel it due to a family event.\n\nAre you going back to our hometown to meet our grandparents on their 50th wedding anniversary? I know how much you love Linkin Park. Do you want to buy these tickets to enjoy the show? How many tickets do you want? How much can you pay for the ticket? How can you receive the ticket?\n\n\nWrite a letter responding to him.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn đã nhận được một lá thư từ người bạn Robert, nhờ bạn mua lại vé xem buổi biểu diễn của một ban nhạc.\n\n\nTuần tới, Linkin Park sẽ đến Hà Nội để tổ chức một buổi biểu diễn hoành tráng. Mình không muốn bỏ lỡ buổi biểu diễn trực tiếp của ban nhạc yêu thích của mình và đã mua hai vé từ tháng trước. Mình dự định đi cùng anh trai, nhưng mình phải hủy vì có sự kiện gia đình.\n\nBạn có về quê để gặp ông bà nhân kỷ niệm 50 năm ngày cưới của họ không? Mình biết bạn rất yêu thích Linkin Park. Bạn có muốn mua lại những vé này để thưởng thức buổi diễn không? Bạn muốn mua bao nhiêu vé? Bạn có thể trả bao nhiêu tiền cho vé? Bạn muốn nhận vé bằng cách nào?\n\n\nHãy viết một lá thư trả lời Robert.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 42,
+    "title": "Writing VSTEP - Đề 42",
+    "prompt_en": "You should spend about 20 minutes on this task. You received a letter from a visitor, Sam, asking for some information about a house for rent.\n\n\nWe’re going to visit London next month. I just saw your advertisement for flats today and I am writing to ask for more information. There’ll be 10 people in our group, so how many flats would we need to rent and how much will the total cost be for one week?\n\nI’d like to know what the flats are equipped with and what kinds of facilities are available nearby. Are there any shopping centers? Finally, is it convenient to get to the city center from your place?\n\n\nWrite a letter responding to him.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn đã nhận được một lá thư từ một du khách tên Sam, hỏi về thông tin thuê nhà.\n\n\nChúng tôi sẽ đến thăm London vào tháng tới. Hôm nay tôi vừa thấy quảng cáo về căn hộ của bạn và tôi viết thư để hỏi thêm thông tin. Nhóm chúng tôi có 10 người, vậy chúng tôi cần thuê bao nhiêu căn hộ và tổng chi phí cho một tuần sẽ là bao nhiêu?\n\nTôi muốn biết các căn hộ được trang bị những gì và có những tiện ích nào gần đó. Có trung tâm mua sắm nào không? Cuối cùng, từ chỗ của bạn có thuận tiện để đi vào trung tâm thành phố không?\n\n\nHãy viết một lá thư trả lời Sam.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 43,
+    "title": "Writing VSTEP - Đề 43",
+    "prompt_en": "You should spend about 20 minutes on this task. You’ve just received a letter from John - an English pen friend.\n\n\nHi, how are you? I have had a health check with my doctor. He informed me that my eyes are becoming worse than they were. Perhaps this happens because I spend too much time watching TV every day. I love spending hours watching my favorite channel after doing my homework.\n\nHow much time do you watch TV a day? What else do you do to relax? Give me some interesting ideas for free-time activities. How much do you like watching TV? Describe some popular programs and give details about your hobbies.\n\n\nWrite an email responding to him.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn vừa nhận được một lá thư từ John - một người bạn thân qua thư người Anh.\n\n\nChào bạn, dạo này bạn thế nào? Mình vừa đi khám sức khỏe với bác sĩ. Ông ấy nói rằng mắt mình đang trở nên tệ hơn so với trước đây. Có lẽ điều này xảy ra vì mình dành quá nhiều thời gian để xem TV mỗi ngày. Mình rất thích dành hàng giờ để xem kênh yêu thích sau khi làm xong bài tập về nhà.\n\nBạn xem TV bao nhiêu thời gian mỗi ngày? Bạn làm gì khác để thư giãn? Hãy cho mình một số ý tưởng thú vị về các hoạt động giải trí. Bạn thích xem TV đến mức nào? Hãy mô tả một số chương trình phổ biến và nói về sở thích của bạn.\n\n\nHãy viết một email trả lời John.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 44,
+    "title": "Writing VSTEP - Đề 44",
+    "prompt_en": "You should spend about 20 minutes on this task. You’ve just received a letter from Andy - an English pen friend, talking about his literature homework.\n\n\nHi, how are you? The teacher in the literature class asked me to write about one of the movies I like the best. As you know, I don’t like watching movies and I don’t go to the cinema often. Thus, I don’t know which movies I should see now or which movie I should write about.\n\nCould you tell me about your favorite movie? (Name of the movie, what kind of movie, what is it about?) When did you see it and why do you like it?\n\n\nWrite a letter responding to him.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn vừa nhận được một lá thư từ Andy - một người bạn thân qua thư người Anh, nói về bài tập môn văn học của anh ấy.\n\n\nChào bạn, dạo này bạn thế nào? Giáo viên dạy văn yêu cầu mình viết về một bộ phim mà mình thích nhất. Như bạn biết đấy, mình không thích xem phim và cũng không thường xuyên đến rạp chiếu phim. Vì vậy, mình không biết bộ phim nào đáng xem bây giờ hoặc bộ phim nào mình nên viết về.\n\nBạn có thể kể cho mình về bộ phim yêu thích của bạn không? (Tên phim, thể loại phim, nội dung phim là gì?) Bạn đã xem nó khi nào và tại sao bạn thích nó?\n\n\nHãy viết một lá thư trả lời Andy.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "title": "Writing VSTEP - Đề 45",
+    "prompt_en": "You should spend about 20 minutes on this task. You’ve just received a letter from Sue - an English pen friend, asking about your reading habit.\n\n\nIt has been a while since I received your letter. How are you doing? Are you still fond of reading as you were in the past? I wish I were a passionate reader like you.\n\nHave you finished reading “Lady Susan” by Jane Austen that you borrowed from me about six months ago? This book is special to me as my grandmother gave it to me on my 18th birthday. I hope you enjoyed reading it as much as I did and would not mind sending it back to me.\n\n\nWrite a letter responding to her.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn vừa nhận được một lá thư từ Sue - một người bạn thân qua thư người Anh, hỏi về thói quen đọc sách của bạn.\n\n\nĐã lâu rồi mình chưa nhận được thư của bạn. Dạo này bạn thế nào? Bạn có còn thích đọc sách như trước đây không? Mình ước gì mình có thể trở thành một người đam mê đọc sách như bạn.\n\nBạn đã đọc xong cuốn \"Lady Susan\" của Jane Austen mà bạn mượn từ mình khoảng sáu tháng trước chưa? Cuốn sách này rất đặc biệt với mình vì bà của mình đã tặng nó cho mình vào sinh nhật lần thứ 18. Mình hy vọng bạn thích đọc nó nhiều như mình và không phiền khi gửi nó lại cho mình.\n\n\nHãy viết một lá thư trả lời Sue.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 46,
+    "title": "Writing VSTEP - Đề 46",
+    "prompt_en": "You should spend about 20 minutes on this task. You’ve just received a letter from Carol - an English pen friend.\n\n\nI go to school from 8 a.m. to 4 p.m. from Monday to Friday, so I’m quite busy. I only have free time at the weekends. I like playing the piano or watching an interesting movie in my free time. I also like going out with my friends on Saturday evening, but sometimes my parents don’t let me go.\n\nWhat do you like doing in your free time? Do you like staying at home, or do you like going out?\n\n\nWrite an email responding to her.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn vừa nhận được một lá thư từ Carol - một người bạn thân qua thư người Anh.\n\n\nMình đi học từ 8 giờ sáng đến 4 giờ chiều từ thứ Hai đến thứ Sáu, vì vậy mình khá bận rộn. Mình chỉ có thời gian rảnh vào cuối tuần. Mình thích chơi piano hoặc xem một bộ phim thú vị vào thời gian rảnh. Mình cũng thích ra ngoài cùng bạn bè vào tối thứ Bảy, nhưng đôi khi bố mẹ không cho mình đi.\n\nBạn thích làm gì trong thời gian rảnh? Bạn thích ở nhà hay thích ra ngoài?\n\n\nHãy viết một email trả lời Carol.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 47,
+    "title": "Writing VSTEP - Đề 47",
+    "prompt_en": "You should spend about 20 minutes on this task. You’ve just received a letter from David - an English pen friend, asking for some information about your Mid-Autumn Festival.\n\n\nHow are you these days? I’m sorry for not keeping in touch so often. I have been busy lately. We are planning to arrange a Mid-Autumn Festival for a group of Vietnamese students, so I need some information about the traditional activities to celebrate it.\n\nI would also like to know the kinds of gifts children often receive and the typical types of food that are served during the festival.\n\n\nWrite a letter responding to him.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn vừa nhận được một lá thư từ David - một người bạn thân qua thư người Anh, hỏi về Tết Trung thu ở Việt Nam.\n\n\nDạo này bạn thế nào? Mình xin lỗi vì không giữ liên lạc thường xuyên. Dạo này mình khá bận rộn. Chúng mình đang lên kế hoạch tổ chức một lễ hội Trung thu cho một nhóm sinh viên Việt Nam, vì vậy mình cần một số thông tin về các hoạt động truyền thống để tổ chức lễ hội này.\n\nMình cũng muốn biết về những món quà mà trẻ em thường nhận và các loại thực phẩm đặc trưng trong lễ hội này.\n\n\nHãy viết một lá thư trả lời David.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 48,
+    "title": "Writing VSTEP - Đề 48",
+    "prompt_en": "You should spend about 20 minutes on this task. You’ve just received an email from Lisa - an English pen friend, asking about learning English skills.\n\n\nHow are you now? I’m going to take a language test in two months, and I’m now busy preparing for it. The most difficult skill for me is Listening. I find it really hard to understand what is being said.\n\nI know that you got great results in your language test last month, so please give me some advice on how to improve my listening skills. Also, I always feel nervous before exams. Will you tell me what I should do to keep calm?\n\n\nWrite an email responding to her.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn vừa nhận được một email từ Lisa - một người bạn thân qua thư người Anh, hỏi về cách học các kỹ năng tiếng Anh.\n\n\nDạo này bạn thế nào? Mình sắp tham gia một kỳ thi ngôn ngữ trong hai tháng nữa và hiện tại mình đang rất bận rộn chuẩn bị cho nó. Kỹ năng khó nhất đối với mình là kỹ năng nghe. Mình thực sự thấy khó khăn trong việc hiểu những gì người khác đang nói.\n\nMình biết bạn đã đạt kết quả tuyệt vời trong kỳ thi ngôn ngữ tháng trước, vì vậy hãy cho mình một số lời khuyên về cách cải thiện kỹ năng nghe của mình nhé. Ngoài ra, mình luôn cảm thấy lo lắng trước các kỳ thi. Bạn có thể chỉ cho mình cách giữ bình tĩnh không?\n\n\nHãy viết một email trả lời Lisa.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 49,
+    "title": "Writing VSTEP - Đề 49",
+    "prompt_en": "You should spend about 20 minutes on this task. You’ve just received an email from Andy - an English pen friend, asking for some advice.\n\n\nHi, how are you doing? I’m really enjoying my piano lessons, which I have in the evening every week. The teacher is so friendly and lovely. You know, playing the piano has always been one of my dreams since I was a child.\n\nUnfortunately, I have a lot of homework and exams to prepare for at the moment. I need a lot of time to study, but I don’t want to stop going to the piano classes. What should I do now?\n\n\nWrite an email responding to him.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn vừa nhận được một email từ Andy - một người bạn thân qua thư người Anh, hỏi xin lời khuyên.\n\n\nChào bạn, dạo này bạn thế nào? Mình thực sự thích các buổi học piano của mình, diễn ra vào mỗi buổi tối trong tuần. Giáo viên của mình rất thân thiện và đáng yêu. Bạn biết đấy, chơi piano luôn là một trong những ước mơ của mình từ khi còn nhỏ.\n\nThật không may, mình có rất nhiều bài tập về nhà và kỳ thi phải chuẩn bị vào lúc này. Mình cần nhiều thời gian để học, nhưng mình cũng không muốn ngừng tham gia các lớp piano. Mình nên làm gì bây giờ?\n\n\nHãy viết một email trả lời Andy.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 50,
+    "title": "Writing VSTEP - Đề 50",
+    "prompt_en": "You should spend about 20 minutes on this task. You’ve just received a letter from Rose - an English pen friend, asking about your new job.\n\n\nHow are you these days? I’ve just come back from a business trip. I heard that you have changed your job. I know that you found a well-paid job, so what made you decide to change?\n\nPlease tell me about your new job. What is it? Where do you work? What do you have to do every day? Are you happy with it? What are your new colleagues like?\n\n\nWrite a letter responding to her.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn vừa nhận được một lá thư từ Rose - một người bạn thân qua thư người Anh, hỏi về công việc mới của bạn.\n\n\nDạo này bạn thế nào? Mình vừa trở về từ một chuyến công tác. Mình nghe nói bạn đã thay đổi công việc. Mình biết bạn đã tìm được một công việc lương cao, vậy điều gì đã khiến bạn quyết định thay đổi?\n\nHãy kể cho mình nghe về công việc mới của bạn. Nó là công việc gì? Bạn làm việc ở đâu? Bạn phải làm những gì mỗi ngày? Bạn có hài lòng với công việc không? Đồng nghiệp mới của bạn như thế nào?\n\n\nHãy viết một lá thư trả lời Rose.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 51,
+    "title": "Writing VSTEP - Đề 51",
+    "prompt_en": "You should spend about 20 minutes on this task. You’ve just received a letter from Jim - an English pen friend, asking about your summer plans.\n\n\nHow are you? I’ve just finished school, and I am now enjoying my summer vacation. I will start my music lessons soon. Next month, I am going on holiday to Switzerland with my family. I am so excited about the trip.\n\nWhat about you? Have you finished your final exams yet? Do you have any special plans for this summer? Where are you and your family going for holiday?\n\n\nWrite a letter responding to him.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn vừa nhận được một lá thư từ Jim - một người bạn thân qua thư người Anh, hỏi về kế hoạch mùa hè của bạn.\n\n\nDạo này bạn thế nào? Mình vừa kết thúc năm học và hiện tại đang tận hưởng kỳ nghỉ hè. Mình sẽ bắt đầu các buổi học nhạc sớm. Tháng sau, mình sẽ đi du lịch đến Thụy Sĩ cùng gia đình. Mình rất háo hức với chuyến đi này.\n\nCòn bạn thì sao? Bạn đã hoàn thành kỳ thi cuối kỳ chưa? Bạn có kế hoạch đặc biệt nào cho mùa hè này không? Bạn và gia đình sẽ đi đâu để nghỉ mát?\n\n\nHãy viết một lá thư trả lời Jim.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 52,
+    "title": "Writing VSTEP - Đề 52",
+    "prompt_en": "You should spend about 20 minutes on this task. You’ve just received an email from Andy - a student, asking for some information about the camping trip.\n\n\nI have heard that you are organizing a camping trip next month. I am writing this letter to ask for some information about the total cost.\n\nAre meals included in the price? What activities can we do there? Are they good for practicing English? How is the accommodation? Where do we stay?\n\nI look forward to your response at your earliest convenience.\n\n\nWrite an email responding to him.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn vừa nhận được một email từ Andy - một học sinh, hỏi thông tin về chuyến cắm trại.\n\n\nMình nghe nói bạn đang tổ chức một chuyến cắm trại vào tháng tới. Mình viết thư này để hỏi một số thông tin về tổng chi phí của chuyến đi.\n\nChi phí đã bao gồm các bữa ăn chưa? Chúng mình có thể tham gia những hoạt động gì ở đó? Những hoạt động đó có hữu ích cho việc luyện tập tiếng Anh không? Chỗ ở như thế nào? Chúng mình sẽ ở đâu?\n\nMình mong sớm nhận được phản hồi từ bạn.\n\n\nHãy viết một email trả lời Andy.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 53,
+    "title": "Writing VSTEP - Đề 53",
+    "prompt_en": "You should spend about 20 minutes on this task. You invited an English teacher, Mrs. Jane Bone, to talk in your English club. Read part of her letter below.\n\n\nThis is the first time I’ve visited your university. In order to make good preparations, I would like some information about my audience.\n\nI could talk about ways to study vocabulary or some useful tips to speak English well. Which one would be more interesting? Could you tell me how much time I will have to talk and how to get to your university?\n\n\nWrite a letter responding to her.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn đã mời một giáo viên tiếng Anh, cô Jane Bone, đến nói chuyện tại Câu lạc bộ Tiếng Anh của bạn. Hãy đọc một phần lá thư của cô ấy dưới đây.\n\n\nĐây là lần đầu tiên tôi đến thăm trường đại học của bạn. Để có sự chuẩn bị tốt nhất, tôi muốn biết một số thông tin về khán giả của mình.\n\nTôi có thể nói về các cách học từ vựng hoặc một số mẹo hữu ích để nói tiếng Anh tốt. Chủ đề nào sẽ thú vị hơn? Bạn có thể cho tôi biết tôi sẽ có bao nhiêu thời gian để nói chuyện và làm thế nào để đến trường đại học của bạn không?\n\n\nHãy viết một lá thư trả lời cô Jane Bone.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 54,
+    "title": "Writing VSTEP - Đề 54",
+    "prompt_en": "You should spend about 20 minutes on this task. You had a party at a restaurant. You received an email from Mr. Watson, the manager of the restaurant, asking for your feedback. Read part of the letter from him below.\n\n\nThank you for choosing to hold your party in my restaurant.\n\nCan you give me some feedback about the food, the service, and the atmosphere? Is there anything you were unhappy with? Can you suggest how to improve my restaurant?\n\n\nWrite an email responding to him.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn đã tổ chức một bữa tiệc tại một nhà hàng. Bạn nhận được một email từ ông Watson, quản lý của nhà hàng, yêu cầu phản hồi về trải nghiệm của bạn. Hãy đọc một phần lá thư của ông ấy dưới đây.\n\n\nCảm ơn bạn đã chọn tổ chức bữa tiệc của mình tại nhà hàng của tôi.\n\nBạn có thể cho tôi một số phản hồi về đồ ăn, dịch vụ và không gian không? Có điều gì khiến bạn không hài lòng không? Bạn có thể đề xuất cách cải thiện nhà hàng của tôi không?\n\n\nHãy viết một email trả lời ông Watson.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 55,
+    "title": "Writing VSTEP - Đề 55",
+    "prompt_en": "You should spend about 20 minutes on this task. You’ve just received a letter from the principal, asking for some information about your request to change to a new course.\n\n\nThank you for your phone call yesterday. I was attending an education exhibition when you rang, so unfortunately, I was unable to speak to you for a long time.\n\nFrom what you said, I understand you are not satisfied with one of the courses in our department and would like to change to a different course.\n\nCan you give me information about the course you are taking now? Please explain why you are not satisfied with it. What course would you like to switch to?\n\n\nWrite a letter responding to him.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn vừa nhận được một lá thư từ hiệu trưởng, yêu cầu cung cấp thêm thông tin về đề nghị chuyển sang một khóa học mới của bạn.\n\n\nCảm ơn bạn vì cuộc gọi ngày hôm qua. Khi bạn gọi, tôi đang tham dự một triển lãm giáo dục nên tiếc là tôi không thể nói chuyện với bạn lâu.\n\nTheo những gì bạn đã nói, tôi hiểu rằng bạn không hài lòng với một trong những khóa học trong khoa của chúng tôi và muốn chuyển sang một khóa học khác.\n\nBạn có thể cung cấp cho tôi thông tin về khóa học mà bạn đang theo học hiện tại không? Hãy giải thích lý do bạn không hài lòng với nó. Bạn muốn chuyển sang khóa học nào?\n\n\nHãy viết một lá thư trả lời hiệu trưởng.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 56,
+    "title": "Writing VSTEP - Đề 56",
+    "prompt_en": "You should spend about 20 minutes on this task. You’ve received a message from an English teacher. He is going to be a guest speaker at your English Club’s monthly meeting.\n\n\nI’d be glad to give a talk to your English Club. I’m a little nervous because this will be my first time coming to your university.\n\nIn order to be well-prepared, I’d like some information about my audience. I am thinking of talking about effective ways to study vocabulary or useful tips to speak English well. Which topic would be more interesting, and how much time can I have for my talk?\n\nCould you also tell me how to get to your university from the city center?\n\n\nWrite an email responding to him.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn đã nhận được một tin nhắn từ một giáo viên tiếng Anh. Ông ấy sẽ là diễn giả khách mời trong buổi họp hàng tháng của Câu lạc bộ Tiếng Anh của bạn.\n\n\nTôi rất vui khi có cơ hội nói chuyện với Câu lạc bộ Tiếng Anh của các bạn. Tôi hơi lo lắng một chút vì đây sẽ là lần đầu tiên tôi đến trường đại học của bạn.\n\nĐể có sự chuẩn bị tốt nhất, tôi muốn biết một số thông tin về khán giả của mình. Tôi đang cân nhắc nói về các cách học từ vựng hiệu quả hoặc những mẹo hữu ích để nói tiếng Anh tốt. Chủ đề nào sẽ thú vị hơn, và tôi có thể nói chuyện trong bao lâu?\n\nBạn cũng có thể cho tôi biết cách đến trường đại học của bạn từ trung tâm thành phố không?\n\n\nHãy viết một email trả lời giáo viên.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 57,
+    "title": "Writing VSTEP - Đề 57",
+    "prompt_en": "You should spend about 40 minutes on this task. Read the following text about computers.\n\n\nComputers are becoming more and more popular in recent years. Some people believe that computers are more harmful than beneficial.\n\n\nWrite an essay to an educated reader discussing whether computers are more harmful than beneficial.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nĐọc đoạn văn sau về máy tính.\n\n\nMáy tính đang ngày càng trở nên phổ biến trong những năm gần đây. Một số người tin rằng máy tính gây hại nhiều hơn là mang lại lợi ích.\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, thảo luận về việc liệu máy tính có gây hại nhiều hơn lợi ích hay không.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 58,
+    "title": "Writing VSTEP - Đề 58",
+    "prompt_en": "You should spend about 40 minutes on this task. Read the following text about pressures.\n\n\nSome people feel that young people face more pressures today than the equivalent age groups did in previous generations. Others think that they have a much easier life than their parents did.\n\n\nWrite an essay to an educated reader explaining which point of view you agree with.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nĐọc đoạn văn sau về áp lực cuộc sống.\n\n\nMột số người cho rằng giới trẻ ngày nay phải đối mặt với nhiều áp lực hơn so với những người cùng độ tuổi ở các thế hệ trước. Những người khác lại nghĩ rằng cuộc sống của họ dễ dàng hơn nhiều so với cha mẹ họ.\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, giải thích quan điểm mà bạn đồng ý.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 59,
+    "title": "Writing VSTEP - Đề 59",
+    "prompt_en": "You should spend about 40 minutes on this task. Read the following text about academic study and vocational training.\n\n\nMany people go to university for academic study. More people should be encouraged to do vocational training because there is a lack of qualified workers such as electricians and plumbers.\n\n\nWrite an essay to an educated reader explaining which point of view you agree with.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nĐọc đoạn văn sau về học vấn và đào tạo nghề.\n\n\nNhiều người theo học đại học để nghiên cứu học thuật. Tuy nhiên, cần khuyến khích nhiều người hơn theo học đào tạo nghề vì hiện nay đang thiếu hụt những lao động có tay nghề cao như thợ điện và thợ sửa ống nước.\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, giải thích quan điểm mà bạn đồng ý.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 60,
+    "title": "Writing VSTEP - Đề 60",
+    "prompt_en": "You should spend about 40 minutes on this task. Write about the following topic.\n\n\nThe subjects that children are taught in schools are decided by central authorities. Some people say that teachers, not politicians, should be responsible for this task. To what extent do you agree or disagree with this opinion?\n\n\nWrite an essay to an educated reader explaining your point of view.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nViết về chủ đề sau.\n\n\nCác môn học mà trẻ em được dạy trong trường học do các cơ quan trung ương quyết định. Một số người cho rằng giáo viên, chứ không phải các chính trị gia, nên chịu trách nhiệm cho nhiệm vụ này. Bạn đồng ý hay không đồng ý với quan điểm này ở mức độ nào?\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, giải thích quan điểm của bạn.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 61,
+    "title": "Writing VSTEP - Đề 61",
+    "prompt_en": "You should spend about 40 minutes on this task. Write about the following topic.\n\n\nSome people prefer to prepare and eat at home. Others think that it is better to eat in restaurants.\n\n\nWrite an essay to an educated reader explaining which point of view you agree with.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nViết về chủ đề sau.\n\n\nMột số người thích tự chuẩn bị và ăn uống tại nhà. Những người khác lại cho rằng ăn ở nhà hàng là lựa chọn tốt hơn.\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, giải thích quan điểm mà bạn đồng ý.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 62,
+    "title": "Writing VSTEP - Đề 62",
+    "prompt_en": "You should spend about 40 minutes on this task. Read the following text about transportation.\n\n\nBuses are more convenient and faster than private cars. Do you agree or disagree?\n\n\nWrite an essay to an educated reader discussing your opinion.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nĐọc đoạn văn sau về phương tiện giao thông.\n\n\nXe buýt tiện lợi và nhanh hơn so với ô tô cá nhân. Bạn đồng ý hay không đồng ý?\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, thảo luận về quan điểm của bạn.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 63,
+    "title": "Writing VSTEP - Đề 63",
+    "prompt_en": "You should spend about 40 minutes on this task. Read the following text about art and culture.\n\n\nArt is regarded as an important part of the culture of every country in the world. While some people think that art continues to inspire, more and more children seem to have less interest in art. Do you agree or disagree?\n\n\nWrite an essay to an educated reader discussing your opinion.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nĐọc đoạn văn sau về nghệ thuật và văn hóa.\n\n\nNghệ thuật được coi là một phần quan trọng trong nền văn hóa của mỗi quốc gia trên thế giới. Trong khi một số người nghĩ rằng nghệ thuật tiếp tục truyền cảm hứng, ngày càng có nhiều trẻ em dường như ít quan tâm đến nghệ thuật hơn. Bạn đồng ý hay không đồng ý?\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, thảo luận về quan điểm của bạn.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 64,
+    "title": "Writing VSTEP - Đề 64",
+    "prompt_en": "You should spend about 40 minutes on this task. Read the following text about learning art.\n\n\nSome people think that learning art is a waste of time. They argue that children should focus on learning math and languages. Do you agree or disagree?\n\n\nWrite an essay to an educated reader discussing your opinion.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nĐọc đoạn văn sau về việc học nghệ thuật.\n\n\nMột số người cho rằng học nghệ thuật là lãng phí thời gian. Họ lập luận rằng trẻ em nên tập trung vào việc học toán và ngôn ngữ. Bạn đồng ý hay không đồng ý?\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, thảo luận về quan điểm của bạn.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 66,
+    "title": "Writing VSTEP - Đề 66",
+    "prompt_en": "You should spend about 40 minutes on this task. Write about the following topic.\n\n\nSome people believe that once a person is past 65 years of age, it is too late to learn, while others think that learning something new is beneficial for older people and that it is never too late to learn.\n\n\nWrite an essay to an educated reader explaining which point of view you agree with.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nViết về chủ đề sau.\n\n\nMột số người tin rằng khi một người qua tuổi 65, việc học hỏi điều mới trở nên quá muộn, trong khi những người khác cho rằng việc học những điều mới có lợi cho người lớn tuổi và không bao giờ là quá muộn để học.\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, giải thích quan điểm mà bạn đồng ý.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 67,
+    "title": "Writing VSTEP - Đề 67",
+    "prompt_en": "You should spend about 40 minutes on this task. Write about the following topic.\n\n\nIn the 21st century, more and more females are career women. They spend more time at work than at home. Most of them earn enough to have a housemaid and to eat out.\n\nSome people believe that children, especially girls, do not need to learn how to cook or do household chores.\n\n\nWrite an essay to an educated reader discussing your opinion.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nViết về chủ đề sau.\n\n\nTrong thế kỷ 21, ngày càng có nhiều phụ nữ theo đuổi sự nghiệp. Họ dành nhiều thời gian cho công việc hơn là ở nhà. Hầu hết họ kiếm đủ tiền để thuê người giúp việc và ăn ngoài.\n\nMột số người tin rằng trẻ em, đặc biệt là con gái, không cần phải học nấu ăn hoặc làm việc nhà.\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, thảo luận về quan điểm của bạn.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 68,
+    "title": "Writing VSTEP - Đề 68",
+    "prompt_en": "You should spend about 40 minutes on this task. Read the following text about the problem of overweight children.\n\n\nThe number of children who are considered overweight is increasing. This is a negative consequence of modern life habits such as eating fast food or playing video games. Therefore, some people think increasing the time spent on physical education at school is the best way to deal with the problem of overweight children.\n\n\nWrite an essay to an educated reader discussing whether you agree or disagree with the statement and give your own opinion. Include specific reasons and any relevant examples to support your answer.\n\nGive reasons and relevant examples from your knowledge or experience. You should write at least 250 words. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 40 phút cho nhiệm vụ này.\n\nĐọc đoạn văn sau về vấn đề trẻ em thừa cân.\n\n\nSố lượng trẻ em được coi là thừa cân đang gia tăng. Đây là một hệ quả tiêu cực của thói quen sống hiện đại như ăn thức ăn nhanh hoặc chơi trò chơi điện tử. Do đó, một số người cho rằng tăng thời gian dành cho giáo dục thể chất tại trường là cách tốt nhất để giải quyết vấn đề trẻ em thừa cân.\n\n\nHãy viết một bài luận cho đối tượng có trình độ học vấn cao, thảo luận về việc bạn có đồng ý hay không với nhận định trên và đưa ra ý kiến của riêng bạn. Hãy bao gồm các lý do cụ thể và ví dụ liên quan để hỗ trợ quan điểm của bạn.\n\nĐưa ra lý do và các ví dụ liên quan từ kiến thức hoặc kinh nghiệm của bạn. Bạn nên viết ít nhất 250 từ. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 69,
+    "title": "Writing VSTEP - Đề 69",
+    "prompt_en": "You should spend about 20 minutes on this task. You have received a letter from your English-speaking friend, John, who is planning to come to your country for a one-week holiday. Read a part of his letter below.\n\n\nHi! How are you doing? I've got one week free this summer and I'd really like to spend my time touring around your country.\n\nHow can I get to your house from the airport? Another thing, I will also need somewhere to stay - but not too expensive, of course. Everyone says that food in your country is the best, so if you have the time, would you take me on a street food tour or travel around with me? It would be great if you could.\n\n\nWrite a letter responding to him.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn đã nhận được một lá thư từ John, một người bạn nói tiếng Anh, người đang có kế hoạch đến đất nước của bạn để du lịch trong một tuần. Hãy đọc một phần lá thư của anh ấy dưới đây.\n\n\nChào bạn! Dạo này bạn thế nào? Mình có một tuần rảnh vào mùa hè này và thực sự muốn dành thời gian để đi du lịch vòng quanh đất nước của bạn.\n\nMình có thể đi từ sân bay đến nhà bạn bằng cách nào? Ngoài ra, mình cũng cần một chỗ ở - nhưng không quá đắt, tất nhiên rồi. Mọi người đều nói rằng ẩm thực ở nước bạn là tuyệt vời nhất, vậy nếu bạn có thời gian, bạn có thể dẫn mình đi ăn các món ăn đường phố hoặc đi du lịch cùng mình không? Sẽ thật tuyệt nếu bạn có thể.\n\n\nHãy viết một lá thư trả lời John.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 70,
+    "title": "Writing VSTEP - Đề 70",
+    "prompt_en": "You should spend about 20 minutes on this task. You have just received a letter from your English pen-friend Jimmy, who is going to take a short training course in your country. Read part of his letter below.\n\n\nHi Rose! How are you? I hope everything is going well.\n\nI am going to take a short training course in your country next month. I'd like to spend my time visiting you and your family, so what is the best way to travel from the airport to your house? I need somewhere to stay while I am there. Is there any cheap hotel near your house? As you know, my father is a coffee addict. Can you show me where I can buy some nice Vietnamese coffee for him?\n\n\nWrite a letter responding to Jimmy.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn vừa nhận được một lá thư từ Jimmy, một người bạn thân qua thư người Anh, người sẽ tham gia một khóa đào tạo ngắn hạn tại đất nước của bạn. Hãy đọc một phần lá thư của anh ấy dưới đây.\n\n\nChào Rose! Bạn thế nào rồi? Mình hy vọng mọi thứ đều ổn.\n\nMình sắp tham gia một khóa đào tạo ngắn hạn tại đất nước của bạn vào tháng tới. Mình muốn dành thời gian để thăm bạn và gia đình bạn, vậy cách tốt nhất để đi từ sân bay đến nhà bạn là gì? Mình cũng cần một chỗ ở trong thời gian ở đó. Có khách sạn nào giá rẻ gần nhà bạn không? Như bạn biết, bố mình là một người nghiện cà phê. Bạn có thể chỉ cho mình nơi nào có cà phê Việt Nam ngon để mua cho ông ấy không?\n\n\nHãy viết một lá thư trả lời Jimmy.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 71,
+    "title": "Writing VSTEP - Đề 71",
+    "prompt_en": "You should spend about 20 minutes on this task. You received an email from Mr. Bernard Dener.\n\n\nI am organizing a trip for my students to visit your exhibition. I am writing to ask for details regarding the exact dates of the exhibition and daily opening hours.\n\nI would also like to know the topic of the exhibition and the benefits students can get. As I mentioned, I am planning this tour for groups of students. I wonder if there are any discounts available.\n\n\nWrite a letter responding to him.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn đã nhận được một email từ ông Bernard Dener.\n\n\nTôi đang tổ chức một chuyến đi cho các học sinh của tôi để tham quan triển lãm của bạn. Tôi viết thư này để hỏi về các thông tin chi tiết liên quan đến ngày tổ chức triển lãm và giờ mở cửa hàng ngày.\n\nTôi cũng muốn biết chủ đề của triển lãm và những lợi ích mà học sinh có thể nhận được. Như tôi đã đề cập, tôi đang lên kế hoạch cho chuyến tham quan này dành cho nhóm học sinh. Tôi muốn biết liệu có bất kỳ ưu đãi giảm giá nào không.\n\n\nHãy viết một lá thư trả lời ông Bernard Dener.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 72,
+    "title": "Writing VSTEP - Đề 72",
+    "prompt_en": "You should spend about 20 minutes on this task. You have invited an American businessman, Mr. Noah Watson, to give a talk at your English club's monthly meeting. Read part of the letter from him below.\n\n\nI would be glad to come and give a talk to your English club. In order to make good preparations, I would like some information about my audience.\n\nI could talk about either my experience when starting up my company or some general rules for doing business. Which one would be more interesting? Also, I am staying in a hotel in the city center. Could you tell me where the meeting is and how to get there?\n\nI look forward to meeting you soon.\n\n\nWrite a letter responding to him.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn đã mời một doanh nhân người Mỹ, ông Noah Watson, đến phát biểu tại buổi họp hàng tháng của Câu lạc bộ Tiếng Anh của bạn. Hãy đọc một phần lá thư của ông ấy dưới đây.\n\n\nTôi rất vui khi có cơ hội đến và phát biểu tại Câu lạc bộ Tiếng Anh của bạn. Để có sự chuẩn bị tốt nhất, tôi muốn biết một số thông tin về khán giả của mình.\n\nTôi có thể nói về trải nghiệm khởi nghiệp của mình hoặc một số quy tắc chung trong kinh doanh. Chủ đề nào sẽ thú vị hơn? Ngoài ra, tôi đang ở một khách sạn trong trung tâm thành phố. Bạn có thể cho tôi biết địa điểm tổ chức buổi họp và cách đến đó không?\n\nTôi mong sớm được gặp bạn.\n\n\nHãy viết một lá thư trả lời ông Noah Watson.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 73,
+    "title": "Writing VSTEP - Đề 73",
+    "prompt_en": "You should spend about 20 minutes on this task. You have just received a letter from your English friend, Linda, asking you about the festival in your country. Read a part of Linda’s letter below.\n\n\nI'm studying different cultural festivals from around the world for my presentation next month.\n\nCan you tell me about the most popular festival in your country? When does it start and end? Why is it important in your country? What do people in your country often do during the festival? If one day I could come and see the festival in your country, would you join me?\n\n\nWrite an email responding to Linda.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn vừa nhận được một lá thư từ người bạn người Anh, Linda, hỏi về một lễ hội tại đất nước của bạn. Hãy đọc một phần lá thư của Linda dưới đây.\n\n\nMình đang nghiên cứu về các lễ hội văn hóa khác nhau trên thế giới để chuẩn bị cho bài thuyết trình của mình vào tháng tới.\n\nBạn có thể kể cho mình nghe về lễ hội phổ biến nhất ở đất nước bạn không? Nó bắt đầu và kết thúc khi nào? Tại sao nó lại quan trọng ở đất nước bạn? Người dân thường làm gì trong lễ hội này? Nếu một ngày nào đó mình có cơ hội đến và tham gia lễ hội ở nước bạn, bạn có tham gia cùng mình không?\n\n\nHãy viết một email trả lời Linda.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
+  },
+  {
+    "id": 74,
+    "title": "Writing VSTEP - Đề 74",
+    "prompt_en": "You should spend about 20 minutes on this task. You have just received an email from your English pen-friend, Peter, accepting your invitation to come and stay with you for the New Year celebration. Read part of his letter below.\n\n\nThanks very much for the invitation to stay with you and your family for a few days during Christmas - of course, I'd love to come!\n\nI've already booked my flights, and I will be arriving at 2:30 pm on the 22nd of December. As you know, I've never been abroad during the Christmas holidays, so I have no idea what to do.\n\nWhat's the weather like there at that time of year? What kinds of clothes should I bring? Anyway, what kinds of gifts are good for a first-time meeting with your family?\n\n\nWrite an email responding to him.\n\nYou should write at least 120 words. Do not include your name. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.",
+    "prompt_vi": "Bạn nên dành khoảng 20 phút cho nhiệm vụ này.\n\nBạn vừa nhận được một email từ Peter, một người bạn thân qua thư người Anh, xác nhận lời mời của bạn đến chơi và đón năm mới cùng gia đình bạn. Hãy đọc một phần lá thư của anh ấy dưới đây.\n\n\nCảm ơn bạn rất nhiều vì đã mời mình đến ở cùng bạn và gia đình trong vài ngày vào dịp Giáng sinh - tất nhiên là mình rất muốn đến!\n\nMình đã đặt vé máy bay rồi, và mình sẽ đến vào lúc 2:30 chiều ngày 22 tháng 12. Như bạn biết đấy, mình chưa bao giờ ra nước ngoài vào dịp Giáng sinh, vì vậy mình không biết nên làm gì.\n\nThời tiết vào thời điểm đó ở chỗ bạn như thế nào? Mình nên mang theo những loại quần áo gì? À, nhân tiện, mình nên mang theo món quà nào để tặng gia đình bạn trong lần gặp đầu tiên?\n\n\nHãy viết một email trả lời Peter.\n\nBạn nên viết ít nhất 120 từ. Không bao gồm tên của bạn. Bài viết của bạn sẽ được đánh giá dựa trên các tiêu chí Mức độ hoàn thành, Tổ chức bài viết, Từ vựng và Ngữ pháp.",
+    "meta": {
+      "min_words": 120,
+      "task": "Write a letter to respond to Brianna.",
+      "criteria": [
+        "Task Fulfillment",
+        "Organization",
+        "Vocabulary",
+        "Grammar"
+      ]
+    }
   }
 ]
