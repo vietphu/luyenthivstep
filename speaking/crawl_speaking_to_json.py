@@ -86,7 +86,10 @@ async def extract_speaking(page, idx):
 async def crawl_speaking():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
-        page = await browser.new_page()
+        # Set user-agent giống Chrome thật
+        user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+        context = await browser.new_context(user_agent=user_agent)
+        page = await context.new_page()
         # Đăng nhập
         await page.goto("https://luyenthivstep.vn/user/login")
         await page.fill('input[name="user_name"]', USERNAME)
@@ -94,11 +97,32 @@ async def crawl_speaking():
         await page.click('button[type="submit"]')
         await page.wait_for_load_state('networkidle')
 
+        import random
         results = []
-        for i in range(1, 8):
-            print(f"Đang crawl đề speaking số {i}")
-            data = await extract_speaking(page, i)
-            results.append(data)
+        for i in range(1, 75):
+            url = f"https://luyenthivstep.vn/practice/speaking/{i}"
+            print(f"Đang crawl đề speaking số {i}: {url}")
+            # Thêm delay ngẫu nhiên giữa các lần crawl
+            await asyncio.sleep(random.uniform(2, 5))
+            try:
+                await page.goto(url)
+                await page.wait_for_load_state('networkidle')
+                # Di chuyển chuột ngẫu nhiên trên trang để giả lập hành vi người dùng
+                width = page.viewport_size['width'] if page.viewport_size else 1200
+                height = page.viewport_size['height'] if page.viewport_size else 800
+                for _ in range(random.randint(1, 3)):
+                    x = random.randint(0, width-1)
+                    y = random.randint(0, height-1)
+                    await page.mouse.move(x, y)
+            except Exception as e:
+                print(f"[SKIP] Đề speaking {i} - Lỗi truy cập trang {url}: {e}")
+                continue
+            try:
+                data = await extract_speaking(page, i)
+                results.append(data)
+            except Exception as e:
+                print(f"[SKIP] Đề speaking {i} - Lỗi extract dữ liệu: {e}")
+                continue
 
         # Lưu ra file JSON
         out_path = os.path.join(OUTPUT_DIR, "speaking_prompts.json")
