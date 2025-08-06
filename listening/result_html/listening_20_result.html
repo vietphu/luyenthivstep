@@ -1,0 +1,588 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 20 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87717				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/12				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp2-1664818023_795a3350a70bbea6b84e.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>In this part, you will hear three conversations. The conversations will be played once only. There are four questions for each conversation.<br>
+For each question, choose the right answer A, B, C, or D. Part 2, questions 9 to 12. First, you will have some time to look at questions 9 to 12. Now we're ready to start.<br>
+Listen and answer questions 9 to 12. You will hear the recording once only. <br>
+Hi, Maric.<br>
+Are you looking forward to your holidays? Oh, Tanya, I can't wait. Where is it you're going? Is it camping on an island somewhere? Or am I thinking of someone else? Well, we were going camping. But my dad's just bought a camper van, so we're going in that instead.<br>
+It means you can go to other countries without having to get a flight, which is good in a way. But actually, I always used to enjoy sleeping in a tent. Yeah, I know what you mean.<br>
+But it must be nice getting to see all the scenery along the way. I have to say the flight is my least favourite part of going abroad on holiday. Oh, I never mind it actually.<br>
+And the airport can be quite fun sometimes. You must be joking. All those people and nothing to do except look round expensive shops.<br>
+I mean, you always end up buying something you don't really want just because there's nothing else to do. Oh, I don't. Anyway, where are you off to this year? Florida again? Well, I'm getting a bit old for Disneyland, Maric.<br>
+Though my little brother would still like it. We're actually going somewhere new. It's like a sports camp where you stay with lots of other kids and learn how to do different activities.<br>
+You mean you're going without your parents? Not exactly. I mean, they're there too doing whatever they want. Golf in my dad's case.<br>
+But you only actually see them at mealtimes. Oh, sounds cool. But will you have to look after your little brother? No way.<br>
+They divide you up according to age. He'll be doing football and swimming and all that whereas I get to go water skiing. Wow.<br>
+Doesn't that cost a fortune? Well, quite a bit. So I'm just doing it on one of the days. But there's windsurfing and water polo too.<br>
+Hmm, I see. Now you will have some time to review questions 9 to 12. Part 2. Questions 13 to 16.<br>
+First you will have some time to look at questions 13 to 16. Now we're ready to start. Listen and answer questions 13 to 16.<br>
+You will hear the recording once only. I have with me in the studio today Geoffrey Osland who is the director of an environmental centre in Mid Wales. Geoffrey, welcome.<br>
+Thank you. Geoffrey, what exactly is an environmental centre? Good question. Well, I suppose you could say that basically we're interested in protecting the environment and that means looking at alternative technologies to provide energy for the future.<br>
+I'm still not sure I understand. What does the centre do? It does a whole range of things. We opened 25 years ago but in the last 10 years we've considerably expanded our activities and now we have lots of working displays.<br>
+These displays are built on the site which we occupy in the heart of the countryside and include ways to use the sun and wind for power as well as low energy buildings and different kinds of farming. We're open to the public all year round and last year we had over 80,000 visitors. Everyone is welcome.<br>
+We get casual visitors, tourists, environmental specialists and lots of school children, especially primary school children who are doing a project on some aspect of the environment We also run courses for secondary schools, universities and overseas students and these courses are residential, obviously because people come and stay for short periods of time. Most of the courses last three days although in the summer we run week-long courses. Goodness, I didn't realise it was such a big operation.<br>
+Oh yes. Altogether we have accommodation for about 70 people. When I say accommodation I don't mean a luxury hotel.<br>
+What we have are wooden cabins which contain between two and five beds and are very simply furnished although we do have a few single rooms available. There are common rooms for relaxation with facilities for making drinks. We also grow all our own food and meals are served in the centre restaurant.<br>
+As you might expect we only serve vegetarian food no meat whatsoever. We don't allow people to bring meat in with them either but we have an excellent chef who prepares really imaginative vegetarian food and I've yet to hear anyone complain. The atmosphere is very relaxed and informal but we do forbid people to smoke in the buildings.<br>
+Now you will have some time to review questions 13 to 16. Part 2, questions 17 to 20. First you will have some time to look at questions 17 to 20.<br>
+Now we're ready to start. Listen and answer questions 17 to 20. You will hear the recording once only.<br>
+Hello, Jonathan Briggs isn't it? Yes that's right. Do come in and sit down. Thanks.<br>
+Right, well Jonathan as we explained in your letter in this part of the interview we like to talk through your application form your experience to date etc. And then in the second part you go for a group interview. Group interview, yes I understand.<br>
+So your first degree was in economics. Yes, but I also did politics as a major strand. And you graduated in 1989 and I see you've been doing some teaching.<br>
+Yes, I worked as a volunteer teacher in West Africa. I was there for almost three years in total from 1990 to 1992. How interesting.<br>
+What organisation was that with? It's not one of the major ones. It's called Teach South. Oh right.<br>
+Yes, I have heard of it. It operates in several African countries, doesn't it? And what kind of school was it? A rural cooperative. Oh, a rural cooperative.<br>
+How interesting. And what did you teach? A variety of things in different years. I did with Forms 1 to 3 mainly geography and some English with Form 5. Then in my final year I took on some agricultural science with the top year.<br>
+That's Form 6. Right, quite a variety then. I also ran the school farm. How interesting.<br>
+And how did you find the whole experience? I'll be honest with you. At the end of the first year I really wanted to leave and come home. Oh, why was that? Well, I was very homesick at first and missed my family.<br>
+Oh yes, I can understand that. And I also found it frustrating to have so few teaching resources. Now you will have some time to review questions 17 to 20.<br>
+That is the end of Part 2.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Part 2 Trong phần này, bạn sẽ nghe ba cuộc hội thoại. Các cuộc hội thoại sẽ chỉ được phát một lần duy nhất. Mỗi cuộc hội thoại có bốn câu hỏi đi kèm. Với mỗi câu hỏi, hãy chọn đáp án đúng A, B, C hoặc D. Questions 9 to 12 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 9 đến 12. Bây giờ chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 9 đến 12. Bạn sẽ chỉ nghe đoạn ghi âm một lần. Hi, Maric. Cậu có mong chờ kỳ nghỉ của mình không? Oh, Tanya, mình không thể đợi được nữa! Cậu đi đâu nhỉ? Đi cắm trại trên một hòn đảo nào đó phải không? Hay mình nhầm với ai khác? Thật ra, ban đầu gia đình mình định đi cắm trại. Nhưng bố mình vừa mua một chiếc xe cắm trại, nên chúng mình sẽ đi bằng nó thay vì đi máy bay. Nghe cũng hay đó, nhưng mình thích ngủ trong lều hơn. Ừ, mình hiểu cảm giác đó. Nhưng ít ra cậu cũng có thể ngắm cảnh dọc đường đi. Mình thì không bận tâm đến chuyện đi máy bay đâu. Và đôi khi sân bay cũng khá vui mà. Cậu đùa à? Bao nhiêu người chen chúc, chẳng có gì để làm ngoài việc đi loanh quanh các cửa hàng đắt đỏ. Mình đâu có mua gì bừa bãi. Thế năm nay cậu đi đâu? Florida nữa à? Mình nghĩ mình không còn nhỏ để đi Disneyland nữa, nhưng em trai mình thì vẫn thích. Vậy bọn mình sẽ đến một trại thể thao, nơi có rất nhiều trẻ em khác và mình có thể học các môn thể thao mới. Cậu đi mà không có bố mẹ sao? Không hẳn. Bố mẹ mình cũng đi, nhưng họ sẽ làm những gì họ thích, như chơi golf chẳng hạn. Nhưng mình sẽ chỉ gặp họ vào bữa ăn thôi. Nghe có vẻ thú vị đấy. Nhưng cậu có phải trông em trai không? Không đâu, họ chia nhóm theo độ tuổi. Em trai mình sẽ chơi bóng đá, bơi lội, còn mình thì học trượt nước. Wow! Chắc đắt lắm nhỉ? Cũng kha khá. Mình chỉ đăng ký một ngày thôi. Nhưng còn có lướt ván buồm và bóng nước nữa. Ừ, mình hiểu rồi. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 9 đến 12. Questions 13 to 16 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 13 đến 16. Bây giờ chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 13 đến 16. Bạn sẽ chỉ nghe đoạn ghi âm một lần. Hôm nay, tôi có mặt tại phòng thu cùng với Geoffrey Osland, giám đốc một trung tâm môi trường ở Mid Wales. Geoffrey, chào mừng anh. Cảm ơn. Geoffrey, trung tâm môi trường là gì? Đó là một câu hỏi hay. Về cơ bản, chúng tôi tập trung vào bảo vệ môi trường, nghĩa là nghiên cứu các công nghệ thay thế để cung cấp năng lượng cho tương lai. Vậy trung tâm của anh làm gì? Chúng tôi có rất nhiều hoạt động. Trung tâm mở cửa 25 năm trước nhưng đã mở rộng đáng kể trong 10 năm qua. Chúng tôi có các mô hình trưng bày hoạt động về cách sử dụng năng lượng mặt trời, gió, cũng như các công trình tiêu thụ năng lượng thấp và các phương thức canh tác khác nhau. Trung tâm mở cửa quanh năm và đón hơn 80.000 khách mỗi năm. Chúng tôi đón nhiều nhóm khách khác nhau, từ khách du lịch, chuyên gia môi trường cho đến học sinh tiểu học và sinh viên đại học. Chúng tôi còn tổ chức các khóa học lưu trú kéo dài 3 ngày cho học sinh trung học, sinh viên và cả du học sinh. Vào mùa hè, chúng tôi có khóa học kéo dài một tuần. Nghe quy mô khá lớn nhỉ? Đúng vậy. Chúng tôi có thể chứa khoảng 70 người. Tất nhiên, chỗ ở không phải là khách sạn sang trọng, mà là các cabin gỗ đơn giản, có từ 2 đến 5 giường, một số phòng đơn cũng có sẵn. Chúng tôi có phòng sinh hoạt chung và khu vực tự phục vụ đồ uống. Thực phẩm đều do chúng tôi tự trồng và phục vụ tại nhà hàng trong trung tâm. Chúng tôi chỉ phục vụ đồ chay, không có thịt, và cũng không cho phép mang thịt vào. Đầu bếp của chúng tôi rất giỏi, chưa từng có ai phàn nàn về đồ ăn cả. Chúng tôi cũng nghiêm cấm hút thuốc trong các tòa nhà. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 13 đến 16. Questions 17 to 20 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 17 đến 20. Bây giờ chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 17 đến 20. Bạn sẽ chỉ nghe đoạn ghi âm một lần. Xin chào, anh có phải là Jonathan Briggs không? Vâng, đúng rồi. Mời anh vào và ngồi xuống. Cảm ơn. Jonathan, như đã đề cập trong thư mời, trong phần đầu của buổi phỏng vấn, chúng tôi muốn nói về hồ sơ ứng tuyển của anh, kinh nghiệm làm việc, v.v. Sau đó, anh sẽ tham gia vào một buổi phỏng vấn nhóm. Tôi hiểu. Anh tốt nghiệp ngành kinh tế đúng không? Vâng, nhưng tôi cũng học chính trị như một chuyên ngành phụ. Anh tốt nghiệp năm 1989 và có kinh nghiệm giảng dạy? Vâng, tôi từng là giáo viên tình nguyện tại Tây Phi. Tôi ở đó gần ba năm, từ 1990 đến 1992. Nghe thú vị đấy. Anh làm việc với tổ chức nào vậy? Không phải tổ chức lớn. Đó là Teach South. À, tôi có nghe về tổ chức đó. Nó hoạt động ở nhiều nước châu Phi đúng không? Đúng vậy. Anh dạy những môn gì? Tôi dạy nhiều môn. Chủ yếu tôi dạy địa lý cho khối lớp 1 đến 3, và tiếng Anh cho lớp 5. Năm cuối, tôi dạy thêm môn khoa học nông nghiệp cho lớp 6. Ngoài ra, tôi còn quản lý trang trại của trường. Nghe hấp dẫn đấy. Anh cảm thấy thế nào về trải nghiệm này? Thành thật mà nói, cuối năm đầu tiên, tôi thực sự muốn về nước. Tại sao vậy? Tôi nhớ nhà và gia đình rất nhiều. Tôi hiểu mà. Hơn nữa, tôi cũng thấy nản lòng khi thiếu thốn tài liệu giảng dạy. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 17 đến 20.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Where did Marek enjoy sleeping in?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. In a tent</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. In a camper van															</div>
+																				<div class="ps-4 mb-2">
+																	C. In a train															</div>
+																				<div class="ps-4 mb-2">
+																	D. In a flight															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>In a tent</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Marek nói về chỗ ngủ mà anh ấy thích:</p>   <p>"Well, we were going camping. But my dad's just bought a camper van, so we're going in that instead. It means you can go to other countries without having to get a flight, which is good in a way. <strong>But actually, I always used to enjoy sleeping in a tent.</strong>"</p>    <p>"Thực ra, chúng tôi định đi cắm trại. Nhưng bố tôi vừa mua một chiếc xe cắm trại, nên chúng tôi sẽ dùng nó thay thế. Điều đó có nghĩa là chúng tôi có thể đi đến các nước khác mà không cần phải đi máy bay, điều đó cũng tốt theo một cách nào đó. <strong>Nhưng thực sự, tôi luôn thích ngủ trong lều.</strong>"</p>    <p>Bài nghe xác nhận rằng <strong>Marek thích ngủ trong lều</strong>. Do đó, đáp án chính xác là <strong>In a tent.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">In a camper van</span> ❌ (Trong xe cắm trại.) - Sai, vì Marek nói rằng họ sẽ đi bằng xe cắm trại, nhưng anh ấy thực sự thích ngủ trong lều.</li>       <li><span class="text-danger">In a flight</span> ❌ (Trên chuyến bay.) - Sai, vì bài nghe không đề cập đến việc ngủ trên máy bay.</li>       <li><span class="text-success"><strong>In a tent</strong></span> ✅ (Trong lều.) - Đúng, vì bài nghe xác nhận rằng Marek thích ngủ trong lều.</li>       <li><span class="text-danger">In a train</span> ❌ (Trên tàu hỏa.) - Sai, vì bài nghe không nhắc đến tàu hỏa.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: What does Tanya always do at the airport?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Seeing people															</div>
+																				<div class="ps-4 mb-2">
+																	B. Walking around															</div>
+																				<div class="ps-4 mb-2">
+																	C. Talking with people															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Buying unnecessary things</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Buying unnecessary things</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Tanya nói về trải nghiệm của cô ấy tại sân bay:</p>   <p>"You must be joking. All those people and nothing to do except look round expensive shops. <strong>I mean, you always end up buying something you don't really want just because there's nothing else to do.</strong>"</p>    <p>"Cậu đang đùa à? Bao nhiêu người đó và chẳng có gì để làm ngoài việc đi loanh quanh các cửa hàng đắt đỏ. <strong>Ý tớ là, cậu luôn kết thúc bằng việc mua thứ gì đó mà mình thực sự không cần, chỉ vì chẳng còn gì khác để làm.</strong>"</p>    <p>Bài nghe xác nhận rằng <strong>Tanya luôn mua những thứ không cần thiết ở sân bay</strong>. Do đó, đáp án chính xác là <strong>Buying unnecessary things.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">Seeing people</span> ❌ (Nhìn ngắm mọi người.) - Sai, vì bài nghe không đề cập đến việc quan sát người khác.</li>       <li><span class="text-danger">Talking with people</span> ❌ (Nói chuyện với mọi người.) - Sai, vì bài nghe không nhắc đến việc Tanya nói chuyện với ai.</li>       <li><span class="text-danger">Walking around</span> ❌ (Đi loanh quanh.) - Sai, vì bài nghe tập trung vào việc mua sắm hơn là chỉ đi dạo.</li>       <li><span class="text-success"><strong>Buying unnecessary things</strong></span> ✅ (Mua những thứ không cần thiết.) - Đúng, vì bài nghe xác nhận rằng Tanya luôn mua đồ không thực sự cần.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: Where will Tanya's family go for the holiday?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Disneyland															</div>
+																				<div class="ps-4 mb-2">
+																	B. The Kids World															</div>
+																				<div class="ps-4 mb-2">
+																	C. Flodia															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. A sports camp</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>A sports camp</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Tanya nói về địa điểm mà gia đình cô ấy sẽ đi nghỉ:</p>   <p>"Anyway, where are you off to this year? Florida again?"</p>   <p>"Well, I'm getting a bit old for Disneyland, Maric. Though my little brother would still like it. <strong>We're actually going somewhere new. It's like a sports camp where you stay with lots of other kids and learn how to do different activities.</strong>"</p>    <p>"Dù sao thì năm nay cậu sẽ đi đâu? Lại đến Florida à?"</p>   <p>"À, tớ thấy mình hơi lớn để đến Disneyland rồi, Maric. Mặc dù em trai tớ vẫn rất thích. <strong>Thực ra, chúng tớ sẽ đi đến một nơi mới. Đó là một trại thể thao, nơi cậu có thể ở cùng nhiều bạn khác và học các hoạt động khác nhau.</strong>"</p>    <p>Bài nghe xác nhận rằng <strong>Tanya và gia đình sẽ đi đến một trại thể thao</strong>. Do đó, đáp án chính xác là <strong>A sports camp.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">Flodia</span> ❌ (Florida.) - Sai, vì Tanya nói rằng họ không đến Florida năm nay.</li>       <li><span class="text-success"><strong>A sports camp</strong></span> ✅ (Một trại thể thao.) - Đúng, vì bài nghe xác nhận rằng họ sẽ đến một trại thể thao.</li>       <li><span class="text-danger">Disneyland</span> ❌ (Disneyland.) - Sai, vì Tanya nói rằng cô ấy đã quá lớn để đi Disneyland.</li>       <li><span class="text-danger">The Kids World</span> ❌ (Thế giới trẻ em.) - Sai, vì bài nghe không đề cập đến địa điểm này.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What sports can Tanya's brother play in the holiday?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Windsurfing															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Football</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Water skiing															</div>
+																				<div class="ps-4 mb-2">
+																	D. Water polo															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Football</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Tanya nói về các hoạt động mà em trai cô ấy sẽ tham gia trong kỳ nghỉ:</p>   <p>"But will you have to look after your little brother?"</p>   <p>"No way. <strong>They divide you up according to age. He'll be doing football and swimming</strong> and all that whereas I get to go water skiing."</p>    <p>"Nhưng cậu có phải trông em trai không?"</p>   <p>"Không đâu. <strong>Họ sẽ chia nhóm theo độ tuổi. Em tớ sẽ chơi bóng đá và bơi lội</strong> trong khi tớ được đi trượt nước."</p>    <p>Bài nghe xác nhận rằng <strong>em trai của Tanya sẽ chơi bóng đá</strong>. Do đó, đáp án chính xác là <strong>Football.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-success"><strong>Football</strong></span> ✅ (Bóng đá.) - Đúng, vì bài nghe xác nhận rằng em trai của Tanya sẽ chơi bóng đá.</li>       <li><span class="text-danger">Water skiing</span> ❌ (Trượt nước.) - Sai, vì đây là môn thể thao Tanya sẽ tham gia, không phải em trai cô ấy.</li>       <li><span class="text-danger">Windsurfing</span> ❌ (Lướt ván buồm.) - Sai, vì bài nghe không đề cập đến việc em trai của Tanya chơi lướt ván buồm.</li>       <li><span class="text-danger">Water polo</span> ❌ (Bóng nước.) - Sai, vì bài nghe không đề cập đến môn bóng nước cho em trai Tanya.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: When was the Center established?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 20 years ago															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. 25 years ago</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. 15 years ago															</div>
+																				<div class="ps-4 mb-2">
+																	D. 10 years ago															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>25 years ago</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Geoffrey Osland nói về thời điểm trung tâm môi trường được thành lập:</p>   <p>"We opened <strong>25 years ago</strong> but in the last 10 years we've considerably expanded our activities."</p>    <p>"Chúng tôi mở cửa <strong>cách đây 25 năm</strong>, nhưng trong 10 năm qua, chúng tôi đã mở rộng đáng kể các hoạt động của mình."</p>    <p>Bài nghe xác nhận rằng <strong>trung tâm được thành lập cách đây 25 năm</strong>. Do đó, đáp án chính xác là <strong>25 years ago.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-success"><strong>25 years ago</strong></span> ✅ (25 năm trước.) - Đúng, vì bài nghe xác nhận rằng trung tâm được mở cách đây 25 năm.</li>       <li><span class="text-danger">20 years ago</span> ❌ (20 năm trước.) - Sai, vì bài nghe đề cập đến 25 năm, không phải 20 năm.</li>       <li><span class="text-danger">15 years ago</span> ❌ (15 năm trước.) - Sai, vì trung tâm đã được mở lâu hơn.</li>       <li><span class="text-danger">10 years ago</span> ❌ (10 năm trước.) - Sai, vì bài nghe chỉ nói rằng trung tâm mở rộng trong 10 năm qua, không phải được thành lập vào thời điểm đó.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: How many people visited the Center last years?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 70															</div>
+																				<div class="ps-4 mb-2">
+																	B. 80000															</div>
+																				<div class="ps-4 mb-2">
+																	C. More than 70															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. More than 80000</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>More than 80000</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Geoffrey Osland nói về số lượng khách tham quan trung tâm vào năm ngoái:</p>   <p>"We're open to the public all year round and <strong>last year we had over 80,000 visitors.</strong>"</p>    <p>"Chúng tôi mở cửa cho công chúng suốt cả năm và <strong>năm ngoái, chúng tôi có hơn 80.000 lượt khách tham quan.</strong>"</p>    <p>Bài nghe xác nhận rằng <strong>trung tâm có hơn 80.000 lượt khách vào năm ngoái</strong>. Do đó, đáp án chính xác là <strong>More than 80000.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">70</span> ❌ (70 người.) - Sai, vì số lượng khách tham quan thực tế lớn hơn rất nhiều.</li>       <li><span class="text-danger">More than 70</span> ❌ (Hơn 70 người.) - Sai, vì con số thực tế là hơn 80.000, không chỉ hơn 70.</li>       <li><span class="text-danger">80000</span> ❌ (80.000 người.) - Sai, vì bài nghe nói rằng số khách tham quan là hơn 80.000.</li>       <li><span class="text-success"><strong>More than 80000</strong></span> ✅ (Hơn 80.000 người.) - Đúng, vì bài nghe xác nhận rằng số lượng khách tham quan vượt quá con số 80.000.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: How long are the summer courses?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 3 days															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. 7 days</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. 5 days															</div>
+																				<div class="ps-4 mb-2">
+																	D. 9 days															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>7 days</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Geoffrey Osland nói về thời gian các khóa học mùa hè:</p>   <p>"Most of the courses last three days although <strong>in the summer we run week-long courses.</strong>"</p>    <p>"Hầu hết các khóa học kéo dài ba ngày, tuy nhiên <strong>vào mùa hè, chúng tôi tổ chức các khóa học kéo dài một tuần.</strong>"</p>    <p>Bài nghe xác nhận rằng <strong>các khóa học mùa hè kéo dài 7 ngày</strong>. Do đó, đáp án chính xác là <strong>7 days.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">3 days</span> ❌ (3 ngày.) - Sai, vì 3 ngày chỉ là thời gian của các khóa học thông thường, không phải khóa học mùa hè.</li>       <li><span class="text-danger">5 days</span> ❌ (5 ngày.) - Sai, vì bài nghe không đề cập đến khóa học kéo dài 5 ngày.</li>       <li><span class="text-success"><strong>7 days</strong></span> ✅ (7 ngày.) - Đúng, vì bài nghe xác nhận rằng các khóa học mùa hè kéo dài một tuần.</li>       <li><span class="text-danger">9 days</span> ❌ (9 ngày.) - Sai, vì bài nghe không đề cập đến khóa học kéo dài 9 ngày.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: What does the Center's Restaurant sever?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Pork															</div>
+																				<div class="ps-4 mb-2">
+																	B. Fish															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Vegetables</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Beef															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Vegetables</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Geoffrey Osland nói về thực đơn của nhà hàng tại trung tâm:</p>   <p>"We also grow all our own food and meals are served in the centre restaurant. <strong>As you might expect, we only serve vegetarian food – no meat whatsoever.</strong>"</p>    <p>"Chúng tôi cũng tự trồng toàn bộ thực phẩm của mình và các bữa ăn được phục vụ tại nhà hàng của trung tâm. <strong>Như bạn có thể đoán, chúng tôi chỉ phục vụ đồ ăn chay – hoàn toàn không có thịt.</strong>"</p>    <p>Bài nghe xác nhận rằng <strong>nhà hàng chỉ phục vụ rau củ và các món ăn chay</strong>. Do đó, đáp án chính xác là <strong>Vegetables.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">Beef</span> ❌ (Thịt bò.) - Sai, vì bài nghe xác nhận rằng trung tâm không phục vụ bất kỳ loại thịt nào.</li>       <li><span class="text-danger">Fish</span> ❌ (Cá.) - Sai, vì cá cũng không được đề cập trong thực đơn của nhà hàng.</li>       <li><span class="text-danger">Pork</span> ❌ (Thịt lợn.) - Sai, vì bài nghe xác nhận rằng không có thịt trong thực đơn.</li>       <li><span class="text-success"><strong>Vegetables</strong></span> ✅ (Rau củ.) - Đúng, vì bài nghe xác nhận rằng trung tâm chỉ phục vụ đồ ăn chay.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What is Jonathan's major strand?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Agricultural Science															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Politics</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Economics															</div>
+																				<div class="ps-4 mb-2">
+																	D. Geography															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Politics</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Jonathan nói về chuyên ngành chính của mình:</p>   <p>"So your first degree was in economics."</p>   <p>"Yes, but I also did <strong>politics as a major strand.</strong>"</p>    <p>"Vậy bằng cấp đầu tiên của bạn là về kinh tế."</p>   <p>"Đúng, nhưng tôi cũng học <strong>chính trị như một chuyên ngành chính.</strong>"</p>    <p>Bài nghe xác nhận rằng <strong>Jonathan học chính trị như một chuyên ngành chính</strong>. Do đó, đáp án chính xác là <strong>Politics.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">Economics</span> ❌ (Kinh tế học.) - Sai, vì mặc dù Jonathan có học kinh tế, nhưng chuyên ngành chính của anh ấy là chính trị.</li>       <li><span class="text-success"><strong>Politics</strong></span> ✅ (Chính trị.) - Đúng, vì bài nghe xác nhận rằng chuyên ngành chính của Jonathan là chính trị.</li>       <li><span class="text-danger">Geography</span> ❌ (Địa lý.) - Sai, vì bài nghe không đề cập đến Jonathan học địa lý như một chuyên ngành chính.</li>       <li><span class="text-danger">Agricultural Science</span> ❌ (Khoa học nông nghiệp.) - Sai, vì bài nghe chỉ đề cập đến môn học này trong quá trình giảng dạy của Jonathan, không phải chuyên ngành chính của anh ấy.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: What was the organization Jonathan worked for named?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Teaching Volunteering															</div>
+																				<div class="ps-4 mb-2">
+																	B. West Africa															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Teach South</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Rural co-operative															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Teach South</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Jonathan đề cập đến tổ chức mà anh ấy đã làm việc:</p>   <p>"Yes, I worked as a volunteer teacher in West Africa. I was there for almost three years in total from 1990 to 1992."</p>   <p>"How interesting. What organisation was that with?"</p>   <p>"It's not one of the major ones. <strong>It's called Teach South.</strong>"</p>    <p>"Vâng, tôi đã làm giáo viên tình nguyện ở Tây Phi. Tôi ở đó tổng cộng gần ba năm từ 1990 đến 1992."</p>   <p>"Thật thú vị. Bạn làm việc với tổ chức nào vậy?"</p>   <p>"Nó không phải là một trong những tổ chức lớn. <strong>Nó được gọi là Teach South.</strong>"</p>    <p>Bài nghe xác nhận rằng <strong>tổ chức Jonathan làm việc là Teach South</strong>. Do đó, đáp án chính xác là <strong>Teach South.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">West Africa</span> ❌ (Tây Phi.) - Sai, vì đây là địa điểm Jonathan làm việc, không phải tên tổ chức.</li>       <li><span class="text-danger">Teaching Volunteering</span> ❌ (Dạy học tình nguyện.) - Sai, vì đây không phải là tên tổ chức Jonathan làm việc.</li>       <li><span class="text-success"><strong>Teach South</strong></span> ✅ (Teach South.) - Đúng, vì bài nghe xác nhận rằng đây là tổ chức Jonathan làm việc.</li>       <li><span class="text-danger">Rural co-operative</span> ❌ (Hợp tác xã nông thôn.) - Sai, vì đây chỉ là loại hình trường học Jonathan giảng dạy, không phải tên tổ chức.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: Of which subject did Jonathan teach Form 2?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Agriculture															</div>
+																				<div class="ps-4 mb-2">
+																	B. English															</div>
+																				<div class="ps-4 mb-2">
+																	C. Science															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Geography</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Geography</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Jonathan nói về các môn học anh ấy đã dạy:</p>   <p>"A variety of things in different years. <strong>I did with Forms 1 to 3 mainly geography</strong> and some English with Form 5. Then in my final year I took on some agricultural science with the top year."</p>    <p>"Tôi dạy nhiều môn khác nhau trong các năm học khác nhau. <strong>Với các lớp 1 đến 3, tôi chủ yếu dạy địa lý</strong> và một chút tiếng Anh cho lớp 5. Sau đó, trong năm cuối cùng, tôi dạy khoa học nông nghiệp cho lớp cao nhất."</p>    <p>Bài nghe xác nhận rằng <strong>Jonathan dạy môn địa lý cho lớp 2</strong>. Do đó, đáp án chính xác là <strong>Geography.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-success"><strong>Geography</strong></span> ✅ (Địa lý.) - Đúng, vì bài nghe xác nhận rằng Jonathan dạy địa lý cho lớp 2.</li>       <li><span class="text-danger">English</span> ❌ (Tiếng Anh.) - Sai, vì Jonathan dạy tiếng Anh cho lớp 5, không phải lớp 2.</li>       <li><span class="text-danger">Agriculture</span> ❌ (Nông nghiệp.) - Sai, vì Jonathan chỉ dạy khoa học nông nghiệp cho lớp cao nhất, không phải lớp 2.</li>       <li><span class="text-danger">Science</span> ❌ (Khoa học.) - Sai, vì bài nghe không đề cập đến việc Jonathan dạy khoa học.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: What made Jonathan want to leave after the first year?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Sickness															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Few teaching materials</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Low level students															</div>
+																				<div class="ps-4 mb-2">
+																	D. Boring places															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Few teaching materials</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Jonathan nói về khó khăn khiến anh ấy muốn rời đi sau năm đầu tiên:</p>   <p>"I'll be honest with you. <strong>At the end of the first year I really wanted to leave and come home.</strong>"</p>   <p>"Oh, why was that?"</p>   <p>"Well, I was very homesick at first and missed my family. And I also <strong>found it frustrating to have so few teaching resources.</strong>"</p>    <p>"Tôi sẽ thành thật với bạn. <strong>Vào cuối năm đầu tiên, tôi thực sự muốn rời đi và trở về nhà.</strong>"</p>   <p>"Ồ, tại sao vậy?"</p>   <p>"À, ban đầu tôi rất nhớ nhà và gia đình. Và tôi cũng <strong>cảm thấy rất khó chịu vì có quá ít tài liệu giảng dạy.</strong>"</p>    <p>Bài nghe xác nhận rằng <strong>Jonathan muốn rời đi vì thiếu tài liệu giảng dạy</strong>. Do đó, đáp án chính xác là <strong>Few teaching materials.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">Sickness</span> ❌ (Bệnh tật.) - Sai, vì bài nghe không đề cập đến việc Jonathan bị bệnh.</li>       <li><span class="text-danger">Boring places</span> ❌ (Địa điểm nhàm chán.) - Sai, vì Jonathan không nói rằng địa điểm khiến anh ấy muốn rời đi.</li>       <li><span class="text-danger">Low level students</span> ❌ (Học sinh có trình độ thấp.) - Sai, vì bài nghe không đề cập đến trình độ của học sinh là lý do khiến Jonathan muốn rời đi.</li>       <li><span class="text-success"><strong>Few teaching materials</strong></span> ✅ (Ít tài liệu giảng dạy.) - Đúng, vì bài nghe xác nhận rằng Jonathan cảm thấy khó khăn do thiếu tài liệu giảng dạy.</li>   </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

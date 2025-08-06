@@ -1,0 +1,577 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 34 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87752				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/12				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp2-1664817066_fe20e8090a0a11b14301.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>In this part, you will hear three conversations. The conversations will be played once only. There are four questions for each conversation.<br>
+For each question, choose the right answer A, B, C, or D. Part 2, questions 9 to 12. First, you will have some time to look at questions 9 to 12. Now we're ready to start.<br>
+Listen and answer questions 9 to 12. You will hear the recording once only. Good morning, Travel Link.<br>
+How can I help you? Good morning. I live in Bayswater and I'd like to get to Harbour City tomorrow before 11am. Well, to get to Bayswater… No, no, I live in Bayswater.<br>
+My destination is Harbour City. Sorry. Right, so that's Bayswater to Harbour City.<br>
+Are you planning to travel by bus or train? I don't mind really. Whichever option is faster, I suppose. Well, if you catch a railway express, they'll get you there in under an hour.<br>
+Let's see. Yes, if you can make the 9.30am express, I'd recommend you do that. Great.<br>
+Which station does that leave from? Hellendale is the nearest train station to you. Did you say Hellensvale? No, Hellendale. That's H-E-L-E-N-D-A-L-E.<br>
+What's the best way to get to the Hellendale station then? Well, hang on a minute while I look into that. Now, it seems to me that you have two options. Option one would be to take the 7.06 bus from the Bayswater Shopping Centre to Central Street.<br>
+When you get there, you transfer to another bus which will take you to the station. Or, the second option, if you don't mind walking a couple of kilometres, is to go directly to Central Street and get straight on the bus going to the train station. OK.<br>
+Which bus is that? The 7.92 will take you to the station. I guess the walk will be good for me, so that might be the better option. Now you will have some time to review questions nine to twelve.<br>
+Part two, questions thirteen to sixteen. First you will have some time to look at questions thirteen to sixteen. Now we're ready to start.<br>
+Listen and answer questions thirteen to sixteen. You will hear the recording once only. Ah, good morning.<br>
+Mr Rich, isn't it? That's right. Raymond Rich of ICT Industries. ICT Industries.<br>
+Just a moment while I put that on the form. Now, you're looking for new office space, is that right? Yes. Our present lease is due to expire soon and as the company is expanding anyway, we need to find somewhere to move to.<br>
+Do you prefer the suburbs, the city or a commercial zone on the outskirts? Well, currently we're in a very pleasant suburb, but as I said, we've outgrown that building as we've got to move anyway. I think the city centre is where we want to be, right in the heart of things. I see.<br>
+Anywhere in particular? Yes, somewhere in the vicinity of the main transport centre, because I have a large staff and car parking in the city is terribly expensive. I think it would be a good idea if we didn't use our cars at all. Exactly what size premises are you looking for? Good question.<br>
+Something more than the 10,000 square metres we have at present should do it. Shall we say 12,000 square metres? That's probably about right. Yes, I think that would meet our needs.<br>
+Now you will have some time to review questions 13 to 16. Part 2, questions 17 to 20. First you will have some time to look at questions 17 to 20.<br>
+Now we're ready to start. Listen and answer questions 17 to 20. You will hear the recording once only.<br>
+Good morning, tax office. How can I help you? I'd like to apply for a tax file number. Are you a citizen? No, but I'm told I still need a number.<br>
+So what is your residency status? Are you a permanent migrant or perhaps a temporary visitor? Oh, I'm... I'm a permanent migrant. And you need a TFN? A what? A TFN. It stands for Tax File Number.<br>
+Yes, what is that exactly? It's a unique number we issue to individuals and organizations to help administer tax collection and other government systems. Why do I need one? In actual fact, you don't. What do you mean? It's not compulsory, you know.<br>
+But I should get one? Well, it's a good idea. Otherwise you'll have more tax withheld from your wages or salary. In fact, you won't be eligible to participate in the PAYE, that's Pay As You Earn system, and you couldn't apply for income support or other benefits.<br>
+You wouldn't have to pay the Medicare levy, but then you wouldn't be entitled to claim Medicare benefits either. I'd better have one then. Okay.<br>
+So you're currently living in this country, right? Yes. Now you will have some time to review questions 17 to 20. That is the end of Part 2.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 2 Trong phần này, bạn sẽ nghe ba đoạn hội thoại. Mỗi đoạn hội thoại chỉ được phát một lần duy nhất. Có bốn câu hỏi cho mỗi đoạn hội thoại. Với mỗi câu hỏi, hãy chọn câu trả lời đúng: A, B, C hoặc D. Câu 9 đến 12 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 9 đến 12. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 9 đến 12. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Chào buổi sáng, đây là Travel Link. Tôi có thể giúp gì cho bạn? Chào buổi sáng. Tôi sống ở Bayswater và muốn đến Harbour City vào ngày mai trước 11 giờ sáng. Vậy để đến Bayswater… Không, không, tôi sống ở Bayswater. Điểm đến của tôi là Harbour City. Xin lỗi. Được rồi, vậy là từ Bayswater đến Harbour City. Bạn dự định đi bằng xe buýt hay tàu hỏa? Tôi không quá quan trọng, miễn là phương án nào nhanh hơn. Vậy thì nếu bạn đi tàu hỏa tốc hành, bạn sẽ đến đó trong vòng chưa đầy một giờ. Để tôi xem… Vâng, nếu bạn có thể bắt chuyến tàu tốc hành lúc 9:30 sáng, tôi khuyên bạn nên đi chuyến đó. Tuyệt! Vậy tàu này xuất phát từ ga nào? Ga gần nhất với bạn là ga Hellendale. Bạn nói ga Hellensvale à? Không, là Hellendale. Đánh vần là H-E-L-E-N-D-A-L-E. Vậy cách tốt nhất để đến ga Hellendale là gì? Chờ một chút để tôi kiểm tra… Bạn có hai lựa chọn. Lựa chọn thứ nhất là bắt chuyến xe buýt 7:06 sáng từ Trung tâm mua sắm Bayswater đến Central Street. Sau đó, bạn đổi sang một chuyến xe buýt khác để đến ga tàu. Lựa chọn thứ hai, nếu bạn không ngại đi bộ khoảng vài km, là đi thẳng đến Central Street và bắt xe buýt đến ga tàu. Được rồi. Vậy đó là chuyến xe buýt nào? Chuyến 7.92 sẽ đưa bạn đến ga tàu. Tôi nghĩ đi bộ sẽ tốt cho sức khỏe, vậy có lẽ đó là lựa chọn tốt hơn. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 9 đến 12. Câu 13 đến 16 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 13 đến 16. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 13 đến 16. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Chào buổi sáng. Ông là Mr. Rich, đúng không? Đúng vậy. Tôi là Raymond Rich của công ty ICT Industries. ICT Industries. Chờ một chút để tôi điền vào mẫu đơn. Ông đang tìm kiếm văn phòng mới, đúng không? Vâng. Hợp đồng thuê hiện tại của chúng tôi sắp hết hạn và công ty cũng đang mở rộng, vì vậy chúng tôi cần tìm một nơi mới để chuyển đến. Ông muốn đặt văn phòng ở vùng ngoại ô, trung tâm thành phố hay khu thương mại ngoại ô? Hiện tại, chúng tôi đang ở một vùng ngoại ô rất đẹp, nhưng như tôi đã nói, chúng tôi đã không còn đủ không gian. Vì vậy, tôi nghĩ trung tâm thành phố sẽ là lựa chọn tốt nhất, ngay giữa khu vực trung tâm kinh tế. Tôi hiểu. Ông có khu vực cụ thể nào trong thành phố không? Vâng, tôi muốn văn phòng nằm gần trung tâm giao thông chính, vì công ty có một lượng nhân viên lớn và chi phí gửi xe trong thành phố rất đắt đỏ. Tôi nghĩ sẽ tốt hơn nếu chúng tôi không cần sử dụng xe hơi. Chính xác thì ông đang tìm kiếm một văn phòng có diện tích bao nhiêu? Câu hỏi hay đấy. Chúng tôi cần không gian lớn hơn 10.000 mét vuông mà chúng tôi hiện có. Vậy khoảng 12.000 mét vuông thì sao? Có lẽ vậy. Tôi nghĩ diện tích đó sẽ đáp ứng nhu cầu của công ty. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 13 đến 16. Câu 17 đến 20 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 17 đến 20. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 17 đến 20. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Chào buổi sáng, đây là văn phòng thuế. Tôi có thể giúp gì cho bạn? Tôi muốn đăng ký mã số thuế. Bạn có phải là công dân không? Không, nhưng tôi được biết là tôi vẫn cần mã số thuế. Vậy tình trạng cư trú của bạn là gì? Bạn là người nhập cư thường trú hay chỉ là khách tạm thời? Ồ, tôi… tôi là người nhập cư thường trú. Vậy bạn cần một TFN, đúng không? Một cái gì cơ? TFN – viết tắt của Tax File Number (Mã số thuế). À vâng, nó là gì vậy? Đó là mã số duy nhất do chúng tôi cấp cho cá nhân và tổ chức để hỗ trợ thu thuế và quản lý các hệ thống chính phủ khác. Vậy tại sao tôi cần nó? Thực tế thì bạn không bắt buộc phải có. Ý bạn là sao? Nó không phải là quy định bắt buộc, bạn biết đấy. Nhưng tôi nên có một mã số thuế, đúng không? Vâng, đó là ý tưởng tốt. Nếu không có TFN, bạn sẽ bị khấu trừ thuế nhiều hơn từ lương hoặc tiền công của mình. Thực tế, bạn sẽ không đủ điều kiện tham gia hệ thống "PAYE" (Trả thuế theo thu nhập) và không thể xin trợ cấp thu nhập hoặc các quyền lợi khác. Bạn không phải trả phí Medicare, nhưng đồng thời cũng không thể nhận được quyền lợi từ Medicare. Vậy tôi nên đăng ký một mã số thuế rồi. Đúng vậy. Bạn hiện đang sinh sống tại quốc gia này, đúng không? Vâng. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 17 đến 20. Phần 2 kết thúc tại đây.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Where does the man want to go to?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Central Street															</div>
+																				<div class="ps-4 mb-2">
+																	B. Bayswater															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Harbour City</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Helendale															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>Harbour City</strong></span> ✅ (Thành phố Harbour.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người đàn ông nói:</p>    <p>"Good morning. I live in Bayswater and I'd like to get to Harbour City tomorrow before 11am."</p>     <p>"Chào buổi sáng. Tôi sống ở Bayswater và tôi muốn đến <strong>Harbour City</strong> vào ngày mai trước 11 giờ sáng."</p>      <p>Bài nghe xác nhận rằng <strong>người đàn ông muốn đi đến Harbour City</strong>. Do đó, đáp án chính xác là <strong>Harbour City.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">Bayswater</span> ❌ (Bayswater.) - Sai, vì đây là nơi người đàn ông đang sinh sống, không phải điểm đến.</li>                 <li><span class="text-danger">Helendale</span> ❌ (Helendale.) - Sai, vì đây là tên ga tàu gần nhất với người đàn ông, không phải điểm đến.</li>                 <li><span class="text-danger">Central Street</span> ❌ (Phố Central.) - Sai, vì đây là một địa điểm trung gian, không phải điểm đến cuối cùng.</li>                 <li><span class="text-success"><strong>Harbour City</strong></span> ✅ (Thành phố Harbour.) - Đúng, vì bài nghe xác nhận đây là nơi người đàn ông muốn đến.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: What means of transportation does the man use to go to his destination?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Airplane															</div>
+																				<div class="ps-4 mb-2">
+																	B. Taxi															</div>
+																				<div class="ps-4 mb-2">
+																	C. Bus															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Train</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>Train</strong></span> ✅ (Tàu hỏa.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người tư vấn nói:</p>    <p>"Well, if you catch a railway express, they'll get you there in under an hour. Let's see. Yes, if you can make the 9.30am express, I'd recommend you do that."</p>     <p>"Vâng, nếu anh đi tàu hỏa tốc hành, nó sẽ đưa anh đến đó trong chưa đầy một giờ. Hãy xem nào. Đúng vậy, nếu anh có thể bắt chuyến tàu tốc hành lúc 9:30 sáng, tôi khuyên anh nên đi chuyến đó."</p>      <p>Bài nghe xác nhận rằng <strong>người đàn ông sử dụng tàu hỏa để đến điểm đến của mình</strong>. Do đó, đáp án chính xác là <strong>Train.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">Bus</span> ❌ (Xe buýt.) - Sai, vì người đàn ông chỉ sử dụng xe buýt để đến ga tàu, không phải phương tiện chính để đến điểm đến cuối cùng.</li>                 <li><span class="text-success"><strong>Train</strong></span> ✅ (Tàu hỏa.) - Đúng, vì bài nghe xác nhận rằng anh ta đi tàu hỏa để đến đích.</li>                 <li><span class="text-danger">Taxi</span> ❌ (Xe taxi.) - Sai, vì bài nghe không đề cập đến việc sử dụng taxi.</li>                 <li><span class="text-danger">Airplane</span> ❌ (Máy bay.) - Sai, vì không có thông tin nào cho thấy người đàn ông di chuyển bằng máy bay.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: How many bus routes does the man have to take to get to the train station?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. 2</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. 3															</div>
+																				<div class="ps-4 mb-2">
+																	C. 5															</div>
+																				<div class="ps-4 mb-2">
+																	D. 4															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>2</strong></span> ✅ (Hai tuyến xe buýt.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người tư vấn nói:</p>    <p>"Now, it seems to me that you have two options. Option one would be to take the 7.06 bus from the Bayswater Shopping Centre to Central Street. When you get there, you transfer to another bus which will take you to the station."</p>     <p>"Bây giờ, theo tôi, anh có hai lựa chọn. Lựa chọn thứ nhất là bắt chuyến xe buýt 7.06 từ Trung tâm Mua sắm Bayswater đến Phố Central. Khi đến đó, anh chuyển sang một chuyến xe buýt khác để đến ga tàu."</p>      <p>Bài nghe xác nhận rằng <strong>người đàn ông phải đi hai tuyến xe buýt để đến ga tàu</strong>. Do đó, đáp án chính xác là <strong>2.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>2</strong></span> ✅ (Hai tuyến xe buýt.) - Đúng, vì bài nghe xác nhận rằng anh ta cần đi hai chuyến xe buýt để đến ga tàu.</li>                 <li><span class="text-danger">3</span> ❌ (Ba tuyến xe buýt.) - Sai, vì bài nghe không đề cập đến việc cần đi ba tuyến xe buýt.</li>                 <li><span class="text-danger">4</span> ❌ (Bốn tuyến xe buýt.) - Sai, vì số tuyến xe buýt được nhắc đến trong bài nghe chỉ là hai.</li>                 <li><span class="text-danger">5</span> ❌ (Năm tuyến xe buýt.) - Sai, vì bài nghe không đề cập đến việc đi nhiều tuyến xe buýt như vậy.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: How does the man get to Helendale?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Take a walk															</div>
+																				<div class="ps-4 mb-2">
+																	B. Take a taxi															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Take a bus</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Take a train															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>Take a bus</strong></span> ✅ (Đi xe buýt.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người tư vấn nói:</p>    <p>"Option one would be to take the 7.06 bus from the Bayswater Shopping Centre to Central Street. When you get there, you transfer to another bus which will take you to the station."</p>     <p>"Lựa chọn thứ nhất là bắt chuyến xe buýt 7.06 từ Trung tâm Mua sắm Bayswater đến Phố Central. Khi đến đó, anh chuyển sang một chuyến xe buýt khác để đến ga tàu."</p>      <p>Bài nghe xác nhận rằng <strong>người đàn ông đi xe buýt để đến ga Helendale</strong>. Do đó, đáp án chính xác là <strong>Take a bus.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>Take a bus</strong></span> ✅ (Đi xe buýt.) - Đúng, vì bài nghe xác nhận rằng anh ta đi xe buýt để đến ga tàu.</li>                 <li><span class="text-danger">Take a taxi</span> ❌ (Đi taxi.) - Sai, vì bài nghe không đề cập đến việc người đàn ông đi taxi.</li>                 <li><span class="text-danger">Take a train</span> ❌ (Đi tàu hỏa.) - Sai, vì tàu hỏa là phương tiện anh ta sử dụng để đến điểm đến cuối cùng, không phải để đến ga Helendale.</li>                 <li><span class="text-danger">Take a walk</span> ❌ (Đi bộ.) - Sai, vì anh ta đi xe buýt đến ga tàu chứ không phải đi bộ.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: Why does the man want to move his company to a new location?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He wants to find a smaller one.															</div>
+																				<div class="ps-4 mb-2">
+																	B. This current location is too expensive.															</div>
+																				<div class="ps-4 mb-2">
+																	C. His company is downsizing.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. His present lease is about to expire soon.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>His present lease is about to expire soon.</strong></span> ✅ (Hợp đồng thuê hiện tại của anh ấy sắp hết hạn.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người đàn ông nói:</p>    <p>"Yes. Our present lease is due to expire soon and as the company is expanding anyway, we need to find somewhere to move to."</p>     <p>"Đúng vậy. Hợp đồng thuê hiện tại của chúng tôi <strong>sắp hết hạn</strong> và vì công ty đang mở rộng, chúng tôi cần tìm một nơi khác để chuyển đến."</p>      <p>Bài nghe xác nhận rằng <strong>người đàn ông muốn chuyển công ty đến một địa điểm mới vì hợp đồng thuê hiện tại sắp hết hạn</strong>. Do đó, đáp án chính xác là <strong>His present lease is about to expire soon.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">This current location is too expensive.</span> ❌ (Địa điểm hiện tại quá đắt đỏ.) - Sai, vì bài nghe không đề cập đến chi phí thuê đắt đỏ.</li>                 <li><span class="text-danger">His company is downsizing.</span> ❌ (Công ty của anh ấy đang thu hẹp quy mô.) - Sai, vì bài nghe nhấn mạnh rằng công ty đang mở rộng, không phải thu hẹp.</li>                 <li><span class="text-success"><strong>His present lease is about to expire soon.</strong></span> ✅ (Hợp đồng thuê hiện tại của anh ấy sắp hết hạn.) - Đúng, vì đây là lý do chính được nêu trong bài nghe.</li>                 <li><span class="text-danger">He wants to find a smaller one.</span> ❌ (Anh ấy muốn tìm một nơi nhỏ hơn.) - Sai, vì công ty của anh ấy đang tìm kiếm một không gian lớn hơn.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: What kind of location does he prefer?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. City centre</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Outskirts															</div>
+																				<div class="ps-4 mb-2">
+																	C. Commercial zone															</div>
+																				<div class="ps-4 mb-2">
+																	D. Suburb															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>City centre</strong></span> ✅ (Trung tâm thành phố.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người đàn ông nói:</p>    <p>"I think the city centre is where we want to be, right in the heart of things."</p>     <p>"Tôi nghĩ rằng <strong>trung tâm thành phố</strong> là nơi chúng tôi muốn đặt trụ sở, ngay tại trung tâm mọi hoạt động."</p>      <p>Bài nghe xác nhận rằng <strong>người đàn ông thích địa điểm ở trung tâm thành phố</strong>. Do đó, đáp án chính xác là <strong>City centre.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">Suburb</span> ❌ (Ngoại ô.) - Sai, vì mặc dù công ty của anh ấy hiện tại ở ngoại ô, nhưng anh ấy muốn chuyển đến trung tâm thành phố.</li>                 <li><span class="text-success"><strong>City centre</strong></span> ✅ (Trung tâm thành phố.) - Đúng, vì bài nghe xác nhận rằng đây là nơi anh ấy muốn chuyển đến.</li>                 <li><span class="text-danger">Commercial zone</span> ❌ (Khu thương mại.) - Sai, vì bài nghe không đề cập đến việc muốn chuyển đến khu thương mại riêng biệt.</li>                 <li><span class="text-danger">Outskirts</span> ❌ (Vùng ngoại ô xa.) - Sai, vì anh ấy không muốn ở vùng ngoại ô mà muốn chuyển vào trung tâm thành phố.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What can be inferred from Mr. Rich?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. His present premise is less than 10,000 square metres.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. The number of his employees is large.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. He prefers new location to have parking facility.															</div>
+																				<div class="ps-4 mb-2">
+																	D. His current space is in downtown.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>The number of his employees is large.</strong></span> ✅ (Số lượng nhân viên của ông ấy rất lớn.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, ông Rich nói:</p>    <p>"Yes, somewhere in the vicinity of the main transport centre, because I have a large staff and car parking in the city is terribly expensive."</p>     <p>"Đúng vậy, ở đâu đó gần trung tâm giao thông chính, vì tôi có <strong>số lượng nhân viên lớn</strong> và bãi đỗ xe trong thành phố thì vô cùng đắt đỏ."</p>      <p>Bài nghe xác nhận rằng <strong>ông Rich có một số lượng nhân viên lớn</strong>, đây là lý do ông ấy muốn tìm một địa điểm gần trung tâm giao thông. Do đó, đáp án chính xác là <strong>The number of his employees is large.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">His present premise is less than 10,000 square metres.</span> ❌ (Cơ sở hiện tại của ông ấy nhỏ hơn 10.000 mét vuông.) - Sai, vì bài nghe cho biết diện tích hiện tại là 10.000 mét vuông, nhưng không đề cập đến việc nó nhỏ hơn mức này.</li>                 <li><span class="text-danger">He prefers new location to have parking facility.</span> ❌ (Ông ấy muốn địa điểm mới có bãi đỗ xe.) - Sai, vì bài nghe chỉ nhấn mạnh rằng ông ấy muốn tránh sử dụng xe hơi do chi phí đỗ xe cao, chứ không phải tìm nơi có bãi đỗ xe.</li>                 <li><span class="text-danger">His current space is in downtown.</span> ❌ (Cơ sở hiện tại của ông ấy nằm ở trung tâm thành phố.) - Sai, vì bài nghe nói rằng công ty hiện tại nằm ở ngoại ô.</li>                 <li><span class="text-success"><strong>The number of his employees is large.</strong></span> ✅ (Số lượng nhân viên của ông ấy rất lớn.) - Đúng, vì bài nghe xác nhận rằng ông ấy có một đội ngũ nhân viên đông đảo.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: What size premise is he looking for?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 11,000 square metres															</div>
+																				<div class="ps-4 mb-2">
+																	B. 10,000 square metres															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. 12,000 square metres</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. 13,000 square metres															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>12,000 square metres</strong></span> ✅ (12.000 mét vuông.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, ông Rich nói:</p>    <p>"Good question. Something more than the 10,000 square metres we have at present should do it. Shall we say 12,000 square metres? That's probably about right."</p>     <p>"Câu hỏi hay đấy. Một nơi rộng hơn <strong>10.000 mét vuông</strong> hiện tại có lẽ sẽ phù hợp. Chúng ta nói 12.000 mét vuông nhé? Tôi nghĩ con số đó là hợp lý."</p>      <p>Bài nghe xác nhận rằng <strong>ông Rich đang tìm một địa điểm có diện tích khoảng 12.000 mét vuông</strong>. Do đó, đáp án chính xác là <strong>12,000 square metres.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">10,000 square metres</span> ❌ (10.000 mét vuông.) - Sai, vì đây là diện tích hiện tại, nhưng ông Rich muốn một nơi rộng hơn.</li>                 <li><span class="text-danger">11,000 square metres</span> ❌ (11.000 mét vuông.) - Sai, vì bài nghe không đề cập đến con số này.</li>                 <li><span class="text-success"><strong>12,000 square metres</strong></span> ✅ (12.000 mét vuông.) - Đúng, vì ông Rich xác nhận rằng đây là diện tích phù hợp với nhu cầu của công ty.</li>                 <li><span class="text-danger">13,000 square metres</span> ❌ (13.000 mét vuông.) - Sai, vì ông Rich chỉ đề cập đến con số 12.000 mét vuông.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What is the applicant's residence status?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Overseas student															</div>
+																				<div class="ps-4 mb-2">
+																	B. Temporary visitor															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Permanent migrant</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Citizen															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>Permanent migrant</strong></span> ✅ (Người nhập cư thường trú.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, nhân viên thuế hỏi:</p>    <p>"So what is your residency status? Are you a permanent migrant or perhaps a temporary visitor?"</p>     <p>"Vậy tình trạng cư trú của anh là gì? Anh là <strong>người nhập cư thường trú</strong> hay có thể là khách du lịch tạm thời?"</p>      <p>Người nộp đơn trả lời:</p>    <p>"Oh, I'm... I'm a permanent migrant."</p>     <p>"Ồ, tôi... tôi là một <strong>người nhập cư thường trú</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>người nộp đơn có tình trạng cư trú là người nhập cư thường trú</strong>. Do đó, đáp án chính xác là <strong>Permanent migrant.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">Temporary visitor</span> ❌ (Khách du lịch tạm thời.) - Sai, vì người nộp đơn khẳng định mình là người nhập cư thường trú.</li>                 <li><span class="text-success"><strong>Permanent migrant</strong></span> ✅ (Người nhập cư thường trú.) - Đúng, vì bài nghe xác nhận rằng đây là tình trạng cư trú của người nộp đơn.</li>                 <li><span class="text-danger">Citizen</span> ❌ (Công dân.) - Sai, vì người nộp đơn không phải là công dân.</li>                 <li><span class="text-danger">Overseas student</span> ❌ (Du học sinh.) - Sai, vì bài nghe không đề cập đến việc người này là du học sinh.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: What is Tax File Number used for?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Controlling citizen's incomes															</div>
+																				<div class="ps-4 mb-2">
+																	B. Keeping record of individual tax payers															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Administering tax collection</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Managing government services															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>Administering tax collection</strong></span> ✅ (Quản lý việc thu thuế.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, nhân viên thuế nói:</p>    <p>"It's a unique number we issue to individuals and organizations to help administer tax collection and other government systems."</p>     <p>"Đây là một số duy nhất mà chúng tôi cấp cho cá nhân và tổ chức để <strong>quản lý việc thu thuế</strong> và các hệ thống chính phủ khác."</p>      <p>Bài nghe xác nhận rằng <strong>Tax File Number (TFN) được sử dụng để quản lý việc thu thuế</strong>. Do đó, đáp án chính xác là <strong>Administering tax collection.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>Administering tax collection</strong></span> ✅ (Quản lý việc thu thuế.) - Đúng, vì bài nghe xác nhận rằng TFN được sử dụng để hỗ trợ việc thu thuế.</li>                 <li><span class="text-danger">Controlling citizen's incomes</span> ❌ (Kiểm soát thu nhập của công dân.) - Sai, vì TFN không được sử dụng để kiểm soát thu nhập.</li>                 <li><span class="text-danger">Managing government services</span> ❌ (Quản lý các dịch vụ của chính phủ.) - Sai, vì TFN chỉ liên quan đến thu thuế, không phải toàn bộ dịch vụ chính phủ.</li>                 <li><span class="text-danger">Keeping record of individual tax payers</span> ❌ (Lưu trữ hồ sơ người nộp thuế cá nhân.) - Sai, vì TFN hỗ trợ quản lý thu thuế chứ không đơn thuần chỉ lưu trữ hồ sơ.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: Without a TFN, the applicant would?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Claim Medicare benefits															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Be taxed at a higher rate</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Apply for income support															</div>
+																				<div class="ps-4 mb-2">
+																	D. Be unable to work															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>Be taxed at a higher rate</strong></span> ✅ (Bị đánh thuế với mức cao hơn.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, nhân viên thuế nói:</p>    <p>"Well, it's a good idea. Otherwise you'll have more tax withheld from your wages or salary."</p>     <p>"Vâng, có được mã số thuế là một ý tưởng tốt. Nếu không, anh sẽ <strong>bị khấu trừ thuế nhiều hơn</strong> từ lương hoặc tiền công của mình."</p>      <p>Bài nghe xác nhận rằng <strong>nếu không có TFN, người nộp đơn sẽ bị đánh thuế với mức cao hơn</strong>. Do đó, đáp án chính xác là <strong>Be taxed at a higher rate.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">Be unable to work</span> ❌ (Không thể làm việc.) - Sai, vì người không có TFN vẫn có thể làm việc nhưng sẽ bị khấu trừ thuế cao hơn.</li>                 <li><span class="text-success"><strong>Be taxed at a higher rate</strong></span> ✅ (Bị đánh thuế với mức cao hơn.) - Đúng, vì bài nghe xác nhận rằng nếu không có TFN, thuế sẽ bị khấu trừ nhiều hơn.</li>                 <li><span class="text-danger">Apply for income support</span> ❌ (Nộp đơn xin trợ cấp thu nhập.) - Sai, vì bài nghe nói rằng không có TFN thì không thể nhận trợ cấp thu nhập, không phải là có thể nộp đơn.</li>                 <li><span class="text-danger">Claim Medicare benefits</span> ❌ (Yêu cầu quyền lợi Medicare.) - Sai, vì bài nghe nói rằng không có TFN sẽ không được hưởng Medicare, chứ không phải là có thể yêu cầu.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: What can be inferred about the applicant?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. She recently paid an amount of Medicare levy.															</div>
+																				<div class="ps-4 mb-2">
+																	B. She has already registered for PAYE system.															</div>
+																				<div class="ps-4 mb-2">
+																	C. She is living in this country temporarily.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. She is told to apply for a tax file number.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>She is told to apply for a tax file number.</strong></span> ✅ (Cô ấy được hướng dẫn nộp đơn xin mã số thuế.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, nhân viên thuế nói:</p>    <p>"In actual fact, you don't. What do you mean? It's not compulsory, you know. But I should get one?"</p>     <p>"Thực tế là anh không bắt buộc phải có mã số thuế. Ý anh là gì? Không bắt buộc đâu. Nhưng tôi <strong>nên có một mã số thuế</strong>?"</p>      <p>Bài nghe xác nhận rằng <strong>người nộp đơn đang được khuyên nên xin mã số thuế</strong>. Do đó, đáp án chính xác là <strong>She is told to apply for a tax file number.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">She is living in this country temporarily.</span> ❌ (Cô ấy đang sống tạm thời ở đất nước này.) - Sai, vì bài nghe xác nhận cô ấy là một người nhập cư thường trú.</li>                 <li><span class="text-danger">She has already registered for PAYE system.</span> ❌ (Cô ấy đã đăng ký hệ thống PAYE.) - Sai, vì nếu chưa có TFN, cô ấy không thể tham gia hệ thống này.</li>                 <li><span class="text-success"><strong>She is told to apply for a tax file number.</strong></span> ✅ (Cô ấy được hướng dẫn nộp đơn xin mã số thuế.) - Đúng, vì bài nghe xác nhận rằng cô ấy đang được khuyên nên có TFN.</li>                 <li><span class="text-danger">She recently paid an amount of Medicare levy.</span> ❌ (Cô ấy vừa trả một khoản phí Medicare.) - Sai, vì bài nghe nói rằng không có TFN thì không thể hưởng lợi ích từ Medicare.</li>    </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

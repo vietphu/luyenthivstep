@@ -1,0 +1,585 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 23 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87742				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/12				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp2-1664817858_1236b1996348bae3fddd.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>In this part, you will hear three conversations. The conversations will be played once only. There are four questions for each conversation.<br>
+For each question, choose the right answer A, B, C, or D. Part 2, questions 9 to 12. First, you will have some time to look at questions 9 to 12. Now we're ready to start.<br>
+Listen, and answer questions 9 to 12. You will hear the recording once only. <br>
+And today in the studio, we have a familiar face on television, Angela Bond, the news reporter.<br>
+Angela, your job has taken you all over the world, hasn't it? Yes, I've reported from a number of countries in Asia and I've just returned from the United States. I must say, it's good to be able to unpack my suitcase now that the job has brought me to Britain for at least six months. Is the travelling what you enjoy about the job? It's certainly interesting, but it can be annoying never knowing where I'm going to be next week.<br>
+For me, the really exciting thing is being somewhere when a big news story is taking place and seeing it develop. Sometimes that can be quite dangerous, but all jobs have their disadvantages and travelling gives me the chance to collect souvenirs. What kind of things? Mostly things for my flat.<br>
+I'm mad about anything Chinese. And so when I was in Hong Kong, I got a really nice table and some chairs and in Turkey, I spend a lot of money on carpets. Then I've got pictures and other bits of art from Thailand and India.<br>
+The flat's getting a bit crowded. It sounds colourful. Do you have a regular working day? Not really.<br>
+At the moment, I'm one of the team that reads the evening news, so sometimes I'm on at 6.30 and sometimes at 10 o'clock, but that's at the end of the day. It all starts in the morning at 8.30, when I phone the office to see what has happened and what they want me to go and report on. So you don't have much time for a social life.<br>
+It's better now I'm in London and can see my boyfriend more often. My sister introduced us. He came round for dinner when I was staying with her a year ago.<br>
+We have a lot in common. He's a lawyer and I studied law at university. Also, we've found that we lived in Hong Kong at the same time, although we never met.<br>
+What do you like to do in your free time? Well, cooking is something new I'm trying because I can't do it when I'm travelling, but I'm not very good at it yet, so I find it a bit stressful. Now you will have some time to review questions 9 to 12. Part 2, questions 13 to 16.<br>
+First you will have some time to look at questions 13 to 16. Now we're ready to start. Listen and answer questions 13 to 16.<br>
+You will hear the recording once only. I feel awful. I've got two lots of homework to do today and all I want to do after school is relax.<br>
+It's not fair. Of course you've got a lot. You didn't do any yesterday, did you? No, I didn't.<br>
+I had football practice and after that I was just too tired for anything else. Well, maybe you could do more homework at the weekends so you have time for football and other things during the week. But at the weekend I often go out with my family.<br>
+On Sunday we went to the Science Museum. It was great. I wouldn't want to miss doing things like that just because I've got homework.<br>
+Actually, you're quite lucky. I never do anything like that. Homework isn't everything.<br>
+I'm sure you learnt just as much there. Yes, but I don't suppose the teachers will be interested in that. I've got today's maths to do and I expect it will take me hours.<br>
+I tell you what, you can come round to my house this afternoon and we'll work on it together. I don't know. You're really good at maths.<br>
+You'll just finish it quickly and I can't do that. It's not a competition, is it? It's more important that we both finish it. Working together will be much more fun.<br>
+But if I don't do it by myself, I could be in trouble with the teacher. Well, we'll tell her you're finding it difficult and so I'm going to try and help you understand it. I'm sure she won't mind that.<br>
+Alright then. Thank you. Perhaps I'll feel better about maths if you help me.<br>
+At the moment, I still don't know where to begin. Don't worry. We'll get there.<br>
+Now you will have some time to review questions 13 to 16. First you will have some time to look at questions 17 to 20. Now we're ready to start.<br>
+Listen and answer questions 17 to 20. You will hear the recording once only. This evening on Young and Gifted, I'm joined in the studio by Julia Emerson, the young Scottish writer who's recently had a screenplay accepted by a major Hollywood studio.<br>
+Julia, I'm glad you could be with us today. Could I start by asking you to explain exactly why what you've done is so unusual? Well, Hollywood films these days don't start off with a screenplay. The screenplay only gets written after the producers have come up with an idea for a film.<br>
+Then they contact agents to find at least one major star who will act in it. The next step is to get a team of anything up to 20 writers working on the screenplay. Now, I was inexperienced enough to think that I could simply write a screenplay and send it to a number of studios, which is what I did.<br>
+When I didn't get an answer, I wrote another one and this time, by some amazing chance, they accepted it. I think everyone has been stunned by the fact that you've been successful with a screenplay at such an early age. But in fact, this isn't the first piece of writing you've had published, is it? No, it isn't.<br>
+I won a short story competition in a magazine when I was 15 and ever since then I've been writing in my spare time. I've had a number of articles published in teen magazines. I've always been fascinated by television and the cinema and I even tried to develop an idea for a TV series but somehow it didn't feel right.<br>
+Then I tried putting down an idea for a film and the writing just flowed. Do you think you're influenced very strongly by films you've seen? Yes, and I have to watch out, or I might end up writing a slightly different version of a classic. I suppose everyone who does anything creative has to think about that though.<br>
+Can you tell us something about this screenplay that's been bought by Planet Studios? What's it about? It's about two sisters who are stranded in the jungles of South America after a plane crash. They're the only survivors. They have all sorts of adventures as they try to get back to civilisation.<br>
+It's an adventure story, but it's also about the relationship between the two girls. You see, they've never been very close. In fact, at the start of the story they really hate each other, or at least they think they do.<br>
+Now you will have some time to review questions 17 to 20. That is the end of part 2.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 2 Trong phần này, bạn sẽ nghe ba cuộc hội thoại. Mỗi cuộc hội thoại sẽ chỉ được phát một lần. Mỗi cuộc hội thoại có bốn câu hỏi. Đối với mỗi câu hỏi, hãy chọn đáp án đúng A, B, C hoặc D. Câu 9 đến 12 Trước tiên, bạn sẽ có một chút thời gian để đọc câu hỏi 9 đến 12. Bây giờ chúng ta đã sẵn sàng để bắt đầu. Hãy lắng nghe và trả lời các câu hỏi 9 đến 12. Hôm nay trong phòng thu, chúng ta có một gương mặt quen thuộc trên truyền hình - Angela Bond, phóng viên tin tức. Angela, công việc của cô đã đưa cô đi khắp thế giới, đúng không? Vâng, tôi đã đưa tin từ nhiều quốc gia ở châu Á và vừa mới trở về từ Hoa Kỳ. Tôi phải nói rằng, thật tốt khi có thể dỡ hành lý vì công việc của tôi đã đưa tôi đến Anh trong ít nhất sáu tháng tới. Vậy, có phải việc đi du lịch là điều cô thích nhất trong công việc không? Điều đó thực sự thú vị, nhưng đôi khi cũng phiền phức khi không biết tuần tới mình sẽ ở đâu. Đối với tôi, điều thực sự hấp dẫn là được chứng kiến một câu chuyện tin tức lớn đang diễn ra và phát triển. Đôi khi điều đó cũng khá nguy hiểm, nhưng công việc nào cũng có mặt bất lợi của nó. Việc đi du lịch cũng cho tôi cơ hội thu thập đồ lưu niệm. Cô thường sưu tầm những món đồ gì? Chủ yếu là đồ trang trí cho căn hộ. Tôi rất thích những thứ liên quan đến Trung Quốc, vì vậy khi tôi ở Hồng Kông, tôi đã mua một bộ bàn ghế rất đẹp. Ở Thổ Nhĩ Kỳ, tôi đã chi rất nhiều tiền cho thảm. Ngoài ra, tôi còn có tranh ảnh và các tác phẩm nghệ thuật từ Thái Lan và Ấn Độ. Căn hộ của tôi bắt đầu chật chội rồi. Lịch trình làm việc của cô có cố định không? Không thực sự. Hiện tại, tôi là một trong những người dẫn bản tin buổi tối. Đôi khi tôi lên sóng lúc 6:30, đôi khi là 10 giờ tối. Nhưng đó là công việc vào cuối ngày. Một ngày của tôi bắt đầu từ 8:30 sáng, khi tôi gọi điện đến văn phòng để xem có tin tức mới gì và họ muốn tôi đưa tin gì. Cô có thời gian cho cuộc sống xã hội không? Bây giờ thì tốt hơn vì tôi đã ở London, có thể gặp bạn trai của mình thường xuyên hơn. Chị gái tôi đã giới thiệu anh ấy cho tôi. Anh ấy đến ăn tối tại nhà chị ấy khi tôi ở đó một năm trước. Chúng tôi có rất nhiều điểm chung. Anh ấy là luật sư, và tôi cũng đã học luật tại đại học. Thật thú vị là chúng tôi từng sống ở Hồng Kông cùng thời điểm, mặc dù chưa bao giờ gặp nhau. Cô thích làm gì trong thời gian rảnh? Nấu ăn là một điều mới mà tôi đang thử, vì tôi không thể làm điều đó khi đi công tác. Nhưng tôi chưa giỏi lắm, nên tôi cảm thấy hơi căng thẳng khi nấu ăn. Bây giờ bạn sẽ có một chút thời gian để kiểm tra lại các câu hỏi 9 đến 12. Câu 13 đến 16 Trước tiên, bạn sẽ có một chút thời gian để đọc câu hỏi 13 đến 16. Bây giờ chúng ta đã sẵn sàng để bắt đầu. Hãy lắng nghe và trả lời các câu hỏi 13 đến 16. Tôi cảm thấy thật tệ. Tôi có hai bài tập về nhà phải làm hôm nay, và tất cả những gì tôi muốn làm sau giờ học là thư giãn. Cậu có nhiều bài tập như vậy vì hôm qua cậu không làm gì cả, đúng không? Đúng vậy. Tôi có buổi tập bóng đá, và sau đó tôi quá mệt mỏi để làm bất cứ điều gì khác. Có lẽ cậu nên làm nhiều bài tập hơn vào cuối tuần, để có thời gian cho bóng đá và những việc khác trong tuần. Nhưng vào cuối tuần tôi thường ra ngoài với gia đình. Chủ nhật vừa rồi chúng tôi đã đến Bảo tàng Khoa học. Nó rất tuyệt. Tôi không muốn bỏ lỡ những điều như thế chỉ vì bài tập về nhà. Thực ra, cậu rất may mắn đấy. Tôi chưa bao giờ được làm những điều như vậy. Bài tập về nhà không phải là tất cả. Tôi chắc rằng cậu đã học được rất nhiều điều ở bảo tàng. Đúng vậy, nhưng tôi không nghĩ rằng giáo viên sẽ quan tâm đến điều đó. Tôi vẫn có bài tập toán hôm nay, chắc là sẽ mất hàng giờ để hoàn thành. Cậu biết không, hãy đến nhà tớ chiều nay và chúng ta sẽ làm cùng nhau. Nhưng cậu rất giỏi toán. Cậu sẽ làm xong rất nhanh, còn tớ thì không thể. Đây không phải là cuộc thi. Điều quan trọng hơn là cả hai chúng ta đều hoàn thành nó. Làm cùng nhau sẽ vui hơn rất nhiều. Nhưng nếu tớ không tự làm, giáo viên có thể sẽ không hài lòng. Chúng ta có thể nói với cô ấy rằng cậu đang gặp khó khăn, và tớ đang giúp cậu hiểu bài hơn. Chắc chắn cô ấy sẽ không phiền đâu. Được rồi. Cảm ơn cậu. Có lẽ tớ sẽ cảm thấy tốt hơn về môn toán nếu cậu giúp tớ. Đừng lo. Chúng ta sẽ làm được. Bây giờ bạn sẽ có một chút thời gian để kiểm tra lại các câu hỏi 13 đến 16. Câu 17 đến 20 Trước tiên, bạn sẽ có một chút thời gian để đọc câu hỏi 17 đến 20. Bây giờ chúng ta đã sẵn sàng để bắt đầu. Hãy lắng nghe và trả lời các câu hỏi 17 đến 20. Tối nay, trong chương trình "Những người trẻ tài năng", tôi xin giới thiệu Julia Emerson, nhà văn trẻ người Scotland, người vừa có kịch bản phim được một hãng phim lớn ở Hollywood chấp nhận. Julia, thật vui khi có cô tham gia chương trình hôm nay. Cô có thể giải thích tại sao điều cô làm lại đặc biệt không? Hollywood ngày nay không bắt đầu bằng một kịch bản phim. Thường thì các nhà sản xuất sẽ nghĩ ra ý tưởng, sau đó tìm kiếm ngôi sao điện ảnh, và cuối cùng mới thuê đội ngũ biên kịch. Tôi đã mạo hiểm khi tự viết kịch bản và gửi đến các hãng phim. Lần đầu không có phản hồi, tôi viết một kịch bản khác, và lần này, họ đã chấp nhận. Bộ phim kể về hai chị em sống sót sau một vụ rơi máy bay và bị mắc kẹt trong rừng rậm Nam Mỹ. Ban đầu họ ghét nhau, nhưng dần dần gắn kết hơn qua hành trình sinh tồn. Bây giờ bạn sẽ có một chút thời gian để kiểm tra lại các câu hỏi 17 đến 20. Đây là phần kết thúc của Phần 2.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Where is Angela working at the moment?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Britain</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. the USA															</div>
+																				<div class="ps-4 mb-2">
+																	C. Agentina															</div>
+																				<div class="ps-4 mb-2">
+																	D. Asia															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Britain</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Angela nói về công việc hiện tại của mình:</p>   <p>"I've just returned from the United States. I must say, it's good to be able to unpack my suitcase now that the job has brought me to Britain for at least six months."</p>   <p>"Tôi vừa trở về từ Hoa Kỳ. Tôi phải nói rằng thật tốt khi có thể dỡ vali sau khi công việc đã đưa tôi đến Anh trong ít nhất sáu tháng."</p>    <p>Bài nghe xác nhận rằng Angela hiện đang làm việc tại <strong>Anh</strong>. Do đó, đáp án chính xác là <strong>Britain.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">the USA</span> ❌ (Hoa Kỳ.) - Sai, vì Angela vừa nói rằng cô ấy đã trở về từ Hoa Kỳ và hiện tại đang ở Anh.</li>            <li><span class="text-success"><strong>Britain</strong></span> ✅ (Anh.) - Đúng, vì bài nghe xác nhận Angela hiện đang làm việc tại Anh.</li>            <li><span class="text-danger">Asia</span> ❌ (Châu Á.) - Sai, mặc dù Angela đã làm việc ở nhiều quốc gia ở Châu Á, nhưng hiện tại cô ấy đang ở Anh.</li>            <li><span class="text-danger">Argentina</span> ❌ (Argentina.) - Sai, vì bài nghe không đề cập đến Argentina là nơi Angela làm việc hiện tại.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: Why does Angela like her job?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Because she enjoys watching important events happen.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Because she has a chance to meet new people.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Because she never knows where she'll go next.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Because she loves being in dangerous situations.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Because she enjoys watching important events happen.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Angela giải thích lý do cô ấy thích công việc của mình:</p>   <p>"For me, the really exciting thing is being somewhere when a big news story is taking place and seeing it develop. Sometimes that can be quite dangerous, but all jobs have their disadvantages and travelling gives me the chance to collect souvenirs."</p>   <p>"Đối với tôi, điều thú vị thực sự là được ở nơi mà một câu chuyện tin tức lớn đang diễn ra và chứng kiến nó phát triển. Đôi khi điều đó có thể khá nguy hiểm, nhưng tất cả công việc đều có những mặt bất lợi và việc đi lại cho tôi cơ hội thu thập đồ lưu niệm."</p>    <p>Bài nghe xác nhận rằng Angela thích công việc vì cô ấy được chứng kiến các sự kiện quan trọng xảy ra và phát triển. Do đó, đáp án chính xác là <strong>Because she enjoys watching important events happen.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">Because she loves being in dangerous situations.</span> ❌ (Vì cô ấy yêu thích ở trong những tình huống nguy hiểm.) - Sai, Angela chỉ nói rằng công việc có thể đôi khi nguy hiểm, nhưng không phải vì vậy mà cô ấy yêu thích công việc.</li>            <li><span class="text-success"><strong>Because she enjoys watching important events happen.</strong></span> ✅ (Vì cô ấy thích chứng kiến những sự kiện quan trọng xảy ra.) - Đúng, vì Angela nói rằng điều cô ấy thích là được chứng kiến các sự kiện tin tức lớn khi chúng xảy ra.</li>            <li><span class="text-danger">Because she has a chance to meet new people.</span> ❌ (Vì cô ấy có cơ hội gặp gỡ những người mới.) - Sai, mặc dù Angela có thể gặp gỡ nhiều người, nhưng lý do cô thích công việc không phải vì gặp gỡ người mới.</li>            <li><span class="text-danger">Because she never knows where she'll go next.</span> ❌ (Vì cô ấy không bao giờ biết mình sẽ đi đâu tiếp theo.) - Sai, mặc dù việc không biết sẽ đi đâu là một phần công việc, nhưng Angela không nói rằng đó là lý do cô ấy thích công việc của mình.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What did Angela bring home from Hong Kong?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. furniture</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. bits of art															</div>
+																				<div class="ps-4 mb-2">
+																	C. carpets															</div>
+																				<div class="ps-4 mb-2">
+																	D. pictures															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>furniture</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Angela nói về những món đồ cô mang về từ các chuyến công tác:</p>   <p>"And so when I was in Hong Kong, I got a really nice table and some chairs..."</p>   <p>"Và khi tôi ở Hong Kong, tôi đã mua một chiếc bàn rất đẹp và một vài chiếc ghế..."</p>    <p>Bài nghe xác nhận rằng Angela đã mang về đồ nội thất từ Hong Kong. Do đó, đáp án chính xác là <strong>furniture.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">pictures</span> ❌ (Những bức tranh.) - Sai, mặc dù Angela có mang tranh từ các nơi khác, nhưng không phải từ Hong Kong.</li>            <li><span class="text-danger">carpets</span> ❌ (Thảm.) - Sai, thảm là món đồ Angela mua ở Thổ Nhĩ Kỳ, không phải Hong Kong.</li>            <li><span class="text-danger">bits of art</span> ❌ (Những tác phẩm nghệ thuật nhỏ.) - Sai, mặc dù Angela có mang những tác phẩm nghệ thuật từ các nơi khác, nhưng không phải từ Hong Kong.</li>            <li><span class="text-success"><strong>furniture</strong></span> ✅ (Đồ nội thất.) - Đúng, Angela nói rằng cô mua một chiếc bàn và một vài chiếc ghế khi ở Hong Kong.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What time does Angela's working day begin?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 10.00 am															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. 8.30 am</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. 6.30 pm															</div>
+																				<div class="ps-4 mb-2">
+																	D. 8 am															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>8.30 am</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Angela mô tả về ngày làm việc của mình:</p>   <p>"It all starts in the morning at 8.30, when I phone the office to see what has happened and what they want me to go and report on."</p>   <p>"Mọi thứ bắt đầu vào buổi sáng lúc 8.30, khi tôi gọi điện cho văn phòng để xem đã có chuyện gì xảy ra và họ muốn tôi đi báo cáo về điều gì."</p>    <p>Bài nghe xác nhận rằng ngày làm việc của Angela bắt đầu lúc <strong>8.30 am.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>8.30 am</strong></span> ✅ (8.30 sáng.) - Đúng, Angela nói rằng ngày làm việc của cô bắt đầu vào lúc 8.30 sáng.</li>            <li><span class="text-danger">6.30 pm</span> ❌ (6.30 chiều.) - Sai, vì Angela không nói rằng ngày làm việc của cô bắt đầu vào buổi tối.</li>            <li><span class="text-danger">10.00 am</span> ❌ (10.00 sáng.) - Sai, vì ngày làm việc của Angela bắt đầu từ 8.30 sáng, không phải 10.00 sáng.</li>            <li><span class="text-danger">8 am</span> ❌ (8.00 sáng.) - Sai, vì Angela nói rõ rằng ngày làm việc của cô bắt đầu lúc 8.30 sáng, không phải 8.00 sáng.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What did Marcus do yesterday?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He did his homework.															</div>
+																				<div class="ps-4 mb-2">
+																	B. He went out with his family.															</div>
+																				<div class="ps-4 mb-2">
+																	C. He relaxed after school.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. He had football practice.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>He had football practice.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Marcus giải thích về những gì anh ấy đã làm vào ngày hôm qua:</p>   <p>"No, I didn't. I had football practice and after that I was just too tired for anything else."</p>   <p>"Không, tôi không làm. Tôi đã có buổi tập bóng đá và sau đó tôi đã quá mệt mỏi để làm bất kỳ việc gì khác."</p>    <p>Bài nghe xác nhận rằng Marcus đã tham gia tập bóng đá vào ngày hôm qua. Do đó, đáp án chính xác là <strong>He had football practice.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">He did his homework.</span> ❌ (Anh ấy làm bài tập về nhà.) - Sai, vì Marcus nói anh ấy không làm bài tập vì đã có buổi tập bóng đá.</li>            <li><span class="text-danger">He relaxed after school.</span> ❌ (Anh ấy thư giãn sau giờ học.) - Sai, vì Marcus đã không thư giãn mà đã tham gia buổi tập bóng đá.</li>            <li><span class="text-danger">He went out with his family.</span> ❌ (Anh ấy đi chơi với gia đình.) - Sai, vì Marcus nói anh ấy đã đi tập bóng đá chứ không phải đi chơi với gia đình.</li>            <li><span class="text-success"><strong>He had football practice.</strong></span> ✅ (Anh ấy tham gia buổi tập bóng đá.) - Đúng, vì Marcus đã giải thích rằng anh ấy có buổi tập bóng đá vào ngày hôm qua.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: What does Catherine think about Marcus's trip to the Science Museum?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It was a waste of time.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. It was more exciting than staying at home.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. It was a great experience for him.															</div>
+																				<div class="ps-4 mb-2">
+																	D. It was boring.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>It was more exciting than staying at home.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Catherine nói về chuyến đi của Marcus tới Bảo tàng Khoa học:</p>   <p>"Actually, you're quite lucky. I never do anything like that. Homework isn't everything. I'm sure you learnt just as much there."</p>   <p>"Thực ra, bạn thật là may mắn. Tôi không bao giờ làm gì như vậy. Bài tập về nhà không phải là tất cả. Tôi chắc chắn bạn đã học được nhiều điều ở đó."</p>    <p>Catherine nghĩ rằng chuyến đi đến Bảo tàng Khoa học là một trải nghiệm tuyệt vời và có ích cho Marcus. Do đó, đáp án chính xác là <strong>It was more exciting than staying at home.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">It was boring.</span> ❌ (Chuyến đi thật nhàm chán.) - Sai, vì Catherine không nói rằng chuyến đi là nhàm chán.</li>            <li><span class="text-danger">It was a waste of time.</span> ❌ (Chuyến đi là lãng phí thời gian.) - Sai, vì Catherine không nói rằng chuyến đi là lãng phí thời gian.</li>            <li><span class="text-danger">It was a great experience for him.</span> ❌ (Đó là một trải nghiệm tuyệt vời cho anh ấy.) - Sai, mặc dù Catherine cho rằng chuyến đi là một trải nghiệm tốt, nhưng câu nói chính xác của cô ấy là chuyến đi thú vị hơn ở nhà.</li>            <li><span class="text-success"><strong>It was more exciting than staying at home.</strong></span> ✅ (Chuyến đi thú vị hơn ở nhà.) - Đúng, vì Catherine nói rằng chuyến đi là một trải nghiệm tốt và thú vị hơn.</li></ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What does Catherine offer to do?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. She offers to do all the maths homework for Marcus.															</div>
+																				<div class="ps-4 mb-2">
+																	B. She offers to ask the teacher for help.															</div>
+																				<div class="ps-4 mb-2">
+																	C. She offers to show Marcus the maths homework she has already done.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. She offers to work on the maths homework with Marcus.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>She offers to work on the maths homework with Marcus.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Catherine nói về cách giúp Marcus làm bài tập toán:</p>   <p>"I tell you what, you can come round to my house this afternoon and we'll work on it together."</p>   <p>"Tôi nói cho bạn biết, bạn có thể đến nhà tôi chiều nay và chúng ta sẽ làm bài tập cùng nhau."</p>    <p>Catherine đã đề nghị làm bài tập toán cùng Marcus. Do đó, đáp án chính xác là <strong>She offers to work on the maths homework with Marcus.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">She offers to show Marcus the maths homework she has already done.</span> ❌ (Cô ấy đề nghị chỉ cho Marcus bài tập toán mà cô ấy đã làm xong.) - Sai, vì Catherine không chỉ cho Marcus bài tập cô ấy đã làm mà đề nghị làm bài cùng nhau.</li>            <li><span class="text-danger">She offers to ask the teacher for help.</span> ❌ (Cô ấy đề nghị hỏi giáo viên giúp đỡ.) - Sai, Catherine không đề nghị hỏi giáo viên mà tự mình giúp Marcus làm bài.</li>            <li><span class="text-danger">She offers to do all the maths homework for Marcus.</span> ❌ (Cô ấy đề nghị làm tất cả bài tập toán cho Marcus.) - Sai, vì Catherine không làm bài thay Marcus mà chỉ giúp anh ấy làm cùng.</li>            <li><span class="text-success"><strong>She offers to work on the maths homework with Marcus.</strong></span> ✅ (Cô ấy đề nghị làm bài tập toán cùng Marcus.) - Đúng, vì Catherine đề nghị làm bài tập toán cùng Marcus để giúp anh ấy.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: How does Marcus feel after talking to Catherine?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He feels more confident about his homework.															</div>
+																				<div class="ps-4 mb-2">
+																	B. He feels very happy when Catherine help him with his homework.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. He feels much better about maths.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. He feels less worried about the teacher.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>He feels much better about maths.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Marcus cảm thấy như thế nào sau khi nói chuyện với Catherine:</p>   <p>"Perhaps I'll feel better about maths if you help me."</p>   <p>"Có lẽ tôi sẽ cảm thấy tốt hơn về môn toán nếu bạn giúp tôi."</p>    <p>Marcus cảm thấy tốt hơn về môn toán sau khi nhận được sự giúp đỡ từ Catherine. Do đó, đáp án chính xác là <strong>He feels much better about maths.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>He feels much better about maths.</strong></span> ✅ (Anh ấy cảm thấy tốt hơn về môn toán.) - Đúng, vì Marcus nói rằng anh ấy cảm thấy tốt hơn về môn toán khi nhận được sự giúp đỡ của Catherine.</li>            <li><span class="text-danger">He feels more confident about his homework.</span> ❌ (Anh ấy cảm thấy tự tin hơn về bài tập của mình.) - Sai, Marcus không nói rõ là cảm thấy tự tin hơn về bài tập, mà chỉ cảm thấy tốt hơn về môn toán.</li>            <li><span class="text-danger">He feels less worried about the teacher.</span> ❌ (Anh ấy cảm thấy ít lo lắng hơn về giáo viên.) - Sai, vì Marcus không nói rằng anh ấy lo lắng về giáo viên mà chỉ lo về bài tập toán.</li>            <li><span class="text-danger">He feels very happy when Catherine helps him with his homework.</span> ❌ (Anh ấy cảm thấy rất vui khi Catherine giúp anh ấy làm bài tập.) - Sai, mặc dù Marcus cảm thấy tốt hơn nhưng không nói rằng anh ấy cảm thấy rất vui mà chỉ cảm thấy tốt hơn về môn toán.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: According to Julia, What do Hollywood producers do nowadays?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. They contact agents to find writers for them.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. They usually think of ideas for films themselves.															</div>
+																				<div class="ps-4 mb-2">
+																	C. They write screenplays themselves.															</div>
+																				<div class="ps-4 mb-2">
+																	D. They contact stars themselves.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>They contact agents to find writers for them.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Julia giải thích về quy trình làm phim ở Hollywood hiện nay:</p>   <p>"Hollywood films these days don't start off with a screenplay. The screenplay only gets written after the producers have come up with an idea for a film. Then they contact agents to find at least one major star who will act in it."</p>   <p>"Những bộ phim Hollywood ngày nay không bắt đầu bằng kịch bản. Kịch bản chỉ được viết sau khi các nhà sản xuất có một ý tưởng cho bộ phim. Sau đó, họ liên hệ với các đại lý để tìm ít nhất một ngôi sao lớn để tham gia."</p>    <p>Bài nghe xác nhận rằng các nhà sản xuất Hollywood hiện nay liên hệ với các đại lý để tìm các biên kịch cho họ. Do đó, đáp án chính xác là <strong>They contact agents to find writers for them.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">They usually think of ideas for films themselves.</span> ❌ (Họ thường nghĩ ra ý tưởng cho phim tự mình.) - Sai, vì Julia nói rằng các nhà sản xuất nghĩ ra ý tưởng, nhưng họ không bắt đầu với kịch bản mà liên hệ với các đại lý để tìm kiếm ngôi sao và biên kịch.</li>            <li><span class="text-danger">They write screenplays themselves.</span> ❌ (Họ tự viết kịch bản.) - Sai, vì Julia giải thích rằng kịch bản chỉ được viết sau khi các nhà sản xuất có ý tưởng và họ không viết kịch bản mà tìm biên kịch qua đại lý.</li>            <li><span class="text-danger">They contact stars themselves.</span> ❌ (Họ tự liên hệ với các ngôi sao.) - Sai, vì Julia nói rằng các nhà sản xuất liên hệ với đại lý, không phải trực tiếp với các ngôi sao.</li>            <li><span class="text-success"><strong>They contact agents to find writers for them.</strong></span> ✅ (Họ liên hệ với các đại lý để tìm biên kịch cho họ.) - Đúng, vì Julia giải thích rằng các nhà sản xuất Hollywood hiện nay liên hệ với các đại lý để tìm biên kịch.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: Which statement is true about Julia?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. She was not discouraged by the lack of response from studios.															</div>
+																				<div class="ps-4 mb-2">
+																	B. She has written a number of successful screenplays for studios.															</div>
+																				<div class="ps-4 mb-2">
+																	C. She never got a screenplay accepted by studios.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. She was lucky enough to have her first screenplay accepted.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>She was lucky enough to have her first screenplay accepted.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Julia kể về cách cô ấy có kịch bản đầu tiên được nhận bởi một studio Hollywood:</p>   <p>"I wrote another one and this time, by some amazing chance, they accepted it."</p>   <p>"Tôi đã viết một cái khác và lần này, nhờ một cơ hội kỳ diệu, họ đã chấp nhận nó."</p>    <p>Bài nghe xác nhận rằng Julia đã may mắn khi có kịch bản đầu tiên được chấp nhận. Do đó, đáp án chính xác là <strong>She was lucky enough to have her first screenplay accepted.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">She has written a number of successful screenplays for studios.</span> ❌ (Cô ấy đã viết nhiều kịch bản thành công cho các studio.) - Sai, vì Julia chỉ có một kịch bản được nhận, và cô ấy không đề cập đến nhiều kịch bản thành công.</li>            <li><span class="text-success"><strong>She was lucky enough to have her first screenplay accepted.</strong></span> ✅ (Cô ấy đã may mắn khi có kịch bản đầu tiên được chấp nhận.) - Đúng, vì Julia kể rằng kịch bản đầu tiên của cô ấy đã được nhận nhờ một cơ hội kỳ diệu.</li>            <li><span class="text-danger">She never got a screenplay accepted by studios.</span> ❌ (Cô ấy chưa bao giờ có kịch bản được studio nhận.) - Sai, vì Julia đã có kịch bản đầu tiên được nhận bởi studio.</li>            <li><span class="text-danger">She was not discouraged by the lack of response from studios.</span> ❌ (Cô ấy không bị nản lòng bởi sự thiếu phản hồi từ các studio.) - Sai, vì Julia không nói rằng cô ấy không bị nản lòng, mà cô ấy đã tiếp tục viết một kịch bản khác sau khi không nhận được phản hồi.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: When did she begin writing in her spare time?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. when she published some articles in a magazine.															</div>
+																				<div class="ps-4 mb-2">
+																	B. when she had a successful screenplay for studios.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. when she won a short story competition.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. when she had an idea for a TV series.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>when she won a short story competition.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Julia nói về thời điểm cô bắt đầu viết trong thời gian rảnh:</p>   <p>"No, it isn't. I won a short story competition in a magazine when I was 15 and ever since then I've been writing in my spare time."</p>   <p>"Không, không phải vậy. Tôi đã giành giải trong một cuộc thi viết truyện ngắn trên tạp chí khi tôi 15 tuổi và từ đó tôi đã viết trong thời gian rảnh của mình."</p>    <p>Bài nghe xác nhận rằng Julia bắt đầu viết trong thời gian rảnh từ khi cô thắng giải viết truyện ngắn. Do đó, đáp án chính xác là <strong>when she won a short story competition.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">when she published some articles in a magazine.</span> ❌ (Khi cô ấy xuất bản một số bài viết trên tạp chí.) - Sai, vì Julia không bắt đầu viết từ khi xuất bản các bài viết mà là từ khi thắng cuộc thi truyện ngắn.</li>            <li><span class="text-danger">when she had an idea for a TV series.</span> ❌ (Khi cô ấy có ý tưởng cho một series truyền hình.) - Sai, vì Julia chỉ nói rằng cô ấy đã thử phát triển ý tưởng cho series truyền hình, không phải là lúc bắt đầu viết.</li>            <li><span class="text-success"><strong>when she won a short story competition.</strong></span> ✅ (Khi cô ấy thắng cuộc thi viết truyện ngắn.) - Đúng, vì Julia nói rằng cô ấy bắt đầu viết sau khi giành giải trong cuộc thi truyện ngắn khi mới 15 tuổi.</li>            <li><span class="text-danger">when she had a successful screenplay for studios.</span> ❌ (Khi cô ấy có kịch bản thành công cho các studio.) - Sai, vì Julia bắt đầu viết từ khi thắng cuộc thi viết truyện ngắn, không phải khi cô ấy có kịch bản thành công đầu tiên.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: What does Julia say?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. She would like to write adventure films.															</div>
+																				<div class="ps-4 mb-2">
+																	B. She would like to write a version of a classic film.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. There is a danger she might imitate other films.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Creative people should think a lot about films.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>There is a danger she might imitate other films.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Julia nói về việc có nguy cơ sao chép các bộ phim khác khi viết kịch bản:</p>   <p>"Yes, and I have to watch out, or I might end up writing a slightly different version of a classic."</p>   <p>"Vâng, và tôi phải cẩn thận, nếu không tôi có thể sẽ viết một phiên bản hơi khác của một bộ phim kinh điển."</p>    <p>Bài nghe xác nhận rằng Julia nhận thức được nguy cơ có thể sao chép các bộ phim khác khi viết kịch bản. Do đó, đáp án chính xác là <strong>There is a danger she might imitate other films.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">She would like to write a version of a classic film.</span> ❌ (Cô ấy muốn viết một phiên bản của bộ phim kinh điển.) - Sai, Julia không nói rằng cô ấy muốn viết một phiên bản của bộ phim kinh điển mà chỉ đề cập đến việc có nguy cơ sao chép nó.</li>            <li><span class="text-success"><strong>There is a danger she might imitate other films.</strong></span> ✅ (Có nguy cơ cô ấy có thể sao chép các bộ phim khác.) - Đúng, vì Julia lo lắng về việc có thể vô tình viết một phiên bản sao chép của bộ phim kinh điển.</li>            <li><span class="text-danger">Creative people should think a lot about films.</span> ❌ (Những người sáng tạo nên suy nghĩ nhiều về các bộ phim.) - Sai, mặc dù Julia nói về sự sáng tạo, nhưng cô ấy không đề cập rằng những người sáng tạo nên suy nghĩ nhiều về các bộ phim.</li>            <li><span class="text-danger">She would like to write adventure films.</span> ❌ (Cô ấy muốn viết phim phiêu lưu.) - Sai, vì Julia không nói rằng cô ấy muốn viết phim phiêu lưu, mà là cô ấy nói về việc viết kịch bản phim.</li>    </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

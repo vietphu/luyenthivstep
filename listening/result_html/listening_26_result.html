@@ -1,0 +1,582 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 26 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87745				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/12				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp2-1664817668_3c4d0f13126602936ad4.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>In this part, you will hear three conversations. The conversations will be played once only. There are four questions for each conversation.<br>
+For each question, choose the right answer A, B, C, or D. Part 2, questions 9 to 12. First, you will have some time to look at questions 9 to 12. Now we're ready to start.<br>
+Listen and answer questions 9 to 12. You will hear the recording once only. <br>
+Simon, tell us about yourself.<br>
+Well, like lots of other kids my age, I've grown up taking my boat onto the rivers in this area. One of my favorite rivers is the River Stanton, which is fast with excellent white water, so things can get pretty dangerous. But it's exciting, and I'm experienced.<br>
+Now, it was while you were on the River Stanton that you noticed something was wrong. Yeah, I always wondered why the water made my eyes burn if it got on my face, and why it was a strange orange color, especially when the water was running low. So you decided to find out more.<br>
+Yeah. I asked other people using the river, and I visited a few websites, and found out that the river was orange because of pollution from the old mines in the area. There was a lot of mining for coal done in this part of the country.<br>
+I knew that from my history class at school. But what I didn't know was that pollution was coming from those old mine works and escaping into the rivers. Then you did a qualification, didn't you? Yes.<br>
+I found out about an organization called the Friends of the River Stanton. They told me they did a special course where I could learn how to test the river water to see if it was healthy or not. So that's what I did, and I got really interested in the subject.<br>
+In fact, you got so interested that you actually started to look for an answer to the pollution problem. I learned as much as I could about the chemistry behind the pollution. I can't really explain all the detail.<br>
+But basically, if you add something called limestone to the river, it can improve the chemistry. That means that the plants and fish which had died because of all the mining companies that used to be in the area could live in the river again. So that made me really happy.<br>
+Now you will have some time to review questions 9 to 12. Part 2, questions 13 to 16. First, you will have some time to look at questions 13 to 16.<br>
+Now we're ready to start. Listen and answer questions 13 to 16. You will hear the recording once only.<br>
+Good morning, and today we're continuing with our series on careers for young people. In the studio today we have Sylvia Short, who works for a company that produces guidebooks for serious travellers. Now, Sylvia, I believe you left Essex University with a degree in German and Spanish.<br>
+Tell us something about how you got your job. My main interest has always been travel. I spent every holiday when I was a student travelling abroad.<br>
+After I left university, I spent a year as an English teacher in Spain, followed by six months as a tour guide in Italy. When I returned to England, I applied for loads of jobs advertised in the newspaper, but didn't have any success. So I decided to make a list of every company I wanted to work for and write to them directly, rather than wait for them to advertise.<br>
+Good advice to anyone, I think. Yes, and I was very lucky, as the company World Travel needed an assistant in their office in London. I dealt mainly with the post at first, just to get used to their way of doing things.<br>
+Obviously I was qualified to do more, but I wasn't in a hurry. Then the manager's assistant announced she was leaving after only being with the company for 12 months, and I applied for her job. The company encourages their staff to apply for higher-level jobs, and I was promoted four months after joining.<br>
+Good for you. What does the job involve? Well, I've expanded the role since I took it on. I'm in charge of all the advertising in the press whenever we publish a new guidebook, and I sometimes give talks to people in the travel industry.<br>
+Do you find the work interesting? Oh yes, it's never boring. We often get odd requests from journalists. They assume we know everything there is to know about travel, so they often ring us to see if we can help them.<br>
+One rang to say he was writing an article and wanted to know whether there were any female football teams in China. Now you will have some time to review questions 13 to 16. Part 2, questions 17 to 20.<br>
+First you will have some time to look at questions 17 to 20. Now we're ready to start. Listen and answer questions 17 to 20.<br>
+You will hear the recording once only. Now, what about the computers? I think it might be a good idea to install some new models. They would take up a lot less room, and so that would increase the workspace for textbooks and so on.<br>
+That would be great. It is a bit cramped in there at times. What about other resources? Do you have a list of things that the students would like to see improved? Yes, one of the comments that students frequently make is that they find it difficult to find materials that are appropriate for their level, especially reading resources.<br>
+So I think we need to label them more clearly. Well, that's easy enough. We can get that organised very quickly.<br>
+In fact, I think we should review all of the study resources as some of them are looking a bit out of date. Definitely. The CD section especially needs to be more current.<br>
+I think we should get some of the ones that go with our latest course books and also make multiple copies. Good. Now, I was also thinking about some different materials that we haven't got in there at all.<br>
+What do you think of the idea of introducing some workbooks? If we break them up into separate pages and laminate them, they'd be a great resource. The students could study the main course book in class and then do follow-up practice in the self-access centre. That sounds good.<br>
+OK. Now, finally, we need to think about how the room is used. I'll have to talk to the teachers and make sure we can all reach some agreement on a timetable to supervise the centre after class.<br>
+But we also need to think about security too, especially if we're going to invest in some new equipment. Um, what about putting in an alarm? Good idea. The other thing I'd like to do is talk to our technicians and see whether we could somehow limit the access to email.<br>
+I really don't want to see that resource misused. Now you will have some time to review questions 17 to 20. That is the end of Part 2.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 2 Trong phần này, bạn sẽ nghe ba cuộc hội thoại. Mỗi cuộc hội thoại sẽ chỉ được phát một lần. Có bốn câu hỏi cho mỗi cuộc hội thoại. Đối với mỗi câu hỏi, hãy chọn đáp án đúng A, B, C hoặc D. Câu 9 đến 12 Trước tiên, bạn sẽ có một chút thời gian để đọc câu hỏi 9 đến 12. Bây giờ chúng ta đã sẵn sàng để bắt đầu. Hãy lắng nghe và trả lời các câu hỏi 9 đến 12. Bạn sẽ chỉ nghe đoạn hội thoại này một lần duy nhất. Simon, hãy kể cho chúng tôi về bản thân bạn. Vâng, giống như nhiều bạn trẻ khác, tôi lớn lên cùng những con sông trong khu vực này, thường xuyên chèo thuyền trên đó. Một trong những con sông yêu thích của tôi là sông Stanton, nơi có dòng nước chảy xiết và những con sóng mạnh, đôi khi rất nguy hiểm. Nhưng điều đó thật thú vị, và tôi có nhiều kinh nghiệm. Bạn đã nhận ra điều gì đó không ổn khi đang ở trên sông Stanton, đúng không? Đúng vậy. Tôi luôn thắc mắc tại sao nước làm mắt tôi cay xè khi bắn vào mặt, và tại sao nó lại có màu cam kỳ lạ, đặc biệt là khi mực nước xuống thấp. Vậy nên bạn quyết định tìm hiểu thêm? Đúng rồi. Tôi hỏi những người khác cũng chèo thuyền trên sông, rồi tôi tìm kiếm trên một số trang web và phát hiện ra rằng con sông có màu cam vì bị ô nhiễm từ các mỏ khai thác cũ trong khu vực. Trước đây, khu vực này có rất nhiều hoạt động khai thác than. Tôi biết điều đó từ lớp lịch sử ở trường. Nhưng tôi không hề biết rằng ô nhiễm vẫn tiếp tục rò rỉ từ các mỏ cũ này và xâm nhập vào sông. Rồi bạn đã tham gia một khóa học, đúng không? Đúng vậy. Tôi biết đến một tổ chức có tên "Những người bạn của sông Stanton". Họ tổ chức một khóa học đặc biệt, nơi tôi có thể học cách kiểm tra chất lượng nước sông để xem nó có an toàn hay không. Vậy nên tôi tham gia khóa học đó, và dần dần tôi bắt đầu thực sự quan tâm đến chủ đề này. Thực tế, bạn quan tâm đến mức bạn đã cố gắng tìm cách giải quyết vấn đề ô nhiễm? Tôi đã tìm hiểu mọi thứ có thể về hóa học đằng sau sự ô nhiễm này. Tôi không thể giải thích tất cả các chi tiết, nhưng về cơ bản, nếu bạn thêm một chất gọi là đá vôi vào sông, nó có thể cải thiện thành phần hóa học của nước. Điều đó có nghĩa là các loài thực vật và cá, vốn đã chết do ô nhiễm từ các công ty khai thác mỏ trước đây, có thể sống trở lại trong dòng sông. Điều này thực sự làm tôi rất vui. Bây giờ bạn sẽ có một chút thời gian để kiểm tra lại các câu hỏi 9 đến 12. Câu 13 đến 16 Trước tiên, bạn sẽ có một chút thời gian để đọc câu hỏi 13 đến 16. Bây giờ chúng ta đã sẵn sàng để bắt đầu. Hãy lắng nghe và trả lời các câu hỏi 13 đến 16. Bạn sẽ chỉ nghe đoạn hội thoại này một lần duy nhất. Xin chào, hôm nay chúng ta sẽ tiếp tục với loạt chương trình về các ngành nghề dành cho giới trẻ. Hôm nay, trong phòng thu, chúng tôi có Sylvia Short, người đang làm việc cho một công ty xuất bản sách hướng dẫn du lịch dành cho những du khách đam mê khám phá. Sylvia, tôi biết rằng bạn tốt nghiệp Đại học Essex với bằng tiếng Đức và tiếng Tây Ban Nha. Bạn có thể kể một chút về cách bạn có được công việc này không? Tôi luôn có niềm đam mê với du lịch. Khi còn là sinh viên, tôi đã dành tất cả các kỳ nghỉ của mình để đi du lịch nước ngoài. Sau khi tốt nghiệp đại học, tôi đã dành một năm làm giáo viên tiếng Anh ở Tây Ban Nha, sau đó là sáu tháng làm hướng dẫn viên du lịch ở Ý. Khi trở về Anh, tôi đã nộp đơn cho rất nhiều công việc được đăng trên báo, nhưng không thành công. Vì vậy, tôi quyết định lập danh sách tất cả các công ty mà tôi muốn làm việc và tự gửi đơn xin việc cho họ thay vì chờ họ tuyển dụng. Một lời khuyên hay cho bất kỳ ai đang tìm việc! Đúng vậy, và tôi đã rất may mắn khi công ty "World Travel" đang cần một trợ lý văn phòng tại London. Ban đầu, công việc của tôi chủ yếu là xử lý thư từ, giúp tôi làm quen với quy trình làm việc của công ty. Tất nhiên, tôi có trình độ để làm nhiều hơn thế, nhưng tôi không vội vàng. Sau đó, trợ lý của quản lý công ty tuyên bố rời đi chỉ sau 12 tháng làm việc, và tôi đã nộp đơn ứng tuyển. Công ty khuyến khích nhân viên nội bộ ứng tuyển các vị trí cao hơn, và tôi đã được thăng chức chỉ sau bốn tháng làm việc. Thật tuyệt vời! Vậy công việc của bạn hiện tại là gì? Tôi đã mở rộng vai trò của mình kể từ khi đảm nhận vị trí này. Tôi chịu trách nhiệm quảng cáo trên báo chí mỗi khi chúng tôi xuất bản một cuốn sách hướng dẫn mới, và đôi khi tôi cũng thuyết trình tại các sự kiện du lịch. Bạn có thấy công việc này thú vị không? Ồ, có chứ! Nó không bao giờ nhàm chán. Chúng tôi thường nhận được những yêu cầu rất kỳ lạ từ các nhà báo. Họ nghĩ rằng chúng tôi biết tất cả mọi thứ về du lịch, nên họ thường gọi điện để hỏi thông tin. Một lần, có người gọi điện hỏi chúng tôi có biết đội bóng đá nữ nào ở Trung Quốc không! Bây giờ bạn sẽ có một chút thời gian để kiểm tra lại các câu hỏi 13 đến 16. Câu 17 đến 20 Trước tiên, bạn sẽ có một chút thời gian để đọc câu hỏi 17 đến 20. Bây giờ chúng ta đã sẵn sàng để bắt đầu. Hãy lắng nghe và trả lời các câu hỏi 17 đến 20. Bạn sẽ chỉ nghe đoạn hội thoại này một lần duy nhất. Vậy còn về hệ thống máy tính thì sao? Tôi nghĩ rằng có thể là một ý tưởng hay nếu chúng ta lắp đặt một số mẫu máy tính mới. Chúng sẽ chiếm ít không gian hơn, giúp tăng diện tích làm việc cho sách giáo khoa và các tài liệu khác. Điều đó thật tuyệt vời! Không gian trong phòng đôi khi khá chật chội. Vậy còn các tài nguyên học tập khác thì sao? Bạn có danh sách những thứ mà sinh viên muốn được cải thiện không? Có, một trong những vấn đề mà sinh viên thường xuyên đề cập là họ gặp khó khăn trong việc tìm tài liệu phù hợp với trình độ của mình, đặc biệt là tài liệu đọc. Tôi nghĩ chúng ta cần dán nhãn rõ ràng hơn. Điều đó rất dễ dàng. Chúng ta có thể thực hiện ngay lập tức. Ngoài ra, tôi nghĩ chúng ta cũng nên cập nhật toàn bộ tài nguyên học tập vì một số tài liệu đã lỗi thời. Chính xác! Đặc biệt là các đĩa CD. Chúng ta nên mua những đĩa CD mới phù hợp với sách giáo khoa hiện tại và làm nhiều bản sao hơn. Bây giờ bạn sẽ có một chút thời gian để kiểm tra lại các câu hỏi 17 đến 20. Đây là phần kết thúc của Phần 2.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Why does Simon enjoy taking his boat onto the River Stanton?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Many people go there.															</div>
+																				<div class="ps-4 mb-2">
+																	B. The river is closed to his house.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. He likes its water speed.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. He likes sailing.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>He likes its water speed.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Simon nói về lý do anh ấy thích chèo thuyền trên sông Stanton:</p>   <p>"One of my favorite rivers is the River Stanton, which is fast with excellent white water, so things can get pretty dangerous. But it's exciting, and I'm experienced."</p>   <p>"Một trong những con sông yêu thích của tôi là sông Stanton, nơi có dòng nước chảy nhanh và những con sóng trắng tuyệt vời, vì vậy mọi thứ có thể trở nên khá nguy hiểm. Nhưng nó rất thú vị, và tôi có kinh nghiệm."</p>    <p>Bài nghe xác nhận rằng Simon thích sông Stanton vì <strong>tốc độ dòng nước</strong>. Do đó, đáp án chính xác là <strong>He likes its water speed.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">Many people go there.</span> ❌ (Nhiều người đến đó.) - Sai, vì bài nghe không đề cập đến việc có nhiều người đến sông Stanton.</li>            <li><span class="text-success"><strong>He likes its water speed.</strong></span> ✅ (Anh ấy thích tốc độ dòng nước.) - Đúng, vì Simon nói rằng sông có dòng nước chảy nhanh và anh ấy thấy điều đó thú vị.</li>            <li><span class="text-danger">The river is close to his house.</span> ❌ (Con sông gần nhà anh ấy.) - Sai, vì bài nghe không đề cập đến việc sông Stanton gần nhà Simon.</li>            <li><span class="text-danger">He likes sailing.</span> ❌ (Anh ấy thích chèo thuyền.) - Sai, mặc dù Simon thích đi thuyền, nhưng lý do chính khiến anh ấy thích sông Stanton là tốc độ nước chảy nhanh.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: What does Simon notice about the river water?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It was getting lower and lower.															</div>
+																				<div class="ps-4 mb-2">
+																	B. It was always blue.															</div>
+																				<div class="ps-4 mb-2">
+																	C. It was cleaner and cleaner.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. It was having negative effect on him.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>It was having negative effect on him.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Simon mô tả những gì anh ấy nhận thấy về nước sông:</p>   <p>"I always wondered why the water made my eyes burn if it got on my face, and why it was a strange orange color, especially when the water was running low."</p>   <p>"Tôi luôn tự hỏi tại sao nước sông làm mắt tôi cay khi nó bắn vào mặt, và tại sao nó có màu cam lạ, đặc biệt là khi nước xuống thấp."</p>    <p>Bài nghe xác nhận rằng nước sông có tác động tiêu cực đến Simon, khiến mắt anh ấy cay. Do đó, đáp án chính xác là <strong>It was having negative effect on him.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">It was getting lower and lower.</span> ❌ (Nó ngày càng thấp hơn.) - Sai, vì Simon chỉ đề cập đến việc nước thấp khi mô tả màu cam của nó, nhưng đây không phải là điều chính anh ấy nhận thấy.</li>            <li><span class="text-danger">It was cleaner and cleaner.</span> ❌ (Nó ngày càng sạch hơn.) - Sai, vì nước sông thực tế bị ô nhiễm và có màu cam, không phải ngày càng sạch hơn.</li>            <li><span class="text-success"><strong>It was having negative effect on him.</strong></span> ✅ (Nó có tác động tiêu cực đến anh ấy.) - Đúng, vì Simon nói rằng nước sông làm mắt anh ấy cay.</li>            <li><span class="text-danger">It was always blue.</span> ❌ (Nó luôn có màu xanh.) - Sai, vì nước sông có màu cam do ô nhiễm, không phải màu xanh.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: How did Simon learn more about the river's problem?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He read in a book.															</div>
+																				<div class="ps-4 mb-2">
+																	B. He asked his teachers.															</div>
+																				<div class="ps-4 mb-2">
+																	C. He asked other people.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. He looked on the Internet.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>He looked on the Internet.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Simon mô tả cách anh ấy tìm hiểu về vấn đề của con sông:</p>   <p>"Yeah. I asked other people using the river, and I visited a few websites, and found out that the river was orange because of pollution from the old mines in the area."</p>   <p>"Ừ, tôi đã hỏi những người khác sử dụng con sông và <strong>truy cập một số trang web</strong>, và phát hiện ra rằng nước sông có màu cam là do ô nhiễm từ các mỏ cũ trong khu vực."</p>    <p>Bài nghe xác nhận rằng Simon đã <strong>tra cứu thông tin trên Internet</strong> để tìm hiểu về vấn đề của con sông. Do đó, đáp án chính xác là <strong>He looked on the Internet.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>He looked on the Internet.</strong></span> ✅ (Anh ấy tìm kiếm trên Internet.) - Đúng, vì Simon nói rằng anh ấy đã truy cập một số trang web để tìm hiểu về ô nhiễm của con sông.</li>            <li><span class="text-danger">He asked his teachers.</span> ❌ (Anh ấy hỏi giáo viên của mình.) - Sai, vì bài nghe không đề cập đến việc Simon hỏi giáo viên.</li>            <li><span class="text-danger">He asked other people.</span> ❌ (Anh ấy hỏi những người khác.) - Sai, mặc dù Simon có hỏi những người sử dụng sông, nhưng anh ấy chủ yếu tìm hiểu thông tin từ Internet.</li>            <li><span class="text-danger">He read in a book.</span> ❌ (Anh ấy đọc trong một cuốn sách.) - Sai, vì Simon không đề cập đến việc tìm hiểu thông tin từ sách.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: Why does Simon feel pleased?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He found lots of plants in the river.															</div>
+																				<div class="ps-4 mb-2">
+																	B. He found lots of fish in the river.															</div>
+																				<div class="ps-4 mb-2">
+																	C. He found limestones in the river.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. He found solutions to pollution.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>He found solutions to pollution.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Simon nói về lý do khiến anh ấy cảm thấy hài lòng:</p>   <p>"I learned as much as I could about the chemistry behind the pollution. I can't really explain all the detail. But basically, if you add something called limestone to the river, it can improve the chemistry. That means that the plants and fish which had died because of all the mining companies that used to be in the area could live in the river again. So that made me really happy."</p>   <p>"Tôi đã học nhiều nhất có thể về hóa học đằng sau vấn đề ô nhiễm. Tôi không thể giải thích chi tiết, nhưng về cơ bản, nếu bạn thêm một chất gọi là đá vôi vào sông, nó có thể cải thiện thành phần hóa học của nước. Điều đó có nghĩa là các loài thực vật và cá, từng chết do các công ty khai thác mỏ trong khu vực, có thể sống lại trong sông. Điều đó khiến tôi thực sự hạnh phúc."</p>    <p>Bài nghe xác nhận rằng Simon cảm thấy hài lòng vì <strong>anh ấy đã tìm ra giải pháp cho vấn đề ô nhiễm</strong>. Do đó, đáp án chính xác là <strong>He found solutions to pollution.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>He found solutions to pollution.</strong></span> ✅ (Anh ấy tìm ra giải pháp cho ô nhiễm.) - Đúng, vì Simon nói rằng anh ấy đã nghiên cứu về hóa học và tìm ra cách làm sạch sông.</li>            <li><span class="text-danger">He found limestones in the river.</span> ❌ (Anh ấy tìm thấy đá vôi trong sông.) - Sai, vì Simon đề xuất sử dụng đá vôi để làm sạch nước, nhưng không nói rằng anh ấy tìm thấy nó trong sông.</li>            <li><span class="text-danger">He found lots of fish in the river.</span> ❌ (Anh ấy tìm thấy nhiều cá trong sông.) - Sai, vì cá trong sông đã chết do ô nhiễm, và Simon muốn khôi phục lại hệ sinh thái chứ không phải đã thấy nhiều cá.</li>            <li><span class="text-danger">He found lots of plants in the river.</span> ❌ (Anh ấy tìm thấy nhiều thực vật trong sông.) - Sai, vì thực vật trong sông đã chết do ô nhiễm, và Simon hy vọng chúng có thể phục hồi.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: How many languages can Sylvia speak?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. three</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. two															</div>
+																				<div class="ps-4 mb-2">
+																	C. one															</div>
+																				<div class="ps-4 mb-2">
+																	D. four															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>three</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Sylvia được giới thiệu về khả năng ngôn ngữ của mình:</p>   <p>"Now, Sylvia, I believe you left Essex University with a degree in German and Spanish."</p>   <p>"Sylvia, tôi tin rằng bạn đã tốt nghiệp Đại học Essex với bằng cử nhân tiếng Đức và tiếng Tây Ban Nha."</p>    <p>Sylvia cũng đã làm giáo viên tiếng Anh:</p>   <p>"After I left university, I spent a year as an English teacher in Spain."</p>   <p>"Sau khi tốt nghiệp đại học, tôi đã dành một năm làm giáo viên tiếng Anh tại Tây Ban Nha."</p>    <p>Bài nghe xác nhận rằng Sylvia có thể nói <strong>tiếng Đức, tiếng Tây Ban Nha và tiếng Anh</strong>. Do đó, đáp án chính xác là <strong>three.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">one</span> ❌ (Một ngôn ngữ.) - Sai, vì Sylvia biết nhiều hơn một ngôn ngữ.</li>            <li><span class="text-danger">two</span> ❌ (Hai ngôn ngữ.) - Sai, vì Sylvia có thể nói nhiều hơn hai ngôn ngữ.</li>            <li><span class="text-success"><strong>three</strong></span> ✅ (Ba ngôn ngữ.) - Đúng, vì Sylvia có thể nói tiếng Đức, tiếng Tây Ban Nha và tiếng Anh.</li>            <li><span class="text-danger">four</span> ❌ (Bốn ngôn ngữ.) - Sai, vì bài nghe chỉ đề cập đến ba ngôn ngữ mà Sylvia biết.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: What was her job after being promoted?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. an office assistant															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. a manager's assistant</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. a post officer															</div>
+																				<div class="ps-4 mb-2">
+																	D. a tour guide															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>a manager's assistant</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Sylvia kể về công việc sau khi được thăng chức:</p>   <p>"Then the manager's assistant announced she was leaving after only being with the company for 12 months, and I applied for her job. The company encourages their staff to apply for higher-level jobs, and I was promoted four months after joining."</p>   <p>"Sau đó, trợ lý của quản lý thông báo rằng cô ấy sẽ rời công ty sau chỉ 12 tháng làm việc, và tôi đã ứng tuyển vào vị trí của cô ấy. Công ty khuyến khích nhân viên ứng tuyển vào các vị trí cao hơn, và tôi đã được thăng chức sau bốn tháng làm việc."</p>    <p>Bài nghe xác nhận rằng Sylvia được thăng chức lên vị trí <strong>trợ lý của quản lý</strong>. Do đó, đáp án chính xác là <strong>a manager's assistant.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">an office assistant</span> ❌ (Trợ lý văn phòng.) - Sai, vì Sylvia không nhắc đến việc làm trợ lý văn phòng.</li>            <li><span class="text-success"><strong>a manager's assistant</strong></span> ✅ (Trợ lý của quản lý.) - Đúng, vì Sylvia đã ứng tuyển và được thăng chức vào vị trí trợ lý quản lý.</li>            <li><span class="text-danger">a post officer</span> ❌ (Nhân viên bưu điện.) - Sai, vì Sylvia không làm việc trong ngành bưu điện.</li>            <li><span class="text-danger">a tour guide</span> ❌ (Hướng dẫn viên du lịch.) - Sai, mặc dù Sylvia từng làm hướng dẫn viên du lịch, nhưng đây không phải là công việc sau khi cô được thăng chức.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What does her job NOT involve?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. advertising in the press															</div>
+																				<div class="ps-4 mb-2">
+																	B. giving talks to people															</div>
+																				<div class="ps-4 mb-2">
+																	C. answering joumalists' phones															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. printing guidebooks</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>printing guidebooks</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Sylvia mô tả các công việc mà cô ấy làm:</p>   <p>"Well, I've expanded the role since I took it on. I'm in charge of all the advertising in the press whenever we publish a new guidebook, and I sometimes give talks to people in the travel industry."</p>   <p>"Tôi đã mở rộng vai trò của mình kể từ khi đảm nhận công việc. Tôi phụ trách <strong>quảng cáo trên báo chí</strong> mỗi khi chúng tôi xuất bản một cuốn sách hướng dẫn mới, và đôi khi tôi <strong>phát biểu trước những người trong ngành du lịch</strong>."</p>    <p>Sylvia cũng đề cập đến việc nhận cuộc gọi từ nhà báo:</p>   <p>"We often get odd requests from journalists. They assume we know everything there is to know about travel, so they often ring us to see if we can help them."</p>   <p>"Chúng tôi thường nhận được những yêu cầu kỳ lạ từ các nhà báo. Họ cho rằng chúng tôi biết mọi thứ về du lịch, vì vậy họ thường gọi điện để hỏi xem chúng tôi có thể giúp gì không."</p>    <p>Tuy nhiên, Sylvia không nhắc đến việc <strong>in sách hướng dẫn</strong>. Do đó, đáp án chính xác là <strong>printing guidebooks.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">advertising in the press</span> ❌ (Quảng cáo trên báo chí.) - Sai, vì Sylvia nói rằng cô ấy phụ trách quảng cáo trên báo chí.</li>            <li><span class="text-danger">giving talks to people</span> ❌ (Phát biểu trước mọi người.) - Sai, vì Sylvia đề cập rằng cô ấy đôi khi phát biểu trước những người trong ngành du lịch.</li>            <li><span class="text-danger">answering journalists' phones</span> ❌ (Trả lời điện thoại của các nhà báo.) - Sai, vì Sylvia nói rằng các nhà báo thường gọi đến để nhờ giúp đỡ.</li>            <li><span class="text-success"><strong>printing guidebooks</strong></span> ✅ (In sách hướng dẫn.) - Đúng, vì không có đoạn nào trong bài nghe nói rằng Sylvia tham gia vào việc in sách hướng dẫn.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: How does she think about her job?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. It's not boring.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. It's boring.															</div>
+																				<div class="ps-4 mb-2">
+																	C. It's tiring.															</div>
+																				<div class="ps-4 mb-2">
+																	D. It's difficult to do.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>It's not boring.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Sylvia được hỏi về suy nghĩ của cô ấy đối với công việc:</p>   <p>"Do you find the work interesting?"</p>   <p>"Bạn có thấy công việc này thú vị không?"</p>    <p>"Oh yes, it's never boring."</p>   <p>"Ồ có chứ, nó không bao giờ nhàm chán."</p>    <p>Bài nghe xác nhận rằng Sylvia cho rằng công việc của cô ấy <strong>không nhàm chán</strong>. Do đó, đáp án chính xác là <strong>It's not boring.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">It's boring.</span> ❌ (Nó nhàm chán.) - Sai, vì Sylvia nói rằng công việc của cô ấy "không bao giờ nhàm chán".</li>            <li><span class="text-success"><strong>It's not boring.</strong></span> ✅ (Nó không nhàm chán.) - Đúng, vì Sylvia khẳng định rằng công việc của cô ấy không bao giờ nhàm chán.</li>            <li><span class="text-danger">It's tiring.</span> ❌ (Nó gây mệt mỏi.) - Sai, vì Sylvia không nói rằng công việc của cô ấy gây mệt mỏi.</li>            <li><span class="text-danger">It's difficult to do.</span> ❌ (Nó khó để làm.) - Sai, vì Sylvia không đề cập rằng công việc của cô ấy khó thực hiện.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What study resources should be reorganized?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. course books															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. reading resources</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. CDs															</div>
+																				<div class="ps-4 mb-2">
+																	D. models															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>reading resources</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, một người đề cập đến việc cần tổ chức lại tài liệu học tập:</p>   <p>"Yes, one of the comments that students frequently make is that they find it difficult to find materials that are appropriate for their level, especially reading resources. So I think we need to label them more clearly."</p>   <p>"Đúng vậy, một trong những nhận xét mà học sinh thường đưa ra là họ cảm thấy khó khăn trong việc tìm kiếm tài liệu phù hợp với trình độ của mình, đặc biệt là <strong>tài liệu đọc</strong>. Vì vậy, tôi nghĩ rằng chúng ta cần dán nhãn chúng rõ ràng hơn."</p>    <p>Bài nghe xác nhận rằng <strong>tài liệu đọc</strong> cần được tổ chức lại. Do đó, đáp án chính xác là <strong>reading resources.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>reading resources</strong></span> ✅ (Tài liệu đọc.) - Đúng, vì bài nghe nói rằng học sinh gặp khó khăn trong việc tìm tài liệu đọc phù hợp, và cần dán nhãn lại.</li>            <li><span class="text-danger">models</span> ❌ (Mô hình.) - Sai, vì bài nghe không đề cập đến việc tổ chức lại mô hình.</li>            <li><span class="text-danger">CDs</span> ❌ (Đĩa CD.) - Sai, vì mặc dù có đề cập đến CD nhưng không nói rằng chúng cần được tổ chức lại.</li>            <li><span class="text-danger">course books</span> ❌ (Sách khóa học.) - Sai, vì bài nghe không đề cập đến việc cần tổ chức lại sách khóa học.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: What materials may be introduced in the Self-Access?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. reference books															</div>
+																				<div class="ps-4 mb-2">
+																	B. scientific books															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. work books</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. class books															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>work books</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, một người đề xuất việc bổ sung tài liệu mới vào trung tâm học tập tự chủ (Self-Access Center):</p>   <p>"What do you think of the idea of introducing some workbooks? If we break them up into separate pages and laminate them, they'd be a great resource."</p>   <p>"Bạn nghĩ sao về ý tưởng đưa vào một số <strong>sách bài tập</strong>? Nếu chúng ta chia nhỏ chúng thành từng trang riêng lẻ và ép nhựa, chúng sẽ trở thành một nguồn tài liệu tuyệt vời."</p>    <p>Bài nghe xác nhận rằng <strong>sách bài tập</strong> có thể sẽ được giới thiệu trong trung tâm học tập tự chủ. Do đó, đáp án chính xác là <strong>work books.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">class books</span> ❌ (Sách học trên lớp.) - Sai, vì bài nghe không đề cập đến việc bổ sung sách học trên lớp.</li>            <li><span class="text-success"><strong>work books</strong></span> ✅ (Sách bài tập.) - Đúng, vì bài nghe đề xuất đưa vào sách bài tập để hỗ trợ học tập.</li>            <li><span class="text-danger">reference books</span> ❌ (Sách tham khảo.) - Sai, vì bài nghe không nhắc đến sách tham khảo.</li>            <li><span class="text-danger">scientific books</span> ❌ (Sách khoa học.) - Sai, vì bài nghe không đề cập đến việc đưa vào sách khoa học.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: What will the speaker talk to teachers for?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. an agreement on the timetable</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. compliment from teachers															</div>
+																				<div class="ps-4 mb-2">
+																	C. the center's security															</div>
+																				<div class="ps-4 mb-2">
+																	D. the support form teachers															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>an agreement on the timetable</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói đề cập đến việc trao đổi với giáo viên:</p>   <p>"I'll have to talk to the teachers and make sure we can all reach some agreement on a timetable to supervise the centre after class."</p>   <p>"Tôi sẽ phải nói chuyện với các giáo viên và đảm bảo rằng tất cả chúng ta có thể <strong>đạt được sự thống nhất về thời gian biểu</strong> để giám sát trung tâm sau giờ học."</p>    <p>Bài nghe xác nhận rằng người nói sẽ trao đổi với giáo viên để <strong>đạt được sự đồng thuận về thời gian biểu</strong>. Do đó, đáp án chính xác là <strong>an agreement on the timetable.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>an agreement on the timetable</strong></span> ✅ (Sự thống nhất về thời gian biểu.) - Đúng, vì người nói đề cập đến việc cần đạt được sự thống nhất với giáo viên về lịch giám sát trung tâm.</li>            <li><span class="text-danger">the center's security</span> ❌ (An ninh của trung tâm.) - Sai, vì mặc dù có nói về an ninh, nhưng đây không phải là lý do chính để nói chuyện với giáo viên.</li>            <li><span class="text-danger">the support from teachers</span> ❌ (Sự hỗ trợ từ giáo viên.) - Sai, vì bài nghe không đề cập đến việc cần sự hỗ trợ từ giáo viên.</li>            <li><span class="text-danger">compliment from teachers</span> ❌ (Lời khen từ giáo viên.) - Sai, vì không có đề cập nào trong bài nghe về việc nhận lời khen từ giáo viên.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: What may be done to reduce the resources misused?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. locking webs															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. having email access limited</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. putting in an alarm															</div>
+																				<div class="ps-4 mb-2">
+																	D. closing the center															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>having email access limited</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói đề xuất biện pháp để tránh việc lạm dụng tài nguyên:</p>   <p>"The other thing I'd like to do is talk to our technicians and see whether we could somehow limit the access to email. I really don't want to see that resource misused."</p>   <p>"Điều khác mà tôi muốn làm là nói chuyện với các kỹ thuật viên của chúng ta để xem liệu chúng ta có thể <strong>hạn chế quyền truy cập email</strong> hay không. Tôi thực sự không muốn thấy tài nguyên đó bị lạm dụng."</p>    <p>Bài nghe xác nhận rằng <strong>hạn chế quyền truy cập email</strong> là một biện pháp để tránh lạm dụng tài nguyên. Do đó, đáp án chính xác là <strong>having email access limited.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">putting in an alarm</span> ❌ (Cài đặt báo động.) - Sai, vì báo động được đề cập trong ngữ cảnh bảo vệ thiết bị mới, không liên quan đến việc lạm dụng tài nguyên.</li>            <li><span class="text-danger">locking webs</span> ❌ (Chặn các trang web.) - Sai, vì bài nghe không đề cập đến việc chặn trang web.</li>            <li><span class="text-success"><strong>having email access limited</strong></span> ✅ (Hạn chế quyền truy cập email.) - Đúng, vì người nói đề xuất hạn chế email để ngăn chặn lạm dụng tài nguyên.</li>            <li><span class="text-danger">closing the center</span> ❌ (Đóng cửa trung tâm.) - Sai, vì bài nghe không đề cập đến việc đóng cửa trung tâm.</li>    </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

@@ -1,0 +1,588 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 05 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87718				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/12				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp2-1664819146_f3e21323a2997bc44c0b.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>In this part, you will hear three conversations. The conversations will be played once only. There are four questions for each conversation.<br>
+For each question, choose the right answer A, B, C, or D. Part 2. Questions 9 to 12. First, you will have some time to look at questions 9 to 12. Now we're ready to start.<br>
+Listen and answer questions 9 to 12. You will hear the recording once only. <br>
+Hi, Natasha.<br>
+I see you're going out for a run. You're lucky you don't have to go to work today. Hello, Colin.<br>
+I am going to the office, but I've started running to work instead of taking the bus. It means I can keep fit and save some money. I tried running to work for a while, but I didn't like breathing in all the traffic pollution and I kept getting coughs.<br>
+I soon went back to using public transport. I keep fit at the gym. Well, I found a route that avoids most of the main roads.<br>
+But it's still almost 5km and it must be dangerous. That's why I choose quiet streets. If I could, I'd run in the country.<br>
+That would be lovely, but it would mean leaving it till the weekends. Running gives me a wonderful feeling of freedom. It's just what I need before sitting down in the office every day.<br>
+But surely you don't wear your tracksuit and trainers at work? I keep a suit at the office and change when I arrive. I think it's important to look professional, so I don't mind at all. Anyway, since you're so fit, are you going to join in the big race next month? I'd like to.<br>
+What's the distance? 20km. Anyone can enter and there are prizes for different age groups. Even if I come last, it will still be good fun.<br>
+Running on your own can sometimes get quite lonely. Are you going to take part? Oh yes. I've sent in my application form already.<br>
+I'll get one for you. But I'm not going to train by running to work. I'll run round the park a few times when I get home in the evenings.<br>
+That's safer. OK. Anyway, I must go now or I'll be late.<br>
+Bye! Now you will have some time to review questions 9 to 12. Part 2. Questions 13 to 16. First you will have some time to look at questions 13 to 16.<br>
+Now we're ready to start. Listen and answer questions 13 to 16. You will hear the recording once only.<br>
+Harry Park, you run a travel company which organises adventure holidays in some difficult places. How did you first become interested in adventure travel? Well, my father worked in an insurance company once he had a family but before that he'd spent several years travelling the world and he never stopped telling us about it. His stories were much more exciting than the books I read and they made me want to travel and have adventures of my own.<br>
+And what made you decide to start an adventure travel company? Well, when I was in my twenties I travelled a lot in different countries. I went exploring and climbing in mountains and deserts. I wanted to show other people how wonderful these things were.<br>
+The business has been very successful but when I started it I didn't know if I'd make any money. Your company's called Far and Wide. How did you choose the name? Well, I just called it Park Travel at first but everyone thought that was terribly boring.<br>
+My wife kept suggesting different things but in the end it was a customer who gave me the idea. Far and Wide is also the title of a book that a friend wrote so it reminds me of him too. Great.<br>
+The places you visit are usually very unspoiled, Harry. Some people think it's not a good idea to take tourists there. What would you say to them? Well, most of the places we visit have no inhabitants so we aren't going to spoil people's way of life or bring in things like television and fridges.<br>
+And I make sure that we always take care of the environment. We are careful not to cause pollution so we take all our rubbish away. Some of the things you do are also dangerous.<br>
+Do you enjoy danger? Well, it's not a question of enjoying it. It's just that you can't do what I do without thinking about the possible dangers. I'm never frightened though.<br>
+If I'm taking a group up a mountain or something like that I just concentrate on what I have to do and get on with it. You've been to some fascinating places, Harry. Now you will have some time to review questions 13 to 16.<br>
+Part 2, questions 17 to 20. First you will have some time to look at questions 17 to 20. Now we're ready to start.<br>
+Listen and answer questions 17 to 20. You will hear the recording once only. Now then, Mr. Bickstead, how can I help you? Well, I'm thinking about transferring but I'm not sure.<br>
+I was hoping you could help me make a decision. I'll try. Where are you thinking of transferring to and why do you want to leave Cryptis U? I'm thinking of going to Central University because it's in my hometown.<br>
+I've been kind of homesick this year and I haven't made many friends. I just feel so lonely. So I thought that maybe it'd be better to be closer to my parents and friends and all.<br>
+I see. And would you keep the same major if you transferred? What is it, business administration? Yeah, I would. The credits I've earned here will transfer to Central.<br>
+I've already checked. May I ask why you chose to come to Cryptis University in the first place? Sure. Well, the main reason is you have a great business school and the second reason is that I wanted to get away from home.<br>
+You're right, Mr. Bickstead. We do have an excellent business school but so does Central. The thing is, you've got almost a year under your belt here now.<br>
+At Central, you'll be starting from scratch. Yeah, I know that. But I'm a little bit familiar with Central because I had older friends who went there and I visited it before I came here.<br>
+You know, freshman year is usually the hardest. I remember how homesick I was my first year. I'll tell you, I was ready to pack it in after the first two weeks.<br>
+But the longer I stayed, the more comfortable I felt. My senior year, I was glad I chose to stay. Really? Did it get a lot better your sophomore year? Yes, it did.<br>
+You might well find the same is true for you. Also, even though your credits here will transfer, you will have to take extra courses because Central has different requirements. You'll probably have to go to school for an extra year.<br>
+Hmm, I hadn't thought about that. I'll have to check into it. Maybe I should give it one more year.<br>
+I mean, it's probably good for me to learn to live away from my family and friends, right? Now you will have some time to review questions 17 to 20. That is the end of Part 2.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 2 Trong phần này, bạn sẽ nghe ba cuộc hội thoại. Các cuộc hội thoại sẽ chỉ được phát một lần duy nhất. Mỗi cuộc hội thoại có bốn câu hỏi đi kèm. Với mỗi câu hỏi, hãy chọn đáp án đúng A, B, C hoặc D. Phần 2, câu hỏi 9-12 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 9 đến 12. Bây giờ, chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 9 đến 12. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Chào Natasha. Mình thấy cậu đang chuẩn bị đi chạy bộ. Cậu thật may mắn vì hôm nay không phải đi làm. Chào Colin. Mình vẫn đi làm đấy, nhưng mình đã bắt đầu chạy bộ đến chỗ làm thay vì đi xe buýt. Cách này giúp mình giữ gìn sức khỏe và tiết kiệm tiền. Mình cũng từng thử chạy bộ đi làm một thời gian, nhưng mình không thích phải hít khói bụi từ xe cộ và hay bị ho. Sau đó mình quay lại dùng phương tiện công cộng. Mình giữ dáng bằng cách tập gym. À, mình tìm được một tuyến đường tránh hầu hết các con đường chính. Nhưng nó vẫn dài gần 5km, và có vẻ nguy hiểm đấy. Vì vậy mình chọn những con đường yên tĩnh. Nếu có thể, mình muốn chạy bộ ở vùng quê. Điều đó thật tuyệt, nhưng mình chỉ có thể làm vậy vào cuối tuần. Chạy bộ mang lại cho mình cảm giác tự do tuyệt vời. Nó là điều mình cần trước khi ngồi làm việc cả ngày ở văn phòng. Nhưng chắc cậu không mặc đồ thể thao đi làm đâu nhỉ? Mình để sẵn một bộ đồ ở văn phòng và thay đồ khi đến nơi. Mình nghĩ điều quan trọng là phải trông chuyên nghiệp, nên mình không phiền gì cả. Dù sao thì, vì cậu chạy bộ giỏi thế, cậu có định tham gia cuộc đua lớn vào tháng tới không? Mình cũng muốn tham gia. Khoảng cách là bao nhiêu vậy? 20km. Bất kỳ ai cũng có thể tham gia và có giải thưởng cho từng nhóm tuổi. Dù về đích cuối cùng thì cũng vui mà. Chạy bộ một mình đôi khi cũng khá cô đơn. Cậu có tham gia không? Có chứ. Mình đã gửi đơn đăng ký rồi. Mình sẽ lấy một tờ đơn cho cậu. Nhưng mình sẽ không tập luyện bằng cách chạy bộ đi làm đâu. Mình sẽ chạy vòng quanh công viên vài lần vào buổi tối khi về nhà. Như vậy an toàn hơn. Được rồi. Dù sao thì, mình phải đi ngay kẻo muộn mất. Tạm biệt! Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 9 đến 12. Phần 2, câu hỏi 13-16 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 13 đến 16. Bây giờ, chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 13 đến 16. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Harry Park, ông điều hành một công ty du lịch chuyên tổ chức các kỳ nghỉ mạo hiểm ở những nơi khó tiếp cận. Vậy điều gì đã khiến ông quan tâm đến du lịch mạo hiểm? Bố tôi từng làm việc cho một công ty bảo hiểm khi đã có gia đình, nhưng trước đó, ông đã dành vài năm để du lịch khắp thế giới và không bao giờ ngừng kể chuyện về những chuyến đi đó. Những câu chuyện của ông thú vị hơn nhiều so với những cuốn sách tôi đọc, và chúng khiến tôi muốn đi du lịch và tự mình trải nghiệm những cuộc phiêu lưu. Vậy điều gì đã khiến ông quyết định thành lập một công ty du lịch mạo hiểm? Khi còn ở độ tuổi 20, tôi đã đi du lịch rất nhiều ở các quốc gia khác nhau. Tôi khám phá và leo núi ở những vùng núi và sa mạc. Tôi muốn cho người khác thấy những điều tuyệt vời này. Công việc kinh doanh rất thành công, nhưng khi bắt đầu, tôi không biết liệu mình có kiếm được tiền hay không. Công ty của ông có tên là Far and Wide. Ông đã chọn cái tên đó như thế nào? Ban đầu, tôi đặt tên nó là Park Travel, nhưng mọi người đều nghĩ rằng cái tên đó quá nhàm chán. Vợ tôi liên tục đề xuất những cái tên khác nhau, nhưng cuối cùng, một khách hàng đã gợi ý cho tôi ý tưởng này. Far and Wide cũng là tên của một cuốn sách mà một người bạn tôi đã viết, vì vậy nó cũng khiến tôi nhớ đến anh ấy. Những nơi ông đến thường rất hoang sơ, Harry. Một số người cho rằng không nên đưa khách du lịch đến đó. Ông sẽ nói gì với họ? Hầu hết những nơi chúng tôi đến không có cư dân sinh sống, vì vậy chúng tôi không làm ảnh hưởng đến cuộc sống của họ hay mang đến những thứ như tivi và tủ lạnh. Tôi cũng đảm bảo rằng chúng tôi luôn quan tâm đến môi trường. Chúng tôi cẩn thận không gây ô nhiễm và luôn mang rác thải đi. Một số hoạt động của ông cũng khá nguy hiểm. Ông có thích sự mạo hiểm không? Không hẳn là thích. Chỉ là bạn không thể làm những gì tôi làm mà không suy nghĩ về những rủi ro có thể xảy ra. Tôi chưa bao giờ cảm thấy sợ hãi. Nếu tôi dẫn một nhóm leo núi hay làm điều gì tương tự, tôi chỉ tập trung vào những việc cần làm và tiếp tục thực hiện nó. Ông đã đến nhiều nơi thú vị, Harry. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 13 đến 16. Phần 2, câu hỏi 17-20 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 17 đến 20. Bây giờ, chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 17 đến 20. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Vậy, ông Bickstead, tôi có thể giúp gì cho ông? Tôi đang nghĩ đến việc chuyển trường, nhưng tôi chưa chắc chắn. Tôi hy vọng ông có thể giúp tôi đưa ra quyết định. Tôi sẽ cố gắng. Ông định chuyển đến đâu và tại sao ông muốn rời khỏi Đại học Cryptis? Tôi đang nghĩ đến việc chuyển đến Đại học Central vì nó ở quê tôi. Tôi cảm thấy nhớ nhà năm nay và chưa kết bạn được nhiều. Tôi cảm thấy rất cô đơn. Vì vậy, tôi nghĩ có lẽ sẽ tốt hơn nếu ở gần bố mẹ và bạn bè. Tôi hiểu. Nếu chuyển trường, ông có giữ nguyên ngành học không? Hiện tại là quản trị kinh doanh đúng không? Vâng, tôi sẽ giữ nguyên. Các tín chỉ tôi đã tích lũy ở đây có thể được chuyển sang Central. Tôi đã kiểm tra rồi. Tôi có thể hỏi tại sao ban đầu ông lại chọn Đại học Cryptis không? Chắc chắn rồi. Lý do chính là trường có một khoa kinh doanh rất tốt. Lý do thứ hai là tôi muốn đi xa khỏi nhà. Ông nói đúng đấy, ông Bickstead. Chúng tôi có một khoa kinh doanh xuất sắc, nhưng Central cũng vậy. Điều quan trọng là ông đã có gần một năm ở đây. Nếu chuyển đến Central, ông sẽ phải bắt đầu lại từ đầu. Tôi hiểu rồi. Tôi sẽ phải suy nghĩ kỹ về điều đó. Có lẽ tôi nên thử thêm một năm nữa. Ý tôi là, có lẽ học cách sống xa gia đình và bạn bè cũng là điều tốt. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 17 đến 20. Đây là phần kết thúc của Phần 2.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: How is Natasha going to work today?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. She is driving her car.															</div>
+																				<div class="ps-4 mb-2">
+																	B. She is taking the train.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. She is running.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. She is taking the bus.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>She is running.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, Natasha nói về cách cô ấy đi làm:</p> <p>"Hello, Colin. I am going to the office, but I've started running to work instead of taking the bus. It means I can keep fit and save some money."</p> <p>"Xin chào, Colin. Tôi đang đi đến văn phòng, nhưng tôi đã bắt đầu chạy bộ đến chỗ làm thay vì đi xe buýt. Điều này giúp tôi giữ dáng và tiết kiệm tiền."</p>  <p>Điều này cho thấy rằng Natasha <strong>đang chạy bộ đến chỗ làm</strong> thay vì sử dụng phương tiện giao thông khác. Do đó, đáp án chính xác là <strong>She is running.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">She is taking the bus.</span> ❌ (Cô ấy đi xe buýt.) - Sai, vì Natasha nói rõ rằng cô ấy đã ngừng đi xe buýt.</li>     <li><span class="text-danger">She is taking the train.</span> ❌ (Cô ấy đi tàu.) - Sai, vì bài nghe không đề cập đến việc cô ấy đi tàu.</li>     <li><span class="text-success"><strong>She is running.</strong></span> ✅ (Cô ấy đang chạy bộ.) - Đúng, vì Natasha nói rằng cô ấy chạy bộ đến chỗ làm.</li>     <li><span class="text-danger">She is driving her car.</span> ❌ (Cô ấy lái xe ô tô.) - Sai, vì bài nghe không nói gì về việc cô ấy lái xe hơi.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: Why did Colin go back touse public transport instead of running to work?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He felt tired.															</div>
+																				<div class="ps-4 mb-2">
+																	B. He wanted to save time.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. He found running to work was bad for his health.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. He liked keeping fit at the gym.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>He found running to work was bad for his health.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, Colin nói về lý do anh ấy ngừng chạy bộ đến chỗ làm:</p> <p>"I tried running to work for a while, but I didn't like breathing in all the traffic pollution and I kept getting coughs. I soon went back to using public transport."</p> <p>"Tôi đã thử chạy bộ đến chỗ làm một thời gian, nhưng tôi không thích hít phải khói bụi giao thông và tôi liên tục bị ho. Vì vậy, tôi nhanh chóng quay lại sử dụng phương tiện công cộng."</p>  <p>Điều này cho thấy rằng <strong>Colin ngừng chạy bộ vì nó ảnh hưởng tiêu cực đến sức khỏe của anh ấy</strong>, đặc biệt là do ô nhiễm giao thông gây ra ho. Do đó, đáp án chính xác là <strong>He found running to work was bad for his health.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">He felt tired.</span> ❌ (Anh ấy cảm thấy mệt.) - Sai, vì bài nghe không đề cập đến việc Colin cảm thấy mệt.</li>     <li><span class="text-success"><strong>He found running to work was bad for his health.</strong></span> ✅ (Anh ấy thấy rằng chạy bộ đến chỗ làm không tốt cho sức khỏe.) - Đúng, vì Colin nói rằng ô nhiễm giao thông làm anh ấy bị ho liên tục.</li>     <li><span class="text-danger">He wanted to save time.</span> ❌ (Anh ấy muốn tiết kiệm thời gian.) - Sai, vì bài nghe không đề cập đến vấn đề thời gian.</li>     <li><span class="text-danger">He liked keeping fit at the gym.</span> ❌ (Anh ấy thích giữ dáng ở phòng gym.) - Sai, vì đây là một lựa chọn thay thế của Colin, nhưng không phải là lý do chính khiến anh ấy ngừng chạy bộ đến chỗ làm.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What does Natasha wear at work?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. a suit.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. casual clothes.															</div>
+																				<div class="ps-4 mb-2">
+																	C. a shirt and trousers.															</div>
+																				<div class="ps-4 mb-2">
+																	D. a tracksuit and trainers.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>a suit.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, Natasha nói về trang phục cô ấy mặc khi đi làm:</p> <p>"I keep a suit at the office and change when I arrive. I think it's important to look professional, so I don't mind at all."</p> <p>"Tôi để một bộ vest ở văn phòng và thay đồ khi đến nơi. Tôi nghĩ rằng trông chuyên nghiệp là rất quan trọng, nên tôi không thấy phiền gì cả."</p>  <p>Điều này cho thấy rằng <strong>Natasha mặc vest (suit) khi làm việc</strong>. Do đó, đáp án chính xác là <strong>a suit.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">a tracksuit and trainers.</span> ❌ (Một bộ đồ thể thao và giày chạy.) - Sai, vì Natasha chỉ mặc đồ thể thao khi chạy bộ đến chỗ làm, không phải khi làm việc.</li>     <li><span class="text-danger">a shirt and trousers.</span> ❌ (Áo sơ mi và quần dài.) - Sai, vì bài nghe không nhắc đến việc cô ấy mặc áo sơ mi và quần dài.</li>     <li><span class="text-success"><strong>a suit.</strong></span> ✅ (Một bộ vest.) - Đúng, vì Natasha nói rằng cô ấy thay đồ thành vest khi đến văn phòng.</li>     <li><span class="text-danger">casual clothes.</span> ❌ (Trang phục bình thường.) - Sai, vì cô ấy cho rằng cần ăn mặc chuyên nghiệp khi đi làm.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What does Natasha think about the race next month?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. She can make friends at the race.															</div>
+																				<div class="ps-4 mb-2">
+																	B. It will give big prizes.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. It will be good fun.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. It will make her relaxed.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>It will be good fun.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, Natasha bày tỏ suy nghĩ về cuộc đua vào tháng tới:</p> <p>"Anyone can enter and there are prizes for different age groups. Even if I come last, it will still be good fun."</p> <p>"Bất kỳ ai cũng có thể tham gia và có giải thưởng cho các nhóm tuổi khác nhau. Ngay cả khi tôi về cuối cùng, nó vẫn sẽ rất vui."</p>  <p>Điều này cho thấy rằng <strong>Natasha tham gia cuộc đua không phải vì giải thưởng, mà vì niềm vui</strong>. Do đó, đáp án chính xác là <strong>It will be good fun.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-success"><strong>It will be good fun.</strong></span> ✅ (Nó sẽ rất vui.) - Đúng, vì Natasha nói rằng dù có về cuối, cô ấy vẫn thấy vui.</li>     <li><span class="text-danger">It will give big prizes.</span> ❌ (Nó sẽ có giải thưởng lớn.) - Sai, vì bài nghe chỉ đề cập đến việc có giải thưởng cho các nhóm tuổi, nhưng không nói về giải thưởng lớn.</li>     <li><span class="text-danger">It will make her relaxed.</span> ❌ (Nó sẽ giúp cô ấy thư giãn.) - Sai, vì bài nghe không nói rằng cuộc đua sẽ giúp cô ấy thư giãn.</li>     <li><span class="text-danger">She can make friends at the race.</span> ❌ (Cô ấy có thể kết bạn trong cuộc đua.) - Sai, vì bài nghe không đề cập đến việc Natasha tham gia để kết bạn.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: Why did Harry first become interested in adventure travel?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. His father worked in a travel company.															</div>
+																				<div class="ps-4 mb-2">
+																	B. His father spent several years travelling around the world.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. His father talked a lot about the places he'd been to.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. His father gave him adventure stories to read.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>His father talked a lot about the places he'd been to.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, Harry nói về lý do anh ấy quan tâm đến du lịch mạo hiểm:</p> <p>"Well, my father worked in an insurance company once he had a family but before that he'd spent several years travelling the world and he never stopped telling us about it. His stories were much more exciting than the books I read and they made me want to travel and have adventures of my own."</p> <p>"Bố tôi từng làm việc trong một công ty bảo hiểm sau khi lập gia đình, nhưng trước đó, ông đã dành vài năm đi du lịch khắp thế giới và không bao giờ ngừng kể cho chúng tôi về điều đó. Những câu chuyện của ông còn thú vị hơn cả những cuốn sách tôi đọc và khiến tôi muốn đi du lịch và khám phá những cuộc phiêu lưu của riêng mình."</p>  <p>Điều này cho thấy rằng <strong>Harry trở nên yêu thích du lịch mạo hiểm vì cha anh ấy luôn kể về những chuyến đi của mình</strong>. Do đó, đáp án chính xác là <strong>His father talked a lot about the places he'd been to.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-success"><strong>His father talked a lot about the places he'd been to.</strong></span> ✅ (Cha anh ấy nói rất nhiều về những nơi ông ấy đã đến.) - Đúng, vì những câu chuyện của cha anh ấy đã truyền cảm hứng cho Harry.</li>     <li><span class="text-danger">His father gave him adventure stories to read.</span> ❌ (Cha anh ấy đưa cho anh ấy những câu chuyện phiêu lưu để đọc.) - Sai, vì Harry so sánh rằng những câu chuyện cha anh ấy kể còn thú vị hơn sách, không phải do cha anh ấy đưa sách cho đọc.</li>     <li><span class="text-danger">His father worked in a travel company.</span> ❌ (Cha anh ấy làm việc trong một công ty du lịch.) - Sai, vì cha anh ấy làm việc trong một công ty bảo hiểm, không phải công ty du lịch.</li>     <li><span class="text-danger">His father spent several years travelling around the world.</span> ❌ (Cha anh ấy đã đi du lịch vòng quanh thế giới trong nhiều năm.) - Sai, mặc dù cha anh ấy từng đi du lịch nhiều năm, nhưng điều khiến Harry yêu thích du lịch là những câu chuyện mà cha anh ấy kể lại.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Why did Harry decide to start an adventure travel company?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He hoped to do more travelling himself.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. He wanted to share his experience with others.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. He wanted to travel to many other different countries.															</div>
+																				<div class="ps-4 mb-2">
+																	D. He thought he could make a lot of money.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>He wanted to share his experience with others.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, Harry giải thích lý do anh ấy bắt đầu công ty du lịch mạo hiểm:</p> <p>"Well, when I was in my twenties I travelled a lot in different countries. I went exploring and climbing in mountains and deserts. I wanted to show other people how wonderful these things were."</p> <p>"Khi tôi ở độ tuổi hai mươi, tôi đã đi du lịch rất nhiều ở các quốc gia khác nhau. Tôi đã khám phá và leo núi trong sa mạc. Tôi muốn cho người khác thấy những điều tuyệt vời này."</p>  <p>Điều này cho thấy rằng <strong>Harry thành lập công ty du lịch để chia sẻ trải nghiệm của mình với những người khác</strong>. Do đó, đáp án chính xác là <strong>He wanted to share his experience with others.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">He thought he could make a lot of money.</span> ❌ (Anh ấy nghĩ rằng mình có thể kiếm được nhiều tiền.) - Sai, vì Harry nói rằng khi bắt đầu, anh ấy không biết liệu có kiếm được tiền hay không.</li>     <li><span class="text-danger">He hoped to do more travelling himself.</span> ❌ (Anh ấy hy vọng có thể đi du lịch nhiều hơn cho bản thân.) - Sai, vì mục đích chính của Harry là chia sẻ kinh nghiệm du lịch với người khác.</li>     <li><span class="text-success"><strong>He wanted to share his experience with others.</strong></span> ✅ (Anh ấy muốn chia sẻ kinh nghiệm của mình với người khác.) - Đúng, vì Harry muốn giúp mọi người trải nghiệm những điều tuyệt vời anh ấy đã từng làm.</li>     <li><span class="text-danger">He wanted to travel to many other different countries.</span> ❌ (Anh ấy muốn đi du lịch đến nhiều quốc gia khác nhau.) - Sai, vì Harry đã đi du lịch rất nhiều trước khi thành lập công ty, và mục tiêu chính của anh ấy không phải là đi du lịch nhiều hơn.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: Who suggested the name for Harry's company?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. a customer</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. his wife															</div>
+																				<div class="ps-4 mb-2">
+																	C. his father															</div>
+																				<div class="ps-4 mb-2">
+																	D. a friend															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>a customer.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, Harry giải thích về cách anh ấy đặt tên cho công ty của mình:</p> <p>"Well, I just called it Park Travel at first but everyone thought that was terribly boring. My wife kept suggesting different things but in the end it was a customer who gave me the idea. Far and Wide is also the title of a book that a friend wrote so it reminds me of him too."</p> <p>"Lúc đầu, tôi chỉ đặt tên nó là Park Travel, nhưng mọi người nghĩ rằng cái tên đó quá nhàm chán. Vợ tôi đã đưa ra nhiều gợi ý khác nhau, nhưng cuối cùng, chính một khách hàng đã đưa ra ý tưởng cho tôi. 'Far and Wide' cũng là tiêu đề của một cuốn sách mà một người bạn tôi đã viết, vì vậy nó cũng gợi nhớ đến anh ấy."</p>  <p>Điều này cho thấy rằng <strong>một khách hàng là người đã đề xuất tên cho công ty của Harry</strong>. Do đó, đáp án chính xác là <strong>a customer.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">a friend.</span> ❌ (Một người bạn.) - Sai, vì mặc dù tiêu đề "Far and Wide" trùng với tên sách của một người bạn, nhưng ý tưởng đặt tên công ty đến từ một khách hàng.</li>     <li><span class="text-danger">his wife.</span> ❌ (Vợ của anh ấy.) - Sai, vì vợ Harry đưa ra nhiều gợi ý nhưng không phải là người quyết định tên công ty.</li>     <li><span class="text-danger">his father.</span> ❌ (Cha của anh ấy.) - Sai, vì cha của Harry không liên quan đến việc đặt tên công ty.</li>     <li><span class="text-success"><strong>a customer.</strong></span> ✅ (Một khách hàng.) - Đúng, vì Harry nói rằng chính một khách hàng đã đưa ra ý tưởng tên "Far and Wide".</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: What does Harry try to do when he visits a place?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. take modern equipment.															</div>
+																				<div class="ps-4 mb-2">
+																	B. bring in things like television and fridges.															</div>
+																				<div class="ps-4 mb-2">
+																	C. give the local people jobs.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. avoid damaging the area.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>avoid damaging the area.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, Harry nói về cách anh ấy bảo vệ những nơi mà công ty anh ấy tổ chức du lịch:</p> <p>"Well, most of the places we visit have no inhabitants so we aren't going to spoil people's way of life or bring in things like television and fridges. And I make sure that we always take care of the environment. We are careful not to cause pollution so we take all our rubbish away."</p> <p>"Hầu hết những nơi chúng tôi đến thăm không có người sinh sống, vì vậy chúng tôi sẽ không làm ảnh hưởng đến lối sống của họ hay mang theo những thứ như tivi và tủ lạnh. Và tôi luôn đảm bảo rằng chúng tôi chăm sóc môi trường. Chúng tôi cẩn thận để không gây ô nhiễm và luôn mang theo tất cả rác của mình."</p>  <p>Điều này cho thấy rằng <strong>Harry cố gắng tránh gây tổn hại đến khu vực mà anh ấy và du khách đến thăm</strong>. Do đó, đáp án chính xác là <strong>avoid damaging the area.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">give the local people jobs.</span> ❌ (Cung cấp việc làm cho người dân địa phương.) - Sai, vì bài nghe nói rằng hầu hết những nơi anh ấy đến không có người sinh sống.</li>     <li><span class="text-success"><strong>avoid damaging the area.</strong></span> ✅ (Tránh gây tổn hại đến khu vực đó.) - Đúng, vì Harry nói rằng anh ấy và khách du lịch luôn cẩn thận để không gây ô nhiễm môi trường.</li>     <li><span class="text-danger">take modern equipment.</span> ❌ (Mang theo thiết bị hiện đại.) - Sai, vì bài nghe không đề cập đến việc mang theo thiết bị hiện đại.</li>     <li><span class="text-danger">bring in things like television and fridges.</span> ❌ (Mang theo những thứ như tivi và tủ lạnh.) - Sai, vì Harry nói rằng họ không mang theo những thứ này để tránh làm ảnh hưởng đến môi trường.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: Why is the student talking to the advisor?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. To decide which classes would be best to take next quarter.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. To get advice about transferring to a different university.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. To determine the best subject for him to major in.															</div>
+																				<div class="ps-4 mb-2">
+																	D. To ask about the advisor's experiences as an undergraduate.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>To get advice about transferring to a different university.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, sinh viên nói về lý do gặp cố vấn:</p> <p>"Well, I'm thinking about transferring but I'm not sure. I was hoping you could help me make a decision."</p> <p>"À, tôi đang nghĩ đến việc chuyển trường nhưng chưa chắc chắn. Tôi hy vọng anh có thể giúp tôi đưa ra quyết định."</p>  <p>Điều này cho thấy rằng <strong>sinh viên gặp cố vấn để xin lời khuyên về việc chuyển sang một trường đại học khác</strong>. Do đó, đáp án chính xác là <strong>To get advice about transferring to a different university.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">To decide which classes would be best to take next quarter.</span> ❌ (Để quyết định những lớp nào nên học vào kỳ tới.) - Sai, vì bài nghe không đề cập đến việc lựa chọn môn học.</li>     <li><span class="text-success"><strong>To get advice about transferring to a different university.</strong></span> ✅ (Để nhận lời khuyên về việc chuyển sang một trường đại học khác.) - Đúng, vì sinh viên đang cân nhắc chuyển trường và cần sự tư vấn.</li>     <li><span class="text-danger">To ask about the advisor's experiences as an undergraduate.</span> ❌ (Để hỏi về kinh nghiệm học đại học của cố vấn.) - Sai, vì mục đích chính không phải là hỏi về kinh nghiệm cá nhân của cố vấn.</li>     <li><span class="text-danger">To determine the best subject for him to major in.</span> ❌ (Để xác định ngành học tốt nhất để theo đuổi.) - Sai, vì sinh viên đã có chuyên ngành kinh doanh và không cần chọn ngành mới.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: Which statement is true about the student?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He is majoring in accounting.															</div>
+																				<div class="ps-4 mb-2">
+																	B. He has made lots of friends at Kryptos University.															</div>
+																				<div class="ps-4 mb-2">
+																	C. He is senior at Kryptos University.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. He wanted to go to a school closer to home.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>He wanted to go to a school closer to home.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, sinh viên giải thích lý do muốn chuyển trường:</p> <p>"I'm thinking of going to Central University because it's in my hometown. I've been kind of homesick this year and I haven't made many friends. I just feel so lonely. So I thought that maybe it'd be better to be closer to my parents and friends and all."</p> <p>"Tôi đang nghĩ đến việc chuyển đến Đại học Central vì nó nằm ở quê tôi. Năm nay tôi khá nhớ nhà và chưa kết bạn được nhiều. Tôi cảm thấy rất cô đơn. Vì vậy, tôi nghĩ rằng có lẽ tốt hơn là nên gần bố mẹ và bạn bè hơn."</p>  <p>Điều này cho thấy rằng <strong>sinh viên muốn chuyển đến một trường gần nhà hơn</strong> để không còn cảm thấy cô đơn. Do đó, đáp án chính xác là <strong>He wanted to go to a school closer to home.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">He is majoring in accounting.</span> ❌ (Anh ấy đang học chuyên ngành kế toán.) - Sai, vì bài nghe nói rằng chuyên ngành của anh ấy là quản trị kinh doanh.</li>     <li><span class="text-danger">He has made lots of friends at Kryptos University.</span> ❌ (Anh ấy đã kết bạn với nhiều người ở Đại học Kryptos.) - Sai, vì anh ấy nói rằng mình chưa kết bạn được nhiều và cảm thấy cô đơn.</li>     <li><span class="text-success"><strong>He wanted to go to a school closer to home.</strong></span> ✅ (Anh ấy muốn học tại một trường gần nhà hơn.) - Đúng, vì anh ấy cảm thấy nhớ nhà và muốn chuyển về gần gia đình, bạn bè.</li>     <li><span class="text-danger">He is senior at Kryptos University.</span> ❌ (Anh ấy là sinh viên năm cuối tại Đại học Kryptos.) - Sai, vì anh ấy chưa học đến năm cuối, vẫn đang trong quá trình cân nhắc chuyển trường.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: What will the student have to do if he transfers?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Visit old friends															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Take extra courses</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Change majors															</div>
+																				<div class="ps-4 mb-2">
+																	D. Send educational records															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>Take extra courses.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, cố vấn nói về yêu cầu khi sinh viên chuyển trường:</p> <p>"Also, even though your credits here will transfer, you will have to take extra courses because Central has different requirements. You'll probably have to go to school for an extra year."</p> <p>"Ngoài ra, mặc dù tín chỉ của bạn ở đây sẽ được chuyển đổi, nhưng bạn sẽ phải học thêm một số khóa học vì Đại học Central có các yêu cầu khác nhau. Có thể bạn sẽ phải học thêm một năm nữa."</p>  <p>Điều này cho thấy rằng <strong>sinh viên sẽ phải học thêm các khóa học bổ sung nếu chuyển trường</strong>. Do đó, đáp án chính xác là <strong>Take extra courses.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-success"><strong>Take extra courses.</strong></span> ✅ (Học thêm các khóa học bổ sung.) - Đúng, vì Đại học Central có yêu cầu khác nên sinh viên phải học thêm một số khóa học.</li>     <li><span class="text-danger">Send educational records.</span> ❌ (Gửi hồ sơ học tập.) - Sai, vì bài nghe không đề cập đến việc sinh viên phải gửi hồ sơ học tập.</li>     <li><span class="text-danger">Change majors.</span> ❌ (Thay đổi chuyên ngành.) - Sai, vì sinh viên vẫn giữ chuyên ngành quản trị kinh doanh.</li>     <li><span class="text-danger">Visit old friends.</span> ❌ (Thăm bạn bè cũ.) - Sai, vì lý do chuyển trường không liên quan đến việc thăm bạn bè cũ.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: What will the student probably do next?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He will call his parents.															</div>
+																				<div class="ps-4 mb-2">
+																	B. He will move to his the new university.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. He will search for more information.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. He will do research in the lab.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>He will search for more information.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, sinh viên nói về kế hoạch tiếp theo của mình:</p> <p>"Hmm, I hadn't thought about that. I'll have to check into it. Maybe I should give it one more year."</p> <p>"Hmm, tôi chưa nghĩ đến điều đó. Tôi sẽ phải tìm hiểu thêm. Có lẽ tôi nên thử học thêm một năm nữa."</p>  <p>Điều này cho thấy rằng <strong>sinh viên sẽ tìm hiểu thêm thông tin trước khi quyết định</strong>. Do đó, đáp án chính xác là <strong>He will search for more information.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">He will call his parents.</span> ❌ (Anh ấy sẽ gọi cho bố mẹ.) - Sai, vì bài nghe không đề cập đến việc sinh viên gọi cho bố mẹ.</li>     <li><span class="text-danger">He will move to his new university.</span> ❌ (Anh ấy sẽ chuyển đến trường đại học mới.) - Sai, vì sinh viên chưa đưa ra quyết định chuyển trường.</li>     <li><span class="text-danger">He will do research in the lab.</span> ❌ (Anh ấy sẽ nghiên cứu trong phòng thí nghiệm.) - Sai, vì bài nghe không nhắc đến nghiên cứu trong phòng thí nghiệm.</li>     <li><span class="text-success"><strong>He will search for more information.</strong></span> ✅ (Anh ấy sẽ tìm hiểu thêm thông tin.) - Đúng, vì sinh viên nói rằng anh ấy cần xem xét thêm trước khi quyết định.</li> </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

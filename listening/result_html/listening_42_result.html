@@ -1,0 +1,643 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 42 - Part 3				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87761				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/15				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp3-1664891349_bcb143f2a2699e98033c.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Part 3. In this part, you will hear three talks or lectures. The talks or lectures will be played once only. There are five questions for each talk or lecture.<br>
+For each question, choose the right answer, A, B, C, or D. Part 3. Questions 21 to 25. First, you will have some time to look at questions 21 to 25. Now we're ready to start.<br>
+Listen and answer questions 21 to 25. You will hear the recording once only. <br>
+Hello everyone.<br>
+My name's Sandy Duffy, and I'm here to tell you about my career as a video game writer. I work with game developers and designers to think of good stories, and I write all the dialogue in the game. When I was in secondary school, I never imagined that I would do this job.<br>
+I played the violin, and that's what I planned to do as my job. But I had an accident when I was playing basketball and hurt my hand, so I had to think of another career. My mother wanted me to be a journalist, but I didn't think it was for me.<br>
+I didn't know what to study at university. I was good at lots of science subjects, including physics and maths, but I also loved entertaining people, and I was good at art. In the end, I went to film school, where I studied lighting, special effects, how to use a camera, all that.<br>
+It was there that I started to think about working in the video game industry. Now, a question that everyone always asks me is, how did you get your first job? Well, I had a friend whose job was organising conferences. At one of the conferences, she met a man who owned a company that made video games.<br>
+I wrote to him and sent my CV. He obviously liked what he read, because he gave me an interview and offered me a job as a junior. People also ask me what I like best about being a video game writer.<br>
+Well, the money is good, and it's quite exciting. Just last night, for example, I was at a big dinner where they were giving prizes for new games. But what I love is the fact that I get on so well with everyone in the business.<br>
+That's what makes my job so much fun. Obviously, no job is perfect though, and there are things I don't like. I've just started a new job, and I have to spend a lot of time on the road, or at the airport, which I find very hard.<br>
+I'd really like to be able to spend more time at home. Now you will have some time to review questions 21 to 25. Part 3. Questions 26 to 30.<br>
+First, you will have some time to look at questions 26 to 30. Do you want to take part in a trip of a lifetime? Then join Go4Health India. This amazing five-day trek will take you through one of the world's most beautiful mountain ranges, the Indian Himalayas.<br>
+You will also be helping raise vital funds for our charity, which aims to promote health care all over the world. The trip starts in the city of Delhi, where you will have the chance to see one of the charity's health care projects in action. The following day, we set off on our incredible journey into the mountains.<br>
+During the trek, you will pass colourful towns and villages and enjoy the most magnificent mountain views. You will experience all this before you even reach the peak of our trek to see the stunning Dal Ladar mountain range. Once at the top, you can climb even higher if you want to, and experience walking on a glacier to reach Lars Cave.<br>
+You will soon know what it feels like to be on top of the world. And on the way down, you will be able to admire the wonderful views across the valley. To join Go4Health India, all you need to do is pay an entry fee of £250.<br>
+You also need to promise to raise a minimum of £2,500 before the start of the trip. Fundraising is part of the challenge, but don't worry, our fundraising team is on hand to help you. Once you have signed up, you will receive an information pack.<br>
+This includes details of the trek as well as the work of the charity. It also contains useful tips and advice on fundraising, and you will also get a charity cap to wear with pride. You will also receive a full training guide, which will help you reach a reasonable level of fitness.<br>
+Our top training tips will definitely improve your physical ability so that you can get the most out of the trek. The cost of the trip includes your flights, accommodation, food, tour guides and medical support. However, please note that airport tax is not included.<br>
+You will have to meet this additional cost yourself. Dates for this year's Go4Health India are the 3rd to the 13th of November. Visit our website www.go4health.uk and sign up today.<br>
+Now you will have some time to review questions 26 to 30. Part 3. Questions 31 to 35. First, you will have some time to look at questions 31 to 35.<br>
+Here in India, people bought around 1.5 million new cars. This will probably go up to 3 million a year in the next few years. That's how the Indian economy is changing.<br>
+Many Indians in the big cities are richer than ever, and they want to spend money on new products. However, most of the money is still in the big cities. There is still a lot of poverty in the villages and countryside.<br>
+Now the government hopes a new road in India can help to change India's economy. The Golden Quadrilateral Road, or GQ, connects the country's four biggest cities, Delhi, Mumbai, Chennai and Kolkata. Hopefully, the road will carry business from the giant cities to the smaller and poorer villages and the other half of India's population.<br>
+The GQ is nearly 6,000 kilometres long and the most high-tech highway in the world. At the administration headquarters in Delhi, you can watch thousands of vehicles moving around the country on a computer screen. If there is a problem anywhere with the road, electronic sensors tell the headquarters and engineers instantly drive there.<br>
+When you drive on the highway, there is every kind of transport. There are animals pulling carts, motorcycles, lines of old trucks and fast-moving modern cars. Sometimes the road goes right through the middle of a city.<br>
+So there are often traffic jams and pedestrians trying to cross the six lanes. Industry is also growing along the new highway. When a large company opens a factory, lots of other smaller factories and offices also open.<br>
+Trucks then drive and deliver all over India along the new highway. For India, all this is a symbol of the country's future. Now you will have some time to review questions 31 to 35.<br>
+That is the end of part 3. That is the end of the listening comprehension test.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 3 Trong phần này, bạn sẽ nghe ba bài thuyết trình hoặc bài giảng. Mỗi bài chỉ được phát một lần duy nhất. Có năm câu hỏi cho mỗi bài thuyết trình hoặc bài giảng. Với mỗi câu hỏi, hãy chọn câu trả lời đúng: A, B, C hoặc D. Câu 21 đến 25 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 21 đến 25. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 21 đến 25. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Sự nghiệp của một nhà biên kịch trò chơi điện tử Xin chào tất cả mọi người. Tôi là Sandy Duffy, và hôm nay tôi sẽ kể cho các bạn nghe về sự nghiệp của tôi với tư cách là một nhà biên kịch trò chơi điện tử. Tôi làm việc với các nhà phát triển và thiết kế trò chơi để nghĩ ra những câu chuyện hay, đồng thời viết toàn bộ lời thoại trong game. Khi còn học trung học, tôi chưa bao giờ nghĩ rằng mình sẽ làm công việc này. Tôi chơi violin, và tôi đã định theo đuổi nó như một nghề nghiệp. Nhưng tôi gặp tai nạn khi chơi bóng rổ và bị thương ở tay, vì vậy tôi phải tìm một công việc khác. Mẹ tôi muốn tôi trở thành nhà báo, nhưng tôi không nghĩ đó là con đường phù hợp với mình. Tôi không biết nên học gì ở đại học. Tôi giỏi nhiều môn khoa học như vật lý và toán học, nhưng tôi cũng rất thích giải trí và giỏi nghệ thuật. Cuối cùng, tôi chọn học điện ảnh, nơi tôi nghiên cứu về ánh sáng, hiệu ứng đặc biệt, cách sử dụng máy quay, và những thứ tương tự. Chính tại đây, tôi bắt đầu suy nghĩ về việc làm việc trong ngành trò chơi điện tử. Một câu hỏi mà mọi người luôn hỏi tôi là: Làm thế nào bạn có được công việc đầu tiên? Tôi có một người bạn làm công việc tổ chức hội nghị. Tại một trong những hội nghị đó, cô ấy gặp một người đàn ông sở hữu một công ty trò chơi điện tử. Tôi đã viết thư và gửi CV cho ông ấy. Rõ ràng là ông ấy thích những gì đọc được, vì vậy ông ấy đã mời tôi phỏng vấn và đề nghị tôi một công việc ở cấp nhân viên tập sự. Mọi người cũng hỏi tôi điều gì khiến tôi thích nhất khi làm một biên kịch trò chơi điện tử. Tiền lương thì khá tốt, và công việc cũng khá thú vị. Chẳng hạn, tối qua tôi vừa tham dự một bữa tiệc lớn nơi họ trao giải cho các trò chơi mới. Nhưng điều tôi yêu thích nhất chính là tôi có mối quan hệ rất tốt với mọi người trong ngành. Chính điều đó khiến công việc này trở nên thú vị. Tất nhiên, không có công việc nào là hoàn hảo, và cũng có những điều tôi không thích. Tôi vừa bắt đầu một công việc mới, và tôi phải dành rất nhiều thời gian trên đường đi công tác hoặc ở sân bay, điều mà tôi thấy rất mệt mỏi. Tôi thực sự muốn có nhiều thời gian hơn để ở nhà. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 21 đến 25. Câu 26 đến 30 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 26 đến 30. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 26 đến 30. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Chuyến đi bộ đường dài khám phá dãy Himalaya tại Ấn Độ Bạn có muốn tham gia một chuyến đi đáng nhớ trong đời không? Hãy tham gia Go4Health India! Chuyến đi bộ đường dài kéo dài 5 ngày này sẽ đưa bạn qua một trong những dãy núi đẹp nhất thế giới – dãy Himalaya của Ấn Độ. Bạn cũng sẽ giúp gây quỹ cho tổ chức từ thiện của chúng tôi, với mục tiêu cải thiện chăm sóc sức khỏe trên toàn cầu. Chuyến đi bắt đầu từ thành phố Delhi, nơi bạn sẽ có cơ hội xem một trong những dự án y tế của tổ chức chúng tôi đang hoạt động. Ngày hôm sau, chúng tôi sẽ bắt đầu hành trình đáng kinh ngạc của mình vào vùng núi. Trong suốt chuyến đi, bạn sẽ đi qua những thị trấn đầy màu sắc, làng mạc và tận hưởng những khung cảnh núi non tuyệt đẹp. Đỉnh cao của chuyến đi sẽ là dãy núi Dhauladhar, nơi bạn có thể leo cao hơn nữa nếu muốn và trải nghiệm đi bộ trên một sông băng để đến Lars Cave. Trên đường xuống, bạn sẽ có thể chiêm ngưỡng cảnh quan tuyệt vời của thung lũng. Để tham gia Go4Health India, bạn chỉ cần đóng phí tham gia £250. Ngoài ra, bạn phải cam kết quyên góp tối thiểu £2.500 trước khi chuyến đi bắt đầu. Lịch trình của Go4Health India năm nay diễn ra từ ngày 3 đến ngày 13 tháng 11. Hãy truy cập trang web của chúng tôi tại www.go4health.uk và đăng ký ngay hôm nay! Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 26 đến 30. Câu 31 đến 35 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 31 đến 35. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 31 đến 35. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Con đường "Tứ Giác Vàng" thay đổi nền kinh tế Ấn Độ Ở Ấn Độ, mỗi năm có khoảng 1,5 triệu chiếc ô tô mới được mua. Con số này có thể sẽ tăng lên 3 triệu chiếc mỗi năm trong vài năm tới. Đó là cách nền kinh tế Ấn Độ đang thay đổi. Tuy nhiên, hầu hết tiền bạc vẫn tập trung vào các thành phố lớn. Các vùng nông thôn và làng mạc vẫn còn rất nhiều người nghèo. Chính phủ hy vọng rằng một con đường mới ở Ấn Độ có thể giúp thay đổi điều này. Con đường này có tên gọi là Tứ Giác Vàng (Golden Quadrilateral – GQ), kết nối bốn thành phố lớn nhất của Ấn Độ: Delhi, Mumbai, Chennai và Kolkata. Con đường này dài gần 6.000 km và là một trong những xa lộ hiện đại nhất thế giới. Khi lái xe trên tuyến đường cao tốc này, bạn sẽ thấy mọi loại phương tiện: từ xe bò kéo, xe máy, xe tải cũ, đến xe hơi hiện đại chạy với tốc độ cao. Đối với Ấn Độ, đây là biểu tượng của tương lai đất nước. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 31 đến 35. Phần 3 kết thúc tại đây. Đây cũng là phần cuối của bài kiểm tra nghe hiểu.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What did Sandy Duffy want to be when she was at school?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. a musician</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. a director															</div>
+																				<div class="ps-4 mb-2">
+																	C. a basketball player															</div>
+																				<div class="ps-4 mb-2">
+																	D. a journalist															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>a musician.</strong></span> ✅ (Một nhạc sĩ.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, Sandy Duffy nói:</p>    <p>"When I was in secondary school, I never imagined that I would do this job. I played the violin, and that's what I planned to do as my job."</p>     <p>"Khi tôi còn học trung học, tôi chưa bao giờ tưởng tượng rằng mình sẽ làm công việc này. Tôi chơi <strong>violin</strong>, và đó là công việc mà tôi đã dự định làm."</p>      <p>Bài nghe xác nhận rằng <strong>Sandy Duffy muốn trở thành một nhạc sĩ khi còn đi học</strong>. Do đó, đáp án chính xác là <strong>a musician.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">a journalist.</span> ❌ (Một nhà báo.) - Sai, vì mẹ của cô ấy muốn cô ấy làm nhà báo, nhưng cô ấy không thích điều đó.</li>                 <li><span class="text-success"><strong>a musician.</strong></span> ✅ (Một nhạc sĩ.) - Đúng, vì cô ấy từng chơi violin và muốn theo đuổi sự nghiệp âm nhạc.</li>                 <li><span class="text-danger">a director.</span> ❌ (Một đạo diễn.) - Sai, vì cô ấy học về điện ảnh nhưng không nói rằng muốn trở thành đạo diễn.</li>                 <li><span class="text-danger">a basketball player.</span> ❌ (Một cầu thủ bóng rổ.) - Sai, vì cô ấy bị chấn thương khi chơi bóng rổ, nhưng không có ý định theo đuổi sự nghiệp này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: What did Sandy study at university?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Technology															</div>
+																				<div class="ps-4 mb-2">
+																	B. Math and Physics															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Film making</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Art															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>Film making.</strong></span> ✅ (Làm phim.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, Sandy Duffy nói:</p>    <p>"I was good at lots of science subjects, including physics and maths, but I also loved entertaining people, and I was good at art. In the end, I went to film school, where I studied lighting, special effects, how to use a camera, all that."</p>     <p>"Tôi giỏi nhiều môn khoa học, bao gồm vật lý và toán học, nhưng tôi cũng thích giải trí và giỏi nghệ thuật. Cuối cùng, tôi đã chọn học <strong>làm phim</strong>, nơi tôi học về ánh sáng, hiệu ứng đặc biệt, cách sử dụng máy quay, và những thứ liên quan."</p>      <p>Bài nghe xác nhận rằng <strong>Sandy Duffy học làm phim tại đại học</strong>. Do đó, đáp án chính xác là <strong>Film making.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">Math and Physics.</span> ❌ (Toán và Vật lý.) - Sai, vì dù cô ấy giỏi hai môn này, nhưng cô ấy không học chúng ở đại học.</li>                 <li><span class="text-success"><strong>Film making.</strong></span> ✅ (Làm phim.) - Đúng, vì cô ấy học tại trường điện ảnh và nghiên cứu về làm phim.</li>                 <li><span class="text-danger">Technology.</span> ❌ (Công nghệ.) - Sai, vì cô ấy không đề cập đến việc học công nghệ.</li>                 <li><span class="text-danger">Art.</span> ❌ (Nghệ thuật.) - Sai, vì cô ấy có năng khiếu nghệ thuật nhưng không theo học chuyên ngành này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: How did Sandy get her first job as a video game writer?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. She answered a job advertisement.															</div>
+																				<div class="ps-4 mb-2">
+																	B. She met someone at a conference.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. She sent some information about herself to a company.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. She was invited by a friend.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>She sent some information about herself to a company.</strong></span> ✅ (Cô ấy đã gửi một số thông tin về bản thân đến một công ty.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, Sandy Duffy nói:</p>    <p>"I had a friend whose job was organising conferences. At one of the conferences, she met a man who owned a company that made video games. I wrote to him and sent my CV. He obviously liked what he read, because he gave me an interview and offered me a job as a junior."</p>     <p>"Tôi có một người bạn làm công việc tổ chức hội nghị. Trong một hội nghị, cô ấy đã gặp một người đàn ông sở hữu một công ty sản xuất trò chơi điện tử. Tôi đã <strong>viết thư cho ông ấy và gửi CV của mình</strong>. Rõ ràng là ông ấy thích những gì đã đọc, vì vậy ông ấy mời tôi đến phỏng vấn và đề nghị cho tôi một công việc ở vị trí nhân viên tập sự."</p>      <p>Bài nghe xác nhận rằng <strong>Sandy đã tự gửi CV và thông tin của mình đến công ty</strong>, và sau đó nhận được lời mời làm việc. Do đó, đáp án chính xác là <strong>She sent some information about herself to a company.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">She answered a job advertisement.</span> ❌ (Cô ấy trả lời một quảng cáo tuyển dụng.) - Sai, vì cô ấy không xin việc qua một quảng cáo.</li>                 <li><span class="text-danger">She met someone at a conference.</span> ❌ (Cô ấy gặp ai đó tại một hội nghị.) - Sai, vì chính bạn của cô ấy mới là người gặp chủ công ty, không phải cô ấy.</li>                 <li><span class="text-success"><strong>She sent some information about herself to a company.</strong></span> ✅ (Cô ấy đã gửi một số thông tin về bản thân đến một công ty.) - Đúng, vì cô ấy đã chủ động gửi CV của mình.</li>                 <li><span class="text-danger">She was invited by a friend.</span> ❌ (Cô ấy được một người bạn mời làm việc.) - Sai, vì người bạn của cô ấy chỉ đóng vai trò kết nối, chứ không trực tiếp mời cô ấy làm việc.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What does Sandy like best about being a video game writer?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. the people she works with</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. the high salary															</div>
+																				<div class="ps-4 mb-2">
+																	C. the great working condition															</div>
+																				<div class="ps-4 mb-2">
+																	D. the prizes she has won															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>the people she works with.</strong></span> ✅ (Những người mà cô ấy làm việc cùng.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, Sandy Duffy nói:</p>    <p>"But what I love is the fact that I get on so well with everyone in the business. That's what makes my job so much fun."</p>     <p>"Nhưng điều tôi yêu thích là <strong>tôi hòa hợp rất tốt với mọi người trong ngành</strong>. Đó chính là điều khiến công việc của tôi trở nên thú vị."</p>      <p>Bài nghe xác nhận rằng <strong>Sandy thích nhất việc làm việc với những người đồng nghiệp trong ngành trò chơi điện tử</strong>. Do đó, đáp án chính xác là <strong>the people she works with.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">the prizes she has won.</span> ❌ (Những giải thưởng mà cô ấy đã giành được.) - Sai, vì cô ấy chỉ đề cập đến việc tham dự một buổi trao giải chứ không nói rằng đó là điều cô thích nhất.</li>                 <li><span class="text-danger">the high salary.</span> ❌ (Mức lương cao.) - Sai, vì dù cô ấy nói lương tốt, nhưng điều cô yêu thích nhất vẫn là đồng nghiệp.</li>                 <li><span class="text-success"><strong>the people she works with.</strong></span> ✅ (Những người mà cô ấy làm việc cùng.) - Đúng, vì cô ấy nói rằng mình rất hòa hợp với họ và đó là điều khiến công việc thú vị.</li>                 <li><span class="text-danger">the great working condition.</span> ❌ (Điều kiện làm việc tuyệt vời.) - Sai, vì cô ấy không đề cập đến điều này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What does Sandy dislike about being a video game writer?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. She often has to change her job.															</div>
+																				<div class="ps-4 mb-2">
+																	B. She has to live far from home.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. She has to travel a lot.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. She has to work long hours.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>She has to travel a lot.</strong></span> ✅ (Cô ấy phải đi công tác nhiều.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, Sandy Duffy nói:</p>    <p>"I've just started a new job, and I have to spend a lot of time on the road, or at the airport, which I find very hard. I'd really like to be able to spend more time at home."</p>     <p>"Tôi vừa bắt đầu một công việc mới, và tôi <strong>phải dành rất nhiều thời gian trên đường hoặc tại sân bay</strong>, điều này khiến tôi cảm thấy rất khó khăn. Tôi thực sự muốn có thể dành nhiều thời gian hơn ở nhà."</p>      <p>Bài nghe xác nhận rằng <strong>Sandy không thích việc phải đi công tác nhiều</strong>. Do đó, đáp án chính xác là <strong>She has to travel a lot.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>She has to travel a lot.</strong></span> ✅ (Cô ấy phải đi công tác nhiều.) - Đúng, vì cô ấy nói rằng mình dành quá nhiều thời gian trên đường hoặc ở sân bay.</li>                 <li><span class="text-danger">She has to work long hours.</span> ❌ (Cô ấy phải làm việc nhiều giờ.) - Sai, vì bài nghe không đề cập đến số giờ làm việc.</li>                 <li><span class="text-danger">She often has to change her job.</span> ❌ (Cô ấy thường xuyên phải thay đổi công việc.) - Sai, vì cô ấy chỉ nói về công việc mới của mình, không nhắc đến việc phải đổi việc nhiều lần.</li>                 <li><span class="text-danger">She has to live far from home.</span> ❌ (Cô ấy phải sống xa nhà.) - Sai, vì cô ấy chỉ đề cập đến việc di chuyển nhiều chứ không nói rằng cô ấy sống xa nhà.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: How long does the trek last?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. a week															</div>
+																				<div class="ps-4 mb-2">
+																	B. three days															</div>
+																				<div class="ps-4 mb-2">
+																	C. a day															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. five days</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>five days.</strong></span> ✅ (Năm ngày.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói giới thiệu về chuyến đi:</p>    <p>"Then join Go4Health India. This amazing <strong>five-day trek</strong> will take you through one of the world's most beautiful mountain ranges, the Indian Himalayas."</p>     <p>"Hãy tham gia Go4Health India. Chuyến <strong>hành trình kéo dài năm ngày</strong> tuyệt vời này sẽ đưa bạn qua một trong những dãy núi đẹp nhất thế giới, dãy Himalaya ở Ấn Độ."</p>      <p>Bài nghe xác nhận rằng <strong>chuyến đi bộ đường dài kéo dài năm ngày</strong>. Do đó, đáp án chính xác là <strong>five days.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">a day.</span> ❌ (Một ngày.) - Sai, vì bài nghe nói rõ rằng chuyến đi kéo dài năm ngày.</li>                 <li><span class="text-danger">three days.</span> ❌ (Ba ngày.) - Sai, vì bài nghe không đề cập đến chuyến đi ba ngày.</li>                 <li><span class="text-success"><strong>five days.</strong></span> ✅ (Năm ngày.) - Đúng, vì bài nghe xác nhận rằng chuyến đi kéo dài năm ngày.</li>                 <li><span class="text-danger">a week.</span> ❌ (Một tuần.) - Sai, vì chuyến đi không kéo dài một tuần.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: The trek aims to raise money for						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the old people															</div>
+																				<div class="ps-4 mb-2">
+																	B. school education															</div>
+																				<div class="ps-4 mb-2">
+																	C. hospital															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. health care</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>health care.</strong></span> ✅ (Chăm sóc sức khỏe.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói giới thiệu về mục tiêu của chuyến đi:</p>    <p>"You will also be helping raise vital funds for our charity, which aims to promote <strong>health care</strong> all over the world."</p>     <p>"Bạn cũng sẽ giúp gây quỹ quan trọng cho tổ chức từ thiện của chúng tôi, tổ chức có mục tiêu thúc đẩy <strong>chăm sóc sức khỏe</strong> trên toàn thế giới."</p>      <p>Bài nghe xác nhận rằng <strong>chuyến đi nhằm mục đích gây quỹ cho chăm sóc sức khỏe</strong>. Do đó, đáp án chính xác là <strong>health care.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>health care.</strong></span> ✅ (Chăm sóc sức khỏe.) - Đúng, vì bài nghe nói rõ rằng quỹ được gây dựng nhằm thúc đẩy chăm sóc sức khỏe.</li>                 <li><span class="text-danger">school education.</span> ❌ (Giáo dục học đường.) - Sai, vì bài nghe không đề cập đến giáo dục.</li>                 <li><span class="text-danger">hospital.</span> ❌ (Bệnh viện.) - Sai, vì bài nghe chỉ nói về chăm sóc sức khỏe nói chung, không đề cập đến bệnh viện cụ thể.</li>                 <li><span class="text-danger">the old people.</span> ❌ (Người già.) - Sai, vì bài nghe không nhắc đến mục tiêu hỗ trợ người già.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: The cost of the trek includes _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. medical provision and taxes															</div>
+																				<div class="ps-4 mb-2">
+																	B. flight and airport taxes															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. food and accommodation</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. foods															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>food and accommodation.</strong></span> ✅ (Thực phẩm và chỗ ở.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói liệt kê những chi phí được bao gồm trong chuyến đi:</p>    <p>"The cost of the trip includes your flights, accommodation, food, tour guides and medical support. However, please note that airport tax is not included."</p>     <p>"Chi phí chuyến đi bao gồm vé máy bay, <strong>chỗ ở</strong>, <strong>thực phẩm</strong>, hướng dẫn viên du lịch và hỗ trợ y tế. Tuy nhiên, lưu ý rằng thuế sân bay không được bao gồm."</p>      <p>Bài nghe xác nhận rằng <strong>chi phí chuyến đi bao gồm thực phẩm và chỗ ở</strong>. Do đó, đáp án chính xác là <strong>food and accommodation.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">flight and airport taxes.</span> ❌ (Vé máy bay và thuế sân bay.) - Sai, vì bài nghe nói rõ rằng thuế sân bay không được bao gồm.</li>                 <li><span class="text-danger">medical provision and taxes.</span> ❌ (Dịch vụ y tế và thuế.) - Sai, vì chỉ có hỗ trợ y tế được bao gồm, còn thuế thì không.</li>                 <li><span class="text-danger">foods.</span> ❌ (Thực phẩm.) - Sai, vì bài nghe đề cập cả thực phẩm và chỗ ở.</li>                 <li><span class="text-success"><strong>food and accommodation.</strong></span> ✅ (Thực phẩm và chỗ ở.) - Đúng, vì cả hai đều được bao gồm trong chi phí.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: Participants must _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. walk across a glacier.															</div>
+																				<div class="ps-4 mb-2">
+																	B. pay amount of money.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. agree to raise funds for the charity.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. complete a fitness course.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>agree to raise funds for the charity.</strong></span> ✅ (Đồng ý gây quỹ cho tổ chức từ thiện.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói mô tả điều kiện tham gia chuyến đi:</p>    <p>"To join Go4Health India, all you need to do is pay an entry fee of £250. You also need to promise to raise a minimum of £2,500 before the start of the trip."</p>     <p>"Để tham gia Go4Health India, bạn chỉ cần trả phí tham gia là 250 bảng Anh. Bạn cũng cần <strong>cam kết gây quỹ tối thiểu 2.500 bảng Anh</strong> trước khi chuyến đi bắt đầu."</p>      <p>Bài nghe xác nhận rằng <strong>người tham gia phải đồng ý gây quỹ cho tổ chức từ thiện</strong>. Do đó, đáp án chính xác là <strong>agree to raise funds for the charity.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">walk across a glacier.</span> ❌ (Đi bộ băng qua sông băng.) - Sai, vì đi bộ trên sông băng là tùy chọn, không phải yêu cầu bắt buộc.</li>                 <li><span class="text-danger">complete a fitness course.</span> ❌ (Hoàn thành một khóa rèn luyện thể lực.) - Sai, vì người tham gia chỉ được cung cấp hướng dẫn tập luyện, không bắt buộc phải hoàn thành khóa học.</li>                 <li><span class="text-success"><strong>agree to raise funds for the charity.</strong></span> ✅ (Đồng ý gây quỹ cho tổ chức từ thiện.) - Đúng, vì bài nghe nói rõ đây là yêu cầu bắt buộc.</li>                 <li><span class="text-danger">pay amount of money.</span> ❌ (Trả một khoản tiền.) - Sai, vì ngoài việc trả phí tham gia, người tham gia còn phải cam kết gây quỹ.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: The trip starts on _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 1&lt;sup&gt;st&lt;/sup&gt; of November															</div>
+																				<div class="ps-4 mb-2">
+																	B. 13&lt;sup&gt;th&lt;/sup&gt; of November															</div>
+																				<div class="ps-4 mb-2">
+																	C. 23&lt;sup&gt;th&lt;/sup&gt; of November															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. 3&lt;sup&gt;rd&lt;/sup&gt; of November</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>3rd of November.</strong></span> ✅ (Ngày 3 tháng 11.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói cung cấp thông tin về ngày bắt đầu chuyến đi:</p>    <p>"Dates for this year's Go4Health India are the <strong>3rd to the 13th of November</strong>."</p>     <p>"Ngày diễn ra Go4Health India năm nay là từ <strong>ngày 3 đến ngày 13 tháng 11</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>chuyến đi bắt đầu vào ngày 3 tháng 11</strong>. Do đó, đáp án chính xác là <strong>3rd of November.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">1st of November.</span> ❌ (Ngày 1 tháng 11.) - Sai, vì chuyến đi không bắt đầu vào ngày này.</li>                 <li><span class="text-success"><strong>3rd of November.</strong></span> ✅ (Ngày 3 tháng 11.) - Đúng, vì bài nghe xác nhận ngày bắt đầu là 3 tháng 11.</li>                 <li><span class="text-danger">13th of November.</span> ❌ (Ngày 13 tháng 11.) - Sai, vì đây là ngày kết thúc chuyến đi, không phải ngày bắt đầu.</li>                 <li><span class="text-danger">23rd of November.</span> ❌ (Ngày 23 tháng 11.) - Sai, vì bài nghe không đề cập đến ngày này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: Where do many of the rich people live?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. next to the new road															</div>
+																				<div class="ps-4 mb-2">
+																	B. in isolated places															</div>
+																				<div class="ps-4 mb-2">
+																	C. in the countryside															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. in the cities</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>in the cities.</strong></span> ✅ (Ở các thành phố.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập đến sự phân bố của cải ở Ấn Độ:</p>    <p>"Many Indians in the big cities are richer than ever, and they want to spend money on new products. However, most of the money is still in the big cities."</p>     <p>"Nhiều người Ấn Độ sống ở các thành phố lớn <strong>giàu có hơn bao giờ hết</strong> và họ muốn chi tiền cho các sản phẩm mới. Tuy nhiên, phần lớn tiền bạc vẫn tập trung ở các thành phố lớn."</p>      <p>Bài nghe xác nhận rằng <strong>nhiều người giàu sống ở các thành phố</strong>. Do đó, đáp án chính xác là <strong>in the cities.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">next to the new road.</span> ❌ (Bên cạnh con đường mới.) - Sai, vì bài nghe không đề cập đến việc người giàu sống bên con đường mới.</li>                 <li><span class="text-success"><strong>in the cities.</strong></span> ✅ (Ở các thành phố.) - Đúng, vì bài nghe nói rõ rằng phần lớn tiền bạc vẫn tập trung ở các thành phố lớn.</li>                 <li><span class="text-danger">in the countryside.</span> ❌ (Ở vùng nông thôn.) - Sai, vì bài nghe đề cập đến sự nghèo khó ở các vùng nông thôn.</li>                 <li><span class="text-danger">in isolated places.</span> ❌ (Ở những nơi hẻo lánh.) - Sai, vì bài nghe không đề cập đến điều này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: How long is the road?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 600 kilometres															</div>
+																				<div class="ps-4 mb-2">
+																	B. 60,000 kilometres															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. 6,000 kilometers</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. 60 miles															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>6,000 kilometers.</strong></span> ✅ (6.000 km.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói cung cấp thông tin về chiều dài con đường:</p>    <p>"The GQ is nearly <strong>6,000 kilometres</strong> long and the most high-tech highway in the world."</p>     <p>"Đường GQ dài gần <strong>6.000 km</strong> và là đường cao tốc hiện đại nhất thế giới."</p>      <p>Bài nghe xác nhận rằng <strong>con đường dài khoảng 6.000 km</strong>. Do đó, đáp án chính xác là <strong>6,000 kilometers.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">600 kilometres.</span> ❌ (600 km.) - Sai, vì bài nghe nói rõ con đường dài 6.000 km, không phải 600 km.</li>                 <li><span class="text-success"><strong>6,000 kilometers.</strong></span> ✅ (6.000 km.) - Đúng, vì bài nghe xác nhận con đường dài gần 6.000 km.</li>                 <li><span class="text-danger">60,000 kilometres.</span> ❌ (60.000 km.) - Sai, vì con đường không dài đến mức này.</li>                 <li><span class="text-danger">60 miles.</span> ❌ (60 dặm.) - Sai, vì bài nghe không đề cập đến đơn vị dặm và con đường dài hơn nhiều.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question13">
+						<div class="fw-bold mb-2">
+							Câu 13: What can you see on the computers at the road's headquarters in Delhi?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. serious problems on the road															</div>
+																				<div class="ps-4 mb-2">
+																	B. big vehicles on the road															</div>
+																				<div class="ps-4 mb-2">
+																	C. small vehicles on the road															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. any vehicle and problems on the road</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>any vehicle and problems on the road.</strong></span> ✅ (Bất kỳ phương tiện và vấn đề nào trên đường.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói mô tả hệ thống giám sát tại trung tâm điều hành con đường:</p>    <p>"At the administration headquarters in Delhi, you can watch <strong>thousands of vehicles</strong> moving around the country on a computer screen. If there is a problem anywhere with the road, electronic sensors tell the headquarters and engineers instantly drive there."</p>     <p>"Tại trụ sở điều hành ở Delhi, bạn có thể xem <strong>hàng nghìn phương tiện</strong> di chuyển trên khắp đất nước trên màn hình máy tính. Nếu có vấn đề ở bất kỳ đâu trên đường, các cảm biến điện tử sẽ báo về trụ sở và kỹ sư sẽ lập tức đến đó."</p>      <p>Bài nghe xác nhận rằng <strong>hệ thống có thể theo dõi mọi phương tiện và phát hiện các vấn đề trên đường</strong>. Do đó, đáp án chính xác là <strong>any vehicle and problems on the road.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">small vehicles on the road.</span> ❌ (Những phương tiện nhỏ trên đường.) - Sai, vì bài nghe nói rằng hệ thống có thể theo dõi tất cả phương tiện, không chỉ phương tiện nhỏ.</li>                 <li><span class="text-success"><strong>any vehicle and problems on the road.</strong></span> ✅ (Bất kỳ phương tiện và vấn đề nào trên đường.) - Đúng, vì hệ thống có thể theo dõi tất cả các phương tiện và phát hiện sự cố.</li>                 <li><span class="text-danger">big vehicles on the road.</span> ❌ (Những phương tiện lớn trên đường.) - Sai, vì bài nghe đề cập đến tất cả các phương tiện, không chỉ phương tiện lớn.</li>                 <li><span class="text-danger">serious problems on the road.</span> ❌ (Những vấn đề nghiêm trọng trên đường.) - Sai, vì hệ thống có thể theo dõi cả phương tiện lẫn sự cố, không chỉ các vấn đề nghiêm trọng.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question14">
+						<div class="fw-bold mb-2">
+							Câu 14: What types of transport can you see on the road?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. mostly cars															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. all types</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. the presenter doesn't say															</div>
+																				<div class="ps-4 mb-2">
+																	D. mostly motorbikes															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>all types.</strong></span> ✅ (Tất cả các loại phương tiện.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói mô tả các loại phương tiện di chuyển trên con đường:</p>    <p>"When you drive on the highway, there is every kind of transport. There are animals pulling carts, motorcycles, lines of old trucks and fast-moving modern cars."</p>     <p>"Khi bạn lái xe trên đường cao tốc, có <strong>mọi loại phương tiện</strong>. Có xe kéo bằng động vật, xe máy, hàng dài xe tải cũ và xe hơi hiện đại chạy nhanh."</p>      <p>Bài nghe xác nhận rằng <strong>tất cả các loại phương tiện có thể được nhìn thấy trên đường</strong>. Do đó, đáp án chính xác là <strong>all types.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>all types.</strong></span> ✅ (Tất cả các loại phương tiện.) - Đúng, vì bài nghe nói rõ có nhiều loại phương tiện khác nhau trên đường.</li>                 <li><span class="text-danger">mostly cars.</span> ❌ (Chủ yếu là ô tô.) - Sai, vì bài nghe đề cập đến nhiều loại phương tiện khác nhau, không chỉ ô tô.</li>                 <li><span class="text-danger">mostly motorbikes.</span> ❌ (Chủ yếu là xe máy.) - Sai, vì bài nghe không nói rằng xe máy là phương tiện chính.</li>                 <li><span class="text-danger">the presenter doesn't say.</span> ❌ (Người dẫn không nói rõ.) - Sai, vì bài nghe cung cấp thông tin cụ thể về các loại phương tiện trên đường.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question15">
+						<div class="fw-bold mb-2">
+							Câu 15: Why does the presenter describe the new road as a symbol of India's future?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. because India has big population.															</div>
+																				<div class="ps-4 mb-2">
+																	B. because India has lots of transport.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. because it is modem, it is helping the economy grow.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. because it's the same shape as the country of India.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>because it is modern, it is helping the economy grow.</strong></span> ✅ (Bởi vì nó hiện đại, nó đang giúp nền kinh tế phát triển.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói mô tả ý nghĩa của con đường đối với tương lai của Ấn Độ:</p>    <p>"For India, all this is a symbol of the country's future."</p>     <p>"Đối với Ấn Độ, tất cả những điều này là <strong>biểu tượng của tương lai đất nước</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>con đường tượng trưng cho tương lai của Ấn Độ vì nó hiện đại và giúp nền kinh tế phát triển</strong>. Do đó, đáp án chính xác là <strong>because it is modern, it is helping the economy grow.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">because it's the same shape as the country of India.</span> ❌ (Bởi vì nó có hình dạng giống đất nước Ấn Độ.) - Sai, vì bài nghe không đề cập đến hình dạng của con đường.</li>                 <li><span class="text-success"><strong>because it is modern, it is helping the economy grow.</strong></span> ✅ (Bởi vì nó hiện đại, nó đang giúp nền kinh tế phát triển.) - Đúng, vì bài nghe mô tả con đường là biểu tượng của tương lai và giúp kinh tế phát triển.</li>                 <li><span class="text-danger">because India has big population.</span> ❌ (Bởi vì Ấn Độ có dân số lớn.) - Sai, vì dân số không phải là lý do khiến con đường trở thành biểu tượng tương lai.</li>                 <li><span class="text-danger">because India has lots of transport.</span> ❌ (Bởi vì Ấn Độ có nhiều phương tiện giao thông.) - Sai, vì bài nghe đề cập đến nhiều phương tiện giao thông nhưng không liên kết nó với tương lai của Ấn Độ.</li>    </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="12" id="progress-question-12">
+				   13				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="13" id="progress-question-13">
+				   14				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="14" id="progress-question-14">
+				   15				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

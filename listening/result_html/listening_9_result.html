@@ -1,0 +1,688 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 09 - Part 3				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87730				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/15				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp3-1664870447_464ab7ec01dcc19a11f6.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Part 3. In this part, you will hear three talks or lectures. The talks or lectures will be played once only. There are five questions for each talk or lecture.<br>
+For each question, choose the right answer, A, B, C, or D. Part 3. Questions 21 to 25. First, you will have some time to look at questions 21 to 25. Now we're ready to start.<br>
+Listen and answer questions 21 to 25. You will hear the recording once only. <br>
+I was a small child when I left Vietnam and moved with my family to live in America.<br>
+For me and my little brother, it didn't take long before we felt American. But for my parents and two older sisters, it was a different story. The biggest problem for my mother was the language.<br>
+We were living in New York, and although there were quite a lot of Vietnamese families near us, they didn't work in the stores. This meant my mother had to take me with her when she went shopping, and I was usually at school. For my father, the most important thing when we arrived was to find a job.<br>
+Luckily, he had friends who knew us in Vietnam, and they helped him get a job in a factory. It was hard for him to do that sort of work. In Saigon, he had been a doctor.<br>
+My two older sisters went to high school. They worked hard and did well, and the school gave them extra English lessons. Even now, though, they speak with Vietnamese accents.<br>
+My brother and I are lucky. We may look Vietnamese, but we speak with American accents. My family found the way of life very different.<br>
+In Vietnam, my mother used to spend a lot of time visiting her sisters and brothers and looking after her mother and father. She feels quite lonely now. She says that in America, you live inside your house, but in Vietnam, you take your house outside onto the street and share your life with everybody.<br>
+I don't remember that, but I do find the winters are quite hard to put up with in New York. It's very cold and snows a lot. My mother still wears traditional Vietnamese clothes at home and always cooks us rice and noodles.<br>
+I must admit, I prefer burgers and chips. Although my friends like to visit us, I often feel a bit embarrassed by my parents' way of life. They don't understand Americans, and I think I am more American than Vietnamese now.<br>
+I suppose it's sad for them to have such a strange daughter. Now you will have some time to review questions 21 to 25. Part 3. Questions 26 to 30.<br>
+First, you will have some time to look at questions 26 to 30.<br>
+In American schools, almost every classroom is a mix of boys and girls. However, it was not always this way.<br>
+In the past, schools did not teach girls subjects like science and math. In 1972, a law called Title IX was made in America. It gave girls an equal chance at education.<br>
+Since then, boys and girls have been taught together. Recently, though, some schools are reconsidering separating classes. This is different than in the past, however.<br>
+Girls still learn the same subjects as boys. They just study without boys in the classroom. Why? Well, scientists know that boys and girls learn differently.<br>
+They also behave differently in the classroom. Boys are louder and more confident. They like to talk and show what they know.<br>
+In general, girls are quieter. They prefer to listen and think carefully before they give their answers. When boys and girls are together, the boys can be too dominant.<br>
+Also, boys and girls can bother each other. Instead of thinking about the lesson, they think about each other. In a separated classroom, they behave better and can focus on studying.<br>
+Another reason for separated classes is that boys and girls often like different things. For instance, boys prefer stories with action and adventure. In an all-boys English class, the teacher can choose books that will be interesting to boys.<br>
+This way, they will be more excited about the stories. Not all the classes are separated, just the main subjects, like English, math, science, and social studies. Still, some teachers think that separate education is not good.<br>
+They worry that boys and girls will not learn how to work well together. Right now, less than 600 schools are trying separate classrooms. Time will show if it is a good idea or something that should be left in the past.<br>
+Now you will have some time to review questions 26 to 30. Part 3. Questions 31 to 35 First, you will have some time to look at questions 31 to 35. Hi, I'd like to welcome all of you to the International Student Orientation at Norwalk College.<br>
+I hope that your travels from your home country have been easy and that you are all settling in well. I believe I've met everyone, but just in case, I'm the Director for International Student Affairs. The person you can come to if you're having problems with your classes, your housing, visas.<br>
+You're always welcome to stop by my office. We'll have several short workshops today, and we'll be talking about some common issues that international students face. The first one that I want to deal with is about communication.<br>
+And in particular, nonverbal communication. Now, all of you have been studying English for some time. You have a good vocabulary, and you probably know all about verb tenses and modals and can ask directions and order from a menu.<br>
+But communication is not only verbal. That is, talking is not the only language we use to communicate. Another way we communicate is through nonverbal communication, or body language.<br>
+The term body language means the movements we use and the facial expressions we have, like smiling or frowning. The way we sit or stand. The way we touch or look at someone.<br>
+The distance we stand from another person. Some psychologists say that more than 60% of our communication is actually done through body language. We do it without thinking or without ever having been specifically taught what the gestures or expressions mean.<br>
+The problem is that body language is a little bit different in each culture, and this can often cause some problems with communication. Here's an example. In many places, it may be a little rude or disrespectful to look at another person directly in their eyes as you talk with them.<br>
+So many international students will avoid this eye contact. But in America, we expect it. We think of eye contact as a sign of honesty and straightforwardness.<br>
+American parents actually encourage their children to look people in the eye when speaking. Just imagine a conversation where an international student was trying to be respectful by not looking into the eyes of her American classmate. The American might wonder why her classmate wouldn't look directly at her, and the international classmate would be wondering why she was being stared at.<br>
+The end result is an awkward and frustrating interaction. Here's another one. Americans shake hands firmly when they greet each other, because to Americans, a firm handshake signifies strength and power.<br>
+But a soft or limp handshake is considered a sign of weakness. In some cultures, handshakes are less common, or a gentle, soft handshake is acceptable. So students need to know that when shaking hands, it's important to be firm.<br>
+In America, a thumbs-up sign and a thumbs-down sign are common. <br>
+Now you will have some time to review questions 31 to 35. That is the end of Part 3. That is the end of the Listening Comprehension Test.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 3 Trong phần này, bạn sẽ nghe ba bài nói hoặc bài giảng. Các bài nói hoặc bài giảng sẽ chỉ được phát một lần duy nhất. Mỗi bài nói hoặc bài giảng có năm câu hỏi đi kèm. Với mỗi câu hỏi, hãy chọn đáp án đúng A, B, C hoặc D. Phần 3, câu hỏi 21-25 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 21 đến 25. Bây giờ, chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 21 đến 25. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Mình còn nhỏ khi rời Việt Nam và chuyển đến Mỹ cùng gia đình. Với mình và em trai, không mất nhiều thời gian để cảm thấy như người Mỹ. Nhưng với bố mẹ và hai chị gái, đó là một câu chuyện khác. Vấn đề lớn nhất của mẹ mình là ngôn ngữ. Chúng mình sống ở New York, và dù có khá nhiều gia đình người Việt gần đó, họ không làm việc trong các cửa hàng. Điều đó có nghĩa là mẹ mình phải đưa mình đi cùng khi đi mua sắm, nhưng thường thì mình ở trường. Với bố mình, điều quan trọng nhất khi đến Mỹ là tìm việc làm. May mắn thay, ông có những người bạn đã quen biết từ Việt Nam, và họ đã giúp ông có một công việc trong nhà máy. Đó là một công việc vất vả đối với ông. Ở Sài Gòn, ông từng là bác sĩ. Hai chị gái mình học trung học. Họ học rất chăm chỉ và đạt kết quả tốt, nhà trường còn cho họ học thêm tiếng Anh. Nhưng ngay cả bây giờ, họ vẫn nói tiếng Anh với giọng Việt. Mình và em trai thì may mắn hơn. Dù trông vẫn giống người Việt, nhưng bọn mình nói tiếng Anh với giọng Mỹ. Gia đình mình thấy lối sống ở Mỹ rất khác biệt. Ở Việt Nam, mẹ mình dành nhiều thời gian đến thăm anh chị em và chăm sóc ông bà. Bây giờ bà cảm thấy khá cô đơn. Mẹ nói rằng ở Mỹ, người ta sống trong nhà của họ, nhưng ở Việt Nam, họ đưa cuộc sống ra ngoài đường và chia sẻ với mọi người. Mình không nhớ nhiều về điều đó, nhưng mùa đông ở New York thực sự rất khó chịu. Trời rất lạnh và có nhiều tuyết. Mẹ mình vẫn mặc quần áo truyền thống Việt Nam ở nhà và luôn nấu cơm và phở. Mình phải thừa nhận rằng mình thích bánh burger và khoai tây chiên hơn. Mặc dù bạn bè thích đến nhà mình, nhưng đôi khi mình cảm thấy hơi xấu hổ về cách sống của bố mẹ. Họ không hiểu người Mỹ, và mình nghĩ rằng mình đã trở nên Mỹ hơn là Việt Nam. Chắc hẳn điều đó khiến họ buồn vì có một cô con gái xa lạ như vậy. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 21 đến 25. Phần 3, câu hỏi 26-30 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 26 đến 30. Trong các trường học ở Mỹ, hầu hết mọi lớp học đều có cả nam và nữ. Tuy nhiên, không phải lúc nào cũng như vậy. Trước đây, các trường không dạy các môn khoa học và toán cho nữ sinh. Năm 1972, một đạo luật có tên Title IX được ban hành tại Mỹ. Luật này giúp nữ sinh có cơ hội bình đẳng trong giáo dục. Từ đó, nam sinh và nữ sinh được học cùng nhau. Gần đây, một số trường học đang xem xét lại việc tách lớp. Nhưng điều này khác với trước đây. Nữ sinh vẫn học các môn giống nam sinh, nhưng họ học mà không có nam sinh trong lớp. Tại sao vậy? Các nhà khoa học biết rằng nam và nữ học theo những cách khác nhau. Họ cũng có cách cư xử khác nhau trong lớp học. Nam sinh thường nói to và tự tin hơn. Họ thích nói và thể hiện những gì mình biết. Trong khi đó, nữ sinh thường trầm lặng hơn. Họ thích lắng nghe và suy nghĩ kỹ trước khi đưa ra câu trả lời. Khi học chung, nam sinh có thể chiếm ưu thế quá nhiều. Ngoài ra, nam và nữ có thể làm phiền nhau. Thay vì tập trung vào bài học, họ nghĩ đến nhau. Trong lớp học tách biệt, họ cư xử tốt hơn và có thể tập trung vào việc học. Một lý do khác để tách lớp là do sở thích của nam và nữ khác nhau. Ví dụ, nam sinh thích những câu chuyện có hành động và phiêu lưu. Trong một lớp tiếng Anh chỉ có nam sinh, giáo viên có thể chọn sách phù hợp với sở thích của họ. Như vậy, họ sẽ hào hứng hơn với bài học. Không phải tất cả các lớp học đều bị tách biệt, chỉ các môn chính như tiếng Anh, toán, khoa học và lịch sử. Tuy nhiên, một số giáo viên cho rằng việc tách lớp không tốt. Họ lo lắng rằng nam sinh và nữ sinh sẽ không học được cách làm việc cùng nhau. Hiện tại, chưa đến 600 trường học đang thử nghiệm mô hình lớp học riêng. Thời gian sẽ trả lời liệu đây có phải là một ý tưởng hay hay chỉ là một phương pháp lỗi thời. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 26 đến 30. Phần 3, câu hỏi 31-35 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 31 đến 35. Chào mừng các bạn đến với buổi Định hướng Sinh viên Quốc tế tại Norwalk College. Tôi hy vọng các bạn đã có chuyến đi thuận lợi từ quê hương và đang dần ổn định cuộc sống mới. Tôi tin rằng tôi đã gặp tất cả mọi người, nhưng để chắc chắn, tôi là Giám đốc Văn phòng Sinh viên Quốc tế. Tôi là người mà các bạn có thể tìm đến nếu gặp khó khăn với lớp học, nhà ở, hoặc vấn đề thị thực. Các bạn luôn được chào đón ghé thăm văn phòng của tôi. Hôm nay, chúng ta sẽ có một số hội thảo ngắn và thảo luận về những vấn đề chung mà sinh viên quốc tế thường gặp phải. Chủ đề đầu tiên tôi muốn nói đến là giao tiếp, đặc biệt là giao tiếp phi ngôn ngữ. Tất cả các bạn đã học tiếng Anh trong một thời gian. Các bạn có vốn từ vựng tốt, có thể hiểu về thì động từ, câu hỏi, gọi món ăn,… Nhưng giao tiếp không chỉ có lời nói. Một cách khác để giao tiếp là ngôn ngữ cơ thể. Ngôn ngữ cơ thể bao gồm các cử chỉ, nét mặt như cười hay nhăn mặt, cách chúng ta đứng hoặc ngồi, cách chạm vào người khác, cách nhìn vào ai đó. Một số nhà tâm lý học cho rằng hơn 60% giao tiếp của chúng ta thực ra là qua ngôn ngữ cơ thể. Vấn đề là ngôn ngữ cơ thể khác nhau ở mỗi nền văn hóa, và điều này có thể gây hiểu lầm. Ví dụ, ở một số nơi, nhìn thẳng vào mắt người khác khi nói chuyện có thể bị xem là thiếu tôn trọng. Nhưng ở Mỹ, chúng tôi mong đợi điều đó. Nếu một sinh viên quốc tế không nhìn vào mắt bạn khi nói chuyện, người Mỹ có thể nghĩ rằng họ không trung thực. Đây là một trong những hiểu lầm phổ biến trong giao tiếp văn hóa. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 31 đến 35. Đây là phần kết thúc của Phần 3. Đây là phần kết thúc của bài kiểm tra nghe hiểu.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Why did the speaker have to help her mother with the shopping?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. There were no Vietnamese working in the stores.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Her mother could speak a little English.															</div>
+																				<div class="ps-4 mb-2">
+																	C. There wasn't always someone to go shopping with her.															</div>
+																				<div class="ps-4 mb-2">
+																	D. There were no Vietnamese people living near her.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>
+<p><span class="text-success"><strong>There were no Vietnamese working in the stores.</strong></span></p>
+
+<p><strong>Giải thích chi tiết:</strong></p>
+<p>Trong bài nghe, người nói giải thích lý do tại sao cô ấy phải giúp mẹ đi mua sắm:</p>
+<p>"The biggest problem for my mother was the language. We were living in New York, and although there were quite a lot of Vietnamese families near us, they didn't work in the stores. This meant my mother had to take me with her when she went shopping, and I was usually at school."</p>
+
+<p>"Vấn đề lớn nhất đối với mẹ tôi là ngôn ngữ. Chúng tôi sống ở New York, và mặc dù có khá nhiều gia đình người Việt gần đó, nhưng họ không làm việc trong các cửa hàng. Điều này có nghĩa là mẹ tôi phải đưa tôi đi cùng khi đi mua sắm, và thường thì tôi đang ở trường."</p>
+
+<p>Điều này cho thấy rằng <strong>không có người Việt Nam làm việc trong các cửa hàng</strong>, khiến mẹ của người nói gặp khó khăn khi mua sắm. Do đó, đáp án chính xác là <strong>There were no Vietnamese working in the stores.</strong></p>
+
+<p><strong>Phân tích các lựa chọn:</strong></p>
+<ul>
+    <li><span class="text-danger">There were no Vietnamese people living near her.</span> ❌ (Không có người Việt nào sống gần cô ấy.) - Sai, vì bài nghe nói rằng có nhiều gia đình người Việt sống gần đó.</li>
+    <li><span class="text-success"><strong>There were no Vietnamese working in the stores.</strong></span> ✅ (Không có người Việt nào làm việc trong các cửa hàng.) - Đúng, vì bài nghe đề cập rằng đây là lý do mẹ của người nói gặp khó khăn khi mua sắm.</li>
+    <li><span class="text-danger">There wasn't always someone to go shopping with her.</span> ❌ (Không phải lúc nào cũng có người đi mua sắm cùng mẹ cô ấy.) - Sai, vì vấn đề chính là <strong>không có người Việt trong các cửa hàng</strong>, không phải việc đi cùng.</li>
+    <li><span class="text-danger">Her mother could speak a little English.</span> ❌ (Mẹ cô ấy có thể nói một chút tiếng Anh.) - Sai, vì bài nghe không đề cập đến việc mẹ cô ấy có thể nói tiếng Anh hay không.</li>
+</ul>
+							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: Why did her father find working in a factory difficult?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He couldn't speak any English.															</div>
+																				<div class="ps-4 mb-2">
+																	B. He didn't have many friends there.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. He had had a much better job in Vietnam.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. He couldn't get used to the working style.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>
+<p><span class="text-success"><strong>He had had a much better job in Vietnam.</strong></span></p>
+
+<p><strong>Giải thích chi tiết:</strong></p>
+<p>Trong bài nghe, người nói giải thích lý do tại sao cha cô ấy thấy công việc trong nhà máy khó khăn:</p>
+<p>"For my father, the most important thing when we arrived was to find a job. Luckily, he had friends who knew us in Vietnam, and they helped him get a job in a factory. It was hard for him to do that sort of work. In Saigon, he had been a doctor."</p>
+
+<p>"Đối với cha tôi, điều quan trọng nhất khi chúng tôi đến là tìm một công việc. May mắn thay, ông có những người bạn quen biết từ Việt Nam, và họ đã giúp ông có một công việc trong nhà máy. Việc đó rất khó đối với ông. Ở Sài Gòn, ông từng là một bác sĩ."</p>
+
+<p>Điều này cho thấy rằng <strong>cha của người nói thấy làm việc trong nhà máy khó khăn vì trước đây ông từng là bác sĩ</strong>, một công việc có địa vị cao hơn. Do đó, đáp án chính xác là <strong>He had had a much better job in Vietnam.</strong></p>
+
+<p><strong>Phân tích các lựa chọn:</strong></p>
+<ul>
+    <li><span class="text-danger">He couldn't speak any English.</span> ❌ (Ông ấy không thể nói tiếng Anh.) - Sai, vì bài nghe không đề cập đến việc ông ấy gặp khó khăn do không biết tiếng Anh.</li>
+    <li><span class="text-danger">He didn't have many friends there.</span> ❌ (Ông ấy không có nhiều bạn ở đó.) - Sai, vì bài nghe nói rằng ông ấy có bạn bè giúp ông tìm việc.</li>
+    <li><span class="text-success"><strong>He had had a much better job in Vietnam.</strong></span> ✅ (Ông ấy từng có một công việc tốt hơn nhiều ở Việt Nam.) - Đúng, vì ông ấy từng là bác sĩ ở Việt Nam, và làm việc trong nhà máy là một sự thay đổi khó khăn.</li>
+    <li><span class="text-danger">He couldn't get used to the working style.</span> ❌ (Ông ấy không thể quen với phong cách làm việc.) - Sai, vì bài nghe không đề cập đến việc ông ấy không quen với phong cách làm việc.</li>
+</ul>
+							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: Why are the speaker and her brother more fortunate than their sisters?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. They look more American.															</div>
+																				<div class="ps-4 mb-2">
+																	B. They did not need extra English lessons.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. They speak with American accents.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. They quickly adopted the way of life.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>They speak with American accents.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, người nói giải thích tại sao cô ấy và em trai mình may mắn hơn các chị gái:</p> <p>"My two older sisters went to high school. They worked hard and did well, and the school gave them extra English lessons. Even now, though, they speak with Vietnamese accents. My brother and I are lucky. We may look Vietnamese, but we speak with American accents."</p>  <p>"Hai chị gái của tôi học trung học. Họ học rất chăm chỉ và đạt kết quả tốt, và trường đã cho họ học thêm các lớp tiếng Anh. Tuy nhiên, ngay cả bây giờ, họ vẫn nói với giọng Việt Nam. Còn tôi và em trai mình thì may mắn. Chúng tôi có thể trông giống người Việt Nam, nhưng chúng tôi nói với giọng Mỹ."</p>  <p>Điều này cho thấy rằng <strong>người nói và em trai may mắn hơn vì họ có thể nói với giọng Mỹ, trong khi các chị gái vẫn giữ giọng Việt Nam</strong>. Do đó, đáp án chính xác là <strong>They speak with American accents.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">They did not need extra English lessons.</span> ❌ (Họ không cần học thêm tiếng Anh.) - Sai, vì bài nghe không đề cập đến việc họ có cần học thêm tiếng Anh hay không.</li>     <li><span class="text-danger">They look more American.</span> ❌ (Họ trông giống người Mỹ hơn.) - Sai, vì bài nghe nói rằng họ trông giống người Việt Nam.</li>     <li><span class="text-success"><strong>They speak with American accents.</strong></span> ✅ (Họ nói với giọng Mỹ.) - Đúng, vì người nói cho rằng đó là điều khiến họ may mắn hơn.</li>     <li><span class="text-danger">They quickly adopted the way of life.</span> ❌ (Họ nhanh chóng thích nghi với lối sống.) - Sai, vì bài nghe không nhấn mạnh điều này là lý do khiến họ may mắn hơn.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What has the speaker forgotten about life in Vietnam?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Wearing traditional clothes.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Living close to other people.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Traditional food.															</div>
+																				<div class="ps-4 mb-2">
+																	D. The warm weather.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>Living close to other people.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, người nói đề cập đến sự khác biệt giữa cuộc sống ở Mỹ và Việt Nam:</p> <p>"She says that in America, you live inside your house, but in Vietnam, you take your house outside onto the street and share your life with everybody. I don't remember that, but I do find the winters are quite hard to put up with in New York."</p>  <p>"Bà ấy nói rằng ở Mỹ, bạn sống bên trong ngôi nhà của mình, nhưng ở Việt Nam, bạn mang ngôi nhà ra ngoài đường phố và chia sẻ cuộc sống với mọi người. Tôi không nhớ điều đó, nhưng tôi thấy mùa đông ở New York khá khó chịu."</p>  <p>Điều này cho thấy rằng <strong>người nói đã quên đi cuộc sống gần gũi với mọi người như ở Việt Nam</strong>. Do đó, đáp án chính xác là <strong>Living close to other people.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-success"><strong>Living close to other people.</strong></span> ✅ (Sống gần gũi với những người khác.) - Đúng, vì người nói nói rằng họ không nhớ điều này.</li>     <li><span class="text-danger">The warm weather.</span> ❌ (Thời tiết ấm áp.) - Sai, vì người nói đề cập đến mùa đông lạnh giá ở New York, nhưng không nói rằng họ đã quên thời tiết ấm áp.</li>     <li><span class="text-danger">Wearing traditional clothes.</span> ❌ (Mặc quần áo truyền thống.) - Sai, vì bài nghe nói rằng mẹ của người nói vẫn mặc đồ truyền thống ở nhà.</li>     <li><span class="text-danger">Traditional food.</span> ❌ (Thức ăn truyền thống.) - Sai, vì người nói đề cập đến việc mẹ cô ấy vẫn nấu các món ăn truyền thống.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: Why does she find it difficult to invite friends to her home?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Her parents haven't adopted an American way of life.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Her parents do not speak English well.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Her parents do not have much money.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Her parents only know how to cook Vietnamese food.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>Her parents haven't adopted an American way of life.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, người nói đề cập đến việc cảm thấy khó khăn khi mời bạn bè đến nhà:</p> <p>"My mother still wears traditional Vietnamese clothes at home and always cooks us rice and noodles. I must admit, I prefer burgers and chips. Although my friends like to visit us, I often feel a bit embarrassed by my parents' way of life. They don't understand Americans, and I think I am more American than Vietnamese now."</p>  <p>"Mẹ tôi vẫn mặc quần áo truyền thống của Việt Nam ở nhà và luôn nấu cơm và mì cho chúng tôi. Tôi phải thừa nhận rằng tôi thích bánh burger và khoai tây chiên hơn. Mặc dù bạn bè tôi thích đến nhà chơi, nhưng tôi thường cảm thấy hơi ngại ngùng về lối sống của bố mẹ mình. Họ không hiểu người Mỹ, và tôi nghĩ rằng tôi đã trở nên Mỹ hơn Việt Nam."</p>  <p>Điều này cho thấy rằng <strong>người nói cảm thấy khó mời bạn bè đến nhà vì bố mẹ cô ấy vẫn giữ lối sống Việt Nam, chưa thích nghi với cách sống của người Mỹ</strong>. Do đó, đáp án chính xác là <strong>Her parents haven't adopted an American way of life.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">Her parents do not have much money.</span> ❌ (Bố mẹ cô ấy không có nhiều tiền.) - Sai, vì bài nghe không đề cập đến vấn đề tài chính của bố mẹ cô ấy.</li>     <li><span class="text-success"><strong>Her parents haven't adopted an American way of life.</strong></span> ✅ (Bố mẹ cô ấy chưa thích nghi với lối sống Mỹ.) - Đúng, vì người nói cảm thấy ngại ngùng về lối sống của bố mẹ mình.</li>     <li><span class="text-danger">Her parents only know how to cook Vietnamese food.</span> ❌ (Bố mẹ cô ấy chỉ biết nấu món Việt Nam.) - Sai, vì dù mẹ cô ấy nấu món Việt, nhưng đây không phải lý do chính khiến cô ấy khó mời bạn bè đến nhà.</li>     <li><span class="text-danger">Her parents do not speak English well.</span> ❌ (Bố mẹ cô ấy không nói tiếng Anh giỏi.) - Sai, vì bài nghe không đề cập đến việc này là lý do khiến cô ấy thấy khó khăn khi mời bạn bè.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: What happened in American schools before 1972?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Every classroom was a mix of boys and girls.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. They didn't teach girls some subjects.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Boys could learn what they wanted.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Girls didn't go to school.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>They didn't teach girls some subjects.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, người nói đề cập đến sự thay đổi trong giáo dục trước năm 1972:</p> <p>"In the past, schools did not teach girls subjects like science and math. In 1972, a law called Title IX was made in America. It gave girls an equal chance at education."</p>  <p>"Trước đây, các trường học không dạy các môn như khoa học và toán cho nữ sinh. Năm 1972, một đạo luật có tên là Title IX đã được ban hành ở Mỹ. Luật này mang lại cho nữ sinh cơ hội bình đẳng trong giáo dục."</p>  <p>Điều này cho thấy rằng <strong>trước năm 1972, nữ sinh không được học một số môn học như khoa học và toán</strong>. Do đó, đáp án chính xác là <strong>They didn't teach girls some subjects.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">Girls didn't go to school.</span> ❌ (Nữ sinh không đi học.) - Sai, vì bài nghe không nói rằng nữ sinh không được đến trường, chỉ là họ không được học một số môn.</li>     <li><span class="text-danger">Every classroom was a mix of boys and girls.</span> ❌ (Mỗi lớp học đều có cả nam và nữ.) - Sai, vì bài nghe nói rằng trước đây trường học không dạy một số môn cho nữ sinh, không đề cập đến việc lớp học có cả nam và nữ.</li>     <li><span class="text-danger">Boys could learn what they wanted.</span> ❌ (Nam sinh có thể học bất cứ thứ gì họ muốn.) - Sai, vì bài nghe không đề cập đến việc nam sinh có thể tự do chọn môn học.</li>     <li><span class="text-success"><strong>They didn't teach girls some subjects.</strong></span> ✅ (Họ không dạy một số môn cho nữ sinh.) - Đúng, vì bài nghe nói rõ rằng trước năm 1972, nữ sinh không được học các môn khoa học và toán.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What is the reason that most American schools have mixed classes?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Boys and girls behave better in such classes.															</div>
+																				<div class="ps-4 mb-2">
+																	B. Teachers did not want to teach single-gender classes.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Scientists said that it was the best thing.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. A law gave girls an equal chance to learn.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>A law gave girls an equal chance to learn.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, người nói giải thích lý do tại sao hầu hết các trường học ở Mỹ có lớp học chung cho nam và nữ:</p> <p>"In 1972, a law called Title IX was made in America. It gave girls an equal chance at education. Since then, boys and girls have been taught together."</p>  <p>"Năm 1972, một đạo luật có tên là Title IX đã được ban hành ở Mỹ. Luật này mang lại cho nữ sinh cơ hội bình đẳng trong giáo dục. Kể từ đó, nam sinh và nữ sinh được dạy chung với nhau."</p>  <p>Điều này cho thấy rằng <strong>lý do chính khiến hầu hết các trường học ở Mỹ có lớp học chung là do luật Title IX đảm bảo cơ hội học tập bình đẳng cho nữ sinh</strong>. Do đó, đáp án chính xác là <strong>A law gave girls an equal chance to learn.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">Scientists said that it was the best thing.</span> ❌ (Các nhà khoa học nói rằng đó là điều tốt nhất.) - Sai, vì bài nghe không đề cập đến việc các nhà khoa học quyết định điều này.</li>     <li><span class="text-danger">Teachers did not want to teach single-gender classes.</span> ❌ (Giáo viên không muốn dạy các lớp học chỉ có một giới tính.) - Sai, vì bài nghe không đề cập đến ý kiến của giáo viên.</li>     <li><span class="text-success"><strong>A law gave girls an equal chance to learn.</strong></span> ✅ (Một đạo luật mang lại cho nữ sinh cơ hội học tập bình đẳng.) - Đúng, vì bài nghe nói rõ rằng luật Title IX đã thay đổi cách tổ chức lớp học.</li>     <li><span class="text-danger">Boys and girls behave better in such classes.</span> ❌ (Nam và nữ sinh cư xử tốt hơn trong các lớp học chung.) - Sai, vì bài nghe không đề cập đến hành vi của học sinh là lý do chính cho việc dạy chung.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: Why might girls not get a chance to talk much in a class with boys?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Because girls are often shy.															</div>
+																				<div class="ps-4 mb-2">
+																	B. Because the teacher doesn't ask them questions.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Because boys are louder and often talk first.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Because boys know the correct answers.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>Because boys are louder and often talk first.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, người nói giải thích lý do tại sao nữ sinh có thể không có nhiều cơ hội phát biểu trong lớp học có cả nam sinh:</p> <p>"Scientists know that boys and girls learn differently. They also behave differently in the classroom. Boys are louder and more confident. They like to talk and show what they know. In general, girls are quieter. They prefer to listen and think carefully before they give their answers."</p>  <p>"Các nhà khoa học biết rằng nam và nữ học theo cách khác nhau. Họ cũng có cách cư xử khác nhau trong lớp học. Nam sinh thì ồn ào và tự tin hơn. Họ thích nói và thể hiện những gì họ biết. Nhìn chung, nữ sinh thì trầm lặng hơn. Họ thích lắng nghe và suy nghĩ cẩn thận trước khi trả lời."</p>  <p>Điều này cho thấy rằng <strong>nữ sinh có thể không có cơ hội nói nhiều vì nam sinh thường nói to hơn và nói trước</strong>. Do đó, đáp án chính xác là <strong>Because boys are louder and often talk first.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">Because the teacher doesn't ask them questions.</span> ❌ (Vì giáo viên không đặt câu hỏi cho họ.) - Sai, vì bài nghe không đề cập đến việc giáo viên thiên vị trong đặt câu hỏi.</li>     <li><span class="text-success"><strong>Because boys are louder and often talk first.</strong></span> ✅ (Vì nam sinh thường ồn ào và nói trước.) - Đúng, vì bài nghe nhấn mạnh rằng nam sinh có xu hướng nói to và thể hiện nhiều hơn.</li>     <li><span class="text-danger">Because boys know the correct answers.</span> ❌ (Vì nam sinh biết câu trả lời đúng.) - Sai, vì bài nghe không nói rằng nam sinh giỏi hơn nữ sinh.</li>     <li><span class="text-danger">Because girls are often shy.</span> ❌ (Vì nữ sinh thường nhút nhát.) - Sai, vì bài nghe mô tả nữ sinh là người thích suy nghĩ kỹ trước khi trả lời, không nhất thiết là nhút nhát.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What is NOT the reason that some schools are reconsidering separating classes?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Boys learn differently than girls.															</div>
+																				<div class="ps-4 mb-2">
+																	B. Boys and girls like different things.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Boys and girls can bother each other.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. They prefer the old teaching styles.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>They prefer the old teaching styles.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, người nói giải thích lý do tại sao một số trường học đang cân nhắc việc tách lớp nam và nữ:</p> <p>"Recently, though, some schools are reconsidering separating classes. This is different than in the past, however. Girls still learn the same subjects as boys. They just study without boys in the classroom. Why? Well, scientists know that boys and girls learn differently. They also behave differently in the classroom. Boys are louder and more confident. They like to talk and show what they know. In general, girls are quieter. They prefer to listen and think carefully before they give their answers. [...] Another reason for separated classes is that boys and girls often like different things."</p>  <p>"Gần đây, một số trường học đang cân nhắc việc tách lớp học nam và nữ. Tuy nhiên, điều này khác với trước đây. Nữ sinh vẫn học các môn giống như nam sinh, chỉ là học tách biệt với nhau. Vì sao? Vì các nhà khoa học biết rằng nam và nữ học theo cách khác nhau. Họ cũng có cách cư xử khác nhau trong lớp học. Nam sinh thì ồn ào và tự tin hơn. Họ thích nói và thể hiện những gì họ biết. Nhìn chung, nữ sinh thì trầm lặng hơn. Họ thích lắng nghe và suy nghĩ cẩn thận trước khi trả lời. [...] Một lý do khác để tách lớp là nam sinh và nữ sinh thường thích những thứ khác nhau."</p>  <p>Điều này cho thấy rằng <strong>các trường học đang cân nhắc việc tách lớp vì sự khác biệt trong cách học và sở thích giữa nam và nữ sinh</strong>. Tuy nhiên, không có chi tiết nào nói rằng họ muốn quay lại phương pháp giảng dạy cũ. Do đó, đáp án chính xác là <strong>They prefer the old teaching styles.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-success"><strong>They prefer the old teaching styles.</strong></span> ✅ (Họ thích các phương pháp giảng dạy cũ.) - Đúng, vì bài nghe không nhắc đến việc các trường học muốn quay lại phương pháp dạy cũ.</li>     <li><span class="text-danger">Boys learn differently than girls.</span> ❌ (Nam sinh học khác nữ sinh.) - Sai, vì bài nghe xác nhận rằng đây là một trong những lý do để cân nhắc tách lớp.</li>     <li><span class="text-danger">Boys and girls can bother each other.</span> ❌ (Nam sinh và nữ sinh có thể làm phiền nhau.) - Sai, vì bài nghe nói rằng khi học chung, học sinh có thể mất tập trung vì suy nghĩ về nhau.</li>     <li><span class="text-danger">Boys and girls like different things.</span> ❌ (Nam sinh và nữ sinh thích những thứ khác nhau.) - Sai, vì bài nghe đề cập rằng sự khác biệt về sở thích cũng là một lý do để xem xét việc tách lớp.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: Which is one class that is not mentioned as being separated?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Science															</div>
+																				<div class="ps-4 mb-2">
+																	B. Math															</div>
+																				<div class="ps-4 mb-2">
+																	C. Social Studies															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Physical Education</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>Physical Education</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, người nói đề cập đến các môn học chính được tách lớp:</p> <p>"Not all the classes are separated, just the main subjects, like English, math, science, and social studies."</p>  <p>"Không phải tất cả các lớp đều bị tách riêng, chỉ có các môn học chính như Tiếng Anh, Toán, Khoa học và Nghiên cứu Xã hội."</p>  <p>Điều này cho thấy rằng <strong>các môn học được nhắc đến là Tiếng Anh, Toán, Khoa học và Nghiên cứu Xã hội</strong>, nhưng không có đề cập đến Giáo dục thể chất. Do đó, đáp án chính xác là <strong>Physical Education.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">Math</span> ❌ (Toán) - Sai, vì Toán được nhắc đến trong danh sách các môn học tách biệt.</li>     <li><span class="text-danger">Social Studies</span> ❌ (Nghiên cứu Xã hội) - Sai, vì bài nghe đề cập đến môn này là một trong những môn học bị tách lớp.</li>     <li><span class="text-danger">Science</span> ❌ (Khoa học) - Sai, vì bài nghe xác nhận rằng Khoa học cũng là một môn học bị tách biệt.</li>     <li><span class="text-success"><strong>Physical Education</strong></span> ✅ (Giáo dục thể chất) - Đúng, vì bài nghe không đề cập đến môn này trong danh sách các lớp học bị tách biệt.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: Who is listening to the orientation talk?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. all first-year students in the college.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. new international students.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. the director of international students.															</div>
+																				<div class="ps-4 mb-2">
+																	D. the teachers of international department.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>new international students.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, người nói giới thiệu về buổi định hướng:</p> <p>"Hi, I'd like to welcome all of you to the International Student Orientation at Norwalk College."</p>  <p>"Xin chào, tôi muốn chào đón tất cả các bạn đến với Buổi Định Hướng Sinh Viên Quốc Tế tại Norwalk College."</p>  <p>Điều này cho thấy rằng <strong>người nghe buổi định hướng là các sinh viên quốc tế mới</strong>. Do đó, đáp án chính xác là <strong>new international students.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">the director of international students.</span> ❌ (Giám đốc sinh viên quốc tế.) - Sai, vì giám đốc là người phát biểu, không phải người nghe.</li>     <li><span class="text-success"><strong>new international students.</strong></span> ✅ (Sinh viên quốc tế mới.) - Đúng, vì bài nghe nói rõ rằng đây là buổi định hướng dành cho sinh viên quốc tế mới.</li>     <li><span class="text-danger">the teachers of international department.</span> ❌ (Giáo viên của khoa quốc tế.) - Sai, vì bài nghe không đề cập đến giáo viên tham gia buổi định hướng.</li>     <li><span class="text-danger">all first-year students in the college.</span> ❌ (Tất cả sinh viên năm nhất trong trường đại học.) - Sai, vì bài nghe chỉ nhắm đến sinh viên quốc tế, không phải toàn bộ sinh viên năm nhất.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: What is the purpose of this talk?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. to introduce the director for international student affairs.															</div>
+																				<div class="ps-4 mb-2">
+																	B. to deal with all international students' problems.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. to introduce common problems in non-verbal communication.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. to inform the importance of using English in class.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>to introduce common problems in non-verbal communication.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, người nói nhấn mạnh mục đích chính của bài phát biểu:</p> <p>"The first one that I want to deal with is about communication. And in particular, nonverbal communication."</p>  <p>"Điều đầu tiên tôi muốn đề cập đến là về giao tiếp. Đặc biệt là giao tiếp phi ngôn ngữ."</p>  <p>Điều này cho thấy rằng <strong>bài nói tập trung vào các vấn đề phổ biến trong giao tiếp phi ngôn ngữ</strong>. Do đó, đáp án chính xác là <strong>to introduce common problems in non-verbal communication.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">to introduce the director for international student affairs.</span> ❌ (Giới thiệu giám đốc phụ trách sinh viên quốc tế.) - Sai, vì giám đốc có mặt, nhưng không phải mục đích chính của bài nói.</li>     <li><span class="text-danger">to deal with all international students' problems.</span> ❌ (Giải quyết tất cả các vấn đề của sinh viên quốc tế.) - Sai, vì bài nghe chỉ đề cập đến một vấn đề cụ thể là giao tiếp phi ngôn ngữ.</li>     <li><span class="text-danger">to inform the importance of using English in class.</span> ❌ (Thông báo về tầm quan trọng của việc sử dụng tiếng Anh trong lớp học.) - Sai, vì bài nói không tập trung vào việc sử dụng tiếng Anh mà là về giao tiếp phi ngôn ngữ.</li>     <li><span class="text-success"><strong>to introduce common problems in non-verbal communication.</strong></span> ✅ (Giới thiệu các vấn đề phổ biến trong giao tiếp phi ngôn ngữ.) - Đúng, vì bài nghe nói rõ rằng đây là nội dung chính của bài nói.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question13">
+						<div class="fw-bold mb-2">
+							Câu 13: According to the speaker, what is body language?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It's the way to ask for directions.															</div>
+																				<div class="ps-4 mb-2">
+																	B. It's the language used in class only.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. It's the language of movements and facial expressions.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. It's the use of verb tenses and modals.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>It's the language of movements and facial expressions.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, người nói định nghĩa ngôn ngữ cơ thể:</p> <p>"The term body language means the movements we use and the facial expressions we have, like smiling or frowning."</p>  <p>"Thuật ngữ ngôn ngữ cơ thể có nghĩa là những cử động chúng ta sử dụng và các biểu cảm khuôn mặt chúng ta có, như mỉm cười hay cau mày."</p>  <p>Điều này cho thấy rằng <strong>ngôn ngữ cơ thể là cách chúng ta sử dụng cử động và biểu cảm khuôn mặt</strong>. Do đó, đáp án chính xác là <strong>It's the language of movements and facial expressions.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">It's the use of verb tenses and modals.</span> ❌ (Đó là việc sử dụng các thì động từ và động từ khiếm khuyết.) - Sai, vì bài nghe không đề cập đến ngữ pháp tiếng Anh khi nói về ngôn ngữ cơ thể.</li>     <li><span class="text-danger">It's the way to ask for directions.</span> ❌ (Đó là cách hỏi đường.) - Sai, vì bài nghe không nói về việc sử dụng ngôn ngữ cơ thể để hỏi đường.</li>     <li><span class="text-danger">It's the language used in class only.</span> ❌ (Đó là ngôn ngữ chỉ được sử dụng trong lớp học.) - Sai, vì bài nghe nói rằng ngôn ngữ cơ thể được sử dụng trong giao tiếp hàng ngày, không chỉ trong lớp học.</li>     <li><span class="text-success"><strong>It's the language of movements and facial expressions.</strong></span> ✅ (Đó là ngôn ngữ của cử động và biểu cảm khuôn mặt.) - Đúng, vì bài nghe định nghĩa ngôn ngữ cơ thể theo cách này.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question14">
+						<div class="fw-bold mb-2">
+							Câu 14: In American Culture, _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. making eye contact is a sign of disrespect.															</div>
+																				<div class="ps-4 mb-2">
+																	B. eye contact is the same as most cultures.															</div>
+																				<div class="ps-4 mb-2">
+																	C. people don't look in others' eyes while talking.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. eye contact is considered as a sign of honesty.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>eye contact is considered as a sign of honesty.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, người nói giải thích về ý nghĩa của giao tiếp bằng mắt trong văn hóa Mỹ:</p> <p>"But in America, we expect it. We think of eye contact as a sign of honesty and straightforwardness. American parents actually encourage their children to look people in the eye when speaking."</p>  <p>"Nhưng ở Mỹ, chúng tôi mong đợi điều đó. Chúng tôi coi giao tiếp bằng mắt là một dấu hiệu của sự trung thực và thẳng thắn. Các bậc phụ huynh Mỹ thực sự khuyến khích con cái họ nhìn thẳng vào mắt người khác khi nói chuyện."</p>  <p>Điều này cho thấy rằng <strong>giao tiếp bằng mắt trong văn hóa Mỹ được coi là dấu hiệu của sự trung thực</strong>. Do đó, đáp án chính xác là <strong>eye contact is considered as a sign of honesty.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">eye contact is the same as most cultures.</span> ❌ (Giao tiếp bằng mắt giống như trong hầu hết các nền văn hóa khác.) - Sai, vì bài nghe nói rằng trong một số nền văn hóa khác, giao tiếp bằng mắt có thể bị coi là thiếu tôn trọng.</li>     <li><span class="text-danger">making eye contact is a sign of disrespect.</span> ❌ (Giao tiếp bằng mắt là dấu hiệu của sự thiếu tôn trọng.) - Sai, vì trong văn hóa Mỹ, điều này được coi là dấu hiệu của sự trung thực.</li>     <li><span class="text-danger">people don't look in others' eyes while talking.</span> ❌ (Mọi người không nhìn vào mắt người khác khi nói chuyện.) - Sai, vì bài nghe nói rằng người Mỹ mong đợi giao tiếp bằng mắt khi trò chuyện.</li>     <li><span class="text-success"><strong>eye contact is considered as a sign of honesty.</strong></span> ✅ (Giao tiếp bằng mắt được coi là dấu hiệu của sự trung thực.) - Đúng, vì bài nghe nói rõ rằng người Mỹ coi đây là một đặc điểm quan trọng trong giao tiếp.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question15">
+						<div class="fw-bold mb-2">
+							Câu 15: According to the speaker, what is TRUE about handshakes in American Culture?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Handshakes need to be firm.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Shaking hands is not important.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Handshakes are not common.															</div>
+																				<div class="ps-4 mb-2">
+																	D. A handshake shouldn't be too strong.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>Handshakes need to be firm.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, người nói giải thích về cách bắt tay trong văn hóa Mỹ:</p> <p>"Americans shake hands firmly when they greet each other, because to Americans, a firm handshake signifies strength and power. But a soft or limp handshake is considered a sign of weakness."</p>  <p>"Người Mỹ bắt tay một cách chắc chắn khi chào nhau, vì đối với họ, một cái bắt tay chắc chắn thể hiện sức mạnh và quyền lực. Nhưng một cái bắt tay yếu hoặc lỏng lẻo bị coi là dấu hiệu của sự yếu đuối."</p>  <p>Điều này cho thấy rằng <strong>trong văn hóa Mỹ, bắt tay cần phải chắc chắn</strong>. Do đó, đáp án chính xác là <strong>Handshakes need to be firm.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">A handshake shouldn't be too strong.</span> ❌ (Bắt tay không nên quá mạnh.) - Sai, vì bài nghe nhấn mạnh rằng bắt tay cần phải chắc chắn, không nói về việc tránh quá mạnh.</li>     <li><span class="text-danger">Handshakes are not common.</span> ❌ (Bắt tay không phổ biến.) - Sai, vì bài nghe nói rằng người Mỹ bắt tay khi chào hỏi, cho thấy đó là một hành động phổ biến.</li>     <li><span class="text-success"><strong>Handshakes need to be firm.</strong></span> ✅ (Bắt tay cần phải chắc chắn.) - Đúng, vì bài nghe khẳng định rằng bắt tay chắc chắn thể hiện sức mạnh và quyền lực.</li>     <li><span class="text-danger">Shaking hands is not important.</span> ❌ (Bắt tay không quan trọng.) - Sai, vì bài nghe nhấn mạnh rằng một cái bắt tay chắc chắn có ý nghĩa quan trọng trong văn hóa Mỹ.</li> </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="12" id="progress-question-12">
+				   13				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="13" id="progress-question-13">
+				   14				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="14" id="progress-question-14">
+				   15				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

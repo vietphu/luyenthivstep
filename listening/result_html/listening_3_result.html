@@ -1,0 +1,646 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 03 - Part 3				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87725				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/15				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp3-1642953955_8fd0411ca381afb64bf8.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Part 3 In this part, you will hear three talks, or lectures. The talks or lectures will be played once only. There are five questions for each talk or lecture.<br>
+For each question, choose the right answer, A, B, C, or D. Part 3 Questions 21 to 25 First, you will have some time to look at questions 21 to 25. Now we're ready to start. Listen, and answer questions 21 to 25.<br>
+You will hear the recording once only. <br>
+Angry Birds 2 is out, and more than 10 million people are furiously throwing feathered flyers at snorting pigs. But, while it's free to download, some players are complaining about how the game encourages in-app purchases.<br>
+The makers, Rovio, says those who don't buy add-ons still get a fully formed game for free. The game allows you to gain extra lives in exchange for gems. There are several ways to gather these gems in the game, but buying them is the easiest.<br>
+Eric Kayan, one reviewer, says that if you don't want to part with your money, you're forced to wait for your lives to reload. He thinks this feature will just encourage gamers to stop playing. Greedy isn't the word, but there are words to describe this sort of thing.<br>
+Foolish, baffling, boneheaded. The first Angry Birds game was released in 2009, and it was a massive hit, even though players had to pay to download it. There have been other spin-offs in the series, but Angry Birds 2 has been billed as a proper follow-up.<br>
+John Norris says that he played the original endlessly, and he was looking forward to the development. He thinks most people who play mobile games these days are pretty aware of how in-app purchases work. But after such an uncomplicated original game, he was really disappointed by how hard the sequel tries to make you spend your money.<br>
+After these complaints were revealed, the creative director of the game, Patrick Liu, stated that they encouraged users to play, not to pay. Everybody had an equal opportunity to progress in the game, as all transactions were made with gems, for which the game allows you to gain extra lives in exchange. These gems could be earned by playing and completing challenges.<br>
+Furthermore, extra birds, lives and tickets could be earned through watching videos. This fact was accessible to everyone. Angry Birds 2 could be enjoyed fully without purchasing anything, but they did offer, for purchase, a variety of ways to expand, extend and enhance the game-playing experience.<br>
+But John still thinks the Finnish company has ruined Angry Birds 2. He appreciates game developers' need to make money, but the way to do that is to charge money for games people want to play, not annoy people into spending money in-game. <br>
+Now you will have some time to review questions 21 to 25. First, you will have some time to look at questions 26 to 30.<br>
+Now we're ready to start. Listen and answer questions 26 to 30. You will hear the recording once only.<br>
+The world's first malaria vaccine has cleared one of the final hurdles prior to being approved for use in Africa. It is noticeable that malaria kills around 584,000 people a year worldwide. Most of them children under five in sub-Saharan Africa.<br>
+The European Medicines Agency gave a positive scientific opinion after assessing its safety and effectiveness. It represents a green light for the Mosquerix injection developed by GlaxoSmithKline, G-S-K for short. Mosquerix is the first against a parasitic infection in humans.<br>
+Scientists who have been working on this vaccine for 30 years said that this was a hugely significant moment and this was a dream come true. It has been designed specifically to combat malaria infection in children in Africa and will not be licensed for travelers. Earlier this year, final results of a clinical trial in seven African countries yielded mixed results.<br>
+The best protection was among children aged five to 17 months who received three doses of the vaccine a month apart plus a booster dose at 20 months. In this group, cases of severe malaria were cut by a third over four years. But the effectiveness of the vaccine declined over time making the booster shot essential.<br>
+Without a booster, the vaccine did not cut the rate of severe malaria over the trial period. And disappointingly, the injection did not prove very effective in protecting young babies from severe malaria. Furthermore, it has been hoped the injection could be administered at 6, 10 and 14 weeks along with other childhood vaccines.<br>
+But the results suggest the injections need to be started later which would involve a huge amount of organization and extra cost as it is outside the childhood vaccine schedule. Besides, the trial results show it is crucial that children receive all four doses of the injection in order to benefit. But even in partially effective malaria vaccine could have a role to play in countries with very high rates of disease.<br>
+GSK began research on a malaria vaccine 30 years ago and the first trials in Africa began in 1998. In 2001, a partnership was established between GSK and the PATH Malaria Vaccine Initiative through a grant from the Bill and Melinda Gates Foundation. The project aimed to speed up malaria vaccine development.<br>
+In 2009, 11 centres began recruiting 16,000 children in 7 sub-Saharan African countries. Today marks a significant scientific milestone for the long-standing partnership to develop a vaccine. Yet several more steps remain before a malaria vaccine might reach the young children in Africa who most need protection against this deadly human parasite.<br>
+Now you will have some time to review questions 26 to 30. Part 3. Questions 31 to 35 First, you will have some time to look at questions 31 to 35. Now we're ready to start.<br>
+Listen and answer questions 31 to 35. You will hear the recording once only. <br>
+Scientists may be one step closer to uncovering the origins of cheese making as evidence that is thousands of years old has been uncovered.<br>
+Truly an ancient art, no one really knows exactly when humans began making cheese. But now milk extracts have been identified on 34 perforated pottery vessels or cheese strainers that are 7,500 years old and have been excavated in Poland. Ms. Salk and other scientists believe that this is obvious evidence of cheese making in northern Europe during Neolithic times and their findings have been published in the scientific journal Nature.<br>
+Ms. Salk and her team also analyzed lipid remains on the vessels and detected milk remains which they say provides a link to cheese making. Although scientists have not identified traces of cheese, they have put together a convincing case. Is it possible that prehistoric people were making cheese much earlier than 7,500 years ago? Ms. Salk explains that the most important ingredient for cheese making is milk and only domesticated animals can be milked.<br>
+Thus, it is unlikely that the origins of cheese making predates the Neolithic time period. Earlier examples of milk remains have been detected on pottery vessels from the Near East dating back 8,000 years, although the evidence does not suggest that they were used for milk processing activities. The only other written evidence for cheese making activity occurred much later in the archaeological record, around 5,000 years ago.<br>
+What would have prompted Neolithic people to start making cheese? Scientists revealed that genetic and computer simulations have shown that at that time people were largely lactose intolerant. Processing milk into cheese allows the lactose content of milk to be reduced. Thus, making cheese allowed them to consume dairy products without the undesirable health effects.<br>
+So, what might a prehistoric cheese have tasted like? I guess it would have been like the traditional cheese you can get now. Ms. Salk said that in France we have the picoron, traditionally made in farms with cow or goat milk. I would imagine that prehistoric cheese would have been like this.<br>
+It's likely to have been a softer cheese. Andrew Dalby says that the taste of the cheese may have changed according to the season. Similar to those cheeses made in the region of France where I live.<br>
+The result can be quite different depending on the season. Sometimes cheeses harden and do in fact keep and still taste great months later. Now you will have some time to review questions 31 to 35.<br>
+That is the end of Part 3. That is the end of the Listening Comprehension Test.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 3 Trong phần này, bạn sẽ nghe ba bài nói hoặc bài giảng. Các bài nói hoặc bài giảng sẽ chỉ được phát một lần duy nhất. Mỗi bài nói hoặc bài giảng có năm câu hỏi đi kèm. Với mỗi câu hỏi, hãy chọn đáp án đúng A, B, C hoặc D. Phần 3, câu hỏi 21-25 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 21 đến 25. Bây giờ, chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 21 đến 25. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Angry Birds 2 đã ra mắt, và hơn 10 triệu người đang hào hứng ném những chú chim giận dữ vào những con lợn hồng. Nhưng mặc dù có thể tải về miễn phí, một số người chơi phàn nàn rằng trò chơi khuyến khích mua hàng trong ứng dụng. Nhà sản xuất, Rovio, cho biết những ai không mua vật phẩm bổ sung vẫn có thể chơi một trò chơi hoàn chỉnh miễn phí. Trò chơi cho phép bạn nhận thêm mạng bằng cách đổi lấy đá quý. Có nhiều cách để thu thập đá quý trong trò chơi, nhưng cách dễ nhất là mua chúng. Eric Kayan, một nhà phê bình, cho rằng nếu không muốn bỏ tiền, bạn sẽ phải chờ mạng hồi phục. Anh ấy nghĩ rằng tính năng này sẽ chỉ khiến người chơi bỏ cuộc. "Tham lam" có lẽ chưa phải là từ đúng, nhưng có những từ khác để mô tả điều này: ngu ngốc, khó hiểu, thiếu suy nghĩ. Trò chơi Angry Birds đầu tiên được phát hành vào năm 2009, và đó là một cú hit lớn, dù người chơi phải trả tiền để tải về. Đã có nhiều phần phụ trong loạt trò chơi này, nhưng Angry Birds 2 được quảng bá như một phần tiếp theo thực sự. John Norris nói rằng anh ấy đã chơi phần gốc không ngừng nghỉ và rất mong chờ sự phát triển của trò chơi. Anh ấy nghĩ rằng hầu hết người chơi di động ngày nay đều hiểu rõ cách hoạt động của các giao dịch trong ứng dụng. Nhưng sau một trò chơi gốc đơn giản, anh ấy thực sự thất vọng về cách phần tiếp theo cố gắng khiến bạn phải chi tiền. Sau khi những lời phàn nàn này được đưa ra, giám đốc sáng tạo của trò chơi, Patrick Liu, tuyên bố rằng họ khuyến khích người chơi chơi game, chứ không phải trả tiền. Tất cả người chơi đều có cơ hội tiến bộ như nhau, vì mọi giao dịch đều được thực hiện bằng đá quý, thứ có thể kiếm được bằng cách chơi và hoàn thành thử thách. Hơn nữa, người chơi có thể kiếm thêm chim, mạng và vé bằng cách xem video. Điều này có sẵn cho tất cả mọi người. Angry Birds 2 có thể được tận hưởng hoàn toàn mà không cần mua gì cả, nhưng họ cũng cung cấp nhiều cách khác nhau để mở rộng, kéo dài và nâng cao trải nghiệm chơi game. Nhưng John vẫn nghĩ rằng công ty Phần Lan này đã phá hỏng Angry Birds 2. Anh ấy hiểu rằng các nhà phát triển game cần kiếm tiền, nhưng cách tốt nhất để làm điều đó là tính phí cho những trò chơi mà mọi người muốn chơi, chứ không phải khiến họ khó chịu để buộc họ chi tiền trong trò chơi. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 21 đến 25. Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 26 đến 30. Bây giờ, chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 26 đến 30. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Vắc-xin sốt rét đầu tiên trên thế giới đã vượt qua một trong những rào cản cuối cùng trước khi được phê duyệt sử dụng tại châu Phi. Lưu ý rằng bệnh sốt rét giết chết khoảng 584.000 người mỗi năm trên toàn cầu, hầu hết là trẻ em dưới năm tuổi ở khu vực cận Sahara châu Phi. Cơ quan Dược phẩm châu Âu đã đưa ra đánh giá khoa học tích cực sau khi đánh giá độ an toàn và hiệu quả của vắc-xin này. Đây là tín hiệu xanh cho loại vắc-xin Mosquirix, do GlaxoSmithKline (viết tắt là GSK) phát triển. Mosquirix là loại vắc-xin đầu tiên chống lại bệnh nhiễm ký sinh trùng ở người. Các nhà khoa học đã nghiên cứu vắc-xin này trong 30 năm cho rằng đây là một cột mốc quan trọng và là giấc mơ trở thành hiện thực. Nó được thiết kế đặc biệt để chống lại bệnh sốt rét ở trẻ em châu Phi và sẽ không được cấp phép cho khách du lịch. Kết quả thử nghiệm lâm sàng cuối cùng tại bảy quốc gia châu Phi vào đầu năm nay cho thấy kết quả không đồng nhất. Mức bảo vệ tốt nhất là ở trẻ từ 5 đến 17 tháng tuổi, những trẻ nhận ba liều vắc-xin cách nhau một tháng, kèm theo một liều tăng cường ở tháng thứ 20. Trong nhóm này, số ca mắc sốt rét nặng giảm một phần ba trong vòng bốn năm. Nhưng hiệu quả của vắc-xin giảm theo thời gian, khiến liều tăng cường trở nên cần thiết. Không có liều tăng cường, vắc-xin không giúp giảm tỷ lệ mắc sốt rét nặng trong suốt thời gian thử nghiệm. Và đáng thất vọng là vắc-xin không mang lại hiệu quả cao trong việc bảo vệ trẻ sơ sinh khỏi sốt rét nặng. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 26 đến 30. Phần 3, câu hỏi 31-35 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 31 đến 35. Bây giờ, chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 31 đến 35. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Các nhà khoa học có thể đã tiến gần hơn một bước đến việc khám phá nguồn gốc của quá trình làm pho mát, khi những bằng chứng có niên đại hàng nghìn năm được phát hiện. Làm pho mát thực sự là một nghệ thuật cổ xưa, không ai thực sự biết chính xác khi nào con người bắt đầu làm pho mát. Nhưng hiện nay, các chiết xuất từ sữa đã được xác định trên 34 mảnh gốm đục lỗ, hoặc dụng cụ lọc pho mát, có niên đại 7.500 năm và được khai quật ở Ba Lan. Bà Salk và các nhà khoa học khác tin rằng đây là bằng chứng rõ ràng về quá trình làm pho mát ở Bắc Âu trong thời kỳ đồ đá mới, và phát hiện này đã được công bố trên tạp chí khoa học Nature. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 31 đến 35. Đây là phần kết thúc của phần 3. Đây là phần kết thúc của bài kiểm tra nghe hiểu.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What do users have to pay for?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the right to play the fully-formed game															</div>
+																				<div class="ps-4 mb-2">
+																	B. more turns to play the game															</div>
+																				<div class="ps-4 mb-2">
+																	C. special jewelry to give other players															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. extra features supporting the game</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>extra features supporting the game.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, nội dung về việc mua hàng trong ứng dụng của Angry Birds 2 được đề cập:</p> <p>"Angry Birds 2 could be enjoyed fully without purchasing anything, but they did offer, for purchase, a variety of ways to expand, extend and enhance the game-playing experience."</p> <p>"Angry Birds 2 có thể được chơi trọn vẹn mà không cần mua bất cứ thứ gì, nhưng họ cung cấp nhiều cách khác nhau để mở rộng, kéo dài và nâng cao trải nghiệm chơi game với các tùy chọn mua hàng."</p>  <p>Điều này cho thấy rằng người dùng <strong>không cần phải trả tiền để chơi trò chơi đầy đủ</strong>, nhưng họ có thể mua các <strong>tính năng bổ sung</strong> để nâng cao trải nghiệm. Do đó, đáp án chính xác là <strong>extra features supporting the game.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">the right to play the fully-formed game.</span> ❌ (Quyền chơi phiên bản hoàn chỉnh của trò chơi.) - Sai, vì trò chơi có thể được chơi đầy đủ mà không cần mua gì.</li>     <li><span class="text-danger">more turns to play the game.</span> ❌ (Thêm lượt chơi.) - Sai, vì người chơi có thể nhận thêm lượt bằng cách xem video hoặc chờ thời gian hồi sinh.</li>     <li><span class="text-success"><strong>extra features supporting the game.</strong></span> ✅ (Các tính năng bổ sung hỗ trợ trò chơi.) - Đúng, vì người chơi có thể mua thêm các yếu tố giúp mở rộng trải nghiệm chơi.</li>     <li><span class="text-danger">special jewelry to give other players.</span> ❌ (Trang sức đặc biệt để tặng người chơi khác.) - Sai, vì trò chơi không có cơ chế tặng quà bằng trang sức.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: What was true about the first Angry Birds?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It was totally free to download.															</div>
+																				<div class="ps-4 mb-2">
+																	B. It was released 10 years before the 2nd version.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. It was exceptionally well-received.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. It was among the most successful games.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>It was exceptionally well-received.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, thông tin về phiên bản đầu tiên của Angry Birds được đề cập:</p> <p>"The first Angry Birds game was released in 2009, and it was a massive hit, even though players had to pay to download it."</p> <p>"Trò chơi Angry Birds đầu tiên được phát hành vào năm 2009 và nó đã trở thành một cú hit lớn, mặc dù người chơi phải trả tiền để tải về."</p>  <p>Cụm từ "<strong>a massive hit</strong>" có nghĩa là <strong>rất thành công và được đón nhận nồng nhiệt</strong>. Do đó, đáp án chính xác là <strong>It was exceptionally well-received.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">It was totally free to download.</span> ❌ (Nó hoàn toàn miễn phí để tải về.) - Sai, vì người chơi phải trả tiền để tải phiên bản đầu tiên.</li>     <li><span class="text-success"><strong>It was exceptionally well-received.</strong></span> ✅ (Nó được đón nhận một cách đặc biệt tốt.) - Đúng, vì bài nghe nói rằng trò chơi là một cú hit lớn.</li>     <li><span class="text-danger">It was among the most successful games.</span> ❌ (Nó nằm trong số những trò chơi thành công nhất.) - Sai, vì mặc dù rất thành công, bài nghe không khẳng định nó là một trong những trò chơi thành công nhất mọi thời đại.</li>     <li><span class="text-danger">It was released 10 years before the 2nd version.</span> ❌ (Nó được phát hành 10 năm trước phiên bản thứ hai.) - Sai, vì Angry Birds 2 ra mắt vào năm 2015, tức là chỉ 6 năm sau phiên bản đầu tiên (2009).</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: Who is most probably Jon Norris?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. a game reviewer															</div>
+																				<div class="ps-4 mb-2">
+																	B. a game developer															</div>
+																				<div class="ps-4 mb-2">
+																	C. a game tester															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. a game player</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>a game player.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, Jon Norris bày tỏ suy nghĩ của mình về Angry Birds 2:</p> <p>"John Norris says that he played the original endlessly, and he was looking forward to the development."</p> <p>"John Norris nói rằng anh ấy đã chơi phiên bản gốc không ngừng nghỉ và anh ấy rất mong chờ sự phát triển tiếp theo."</p>  <p>Điều này cho thấy rằng Jon Norris <strong>chỉ là một người chơi game</strong> yêu thích Angry Birds, chứ không phải là một nhà phát triển hay chuyên gia đánh giá game. Do đó, đáp án chính xác là <strong>a game player.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-success"><strong>a game player.</strong></span> ✅ (Người chơi game.) - Đúng, vì bài nghe cho biết Jon Norris đã chơi phiên bản gốc rất nhiều và mong chờ phiên bản mới.</li>     <li><span class="text-danger">a game developer.</span> ❌ (Nhà phát triển game.) - Sai, vì Jon Norris không tham gia vào việc phát triển trò chơi.</li>     <li><span class="text-danger">a game reviewer.</span> ❌ (Người đánh giá game.) - Sai, vì bài nghe không nói rằng Jon Norris là một nhà phê bình game chuyên nghiệp.</li>     <li><span class="text-danger">a game tester.</span> ❌ (Người kiểm thử game.) - Sai, vì Jon Norris không được nhắc đến như một người thử nghiệm trò chơi.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What is meant by “Gems” in the game?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the final stage of the game															</div>
+																				<div class="ps-4 mb-2">
+																	B. a real present to give player fellows															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. a virtual bonus achieved by players</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. a name of a character in the game															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>a virtual bonus achieved by players.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, "Gems" được nhắc đến như một loại tiền tệ trong trò chơi:</p> <p>"The game allows you to gain extra lives in exchange for gems. There are several ways to gather these gems in the game, but buying them is the easiest."</p> <p>"Trò chơi cho phép bạn có thêm mạng chơi bằng cách đổi lấy đá quý (gems). Có nhiều cách để thu thập những viên đá quý này trong trò chơi, nhưng cách dễ nhất là mua chúng."</p>  <p>Điều này cho thấy rằng "<strong>Gems</strong>" là một <strong>phần thưởng ảo</strong> mà người chơi có thể nhận được trong trò chơi, có thể kiếm được bằng cách chơi hoặc mua bằng tiền thật. Do đó, đáp án chính xác là <strong>a virtual bonus achieved by players.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">a real present to give player fellows.</span> ❌ (Một món quà thật để tặng đồng đội.) - Sai, vì Gems không phải là quà tặng thật.</li>     <li><span class="text-success"><strong>a virtual bonus achieved by players.</strong></span> ✅ (Một phần thưởng ảo mà người chơi đạt được.) - Đúng, vì Gems là một loại tiền tệ trong game mà người chơi có thể kiếm được.</li>     <li><span class="text-danger">a name of a character in the game.</span> ❌ (Tên của một nhân vật trong trò chơi.) - Sai, vì Gems không phải là một nhân vật.</li>     <li><span class="text-danger">the final stage of the game.</span> ❌ (Giai đoạn cuối cùng của trò chơi.) - Sai, vì Gems là vật phẩm trong game, không phải màn chơi cuối cùng.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: Which aspect of the game is the show mainly about?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. its attraction															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. its criticisms</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. its developers															</div>
+																				<div class="ps-4 mb-2">
+																	D. its improvement															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>its criticisms.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, phần lớn nội dung xoay quanh những lời phàn nàn về Angry Birds 2:</p> <p>"Some players are complaining about how the game encourages in-app purchases."</p> <p>"Một số người chơi đang phàn nàn về cách trò chơi khuyến khích mua hàng trong ứng dụng."</p> <p>"John Norris says that he played the original endlessly, and he was looking forward to the development. But after such an uncomplicated original game, he was really disappointed by how hard the sequel tries to make you spend your money."</p> <p>"John Norris nói rằng anh ấy đã chơi bản gốc không ngừng nghỉ và mong chờ sự phát triển mới. Nhưng sau một trò chơi đơn giản như vậy, anh ấy thực sự thất vọng vì phiên bản tiếp theo cố gắng khiến người chơi phải chi tiền."</p>  <p>Phần lớn cuộc thảo luận đề cập đến các lời chỉ trích về hệ thống mua hàng trong trò chơi, cho thấy rằng chủ đề chính là <strong>những lời phê bình về trò chơi</strong>. Do đó, đáp án chính xác là <strong>its criticisms.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">its developers.</span> ❌ (Các nhà phát triển trò chơi.) - Sai, vì bài nghe không tập trung vào đội ngũ phát triển.</li>     <li><span class="text-danger">its improvement.</span> ❌ (Những cải tiến của trò chơi.) - Sai, vì bài nghe chủ yếu nói về những vấn đề của phiên bản mới thay vì những cải tiến.</li>     <li><span class="text-success"><strong>its criticisms.</strong></span> ✅ (Những lời chỉ trích.) - Đúng, vì bài nghe tập trung vào các lời phàn nàn về hệ thống mua hàng trong trò chơi.</li>     <li><span class="text-danger">its attraction.</span> ❌ (Sự hấp dẫn của trò chơi.) - Sai, vì bài nghe không tập trung vào việc trò chơi thu hút người chơi.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Who are mainly the victims of malaria?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. part of African kids under 5</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. poor people in South Africa															</div>
+																				<div class="ps-4 mb-2">
+																	C. people in sub-tropical countries															</div>
+																				<div class="ps-4 mb-2">
+																	D. people without Mosquirix injection															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>part of African kids under 5.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, thông tin về những người bị ảnh hưởng bởi bệnh sốt rét được đề cập:</p> <p>"It is noticeable that malaria kills around 584,000 people a year worldwide. Most of them children under five in sub-Saharan Africa."</p> <p>"Đáng chú ý là bệnh sốt rét giết chết khoảng 584.000 người mỗi năm trên toàn thế giới. Phần lớn trong số đó là trẻ em dưới 5 tuổi ở khu vực cận Sahara châu Phi."</p>  <p>Thông tin này chỉ ra rằng <strong>trẻ em dưới 5 tuổi ở châu Phi</strong> là nhóm chịu ảnh hưởng nặng nề nhất của bệnh sốt rét. Do đó, đáp án chính xác là <strong>part of African kids under 5.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">people in sub-tropical countries.</span> ❌ (Người dân ở các nước cận nhiệt đới.) - Sai, vì bài nghe nói cụ thể về trẻ em ở châu Phi, không phải tất cả các nước cận nhiệt đới.</li>     <li><span class="text-success"><strong>part of African kids under 5.</strong></span> ✅ (Một phần trẻ em châu Phi dưới 5 tuổi.) - Đúng, vì bài nghe nhấn mạnh rằng phần lớn nạn nhân của sốt rét là trẻ nhỏ ở châu Phi.</li>     <li><span class="text-danger">people without Mosquirix injection.</span> ❌ (Những người không tiêm Mosquirix.) - Sai, vì bài nghe không đề cập đến việc thiếu vắc-xin là nguyên nhân chính gây tử vong.</li>     <li><span class="text-danger">poor people in South Africa.</span> ❌ (Người nghèo ở Nam Phi.) - Sai, vì bài nghe nói về toàn bộ khu vực cận Sahara châu Phi, không chỉ riêng Nam Phi.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: Who are eligible for Mosquirix vaccine?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. scientists and African children															</div>
+																				<div class="ps-4 mb-2">
+																	B. only those in 7 African countries															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. African children</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. tourists to sub-Saharan Africa															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>African children.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, thông tin về đối tượng đủ điều kiện tiêm vắc-xin Mosquirix được đề cập:</p> <p>"It has been designed specifically to combat malaria infection in children in Africa and will not be licensed for travelers."</p> <p>"Vắc-xin này được thiết kế đặc biệt để chống lại bệnh sốt rét ở trẻ em châu Phi và sẽ không được cấp phép cho du khách."</p>  <p>Điều này cho thấy rằng <strong>trẻ em châu Phi</strong> là đối tượng chính được tiêm vắc-xin Mosquirix. Do đó, đáp án chính xác là <strong>African children.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-success"><strong>African children.</strong></span> ✅ (Trẻ em châu Phi.) - Đúng, vì bài nghe nói rằng vắc-xin này được thiết kế dành riêng cho trẻ em châu Phi.</li>     <li><span class="text-danger">scientists and African children.</span> ❌ (Các nhà khoa học và trẻ em châu Phi.) - Sai, vì bài nghe không nói rằng các nhà khoa học cũng được tiêm vắc-xin.</li>     <li><span class="text-danger">only those in 7 African countries.</span> ❌ (Chỉ những người ở 7 quốc gia châu Phi.) - Sai, vì mặc dù vắc-xin được thử nghiệm tại 7 quốc gia nhưng không có thông tin nào nói rằng chỉ những nước này mới được tiêm.</li>     <li><span class="text-danger">tourists to sub-Saharan Africa.</span> ❌ (Khách du lịch đến khu vực cận Sahara châu Phi.) - Sai, vì bài nghe nói rõ rằng vắc-xin không được cấp phép cho du khách.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: What is implied about the injection?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It is costly due to late application.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Its full effect is enabled by a booster shot.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. It is effective for anyone over 17 months.															</div>
+																				<div class="ps-4 mb-2">
+																	D. In the future, it will be effective for babies.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>Its full effect is enabled by a booster shot.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, thông tin về hiệu quả của vắc-xin Mosquirix được đề cập:</p> <p>"The best protection was among children aged five to 17 months who received three doses of the vaccine a month apart plus a booster dose at 20 months. But the effectiveness of the vaccine declined over time making the booster shot essential."</p> <p>"Sự bảo vệ tốt nhất được ghi nhận ở trẻ từ 5 đến 17 tháng tuổi, những em đã nhận ba liều vắc-xin cách nhau một tháng cùng với một liều tăng cường ở 20 tháng tuổi. Nhưng hiệu quả của vắc-xin giảm dần theo thời gian, khiến liều tăng cường trở nên cần thiết."</p>  <p>Điều này cho thấy rằng <strong>liều tăng cường là yếu tố quan trọng để vắc-xin đạt hiệu quả đầy đủ</strong>. Do đó, đáp án chính xác là <strong>Its full effect is enabled by a booster shot.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">It is costly due to late application.</span> ❌ (Nó có chi phí cao do áp dụng muộn.) - Sai, vì bài nghe không đề cập đến chi phí cao do áp dụng muộn.</li>     <li><span class="text-danger">It is effective for anyone over 17 months.</span> ❌ (Nó có hiệu quả cho bất kỳ ai trên 17 tháng tuổi.) - Sai, vì hiệu quả của vắc-xin giảm dần theo thời gian nếu không có liều tăng cường.</li>     <li><span class="text-success"><strong>Its full effect is enabled by a booster shot.</strong></span> ✅ (Hiệu quả đầy đủ của nó được kích hoạt bởi liều tăng cường.) - Đúng, vì bài nghe nói rằng liều tăng cường là cần thiết để duy trì hiệu quả của vắc-xin.</li>     <li><span class="text-danger">In the future, it will be effective for babies.</span> ❌ (Trong tương lai, nó sẽ có hiệu quả cho trẻ sơ sinh.) - Sai, vì bài nghe nói rằng vắc-xin không có hiệu quả cao đối với trẻ sơ sinh.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: Why are Bill and Melinda Gates mentioned?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. They are sponsors of poor African children.															</div>
+																				<div class="ps-4 mb-2">
+																	B. They are the sponsors of one of 11 research centres.															</div>
+																				<div class="ps-4 mb-2">
+																	C. They are visitors without vaccine to the disease area.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. They are the sponsors of the injection project.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>They are the sponsors of the injection project.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, thông tin về sự tài trợ của Quỹ Bill &amp; Melinda Gates được đề cập:</p> <p>"In 2001, a partnership was established between GSK and the PATH Malaria Vaccine Initiative through a grant from the Bill and Melinda Gates Foundation. The project aimed to speed up malaria vaccine development."</p> <p>"Vào năm 2001, một mối quan hệ hợp tác được thiết lập giữa GSK và Sáng kiến Vắc-xin Sốt rét PATH thông qua một khoản tài trợ từ Quỹ Bill và Melinda Gates. Dự án nhằm đẩy nhanh quá trình phát triển vắc-xin sốt rét."</p>  <p>Điều này cho thấy rằng <strong>Bill và Melinda Gates đã tài trợ cho dự án vắc-xin sốt rét</strong>. Do đó, đáp án chính xác là <strong>They are the sponsors of the injection project.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">They are visitors without vaccine to the disease area.</span> ❌ (Họ là du khách không có vắc-xin đến khu vực có dịch bệnh.) - Sai, vì bài nghe không nói rằng họ từng đến khu vực dịch bệnh.</li>     <li><span class="text-danger">They are the sponsors of one of 11 research centres.</span> ❌ (Họ là nhà tài trợ của một trong 11 trung tâm nghiên cứu.) - Sai, vì bài nghe không đề cập rằng họ tài trợ một trung tâm nghiên cứu cụ thể nào.</li>     <li><span class="text-success"><strong>They are the sponsors of the injection project.</strong></span> ✅ (Họ là nhà tài trợ của dự án vắc-xin.) - Đúng, vì bài nghe nói rằng họ tài trợ để đẩy nhanh quá trình phát triển vắc-xin sốt rét.</li>     <li><span class="text-danger">They are sponsors of poor African children.</span> ❌ (Họ là nhà tài trợ cho trẻ em nghèo châu Phi.) - Sai, vì bài nghe nói về việc tài trợ phát triển vắc-xin, không phải hỗ trợ trực tiếp cho trẻ em nghèo.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: What is mainly discussed in the lecture?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the effectiveness of the vaccine															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. the development process of the vaccine</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. the mechanism of the vaccine															</div>
+																				<div class="ps-4 mb-2">
+																	D. scientists’ opinions of the injection															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>the development process of the vaccine.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, phần lớn nội dung tập trung vào quá trình phát triển của vắc-xin sốt rét:</p> <p>"GSK began research on a malaria vaccine 30 years ago and the first trials in Africa began in 1998."</p> <p>"GSK bắt đầu nghiên cứu vắc-xin sốt rét từ 30 năm trước và các thử nghiệm đầu tiên tại châu Phi bắt đầu vào năm 1998."</p> <p>"In 2001, a partnership was established between GSK and the PATH Malaria Vaccine Initiative through a grant from the Bill and Melinda Gates Foundation."</p> <p>"Vào năm 2001, một mối quan hệ hợp tác được thiết lập giữa GSK và Sáng kiến Vắc-xin Sốt rét PATH thông qua một khoản tài trợ từ Quỹ Bill và Melinda Gates."</p> <p>"In 2009, 11 centres began recruiting 16,000 children in 7 sub-Saharan African countries."</p> <p>"Vào năm 2009, 11 trung tâm bắt đầu tuyển chọn 16.000 trẻ em ở 7 quốc gia cận Sahara châu Phi."</p>  <p>Các thông tin trên cho thấy rằng bài giảng tập trung vào quá trình nghiên cứu, hợp tác và thử nghiệm vắc-xin qua nhiều năm. Do đó, đáp án chính xác là <strong>the development process of the vaccine.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">the mechanism of the vaccine.</span> ❌ (Cơ chế hoạt động của vắc-xin.) - Sai, vì bài giảng không đi sâu vào cơ chế hoạt động của vắc-xin.</li>     <li><span class="text-danger">the effectiveness of the vaccine.</span> ❌ (Hiệu quả của vắc-xin.) - Sai, vì mặc dù có đề cập đến hiệu quả, nhưng đây không phải là nội dung chính của bài giảng.</li>     <li><span class="text-danger">scientists’ opinions of the injection.</span> ❌ (Ý kiến của các nhà khoa học về vắc-xin.) - Sai, vì bài giảng không tập trung vào quan điểm cá nhân của các nhà khoa học.</li>     <li><span class="text-success"><strong>the development process of the vaccine.</strong></span> ✅ (Quá trình phát triển của vắc-xin.) - Đúng, vì bài giảng chủ yếu nói về các giai đoạn nghiên cứu và phát triển vắc-xin.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: What can be found in the scientific journal “Nature”?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. archaeological evidence of pottery vessels															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. cheese-making origin in northern Europe</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Polish ancient cheese-making technology															</div>
+																				<div class="ps-4 mb-2">
+																	D. human trace in northern Europe years ago															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>cheese-making origin in northern Europe.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, thông tin về nghiên cứu được đăng trên tạp chí "Nature" được đề cập:</p> <p>"Ms. Salk and other scientists believe that this is obvious evidence of cheese making in northern Europe during Neolithic times and their findings have been published in the scientific journal Nature."</p> <p>"Cô Salk và các nhà khoa học khác tin rằng đây là bằng chứng rõ ràng về việc làm pho mát ở Bắc Âu trong thời kỳ đồ đá mới, và những phát hiện của họ đã được công bố trên tạp chí khoa học Nature."</p>  <p>Điều này cho thấy rằng bài báo trên tạp chí Nature đề cập đến <strong>nguồn gốc làm pho mát ở Bắc Âu</strong>. Do đó, đáp án chính xác là <strong>cheese-making origin in northern Europe.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">human trace in northern Europe years ago.</span> ❌ (Dấu vết con người ở Bắc Âu nhiều năm trước.) - Sai, vì bài báo không nói về dấu vết con người mà tập trung vào quá trình làm pho mát.</li>     <li><span class="text-danger">archaeological evidence of pottery vessels.</span> ❌ (Bằng chứng khảo cổ về đồ gốm.) - Sai, vì bài báo nói về việc làm pho mát, không phải chỉ về đồ gốm.</li>     <li><span class="text-success"><strong>cheese-making origin in northern Europe.</strong></span> ✅ (Nguồn gốc làm pho mát ở Bắc Âu.) - Đúng, vì bài nghe nhấn mạnh rằng bài báo trong tạp chí Nature nói về nguồn gốc sản xuất pho mát ở Bắc Âu.</li>     <li><span class="text-danger">Polish ancient cheese-making technology.</span> ❌ (Công nghệ làm pho mát cổ đại của Ba Lan.) - Sai, vì bài báo không đề cập đến công nghệ mà chỉ nói về bằng chứng khảo cổ liên quan đến pho mát.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: What is the clearest trace of cheese-making?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the remains of broken pottery															</div>
+																				<div class="ps-4 mb-2">
+																	B. remains of an ancient people group															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. the residual of milk and cattle</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. some five-thousand-year-old records															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>the residual of milk and cattle.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, thông tin về dấu vết rõ ràng nhất của việc làm pho mát được đề cập:</p> <p>"Ms. Salk and her team also analyzed lipid remains on the vessels and detected milk remains which they say provides a link to cheese making."</p> <p>"Cô Salk và nhóm của cô cũng đã phân tích tàn dư lipid trên các vật dụng bằng gốm và phát hiện ra dấu vết của sữa, điều này, theo họ, là bằng chứng liên kết với việc làm pho mát."</p>  <p>Điều này cho thấy rằng <strong>tàn dư của sữa và gia súc</strong> là bằng chứng rõ ràng nhất về quá trình làm pho mát. Do đó, đáp án chính xác là <strong>the residual of milk and cattle.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-success"><strong>the residual of milk and cattle.</strong></span> ✅ (Tàn dư của sữa và gia súc.) - Đúng, vì bài nghe nói rằng dấu vết sữa trên đồ gốm là bằng chứng liên quan đến việc làm pho mát.</li>     <li><span class="text-danger">the remains of broken pottery.</span> ❌ (Dấu vết của đồ gốm bị vỡ.) - Sai, vì bài nghe nói rằng họ tìm thấy dấu vết sữa trên đồ gốm, nhưng đồ gốm không phải bằng chứng chính của việc làm pho mát.</li>     <li><span class="text-danger">some five-thousand-year-old records.</span> ❌ (Một số tài liệu năm nghìn năm tuổi.) - Sai, vì bài nghe không đề cập đến tài liệu viết nào về việc làm pho mát.</li>     <li><span class="text-danger">remains of an ancient people group.</span> ❌ (Dấu vết của một nhóm người cổ đại.) - Sai, vì bài nghe nói về bằng chứng liên quan đến sữa, không phải về nhóm người cổ đại.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question13">
+						<div class="fw-bold mb-2">
+							Câu 13: What is meant by “lactose intolerant” among Neolithic people?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Milk with lactose upset their digestion.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. They didn’t like milk with lactose in it.															</div>
+																				<div class="ps-4 mb-2">
+																	C. It prevented them from consuming dairy food.															</div>
+																				<div class="ps-4 mb-2">
+																	D. It was the reason for their cheese invention.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>Milk with lactose upset their digestion.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, thông tin về tình trạng không dung nạp lactose của người thời kỳ đồ đá mới được đề cập:</p> <p>"Scientists revealed that genetic and computer simulations have shown that at that time people were largely lactose intolerant. Processing milk into cheese allows the lactose content of milk to be reduced. Thus, making cheese allowed them to consume dairy products without the undesirable health effects."</p> <p>"Các nhà khoa học tiết lộ rằng mô phỏng di truyền và máy tính đã cho thấy vào thời điểm đó, con người phần lớn không dung nạp lactose. Việc chế biến sữa thành pho mát giúp giảm hàm lượng lactose trong sữa. Vì vậy, làm pho mát đã giúp họ tiêu thụ các sản phẩm từ sữa mà không gặp phải tác động sức khỏe không mong muốn."</p>  <p>Điều này có nghĩa là <strong>sữa có chứa lactose gây ra vấn đề tiêu hóa cho người thời kỳ đồ đá mới</strong>. Do đó, đáp án chính xác là <strong>Milk with lactose upset their digestion.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">They didn’t like milk with lactose in it.</span> ❌ (Họ không thích sữa có chứa lactose.) - Sai, vì bài nghe nói rằng họ không thể tiêu hóa lactose, không phải vì họ không thích sữa.</li>     <li><span class="text-success"><strong>Milk with lactose upset their digestion.</strong></span> ✅ (Sữa có chứa lactose làm rối loạn tiêu hóa của họ.) - Đúng, vì bài nghe nói rằng họ không dung nạp lactose và phải chế biến sữa thành pho mát để tiêu thụ.</li>     <li><span class="text-danger">It was the reason for their cheese invention.</span> ❌ (Đây là lý do khiến họ phát minh ra pho mát.) - Sai, vì bài nghe không khẳng định rằng đây là lý do chính dẫn đến việc làm pho mát.</li>     <li><span class="text-danger">It prevented them from consuming dairy food.</span> ❌ (Nó ngăn họ tiêu thụ thực phẩm từ sữa.) - Sai, vì họ vẫn có thể tiêu thụ các sản phẩm từ sữa bằng cách làm pho mát để giảm lactose.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question14">
+						<div class="fw-bold mb-2">
+							Câu 14: What can be inferred about cheese?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Cheese is stored to use for a very long time.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. There is a time to make the best cheese.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. France is home to the best cheese.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Traditional and Neolithic cheese are made differently.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>There is a time to make the best cheese.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, có một phần đề cập đến thời điểm làm pho mát tốt nhất:</p> <p>"Andrew Dalby says that the taste of the cheese may have changed according to the season. Similar to those cheeses made in the region of France where I live. The result can be quite different depending on the season."</p> <p>"Andrew Dalby nói rằng hương vị của pho mát có thể thay đổi theo mùa. Tương tự như những loại pho mát được làm ở khu vực nước Pháp nơi tôi sống. Kết quả có thể khác biệt đáng kể tùy vào mùa."</p>  <p>Điều này cho thấy rằng <strong>thời điểm trong năm có thể ảnh hưởng đến chất lượng pho mát</strong>. Do đó, đáp án chính xác là <strong>There is a time to make the best cheese.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">Traditional and Neolithic cheese are made differently.</span> ❌ (Pho mát truyền thống và pho mát thời kỳ đồ đá mới được làm khác nhau.) - Sai, vì bài nghe không so sánh trực tiếp phương pháp sản xuất pho mát giữa hai thời kỳ.</li>     <li><span class="text-success"><strong>There is a time to make the best cheese.</strong></span> ✅ (Có một thời điểm thích hợp để làm pho mát ngon nhất.) - Đúng, vì bài nghe nói rằng hương vị pho mát có thể thay đổi theo mùa.</li>     <li><span class="text-danger">Cheese is stored to use for a very long time.</span> ❌ (Pho mát được lưu trữ để sử dụng trong một thời gian rất dài.) - Sai, vì bài nghe không nhấn mạnh việc lưu trữ pho mát lâu dài.</li>     <li><span class="text-danger">France is home to the best cheese.</span> ❌ (Pháp là quê hương của pho mát ngon nhất.) - Sai, vì bài nghe chỉ đề cập đến một loại pho mát của Pháp, không khẳng định đây là nơi có pho mát ngon nhất.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question15">
+						<div class="fw-bold mb-2">
+							Câu 15: What can be the title of this show?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. History of cheese															</div>
+																				<div class="ps-4 mb-2">
+																	B. Best cheese in the world															</div>
+																				<div class="ps-4 mb-2">
+																	C. Variety of cheese															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Discovery of cheese origin</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>Discovery of cheese origin.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, nội dung tập trung vào việc khám phá nguồn gốc của pho mát:</p> <p>"Scientists may be one step closer to uncovering the origins of cheese making as evidence that is thousands of years old has been uncovered."</p> <p>"Các nhà khoa học có thể đã tiến gần hơn một bước trong việc khám phá nguồn gốc của pho mát khi tìm thấy những bằng chứng có niên đại hàng nghìn năm."</p>  <p>Điều này cho thấy rằng <strong>chương trình tập trung vào việc khám phá nguồn gốc của pho mát</strong>, không phải về lịch sử toàn diện hay sự đa dạng của pho mát. Do đó, đáp án chính xác là <strong>Discovery of cheese origin.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">History of cheese.</span> ❌ (Lịch sử của pho mát.) - Sai, vì bài nghe không trình bày toàn bộ lịch sử của pho mát mà chỉ tập trung vào nguồn gốc của nó.</li>     <li><span class="text-danger">Best cheese in the world.</span> ❌ (Loại pho mát ngon nhất thế giới.) - Sai, vì bài nghe không đề cập đến việc đánh giá loại pho mát nào ngon nhất.</li>     <li><span class="text-success"><strong>Discovery of cheese origin.</strong></span> ✅ (Khám phá nguồn gốc của pho mát.) - Đúng, vì bài nghe tập trung vào việc tìm kiếm bằng chứng về nguồn gốc của pho mát.</li>     <li><span class="text-danger">Variety of cheese.</span> ❌ (Sự đa dạng của pho mát.) - Sai, vì bài nghe không nói về các loại pho mát khác nhau.</li> </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="12" id="progress-question-12">
+				   13				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="13" id="progress-question-13">
+				   14				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="14" id="progress-question-14">
+				   15				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

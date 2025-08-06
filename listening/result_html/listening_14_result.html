@@ -1,0 +1,581 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 14 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87735				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/12				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp2-1664818416_bb88a156d034f1ea8f7d.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>In this part, you will hear three conversations. The conversations will be played once only. There are four questions for each conversation.<br>
+For each question, choose the right answer A, B, C, or D. Part 2, questions 9 to 12. First, you will have some time to look at questions 9 to 12. Now we're ready to start.<br>
+Listen and answer questions 9 to 12. You will hear the recording once only. <br>
+Good morning, Brownton Swimming Pool.<br>
+Hello, I'd like some information about the water polo club. Yes, of course. We have an under-14s club, an under-16s club, an under-18s club, and an adults club.<br>
+How old are you? I'm 15. Okay, so you want the under-16s club? Uh, yes. Just a moment.<br>
+Yes, we have two places in the under-16s club. When do they train? Uh, let's see. Uh, the under-16s train two evenings a week.<br>
+On Mondays. No, sorry. On Tuesdays and Thursdays from 6.30 to 8pm.<br>
+And matches are on Saturday mornings. Right. When does the training start? Training starts next week on September 2nd.<br>
+Ah, okay. And how much are the classes? Classes are free for under-18s. Oh, great! What do I have to do to join? You have to come to the swimming pool and complete a form.<br>
+You need to bring a photograph too. Okay. Can I take your name? Yes, it's Tyrone Williams.<br>
+Okay, thanks Tyrone. Thanks, bye. Now you will have some time to review questions 9 to 12.<br>
+Part 2, questions 13 to 16. First you will have some time to look at questions 13 to 16. Now we're ready to start.<br>
+Listen and answer questions 13 to 16. You will hear the recording once only. <br>
+Hi Mario, do you want to go and watch a film? Hi Tamara, sure, what's on? Well, there are two action films, Mr and Mrs Jones and War Games.<br>
+And they are both in 3D. I've already seen Mr and Mrs Jones. I haven't seen War Games, but I don't really want to see an action film.<br>
+What else is on? There's that science fiction film, Robot 2075, but I've already seen it. Oh, is it good? Yes, it is, but I don't want to see it again. There's a romantic comedy called Forever.<br>
+I'm not sure. Are there any horror films on? Yes, there's Midnight Moon. It's got vampires in it.<br>
+OK, sounds good. Let's go and watch Midnight Moon. What time is it on? It's on at 12 o'clock or at half past two.<br>
+Hmm, is it on this evening? Yes, at 7.30. Perfect, let's go at 7.30. OK, shall we meet at the cinema at 7 o'clock? Great, see you later. Bye. Now you will have some time to review questions 13 to 16.<br>
+Part 2, questions 17 to 20. First you will have some time to look at questions 17 to 20. Now we're ready to start.<br>
+Listen and answer questions 17 to 20. You will hear the recording once only. My name's Bill and I'm the main sports trainer here.<br>
+But we have a team of four specialists who are always around to help you with exercise programs and give advice about lifestyle and diet. We strongly recommend that you talk to one of us as soon as you sign up and set up your personalized training program. So, through here we have the main gym.<br>
+As you can see, it's enormous and we have lots of brand new machines. It's enormous, isn't it? You can do everything here, running, cycling, rowing, weights, you name it. Although we have a lot of clients, it's very unusual to have to wait for a machine.<br>
+Over there is the area for weight training. If you want a closer look at the machines, you can come back later. Oh, by the way, you can only come in here with trainers on.<br>
+No outdoor shoes, please. Okay, through here we have the swimming pool. It's great, isn't it? We're very proud of it.<br>
+There is always a lifeguard in attendance who will also offer informal swimming tips. Okay, just over there you have the changing rooms and lockers and on the right are the bathrooms and showers. We have our own shop here where you can buy our own brand of sportswear and sports drinks and supplements.<br>
+Right, I can see you're impressed. And as I said, we're very proud of our centre. Here's a brochure with the timetables of the extra classes that we offer such as boxing, taekwondo and capoeira and quite a few others.<br>
+Besides swimming activities, swimming classes, diving classes, water aerobics and water polo. Okay, so have a look at the brochure, then you can speak to one of the secretaries in reception about the best combination of activities for you. Now you will have some time to review questions 17 to 20.<br>
+That is the end of part 2.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 2 Trong phần này, bạn sẽ nghe ba cuộc hội thoại. Các cuộc hội thoại sẽ chỉ được phát một lần duy nhất. Mỗi cuộc hội thoại có bốn câu hỏi đi kèm. Với mỗi câu hỏi, hãy chọn đáp án đúng A, B, C hoặc D. Phần 2, câu hỏi 9-12 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 9 đến 12. Bây giờ, chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 9 đến 12. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Chào buổi sáng, hồ bơi Brownton. Xin chào, tôi muốn tìm hiểu thông tin về câu lạc bộ bóng nước. Vâng, tất nhiên. Chúng tôi có câu lạc bộ dưới 14 tuổi, dưới 16 tuổi, dưới 18 tuổi và câu lạc bộ dành cho người lớn. Bạn bao nhiêu tuổi? Tôi 15 tuổi. Vậy bạn muốn tham gia câu lạc bộ dưới 16 tuổi? À, vâng. Chờ một chút... Đúng rồi, hiện chúng tôi còn hai suất trong câu lạc bộ dưới 16 tuổi. Họ tập luyện khi nào? Hãy xem nào... Đội dưới 16 tuổi tập hai buổi tối mỗi tuần. Vào thứ Hai... Không, xin lỗi. Vào thứ Ba và thứ Năm, từ 6 giờ 30 đến 8 giờ tối. Còn các trận đấu thì diễn ra vào sáng thứ Bảy. Hiểu rồi. Khi nào buổi tập bắt đầu? Buổi tập đầu tiên bắt đầu vào tuần sau, ngày 2 tháng 9. À, được rồi. Vậy lệ phí là bao nhiêu? Các buổi tập miễn phí cho người dưới 18 tuổi. Tuyệt quá! Tôi cần làm gì để đăng ký? Bạn cần đến hồ bơi và điền vào đơn đăng ký. Bạn cũng cần mang theo một tấm ảnh. Được thôi. Bạn có thể ghi lại tên của tôi không? Vâng, tên tôi là Tyrone Williams. Cảm ơn Tyrone. Cảm ơn nhé, tạm biệt. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 9 đến 12. Phần 2, câu hỏi 13-16 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 13 đến 16. Bây giờ, chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 13 đến 16. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Chào Mario, cậu có muốn đi xem phim không? Chào Tamara, được thôi, hôm nay có phim gì chiếu vậy? Có hai bộ phim hành động: Mr and Mrs Jones và War Games. Cả hai đều chiếu ở định dạng 3D. Mình đã xem Mr and Mrs Jones rồi. Mình chưa xem War Games, nhưng thật ra mình không muốn xem phim hành động. Còn phim nào khác không? Có bộ phim khoa học viễn tưởng Robot 2075, nhưng mình đã xem rồi. Ồ, phim đó có hay không? Có, nhưng mình không muốn xem lại. Có một bộ phim hài lãng mạn tên là Forever. Mình không chắc lắm... Có phim kinh dị nào không? Có chứ, Midnight Moon. Đó là phim về ma cà rồng. OK, nghe hấp dẫn đấy. Đi xem Midnight Moon đi. Phim chiếu lúc mấy giờ? Có suất chiếu lúc 12 giờ trưa hoặc 2 giờ 30. Ừm... Có suất nào buổi tối không? Có, lúc 7 giờ 30 tối. Hoàn hảo! Đi xem lúc 7 giờ 30 nhé. OK, vậy mình gặp nhau trước rạp lúc 7 giờ được không? Tuyệt, hẹn gặp cậu sau. Tạm biệt. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 13 đến 16. Phần 2, câu hỏi 17-20 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 17 đến 20. Bây giờ, chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 17 đến 20. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Xin chào, tôi là Bill, huấn luyện viên thể thao chính tại trung tâm này. Chúng tôi có một đội ngũ gồm bốn chuyên gia luôn sẵn sàng hỗ trợ bạn lập kế hoạch tập luyện và tư vấn về lối sống cũng như chế độ ăn uống. Chúng tôi khuyến khích bạn nên gặp một trong những huấn luyện viên ngay khi đăng ký để lập chương trình tập luyện cá nhân. Ở đây là phòng tập chính. Như bạn thấy, nó rất rộng và có nhiều thiết bị mới. Bạn có thể tập chạy, đạp xe, chèo thuyền, nâng tạ, v.v. Dù có rất nhiều hội viên, nhưng rất hiếm khi bạn phải chờ đợi để sử dụng máy tập. Khu vực bên kia là khu vực tập tạ. Nếu muốn xem kỹ hơn, bạn có thể quay lại sau. À, nhân tiện, bạn chỉ được vào đây khi mang giày thể thao. Không đi giày ngoài trời vào nhé! Tiếp theo, đây là khu vực hồ bơi. Nó tuyệt vời, phải không? Chúng tôi rất tự hào về hồ bơi này. Luôn có một nhân viên cứu hộ túc trực, người cũng có thể đưa ra một số mẹo bơi lội cho bạn. Phía bên kia là phòng thay đồ và tủ khóa, còn bên phải là nhà vệ sinh và phòng tắm. Chúng tôi cũng có cửa hàng riêng, bán quần áo thể thao, nước uống và thực phẩm bổ sung của thương hiệu trung tâm. Tôi thấy các bạn rất ấn tượng với trung tâm của chúng tôi. Đây là một tờ giới thiệu với lịch trình của các lớp học bổ trợ như boxing, taekwondo, capoeira và nhiều môn khác. Ngoài ra còn có các hoạt động dưới nước như bơi lội, lặn, thể dục dưới nước và bóng nước. Hãy xem tờ giới thiệu này, rồi gặp nhân viên tại quầy lễ tân để chọn ra hoạt động phù hợp nhất với bạn. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 17 đến 20. Đây là phần kết thúc của Phần 2.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What water polo club does Tyrone want to join?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. adults club															</div>
+																				<div class="ps-4 mb-2">
+																	B. under 18s club															</div>
+																				<div class="ps-4 mb-2">
+																	C. under 14s club															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. under 16s club</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>under 16s club</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Tyrone hỏi về câu lạc bộ bóng nước phù hợp với độ tuổi của mình:</p>   <p>"Hello, I'd like some information about the water polo club."</p>   <p>"Yes, of course. We have an under-14s club, an under-16s club, an under-18s club, and an adults club. <strong>How old are you?</strong>"</p>   <p>"I'm 15."</p>   <p>"Okay, so <strong>you want the under-16s club?</strong>"</p>   <p>"Uh, yes."</p>    <p>"Xin chào, tôi muốn tìm hiểu thông tin về câu lạc bộ bóng nước."</p>   <p>"Vâng, tất nhiên. Chúng tôi có các câu lạc bộ dành cho dưới 14 tuổi, dưới 16 tuổi, dưới 18 tuổi và người lớn. <strong>Bạn bao nhiêu tuổi?</strong>"</p>   <p>"Tôi 15 tuổi."</p>   <p>"Được rồi, vậy <strong>bạn sẽ tham gia câu lạc bộ dưới 16 tuổi?</strong>"</p>   <p>"Ừ, đúng vậy."</p>    <p>Bài nghe cho biết rằng Tyrone <strong>15 tuổi</strong>, và do đó, cậu ấy muốn tham gia <strong>câu lạc bộ dưới 16 tuổi</strong>. Do đó, đáp án chính xác là <strong>under 16s club.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">under 14s club</span> ❌ (Câu lạc bộ dưới 14 tuổi.) - Sai, vì Tyrone đã 15 tuổi nên không thể tham gia câu lạc bộ này.</li>       <li><span class="text-success"><strong>under 16s club</strong></span> ✅ (Câu lạc bộ dưới 16 tuổi.) - Đúng, vì Tyrone 15 tuổi và đây là câu lạc bộ phù hợp với độ tuổi của cậu ấy.</li>       <li><span class="text-danger">under 18s club</span> ❌ (Câu lạc bộ dưới 18 tuổi.) - Sai, vì Tyrone chưa đủ 16 tuổi để tham gia câu lạc bộ này.</li>       <li><span class="text-danger">adults club</span> ❌ (Câu lạc bộ dành cho người lớn.) - Sai, vì Tyrone chưa đủ tuổi để tham gia câu lạc bộ người lớn.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: When does his club train?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Monday evenings															</div>
+																				<div class="ps-4 mb-2">
+																	B. Saturday mornings															</div>
+																				<div class="ps-4 mb-2">
+																	C. Tuesday mornings															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Thursday evenings</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Thursday evenings</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, nhân viên bể bơi cung cấp thông tin về lịch tập luyện:</p>   <p>"Uh, let's see. Uh, the under-16s train two evenings a week. <strong>On Tuesdays and Thursdays from 6:30 to 8pm.</strong>"</p>    <p>"Ừm, để tôi kiểm tra. Câu lạc bộ dưới 16 tuổi tập luyện hai buổi tối mỗi tuần. <strong>Vào tối thứ Ba và tối thứ Năm từ 6 giờ 30 đến 8 giờ tối.</strong>"</p>    <p>Bài nghe xác nhận rằng câu lạc bộ của Tyrone tập luyện vào <strong>tối thứ Ba và tối thứ Năm</strong>. Trong các lựa chọn, đáp án phù hợp là <strong>Thursday evenings</strong>. Do đó, đáp án chính xác là <strong>Thursday evenings.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">Monday evenings</span> ❌ (Tối thứ Hai.) - Sai, vì bài nghe không nhắc đến việc tập luyện vào thứ Hai.</li>       <li><span class="text-success"><strong>Thursday evenings</strong></span> ✅ (Tối thứ Năm.) - Đúng, vì bài nghe xác nhận rằng câu lạc bộ tập luyện vào tối thứ Năm.</li>       <li><span class="text-danger">Saturday mornings</span> ❌ (Sáng thứ Bảy.) - Sai, vì bài nghe nói rằng các trận đấu diễn ra vào sáng thứ Bảy, không phải buổi tập luyện.</li>       <li><span class="text-danger">Tuesday mornings</span> ❌ (Sáng thứ Ba.) - Sai, vì bài nghe nói rằng câu lạc bộ tập vào <strong>tối</strong> thứ Ba, không phải sáng.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What is not included in the registration?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. paying fees</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. being at the swimming pool															</div>
+																				<div class="ps-4 mb-2">
+																	C. filing a form															</div>
+																				<div class="ps-4 mb-2">
+																	D. bringing a photograph															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>paying fees</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, nhân viên bể bơi giải thích về quy trình đăng ký:</p>   <p>"And how much are the classes?"</p>   <p>"<strong>Classes are free for under-18s.</strong>"</p>   <p>"Oh, great! What do I have to do to join?"</p>   <p>"You have to come to the swimming pool and complete a form. <strong>You need to bring a photograph too.</strong>"</p>    <p>"Lớp học có giá bao nhiêu vậy?"</p>   <p>"<strong>Lớp học miễn phí cho những người dưới 18 tuổi.</strong>"</p>   <p>"Tuyệt vời! Tôi phải làm gì để đăng ký?"</p>   <p>"Bạn phải đến bể bơi và điền vào một mẫu đơn. <strong>Bạn cũng cần mang theo một bức ảnh.</strong>"</p>    <p>Bài nghe xác nhận rằng các lớp học là <strong>miễn phí</strong> cho người dưới 18 tuổi, nghĩa là **không cần phải trả phí** khi đăng ký. Do đó, đáp án chính xác là <strong>paying fees.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">being at the swimming pool</span> ❌ (Có mặt tại bể bơi.) - Sai, vì bài nghe nói rằng người đăng ký cần đến bể bơi để hoàn thành thủ tục.</li>       <li><span class="text-danger">bringing a photograph</span> ❌ (Mang theo một bức ảnh.) - Sai, vì bài nghe yêu cầu mang theo ảnh khi đăng ký.</li>       <li><span class="text-success"><strong>paying fees</strong></span> ✅ (Trả phí.) - Đúng, vì bài nghe khẳng định rằng lớp học miễn phí cho người dưới 18 tuổi.</li>       <li><span class="text-danger">filing a form</span> ❌ (Điền vào mẫu đơn.) - Sai, vì bài nghe nói rõ rằng người đăng ký cần hoàn thành mẫu đơn.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: When does the training start?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. November 22&lt;sup&gt;nd&lt;/sup&gt;															</div>
+																				<div class="ps-4 mb-2">
+																	B. October 22&lt;sup&gt;nd&lt;/sup&gt;															</div>
+																				<div class="ps-4 mb-2">
+																	C. December 2&lt;sup&gt;nd&lt;/sup&gt;															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. September 2&lt;sup&gt;nd&lt;/sup&gt;</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>September 2nd</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, nhân viên bể bơi cung cấp thông tin về thời gian bắt đầu tập luyện:</p>   <p>"When does the training start?"</p>   <p>"<strong>Training starts next week on September 2nd.</strong>"</p>    <p>"Buổi tập luyện bắt đầu khi nào?"</p>   <p>"<strong>Tập luyện bắt đầu vào tuần tới, vào ngày 2 tháng 9.</strong>"</p>    <p>Bài nghe xác nhận rằng <strong>ngày 2 tháng 9</strong> là thời điểm bắt đầu tập luyện. Do đó, đáp án chính xác là <strong>September 2nd.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">October 22nd</span> ❌ (Ngày 22 tháng 10.) - Sai, vì bài nghe không nhắc đến thời gian này.</li>       <li><span class="text-danger">December 2nd</span> ❌ (Ngày 2 tháng 12.) - Sai, vì bài nghe xác nhận rằng tập luyện bắt đầu vào tháng 9.</li>       <li><span class="text-danger">November 22nd</span> ❌ (Ngày 22 tháng 11.) - Sai, vì bài nghe không đề cập đến tháng 11.</li>       <li><span class="text-success"><strong>September 2nd</strong></span> ✅ (Ngày 2 tháng 9.) - Đúng, vì bài nghe xác nhận rằng tập luyện bắt đầu vào ngày này.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: Which film are Mario and Tamara going to see?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Robot 2075 &lt;br&gt;															</div>
+																				<div class="ps-4 mb-2">
+																	B. War Games															</div>
+																				<div class="ps-4 mb-2">
+																	C. Forever															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Midnight Moon</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Midnight Moon</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Mario và Tamara thảo luận về bộ phim họ sẽ xem:</p>   <p>"Hi Mario, do you want to go and watch a film?"</p>   <p>"Hi Tamara, sure, what's on?"</p>   <p>"Well, there are two action films, <strong>Mr and Mrs Jones</strong> and <strong>War Games</strong>. And they are both in 3D."</p>   <p>"I've already seen <strong>Mr and Mrs Jones</strong>. I haven't seen <strong>War Games</strong>, but I don't really want to see an action film. What else is on?"</p>   <p>"There's that science fiction film, <strong>Robot 2075</strong>, but I've already seen it."</p>   <p>"Oh, is it good?"</p>   <p>"Yes, it is, but I don't want to see it again. There's a romantic comedy called <strong>Forever</strong>."</p>   <p>"I'm not sure. Are there any horror films on?"</p>   <p>"Yes, there's <strong>Midnight Moon</strong>. It's got vampires in it."</p>   <p>"OK, sounds good. Let's go and watch <strong>Midnight Moon</strong>."</p>    <p>"Chào Mario, cậu có muốn đi xem phim không?"</p>   <p>"Chào Tamara, được thôi, có phim gì đang chiếu?"</p>   <p>"Có hai bộ phim hành động là <strong>Mr and Mrs Jones</strong> và <strong>War Games</strong>. Cả hai đều là phim 3D."</p>   <p>"Mình đã xem <strong>Mr and Mrs Jones</strong> rồi. Còn <strong>War Games</strong> thì chưa, nhưng mình cũng không thích xem phim hành động lắm. Còn phim nào khác không?"</p>   <p>"Có một bộ phim khoa học viễn tưởng là <strong>Robot 2075</strong>, nhưng mình đã xem rồi."</p>   <p>"Ồ, phim đó có hay không?"</p>   <p>"Có, nhưng mình không muốn xem lại. Còn một bộ phim hài lãng mạn tên là <strong>Forever</strong>."</p>   <p>"Mình không chắc. Có bộ phim kinh dị nào không?"</p>   <p>"Có, đó là <strong>Midnight Moon</strong>. Phim này nói về ma cà rồng."</p>   <p>"Nghe hay đấy. Vậy chúng ta xem <strong>Midnight Moon</strong> đi."</p>    <p>Bài nghe cho thấy Mario và Tamara quyết định xem bộ phim <strong>Midnight Moon</strong>, một bộ phim kinh dị có chủ đề về ma cà rồng. Do đó, đáp án chính xác là <strong>Midnight Moon.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">War Games</span> ❌ (Bộ phim War Games.) - Sai, vì Mario không muốn xem phim hành động.</li>       <li><span class="text-danger">Forever</span> ❌ (Bộ phim Forever.) - Sai, vì Mario không chắc chắn về bộ phim hài lãng mạn này.</li>       <li><span class="text-danger">Robot 2075</span> ❌ (Bộ phim Robot 2075.) - Sai, vì Tamara đã xem phim này và không muốn xem lại.</li>       <li><span class="text-success"><strong>Midnight Moon</strong></span> ✅ (Bộ phim Midnight Moon.) - Đúng, vì họ quyết định xem bộ phim kinh dị này.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: What type of film are they going to see?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. action															</div>
+																				<div class="ps-4 mb-2">
+																	B. romantic comedy															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. horror</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. science fiction															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>horror</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Mario và Tamara quyết định xem thể loại phim họ yêu thích:</p>   <p>"I'm not sure. Are there any horror films on?"</p>   <p>"Yes, there's <strong>Midnight Moon</strong>. It's got vampires in it."</p>   <p>"OK, sounds good. Let's go and watch <strong>Midnight Moon</strong>."</p>    <p>"Mình không chắc. Có bộ phim kinh dị nào không?"</p>   <p>"Có, có bộ phim <strong>Midnight Moon</strong>. Nó nói về ma cà rồng."</p>   <p>"Nghe hay đấy. Vậy chúng ta đi xem <strong>Midnight Moon</strong> đi."</p>    <p>Bài nghe cho thấy Mario và Tamara muốn xem một bộ phim <strong>kinh dị</strong> có chủ đề về ma cà rồng. Do đó, đáp án chính xác là <strong>horror.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">action</span> ❌ (Phim hành động.) - Sai, vì Mario không muốn xem phim hành động.</li>       <li><span class="text-danger">romantic comedy</span> ❌ (Phim hài lãng mạn.) - Sai, vì họ không chọn bộ phim hài lãng mạn <strong>Forever</strong>.</li>       <li><span class="text-success"><strong>horror</strong></span> ✅ (Phim kinh dị.) - Đúng, vì họ quyết định xem <strong>Midnight Moon</strong>, một bộ phim kinh dị.</li>       <li><span class="text-danger">science fiction</span> ❌ (Phim khoa học viễn tưởng.) - Sai, vì Tamara đã xem <strong>Robot 2075</strong> và không muốn xem lại.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What time does the film they want to see start?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. 7.30 p.m</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. 7.15 p.m															</div>
+																				<div class="ps-4 mb-2">
+																	C. 7.00 p.m															</div>
+																				<div class="ps-4 mb-2">
+																	D. 5.20 p.m															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>7.30 p.m</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Mario và Tamara quyết định thời gian xem phim:</p>   <p>"What time is it on?"</p>   <p>"It's on at 12 o'clock or at half past two."</p>   <p>"Hmm, is it on this evening?"</p>   <p>"Yes, at <strong>7.30</strong>."</p>   <p>"Perfect, let's go at <strong>7.30</strong>."</p>    <p>"Phim chiếu lúc mấy giờ?"</p>   <p>"Phim chiếu vào lúc 12 giờ trưa hoặc 2 giờ 30 phút chiều."</p>   <p>"Hmm, buổi tối có chiếu không?"</p>   <p>"Có, vào lúc <strong>7 giờ 30 phút</strong>."</p>   <p>"Tuyệt, vậy chúng ta đi xem lúc <strong>7 giờ 30</strong>."</p>    <p>Bài nghe cho thấy Mario và Tamara quyết định xem phim vào <strong>7 giờ 30 phút tối</strong>. Do đó, đáp án chính xác là <strong>7.30 p.m.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">7.15 p.m</span> ❌ (7 giờ 15 phút tối.) - Sai, vì bài nghe không đề cập đến thời gian này.</li>       <li><span class="text-success"><strong>7.30 p.m</strong></span> ✅ (7 giờ 30 phút tối.) - Đúng, vì Mario và Tamara đã chọn thời gian này để đi xem phim.</li>       <li><span class="text-danger">5.20 p.m</span> ❌ (5 giờ 20 phút chiều.) - Sai, vì bài nghe không nói rằng phim chiếu vào thời gian này.</li>       <li><span class="text-danger">7.00 p.m</span> ❌ (7 giờ tối.) - Sai, vì họ hẹn nhau lúc 7 giờ nhưng phim bắt đầu lúc 7 giờ 30.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: What time are Mario and Tamara going to meet?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 7.30 p.m															</div>
+																				<div class="ps-4 mb-2">
+																	B. 5.20 p.m															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. 7.00 p.m</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. 7.15 p.m															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>7.00 p.m</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Mario và Tamara thảo luận về thời gian gặp nhau trước khi xem phim:</p>   <p>"Shall we meet at the cinema at <strong>7 o'clock</strong>?"</p>   <p>"Great, see you later."</p>    <p>"Chúng ta gặp nhau ở rạp chiếu phim lúc <strong>7 giờ</strong> nhé?"</p>   <p>"Tuyệt, hẹn gặp cậu sau."</p>    <p>Bài nghe cho thấy Mario và Tamara quyết định gặp nhau lúc <strong>7 giờ tối</strong> trước khi xem phim. Do đó, đáp án chính xác là <strong>7.00 p.m.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">7.15 p.m</span> ❌ (7 giờ 15 phút tối.) - Sai, vì họ không hẹn gặp vào thời gian này.</li>       <li><span class="text-danger">7.30 p.m</span> ❌ (7 giờ 30 phút tối.) - Sai, vì đây là thời gian phim bắt đầu, không phải thời gian họ gặp nhau.</li>       <li><span class="text-danger">5.20 p.m</span> ❌ (5 giờ 20 phút chiều.) - Sai, vì bài nghe không đề cập đến thời gian này.</li>       <li><span class="text-success"><strong>7.00 p.m</strong></span> ✅ (7 giờ tối.) - Đúng, vì Mario và Tamara quyết định gặp nhau lúc này trước khi phim bắt đầu.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: The gym can give you advice about _____&lt;br&gt;						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. sports injuries and diet.															</div>
+																				<div class="ps-4 mb-2">
+																	B. how to follow a training schedule.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. training, life style, and diet.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. how to become a professional athlete.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>training, life style, and diet.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, huấn luyện viên tại phòng gym giới thiệu về các dịch vụ tư vấn:</p>   <p>"But we have a team of four specialists who are always around to help you with <strong>exercise programs and give advice about lifestyle and diet.</strong>"</p>    <p>"Nhưng chúng tôi có một đội ngũ bốn chuyên gia luôn sẵn sàng hỗ trợ bạn với <strong>các chương trình tập luyện và tư vấn về lối sống và chế độ ăn uống.</strong>"</p>    <p>Bài nghe xác nhận rằng phòng gym có thể tư vấn về <strong>tập luyện, lối sống và chế độ ăn uống</strong>. Do đó, đáp án chính xác là <strong>training, life style, and diet.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-success"><strong>training, life style, and diet.</strong></span> ✅ (Tập luyện, lối sống và chế độ ăn uống.) - Đúng, vì bài nghe đề cập đến tất cả các yếu tố này.</li>       <li><span class="text-danger">sports injuries and diet.</span> ❌ (Chấn thương thể thao và chế độ ăn uống.) - Sai, vì bài nghe không đề cập đến việc tư vấn chấn thương thể thao.</li>       <li><span class="text-danger">how to follow a training schedule.</span> ❌ (Cách tuân theo một lịch trình tập luyện.) - Sai, vì bài nghe không nói về việc hướng dẫn cách tuân thủ lịch trình tập luyện.</li>       <li><span class="text-danger">how to become a professional athlete.</span> ❌ (Cách trở thành một vận động viên chuyên nghiệp.) - Sai, vì bài nghe không nhắc đến việc đào tạo vận động viên chuyên nghiệp.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: In the main gym, you must _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. use a towel.															</div>
+																				<div class="ps-4 mb-2">
+																	B. take a bottle of water.															</div>
+																				<div class="ps-4 mb-2">
+																	C. wait for your turn.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. wear trainers.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>wear trainers.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, huấn luyện viên đưa ra quy định về trang phục khi vào phòng gym:</p>   <p>"Oh, by the way, <strong>you can only come in here with trainers on.</strong> No outdoor shoes, please."</p>    <p>"À, nhân tiện, <strong>bạn chỉ có thể vào đây khi mang giày thể thao.</strong> Vui lòng không mang giày ngoài trời."</p>    <p>Bài nghe xác nhận rằng <strong>bạn bắt buộc phải mang giày thể thao</strong> khi vào phòng gym. Do đó, đáp án chính xác là <strong>wear trainers.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">use a towel.</span> ❌ (Sử dụng khăn.) - Sai, vì bài nghe không đề cập đến việc phải sử dụng khăn.</li>       <li><span class="text-success"><strong>wear trainers.</strong></span> ✅ (Mang giày thể thao.) - Đúng, vì bài nghe nói rằng chỉ được vào phòng gym khi đi giày thể thao.</li>       <li><span class="text-danger">take a bottle of water.</span> ❌ (Mang theo chai nước.) - Sai, vì bài nghe không nhắc đến việc phải mang nước vào phòng gym.</li>       <li><span class="text-danger">wait for your turn.</span> ❌ (Chờ đến lượt của bạn.) - Sai, vì bài nghe nói rằng hiếm khi phải chờ máy tập, không có quy định bắt buộc phải chờ.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: Lifeguard can also _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. demonstrate the best way to swim.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. give you some tips to improve your swimming.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. buy you some drinks.															</div>
+																				<div class="ps-4 mb-2">
+																	D. give you swimming lessons.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>give you some tips to improve your swimming.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, huấn luyện viên đề cập đến vai trò của nhân viên cứu hộ tại bể bơi:</p>   <p>"There is always a lifeguard in attendance who will also <strong>offer informal swimming tips.</strong>"</p>    <p>"Luôn có một nhân viên cứu hộ túc trực, người cũng sẽ <strong>đưa ra những mẹo bơi lội không chính thức.</strong>"</p>    <p>Bài nghe xác nhận rằng nhân viên cứu hộ có thể <strong>đưa ra một số mẹo để cải thiện kỹ năng bơi</strong>. Do đó, đáp án chính xác là <strong>give you some tips to improve your swimming.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-success"><strong>give you some tips to improve your swimming.</strong></span> ✅ (Đưa ra một số mẹo để cải thiện kỹ năng bơi.) - Đúng, vì bài nghe xác nhận rằng nhân viên cứu hộ sẽ cung cấp các mẹo bơi lội không chính thức.</li>       <li><span class="text-danger">demonstrate the best way to swim.</span> ❌ (Thị phạm cách bơi tốt nhất.) - Sai, vì bài nghe không đề cập đến việc nhân viên cứu hộ trực tiếp biểu diễn cách bơi.</li>       <li><span class="text-danger">give you swimming lessons.</span> ❌ (Dạy bạn các bài học bơi.) - Sai, vì bài nghe không nói rằng nhân viên cứu hộ sẽ dạy bơi chính thức.</li>       <li><span class="text-danger">buy you some drinks.</span> ❌ (Mua đồ uống cho bạn.) - Sai, vì bài nghe không đề cập đến việc nhân viên cứu hộ mua đồ uống.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: The timetable for the classes is _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. available online.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. in a brochure.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. not available yet.															</div>
+																				<div class="ps-4 mb-2">
+																	D. on the notice board.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>in a brochure.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, huấn luyện viên cung cấp thông tin về lịch trình các lớp học:</p>   <p>"Here's a <strong>brochure with the timetables</strong> of the extra classes that we offer."</p>    <p>"Đây là một <strong>tờ rơi có lịch trình</strong> của các lớp học thêm mà chúng tôi cung cấp."</p>    <p>Bài nghe xác nhận rằng lịch trình các lớp học <strong>có sẵn trong một tờ rơi</strong>. Do đó, đáp án chính xác là <strong>in a brochure.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">available online.</span> ❌ (Có sẵn trực tuyến.) - Sai, vì bài nghe không đề cập đến việc lịch trình được đăng trực tuyến.</li>       <li><span class="text-success"><strong>in a brochure.</strong></span> ✅ (Có trong một tờ rơi.) - Đúng, vì bài nghe xác nhận rằng lịch trình được in trong một tờ rơi.</li>       <li><span class="text-danger">on the notice board.</span> ❌ (Trên bảng thông báo.) - Sai, vì bài nghe không nói rằng lịch trình được dán trên bảng thông báo.</li>       <li><span class="text-danger">not available yet.</span> ❌ (Chưa có sẵn.) - Sai, vì lịch trình đã được in trong tờ rơi và có thể xem ngay.</li>   </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

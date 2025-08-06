@@ -1,0 +1,653 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 06 - Part 3				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87727				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/15				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp3-1664868840_a3e14350621815aa007f.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>In this part, you will hear three talks, or lectures. The talks or lectures will be played once only. There are five questions for each talk or lecture.<br>
+For each question, choose the right answer, A, B, C, or D. Part 3. Questions 21 to 25. First, you will have some time to look at questions 21 to 25. Now we're ready to start.<br>
+Listen, and answer questions 21 to 25. You will hear the recording once only. The Statue of Liberty may be one of the biggest presents in history.<br>
+In 1886, France gave the United States a huge statue. It is a woman holding a torch high in the air. The torch is a symbol of freedom.<br>
+The gift was given to remember the important friendship between the two countries. One hundred years earlier, France had helped America in its war for freedom from Britain. A French sculptor was chosen to design the statue.<br>
+It was a very difficult job because of its size. He decided to make her skin out of thin copper sheets. Then he would attach them to a metal frame.<br>
+He asked an engineer to design and build the huge frame. That engineer's name was Gustave Eiffel. He would later build the famous Eiffel Tower in Paris, France.<br>
+The statue was too big to fit on a ship. So, it was reduced to 350 pieces and taken to America in many separate boxes. The builders chose a small island in New York Harbor as the place to put the statue.<br>
+The statue was a gift. However, the U.S. needed to build a base for her to stand on. People from all over America sent money to help build it.<br>
+The base was finished in the spring of 1886. They began to put the pieces of the statue together. When the statue was finished, it was the tallest structure in America.<br>
+She stands over 46 meters high. Just one of her fingers is 2.4 meters long. The statue faces the ocean to welcome ships as they sail into New York.<br>
+Each year, thousands of visitors come to the island to see her. They can even climb the 354 steps up into her crown and look out the windows. She is a symbol of freedom for people all over the world.<br>
+After all, it's in her name. The word liberty means freedom. Now you will have some time to review questions 21 to 25.<br>
+Part 3. Questions 26 to 30. First, you will have some time to look at questions 26 to 30. <br>
+What do a bicycle, a chair, a house, and a T-shirt have in common? They can all be made using bamboo.<br>
+Bamboo is one of the most amazing plants on Earth. It has been used by humans for thousands of years. Bamboo may also be one of the most important plants of the future.<br>
+Bamboo is very strong. It can be used in most of the same ways as wood. Many kinds of bamboo are actually harder than wood.<br>
+People all over the world have built houses with bamboo. Bamboo has other uses as well. It makes strong and beautiful furniture.<br>
+As the young bamboo plants grow, they can be formed into different shapes like circles and even squares. Clothes made from bamboo are quite soft. They are also very good at stopping bad smells.<br>
+Some companies are even making bicycles with bamboo instead of metal tubes. Even though bamboo looks like a tree, it's actually a kind of grass. It's related to plants like corn and rice.<br>
+Bamboo is one of the fastest growing plants in the world. It can grow about 3 centimeters per hour. Trees take much longer to grow, of course.<br>
+It takes 20 years or more for a tree to grow to a useful size. Bamboo reaches its useful size in only 3 to 7 years. Many bamboo plants can grow in the same time as one tree.<br>
+This makes a bamboo farm more efficient than a tree farm. The population of the world grows every year. That means that there is more need for materials like wood.<br>
+But the number of trees is limited. If people used bamboo instead, many trees could be saved. Scientists and inventors are working hard to find other uses for this amazing plant.<br>
+Now you will have some time to review questions 26 to 30. Part 3. Questions 31 to 35. First, you will have some time to look at questions 31 to 35.<br>
+Okay, everyone. If you'd like to come over here to our next exhibit. Okay, so we're continuing to learn about the history of the home computer.<br>
+Now, does anyone recognize this amazing machine? No? Well, anyone who grew up in Britain in the 1980s would immediately recognize this. It's the famous BBC microcomputer. You've all heard of the BBC, right? The British Broadcasting Corporation, or BBC, is Britain's national state-run television and radio network.<br>
+So why did a TV station make a computer? That's a really interesting story. It starts in the early 1980s. BBC television showed a program called the Mighty Micro, in which a professor, his name was Dr. Christopher Evans, he predicted the importance of the microcomputer, what we today just call the computer or the personal computer.<br>
+Now, you have to remember that in 1980, there were no computers in homes, in schools, in libraries. Computers were big and expensive, so they still weren't something that a family or a student would go out and buy. But Dr. Evans made a prediction, a guess about the future.<br>
+He predicted that computers were going to get smaller. Technology was making it possible to build a whole computer in a box that could fit on your desk. That's why the first home computers were called microcomputers.<br>
+Micro, meaning small. Okay, so Evans argued that the microcomputer was going to change everything, and that Britain's children needed to learn how to use a computer in order to be prepared for the future. Now, it just so happened that a lot of important people watched that program, and Evans' predictions caught the attention of many people in Britain.<br>
+In fact, even the British Parliament, the government, ended up discussing the program and Evans' predictions. So the BBC decided to start a new project to build a computer that was affordable, but that had lots of functions. Text, graphics, sound, music, programming, even artificial intelligence.<br>
+The BBC planned to sell its microcomputer to homes and especially schools around the country. So the BBC made the actual computer? No, actually they didn't. The BBC was, and still is, in the business of making television and radio programs, not computers.<br>
+So they wanted to find a computer company that could make the computer and put the BBC's name on it. In Cambridge, England, home to the famous old university, a small company called Acorn heard about the project. It just so happened that Acorn was already making its first computer, but it wasn't quite finished yet.<br>
+The Acorn employees worked through the night and finished that first computer. It was called the Proton. They showed their brand new creation to the BBC and won the contract.<br>
+It's really an amazing story of a small company beating all the bigger corporations. The first BBC computer, they called it the Model A, came out in 1981. And the Model B came out not too long afterward.<br>
+And that's the computer you can see here. The BBC Model B microcomputer. The computer was an immediate success, mainly because schools in Britain bought many of them to teach computer skills to students.<br>
+Excuse me, what could you do with a computer? <br>
+Now you will have some time to review questions 31 to 35. That is the end of Part 3. That is the end of the Listening Comprehension Test.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 3 Trong phần này, bạn sẽ nghe ba bài nói hoặc bài giảng. Các bài nói hoặc bài giảng sẽ chỉ được phát một lần duy nhất. Mỗi bài nói hoặc bài giảng có năm câu hỏi đi kèm. Với mỗi câu hỏi, hãy chọn đáp án đúng A, B, C hoặc D. Phần 3, câu hỏi 21-25 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 21 đến 25. Bây giờ, chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 21 đến 25. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Tượng Nữ thần Tự do có thể là một trong những món quà lớn nhất trong lịch sử. Năm 1886, Pháp đã tặng Hoa Kỳ một bức tượng khổng lồ. Đó là hình ảnh một người phụ nữ cầm ngọn đuốc giơ cao trên không trung. Ngọn đuốc là biểu tượng của tự do. Món quà này được trao để kỷ niệm tình hữu nghị quan trọng giữa hai quốc gia. Một trăm năm trước đó, Pháp đã giúp Mỹ trong cuộc chiến giành độc lập khỏi Anh. Một nhà điêu khắc người Pháp đã được chọn để thiết kế bức tượng. Đó là một công việc rất khó khăn vì kích thước khổng lồ của nó. Ông quyết định làm lớp vỏ ngoài của tượng bằng các tấm đồng mỏng, sau đó gắn chúng vào một khung kim loại. Ông đã nhờ một kỹ sư thiết kế và xây dựng bộ khung khổng lồ. Tên của kỹ sư đó là Gustave Eiffel. Sau này, ông chính là người đã xây dựng Tháp Eiffel nổi tiếng ở Paris, Pháp. Bức tượng quá lớn để có thể vận chuyển bằng tàu. Vì vậy, nó đã được tháo thành 350 mảnh và được đưa đến Mỹ trong nhiều thùng hàng riêng biệt. Các nhà xây dựng đã chọn một hòn đảo nhỏ trong cảng New York để đặt bức tượng. Bức tượng là một món quà. Tuy nhiên, Hoa Kỳ cần xây dựng một bệ đỡ để tượng đứng lên. Người dân khắp nước Mỹ đã gửi tiền để giúp xây dựng bệ đỡ này. Phần bệ đỡ đã được hoàn thành vào mùa xuân năm 1886. Sau đó, họ bắt đầu lắp ráp các mảnh của bức tượng. Khi bức tượng hoàn thành, nó trở thành công trình cao nhất ở Mỹ. Tượng cao hơn 46 mét. Chỉ riêng một ngón tay của bức tượng đã dài 2,4 mét. Tượng hướng ra biển để chào đón các con tàu khi chúng cập cảng New York. Mỗi năm, hàng nghìn du khách đến hòn đảo này để chiêm ngưỡng bức tượng. Họ thậm chí có thể leo lên 354 bậc thang để vào trong vương miện của bức tượng và nhìn qua các cửa sổ. Bức tượng là biểu tượng của tự do đối với mọi người trên thế giới. Sau tất cả, điều đó đã nằm trong tên của nó. Từ "liberty" có nghĩa là tự do. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 21 đến 25. Phần 3, câu hỏi 26-30 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 26 đến 30. Xe đạp, ghế, nhà và áo thun có điểm gì chung? Chúng đều có thể được làm từ tre. Tre là một trong những loài thực vật đáng kinh ngạc nhất trên Trái Đất. Nó đã được con người sử dụng trong hàng nghìn năm. Tre cũng có thể là một trong những loài thực vật quan trọng nhất của tương lai. Tre rất bền. Nó có thể được sử dụng giống như gỗ. Nhiều loại tre thậm chí còn cứng hơn gỗ. Người ta trên khắp thế giới đã xây nhà bằng tre. Tre còn có nhiều công dụng khác. Nó tạo ra những món đồ nội thất đẹp và chắc chắn. Khi cây tre non phát triển, chúng có thể được uốn thành nhiều hình dạng khác nhau như hình tròn hay hình vuông. Quần áo làm từ tre rất mềm mại. Chúng cũng có khả năng khử mùi rất tốt. Một số công ty thậm chí đang sản xuất xe đạp từ tre thay vì sử dụng ống kim loại. Mặc dù trông giống như một loại cây, nhưng thực ra tre là một loại cỏ. Nó có họ hàng với các loài thực vật như ngô và lúa. Tre là một trong những loài thực vật phát triển nhanh nhất thế giới. Nó có thể phát triển khoảng 3 cm mỗi giờ. Trong khi đó, cây gỗ cần nhiều thời gian hơn để phát triển. Phải mất ít nhất 20 năm để một cái cây đạt kích thước sử dụng được. Trong khi đó, tre chỉ cần 3 đến 7 năm để đạt kích thước tương tự. Nhiều cây tre có thể phát triển trong cùng thời gian mà một cái cây mất để trưởng thành. Điều này khiến việc trồng tre hiệu quả hơn nhiều so với trồng cây gỗ. Dân số thế giới ngày càng tăng đồng nghĩa với việc nhu cầu về gỗ cũng tăng lên. Nhưng số lượng cây gỗ có hạn. Nếu con người sử dụng tre thay thế, nhiều cây gỗ có thể được bảo tồn. Các nhà khoa học và nhà phát minh đang nỗ lực tìm ra những công dụng khác của loại cây tuyệt vời này. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 26 đến 30. Phần 3, câu hỏi 31-35 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 31 đến 35. Được rồi, mọi người. Nếu các bạn đi về phía này, chúng ta sẽ tiếp tục tìm hiểu về lịch sử của máy tính cá nhân. Có ai nhận ra chiếc máy đáng kinh ngạc này không? Không ư? Bất kỳ ai lớn lên ở Anh trong những năm 1980 chắc chắn sẽ nhận ra chiếc máy tính này ngay lập tức. Đây chính là chiếc máy tính nổi tiếng BBC Micro. Chắc hẳn các bạn đã nghe nói đến BBC rồi, đúng không? British Broadcasting Corporation, hay BBC, là đài phát thanh và truyền hình quốc gia của Anh. Vậy tại sao một đài truyền hình lại làm ra một chiếc máy tính? Đó là một câu chuyện rất thú vị. Vào đầu những năm 1980, BBC phát sóng một chương trình có tên là The Mighty Micro. Trong đó, một giáo sư tên là Tiến sĩ Christopher Evans đã dự đoán về tầm quan trọng của máy vi tính, thứ mà ngày nay chúng ta gọi đơn giản là máy tính cá nhân. Thời điểm đó, vào năm 1980, không có máy tính trong gia đình, trường học hay thư viện. Máy tính vẫn còn to và đắt đỏ, vì vậy không ai mua chúng cho mục đích cá nhân. Nhưng Tiến sĩ Evans đã đưa ra một dự đoán: ông tin rằng công nghệ sẽ giúp máy tính nhỏ hơn và có thể đặt vừa trên bàn làm việc. Đó là lý do những chiếc máy tính gia đình đầu tiên được gọi là microcomputer - nghĩa là máy tính nhỏ. Dự đoán của ông đã thu hút sự chú ý của nhiều người, thậm chí cả Quốc hội Anh. BBC quyết định tài trợ cho một dự án phát triển máy tính có giá cả phải chăng nhưng vẫn đầy đủ tính năng. BBC không tự làm máy tính, mà tìm một công ty có thể chế tạo nó. Một công ty nhỏ tên Acorn ở Cambridge đã giành được hợp đồng. Chiếc máy tính đầu tiên của BBC, Model A, ra mắt năm 1981, và Model B được giới thiệu sau đó. Nó nhanh chóng trở thành lựa chọn phổ biến trong các trường học ở Anh. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 31 đến 35. Đây là phần kết thúc của Phần 3. Đây là phần kết thúc của bài kiểm tra nghe hiểu.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Why did France give the statue to the United States?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. To remember Gustave Eiffel.															</div>
+																				<div class="ps-4 mb-2">
+																	B. To remember the war between France and America.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. To remember the friendship between France and America.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. To remember the soldiers in the war against Britain.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>To remember the friendship between France and America.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, lý do nước Pháp tặng tượng Nữ thần Tự do cho Mỹ được đề cập:</p> <p>"The gift was given to remember the important friendship between the two countries. One hundred years earlier, France had helped America in its war for freedom from Britain."</p> <p>"Món quà này được tặng để ghi nhớ tình hữu nghị quan trọng giữa hai quốc gia. Một trăm năm trước, Pháp đã giúp Mỹ trong cuộc chiến giành tự do khỏi Anh."</p>  <p>Điều này cho thấy rằng <strong>bức tượng được tặng để kỷ niệm tình hữu nghị giữa Pháp và Mỹ</strong>. Do đó, đáp án chính xác là <strong>To remember the friendship between France and America.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">To remember the war between France and America.</span> ❌ (Để ghi nhớ cuộc chiến giữa Pháp và Mỹ.) - Sai, vì không có cuộc chiến nào giữa hai nước được đề cập.</li>     <li><span class="text-success"><strong>To remember the friendship between France and America.</strong></span> ✅ (Để ghi nhớ tình hữu nghị giữa Pháp và Mỹ.) - Đúng, vì bài nghe nói rõ rằng bức tượng là biểu tượng của tình hữu nghị hai nước.</li>     <li><span class="text-danger">To remember Gustave Eiffel.</span> ❌ (Để ghi nhớ Gustave Eiffel.) - Sai, vì mặc dù ông góp phần thiết kế khung bức tượng, nhưng đây không phải là lý do chính để tặng bức tượng.</li>     <li><span class="text-danger">To remember the soldiers in the war against Britain.</span> ❌ (Để ghi nhớ những người lính trong cuộc chiến chống Anh.) - Sai, vì bức tượng được tặng để ghi nhớ tình hữu nghị giữa hai nước, không phải để vinh danh các binh sĩ.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: Which is NOT TRUE about the construction of the Statue?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The statue's skin was made of copper.															</div>
+																				<div class="ps-4 mb-2">
+																	B. It's reduced to 350 pieces and shipped to America.															</div>
+																				<div class="ps-4 mb-2">
+																	C. It is 46 meters high.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Gustave Eiffel was chosen to design the statue.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>Gustave Eiffel was chosen to design the statue.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, thông tin về quá trình xây dựng tượng Nữ thần Tự do được đề cập:</p> <p>"A French sculptor was chosen to design the statue. It was a very difficult job because of its size. He decided to make her skin out of thin copper sheets. Then he would attach them to a metal frame. He asked an engineer to design and build the huge frame. That engineer's name was Gustave Eiffel."</p> <p>"Một nhà điêu khắc người Pháp được chọn để thiết kế bức tượng. Đó là một công việc rất khó khăn vì kích thước của nó. Ông quyết định làm lớp vỏ ngoài của bức tượng bằng các tấm đồng mỏng, sau đó gắn chúng vào một khung kim loại. Ông đã nhờ một kỹ sư thiết kế và xây dựng bộ khung lớn. Kỹ sư đó tên là Gustave Eiffel."</p>  <p>Điều này cho thấy rằng <strong>Gustave Eiffel không phải là người thiết kế bức tượng mà chỉ chịu trách nhiệm xây dựng khung kim loại</strong>. Do đó, đáp án chính xác là <strong>Gustave Eiffel was chosen to design the statue.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">The statue's skin was made of copper.</span> ❌ (Lớp vỏ của bức tượng được làm bằng đồng.) - Đúng, vì bài nghe nói rằng lớp da của bức tượng được làm từ các tấm đồng mỏng.</li>     <li><span class="text-success"><strong>Gustave Eiffel was chosen to design the statue.</strong></span> ✅ (Gustave Eiffel được chọn để thiết kế bức tượng.) - Sai, vì ông chỉ thiết kế phần khung, không phải toàn bộ bức tượng.</li>     <li><span class="text-danger">It's reduced to 350 pieces and shipped to America.</span> ❌ (Bức tượng được chia thành 350 mảnh và vận chuyển đến Mỹ.) - Đúng, vì bài nghe xác nhận rằng bức tượng quá lớn để vận chuyển nguyên khối nên phải chia nhỏ.</li>     <li><span class="text-danger">It is 46 meters high.</span> ❌ (Bức tượng cao 46 mét.) - Đúng, vì bài nghe nói rõ chiều cao của bức tượng.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What needed to be built in the United States?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. A nice cream cone															</div>
+																				<div class="ps-4 mb-2">
+																	B. A torch															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. A base</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. A huge metal frame															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>A base.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, thông tin về việc xây dựng bệ đỡ cho tượng Nữ thần Tự do được đề cập:</p> <p>"The statue was a gift. However, the U.S. needed to build a base for her to stand on. People from all over America sent money to help build it. The base was finished in the spring of 1886."</p> <p>"Bức tượng là một món quà. Tuy nhiên, Mỹ cần xây dựng một bệ đỡ để bức tượng đứng vững. Người dân từ khắp nước Mỹ đã quyên góp tiền để giúp xây dựng nó. Bệ đỡ được hoàn thành vào mùa xuân năm 1886."</p>  <p>Điều này cho thấy rằng <strong>điều cần xây dựng ở Mỹ là một bệ đỡ cho bức tượng</strong>. Do đó, đáp án chính xác là <strong>A base.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-success"><strong>A base.</strong></span> ✅ (Một bệ đỡ.) - Đúng, vì bài nghe nói rằng Mỹ cần xây dựng bệ đỡ để tượng có thể đứng vững.</li>     <li><span class="text-danger">A nice cream cone.</span> ❌ (Một cây kem ốc quế ngon.) - Sai, vì bài nghe không đề cập đến kem.</li>     <li><span class="text-danger">A torch.</span> ❌ (Một ngọn đuốc.) - Sai, vì ngọn đuốc là một phần của bức tượng chứ không phải thứ cần xây dựng ở Mỹ.</li>     <li><span class="text-danger">A huge metal frame.</span> ❌ (Một khung kim loại khổng lồ.) - Sai, vì khung kim loại được thiết kế bởi Gustave Eiffel và đã có sẵn, không phải thứ Mỹ cần xây dựng.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: How did the statue get to the United States?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. It came in many parts in many boxes.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. It was reduced to 46 pieces.															</div>
+																				<div class="ps-4 mb-2">
+																	C. It was transported by a big plane.															</div>
+																				<div class="ps-4 mb-2">
+																	D. It's put together in France and sent by ship.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>It came in many parts in many boxes.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, cách bức tượng được vận chuyển đến Mỹ được đề cập:</p> <p>"The statue was too big to fit on a ship. So, it was reduced to 350 pieces and taken to America in many separate boxes."</p> <p>"Bức tượng quá lớn để có thể đặt lên một con tàu. Vì vậy, nó đã được chia thành 350 mảnh và đưa đến Mỹ trong nhiều hộp riêng biệt."</p>  <p>Điều này cho thấy rằng <strong>bức tượng được vận chuyển đến Mỹ bằng cách chia thành nhiều phần và đặt trong nhiều hộp khác nhau</strong>. Do đó, đáp án chính xác là <strong>It came in many parts in many boxes.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">It's put together in France and sent by ship.</span> ❌ (Bức tượng được lắp ráp ở Pháp và gửi bằng tàu.) - Sai, vì bức tượng quá lớn để vận chuyển nguyên khối nên phải chia nhỏ.</li>     <li><span class="text-danger">It was reduced to 46 pieces.</span> ❌ (Nó được chia thành 46 mảnh.) - Sai, vì bài nghe nói rõ rằng bức tượng được chia thành 350 mảnh, không phải 46.</li>     <li><span class="text-success"><strong>It came in many parts in many boxes.</strong></span> ✅ (Nó được gửi đến trong nhiều phần và nhiều hộp khác nhau.) - Đúng, vì bức tượng được vận chuyển dưới dạng 350 mảnh trong nhiều hộp riêng biệt.</li>     <li><span class="text-danger">It was transported by a big plane.</span> ❌ (Nó được vận chuyển bằng một chiếc máy bay lớn.) - Sai, vì vào thời điểm đó, máy bay chưa được sử dụng để vận chuyển hàng hóa lớn như vậy.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: Which is TRUE about the statue?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It is the tallest structure in America.															</div>
+																				<div class="ps-4 mb-2">
+																	B. Visitors can only see the statue from far away.															</div>
+																				<div class="ps-4 mb-2">
+																	C. It serves as a lighthouse.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. There are 354 steps to the top.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>There are 354 steps to the top.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, có thông tin về số bậc thang bên trong tượng Nữ thần Tự do:</p> <p>"Each year, thousands of visitors come to the island to see her. They can even climb the 354 steps up into her crown and look out the windows."</p> <p>"Mỗi năm, hàng nghìn du khách đến hòn đảo để tham quan bức tượng. Họ thậm chí có thể leo lên 354 bậc thang để vào bên trong vương miện của bức tượng và ngắm nhìn qua cửa sổ."</p>  <p>Điều này cho thấy rằng <strong>bức tượng có 354 bậc thang để du khách leo lên</strong>. Do đó, đáp án chính xác là <strong>There are 354 steps to the top.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">It serves as a lighthouse.</span> ❌ (Nó đóng vai trò như một ngọn hải đăng.) - Sai, vì bài nghe không đề cập đến việc tượng được sử dụng làm hải đăng.</li>     <li><span class="text-danger">Visitors can only see the statue from far away.</span> ❌ (Du khách chỉ có thể nhìn thấy bức tượng từ xa.) - Sai, vì bài nghe nói rằng du khách có thể đến thăm và leo lên bên trong tượng.</li>     <li><span class="text-success"><strong>There are 354 steps to the top.</strong></span> ✅ (Có 354 bậc thang dẫn lên đỉnh.) - Đúng, vì bài nghe nói rằng du khách có thể leo lên 354 bậc thang để vào vương miện của bức tượng.</li>     <li><span class="text-danger">It is the tallest structure in America.</span> ❌ (Nó là công trình cao nhất ở Mỹ.) - Sai, vì bài nghe chỉ nói rằng vào thời điểm hoàn thành, nó là công trình cao nhất ở Mỹ, nhưng hiện nay không còn đúng nữa.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Which of the following is NOT mentioned as a use for bamboo?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Building houses															</div>
+																				<div class="ps-4 mb-2">
+																	B. Making clothes															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Making cars</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Making bicycles															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>Making cars.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, các công dụng của tre được đề cập:</p> <p>"Bamboo is very strong. It can be used in most of the same ways as wood. Many kinds of bamboo are actually harder than wood. People all over the world have built houses with bamboo. Bamboo has other uses as well. It makes strong and beautiful furniture. As the young bamboo plants grow, they can be formed into different shapes like circles and even squares. Clothes made from bamboo are quite soft. They are also very good at stopping bad smells. Some companies are even making bicycles with bamboo instead of metal tubes."</p>  <p>"Tre rất cứng, có thể được sử dụng theo nhiều cách giống như gỗ. Nhiều loại tre thực sự còn cứng hơn gỗ. Trên khắp thế giới, mọi người đã xây dựng nhà bằng tre. Tre còn có những công dụng khác. Nó tạo ra đồ nội thất đẹp và bền. Khi cây tre còn non, chúng có thể được uốn thành nhiều hình dạng khác nhau như hình tròn và hình vuông. Quần áo làm từ tre khá mềm và có khả năng khử mùi rất tốt. Một số công ty thậm chí đang sản xuất xe đạp bằng tre thay vì ống kim loại."</p>  <p>Điều này cho thấy rằng <strong>bài nghe không nhắc đến việc sử dụng tre để làm ô tô</strong>. Do đó, đáp án chính xác là <strong>Making cars.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">Building houses.</span> ❌ (Xây dựng nhà cửa.) - Sai, vì bài nghe đề cập rằng tre được sử dụng để xây nhà.</li>     <li><span class="text-danger">Making clothes.</span> ❌ (Làm quần áo.) - Sai, vì bài nghe nhắc đến quần áo làm từ tre có đặc tính mềm mại và khử mùi tốt.</li>     <li><span class="text-success"><strong>Making cars.</strong></span> ✅ (Làm ô tô.) - Đúng, vì bài nghe không đề cập đến việc sử dụng tre để sản xuất ô tô.</li>     <li><span class="text-danger">Making bicycles.</span> ❌ (Làm xe đạp.) - Sai, vì bài nghe nhắc đến việc một số công ty sử dụng tre để làm xe đạp thay vì ống kim loại.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: Bamboo _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. can grow on any kind of soil.															</div>
+																				<div class="ps-4 mb-2">
+																	B. is used to make paper.															</div>
+																				<div class="ps-4 mb-2">
+																	C. is a member of tree family.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. reaches a useful size in 3 to 7 years.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>reaches a useful size in 3 to 7 years.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, tốc độ phát triển của tre được đề cập:</p> <p>"Bamboo is one of the fastest growing plants in the world. It can grow about 3 centimeters per hour. Trees take much longer to grow, of course. It takes 20 years or more for a tree to grow to a useful size. Bamboo reaches its useful size in only 3 to 7 years."</p>  <p>"Tre là một trong những loài thực vật phát triển nhanh nhất trên thế giới. Nó có thể phát triển khoảng 3 cm mỗi giờ. Cây cối tất nhiên mất nhiều thời gian hơn để phát triển. Một cái cây phải mất 20 năm hoặc hơn để đạt đến kích thước có thể sử dụng được. Trong khi đó, tre đạt đến kích thước hữu dụng chỉ trong 3 đến 7 năm."</p>  <p>Điều này cho thấy rằng <strong>tre có thể đạt đến kích thước hữu dụng trong khoảng 3 đến 7 năm</strong>. Do đó, đáp án chính xác là <strong>reaches a useful size in 3 to 7 years.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">can grow on any kind of soil.</span> ❌ (Có thể mọc trên bất kỳ loại đất nào.) - Sai, vì bài nghe không đề cập đến việc tre có thể mọc trên mọi loại đất.</li>     <li><span class="text-success"><strong>reaches a useful size in 3 to 7 years.</strong></span> ✅ (Đạt kích thước hữu dụng trong 3 đến 7 năm.) - Đúng, vì bài nghe nói rõ rằng tre có thể phát triển đến kích thước có thể sử dụng trong vòng 3 đến 7 năm.</li>     <li><span class="text-danger">is a member of tree family.</span> ❌ (Là một thành viên của họ cây.) - Sai, vì bài nghe nói rằng mặc dù tre trông giống như cây, nhưng thực tế nó thuộc họ cỏ.</li>     <li><span class="text-danger">is used to make paper.</span> ❌ (Được sử dụng để làm giấy.) - Sai, vì bài nghe không nhắc đến việc tre được dùng để làm giấy.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: People build houses with bamboo because _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It can be used instead of metal tubes.															</div>
+																				<div class="ps-4 mb-2">
+																	B. It can be formed into different shapes.															</div>
+																				<div class="ps-4 mb-2">
+																	C. It stops bad smells.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. It is very strong.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>It is very strong.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, lý do tại sao mọi người sử dụng tre để xây nhà được đề cập:</p> <p>"Bamboo is very strong. It can be used in most of the same ways as wood. Many kinds of bamboo are actually harder than wood. People all over the world have built houses with bamboo."</p>  <p>"Tre rất cứng, có thể được sử dụng theo nhiều cách giống như gỗ. Nhiều loại tre thực sự còn cứng hơn gỗ. Trên khắp thế giới, mọi người đã xây dựng nhà bằng tre."</p>  <p>Điều này cho thấy rằng <strong>lý do chính khiến mọi người xây nhà bằng tre là vì nó rất cứng và bền</strong>. Do đó, đáp án chính xác là <strong>It is very strong.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-success"><strong>It is very strong.</strong></span> ✅ (Nó rất cứng.) - Đúng, vì bài nghe nói rằng tre rất bền và cứng, có thể thay thế gỗ.</li>     <li><span class="text-danger">It can be formed into different shapes.</span> ❌ (Nó có thể được uốn thành nhiều hình dạng khác nhau.) - Sai, vì đặc tính này được đề cập liên quan đến việc làm đồ nội thất, không phải xây nhà.</li>     <li><span class="text-danger">It stops bad smells.</span> ❌ (Nó có khả năng khử mùi.) - Sai, vì đặc tính này chỉ áp dụng cho quần áo làm từ tre, không phải nhà.</li>     <li><span class="text-danger">It can be used instead of metal tubes.</span> ❌ (Nó có thể thay thế ống kim loại.) - Sai, vì bài nghe nói rằng tre được sử dụng để làm khung xe đạp, nhưng không đề cập đến việc thay thế kim loại trong xây dựng nhà.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: Why is growing bamboo more efficient than growing trees?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. It grows faster than trees.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. It isn't like other plants in the tree family.															</div>
+																				<div class="ps-4 mb-2">
+																	C. It can be used in different fields of construction.															</div>
+																				<div class="ps-4 mb-2">
+																	D. It sells better than wood.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>It grows faster than trees.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, lý do tại sao trồng tre hiệu quả hơn trồng cây được đề cập:</p> <p>"Bamboo is one of the fastest growing plants in the world. It can grow about 3 centimeters per hour. Trees take much longer to grow, of course. It takes 20 years or more for a tree to grow to a useful size. Bamboo reaches its useful size in only 3 to 7 years. Many bamboo plants can grow in the same time as one tree. This makes a bamboo farm more efficient than a tree farm."</p>  <p>"Tre là một trong những loài thực vật phát triển nhanh nhất trên thế giới. Nó có thể phát triển khoảng 3 cm mỗi giờ. Cây cối tất nhiên mất nhiều thời gian hơn để phát triển. Một cái cây phải mất 20 năm hoặc hơn để đạt đến kích thước có thể sử dụng được. Trong khi đó, tre đạt đến kích thước hữu dụng chỉ trong 3 đến 7 năm. Nhiều cây tre có thể phát triển trong cùng một khoảng thời gian với một cây gỗ. Điều này làm cho việc trồng tre hiệu quả hơn so với trồng cây."</p>  <p>Điều này cho thấy rằng <strong>tre hiệu quả hơn vì nó phát triển nhanh hơn cây cối</strong>. Do đó, đáp án chính xác là <strong>It grows faster than trees.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">It isn't like other plants in the tree family.</span> ❌ (Nó không giống các loài thực vật khác trong họ cây.) - Sai, vì bài nghe nói rằng tre thuộc họ cỏ, nhưng điều này không liên quan đến hiệu quả trồng trọt.</li>     <li><span class="text-success"><strong>It grows faster than trees.</strong></span> ✅ (Nó phát triển nhanh hơn cây cối.) - Đúng, vì bài nghe nhấn mạnh rằng tre có thể phát triển đến kích thước hữu dụng chỉ trong 3 đến 7 năm, trong khi cây cối cần ít nhất 20 năm.</li>     <li><span class="text-danger">It can be used in different fields of construction.</span> ❌ (Nó có thể được sử dụng trong nhiều lĩnh vực xây dựng khác nhau.) - Sai, vì bài nghe đề cập đến nhiều ứng dụng của tre, nhưng không nói rằng đây là lý do khiến nó hiệu quả hơn trồng cây.</li>     <li><span class="text-danger">It sells better than wood.</span> ❌ (Nó bán chạy hơn gỗ.) - Sai, vì bài nghe không đề cập đến giá trị thương mại của tre so với gỗ.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: According to the story, how will bamboo help the world in the future?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Planting bamboo will make the world smell better.															</div>
+																				<div class="ps-4 mb-2">
+																	B. It can help feed many hungry people.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Using bamboo can help to save trees.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. It can be used instead of other materials.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>Using bamboo can help to save trees.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, lợi ích của tre đối với thế giới trong tương lai được đề cập:</p> <p>"The population of the world grows every year. That means that there is more need for materials like wood. But the number of trees is limited. If people used bamboo instead, many trees could be saved."</p>  <p>"Dân số thế giới ngày càng tăng. Điều đó có nghĩa là nhu cầu về các vật liệu như gỗ cũng tăng lên. Nhưng số lượng cây cối là có hạn. Nếu con người sử dụng tre thay thế, nhiều cây có thể được bảo vệ."</p>  <p>Điều này cho thấy rằng <strong>sử dụng tre thay thế có thể giúp bảo vệ cây cối</strong>. Do đó, đáp án chính xác là <strong>Using bamboo can help to save trees.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">It can help feed many hungry people.</span> ❌ (Nó có thể giúp nuôi sống nhiều người đói.) - Sai, vì bài nghe không đề cập đến việc tre có thể làm thực phẩm.</li>     <li><span class="text-success"><strong>Using bamboo can help to save trees.</strong></span> ✅ (Sử dụng tre có thể giúp bảo vệ cây cối.) - Đúng, vì bài nghe nói rằng nếu con người sử dụng tre thay thế, nhiều cây có thể được bảo vệ.</li>     <li><span class="text-danger">Planting bamboo will make the world smell better.</span> ❌ (Trồng tre sẽ làm thế giới có mùi thơm hơn.) - Sai, vì bài nghe chỉ nói rằng quần áo làm từ tre có thể khử mùi, nhưng không liên quan đến việc trồng tre cải thiện mùi môi trường.</li>     <li><span class="text-danger">It can be used instead of other materials.</span> ❌ (Nó có thể được sử dụng thay thế các vật liệu khác.) - Sai, vì bài nghe nhấn mạnh vào việc bảo vệ cây cối hơn là thay thế tất cả các vật liệu khác.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: Which is TRUE about the computers in 1980?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. They were made with a size of a box.															</div>
+																				<div class="ps-4 mb-2">
+																	B. They were used to solve math problems.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. They were too expensive.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. They were popular in schools and libraries only.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>They were too expensive.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, thông tin về máy tính vào năm 1980 được đề cập:</p> <p>"Now, you have to remember that in 1980, there were no computers in homes, in schools, in libraries. Computers were big and expensive, so they still weren't something that a family or a student would go out and buy."</p>  <p>"Bây giờ, bạn cần nhớ rằng vào năm 1980, không có máy tính trong gia đình, trường học hay thư viện. Máy tính rất lớn và đắt đỏ, vì vậy chúng vẫn chưa phải là thứ mà một gia đình hoặc sinh viên có thể mua."</p>  <p>Điều này cho thấy rằng <strong>máy tính vào năm 1980 rất đắt đỏ</strong>. Do đó, đáp án chính xác là <strong>They were too expensive.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">They were popular in schools and libraries only.</span> ❌ (Chúng chỉ phổ biến trong trường học và thư viện.) - Sai, vì bài nghe nói rằng vào năm 1980, không có máy tính trong trường học hay thư viện.</li>     <li><span class="text-danger">They were made with a size of a box.</span> ❌ (Chúng có kích thước bằng một chiếc hộp.) - Sai, vì bài nghe nói rằng công nghệ lúc đó vẫn chưa thu nhỏ máy tính thành kích thước nhỏ gọn.</li>     <li><span class="text-success"><strong>They were too expensive.</strong></span> ✅ (Chúng quá đắt.) - Đúng, vì bài nghe nói rằng vào năm 1980, máy tính rất lớn và đắt đỏ.</li>     <li><span class="text-danger">They were used to solve math problems.</span> ❌ (Chúng được sử dụng để giải các bài toán.) - Sai, vì bài nghe không đề cập đến công dụng của máy tính trong việc giải toán.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: After the BBC showed the program "TheMighty Micro",						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. people in Britain became interested in small computers.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. someone built the first computer.															</div>
+																				<div class="ps-4 mb-2">
+																	C. a company started their researches on tiny computers.															</div>
+																				<div class="ps-4 mb-2">
+																	D. computers became very expensive.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>people in Britain became interested in small computers.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, phản ứng của người dân Anh sau khi xem chương trình "The Mighty Micro" được đề cập:</p> <p>"Now, you have to remember that in 1980, there were no computers in homes, in schools, in libraries. Computers were big and expensive, so they still weren't something that a family or a student would go out and buy. But Dr. Evans made a prediction, a guess about the future. He predicted that computers were going to get smaller. Technology was making it possible to build a whole computer in a box that could fit on your desk. That's why the first home computers were called microcomputers. Micro, meaning small. Evans argued that the microcomputer was going to change everything, and that Britain's children needed to learn how to use a computer in order to be prepared for the future."</p>  <p>"Bây giờ, bạn cần nhớ rằng vào năm 1980, không có máy tính trong gia đình, trường học hay thư viện. Máy tính rất lớn và đắt đỏ, vì vậy chúng vẫn chưa phải là thứ mà một gia đình hoặc sinh viên có thể mua. Nhưng Tiến sĩ Evans đã đưa ra một dự đoán, một giả định về tương lai. Ông dự đoán rằng máy tính sẽ trở nên nhỏ hơn. Công nghệ đang giúp thu nhỏ toàn bộ một chiếc máy tính thành một hộp nhỏ có thể đặt trên bàn làm việc của bạn. Đó là lý do tại sao những chiếc máy tính gia đình đầu tiên được gọi là microcomputers (máy tính nhỏ). Evans lập luận rằng microcomputer sẽ thay đổi mọi thứ, và trẻ em ở Anh cần học cách sử dụng máy tính để chuẩn bị cho tương lai."</p>  <p>Điều này cho thấy rằng <strong>sau khi chương trình "The Mighty Micro" được phát sóng, người dân Anh bắt đầu quan tâm đến các loại máy tính nhỏ</strong>. Do đó, đáp án chính xác là <strong>people in Britain became interested in small computers.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">someone built the first computer.</span> ❌ (Ai đó đã chế tạo ra chiếc máy tính đầu tiên.) - Sai, vì máy tính đã tồn tại trước đó, chương trình chỉ nói về sự phát triển của microcomputers.</li>     <li><span class="text-danger">computers became very expensive.</span> ❌ (Máy tính trở nên rất đắt đỏ.) - Sai, vì máy tính đã đắt đỏ từ trước, và chương trình không đề cập đến việc giá của chúng tăng thêm.</li>     <li><span class="text-success"><strong>people in Britain became interested in small computers.</strong></span> ✅ (Người dân Anh bắt đầu quan tâm đến máy tính nhỏ.) - Đúng, vì bài nghe nói rằng sau chương trình, nhiều người nhận ra tầm quan trọng của microcomputers.</li>     <li><span class="text-danger">a company started their researches on tiny computers.</span> ❌ (Một công ty bắt đầu nghiên cứu về máy tính nhỏ.) - Sai, vì chương trình không đề cập đến việc một công ty nào bắt đầu nghiên cứu máy tính nhỏ sau khi chương trình được phát sóng.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question13">
+						<div class="fw-bold mb-2">
+							Câu 13: The BBC wanted to design a micro computer that was _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. expensive															</div>
+																				<div class="ps-4 mb-2">
+																	B. television-oriented															</div>
+																				<div class="ps-4 mb-2">
+																	C. big															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. affordable</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>affordable.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, mục tiêu của BBC khi thiết kế máy tính được đề cập:</p> <p>"So the BBC decided to start a new project to build a computer that was affordable, but that had lots of functions. Text, graphics, sound, music, programming, even artificial intelligence."</p>  <p>"Vì vậy, BBC quyết định bắt đầu một dự án mới để chế tạo một chiếc máy tính có giá cả phải chăng, nhưng vẫn có nhiều chức năng. Văn bản, đồ họa, âm thanh, âm nhạc, lập trình, thậm chí cả trí tuệ nhân tạo."</p>  <p>Điều này cho thấy rằng <strong>BBC muốn thiết kế một chiếc microcomputer có giá cả hợp lý</strong>. Do đó, đáp án chính xác là <strong>affordable.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">expensive.</span> ❌ (Đắt đỏ.) - Sai, vì mục tiêu của BBC là tạo ra một chiếc máy tính có giá cả phải chăng.</li>     <li><span class="text-success"><strong>affordable.</strong></span> ✅ (Giá cả phải chăng.) - Đúng, vì bài nghe nói rõ rằng BBC muốn sản xuất một chiếc máy tính có giá hợp lý nhưng vẫn đầy đủ chức năng.</li>     <li><span class="text-danger">big.</span> ❌ (Lớn.) - Sai, vì BBC muốn chế tạo một "microcomputer" tức là một máy tính nhỏ gọn, không phải máy lớn.</li>     <li><span class="text-danger">television-oriented.</span> ❌ (Tập trung vào lĩnh vực truyền hình.) - Sai, vì máy tính này được thiết kế để sử dụng đa chức năng, không chỉ phục vụ truyền hình.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question14">
+						<div class="fw-bold mb-2">
+							Câu 14: How did the BBC turn the "microcomputers" into reality?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. They made their computers with lots of functions.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. They found a computer company to make their computer.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. They hired a big corporation to finish their ideas.															</div>
+																				<div class="ps-4 mb-2">
+																	D. They started a new division to make their computers.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>They found a computer company to make their computer.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, cách BBC hiện thực hóa ý tưởng về microcomputers được đề cập:</p> <p>"The BBC was, and still is, in the business of making television and radio programs, not computers. So they wanted to find a computer company that could make the computer and put the BBC’s name on it."</p>  <p>"BBC trước đây và hiện tại đều hoạt động trong lĩnh vực sản xuất chương trình truyền hình và radio, chứ không phải sản xuất máy tính. Vì vậy, họ muốn tìm một công ty máy tính có thể chế tạo chiếc máy tính và gắn tên BBC lên đó."</p>  <p>Điều này cho thấy rằng <strong>BBC đã tìm một công ty máy tính để sản xuất chiếc máy tính của họ</strong>. Do đó, đáp án chính xác là <strong>They found a computer company to make their computer.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">They made their computers with lots of functions.</span> ❌ (Họ tự chế tạo máy tính với nhiều chức năng.) - Sai, vì BBC không trực tiếp sản xuất máy tính mà chỉ hợp tác với một công ty.</li>     <li><span class="text-success"><strong>They found a computer company to make their computer.</strong></span> ✅ (Họ tìm một công ty máy tính để chế tạo máy tính cho mình.) - Đúng, vì bài nghe nói rõ rằng BBC tìm một công ty để thực hiện việc này.</li>     <li><span class="text-danger">They started a new division to make their computers.</span> ❌ (Họ thành lập một bộ phận mới để sản xuất máy tính.) - Sai, vì BBC không có bộ phận sản xuất máy tính, họ hợp tác với công ty khác.</li>     <li><span class="text-danger">They hired a big corporation to finish their ideas.</span> ❌ (Họ thuê một tập đoàn lớn để thực hiện ý tưởng của mình.) - Sai, vì BBC hợp tác với Acorn, một công ty nhỏ, chứ không phải một tập đoàn lớn.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question15">
+						<div class="fw-bold mb-2">
+							Câu 15: The BBC computers _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. were made by a big company.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. were mainly used by children in schools.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. were not successful at first.															</div>
+																				<div class="ps-4 mb-2">
+																	D. were famous with Model C.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>were mainly used by children in schools.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, thông tin về cách BBC microcomputers được sử dụng được đề cập:</p> <p>"The computer was an immediate success, mainly because schools in Britain bought many of them to teach computer skills to students."</p>  <p>"Chiếc máy tính này đã thành công ngay lập tức, chủ yếu vì các trường học ở Anh đã mua rất nhiều để dạy kỹ năng máy tính cho học sinh."</p>  <p>Điều này cho thấy rằng <strong>máy tính BBC chủ yếu được sử dụng bởi trẻ em trong trường học</strong>. Do đó, đáp án chính xác là <strong>were mainly used by children in schools.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">were made by a big company.</span> ❌ (Được sản xuất bởi một công ty lớn.) - Sai, vì BBC hợp tác với Acorn, một công ty nhỏ, để sản xuất máy tính.</li>     <li><span class="text-danger">were famous with Model C.</span> ❌ (Nổi tiếng với Model C.) - Sai, vì bài nghe đề cập đến Model A và Model B, không nhắc đến Model C.</li>     <li><span class="text-danger">were not successful at first.</span> ❌ (Lúc đầu không thành công.) - Sai, vì bài nghe nói rằng máy tính BBC đã thành công ngay lập tức.</li>     <li><span class="text-success"><strong>were mainly used by children in schools.</strong></span> ✅ (Chủ yếu được sử dụng bởi trẻ em trong trường học.) - Đúng, vì bài nghe nhấn mạnh rằng các trường học ở Anh đã mua rất nhiều máy tính BBC để dạy học sinh.</li> </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="12" id="progress-question-12">
+				   13				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="13" id="progress-question-13">
+				   14				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="14" id="progress-question-14">
+				   15				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

@@ -1,0 +1,591 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 08 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87729				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/12				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp2-1664818798_f74880ea7d9b192794b0.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>In this part, you will hear three conversations. The conversations will be played once only. There are four questions for each conversation.<br>
+For each question, choose the right answer A, B, C, or D. Part 2, questions 9 to 12. First, you will have some time to look at questions 9 to 12. Now we're ready to start.<br>
+Listen and answer questions 9 to 12. You will hear the recording once only. <br>
+I don't remember much of that lecture.<br>
+The doctor gave me this medicine for my cough, but I don't like it. It seems to make me awfully sleepy and I can't follow my lectures. Well, if you don't take it, none of us will be able to follow our lectures.<br>
+All we'll hear is you coughing. Oh dear, do you think I'll annoy everybody? Yes, you could study at home for a couple of days. You know, have some time off until it gets better.<br>
+Oh, I couldn't do that. I'd miss too much. And I get really uncomfortable when I have a lot of catching up to do.<br>
+Last year I missed a whole week when I fell off my bike and had that enormous bandage on my hand. It took me ages to do all the work when I came back. Oh, you worry too much.<br>
+You can work at home. Just get Mr Grey to tell you which parts of the course book we'll be covering and read it yourself at home. All he does is go through the book anyway.<br>
+You might as well do it yourself. Oh, that's a bit unfair. I think Mr Grey's really nice.<br>
+He's always willing to stay behind after class if you don't understand something. Being really nice and never in a hurry doesn't make him a good lecturer. Anyway, I think you should look after your health first, and ours.<br>
+If we sit in that small, hot room with you for the next three days, we'll all have your cough by the end of it. Perhaps you're right. I don't care about myself, but I wouldn't like other people to blame me for their illnesses.<br>
+I have got a bit of a temperature now, too. So maybe I'll go and see Mr Grey after lunch and tell him I won't be at this afternoon's lecture. Or the next two.<br>
+Come on, you've got to get better. I suppose you're right. Then we can all go out as we planned at the weekend.<br>
+OK, then. I don't want to miss that. And I do feel ill.<br>
+Now you will have some time to review questions 9 to 12. Part 2. Questions 13 to 16. First you will have some time to look at questions 13 to 16.<br>
+Now we're ready to start. Listen and answer questions 13 to 16. You will hear the recording once only.<br>
+What shall we do tonight? Shall we go out somewhere? No, I'm tired. I've had a really hard day. That's a bit boring.<br>
+Come on, let's go to a cinema or see that new play at the theatre. Not tonight. Why don't we rent a video and stay in? Well, I'd rather go out.<br>
+But if you're tired, OK. So what shall we have? How about that new Italian film? No, far too serious for me. I'd fall asleep.<br>
+Why can't we get something funny? A film with Rick Moranis or someone like that. A comedy? No, thanks. I'm not wasting my money.<br>
+Well, I'll pay if you're going to be difficult about it. I'm not being difficult. I just don't want to see a comedy.<br>
+Fine. What else do you suggest then? How about a Robert De Niro? We've seen them all. Maybe, but they're great films.<br>
+Let's watch one again. Now you're suggesting something that's a real waste of money. And I hate seeing films twice, you know that.<br>
+OK, OK. What then? Oh, forget it. We're obviously not going to agree anyway.<br>
+No, I tell you what. You go down to the video shop and choose a film. Whatever it is, I'll watch it.<br>
+Really? And you won't be difficult or make me feel guilty? No. Go on, off you go. I'll make something to eat while you're out.<br>
+Great. See you in a few minutes then. Bye.<br>
+Now you will have some time to review questions 13 to 16. Part 2. Questions 17 to 20. First you will have some time to look at questions 17 to 20.<br>
+Now we're ready to start. Listen and answer questions 17 to 20. You will hear the recording once only.<br>
+Hi Ben. Only one more week at college and then the summer holidays begin. Great, isn't it? I don't know.<br>
+It might get a bit boring. I don't think I've got enough money to go anywhere nice for a holiday this year. It would be nice to have lots of money to spend, but a good holiday doesn't have to be expensive.<br>
+Oh yes it does. The best holiday I ever had was a few years ago when I went to Greece. I want to fly off somewhere hot and lie on the beach and go swimming.<br>
+Yes, well I can't afford to do that either. So what are you doing this summer? I'm going on a walking holiday in Scotland with some friends. We went last year and we really enjoyed it.<br>
+We walked all day and spent the nights in youth hostels. Why don't you come with us? We're going for two weeks. It won't cost much and you'll come home feeling really relaxed and fit.<br>
+I'm not sure. Walking all day sounds like hard work to me. And surely you're not hoping for lots of sunshine in Scotland? It did rain a bit last year but most of the time it was sunny.<br>
+Anyway, it's not good walking in the heat. You have to stop all the time to rest and have drinks. Well, I like the sun and I like to stay in comfortable hotels, not youth hostels.<br>
+But they are comfortable. They're basic and the food's often not very good. But they're very clean and cheap.<br>
+In fact, I prefer them to hotels because the people are always so friendly. Maybe. Look, Lisa, thanks a lot for asking me but I think I'll just stay home and get bored.<br>
+Now you will have some time to review questions 17 to 20. That is the end of part 2.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 2 Trong phần này, bạn sẽ nghe ba cuộc hội thoại. Các cuộc hội thoại sẽ chỉ được phát một lần duy nhất. Mỗi cuộc hội thoại có bốn câu hỏi đi kèm. Với mỗi câu hỏi, hãy chọn đáp án đúng A, B, C hoặc D. Phần 2, câu hỏi 9-12 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 9 đến 12. Bây giờ, chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 9 đến 12. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Mình không nhớ được nhiều về bài giảng đó. Bác sĩ kê đơn thuốc này cho mình để trị ho, nhưng mình không thích nó. Nó khiến mình buồn ngủ kinh khủng và không thể tập trung vào bài giảng. Ồ, nếu cậu không uống thuốc, bọn mình cũng không thể tập trung vào bài giảng đâu. Vì sao chứ? Vì tất cả những gì bọn mình nghe thấy chỉ là tiếng ho của cậu thôi. Ồ trời ơi, cậu nghĩ mình sẽ làm phiền mọi người sao? Đúng vậy, cậu có thể học ở nhà vài ngày. Cậu nên nghỉ ngơi cho đến khi khỏi hẳn. Ồ, mình không thể làm thế được. Mình sẽ bỏ lỡ quá nhiều bài giảng. Và mình cảm thấy rất khó chịu khi phải học bù quá nhiều. Năm ngoái mình đã nghỉ cả một tuần khi bị ngã xe đạp và phải băng bó cả bàn tay. Mất rất nhiều thời gian để theo kịp bài học khi quay lại trường. Cậu lo lắng quá rồi. Cậu có thể tự học ở nhà mà. Hãy nhờ thầy Grey cho biết phần nào trong sách mà chúng ta sẽ học và cậu có thể tự đọc ở nhà. Ông ấy chỉ giảng lại nội dung trong sách thôi, cậu có thể tự học mà. Cậu nói vậy là không công bằng. Mình nghĩ thầy Grey rất tốt. Ông ấy luôn sẵn sàng ở lại sau giờ học nếu có ai chưa hiểu bài. Nhưng tốt bụng và không vội vã không có nghĩa là giảng viên giỏi đâu. Dù sao thì, mình nghĩ cậu nên chăm sóc sức khỏe trước. Nếu chúng ta ngồi trong căn phòng nhỏ và nóng đó cùng cậu trong ba ngày tới, thì đến cuối cùng tất cả bọn mình cũng sẽ bị ho theo. Có lẽ cậu nói đúng. Mình không quan tâm đến bản thân, nhưng mình không muốn người khác trách mình vì đã làm họ ốm. Mình cũng hơi sốt rồi. Vậy có lẽ sau bữa trưa, mình sẽ gặp thầy Grey và nói với thầy rằng mình sẽ không đến lớp chiều nay. Hoặc cả hai ngày tới. Cố gắng mau khỏe nhé! Cậu nói đúng. Như vậy chúng ta có thể cùng đi chơi vào cuối tuần như kế hoạch. Ừ, mình không muốn bỏ lỡ đâu. Và mình thực sự cảm thấy không khỏe lắm. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 9 đến 12. Phần 2, câu hỏi 13-16 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 13 đến 16. Bây giờ, chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 13 đến 16. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Tối nay chúng ta làm gì đây? Có nên ra ngoài không? Không, mình mệt quá. Hôm nay mình có một ngày thực sự vất vả. Như thế thì chán lắm. Đi xem phim hay đi xem vở kịch mới ở nhà hát đi. Không phải tối nay. Sao chúng ta không thuê một bộ phim và ở nhà xem? Mình muốn ra ngoài hơn, nhưng nếu cậu mệt thì thôi vậy. Chúng ta xem phim gì đây? Còn bộ phim Ý mới kia thì sao? Không, nó quá nghiêm túc với mình. Mình sẽ ngủ mất. Sao chúng ta không xem một bộ phim hài? Một phim có Rick Moranis chẳng hạn. Phim hài á? Không, cảm ơn. Mình không muốn lãng phí tiền vào mấy bộ phim đó đâu. Được rồi, nếu cậu cứ khó tính như vậy thì mình sẽ trả tiền. Mình không khó tính. Chỉ là mình không muốn xem phim hài thôi. Được rồi. Vậy cậu đề xuất bộ phim nào khác đi? Còn phim của Robert De Niro thì sao? Chúng ta xem hết rồi còn gì. Có thể, nhưng chúng vẫn là những bộ phim hay mà. Xem lại một bộ phim thì đúng là lãng phí tiền thật đấy. Và cậu biết mình ghét xem phim hai lần mà. Được rồi, được rồi. Vậy xem cái gì bây giờ? Ôi, quên đi. Chúng ta rõ ràng sẽ không thể đồng ý với nhau đâu. Khoan đã, mình có ý này. Cậu xuống cửa hàng cho thuê phim và chọn một bộ phim đi. Mình sẽ xem bất cứ bộ phim nào cậu chọn. Thật chứ? Cậu sẽ không khó chịu hay làm mình cảm thấy có lỗi chứ? Không đâu. Đi đi. Trong lúc đó, mình sẽ làm đồ ăn. Tuyệt. Gặp cậu sau vài phút nữa nhé. Tạm biệt! Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 13 đến 16. Phần 2, câu hỏi 17-20 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 17 đến 20. Bây giờ, chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 17 đến 20. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Chào Ben. Chỉ còn một tuần nữa là nghỉ hè rồi. Thật tuyệt, đúng không? Mình không chắc nữa. Chắc sẽ hơi chán đấy. Mình nghĩ mình không có đủ tiền để đi nghỉ ở đâu đó thú vị năm nay. Một kỳ nghỉ vui vẻ không nhất thiết phải tốn kém đâu. Ồ, có đấy. Kỳ nghỉ tuyệt nhất mà mình từng có là vài năm trước khi mình đến Hy Lạp. Mình muốn bay đến một nơi ấm áp, nằm trên bãi biển và đi bơi. Ừ, mình cũng không đủ tiền làm vậy. Vậy hè này cậu định làm gì? Mình sẽ đi du lịch đi bộ ở Scotland với vài người bạn. Chúng mình đã đi năm ngoái và thực sự thích. Chúng mình đi bộ cả ngày và nghỉ qua đêm ở các nhà trọ thanh niên. Sao cậu không đi cùng bọn mình? Chúng mình sẽ đi trong hai tuần. Chi phí không nhiều và khi về, cậu sẽ cảm thấy thư giãn và khỏe khoắn. Mình không chắc lắm. Đi bộ cả ngày nghe có vẻ mệt mỏi. Và cậu có thực sự mong có nhiều nắng ở Scotland không? Năm ngoái cũng có mưa một chút, nhưng phần lớn thời gian trời nắng. Dù sao thì, đi bộ dưới trời quá nóng cũng không tốt đâu. Cậu phải dừng lại để nghỉ ngơi và uống nước liên tục. Mình thích ánh nắng và thích ở khách sạn thoải mái hơn, không phải nhà trọ thanh niên. Nhưng chúng cũng khá thoải mái mà. Chúng đơn giản thôi và đồ ăn không phải lúc nào cũng ngon. Nhưng chúng rất sạch sẽ và rẻ. Thực tế, mình còn thích chúng hơn khách sạn vì mọi người ở đó rất thân thiện. Có thể. Cảm ơn cậu, Lisa, nhưng mình nghĩ mình sẽ ở nhà và chịu chán vậy. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 17 đến 20. Đây là phần kết thúc của Phần 2.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What is Kate's health problem?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. He has coughs.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. She has stomachache.															</div>
+																				<div class="ps-4 mb-2">
+																	C. She has headache.															</div>
+																				<div class="ps-4 mb-2">
+																	D. She has toothache.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>She has coughs.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, Kate nói về tình trạng sức khỏe của cô ấy:</p> <p>"The doctor gave me this medicine for my cough, but I don't like it. It seems to make me awfully sleepy and I can't follow my lectures."</p>  <p>"Bác sĩ đã kê đơn thuốc này cho tôi để trị ho, nhưng tôi không thích nó. Nó khiến tôi buồn ngủ khủng khiếp và tôi không thể theo kịp bài giảng."</p>  <p>Điều này cho thấy rằng <strong>Kate bị ho</strong>. Do đó, đáp án chính xác là <strong>She has coughs.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-success"><strong>She has coughs.</strong></span> ✅ (Cô ấy bị ho.) - Đúng, vì cô ấy nói rằng bác sĩ đã kê đơn thuốc trị ho cho cô.</li>     <li><span class="text-danger">She has headache.</span> ❌ (Cô ấy bị đau đầu.) - Sai, vì bài nghe không đề cập đến đau đầu.</li>     <li><span class="text-danger">She has toothache.</span> ❌ (Cô ấy bị đau răng.) - Sai, vì bài nghe không nói đến đau răng.</li>     <li><span class="text-danger">She has stomachache.</span> ❌ (Cô ấy bị đau bụng.) - Sai, vì bài nghe không đề cập đến đau bụng.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: What does Kate's problem affect her classmates?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It makes them happy.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. It makes them annoyed.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. It makes them funny.															</div>
+																				<div class="ps-4 mb-2">
+																	D. It makes them excited.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>It makes them annoyed.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, bạn của Kate nói về việc cơn ho của cô ấy ảnh hưởng đến lớp học như thế nào:</p> <p>"Well, if you don't take it, none of us will be able to follow our lectures. All we'll hear is you coughing."</p> <p>"Oh dear, do you think I'll annoy everybody?"</p> <p>"Yes, you could study at home for a couple of days."</p>  <p>"Chà, nếu bạn không uống thuốc, không ai trong chúng ta có thể theo kịp bài giảng. Tất cả những gì chúng ta sẽ nghe chỉ là tiếng ho của bạn."</p> <p>"Ôi trời, bạn có nghĩ rằng mình sẽ làm phiền mọi người không?"</p> <p>"Có, bạn có thể học ở nhà vài ngày."</p>  <p>Điều này cho thấy rằng <strong>việc Kate ho liên tục sẽ làm phiền (annoy) các bạn cùng lớp</strong>. Do đó, đáp án chính xác là <strong>It makes them annoyed.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">It makes them funny.</span> ❌ (Nó khiến họ thấy buồn cười.) - Sai, vì các bạn cùng lớp không thấy vui mà cảm thấy bị làm phiền.</li>     <li><span class="text-success"><strong>It makes them annoyed.</strong></span> ✅ (Nó khiến họ thấy khó chịu.) - Đúng, vì bài nghe nói rằng họ không thể tập trung vào bài giảng do tiếng ho của Kate.</li>     <li><span class="text-danger">It makes them happy.</span> ❌ (Nó khiến họ thấy vui.) - Sai, vì họ cảm thấy bị ảnh hưởng bởi tiếng ho chứ không vui vẻ.</li>     <li><span class="text-danger">It makes them excited.</span> ❌ (Nó khiến họ thấy hào hứng.) - Sai, vì bài nghe không nhắc đến sự hào hứng, mà chỉ nói về sự khó chịu do tiếng ho.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What did Kate have last year?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. She had stomachache.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. She had a fall off her bike.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. She had coughs.															</div>
+																				<div class="ps-4 mb-2">
+																	D. She had headache.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>She had a fall off her bike.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, Kate nhắc lại sự cố mà cô ấy gặp phải vào năm ngoái:</p> <p>"Last year I missed a whole week when I fell off my bike and had that enormous bandage on my hand."</p>  <p>"Năm ngoái tôi đã nghỉ học cả tuần khi bị ngã xe đạp và phải băng bó một bàn tay rất to."</p>  <p>Điều này cho thấy rằng <strong>năm ngoái Kate bị ngã xe đạp</strong>. Do đó, đáp án chính xác là <strong>She had a fall off her bike.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">She had coughs.</span> ❌ (Cô ấy bị ho.) - Sai, vì cô ấy đang bị ho hiện tại, nhưng năm ngoái cô ấy bị ngã xe đạp.</li>     <li><span class="text-danger">She had headache.</span> ❌ (Cô ấy bị đau đầu.) - Sai, vì bài nghe không đề cập đến việc Kate bị đau đầu năm ngoái.</li>     <li><span class="text-success"><strong>She had a fall off her bike.</strong></span> ✅ (Cô ấy bị ngã xe đạp.) - Đúng, vì Kate nói rằng cô ấy đã bị ngã khỏi xe đạp và phải băng bó tay.</li>     <li><span class="text-danger">She had stomachache.</span> ❌ (Cô ấy bị đau bụng.) - Sai, vì bài nghe không nhắc đến việc cô ấy bị đau bụng.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What does Kate have now, too?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. She has headache.															</div>
+																				<div class="ps-4 mb-2">
+																	B. She has backache.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. She has temperature.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. She has toothache.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>She has temperature.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, Kate đề cập đến tình trạng sức khỏe hiện tại của cô ấy:</p> <p>"I have got a bit of a temperature now, too."</p>  <p>"Bây giờ tôi cũng hơi bị sốt."</p>  <p>Điều này cho thấy rằng <strong>Kate hiện tại đang bị sốt</strong>. Do đó, đáp án chính xác là <strong>She has temperature.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">She has backache.</span> ❌ (Cô ấy bị đau lưng.) - Sai, vì bài nghe không đề cập đến việc Kate bị đau lưng.</li>     <li><span class="text-danger">She has headache.</span> ❌ (Cô ấy bị đau đầu.) - Sai, vì bài nghe không nói rằng Kate bị đau đầu.</li>     <li><span class="text-danger">She has toothache.</span> ❌ (Cô ấy bị đau răng.) - Sai, vì bài nghe không đề cập đến đau răng.</li>     <li><span class="text-success"><strong>She has temperature.</strong></span> ✅ (Cô ấy bị sốt.) - Đúng, vì Kate nói rằng cô ấy đang bị sốt.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: Why does the man want to gout out?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Because he feels cold staying at home.															</div>
+																				<div class="ps-4 mb-2">
+																	B. Because he feels safe staying at home.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Because he feels bored staying at home.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Because he feels hot staying at home.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>Because he feels bored staying at home.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, người đàn ông bày tỏ mong muốn ra ngoài:</p> <p>"What shall we do tonight? Shall we go out somewhere?"</p> <p>"No, I'm tired. I've had a really hard day."</p> <p>"That's a bit boring. Come on, let's go to a cinema or see that new play at the theatre."</p>  <p>"Tối nay chúng ta làm gì đây? Chúng ta có nên ra ngoài không?"</p> <p>"Không, mình mệt lắm. Hôm nay là một ngày thực sự vất vả."</p> <p>"Như vậy thì chán quá. Thôi nào, đi xem phim hoặc vở kịch mới ở nhà hát đi."</p>  <p>Điều này cho thấy rằng <strong>người đàn ông muốn ra ngoài vì cảm thấy chán khi ở nhà</strong>. Do đó, đáp án chính xác là <strong>Because he feels bored staying at home.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-success"><strong>Because he feels bored staying at home.</strong></span> ✅ (Vì anh ấy cảm thấy chán khi ở nhà.) - Đúng, vì anh ấy nói rằng ở nhà rất chán và muốn đi ra ngoài.</li>     <li><span class="text-danger">Because he feels safe staying at home.</span> ❌ (Vì anh ấy cảm thấy an toàn khi ở nhà.) - Sai, vì bài nghe không đề cập đến sự an toàn.</li>     <li><span class="text-danger">Because he feels cold staying at home.</span> ❌ (Vì anh ấy cảm thấy lạnh khi ở nhà.) - Sai, vì bài nghe không nhắc đến việc anh ấy cảm thấy lạnh.</li>     <li><span class="text-danger">Because he feels hot staying at home.</span> ❌ (Vì anh ấy cảm thấy nóng khi ở nhà.) - Sai, vì bài nghe không nói rằng anh ấy thấy nóng.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Why does the woman want to stay at home?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Because she feels tired.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Because she has stomach ache.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Because she has toothache.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Because she has coughs.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>Because she feels tired.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, người phụ nữ giải thích lý do cô ấy muốn ở nhà:</p> <p>"No, I'm tired. I've had a really hard day."</p>  <p>"Không, mình mệt lắm. Hôm nay là một ngày thực sự vất vả."</p>  <p>Điều này cho thấy rằng <strong>người phụ nữ muốn ở nhà vì cảm thấy mệt mỏi</strong>. Do đó, đáp án chính xác là <strong>Because she feels tired.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">Because she has coughs.</span> ❌ (Vì cô ấy bị ho.) - Sai, vì bài nghe không đề cập đến việc cô ấy bị ho.</li>     <li><span class="text-success"><strong>Because she feels tired.</strong></span> ✅ (Vì cô ấy cảm thấy mệt mỏi.) - Đúng, vì cô ấy nói rằng hôm nay là một ngày rất vất vả và cô ấy cảm thấy mệt.</li>     <li><span class="text-danger">Because she has toothache.</span> ❌ (Vì cô ấy bị đau răng.) - Sai, vì bài nghe không nhắc đến việc cô ấy bị đau răng.</li>     <li><span class="text-danger">Because she has stomach ache.</span> ❌ (Vì cô ấy bị đau bụng.) - Sai, vì bài nghe không nói về việc cô ấy bị đau bụng.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: Why doesn't the woman want to watch an Italian film?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Because she has stomachache.															</div>
+																				<div class="ps-4 mb-2">
+																	B. Because she is serious about it.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Because she's afraid she will fall asleep watching it.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Because she is short of money.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>Because she's afraid she will fall asleep watching it.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, người phụ nữ nói về lý do cô ấy không muốn xem một bộ phim Ý:</p> <p>"How about that new Italian film?"</p> <p>"No, far too serious for me. I'd fall asleep."</p>  <p>"Bạn nghĩ sao về bộ phim Ý mới đó?"</p> <p>"Không, nó quá nghiêm túc đối với mình. Mình sẽ ngủ gật mất."</p>  <p>Điều này cho thấy rằng <strong>người phụ nữ không muốn xem bộ phim Ý vì sợ sẽ ngủ gật khi xem</strong>. Do đó, đáp án chính xác là <strong>Because she's afraid she will fall asleep watching it.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">Because she is short of money.</span> ❌ (Vì cô ấy thiếu tiền.) - Sai, vì bài nghe không nhắc đến vấn đề tiền bạc.</li>     <li><span class="text-danger">Because she is serious about it.</span> ❌ (Vì cô ấy nghiêm túc về bộ phim.) - Sai, vì cô ấy nói bộ phim quá nghiêm túc đối với cô, chứ không phải vì cô ấy nghiêm túc.</li>     <li><span class="text-success"><strong>Because she's afraid she will fall asleep watching it.</strong></span> ✅ (Vì cô ấy sợ sẽ ngủ gật khi xem nó.) - Đúng, vì cô ấy nói rằng bộ phim quá nghiêm túc và cô ấy sẽ ngủ gật.</li>     <li><span class="text-danger">Because she has stomachache.</span> ❌ (Vì cô ấy bị đau bụng.) - Sai, vì bài nghe không nhắc đến việc cô ấy bị đau bụng.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: Why doesn't the woman want to watch a Robert de Niro?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Because she doesn't want to watch it the third time.															</div>
+																				<div class="ps-4 mb-2">
+																	B. Because she feels too serious to watch it.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Because she feels too busy to watch it.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Because she doesn't want to watch it the second time.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>Because she doesn't want to watch it the second time.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, người đàn ông đề nghị xem một bộ phim của Robert De Niro:</p> <p>"How about a Robert De Niro?"</p> <p>"We've seen them all."</p> <p>"Maybe, but they're great films. Let's watch one again."</p> <p>"Now you're suggesting something that's a real waste of money. And I hate seeing films twice, you know that."</p>  <p>"Bạn nghĩ sao về một bộ phim của Robert De Niro?"</p> <p>"Chúng ta đã xem hết rồi."</p> <p>"Có thể, nhưng đó là những bộ phim rất hay. Hãy xem lại một bộ đi."</p> <p>"Bây giờ bạn đang đề xuất một điều thực sự lãng phí tiền bạc. Và bạn biết mà, mình ghét xem phim hai lần."</p>  <p>Điều này cho thấy rằng <strong>người phụ nữ không muốn xem phim của Robert De Niro vì cô ấy ghét xem phim lần thứ hai</strong>. Do đó, đáp án chính xác là <strong>Because she doesn't want to watch it the second time.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">Because she feels too busy to watch it.</span> ❌ (Vì cô ấy quá bận để xem nó.) - Sai, vì cô ấy không nhắc đến việc quá bận.</li>     <li><span class="text-danger">Because she feels too serious to watch it.</span> ❌ (Vì cô ấy quá nghiêm túc để xem nó.) - Sai, vì bài nghe không đề cập đến việc cô ấy cảm thấy quá nghiêm túc.</li>     <li><span class="text-danger">Because she doesn't want to watch it the third time.</span> ❌ (Vì cô ấy không muốn xem nó lần thứ ba.) - Sai, vì cô ấy nói rằng cô ấy ghét xem phim hai lần, không đề cập đến lần thứ ba.</li>     <li><span class="text-success"><strong>Because she doesn't want to watch it the second time.</strong></span> ✅ (Vì cô ấy không muốn xem nó lần thứ hai.) - Đúng, vì cô ấy nói rằng mình ghét xem phim hai lần.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What does the girl think about a good holiday?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. It may be cheap.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. It may be expensive.															</div>
+																				<div class="ps-4 mb-2">
+																	C. It may be very cheap.															</div>
+																				<div class="ps-4 mb-2">
+																	D. It may be very expensive.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>It may be cheap.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, cô gái và chàng trai nói về kỳ nghỉ:</p> <p>"I don't think I've got enough money to go anywhere nice for a holiday this year."</p> <p>"It would be nice to have lots of money to spend, but a good holiday doesn't have to be expensive."</p>  <p>"Mình không nghĩ rằng mình có đủ tiền để đi nghỉ ở đâu đó tuyệt vời trong năm nay."</p> <p>"Sẽ thật tuyệt nếu có nhiều tiền để tiêu, nhưng một kỳ nghỉ tốt không nhất thiết phải đắt đỏ."</p>  <p>Điều này cho thấy rằng <strong>cô gái nghĩ rằng một kỳ nghỉ tốt có thể rẻ</strong>, không nhất thiết phải đắt đỏ. Do đó, đáp án chính xác là <strong>It may be cheap.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-success"><strong>It may be cheap.</strong></span> ✅ (Nó có thể rẻ.) - Đúng, vì cô ấy nói rằng một kỳ nghỉ tốt không nhất thiết phải đắt đỏ.</li>     <li><span class="text-danger">It may be very cheap.</span> ❌ (Nó có thể rất rẻ.) - Sai, vì cô ấy không nói rằng kỳ nghỉ phải rất rẻ, chỉ nói rằng nó không cần quá đắt.</li>     <li><span class="text-danger">It may be expensive.</span> ❌ (Nó có thể đắt.) - Sai, vì cô ấy nói rằng một kỳ nghỉ tốt không nhất thiết phải đắt.</li>     <li><span class="text-danger">It may be very expensive.</span> ❌ (Nó có thể rất đắt.) - Sai, vì cô ấy không nói rằng kỳ nghỉ tốt cần phải rất đắt đỏ.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: Why doesn't the boy want to walk?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Because she doesn't like the sounds of people walking.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Because he finds it hard to do it.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Because he feels too hot to do it.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Because he doesn't like hard work.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>Because he finds it hard to do it.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, chàng trai nói về lý do tại sao anh ấy không muốn đi bộ:</p> <p>"I'm going on a walking holiday in Scotland with some friends. We went last year and we really enjoyed it."</p> <p>"I'm not sure. Walking all day sounds like hard work to me."</p>  <p>"Mình sẽ đi nghỉ ở Scotland cùng một số người bạn. Năm ngoái bọn mình đã đi và rất thích."</p> <p>"Mình không chắc lắm. Đi bộ cả ngày nghe có vẻ là công việc vất vả với mình."</p>  <p>Điều này cho thấy rằng <strong>chàng trai không muốn đi bộ vì anh ấy thấy việc đó quá khó</strong>. Do đó, đáp án chính xác là <strong>Because he finds it hard to do it.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">Because he feels too hot to do it.</span> ❌ (Vì anh ấy cảm thấy quá nóng để làm điều đó.) - Sai, vì bài nghe không đề cập đến việc anh ấy cảm thấy nóng.</li>     <li><span class="text-success"><strong>Because he finds it hard to do it.</strong></span> ✅ (Vì anh ấy thấy nó khó để làm.) - Đúng, vì anh ấy nói rằng đi bộ cả ngày có vẻ là công việc vất vả.</li>     <li><span class="text-danger">Because he doesn't like hard work.</span> ❌ (Vì anh ấy không thích làm việc nặng nhọc.) - Sai, vì bài nghe không nói rằng anh ấy ghét công việc nặng nhọc, chỉ nói rằng đi bộ cả ngày nghe có vẻ khó khăn.</li>     <li><span class="text-danger">Because she doesn't like the sounds of people walking.</span> ❌ (Vì cô ấy không thích âm thanh của người đi bộ.) - Sai, vì bài nghe không đề cập đến âm thanh của người đi bộ.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: What does the girl think about the food in Youth Hostels?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It is comfortable.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. It is clean and cheap.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. It is sometimes good.															</div>
+																				<div class="ps-4 mb-2">
+																	D. It is good.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>It is clean and cheap.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, cô gái nói về ký túc xá dành cho thanh niên:</p> <p>"But they are comfortable. They're basic and the food's often not very good. But they're very clean and cheap."</p>  <p>"Nhưng chúng khá thoải mái. Chúng khá cơ bản và đồ ăn thì thường không quá ngon. Nhưng chúng rất sạch sẽ và rẻ."</p>  <p>Điều này cho thấy rằng <strong>cô gái nghĩ rằng thực phẩm trong ký túc xá không quá ngon, nhưng nơi này rất sạch sẽ và rẻ</strong>. Do đó, đáp án chính xác là <strong>It is clean and cheap.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">It is comfortable.</span> ❌ (Nó thoải mái.) - Sai, vì cô gái nói rằng nơi ở thì thoải mái, nhưng không đề cập đến đồ ăn như vậy.</li>     <li><span class="text-danger">It is good.</span> ❌ (Nó tốt.) - Sai, vì cô gái nói rằng đồ ăn thường không quá ngon.</li>     <li><span class="text-danger">It is sometimes good.</span> ❌ (Đôi khi nó ngon.) - Sai, vì cô gái không nói rằng đồ ăn đôi khi ngon, mà chỉ nói rằng nó thường không quá ngon.</li>     <li><span class="text-success"><strong>It is clean and cheap.</strong></span> ✅ (Nó sạch sẽ và rẻ.) - Đúng, vì cô gái nói rằng ký túc xá rất sạch sẽ và rẻ.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: What does the boy decide to do in the end?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. leave home.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. go home.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. enjoy his holiday home.															</div>
+																				<div class="ps-4 mb-2">
+																	D. sell his home.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>go home.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, chàng trai nói về quyết định của mình cuối cùng:</p> <p>"Look, Lisa, thanks a lot for asking me but I think I'll just stay home and get bored."</p>  <p>"Lisa này, cảm ơn cậu rất nhiều vì đã rủ mình, nhưng mình nghĩ mình sẽ chỉ ở nhà và chán thôi."</p>  <p>Điều này cho thấy rằng <strong>cuối cùng chàng trai quyết định ở nhà</strong>. Do đó, đáp án chính xác là <strong>go home.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-success"><strong>go home.</strong></span> ✅ (Về nhà.) - Đúng, vì chàng trai quyết định ở nhà thay vì tham gia kỳ nghỉ.</li>     <li><span class="text-danger">leave home.</span> ❌ (Rời khỏi nhà.) - Sai, vì chàng trai quyết định ở lại nhà, không rời đi.</li>     <li><span class="text-danger">sell his home.</span> ❌ (Bán nhà của mình.) - Sai, vì bài nghe không đề cập đến việc bán nhà.</li>     <li><span class="text-danger">enjoy his holiday home.</span> ❌ (Tận hưởng kỳ nghỉ tại nhà.) - Sai, vì chàng trai nói rằng anh ấy sẽ "chán" khi ở nhà, chứ không phải tận hưởng kỳ nghỉ.</li> </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

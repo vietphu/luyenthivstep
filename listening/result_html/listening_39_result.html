@@ -1,0 +1,633 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 39 - Part 3				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87758				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/15				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp3-1664885083_3b372fd020245edeab68.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Part 3 In this part, you will hear three talks, or lectures. The talks or lectures will be played once only. There are five questions for each talk or lecture.<br>
+For each question, choose the right answer, A, B, C, or D. Part 3 Questions 21 to 25 First, you will have some time to look at questions 21 to 25. Now we're ready to start. Listen, and answer questions 21 to 25.<br>
+You will hear the recording once only. <br>
+Coffee can help you live longer There is good news for coffee lovers. A new report claims that regular coffee drinkers may live longer than those who do not drink coffee.<br>
+Researchers say there is growing evidence that coffee benefits the health, makes you live longer, and reduces the risk of heart disease, type 2 diabetes, other life-threatening illnesses, and even suicide. The study was published by the American Heart Association. It looked at the coffee-drinking habits of over 200,000 people who drank between one and five cups of coffee a day.<br>
+Researcher Dr. Frank Hu said this study provides further evidence that moderate consumption of coffee may confer health benefits in terms of reducing premature death due to several diseases. Scientists have been working hard to analyse exactly what is in coffee that provides so many benefits to the health. Dozens of reports in the past few decades have highlighted the positive effects it can have on the body.<br>
+Dr. Hu said it was still unclear precisely how elements within the coffee bean interact with the body. He said, Coffee is a complex beverage. It's very difficult to pinpoint which component of coffee is responsible for which benefit.<br>
+Researchers did not include highly caffeinated drinks in the study. They also pointed out that while coffee seems to have health benefits, added ingredients such as cream, sugar, and certain types of sweeteners do not. Now you will have some time to review questions 21 to 25.<br>
+Part 3. Questions 26 to 30. First, you will have some time to look at questions 26 to 30. More people die from selfies than shark attacks.<br>
+Travellers and phone camera lovers need to note a new danger that has recently come to light. This new, life-threatening hazard has sprung up in the past few years and is now a ubiquitous part of life. It is also proving to be twice as lethal as being killed by a shark.<br>
+What is this potential new menace? Well, it is the selfie. Yes, love them or hate them, the desire to take a photo of yourself in front of a world famous site or to strike a pose and pout with a friend has resulted in more deaths in 2015 than shark attacks. It has been reported that so far this year, 12 people have died as a result of trying to take a selfie.<br>
+This compares to just 6 deaths due to unprovoked shark attacks. Selfie-related accidents can happen in all manner of circumstances. The website wikipedia.com has detailed the 12 deaths seen this year.<br>
+They include two Russian men who were killed while taking a selfie with a hand grenade, three Indian students who were killed by an oncoming train while taking selfies on train tracks, and an American woman who fell to her death while taking a selfie with her boyfriend on a cliff in South Africa. The latest death came last month when a Japanese tourist died falling down the stairs while trying to get a shot of himself at the Taj Mahal in India. There may be more.<br>
+A Russian government spokeswoman told reporters that in July, there were dozens of selfie-related deaths in Russia alone. Now you will have some time to review questions 26 to 30. Part 3. Questions 31 to 35.<br>
+First, you will have some time to look at questions 31 to 35. People are working to an older age in Britain. The number of 70 to 74-year-old people who work has doubled in the past decade.<br>
+Around 10% of British people in their early 70s are now working. It is the highest figure since records began. The British government says just over a quarter of a million 70 to 74-year-olds currently have jobs.<br>
+In 2005, there were around 100,000 of them. The government said people are working to an older age and are deciding to retire later. A Labour Union spokesperson said the reason for people working in their old age is because retirement pensions in Britain are becoming more difficult to live on.<br>
+Many older people have to work and delay retirement to be able to survive. Employment spokesman Francis O'Grady said, He added that, A spokesman for small businesses, John Allen, said more older people were starting their own businesses. He said, Now you will have some time to review questions 31 to 35.<br>
+That is the end of part 3. That is the end of the Listening Comprehension Test.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 3 Trong phần này, bạn sẽ nghe ba bài nói chuyện hoặc bài giảng. Các bài nói chuyện hoặc bài giảng sẽ chỉ được phát một lần duy nhất. Có năm câu hỏi cho mỗi bài nói chuyện hoặc bài giảng. Với mỗi câu hỏi, hãy chọn câu trả lời đúng: A, B, C hoặc D. Câu 21 đến 25 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 21 đến 25. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 21 đến 25. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Uống cà phê có thể giúp bạn sống lâu hơn Có một tin vui dành cho những người yêu thích cà phê. Một báo cáo mới cho thấy rằng những người uống cà phê thường xuyên có thể sống lâu hơn so với những người không uống. Các nhà nghiên cứu cho rằng ngày càng có nhiều bằng chứng cho thấy cà phê có lợi cho sức khỏe, giúp kéo dài tuổi thọ và giảm nguy cơ mắc các bệnh nguy hiểm như bệnh tim, tiểu đường loại 2, và thậm chí cả tự tử. Nghiên cứu này được công bố bởi Hiệp hội Tim mạch Hoa Kỳ. Các nhà khoa học đã phân tích thói quen uống cà phê của hơn 200.000 người, những người uống từ một đến năm cốc cà phê mỗi ngày. Tiến sĩ Frank Hu, một trong những nhà nghiên cứu, nói rằng nghiên cứu này cung cấp bằng chứng bổ sung về lợi ích của việc tiêu thụ cà phê ở mức độ vừa phải. Các nhà khoa học đã và đang làm việc chăm chỉ để phân tích chính xác thành phần nào trong cà phê mang lại nhiều lợi ích cho sức khỏe như vậy. Hàng chục báo cáo trong vài thập kỷ qua đã chỉ ra những tác động tích cực mà cà phê có thể mang lại cho cơ thể. Tuy nhiên, Tiến sĩ Hu cho biết vẫn chưa thể xác định chính xác thành phần nào trong hạt cà phê mang lại những lợi ích này. Ông nói: "Cà phê là một loại đồ uống phức tạp. Rất khó để xác định thành phần nào trong cà phê chịu trách nhiệm cho từng lợi ích cụ thể." Các nhà nghiên cứu không đưa những loại đồ uống chứa hàm lượng caffeine quá cao vào nghiên cứu. Họ cũng lưu ý rằng mặc dù cà phê có lợi cho sức khỏe, nhưng các thành phần bổ sung như kem, đường và một số chất tạo ngọt thì không. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 21 đến 25. Câu 26 đến 30 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 26 đến 30. Tự chụp ảnh (Selfie) nguy hiểm hơn cá mập Những người thích du lịch và chụp ảnh bằng điện thoại cần chú ý đến một mối nguy hiểm mới vừa được phát hiện. Mối nguy hiểm này đã gia tăng đáng kể trong vài năm qua và hiện đang trở thành một phần phổ biến của cuộc sống. Thậm chí, nó còn nguy hiểm gấp đôi so với việc bị cá mập tấn công. Mối nguy hiểm này chính là selfie. Dù bạn yêu thích hay ghét nó, việc chụp ảnh tự sướng trước các địa điểm nổi tiếng hoặc tạo dáng cùng bạn bè đã dẫn đến nhiều ca tử vong hơn so với cá mập tấn công trong năm 2015. Báo cáo cho biết, tính đến thời điểm này trong năm, đã có 12 người tử vong do cố gắng chụp ảnh selfie. Trong khi đó, chỉ có 6 trường hợp tử vong do cá mập tấn công. Các vụ tai nạn liên quan đến selfie có thể xảy ra trong nhiều tình huống khác nhau. Trang web wikipedia.com đã thống kê 12 trường hợp tử vong do selfie trong năm nay, bao gồm: - Hai người đàn ông Nga thiệt mạng khi chụp ảnh selfie cùng lựu đạn. - Ba sinh viên Ấn Độ bị tàu hỏa đâm khi đang chụp selfie trên đường ray. - Một phụ nữ Mỹ rơi xuống vực khi đang chụp selfie với bạn trai trên vách đá ở Nam Phi. Trường hợp tử vong gần đây nhất xảy ra vào tháng trước, khi một du khách Nhật Bản rơi xuống cầu thang và tử vong trong lúc cố gắng chụp ảnh selfie tại đền Taj Mahal ở Ấn Độ. Các chuyên gia cho rằng con số thực tế có thể còn cao hơn. Một phát ngôn viên chính phủ Nga nói rằng chỉ riêng tại Nga, đã có hàng chục ca tử vong do selfie trong tháng 7 vừa qua. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 26 đến 30. Câu 31 đến 35 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 31 đến 35. Người Anh làm việc đến tuổi già Số lượng người từ 70 đến 74 tuổi vẫn đi làm ở Anh đã tăng gấp đôi trong thập kỷ qua. Khoảng 10% người Anh ở độ tuổi đầu 70 vẫn đang làm việc. Đây là con số cao nhất kể từ khi dữ liệu này được ghi nhận. Chính phủ Anh báo cáo rằng hiện có hơn 250.000 người trong độ tuổi từ 70 đến 74 vẫn đang có việc làm. Vào năm 2005, con số này chỉ khoảng 100.000 người. Chính phủ cho biết nhiều người đang làm việc lâu hơn và quyết định nghỉ hưu muộn hơn. Một đại diện của công đoàn lao động nói rằng lý do nhiều người lớn tuổi vẫn tiếp tục làm việc là vì lương hưu tại Anh không đủ để trang trải cuộc sống. Nhiều người cao tuổi buộc phải làm việc và trì hoãn việc nghỉ hưu để có thể tồn tại. Người phát ngôn của công đoàn, ông Francis O'Grady, cho biết: "Chúng ta không thể cứ để người lao động phải làm việc đến tuổi 70 chỉ vì hệ thống lương hưu không đủ hỗ trợ. Chính phủ cần có những chính sách tốt hơn để đảm bảo người lao động có thể nghỉ hưu đúng thời điểm." Tuy nhiên, người phát ngôn của các doanh nghiệp nhỏ, ông John Allen, cho biết: "Ngày càng có nhiều người cao tuổi tự mở doanh nghiệp và trở thành chủ doanh nghiệp của chính mình. Họ tận dụng kinh nghiệm của mình để làm việc linh hoạt hơn, thay vì nghỉ hưu hoàn toàn." Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 31 đến 35. Phần 3 kết thúc tại đây. Bài thi Nghe hiểu kết thúc.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What type of diabetes can coffee reduce the risk of?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 1															</div>
+																				<div class="ps-4 mb-2">
+																	B. 3															</div>
+																				<div class="ps-4 mb-2">
+																	C. 4															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. 2</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>2.</strong></span> ✅ (Loại 2.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"Researchers say there is growing evidence that coffee benefits the health, makes you live longer, and reduces the risk of heart disease, type 2 diabetes, other life-threatening illnesses, and even suicide."</p>     <p>"Các nhà nghiên cứu nói rằng có ngày càng nhiều bằng chứng cho thấy cà phê có lợi cho sức khỏe, giúp bạn sống lâu hơn, <strong>giảm nguy cơ mắc bệnh tiểu đường loại 2</strong>, bệnh tim và các bệnh đe dọa tính mạng khác, thậm chí cả tự tử."</p>      <p>Bài nghe xác nhận rằng <strong>cà phê giúp giảm nguy cơ mắc bệnh tiểu đường loại 2</strong>. Do đó, đáp án chính xác là <strong>2.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">1.</span> ❌ (Loại 1.) - Sai, vì bài nghe chỉ đề cập đến tiểu đường loại 2.</li>                 <li><span class="text-success"><strong>2.</strong></span> ✅ (Loại 2.) - Đúng, vì bài nghe xác nhận rằng cà phê có thể giúp giảm nguy cơ mắc bệnh tiểu đường loại 2.</li>                 <li><span class="text-danger">3.</span> ❌ (Loại 3.) - Sai, vì bài nghe không đề cập đến bệnh tiểu đường loại 3.</li>                 <li><span class="text-danger">4.</span> ❌ (Loại 4.) - Sai, vì bài nghe không nhắc đến loại bệnh tiểu đường này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: How many coffee drinkers did the study look at?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. exactly 200,000															</div>
+																				<div class="ps-4 mb-2">
+																	B. around 200,000															</div>
+																				<div class="ps-4 mb-2">
+																	C. just less than 200,000															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. more than 200,000</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>more than 200,000.</strong></span> ✅ (Hơn 200.000.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"The study was published by the American Heart Association. It looked at the coffee-drinking habits of over 200,000 people who drank between one and five cups of coffee a day."</p>     <p>"Nghiên cứu được công bố bởi Hiệp hội Tim mạch Hoa Kỳ. Nó đã xem xét thói quen uống cà phê của <strong>hơn 200.000</strong> người, những người uống từ một đến năm tách cà phê mỗi ngày."</p>      <p>Bài nghe xác nhận rằng <strong>nghiên cứu xem xét thói quen uống cà phê của hơn 200.000 người</strong>. Do đó, đáp án chính xác là <strong>more than 200,000.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">around 200,000.</span> ❌ (Khoảng 200.000.) - Sai, vì bài nghe nói rõ ràng là hơn 200.000.</li>                 <li><span class="text-danger">just less than 200,000.</span> ❌ (Chỉ dưới 200.000.) - Sai, vì bài nghe xác nhận con số là hơn 200.000, không phải dưới 200.000.</li>                 <li><span class="text-success"><strong>more than 200,000.</strong></span> ✅ (Hơn 200.000.) - Đúng, vì bài nghe xác nhận rằng nghiên cứu đã xem xét thói quen của hơn 200.000 người.</li>                 <li><span class="text-danger">exactly 200,000.</span> ❌ (Chính xác 200.000.) - Sai, vì bài nghe không nói rằng con số là chính xác 200.000 mà là hơn con số này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: Who has been working hard on analysing the health benefits of coffee?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. coffee farmers															</div>
+																				<div class="ps-4 mb-2">
+																	B. Starbucks															</div>
+																				<div class="ps-4 mb-2">
+																	C. coffee lovers															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. scientists</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>scientists.</strong></span> ✅ (Các nhà khoa học.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"Scientists have been working hard to analyse exactly what is in coffee that provides so many benefits to the health."</p>     <p>"<strong>Các nhà khoa học</strong> đã làm việc chăm chỉ để phân tích chính xác những thành phần nào trong cà phê mang lại nhiều lợi ích cho sức khỏe."</p>      <p>Bài nghe xác nhận rằng <strong>các nhà khoa học đang nghiên cứu về lợi ích sức khỏe của cà phê</strong>. Do đó, đáp án chính xác là <strong>scientists.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">coffee lovers.</span> ❌ (Những người yêu thích cà phê.) - Sai, vì bài nghe không nói rằng những người yêu cà phê đang nghiên cứu lợi ích sức khỏe của nó.</li>                 <li><span class="text-danger">Starbucks.</span> ❌ (Starbucks.) - Sai, vì bài nghe không đề cập đến Starbucks hay bất kỳ chuỗi cửa hàng cà phê nào.</li>                 <li><span class="text-success"><strong>scientists.</strong></span> ✅ (Các nhà khoa học.) - Đúng, vì bài nghe xác nhận rằng các nhà khoa học đang làm việc để phân tích lợi ích của cà phê.</li>                 <li><span class="text-danger">coffee farmers.</span> ❌ (Những người trồng cà phê.) - Sai, vì bài nghe không đề cập đến việc nông dân trồng cà phê nghiên cứu lợi ích sức khỏe của nó.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What kind of drinks were not included in the study?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. tea															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. caffeinated ones</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. ones from Starbucks															</div>
+																				<div class="ps-4 mb-2">
+																	D. Colas															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>caffeinated ones.</strong></span> ✅ (Các loại đồ uống có hàm lượng caffeine cao.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"Researchers did not include highly caffeinated drinks in the study."</p>     <p>"Các nhà nghiên cứu <strong>không đưa các loại đồ uống có hàm lượng caffeine cao vào nghiên cứu</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>các loại đồ uống có hàm lượng caffeine cao không được đưa vào nghiên cứu</strong>. Do đó, đáp án chính xác là <strong>caffeinated ones.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">ones from Starbucks.</span> ❌ (Các loại đồ uống từ Starbucks.) - Sai, vì bài nghe không đề cập đến Starbucks hoặc các thương hiệu cụ thể.</li>                 <li><span class="text-success"><strong>caffeinated ones.</strong></span> ✅ (Các loại đồ uống có hàm lượng caffeine cao.) - Đúng, vì bài nghe xác nhận rằng những loại đồ uống này không được đưa vào nghiên cứu.</li>                 <li><span class="text-danger">tea.</span> ❌ (Trà.) - Sai, vì bài nghe không đề cập đến trà.</li>                 <li><span class="text-danger">Colas.</span> ❌ (Nước ngọt có gas.) - Sai, vì bài nghe không đề cập đến nước ngọt có gas.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What has no health benefits besides cream and sugar?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Latte															</div>
+																				<div class="ps-4 mb-2">
+																	B. cookies															</div>
+																				<div class="ps-4 mb-2">
+																	C. syrup															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. sweeteners</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>sweeteners.</strong></span> ✅ (Chất tạo ngọt.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"They also pointed out that while coffee seems to have health benefits, added ingredients such as cream, sugar, and certain types of sweeteners do not."</p>     <p>"Họ cũng chỉ ra rằng mặc dù cà phê có vẻ có lợi cho sức khỏe, nhưng các thành phần bổ sung như <strong>kem, đường và một số loại chất tạo ngọt</strong> thì không."</p>      <p>Bài nghe xác nhận rằng <strong>chất tạo ngọt không có lợi ích cho sức khỏe, giống như kem và đường</strong>. Do đó, đáp án chính xác là <strong>sweeteners.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>sweeteners.</strong></span> ✅ (Chất tạo ngọt.) - Đúng, vì bài nghe xác nhận rằng chất tạo ngọt không có lợi ích sức khỏe.</li>                 <li><span class="text-danger">cookies.</span> ❌ (Bánh quy.) - Sai, vì bài nghe không đề cập đến bánh quy.</li>                 <li><span class="text-danger">syrup.</span> ❌ (Siro.) - Sai, vì bài nghe không đề cập đến siro.</li>                 <li><span class="text-danger">Latte.</span> ❌ (Latte.) - Sai, vì bài nghe không nói rằng Latte không có lợi ích cho sức khỏe.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Who, besides travellers, needs to note a new danger?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. scared people															</div>
+																				<div class="ps-4 mb-2">
+																	B. tour guides															</div>
+																				<div class="ps-4 mb-2">
+																	C. shark experts															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. camera-phone lovers</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>camera-phone lovers.</strong></span> ✅ (Những người yêu thích chụp ảnh bằng điện thoại.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"Travellers and phone camera lovers need to note a new danger that has recently come to light."</p>     <p>"<strong>Du khách và những người yêu thích chụp ảnh bằng điện thoại</strong> cần lưu ý về một mối nguy hiểm mới vừa được phát hiện."</p>      <p>Bài nghe xác nhận rằng <strong>bên cạnh du khách, những người yêu thích chụp ảnh bằng điện thoại cũng cần chú ý đến mối nguy hiểm mới</strong>. Do đó, đáp án chính xác là <strong>camera-phone lovers.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">shark experts.</span> ❌ (Chuyên gia về cá mập.) - Sai, vì bài nghe không đề cập đến việc chuyên gia về cá mập cần lưu ý về mối nguy hiểm này.</li>                 <li><span class="text-danger">tour guides.</span> ❌ (Hướng dẫn viên du lịch.) - Sai, vì bài nghe không nói rằng hướng dẫn viên du lịch là đối tượng cần đặc biệt lưu ý.</li>                 <li><span class="text-danger">scared people.</span> ❌ (Những người sợ hãi.) - Sai, vì bài nghe không nói về những người sợ hãi mà nói về những người chụp ảnh tự sướng.</li>                 <li><span class="text-success"><strong>camera-phone lovers.</strong></span> ✅ (Những người yêu thích chụp ảnh bằng điện thoại.) - Đúng, vì bài nghe xác nhận rằng họ cũng cần lưu ý đến mối nguy hiểm này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: How common in our life is this new danger?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. not so common															</div>
+																				<div class="ps-4 mb-2">
+																	B. not at all common															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. it's ubiquitous</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. quite common															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>it's ubiquitous.</strong></span> ✅ (Nó có mặt khắp nơi.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"This new life-threatening hazard has sprung up in the past few years, and is now a ubiquitous part of life."</p>     <p>"Mối nguy hiểm đe dọa tính mạng mới này đã xuất hiện trong vài năm qua và <strong>hiện nay trở thành một phần phổ biến trong cuộc sống</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>mối nguy hiểm này đã trở nên phổ biến và có mặt khắp nơi</strong>. Do đó, đáp án chính xác là <strong>it's ubiquitous.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">not at all common.</span> ❌ (Hoàn toàn không phổ biến.) - Sai, vì bài nghe nói rằng nó rất phổ biến.</li>                 <li><span class="text-success"><strong>it's ubiquitous.</strong></span> ✅ (Nó có mặt khắp nơi.) - Đúng, vì bài nghe xác nhận rằng mối nguy hiểm này đã trở thành một phần phổ biến trong cuộc sống.</li>                 <li><span class="text-danger">quite common.</span> ❌ (Khá phổ biến.) - Sai, vì bài nghe dùng từ "ubiquitous" có nghĩa là nó xuất hiện ở khắp nơi, không chỉ là khá phổ biến.</li>                 <li><span class="text-danger">not so common.</span> ❌ (Không quá phổ biến.) - Sai, vì bài nghe nói rõ rằng nó có mặt ở khắp nơi.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: Who does the article say people strike a pose with?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. sharks															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. friends</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. poseurs															</div>
+																				<div class="ps-4 mb-2">
+																	D. tourists															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>friends.</strong></span> ✅ (Bạn bè.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"The desire to take a photo of yourself in front of a world-famous site, or to strike a pose and pout with a friend, has resulted in more deaths in 2015 than shark attacks."</p>     <p>"Mong muốn chụp ảnh bản thân trước một địa danh nổi tiếng thế giới, hoặc <strong>tạo dáng và chu môi cùng bạn bè</strong>, đã dẫn đến nhiều ca tử vong hơn so với các vụ cá mập tấn công trong năm 2015."</p>      <p>Bài nghe xác nhận rằng <strong>mọi người thường tạo dáng chụp ảnh tự sướng cùng bạn bè</strong>. Do đó, đáp án chính xác là <strong>friends.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">poseurs.</span> ❌ (Những người thích tạo dáng.) - Sai, vì bài nghe không đề cập đến "poseurs".</li>                 <li><span class="text-danger">sharks.</span> ❌ (Cá mập.) - Sai, vì bài nghe không nói rằng mọi người chụp ảnh với cá mập.</li>                 <li><span class="text-success"><strong>friends.</strong></span> ✅ (Bạn bè.) - Đúng, vì bài nghe xác nhận rằng nhiều người tạo dáng chụp ảnh tự sướng với bạn bè.</li>                 <li><span class="text-danger">tourists.</span> ❌ (Khách du lịch.) - Sai, vì bài nghe không đề cập cụ thể đến việc chụp ảnh với khách du lịch.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What were two Russian men taking a selfie with?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. a hand grenade</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. a tank															</div>
+																				<div class="ps-4 mb-2">
+																	C. a missile															</div>
+																				<div class="ps-4 mb-2">
+																	D. a rifle															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>a hand grenade.</strong></span> ✅ (Một quả lựu đạn.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"They include two Russian men who were killed while taking a selfie with a hand grenade."</p>     <p>"Trong số đó có <strong>hai người đàn ông Nga đã thiệt mạng khi chụp ảnh tự sướng với một quả lựu đạn</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>hai người đàn ông Nga đã chụp ảnh tự sướng với một quả lựu đạn</strong>. Do đó, đáp án chính xác là <strong>a hand grenade.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>a hand grenade.</strong></span> ✅ (Một quả lựu đạn.) - Đúng, vì bài nghe xác nhận rằng hai người Nga đã chụp ảnh tự sướng với một quả lựu đạn và thiệt mạng.</li>                 <li><span class="text-danger">a tank.</span> ❌ (Một chiếc xe tăng.) - Sai, vì bài nghe không đề cập đến xe tăng.</li>                 <li><span class="text-danger">a rifle.</span> ❌ (Một khẩu súng trường.) - Sai, vì bài nghe không nói rằng họ chụp ảnh với súng trường.</li>                 <li><span class="text-danger">a missile.</span> ❌ (Một quả tên lửa.) - Sai, vì bài nghe không đề cập đến tên lửa.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: What did an American woman fall to her death from?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the roof of her house															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. a cliff</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. a shopping mall															</div>
+																				<div class="ps-4 mb-2">
+																	D. a tower															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>a cliff.</strong></span> ✅ (Một vách đá.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"An American woman who fell to her death while taking a selfie with her boyfriend on a cliff in South Africa."</p>     <p>"Một phụ nữ Mỹ đã <strong>rơi xuống tử vong khi chụp ảnh tự sướng cùng bạn trai trên một vách đá</strong> ở Nam Phi."</p>      <p>Bài nghe xác nhận rằng <strong>người phụ nữ Mỹ đã rơi xuống tử vong từ một vách đá</strong>. Do đó, đáp án chính xác là <strong>a cliff.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">the roof of her house.</span> ❌ (Mái nhà của cô ấy.) - Sai, vì bài nghe không đề cập đến việc cô ấy rơi từ mái nhà.</li>                 <li><span class="text-success"><strong>a cliff.</strong></span> ✅ (Một vách đá.) - Đúng, vì bài nghe xác nhận rằng cô ấy rơi từ một vách đá khi chụp ảnh tự sướng.</li>                 <li><span class="text-danger">a tower.</span> ❌ (Một tòa tháp.) - Sai, vì bài nghe không đề cập đến việc cô ấy rơi từ một tòa tháp.</li>                 <li><span class="text-danger">a shopping mall.</span> ❌ (Một trung tâm mua sắm.) - Sai, vì bài nghe không nói rằng cô ấy rơi từ một trung tâm mua sắm.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: By how many times has the number of working 70-74 year-olds risen?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. five times															</div>
+																				<div class="ps-4 mb-2">
+																	B. four times															</div>
+																				<div class="ps-4 mb-2">
+																	C. three times															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. two times</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>two times.</strong></span> ✅ (Gấp hai lần.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"The number of 70 to 74-year-old people who work has doubled in the past decade."</p>     <p>"Số lượng người trong độ tuổi 70 đến 74 đang làm việc <strong>đã tăng gấp đôi</strong> trong thập kỷ qua."</p>      <p>Bài nghe xác nhận rằng <strong>số người trong độ tuổi 70-74 làm việc đã tăng gấp hai lần</strong>. Do đó, đáp án chính xác là <strong>two times.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">five times.</span> ❌ (Gấp năm lần.) - Sai, vì bài nghe không đề cập đến việc tăng gấp năm lần.</li>                 <li><span class="text-danger">four times.</span> ❌ (Gấp bốn lần.) - Sai, vì bài nghe không nói rằng số lượng tăng lên bốn lần.</li>                 <li><span class="text-danger">three times.</span> ❌ (Gấp ba lần.) - Sai, vì bài nghe xác nhận rằng số lượng chỉ tăng gấp đôi.</li>                 <li><span class="text-success"><strong>two times.</strong></span> ✅ (Gấp hai lần.) - Đúng, vì bài nghe xác nhận rằng số người làm việc trong độ tuổi này đã tăng gấp đôi.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: How many working 70-74 year-old people were there in 2005?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 120,000															</div>
+																				<div class="ps-4 mb-2">
+																	B. 130,000															</div>
+																				<div class="ps-4 mb-2">
+																	C. 110,000															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. 100,000</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>100,000.</strong></span> ✅ (100.000.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"In 2005, there were around 100,000 of them."</p>     <p>"Vào năm 2005, có khoảng <strong>100.000</strong> người trong độ tuổi này đang làm việc."</p>      <p>Bài nghe xác nhận rằng <strong>vào năm 2005, có khoảng 100.000 người trong độ tuổi 70-74 làm việc</strong>. Do đó, đáp án chính xác là <strong>100,000.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">130,000.</span> ❌ (130.000.) - Sai, vì bài nghe nói rằng con số này là khoảng 100.000, không phải 130.000.</li>                 <li><span class="text-danger">120,000.</span> ❌ (120.000.) - Sai, vì bài nghe không đề cập đến con số này.</li>                 <li><span class="text-danger">110,000.</span> ❌ (110.000.) - Sai, vì bài nghe xác nhận rằng con số chính xác là khoảng 100.000.</li>                 <li><span class="text-success"><strong>100,000.</strong></span> ✅ (100.000.) - Đúng, vì bài nghe xác nhận rằng vào năm 2005, có khoảng 100.000 người trong độ tuổi này làm việc.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question13">
+						<div class="fw-bold mb-2">
+							Câu 13: What are older people having to delay in Britain?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. working															</div>
+																				<div class="ps-4 mb-2">
+																	B. home improvements															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. retirement</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. having a family															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>retirement.</strong></span> ✅ (Nghỉ hưu.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"Many older people have to work and delay retirement to be able to survive."</p>     <p>"Nhiều người lớn tuổi phải tiếp tục làm việc và <strong>trì hoãn việc nghỉ hưu</strong> để có thể sống đủ."</p>      <p>Bài nghe xác nhận rằng <strong>những người lớn tuổi ở Anh đang phải trì hoãn việc nghỉ hưu</strong>. Do đó, đáp án chính xác là <strong>retirement.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">home improvements.</span> ❌ (Cải thiện nhà cửa.) - Sai, vì bài nghe không đề cập đến việc trì hoãn cải thiện nhà cửa.</li>                 <li><span class="text-danger">working.</span> ❌ (Làm việc.) - Sai, vì bài nghe nói rằng họ phải tiếp tục làm việc, không phải trì hoãn làm việc.</li>                 <li><span class="text-danger">having a family.</span> ❌ (Lập gia đình.) - Sai, vì bài nghe không nhắc đến việc trì hoãn lập gia đình.</li>                 <li><span class="text-success"><strong>retirement.</strong></span> ✅ (Nghỉ hưu.) - Đúng, vì bài nghe xác nhận rằng nhiều người cao tuổi đang phải trì hoãn việc nghỉ hưu.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question14">
+						<div class="fw-bold mb-2">
+							Câu 14: What do many 70-74 year-old people need more of?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. cash</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. hours															</div>
+																				<div class="ps-4 mb-2">
+																	C. food															</div>
+																				<div class="ps-4 mb-2">
+																	D. time															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>cash.</strong></span> ✅ (Tiền mặt.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"Many older people have to work and delay retirement to be able to survive."</p>     <p>"Nhiều người lớn tuổi phải tiếp tục làm việc và trì hoãn việc nghỉ hưu để có thể <strong>sống đủ</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>nhiều người lớn tuổi cần nhiều tiền hơn để có thể trang trải cuộc sống</strong>. Do đó, đáp án chính xác là <strong>cash.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>cash.</strong></span> ✅ (Tiền mặt.) - Đúng, vì bài nghe xác nhận rằng nhiều người cao tuổi phải làm việc lâu hơn để kiếm đủ tiền sống.</li>                 <li><span class="text-danger">time.</span> ❌ (Thời gian.) - Sai, vì bài nghe không nói rằng họ cần thêm thời gian.</li>                 <li><span class="text-danger">hours.</span> ❌ (Số giờ làm việc.) - Sai, vì bài nghe không đề cập đến việc họ cần làm thêm giờ.</li>                 <li><span class="text-danger">food.</span> ❌ (Thức ăn.) - Sai, vì bài nghe không nói rằng họ cần thêm thức ăn mà chủ yếu là tiền.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question15">
+						<div class="fw-bold mb-2">
+							Câu 15: What are many 70-74 year-old people starting?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. self-help groups															</div>
+																				<div class="ps-4 mb-2">
+																	B. protests															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. their own businesses</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. families															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>their own businesses.</strong></span> ✅ (Doanh nghiệp riêng của họ.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"A spokesman for small businesses, John Allen, said more older people were starting their own businesses."</p>     <p>"Người phát ngôn của các doanh nghiệp nhỏ, John Allen, nói rằng ngày càng có nhiều người lớn tuổi <strong>khởi nghiệp kinh doanh riêng</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>nhiều người lớn tuổi đang bắt đầu khởi nghiệp và tự kinh doanh</strong>. Do đó, đáp án chính xác là <strong>their own businesses.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">families.</span> ❌ (Gia đình.) - Sai, vì bài nghe không đề cập đến việc những người lớn tuổi bắt đầu lập gia đình.</li>                 <li><span class="text-success"><strong>their own businesses.</strong></span> ✅ (Doanh nghiệp riêng của họ.) - Đúng, vì bài nghe xác nhận rằng nhiều người lớn tuổi đang bắt đầu kinh doanh riêng.</li>                 <li><span class="text-danger">self-help groups.</span> ❌ (Nhóm tự giúp đỡ.) - Sai, vì bài nghe không nói về việc họ tham gia hoặc thành lập nhóm hỗ trợ.</li>                 <li><span class="text-danger">protests.</span> ❌ (Các cuộc biểu tình.) - Sai, vì bài nghe không đề cập đến việc họ tham gia biểu tình.</li>    </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="12" id="progress-question-12">
+				   13				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="13" id="progress-question-13">
+				   14				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="14" id="progress-question-14">
+				   15				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

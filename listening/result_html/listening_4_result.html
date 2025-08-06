@@ -1,0 +1,496 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 04 - Part 1				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87726				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/8				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp1-1664862240_a89c501188de559974f2.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>This is the Vietnamese Standardized Test of English Proficiency Listening Comprehension Test.<br>
+You will listen to a number of different recordings, and you will have to answer questions based on what you hear. There will be time for you to read the questions and check your work. All the recordings will be played once only.<br>
+Part 1: In this part, you will hear 8 short recordings. The recordings will be played once only. There is one question following each recording.<br>
+For each question, choose the right answer A, B, C, or D. Now, let's listen to the example. On the recording, you might hear... Hello, this is the travel agency returning your call. You left a message about the holiday you've booked, asking which meals are included in the cost during your stay at Sunny Hotel.<br>
+Lunch and dinner are free, but if you wish to have breakfast in the hotel, you will need to pay an extra amount of money, depending on what you order. Let me know if I can help you with any other information. Goodbye.<br>
+You will read... Which meal is not included in the price of the holiday? A. Breakfast B. Lunch C. Dinner D. All The correct answer is A. Breakfast. First you will have some time to look at questions 1 to 8. Now we're ready to start. Listen and answer questions 1 to 8.&nbsp;<br>
+1. What music will they have at the party? Are you going to bring your guitar to the party? It's broken, I'm afraid, but you can play the piano for us.<br>
+I'm not good enough. Let's just play your new CDs. All right.<br>
+I'll bring the guitar another time.&nbsp;<br>
+2. When will the man go on holiday? I can't go on holiday in June because my parents are coming to stay with me then. Why don't you go in August? It's a lovely month in the mountains.<br>
+July's better. There aren't so many people. So I'll leave on the 12th and come back at the end of the month.<br>
+OK. Then you'll be back for my birthday party in August.&nbsp;<br>
+3. What will the weather be like tomorrow? It's very hot, isn't it? Oh yes, I love it.<br>
+I hope it doesn't rain. Well, it'll be cold and windy tomorrow. Oh dear.<br>
+We never have hot weather for long.&nbsp;<br>
+4. Which dish did Mark cook in the competition? So you've won the Teenage Chef competition, Mark. Congratulations! Thanks.<br>
+In the competition you choose whether to cook a meat, fish or vegetarian dish. Then you're judged on the taste and how attractive it looks. I couldn't decide between fish and vegetables.<br>
+I've never been brilliant at meat dishes. Then I found the judge was an expert in cooking fish, which worried me. So I went for my other choice and won.<br>
+5. Where is the girl's book now? Excuse me, I think I left my book on this table. Have you seen it? Oh yes. I took it inside with the empty glass when I cleared the table.<br>
+I gave it to the manager who put it with the other lost property. He keeps it all in the drawer of his desk. I see.<br>
+Where is he now? He's on the phone inside the cafe. Why don't you go inside? He'll be finished in a minute.&nbsp;<br>
+6. Who lives with Josh in his house? Does your house seem empty now your sister's left home, Josh? Not really.<br>
+My grandmother's moved into her room and she doesn't go out much. It's really nice having her there because my dad never comes home until later. And if my mum's out for the evening, grandma cooks supper for me.<br>
+7. What will the girl take with her on holiday? Have you packed for your holiday? No, I need to go shopping before I can do that. Last holiday my suitcase handle got broken, so I need something new to put all my stuff in. But suitcases are so heavy to carry.<br>
+I always take a backpack. You can carry more that way. Yes, I thought about one of those, but good quality ones are expensive.<br>
+I'll get one of those big sports bags, you know, one you can pull along. They don't cost much, so it doesn't matter if it gets torn.&nbsp;<br>
+8. What time will the train to Manchester leave? The train arriving at Platform 6 is the 11.45 from Manchester.<br>
+The train due to arrive at Platform 4 in approximately 5 minutes is the delayed 11.30 train to Manchester. The train will now depart at 11.50 and travel non-stop. We apologise to passengers for the delay.<br>
+Refreshments will not be available on this train. Now you will have some time to review questions 1 to 8. That is the end of Part 1.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Đây là bài kiểm tra đánh giá năng lực tiếng Anh VSTEP, phần kiểm tra nghe hiểu. Bạn sẽ nghe một số đoạn ghi âm khác nhau và phải trả lời các câu hỏi dựa trên nội dung đã nghe. Sẽ có thời gian để bạn đọc câu hỏi và kiểm tra lại câu trả lời của mình. Tất cả các đoạn ghi âm chỉ được phát một lần duy nhất. Phần 1 Trong phần này, bạn sẽ nghe 8 đoạn ghi âm ngắn. Các đoạn ghi âm sẽ chỉ được phát một lần duy nhất. Mỗi đoạn ghi âm có một câu hỏi đi kèm. Với mỗi câu hỏi, hãy chọn đáp án đúng A, B, C hoặc D. Bây giờ, hãy lắng nghe ví dụ. Trong đoạn ghi âm, bạn có thể nghe... "Xin chào, đây là đại lý du lịch phản hồi cuộc gọi của bạn. Bạn đã để lại lời nhắn về kỳ nghỉ mà bạn đã đặt, hỏi về các bữa ăn được bao gồm trong chi phí lưu trú tại khách sạn Sunny. Bữa trưa và bữa tối là miễn phí, nhưng nếu bạn muốn ăn sáng tại khách sạn, bạn sẽ cần phải trả thêm một khoản tiền, tùy thuộc vào món bạn chọn. Hãy cho tôi biết nếu tôi có thể giúp bạn với bất kỳ thông tin nào khác. Tạm biệt." Bạn sẽ đọc... Câu hỏi: Bữa ăn nào không được bao gồm trong giá của kỳ nghỉ? A. Bữa sáng B. Bữa trưa C. Bữa tối D. Tất cả Đáp án đúng là A. Bữa sáng. Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 1 đến 8. Bây giờ, chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 1 đến 8. Họ sẽ có loại nhạc nào tại bữa tiệc? Bạn có định mang theo đàn guitar đến bữa tiệc không? Nó bị hỏng mất rồi, nhưng cậu có thể chơi piano cho bọn mình mà. Mình không chơi giỏi lắm đâu. Cứ mở CD mới của cậu đi. Được thôi. Mình sẽ mang guitar vào lần khác. Người đàn ông sẽ đi nghỉ vào khi nào? Mình không thể đi nghỉ vào tháng 6 vì bố mẹ sẽ đến thăm vào lúc đó. Sao cậu không đi vào tháng 8? Tháng đó trên núi đẹp lắm. Tháng 7 thì tốt hơn. Không đông người lắm. Mình sẽ đi vào ngày 12 và quay về vào cuối tháng. Được thôi. Vậy cậu sẽ có mặt ở buổi tiệc sinh nhật của mình vào tháng 8. Thời tiết ngày mai sẽ thế nào? Hôm nay nóng quá, nhỉ? Ừ, mình thích thời tiết này lắm. Mình hy vọng trời không mưa. Ừm, ngày mai trời sẽ lạnh và có gió. Ôi trời. Chúng ta chẳng bao giờ có thời tiết nóng lâu cả. Món ăn nào Mark đã nấu trong cuộc thi? Vậy là cậu đã thắng cuộc thi đầu bếp trẻ tuổi rồi, Mark. Chúc mừng nhé! Cảm ơn! Trong cuộc thi, cậu có thể chọn nấu món thịt, cá hoặc món chay. Sau đó, ban giám khảo sẽ chấm điểm dựa trên hương vị và độ hấp dẫn của món ăn. Mình không biết chọn giữa món cá và món chay. Mình chưa bao giờ nấu món thịt giỏi cả. Sau đó, mình phát hiện ra giám khảo là chuyên gia về món cá, điều này làm mình lo lắng. Vậy nên mình chọn món chay và đã thắng. Cuốn sách của cô gái hiện đang ở đâu? Xin lỗi, mình nghĩ là mình để quên sách trên bàn này. Cậu có thấy nó không? À có. Mình đã mang nó vào cùng với cái ly rỗng khi dọn bàn. Mình đã đưa nó cho quản lý, anh ấy để cùng với các đồ thất lạc khác. Anh ấy cất nó trong ngăn kéo bàn làm việc. Mình hiểu rồi. Anh ấy đang ở đâu? Anh ấy đang nói chuyện điện thoại trong quán cà phê. Sao cậu không vào trong nhỉ? Anh ấy sẽ xong ngay thôi. Ai sống cùng với Josh trong nhà? Cậu có thấy nhà mình trống vắng hơn từ khi em gái chuyển đi không, Josh? Không hẳn. Bà mình đã chuyển vào phòng của em gái và bà không ra ngoài nhiều. Bà ấy sống ở đó thật tuyệt, vì bố mình thường về nhà muộn. Và nếu mẹ mình đi ra ngoài vào buổi tối, bà sẽ nấu bữa tối cho mình. Cô gái sẽ mang theo gì trong kỳ nghỉ? Cậu đã chuẩn bị hành lý chưa? Chưa, mình cần đi mua đồ trước khi đóng gói. Kỳ nghỉ trước, tay cầm vali của mình bị gãy, vậy nên mình cần mua cái mới để đựng đồ. Nhưng vali nặng quá. Mình luôn mang theo ba lô. Cậu có thể mang nhiều đồ hơn với nó. Ừ, mình cũng đã nghĩ đến, nhưng loại tốt thì đắt. Mình sẽ mua một cái túi thể thao lớn, loại có thể kéo được. Nó không đắt lắm, nên nếu có rách thì cũng không sao. Mấy giờ tàu đến Manchester sẽ khởi hành? Tàu đang đến sân ga số 6 là chuyến 11:45 từ Manchester. Chuyến tàu sẽ đến sân ga số 4 trong khoảng 5 phút nữa là chuyến 11:30 đến Manchester, hiện đang bị trễ. Chuyến tàu này sẽ khởi hành lúc 11:50 và đi thẳng. Chúng tôi xin lỗi hành khách vì sự chậm trễ. Sẽ không có đồ ăn và thức uống trên chuyến tàu này. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 1 đến 8. Đây là phần kết thúc của Phần 1.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What music will they have at the party?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. cello															</div>
+																				<div class="ps-4 mb-2">
+																	B. guitar															</div>
+																				<div class="ps-4 mb-2">
+																	C. piano															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. CDs</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>CDs.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, hai người nói về loại nhạc sẽ có tại bữa tiệc:</p> <p>"Are you going to bring your guitar to the party?"</p> <p>"It's broken, I'm afraid, but you can play the piano for us."</p> <p>"I'm not good enough. Let's just play your new CDs."</p> <p>"All right. I'll bring the guitar another time."</p>  <p>Người đầu tiên đề nghị mang <strong>guitar</strong>, nhưng nó bị hỏng. Sau đó, họ cũng nhắc đến <strong>piano</strong>, nhưng người thứ hai không tự tin chơi. Cuối cùng, họ quyết định chơi <strong>CDs</strong> cho bữa tiệc. Do đó, đáp án chính xác là <strong>CDs.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">guitar.</span> ❌ (Ghi-ta.) - Sai, vì cây ghi-ta bị hỏng nên không thể sử dụng.</li>     <li><span class="text-danger">piano.</span> ❌ (Đàn piano.) - Sai, vì người thứ hai nói rằng họ không đủ giỏi để chơi piano.</li>     <li><span class="text-success"><strong>CDs.</strong></span> ✅ (Đĩa CD.) - Đúng, vì cuối cùng họ quyết định chơi nhạc từ CD.</li>     <li><span class="text-danger">cello.</span> ❌ (Đàn cello.) - Sai, vì bài nghe không nhắc đến cello.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: When will the man go on holiday?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. July</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. June															</div>
+																				<div class="ps-4 mb-2">
+																	C. August															</div>
+																				<div class="ps-4 mb-2">
+																	D. January															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>July.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, người đàn ông nói về thời gian đi nghỉ của mình:</p> <p>"I can't go on holiday in June because my parents are coming to stay with me then."</p> <p>"Why don't you go in August? It's a lovely month in the mountains."</p> <p>"July's better. There aren't so many people. So I'll leave on the 12th and come back at the end of the month."</p>  <p>Người đàn ông nói rằng <strong>không thể đi vào tháng 6</strong> vì có khách đến thăm. Người khác gợi ý <strong>tháng 8</strong>, nhưng anh ấy chọn <strong>tháng 7</strong> vì ít người hơn. Anh ấy sẽ rời đi vào <strong>ngày 12 tháng 7</strong> và trở về vào cuối tháng. Do đó, đáp án chính xác là <strong>July.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">June.</span> ❌ (Tháng 6.) - Sai, vì anh ấy nói rằng không thể đi vào tháng này.</li>     <li><span class="text-success"><strong>July.</strong></span> ✅ (Tháng 7.) - Đúng, vì anh ấy quyết định đi vào tháng 7.</li>     <li><span class="text-danger">August.</span> ❌ (Tháng 8.) - Sai, vì người khác gợi ý tháng 8 nhưng anh ấy không chọn.</li>     <li><span class="text-danger">January.</span> ❌ (Tháng 1.) - Sai, vì không có thông tin nào trong bài nghe nói về tháng 1.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What will the weather be like tomorrow?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It'll be hot.															</div>
+																				<div class="ps-4 mb-2">
+																	B. It'll be rainy.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. It'll be cold and windy.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. It'll be foggy.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>It'll be cold and windy.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, hai người nói về thời tiết:</p> <p>"It's very hot, isn't it?"</p> <p>"Oh yes, I love it. I hope it doesn't rain."</p> <p>"Well, it'll be cold and windy tomorrow."</p> <p>"Oh dear. We never have hot weather for long."</p>  <p>Người thứ nhất nhận xét rằng thời tiết hôm nay rất nóng. Tuy nhiên, người thứ hai nói rằng <strong>ngày mai trời sẽ lạnh và có gió</strong>. Do đó, đáp án chính xác là <strong>It'll be cold and windy.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">It'll be hot.</span> ❌ (Trời sẽ nóng.) - Sai, vì hôm nay trời nóng nhưng ngày mai trời sẽ lạnh và có gió.</li>     <li><span class="text-success"><strong>It'll be cold and windy.</strong></span> ✅ (Trời sẽ lạnh và có gió.) - Đúng, vì bài nghe nói rằng thời tiết ngày mai sẽ như vậy.</li>     <li><span class="text-danger">It'll be rainy.</span> ❌ (Trời sẽ mưa.) - Sai, vì người thứ nhất hy vọng trời không mưa, nhưng bài nghe không xác nhận điều đó.</li>     <li><span class="text-danger">It'll be foggy.</span> ❌ (Trời sẽ có sương mù.) - Sai, vì bài nghe không đề cập đến sương mù.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: Which dish did Mark cook in the competition?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. soup															</div>
+																				<div class="ps-4 mb-2">
+																	B. fish															</div>
+																				<div class="ps-4 mb-2">
+																	C. meat															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. vegetables</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>vegetables.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, Mark kể về món ăn anh ấy đã nấu trong cuộc thi:</p> <p>"In the competition you choose whether to cook a meat, fish or vegetarian dish. Then you're judged on the taste and how attractive it looks. I couldn't decide between fish and vegetables. I've never been brilliant at meat dishes. Then I found the judge was an expert in cooking fish, which worried me. So I went for my other choice and won."</p> <p>"Trong cuộc thi, bạn có thể chọn nấu món thịt, cá hoặc món chay. Sau đó, bạn sẽ được đánh giá dựa trên hương vị và độ hấp dẫn của món ăn. Tôi đã phân vân giữa cá và rau củ. Tôi chưa bao giờ giỏi các món thịt. Sau đó, tôi phát hiện giám khảo là chuyên gia về nấu cá, điều này làm tôi lo lắng. Vì vậy, tôi chọn phương án còn lại và đã chiến thắng."</p>  <p>Mark ban đầu phân vân giữa <strong>cá</strong> và <strong>rau củ</strong>, nhưng vì giám khảo là chuyên gia về cá nên anh ấy quyết định chọn <strong>món rau củ</strong> và đã giành chiến thắng. Do đó, đáp án chính xác là <strong>vegetables.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">fish.</span> ❌ (Cá.) - Sai, vì Mark định chọn cá nhưng đổi ý vì giám khảo là chuyên gia về cá.</li>     <li><span class="text-danger">meat.</span> ❌ (Thịt.) - Sai, vì Mark nói rằng anh ấy chưa bao giờ giỏi các món thịt.</li>     <li><span class="text-success"><strong>vegetables.</strong></span> ✅ (Rau củ.) - Đúng, vì Mark đã chọn món rau củ và giành chiến thắng.</li>     <li><span class="text-danger">soup.</span> ❌ (Súp.) - Sai, vì bài nghe không đề cập đến món súp.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: Where is the girl's book now?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. in the drawer of the manager's desk</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. on a table in the cafe															</div>
+																				<div class="ps-4 mb-2">
+																	C. in the lost property office															</div>
+																				<div class="ps-4 mb-2">
+																	D. in the waiter's bag															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>in the drawer of the manager's desk.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, cô gái hỏi về cuốn sách mà cô ấy để quên:</p> <p>"Excuse me, I think I left my book on this table. Have you seen it?"</p> <p>"Oh yes. I took it inside with the empty glass when I cleared the table. I gave it to the manager who put it with the other lost property. He keeps it all in the drawer of his desk."</p> <p>"Xin lỗi, tôi nghĩ là tôi đã để quên cuốn sách trên bàn này. Bạn có thấy nó không?"</p> <p>"Ồ có, tôi đã mang nó vào cùng với chiếc ly rỗng khi dọn bàn. Tôi đưa nó cho quản lý, người đã để nó cùng với những đồ thất lạc khác. Ông ấy giữ tất cả trong ngăn kéo bàn làm việc."</p>  <p>Điều này cho thấy rằng cuốn sách hiện tại đang được <strong>quản lý cất giữ trong ngăn kéo bàn làm việc</strong>. Do đó, đáp án chính xác là <strong>in the drawer of the manager's desk.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">in the waiter's bag.</span> ❌ (Trong túi của người phục vụ.) - Sai, vì cuốn sách không được đặt trong túi của nhân viên phục vụ.</li>     <li><span class="text-success"><strong>in the drawer of the manager's desk.</strong></span> ✅ (Trong ngăn kéo bàn làm việc của quản lý.) - Đúng, vì quản lý đã cất giữ sách trong ngăn kéo cùng với những đồ thất lạc khác.</li>     <li><span class="text-danger">on a table in the cafe.</span> ❌ (Trên một cái bàn trong quán cà phê.) - Sai, vì sách đã được dọn đi và không còn trên bàn nữa.</li>     <li><span class="text-danger">in the lost property office.</span> ❌ (Trong phòng đồ thất lạc.) - Sai, vì cuốn sách được giữ trong ngăn kéo bàn của quản lý, không phải trong văn phòng đồ thất lạc.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Who Jives with Josh in his house?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. his father															</div>
+																				<div class="ps-4 mb-2">
+																	B. his sister															</div>
+																				<div class="ps-4 mb-2">
+																	C. his mother															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. his grandmother</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>his grandmother.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, Josh nói về người sống cùng anh ấy trong nhà:</p> <p>"Does your house seem empty now your sister's left home, Josh?"</p> <p>"Not really. My grandmother's moved into her room and she doesn't go out much. It's really nice having her there because my dad never comes home until later. And if my mum's out for the evening, grandma cooks supper for me."</p> <p>"Nhà cậu có cảm thấy trống trải không khi chị gái cậu rời đi, Josh?"</p> <p>"Không hẳn. Bà của tôi đã chuyển vào phòng của chị ấy và bà không ra ngoài nhiều. Tôi thấy rất vui khi có bà ở đó vì bố tôi về nhà rất muộn. Và nếu mẹ tôi ra ngoài vào buổi tối, bà nấu bữa tối cho tôi."</p>  <p>Điều này cho thấy rằng <strong>bà của Josh sống cùng cậu ấy trong nhà</strong>. Do đó, đáp án chính xác là <strong>his grandmother.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-success"><strong>his grandmother.</strong></span> ✅ (Bà của cậu ấy.) - Đúng, vì Josh nói rằng bà đã chuyển vào phòng của chị gái cậu ấy.</li>     <li><span class="text-danger">his father.</span> ❌ (Bố của cậu ấy.) - Sai, vì Josh nói rằng bố cậu ấy về nhà rất muộn.</li>     <li><span class="text-danger">his sister.</span> ❌ (Chị gái của cậu ấy.) - Sai, vì chị gái cậu ấy đã rời khỏi nhà.</li>     <li><span class="text-danger">his mother.</span> ❌ (Mẹ của cậu ấy.) - Sai, vì mẹ cậu ấy có thể ra ngoài vào buổi tối, nhưng không nói rằng bà sống riêng.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What will the girl take with her on holiday?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. suitcase															</div>
+																				<div class="ps-4 mb-2">
+																	B. overhead bag															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. sports bag</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. backpack															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>sports bag.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, cô gái nói về món đồ cô ấy sẽ mang theo trong kỳ nghỉ:</p> <p>"Have you packed for your holiday?"</p> <p>"No, I need to go shopping before I can do that. Last holiday my suitcase handle got broken, so I need something new to put all my stuff in."</p> <p>"But suitcases are so heavy to carry. I always take a backpack. You can carry more that way."</p> <p>"Yes, I thought about one of those, but good quality ones are expensive. I'll get one of those big sports bags, you know, one you can pull along. They don't cost much, so it doesn't matter if it gets torn."</p>  <p>Cô gái ban đầu nói rằng <strong>chiếc vali của cô ấy đã bị hỏng</strong>, nên cô ấy cần mua một món đồ mới để đựng đồ đạc. Người khác gợi ý <strong>ba lô</strong>, nhưng cô ấy thấy loại chất lượng tốt thì quá đắt. Cuối cùng, cô ấy quyết định mua một <strong>túi thể thao lớn có thể kéo</strong> vì chúng rẻ hơn. Do đó, đáp án chính xác là <strong>sports bag.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">suitcase.</span> ❌ (Vali.) - Sai, vì cô ấy không dùng vali nữa do tay cầm của nó đã bị hỏng.</li>     <li><span class="text-success"><strong>sports bag.</strong></span> ✅ (Túi thể thao.) - Đúng, vì cô ấy quyết định mua một túi thể thao lớn có thể kéo.</li>     <li><span class="text-danger">backpack.</span> ❌ (Ba lô.) - Sai, vì cô ấy nghĩ rằng ba lô loại tốt quá đắt.</li>     <li><span class="text-danger">overhead bag.</span> ❌ (Túi xách tay.) - Sai, vì bài nghe không đề cập đến loại túi này.</li> </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: What time will the train to Manchester leave?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. eleven thirty															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. eleven fifty</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. eleven forty-five															</div>
+																				<div class="ps-4 mb-2">
+																	D. eleven fifteen															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p> <p><span class="text-success"><strong>eleven fifty.</strong></span></p>  <p><strong>Giải thích chi tiết:</strong></p> <p>Trong bài nghe, thông tin về giờ khởi hành của chuyến tàu đến Manchester được đề cập:</p> <p>"The train arriving at Platform 6 is the 11.45 from Manchester. The train due to arrive at Platform 4 in approximately 5 minutes is the delayed 11.30 train to Manchester. The train will now depart at 11.50 and travel non-stop."</p> <p>"Chuyến tàu đến sân ga số 6 là chuyến 11 giờ 45 từ Manchester. Chuyến tàu dự kiến đến sân ga số 4 trong khoảng 5 phút là chuyến tàu 11 giờ 30 đi Manchester nhưng bị trễ. Chuyến tàu này sẽ khởi hành lúc 11 giờ 50 và đi thẳng không dừng."</p>  <p>Điều này cho thấy rằng <strong>chuyến tàu đi Manchester bị trễ và sẽ khởi hành lúc 11 giờ 50</strong>. Do đó, đáp án chính xác là <strong>eleven fifty.</strong></p>  <p><strong>Phân tích các lựa chọn:</strong></p> <ul>     <li><span class="text-danger">eleven thirty.</span> ❌ (11 giờ 30.) - Sai, vì đây là giờ khởi hành dự kiến ban đầu của chuyến tàu, nhưng nó đã bị trễ.</li>     <li><span class="text-danger">eleven forty-five.</span> ❌ (11 giờ 45.) - Sai, vì đây là giờ đến của một chuyến tàu từ Manchester, không phải giờ khởi hành của chuyến đi đến Manchester.</li>     <li><span class="text-success"><strong>eleven fifty.</strong></span> ✅ (11 giờ 50.) - Đúng, vì chuyến tàu đi Manchester đã bị hoãn và sẽ khởi hành vào lúc 11 giờ 50.</li>     <li><span class="text-danger">eleven fifteen.</span> ❌ (11 giờ 15.) - Sai, vì bài nghe không nhắc đến chuyến tàu nào khởi hành vào giờ này.</li> </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

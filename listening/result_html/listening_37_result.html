@@ -1,0 +1,634 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 37 - Part 3				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87756				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/15				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp3-1664884597_130530f5930ed839ed89.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Part 3 In this part, you will hear three talks, or lectures. The talks or lectures will be played once only. There are five questions for each talk or lecture.<br>
+For each question, choose the right answer, A, B, C, or D. Part 3 Questions 21 to 25 First, you will have some time to look at questions 21 to 25. Now we're ready to start. Listen and answer questions 21 to 25.<br>
+You will hear the recording once only. <br>
+Europe must wake up to terror threats. A top member of France's government has said European countries must wake up to terror threats because of the attacks on Paris on November 13.<br>
+French Interior Minister Bernard Cazeneuve told reporters that it is urgent that Europe wakes up, organises itself and defends itself against the terrorist threat. The Paris attacks left 129 people dead, with over 350 injured. Dozens of those injured are still in hospital in critical condition.<br>
+Mr Cazeneuve said Europe must tighten its borders as it was too easy for terrorists to move around Europe. One of the Paris attackers entered Europe from Syria through Greece. He was reportedly pretending to be a Syrian refugee.<br>
+The French Ambassador François Richier echoed Mr Cazeneuve's words. He said, I believe no country in the world will tolerate this. Terrorism is an important issue.<br>
+It needs to be addressed. We are currently raising this issue at the UN Security Council this week and will propose an amendment against terrorism. More and more countries are joining the fight against terrorism.<br>
+The British government wants to take part in airstrikes in Syria. Britain's leader will soon ask politicians to vote on this. Russia is also very active in airstrikes on terrorist targets in Syria following the bombing of a Russian passenger plane over Egypt on October 31 that killed 224 people.<br>
+Now you will have some time to review questions 21 to 25. Part 3. Questions 26 to 30. First, you will have some time to look at questions 26 to 30.<br>
+Ecotourism, a danger to wildlife. Ecotourism is a booming business that many tour operators cite as being helpful to nature. Every year, millions of people descend on protected and pristine natural areas to observe rare species.<br>
+However, a new report casts doubt on the value of this form of tourism. In fact, it suggests that ecotourism is more damaging than helpful to nature. Details are in a report published in the journal Trends in Ecology and Evolution.<br>
+Researchers believe tourists are disrupting animals in their natural habitat. They pointed to a recent event where sea turtles in Costa Rica had problems laying their eggs because of the hordes of tourists who had congregated to watch the turtles' nesting habits. The report says that ecotourism is making animals bolder and that this could endanger the animals.<br>
+A regular human presence might make animals tamer and less cautious about other animals around them, and this could put them at risk of being attacked by their natural threats. Then they will suffer higher mortality when they encounter real predators, the report says. It added, when animals interact in benign ways with humans, they may let down their guard.<br>
+The report said it was essential to develop a more comprehensive understanding of how different species in different situations respond to human visitation, and under what precise conditions human exposure might put them at risk. Now you will have some time to review questions 26 to 30. Part 3. Questions 31 to 35.<br>
+First, you will have some time to look at questions 31 to 35. More people die from selfies than shark attacks. Travelers and phone camera lovers need to note a new danger that has recently come to light.<br>
+This new life-threatening hazard has sprung up in the past few years, and is now a ubiquitous part of life. It is also proving to be twice as lethal as being killed by a shark. What is this potential new menace? Well, it is the selfie.<br>
+Yes, love them or hate them, the desire to take a photo of yourself in front of a world-famous site, or to strike a pose and pout with a friend, has resulted in more deaths in 2015 than shark attacks. It has been reported that so far this year, 12 people have died as a result of trying to take a selfie. This compares to just six deaths due to unprovoked shark attacks.<br>
+Selfie-related accidents can happen when people are drunk, and in all manner of circumstances. The website wikipedia.com has detailed the 12 deaths seen this year. They include two Russian men who were killed while taking a selfie with a hand grenade, three Indian students who were killed by an oncoming train while taking selfies on train tracks, and an American woman who fell to her death while taking a selfie with her boyfriend on a cliff in South Africa.<br>
+The latest death came last month when a Japanese tourist died falling down the stairs while trying to get a shot of himself at the Taj Mahal in India. There may be more. A Russian government spokeswoman told reporters that in July, there were dozens of selfie-related deaths in Russia alone.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 3 Trong phần này, bạn sẽ nghe ba bài nói chuyện hoặc bài giảng. Các bài nói chuyện hoặc bài giảng sẽ chỉ được phát một lần duy nhất. Có năm câu hỏi cho mỗi bài nói chuyện hoặc bài giảng. Với mỗi câu hỏi, hãy chọn câu trả lời đúng: A, B, C hoặc D. Câu 21 đến 25 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 21 đến 25. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 21 đến 25. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Châu Âu cần thức tỉnh trước mối đe dọa khủng bố Một quan chức cấp cao của chính phủ Pháp đã tuyên bố rằng các nước châu Âu cần thức tỉnh trước mối đe dọa khủng bố, đặc biệt sau các vụ tấn công tại Paris vào ngày 13 tháng 11. Bộ trưởng Nội vụ Pháp, ông Bernard Cazeneuve, nói với các phóng viên rằng châu Âu cần phải khẩn trương hành động, tổ chức và bảo vệ chính mình trước mối đe dọa từ khủng bố. Các cuộc tấn công ở Paris đã khiến 129 người thiệt mạng và hơn 350 người bị thương. Trong số đó, hàng chục người vẫn đang trong tình trạng nguy kịch tại bệnh viện. Ông Cazeneuve cho rằng châu Âu cần siết chặt biên giới, vì hiện tại bọn khủng bố có thể di chuyển quá dễ dàng trong khu vực. Một trong những kẻ tấn công ở Paris đã nhập cảnh vào châu Âu từ Syria thông qua Hy Lạp. Có thông tin cho rằng hắn đã giả danh một người tị nạn Syria. Đại sứ Pháp François Richier cũng lặp lại quan điểm của ông Cazeneuve. Ông tuyên bố: "Tôi tin rằng không có quốc gia nào trên thế giới có thể chấp nhận chủ nghĩa khủng bố. Đây là một vấn đề nghiêm trọng và cần được giải quyết triệt để." Chúng tôi đang nêu vấn đề này tại Hội đồng Bảo an Liên Hợp Quốc trong tuần này và sẽ đề xuất một sửa đổi chống khủng bố. Ngày càng có nhiều quốc gia tham gia vào cuộc chiến chống khủng bố. Chính phủ Anh đang xem xét việc tham gia không kích tại Syria. Thủ tướng Anh sẽ sớm yêu cầu quốc hội bỏ phiếu về vấn đề này. Nga cũng đang tích cực thực hiện các cuộc không kích vào các mục tiêu khủng bố tại Syria, đặc biệt sau vụ đánh bom một máy bay chở khách Nga trên bầu trời Ai Cập vào ngày 31 tháng 10, khiến 224 người thiệt mạng. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 21 đến 25. Câu 26 đến 30 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 26 đến 30. Du lịch sinh thái – Mối nguy hiểm cho động vật hoang dã? Du lịch sinh thái đang trở thành một ngành kinh doanh phát triển mạnh. Nhiều công ty du lịch cho rằng nó giúp ích cho thiên nhiên. Hàng năm, hàng triệu du khách đổ về các khu vực tự nhiên được bảo vệ để quan sát những loài động vật quý hiếm. Tuy nhiên, một báo cáo mới đặt ra nghi ngờ về giá trị thực sự của hình thức du lịch này. Thực tế, báo cáo cho rằng du lịch sinh thái có thể gây hại nhiều hơn lợi cho thiên nhiên. Chi tiết về vấn đề này được công bố trên tạp chí khoa học Trends in Ecology and Evolution. Các nhà nghiên cứu tin rằng khách du lịch đang làm xáo trộn cuộc sống của động vật trong môi trường tự nhiên của chúng. Họ trích dẫn một sự kiện gần đây, nơi rùa biển ở Costa Rica gặp khó khăn trong việc đẻ trứng vì hàng loạt du khách kéo đến quan sát thói quen làm tổ của chúng. Báo cáo cũng nêu rằng du lịch sinh thái đang làm động vật trở nên bạo dạn hơn, điều này có thể gây nguy hiểm cho chúng. Sự xuất hiện thường xuyên của con người có thể khiến động vật trở nên quen thuộc và ít cảnh giác hơn với những loài xung quanh, khiến chúng có nguy cơ bị tấn công bởi các kẻ săn mồi tự nhiên. Điều này có thể dẫn đến tỷ lệ tử vong cao hơn khi chúng chạm trán với các loài săn mồi thực sự. Ngoài ra, khi động vật có những tương tác "hiền lành" với con người, chúng có thể mất đi bản năng tự vệ. Báo cáo nhấn mạnh rằng cần có một sự hiểu biết toàn diện hơn về cách các loài động vật khác nhau, trong các hoàn cảnh khác nhau, phản ứng với sự xuất hiện của con người, và khi nào thì sự tiếp xúc này có thể gây nguy hiểm cho chúng. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 26 đến 30. Câu 31 đến 35 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 31 đến 35. Tự chụp ảnh (Selfie) nguy hiểm hơn cả cá mập Những người thích du lịch và chụp ảnh bằng điện thoại cần chú ý đến một mối nguy hiểm mới vừa được phát hiện. Mối nguy hiểm này đã gia tăng đáng kể trong vài năm qua và hiện đang trở thành một phần phổ biến của cuộc sống. Thậm chí, nó còn nguy hiểm gấp đôi so với việc bị cá mập tấn công. Mối nguy hiểm này chính là selfie. Dù bạn yêu thích hay ghét nó, việc chụp ảnh tự sướng trước các địa điểm nổi tiếng hoặc tạo dáng cùng bạn bè đã dẫn đến nhiều ca tử vong hơn so với cá mập tấn công trong năm 2015. Báo cáo cho biết, tính đến thời điểm này trong năm, đã có 12 người tử vong do cố gắng chụp ảnh selfie. Trong khi đó, chỉ có 6 trường hợp tử vong do cá mập tấn công. Các vụ tai nạn liên quan đến selfie thường xảy ra khi mọi người say rượu hoặc ở trong những hoàn cảnh nguy hiểm. Trang web wikipedia.com đã thống kê 12 trường hợp tử vong do selfie trong năm nay, bao gồm: - Hai người đàn ông Nga thiệt mạng khi chụp ảnh selfie cùng lựu đạn. - Ba sinh viên Ấn Độ bị tàu hỏa đâm khi đang chụp selfie trên đường ray. - Một phụ nữ Mỹ rơi xuống vực khi đang chụp selfie với bạn trai ở Nam Phi. Trường hợp tử vong gần đây nhất xảy ra vào tháng trước, khi một du khách Nhật Bản rơi xuống cầu thang và tử vong trong lúc cố gắng chụp ảnh selfie tại đền Taj Mahal ở Ấn Độ. Các chuyên gia cho rằng con số thực tế có thể còn cao hơn. Một phát ngôn viên chính phủ Nga nói rằng chỉ riêng tại Nga, đã có hàng chục ca tử vong do selfie trong tháng 7 vừa qua.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: When were the attacks on Paris?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. November 15															</div>
+																				<div class="ps-4 mb-2">
+																	B. November 17															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. November 13</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. November 18															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>November 13.</strong></span> ✅ (Ngày 13 tháng 11.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"A top member of France's government has said European countries must wake up to terror threats because of the attacks on Paris on November 13."</p>     <p>"Một quan chức cấp cao của chính phủ Pháp cho biết các nước châu Âu phải thức tỉnh trước các mối đe dọa khủng bố do <strong>các vụ tấn công vào Paris vào ngày 13 tháng 11</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>các cuộc tấn công vào Paris diễn ra vào ngày 13 tháng 11</strong>. Do đó, đáp án chính xác là <strong>November 13.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>November 13.</strong></span> ✅ (Ngày 13 tháng 11.) - Đúng, vì bài nghe xác nhận rằng vụ tấn công xảy ra vào ngày này.</li>                 <li><span class="text-danger">November 15.</span> ❌ (Ngày 15 tháng 11.) - Sai, vì bài nghe không nhắc đến ngày này.</li>                 <li><span class="text-danger">November 17.</span> ❌ (Ngày 17 tháng 11.) - Sai, vì bài nghe nói rõ vụ tấn công xảy ra vào ngày 13 tháng 11.</li>                 <li><span class="text-danger">November 18.</span> ❌ (Ngày 18 tháng 11.) - Sai, vì ngày chính xác được đề cập là ngày 13 tháng 11.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: What kind of condition are many of the injured in hospital still in?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. critical</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. intensive															</div>
+																				<div class="ps-4 mb-2">
+																	C. fair															</div>
+																				<div class="ps-4 mb-2">
+																	D. stable															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>critical.</strong></span> ✅ (Nguy kịch.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"Dozens of those injured are still in hospital in critical condition."</p>     <p>"Hàng chục người bị thương vẫn đang ở bệnh viện trong tình trạng <strong>nguy kịch</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>nhiều người bị thương vẫn đang trong tình trạng nguy kịch</strong>. Do đó, đáp án chính xác là <strong>critical.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">intensive.</span> ❌ (Chăm sóc đặc biệt.) - Sai, vì bài nghe nói về tình trạng nguy kịch, không phải chỉ là chăm sóc đặc biệt.</li>                 <li><span class="text-success"><strong>critical.</strong></span> ✅ (Nguy kịch.) - Đúng, vì bài nghe xác nhận rằng nhiều người bị thương đang trong tình trạng nguy kịch.</li>                 <li><span class="text-danger">stable.</span> ❌ (Ổn định.) - Sai, vì bài nghe không nói rằng tình trạng của họ đã ổn định.</li>                 <li><span class="text-danger">fair.</span> ❌ (Tạm ổn.) - Sai, vì tình trạng của họ vẫn rất nghiêm trọng, không phải tạm ổn.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What was a Paris attacker pretending to be in Greece?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Greek															</div>
+																				<div class="ps-4 mb-2">
+																	B. a policeman															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. a Syrian refugee</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. an Iraqi															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>a Syrian refugee.</strong></span> ✅ (Một người tị nạn Syria.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"One of the Paris attackers entered Europe from Syria through Greece. He was reportedly pretending to be a Syrian refugee."</p>     <p>"Một trong những kẻ tấn công Paris đã vào châu Âu từ Syria qua Hy Lạp. Hắn được cho là đã <strong>giả làm một người tị nạn Syria</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>kẻ tấn công Paris đã giả danh một người tị nạn Syria khi vào châu Âu qua Hy Lạp</strong>. Do đó, đáp án chính xác là <strong>a Syrian refugee.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">an Iraqi.</span> ❌ (Một người Iraq.) - Sai, vì bài nghe nói rằng hắn giả làm người tị nạn Syria, không phải người Iraq.</li>                 <li><span class="text-danger">Greek.</span> ❌ (Một người Hy Lạp.) - Sai, vì bài nghe không đề cập đến việc kẻ tấn công giả làm người Hy Lạp.</li>                 <li><span class="text-danger">a policeman.</span> ❌ (Một cảnh sát.) - Sai, vì bài nghe không nói rằng kẻ tấn công đóng giả cảnh sát.</li>                 <li><span class="text-success"><strong>a Syrian refugee.</strong></span> ✅ (Một người tị nạn Syria.) - Đúng, vì bài nghe xác nhận rằng hắn đã giả danh người tị nạn Syria.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What are more and more countries doing?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. fighting against terrorism</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. closing their borders															</div>
+																				<div class="ps-4 mb-2">
+																	C. accepting refugees															</div>
+																				<div class="ps-4 mb-2">
+																	D. talking about terrorism															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>fighting against terrorism.</strong></span> ✅ (Chiến đấu chống khủng bố.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"More and more countries are joining the fight against terrorism."</p>     <p>"<strong>Ngày càng có nhiều quốc gia</strong> tham gia vào cuộc chiến chống khủng bố."</p>      <p>Bài nghe xác nhận rằng <strong>nhiều quốc gia đang tham gia chiến đấu chống khủng bố</strong>. Do đó, đáp án chính xác là <strong>fighting against terrorism.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">accepting refugees.</span> ❌ (Chấp nhận người tị nạn.) - Sai, vì bài nghe không nói rằng các quốc gia đang chấp nhận nhiều người tị nạn hơn.</li>                 <li><span class="text-danger">closing their borders.</span> ❌ (Đóng cửa biên giới.) - Sai, vì bài nghe chỉ đề cập đến việc kiểm soát biên giới chặt chẽ hơn, không phải đóng cửa hoàn toàn.</li>                 <li><span class="text-success"><strong>fighting against terrorism.</strong></span> ✅ (Chiến đấu chống khủng bố.) - Đúng, vì bài nghe xác nhận rằng nhiều quốc gia đang tham gia cuộc chiến chống khủng bố.</li>                 <li><span class="text-danger">talking about terrorism.</span> ❌ (Nói về khủng bố.) - Sai, vì bài nghe nhấn mạnh hành động chống khủng bố, không chỉ là thảo luận về nó.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What might British politicians soon do?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. fight															</div>
+																				<div class="ps-4 mb-2">
+																	B. visit Paris															</div>
+																				<div class="ps-4 mb-2">
+																	C. March															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. vote</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>vote.</strong></span> ✅ (Bỏ phiếu.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"The British government wants to take part in airstrikes in Syria. Britain's leader will soon ask politicians to vote on this."</p>     <p>"Chính phủ Anh muốn tham gia vào các cuộc không kích ở Syria. Lãnh đạo Anh sẽ sớm yêu cầu các chính trị gia <strong>bỏ phiếu</strong> về vấn đề này."</p>      <p>Bài nghe xác nhận rằng <strong>các chính trị gia Anh có thể sớm bỏ phiếu về việc tham gia không kích ở Syria</strong>. Do đó, đáp án chính xác là <strong>vote.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">fight.</span> ❌ (Chiến đấu.) - Sai, vì bài nghe nói về việc bỏ phiếu, không phải chính trị gia Anh trực tiếp tham chiến.</li>                 <li><span class="text-danger">visit Paris.</span> ❌ (Thăm Paris.) - Sai, vì bài nghe không đề cập đến việc các chính trị gia Anh đến thăm Paris.</li>                 <li><span class="text-success"><strong>vote.</strong></span> ✅ (Bỏ phiếu.) - Đúng, vì bài nghe xác nhận rằng các chính trị gia Anh có thể sớm bỏ phiếu về vấn đề không kích.</li>                 <li><span class="text-danger">March.</span> ❌ (Diễu hành.) - Sai, vì bài nghe không nhắc đến bất kỳ cuộc diễu hành nào.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: How many people visit pristine natural areas every year?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. millions</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. tens of millions															</div>
+																				<div class="ps-4 mb-2">
+																	C. billions															</div>
+																				<div class="ps-4 mb-2">
+																	D. hundreds of millions															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>millions.</strong></span> ✅ (Hàng triệu người.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"Every year, millions of people descend on protected and pristine natural areas to observe rare species."</p>     <p>"Mỗi năm, <strong>hàng triệu người</strong> đổ về các khu vực tự nhiên được bảo vệ và hoang sơ để quan sát các loài hiếm."</p>      <p>Bài nghe xác nhận rằng <strong>mỗi năm có hàng triệu người đến thăm các khu vực tự nhiên hoang sơ</strong>. Do đó, đáp án chính xác là <strong>millions.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">billions.</span> ❌ (Hàng tỷ người.) - Sai, vì bài nghe chỉ đề cập đến hàng triệu người, không phải hàng tỷ.</li>                 <li><span class="text-danger">hundreds of millions.</span> ❌ (Hàng trăm triệu người.) - Sai, vì con số thực tế được đề cập là hàng triệu, không phải hàng trăm triệu.</li>                 <li><span class="text-success"><strong>millions.</strong></span> ✅ (Hàng triệu người.) - Đúng, vì bài nghe xác nhận số lượng du khách là hàng triệu mỗi năm.</li>                 <li><span class="text-danger">tens of millions.</span> ❌ (Hàng chục triệu người.) - Sai, vì bài nghe chỉ đề cập đến hàng triệu, không khẳng định cụ thể hàng chục triệu.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What is 'Trends in Ecology and Evolution'?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. an Internet site															</div>
+																				<div class="ps-4 mb-2">
+																	B. a TV show															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. a journal</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. a university department															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>a journal.</strong></span> ✅ (Một tạp chí.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"Details are in a report published in the journal Trends in Ecology and Evolution."</p>     <p>"Chi tiết có trong một báo cáo được xuất bản trên <strong>tạp chí</strong> Trends in Ecology and Evolution."</p>      <p>Bài nghe xác nhận rằng <strong>Trends in Ecology and Evolution là một tạp chí</strong>. Do đó, đáp án chính xác là <strong>a journal.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">an Internet site.</span> ❌ (Một trang web.) - Sai, vì bài nghe nói rằng đây là một tạp chí, không phải một trang web.</li>                 <li><span class="text-success"><strong>a journal.</strong></span> ✅ (Một tạp chí.) - Đúng, vì bài nghe xác nhận rằng Trends in Ecology and Evolution là một tạp chí.</li>                 <li><span class="text-danger">a university department.</span> ❌ (Một khoa của trường đại học.) - Sai, vì đây là một tạp chí khoa học, không phải một bộ phận của trường đại học.</li>                 <li><span class="text-danger">a TV show.</span> ❌ (Một chương trình truyền hình.) - Sai, vì bài nghe không đề cập đến việc đây là một chương trình truyền hình.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: What did the article say ecotourism is doing to animals confidence-wise?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. making them shier															</div>
+																				<div class="ps-4 mb-2">
+																	B. making them fearful															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. making them bolder</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. nothing															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>making them bolder.</strong></span> ✅ (Làm cho chúng trở nên táo bạo hơn.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"The report says that ecotourism is making animals bolder and that this could endanger the animals."</p>     <p>"Báo cáo nói rằng du lịch sinh thái đang làm cho <strong>động vật trở nên táo bạo hơn</strong> và điều này có thể gây nguy hiểm cho chúng."</p>      <p>Bài nghe xác nhận rằng <strong>du lịch sinh thái làm cho động vật trở nên táo bạo hơn</strong>. Do đó, đáp án chính xác là <strong>making them bolder.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">making them shier.</span> ❌ (Làm cho chúng nhút nhát hơn.) - Sai, vì bài nghe nói rằng động vật trở nên táo bạo hơn, không phải nhút nhát hơn.</li>                 <li><span class="text-success"><strong>making them bolder.</strong></span> ✅ (Làm cho chúng trở nên táo bạo hơn.) - Đúng, vì bài nghe xác nhận rằng du lịch sinh thái đang khiến động vật trở nên ít sợ hãi hơn.</li>                 <li><span class="text-danger">nothing.</span> ❌ (Không có tác động gì.) - Sai, vì bài nghe nói rõ rằng du lịch sinh thái có ảnh hưởng đến động vật.</li>                 <li><span class="text-danger">making them fearful.</span> ❌ (Làm cho chúng sợ hãi hơn.) - Sai, vì bài nghe nói rằng động vật trở nên táo bạo hơn chứ không phải sợ hãi hơn.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What might the animals encounter that could put them at risk?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. quicksand															</div>
+																				<div class="ps-4 mb-2">
+																	B. guns															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. predators</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. hunters															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>predators.</strong></span> ✅ (Những kẻ săn mồi.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"Then they will suffer higher mortality when they encounter real predators, the report says."</p>     <p>"Sau đó, chúng sẽ có tỷ lệ tử vong cao hơn khi chúng chạm trán với <strong>những kẻ săn mồi thực sự</strong>, báo cáo cho biết."</p>      <p>Bài nghe xác nhận rằng <strong>động vật có thể gặp phải những kẻ săn mồi, điều này khiến chúng gặp rủi ro</strong>. Do đó, đáp án chính xác là <strong>predators.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">quicksand.</span> ❌ (Cát lún.) - Sai, vì bài nghe không đề cập đến cát lún.</li>                 <li><span class="text-danger">hunters.</span> ❌ (Thợ săn.) - Sai, vì bài nghe nói về kẻ săn mồi trong tự nhiên, không phải thợ săn.</li>                 <li><span class="text-danger">guns.</span> ❌ (Súng.) - Sai, vì bài nghe không đề cập đến súng.</li>                 <li><span class="text-success"><strong>predators.</strong></span> ✅ (Những kẻ săn mồi.) - Đúng, vì bài nghe xác nhận rằng động vật trở nên táo bạo hơn có thể làm chúng dễ bị tấn công bởi những kẻ săn mồi tự nhiên.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: What does the last sentence say human exposure does to animals?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. puts them at risk</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. makes them happy															</div>
+																				<div class="ps-4 mb-2">
+																	C. nothing															</div>
+																				<div class="ps-4 mb-2">
+																	D. makers them overcautious															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>puts them at risk.</strong></span> ✅ (Đặt chúng vào tình trạng nguy hiểm.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"The report said it was essential to develop a more comprehensive understanding of how different species, in different situations, respond to human visitation, and under what precise conditions human exposure might put them at risk."</p>     <p>"Báo cáo cho biết điều quan trọng là phải phát triển hiểu biết toàn diện hơn về cách các loài khác nhau, trong các tình huống khác nhau, phản ứng với sự tiếp xúc của con người, và trong điều kiện cụ thể nào <strong>sự tiếp xúc của con người có thể đặt chúng vào tình trạng nguy hiểm</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>sự tiếp xúc của con người có thể khiến động vật gặp nguy hiểm</strong>. Do đó, đáp án chính xác là <strong>puts them at risk.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">makers them overcautious.</span> ❌ (Làm cho chúng quá thận trọng.) - Sai, vì bài nghe nói rằng động vật trở nên táo bạo hơn, không phải thận trọng hơn.</li>                 <li><span class="text-success"><strong>puts them at risk.</strong></span> ✅ (Đặt chúng vào tình trạng nguy hiểm.) - Đúng, vì bài nghe xác nhận rằng sự tiếp xúc của con người có thể làm tăng rủi ro cho động vật.</li>                 <li><span class="text-danger">nothing.</span> ❌ (Không có tác động gì.) - Sai, vì bài nghe nói rõ rằng sự tiếp xúc của con người có thể đặt động vật vào nguy hiểm.</li>                 <li><span class="text-danger">makes them happy.</span> ❌ (Làm cho chúng hạnh phúc.) - Sai, vì bài nghe không đề cập đến việc động vật cảm thấy hạnh phúc khi tiếp xúc với con người.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: Who, besides travellers, needs to note a new danger?&lt;br&gt;shark experts						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. scared people															</div>
+																				<div class="ps-4 mb-2">
+																	B. tour guides															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. camera-phone lovers</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. shark experts															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>camera-phone lovers.</strong></span> ✅ (Những người yêu thích chụp ảnh bằng điện thoại.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"Travelers and phone camera lovers need to note a new danger that has recently come to light."</p>     <p>"<strong>Du khách và những người yêu thích chụp ảnh bằng điện thoại</strong> cần lưu ý về một mối nguy hiểm mới vừa được phát hiện."</p>      <p>Bài nghe xác nhận rằng <strong>bên cạnh du khách, những người yêu thích chụp ảnh bằng điện thoại cũng cần chú ý đến mối nguy hiểm mới</strong>. Do đó, đáp án chính xác là <strong>camera-phone lovers.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">shark experts.</span> ❌ (Chuyên gia về cá mập.) - Sai, vì bài nghe không đề cập đến việc chuyên gia về cá mập cần lưu ý về mối nguy hiểm này.</li>                 <li><span class="text-danger">tour guides.</span> ❌ (Hướng dẫn viên du lịch.) - Sai, vì bài nghe không nói rằng hướng dẫn viên du lịch là đối tượng cần đặc biệt lưu ý.</li>                 <li><span class="text-danger">scared people.</span> ❌ (Những người sợ hãi.) - Sai, vì bài nghe không nói về những người sợ hãi mà nói về những người chụp ảnh tự sướng.</li>                 <li><span class="text-success"><strong>camera-phone lovers.</strong></span> ✅ (Những người yêu thích chụp ảnh bằng điện thoại.) - Đúng, vì bài nghe xác nhận rằng họ cũng cần lưu ý đến mối nguy hiểm này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: How common in our life is this new danger?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. it's ubiquitous</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. not so common															</div>
+																				<div class="ps-4 mb-2">
+																	C. not at all common															</div>
+																				<div class="ps-4 mb-2">
+																	D. quite common															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>it's ubiquitous.</strong></span> ✅ (Nó có mặt khắp nơi.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"This new life-threatening hazard has sprung up in the past few years, and is now a ubiquitous part of life."</p>     <p>"Mối nguy hiểm đe dọa tính mạng mới này đã xuất hiện trong vài năm qua và <strong>hiện nay trở thành một phần phổ biến trong cuộc sống</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>mối nguy hiểm này đã trở nên phổ biến và có mặt khắp nơi</strong>. Do đó, đáp án chính xác là <strong>it's ubiquitous.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">not at all common.</span> ❌ (Hoàn toàn không phổ biến.) - Sai, vì bài nghe nói rằng nó rất phổ biến.</li>                 <li><span class="text-success"><strong>it's ubiquitous.</strong></span> ✅ (Nó có mặt khắp nơi.) - Đúng, vì bài nghe xác nhận rằng mối nguy hiểm này đã trở thành một phần phổ biến trong cuộc sống.</li>                 <li><span class="text-danger">quite common.</span> ❌ (Khá phổ biến.) - Sai, vì bài nghe dùng từ "ubiquitous" có nghĩa là nó xuất hiện ở khắp nơi, không chỉ là khá phổ biến.</li>                 <li><span class="text-danger">not so common.</span> ❌ (Không quá phổ biến.) - Sai, vì bài nghe nói rõ rằng nó có mặt ở khắp nơi.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question13">
+						<div class="fw-bold mb-2">
+							Câu 13: Who does the article say people strike a pose with?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. tourists															</div>
+																				<div class="ps-4 mb-2">
+																	B. poseurs															</div>
+																				<div class="ps-4 mb-2">
+																	C. sharks															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. friends</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>friends.</strong></span> ✅ (Bạn bè.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"What is this potential new menace? Well, it is the selfie. Yes, love them or hate them, the desire to take a photo of yourself in front of a world-famous site, or to strike a pose and pout with a friend, has resulted in more deaths in 2015 than shark attacks."</p>     <p>"Mối nguy hiểm tiềm tàng mới này là gì? Chính là chụp ảnh tự sướng. Dù yêu thích hay ghét bỏ, mong muốn chụp ảnh của bản thân trước một địa danh nổi tiếng thế giới, hoặc <strong>tạo dáng và chu môi cùng bạn bè</strong>, đã dẫn đến nhiều ca tử vong hơn so với các vụ cá mập tấn công trong năm 2015."</p>      <p>Bài nghe xác nhận rằng <strong>mọi người thường tạo dáng chụp ảnh tự sướng cùng bạn bè</strong>. Do đó, đáp án chính xác là <strong>friends.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">poseurs.</span> ❌ (Những người thích tạo dáng.) - Sai, vì bài nghe không đề cập đến "poseurs".</li>                 <li><span class="text-danger">sharks.</span> ❌ (Cá mập.) - Sai, vì bài nghe không nói rằng mọi người chụp ảnh với cá mập.</li>                 <li><span class="text-success"><strong>friends.</strong></span> ✅ (Bạn bè.) - Đúng, vì bài nghe xác nhận rằng nhiều người tạo dáng chụp ảnh tự sướng với bạn bè.</li>                 <li><span class="text-danger">tourists.</span> ❌ (Khách du lịch.) - Sai, vì bài nghe không đề cập cụ thể đến việc chụp ảnh với khách du lịch.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question14">
+						<div class="fw-bold mb-2">
+							Câu 14: What were two Russian men taking a selfie with?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. a hand grenade</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. a rifle															</div>
+																				<div class="ps-4 mb-2">
+																	C. a missile															</div>
+																				<div class="ps-4 mb-2">
+																	D. a tank															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>a hand grenade.</strong></span> ✅ (Một quả lựu đạn.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"They include two Russian men who were killed while taking a selfie with a hand grenade."</p>     <p>"Trong số đó có <strong>hai người đàn ông Nga đã thiệt mạng khi chụp ảnh tự sướng với một quả lựu đạn</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>hai người đàn ông Nga đã chụp ảnh tự sướng với một quả lựu đạn</strong>. Do đó, đáp án chính xác là <strong>a hand grenade.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>a hand grenade.</strong></span> ✅ (Một quả lựu đạn.) - Đúng, vì bài nghe xác nhận rằng hai người Nga đã chụp ảnh tự sướng với một quả lựu đạn và thiệt mạng.</li>                 <li><span class="text-danger">a tank.</span> ❌ (Một chiếc xe tăng.) - Sai, vì bài nghe không đề cập đến xe tăng.</li>                 <li><span class="text-danger">a rifle.</span> ❌ (Một khẩu súng trường.) - Sai, vì bài nghe không nói rằng họ chụp ảnh với súng trường.</li>                 <li><span class="text-danger">a missile.</span> ❌ (Một quả tên lửa.) - Sai, vì bài nghe không đề cập đến tên lửa.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question15">
+						<div class="fw-bold mb-2">
+							Câu 15: What did an American woman fall to her death from?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. a cliff</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. a tower															</div>
+																				<div class="ps-4 mb-2">
+																	C. a shopping mall															</div>
+																				<div class="ps-4 mb-2">
+																	D. the roof of her house															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>a cliff.</strong></span> ✅ (Một vách đá.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"An American woman who fell to her death while taking a selfie with her boyfriend on a cliff in South Africa."</p>     <p>"Một phụ nữ Mỹ đã <strong>rơi xuống tử vong khi chụp ảnh tự sướng cùng bạn trai trên một vách đá</strong> ở Nam Phi."</p>      <p>Bài nghe xác nhận rằng <strong>người phụ nữ Mỹ đã rơi xuống tử vong từ một vách đá</strong>. Do đó, đáp án chính xác là <strong>a cliff.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">the roof of her house.</span> ❌ (Mái nhà của cô ấy.) - Sai, vì bài nghe không đề cập đến việc cô ấy rơi từ mái nhà.</li>                 <li><span class="text-success"><strong>a cliff.</strong></span> ✅ (Một vách đá.) - Đúng, vì bài nghe xác nhận rằng cô ấy rơi từ một vách đá khi chụp ảnh tự sướng.</li>                 <li><span class="text-danger">a tower.</span> ❌ (Một tòa tháp.) - Sai, vì bài nghe không đề cập đến việc cô ấy rơi từ một tòa tháp.</li>                 <li><span class="text-danger">a shopping mall.</span> ❌ (Một trung tâm mua sắm.) - Sai, vì bài nghe không nói rằng cô ấy rơi từ một trung tâm mua sắm.</li>    </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="12" id="progress-question-12">
+				   13				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="13" id="progress-question-13">
+				   14				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="14" id="progress-question-14">
+				   15				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

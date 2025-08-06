@@ -1,0 +1,642 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 30 - Part 3				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87749				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/15				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp3-1664882014_ca86686c8141556f278b.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Part 3 In this part, you will hear three talks, or lectures. The talks or lectures will be played once only. There are five questions for each talk or lecture.<br>
+For each question, choose the right answer, A, B, C, or D. Part 3 Questions 21 to 25 First, you will have some time to look at questions 21 to 25. Now we're ready to start. Listen and answer questions 21 to 25.<br>
+You will hear the recording once only. School days are supposed to be the best days of your life, and part of that experience usually involves some strenuous physical activity. I asked some colleagues to give me their recollections of what happened to them on the sports field, and beyond, and this is what they told me.<br>
+Cup Winners When I was about ten, my friend Steve told me, the football team from our year inexplicably made it to the cup final of the local school's league. I say inexplicably because I only remember us losing nearly every match we played. Anyway, in the final I set up the winning goal, a brilliant cross to my mate David, who headed the ball in just before the final whistle.<br>
+I still have a photograph of the team holding the cup. Forest Hike Thomas said, I remember having to lead a group of eight boys on a school expedition for the best part of two days when I was a teenager. Even though we got lost at one point, I managed to keep them all together and got them from one end of a large forest to the other and back by sheer force of will.<br>
+I was chosen to be the leader, I think, because I was the only one who knew how to read a map. When we arrived back at the campsite, we found out that all the other groups had cheated and hitched most of the way instead. I felt a bit of a mug, but also rather proud of myself at the same time for having done it properly.<br>
+Learning to swim, learning to drown. According to Lawrence, I learned to swim comparatively late, I suppose. I was maybe nine years old, but my brother had a traumatic experience which nearly put him off for life.<br>
+We lived in the U.S.A. for a while and had access to a university pool where the coaches had trained the American Olympic team. In those days, though, their idea of teaching kids how to swim was to tie a tin can to their ankles with a bit of string, throw them in the deep end, and shout, swim! I'm surprised my brother survived at all. He could only have been about six at the time.<br>
+Sponsored Walk Joy said, one of my earliest physical feats was probably going on a ten-mile walk for charity when I was about seven. I went with my older brother and my dad, but they didn't make much allowance for the fact that my legs were shorter. I had to go at the same pace as them.<br>
+Even so, I made it and raised quite a lot of money from school friends and teachers who had agreed to pay me for every mile I walked. Now you will have some time to review questions 21 to 25. Part 3. Questions 26 to 30.<br>
+First, you will have some time to look at questions 26 to 30. Cross-Country Ordeal I remember one dark, wet afternoon in February, being herded out onto the school field and having to run three miles across country while the rain came bucketing down, my friend David told me. Soon we were all drenched to the skin, shivering with cold, and the only way to stay warm was to keep running.<br>
+One of the gym teachers, who had been sitting inside having a cup of tea, came out to meet us half-way around the course, and told us to jump over a stream before we could start on the home stretch. This teacher actually stood on the hands of the boys he didn't like as they were trying to climb up the muddy bank on the other side, so that they slid back down into the freezing water. I was disgusted by this, but of course I didn't say anything.<br>
+I was only twelve. I think it changed my view of human nature a bit after that, the fact that someone who I had previously respected could be so cynical and cruel. Dwarfed in Germany.<br>
+William said, We went on a tour of Germany one year from secondary school to play football against three different teams there. Everyone was violently sick on the ferry going across to Holland, and the whole thing was a bit of a farce as the teacher who had arranged it didn't speak German very well, so we ended up playing teams who were three or four years older than us. Naturally, we got beaten every time.<br>
+CLIMB EVERY MOUNTAIN According to Duncan, One of my best memories of early physical endeavour was climbing Ben Nevis, which is the tallest mountain in the British Isles. It was a glorious day, which is pretty rare for that part of Scotland, and we walked up in about five hours. The last bit is pretty hard going, as it's a zig-zag path of big stones.<br>
+We took the family dog, and she had a really difficult time of it. The strangest thing was that we didn't see too many people on the way up, and then when we reached the top it was suddenly covered with Japanese tourists. I can only presume they had been airlifted there by helicopter.<br>
+Down to earth, Philip told me. My cousins were always the outdoor adventurous types, learning how to canoe and windsurf and abseil and so on. One day, one of them climbed onto the top of the house to fix some tiles with my uncle.<br>
+The next minute, he appeared at the kitchen door, a little bit dazed, and his mother, who was cooking lunch, looked at him in surprise and said, What are you doing here? I thought you were helping your dad. I've just fallen off the roof, mum, he said. Apparently he had overbalanced and toppled over backwards.<br>
+Because he had recently been doing parachute training, his latest hobby, he had rolled over automatically when he hit the ground, without thinking. This was a big old two-story house, and he must have been at least ten metres from the ground. But he didn't have a scratch on him.<br>
+We hope you've enjoyed this recording. First, you will have some time to look at questions 31 to 35. We hear it a lot in the news these days.<br>
+Recycle newspapers and save a tree. Collect bottles and cans so they can be reused in the manufacturing of new products. Protecting our delicate environment seems to be on the agenda of politicians, government leaders, and citizens in many parts of the world to show support for Mother Nature.<br>
+The concept of green consumerism has gained momentum more and more over the last decade, and the public feels moved to pitch in and help. However, three essential keys need to power this movement include a more informed public, the development of improved technology, and a greater demand for recycled materials. The first step is to raise public awareness about the recycling process, to explain the kinds of materials that can be recycled, and provide ways on how to properly dispose of them.<br>
+Local governments should educate the public on how to properly sort reusable materials from those, like wax paper, carbon paper, plastic laminated materials such as fast food wrappers that can't be recycled very easily. Then a system of collecting these sorted materials needs to be established. The public interest might be there, but soon may wane if there isn't a system where they can take these materials to be recycled.<br>
+Sometimes we become complacent when it comes to recycling, but when you speak in terms of actual facts and figures that everyone can understand, people become more cognizant of the problem. I remember reading one time that the energy saved from one recycled can provides enough power to operate a television for three hours. Give the public information they can grasp, and then you'll increase the chances of gaining followers.<br>
+Second, technological progress has been made on many fronts, but governmental agencies need to step up their support for companies involved in recycling by providing tax incentives, low cost loans, and even grants to upgrade equipment and to encourage further research. One breakthrough has been the development of a new manufacturing process that uses enzymes to help remove ink from paper in more energy efficient and environmentally safe methods. Recycling paper materials can be expensive in both monetary and environmental terms.<br>
+The difficulty in removing print from paper, the amount of energy expended during the process, and caustic waste that is sometimes produced are costs that companies incur that are then passed on to the consumer. The final key is to increase demand for the growing surplus of resources waiting to be recycled. This process has appeared in various regions of the world where the technology to process the used materials lags far behind the amount being collected for recycling.<br>
+There may be a great outpouring of support, yet the great stumbling block to implementing the second stage of this plan could be impeded by the corporate sector's inability to find commercial enterprises interested in using recycled goods, especially when the cost exceeds those of virgin materials. Recycling is a crucial key to protect our planet. The three keys mentioned are important ways to achieve this end.<br>
+Now you will have some time to review questions 31 to 35. That is the end of part three. That is the end of the listening comprehension test.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 3 Trong phần này, bạn sẽ nghe ba bài nói chuyện hoặc bài giảng. Các bài nói chuyện hoặc bài giảng sẽ chỉ được phát một lần duy nhất. Có năm câu hỏi cho mỗi bài nói chuyện hoặc bài giảng. Với mỗi câu hỏi, hãy chọn câu trả lời đúng: A, B, C hoặc D. Câu 21 đến 25 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 21 đến 25. Bây giờ chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 21 đến 25. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Những ngày đi học Những ngày đi học được cho là quãng thời gian đẹp nhất trong cuộc đời, và một phần của trải nghiệm này thường liên quan đến các hoạt động thể chất đầy thử thách. Tôi đã hỏi một số đồng nghiệp về những ký ức của họ trên sân thể thao và ngoài trời, và đây là những gì họ kể lại. Chiến thắng cúp vô địch Khi tôi khoảng 10 tuổi, bạn tôi, Steve, kể rằng đội bóng của chúng tôi bất ngờ lọt vào trận chung kết cúp của giải bóng đá các trường học địa phương. Tôi nói là "bất ngờ" bởi vì tôi chỉ nhớ rằng chúng tôi đã thua gần như mọi trận đấu. Dù sao đi nữa, trong trận chung kết, tôi đã thực hiện một đường chuyền tuyệt vời cho bạn tôi, David, người đã đánh đầu ghi bàn thắng quyết định ngay trước tiếng còi mãn cuộc. Tôi vẫn còn giữ bức ảnh của đội bóng đang giơ cao chiếc cúp chiến thắng. Chuyến đi bộ xuyên rừng Thomas nói: Tôi nhớ mình đã phải dẫn đầu một nhóm gồm tám cậu bé trong một chuyến dã ngoại của trường kéo dài gần hai ngày khi tôi còn là một thiếu niên. Dù chúng tôi bị lạc tại một điểm nào đó, tôi vẫn có thể giữ tất cả mọi người đi cùng nhau và dẫn họ đi từ đầu này của khu rừng lớn đến đầu kia và quay lại, chỉ bằng sự kiên trì của bản thân. Tôi được chọn làm trưởng nhóm, có lẽ vì tôi là người duy nhất biết đọc bản đồ. Khi chúng tôi quay lại điểm cắm trại, chúng tôi phát hiện ra rằng tất cả các nhóm khác đã gian lận – họ đã đi nhờ xe hầu hết quãng đường! Tôi cảm thấy có chút "ngớ ngẩn" vì đã làm đúng luật, nhưng đồng thời cũng tự hào về bản thân vì đã hoàn thành thử thách một cách chính trực. Học bơi, suýt chết đuối Theo Lawrence, tôi học bơi khá muộn, chắc khoảng 9 tuổi, nhưng anh trai tôi đã có một trải nghiệm kinh hoàng khiến anh ấy gần như sợ nước cả đời. Chúng tôi từng sống ở Mỹ một thời gian và có cơ hội sử dụng hồ bơi của một trường đại học, nơi các huấn luyện viên đã từng đào tạo đội tuyển Olympic Mỹ. Nhưng vào thời điểm đó, cách họ dạy trẻ em bơi thực sự rất khắc nghiệt: Họ buộc một cái hộp thiếc vào mắt cá chân của bọn trẻ bằng một sợi dây, quăng chúng xuống hồ bơi sâu và hét lên: "Bơi đi!" Tôi vẫn không hiểu tại sao anh trai tôi có thể sống sót. Lúc đó anh ấy chỉ khoảng 6 tuổi thôi! Cuộc đi bộ gây quỹ từ thiện Joy nói: Một trong những thử thách thể chất đầu tiên của tôi có lẽ là tham gia một cuộc đi bộ dài 10 dặm để gây quỹ từ thiện khi tôi mới 7 tuổi. Tôi đi cùng anh trai và bố, nhưng họ không hề giảm tốc độ dù tôi nhỏ hơn họ rất nhiều. Tôi vẫn cố gắng đi suốt chặng đường, và cuối cùng đã gây quỹ được một số tiền khá lớn từ bạn bè và giáo viên – những người đã đồng ý tài trợ mỗi dặm tôi đi được. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 21 đến 25. Câu 26 đến 30 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 26 đến 30. Những trải nghiệm thể chất khác Cuộc chạy băng đồng khắc nghiệt David kể: Tôi nhớ một buổi chiều u ám và ẩm ướt vào tháng Hai, khi chúng tôi bị buộc phải chạy ba dặm trên sân trường trong mưa xối xả. Chúng tôi ướt sũng, run lên vì lạnh, và cách duy nhất để giữ ấm là tiếp tục chạy. Một trong những giáo viên thể dục, người lúc đó đang ngồi trong nhà nhâm nhi trà, bước ra gặp chúng tôi giữa đường và bắt chúng tôi nhảy qua một con suối trước khi về đích. Vị giáo viên này thậm chí giẫm lên tay những học sinh mà ông ta không thích khi họ cố gắng leo lên bờ dốc, khiến họ trượt xuống nước lạnh. Tôi cảm thấy ghê tởm, nhưng tất nhiên, tôi không dám nói gì – lúc đó tôi chỉ mới 12 tuổi. Trải nghiệm này thay đổi cách tôi nhìn nhận con người. Tôi từng tôn trọng thầy ấy, nhưng sau chuyện đó, tôi nhận ra con người có thể tàn nhẫn và lạnh lùng đến mức nào. Thất bại ở Đức William nói: Một năm nọ, trường trung học của chúng tôi có chuyến du đấu bóng đá ở Đức. Cả đội đều bị say sóng dữ dội trên phà đi sang Hà Lan, và chuyến đi hóa thành trò hề vì giáo viên phụ trách không nói tiếng Đức giỏi. Kết quả là chúng tôi phải đấu với những đội có cầu thủ lớn hơn chúng tôi từ 3 đến 4 tuổi. Tất nhiên, chúng tôi thua tất cả các trận đấu. Chinh phục đỉnh Ben Nevis Duncan kể: Một trong những ký ức đẹp nhất của tôi về những thử thách thể chất là chinh phục đỉnh Ben Nevis, ngọn núi cao nhất của quần đảo Anh. Hôm đó thời tiết tuyệt đẹp – điều này khá hiếm ở vùng Scotland đó. Chúng tôi mất khoảng năm tiếng để leo lên. Phần khó nhất là đường ziczac toàn đá tảng gần đỉnh. Khi lên tới đỉnh, chúng tôi bất ngờ bị bao quanh bởi một nhóm khách du lịch Nhật Bản – tôi đoán họ đã được trực thăng chở lên! Cú ngã từ mái nhà Philip kể: Anh em họ tôi luôn thích những môn thể thao mạo hiểm, từ chèo thuyền kayak, lướt ván đến đu dây mạo hiểm. Một ngày nọ, một người trong số họ leo lên nóc nhà để sửa ngói cùng chú tôi. Chỉ vài phút sau, anh ấy xuất hiện trước cửa bếp, choáng váng, và mẹ anh ấy ngạc nhiên hỏi: "Sao con lại ở đây? Mẹ tưởng con đang giúp bố cơ mà?" "Con vừa rơi khỏi mái nhà, mẹ ạ." May mắn thay, anh ấy không bị thương nhờ kỹ năng lăn tự động từ khóa huấn luyện nhảy dù gần đây! Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 26 đến 30. Phần 3 kết thúc tại đây.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What did the first person do in the schools' cup final?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He scored the winning goal.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. He provided the pass for the final goal.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. He blew the whistle at the end of the game.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Hold the final cup.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>He provided the pass for the final goal.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người đầu tiên kể lại trận chung kết cúp trường học:</p>   <p>"Anyway, in the final I set up the winning goal, a brilliant cross to my mate David, who headed the ball in just before the final whistle."</p>    <p>"Dù sao thì, trong trận chung kết, tôi đã <strong>kiến tạo bàn thắng quyết định</strong>, một pha tạt bóng tuyệt vời cho bạn tôi là David, người đã đánh đầu ghi bàn ngay trước khi trọng tài thổi còi kết thúc."</p>    <p>Bài nghe xác nhận rằng anh ấy <strong>kiến tạo bàn thắng quyết định</strong> chứ không phải là người ghi bàn. Do đó, đáp án chính xác là <strong>He provided the pass for the final goal.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">He scored the winning goal.</span> ❌ (Anh ấy ghi bàn thắng quyết định.) - Sai, vì David là người đánh đầu ghi bàn.</li>            <li><span class="text-success"><strong>He provided the pass for the final goal.</strong></span> ✅ (Anh ấy thực hiện đường chuyền quyết định cho bàn thắng cuối cùng.) - Đúng, vì bài nghe xác nhận rằng anh ấy là người tạt bóng cho đồng đội ghi bàn.</li>            <li><span class="text-danger">He blew the whistle at the end of the game.</span> ❌ (Anh ấy thổi còi kết thúc trận đấu.) - Sai, vì đây là vai trò của trọng tài, không phải của anh ấy.</li>            <li><span class="text-danger">Hold the final cup.</span> ❌ (Anh ấy giữ chiếc cúp chiến thắng.) - Sai, vì bài nghe không nói rằng anh ấy là người cầm cúp.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: The second person was on a school expedition when he was _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. a teenager</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. at university															</div>
+																				<div class="ps-4 mb-2">
+																	C. at college															</div>
+																				<div class="ps-4 mb-2">
+																	D. 8 years old boy															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>a teenager</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người thứ hai kể lại về chuyến thám hiểm của trường:</p>   <p>"I remember having to lead a group of eight boys on a school expedition for the best part of two days when I was a teenager."</p>    <p>"Tôi nhớ rằng mình phải dẫn đầu một nhóm tám cậu bé trong một chuyến thám hiểm của trường suốt gần hai ngày khi tôi còn là <strong>một thiếu niên</strong>."</p>    <p>Bài nghe xác nhận rằng anh ấy tham gia chuyến thám hiểm khi còn là <strong>một thiếu niên</strong>. Do đó, đáp án chính xác là <strong>a teenager.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">8 years old boy</span> ❌ (Cậu bé 8 tuổi.) - Sai, vì bài nghe nói rằng anh ấy tham gia chuyến đi khi là một thiếu niên, không phải lúc 8 tuổi.</li>            <li><span class="text-success"><strong>a teenager</strong></span> ✅ (Một thiếu niên.) - Đúng, vì bài nghe xác nhận rằng anh ấy tham gia khi còn là một thiếu niên.</li>            <li><span class="text-danger">at university</span> ❌ (Ở đại học.) - Sai, vì bài nghe không đề cập đến việc anh ấy tham gia chuyến đi khi đã học đại học.</li>            <li><span class="text-danger">at college</span> ❌ (Ở trường cao đẳng.) - Sai, vì bài nghe chỉ nhắc đến khoảng thời gian anh ấy còn là thiếu niên.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: The second person felt a bit stupid after hiking through the forest because _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. the other groups had gone by car instead of walking.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. he didn't know how to read the map.															</div>
+																				<div class="ps-4 mb-2">
+																	C. the other groups had known how to read the map.															</div>
+																				<div class="ps-4 mb-2">
+																	D. the other groups had arrived before them.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>the other groups had gone by car instead of walking.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người thứ hai mô tả cảm giác của anh ấy sau khi hoàn thành chuyến đi bộ xuyên rừng:</p>   <p>"When we arrived back at the campsite, we found out that all the other groups had cheated and hitched most of the way instead."</p>    <p>"Khi chúng tôi trở lại khu cắm trại, chúng tôi phát hiện ra rằng tất cả các nhóm khác đã <strong>gian lận</strong> và <strong>đi nhờ xe</strong> hầu hết quãng đường."</p>    <p>Bài nghe xác nhận rằng anh ấy cảm thấy hơi ngu ngốc vì <strong>các nhóm khác đã đi xe thay vì đi bộ</strong>. Do đó, đáp án chính xác là <strong>the other groups had gone by car instead of walking.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">the other groups had arrived before them.</span> ❌ (Các nhóm khác đã đến trước họ.) - Sai, vì bài nghe không nói rằng nhóm khác đến trước, mà nói rằng họ đã gian lận bằng cách đi xe.</li>            <li><span class="text-danger">the other groups had known how to read the map.</span> ❌ (Các nhóm khác biết cách đọc bản đồ.) - Sai, vì bài nghe không đề cập đến việc các nhóm khác biết đọc bản đồ.</li>            <li><span class="text-success"><strong>the other groups had gone by car instead of walking.</strong></span> ✅ (Các nhóm khác đã đi bằng xe thay vì đi bộ.) - Đúng, vì bài nghe xác nhận rằng các nhóm khác đã gian lận bằng cách đi xe.</li>            <li><span class="text-danger">he didn't know how to read the map.</span> ❌ (Anh ấy không biết cách đọc bản đồ.) - Sai, vì anh ấy được chọn làm trưởng nhóm vì anh ấy biết đọc bản đồ.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: When he was learning to swim, this person's brother _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. had something attached to him.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. advise him not to learn it.															</div>
+																				<div class="ps-4 mb-2">
+																	C. shouted at the coach.															</div>
+																				<div class="ps-4 mb-2">
+																	D. started in the shallow end of the pool.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>had something attached to him.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người thứ ba kể về trải nghiệm của anh trai khi học bơi:</p>   <p>"In those days, though, their idea of teaching kids how to swim was to tie a tin can to their ankles with a bit of string, throw them in the deep end, and shout, swim!"</p>    <p>"Hồi đó, phương pháp dạy bơi của họ là <strong>buộc một cái lon thiếc vào mắt cá chân</strong> bằng một sợi dây, rồi ném bọn trẻ xuống khu vực nước sâu và hét lên: 'Bơi đi!'"</p>    <p>Bài nghe xác nhận rằng anh trai của người kể chuyện đã <strong>có một vật gì đó được buộc vào người</strong> khi học bơi. Do đó, đáp án chính xác là <strong>had something attached to him.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">shouted at the coach.</span> ❌ (La mắng huấn luyện viên.) - Sai, vì bài nghe không đề cập đến việc anh trai của anh ấy la mắng huấn luyện viên.</li>            <li><span class="text-danger">started in the shallow end of the pool.</span> ❌ (Bắt đầu ở phần nước nông của bể bơi.) - Sai, vì anh ấy bị ném vào khu vực nước sâu chứ không phải phần nước nông.</li>            <li><span class="text-success"><strong>had something attached to him.</strong></span> ✅ (Có một vật gì đó được buộc vào người.) - Đúng, vì bài nghe xác nhận rằng anh trai anh ấy bị buộc một lon thiếc vào chân.</li>            <li><span class="text-danger">advise him not to learn it.</span> ❌ (Khuyên anh ấy không nên học bơi.) - Sai, vì bài nghe không đề cập đến việc anh trai khuyên người kể chuyện không học bơi.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: Which sentence is not true about the walk for charity?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He walked quite slowly.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. He ran.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. He jumped.															</div>
+																				<div class="ps-4 mb-2">
+																	D. He walked a long way.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>He ran.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Joy kể về trải nghiệm tham gia đi bộ từ thiện:</p>   <p>"One of my earliest physical feats was probably going on a ten-mile walk for charity when I was about seven."</p>    <p>"Một trong những thành tích thể chất sớm nhất của tôi có lẽ là <strong>đi bộ</strong> mười dặm để làm từ thiện khi tôi khoảng bảy tuổi."</p>    <p>Bài nghe xác nhận rằng Joy <strong>đã đi bộ</strong>, nhưng không đề cập đến việc cô ấy chạy. Do đó, đáp án chính xác là <strong>He ran.</strong> (Cậu ấy đã chạy.)</p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">He walked quite slowly.</span> ❌ (Cậu ấy đi bộ khá chậm.) - Sai, vì bài nghe không nói rõ tốc độ của Joy khi đi bộ.</li>            <li><span class="text-danger">He walked a long way.</span> ❌ (Cậu ấy đã đi một quãng đường dài.) - Sai, vì bài nghe xác nhận rằng Joy đã đi bộ 10 dặm, đây là một quãng đường dài.</li>            <li><span class="text-success"><strong>He ran.</strong></span> ✅ (Cậu ấy đã chạy.) - Đúng, vì bài nghe xác nhận rằng Joy đi bộ, không phải chạy.</li>            <li><span class="text-danger">He jumped.</span> ❌ (Cậu ấy đã nhảy.) - Sai, vì bài nghe không đề cập đến việc Joy nhảy.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Which sentence is not true about the cross-country?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. The teacher ran the whole way with the students.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. The teacher made one boy cry.															</div>
+																				<div class="ps-4 mb-2">
+																	C. The teacher made some of the boys fall into the stream.															</div>
+																				<div class="ps-4 mb-2">
+																	D. The teacher made the students run in the rain.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>The teacher ran the whole way with the students.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, David kể lại trải nghiệm khi chạy việt dã trong điều kiện thời tiết khắc nghiệt:</p>   <p>"I remember one dark, wet afternoon in February, being herded out onto the school field and having to run three miles across country while the rain came bucketing down."</p>   <p>"One of the gym teachers, who had been sitting inside having a cup of tea, came out to meet us half-way around the course."</p>    <p>"Tôi nhớ một buổi chiều tối lạnh và ướt vào tháng Hai, khi chúng tôi bị lùa ra sân trường và phải chạy ba dặm việt dã trong cơn mưa tầm tã."</p>   <p>"Một trong những giáo viên thể dục, người đã <strong>ngồi bên trong uống trà</strong>, chỉ xuất hiện khi chúng tôi đã chạy được nửa chặng đường."</p>    <p>Bài nghe xác nhận rằng <strong>giáo viên không chạy cùng học sinh từ đầu đến cuối</strong>, mà chỉ gặp họ ở giữa chặng đường. Do đó, đáp án chính xác là <strong>The teacher ran the whole way with the students.</strong> (Giáo viên chạy cùng học sinh suốt chặng đường.)</p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">The teacher made the students run in the rain.</span> ❌ (Giáo viên bắt học sinh chạy trong mưa.) - Sai, vì bài nghe xác nhận điều này là đúng.</li>            <li><span class="text-success"><strong>The teacher ran the whole way with the students.</strong></span> ✅ (Giáo viên chạy cùng học sinh suốt chặng đường.) - Đúng, vì bài nghe xác nhận rằng giáo viên chỉ xuất hiện ở giữa chặng đường.</li>            <li><span class="text-danger">The teacher made some of the boys fall into the stream.</span> ❌ (Giáo viên khiến một số học sinh ngã xuống suối.) - Sai, vì bài nghe xác nhận rằng giáo viên cố tình giẫm lên tay các học sinh mà ông ta không thích, làm họ trượt xuống nước.</li>            <li><span class="text-danger">The teacher made one boy cry.</span> ❌ (Giáo viên khiến một học sinh khóc.) - Sai, vì bài nghe không đề cập đến việc có học sinh nào khóc.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: How old was the character when experiencing the cross-country?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 22															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. 12</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. 17															</div>
+																				<div class="ps-4 mb-2">
+																	D. 15															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>12</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, David kể về trải nghiệm chạy việt dã của mình:</p>   <p>"I was disgusted by this, but of course I didn't say anything. I was only twelve."</p>    <p>"Tôi cảm thấy ghê tởm vì điều này, nhưng tất nhiên tôi đã không nói gì cả. Lúc đó tôi chỉ mới <strong>mười hai tuổi</strong>."</p>    <p>Bài nghe xác nhận rằng nhân vật chính <strong>12 tuổi</strong> khi trải qua cuộc chạy việt dã. Do đó, đáp án chính xác là <strong>12.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>12</strong></span> ✅ (12 tuổi.) - Đúng, vì bài nghe xác nhận nhân vật chính 12 tuổi.</li>            <li><span class="text-danger">15</span> ❌ (15 tuổi.) - Sai, vì bài nghe không đề cập đến độ tuổi này.</li>            <li><span class="text-danger">17</span> ❌ (17 tuổi.) - Sai, vì nhân vật chính chỉ mới 12 tuổi vào thời điểm đó.</li>            <li><span class="text-danger">22</span> ❌ (22 tuổi.) - Sai, vì bài nghe không nói rằng nhân vật đã trưởng thành.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: His school team lost all of its matches in Germany because _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. the teams they played were older than them was quite young at the time.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. they didn't speak German.															</div>
+																				<div class="ps-4 mb-2">
+																	C. they were all sick from the journey there.															</div>
+																				<div class="ps-4 mb-2">
+																	D. they were not good at playing abroad.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>the teams they played were older than them was quite young at the time.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, William kể về chuyến du đấu của đội bóng trường anh ấy ở Đức:</p>   <p>"The whole thing was a bit of a farce as the teacher who had arranged it didn't speak German very well, so we ended up playing teams who were three or four years older than us. Naturally, we got beaten every time."</p>    <p>"Toàn bộ chuyện này khá buồn cười vì giáo viên tổ chức chuyến đi không nói tiếng Đức giỏi lắm, nên chúng tôi đã phải thi đấu với những đội <strong>lớn hơn chúng tôi 3 hoặc 4 tuổi</strong>. Dĩ nhiên, chúng tôi thua mọi trận."</p>    <p>Bài nghe xác nhận rằng đội bóng của trường thua vì <strong>họ phải đấu với các đội lớn tuổi hơn</strong>. Do đó, đáp án chính xác là <strong>the teams they played were older than them.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">they were all sick from the journey there.</span> ❌ (Họ bị bệnh do chuyến đi.) - Sai, vì bài nghe chỉ nói rằng họ bị say sóng trên phà, nhưng không nói rằng đây là lý do khiến họ thua.</li>            <li><span class="text-danger">they didn't speak German.</span> ❌ (Họ không biết nói tiếng Đức.) - Sai, vì mặc dù giáo viên không giỏi tiếng Đức, nhưng đây không phải là lý do chính khiến họ thua.</li>            <li><span class="text-success"><strong>the teams they played were older than them was quite young at the time.</strong></span> ✅ (Các đội họ thi đấu lớn tuổi hơn họ.) - Đúng, vì bài nghe xác nhận rằng họ phải đấu với những đội lớn hơn 3-4 tuổi.</li>            <li><span class="text-danger">they were not good at playing abroad.</span> ❌ (Họ không giỏi chơi bóng ở nước ngoài.) - Sai, vì bài nghe không nói rằng họ chơi kém ở nước ngoài mà chỉ đề cập đến chênh lệch độ tuổi.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: Why was the final part of climbing the mountain more difficult?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Because they had to walk over large stones.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Because the weather was not good.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Because the dog refused to continue.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Because there were lots of people in the way.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Because they had to walk over large stones.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Duncan kể về trải nghiệm leo núi Ben Nevis:</p>   <p>"The last bit is pretty hard going, as it's a zig-zag path of big stones."</p>    <p>"Phần cuối cùng khá khó khăn, vì đó là một con đường <strong>zích zắc với những tảng đá lớn</strong>."</p>    <p>Bài nghe xác nhận rằng phần cuối của chuyến leo núi khó khăn hơn vì họ phải đi qua những tảng đá lớn. Do đó, đáp án chính xác là <strong>Because they had to walk over large stones.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">Because there were lots of people in the way.</span> ❌ (Vì có quá nhiều người cản đường.) - Sai, vì bài nghe không đề cập đến việc có nhiều người trên đường lên núi.</li>            <li><span class="text-danger">Because the dog refused to continue.</span> ❌ (Vì con chó từ chối tiếp tục đi.) - Sai, vì bài nghe chỉ nói rằng con chó gặp khó khăn, không nói rằng nó từ chối đi tiếp.</li>            <li><span class="text-success"><strong>Because they had to walk over large stones.</strong></span> ✅ (Vì họ phải đi qua những tảng đá lớn.) - Đúng, vì bài nghe xác nhận điều này.</li>            <li><span class="text-danger">Because the weather was not good.</span> ❌ (Vì thời tiết không tốt.) - Sai, vì bài nghe nói rằng đó là một ngày đẹp trời, hiếm hoi đối với khu vực đó.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: What was surprising about what happened to the person's cousin?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. His parachute didn't open.															</div>
+																				<div class="ps-4 mb-2">
+																	B. He didn't help his father.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. He wasn't hurt.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. He fell a long way.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>He wasn't hurt.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Philip kể về tai nạn của người anh họ khi sửa mái nhà:</p>   <p>"Apparently he had overbalanced and toppled over backwards. Because he had recently been doing parachute training, his latest hobby, he had rolled over automatically when he hit the ground, without thinking. This was a big old two-story house, and he must have been at least ten metres from the ground. But he didn't have a scratch on him."</p>    <p>"Rõ ràng là anh ấy đã mất thăng bằng và ngã ngửa ra sau. Vì anh ấy mới tập nhảy dù gần đây, nên khi chạm đất, anh ấy đã <strong>tự động lăn người</strong> mà không cần suy nghĩ. Ngôi nhà này có hai tầng lớn, và anh ấy đã ngã từ độ cao ít nhất mười mét. Nhưng anh ấy <strong>không bị một vết xước nào</strong>."</p>    <p>Bài nghe xác nhận rằng điều đáng ngạc nhiên là <strong>người anh họ không bị thương</strong> sau khi rơi từ độ cao 10 mét. Do đó, đáp án chính xác là <strong>He wasn't hurt.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>He wasn't hurt.</strong></span> ✅ (Anh ấy không bị thương.) - Đúng, vì bài nghe xác nhận rằng anh ấy không bị một vết xước nào.</li>            <li><span class="text-danger">He fell a long way.</span> ❌ (Anh ấy ngã từ độ cao lớn.) - Sai, vì mặc dù anh ấy ngã từ độ cao 10 mét, nhưng đây không phải là điều gây bất ngờ nhất.</li>            <li><span class="text-danger">His parachute didn't open.</span> ❌ (Dù của anh ấy không mở.) - Sai, vì bài nghe nói rằng anh ấy từng tập nhảy dù, nhưng không đề cập đến việc dùng dù trong tình huống này.</li>            <li><span class="text-danger">He didn't help his father.</span> ❌ (Anh ấy không giúp bố của mình.) - Sai, vì bài nghe không nói rằng anh ấy từ chối giúp đỡ cha mình.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: What would be the best title for this lecture?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Technological Advances Improve Recycling															</div>
+																				<div class="ps-4 mb-2">
+																	B. Recycling &lt;br&gt;															</div>
+																				<div class="ps-4 mb-2">
+																	C. Important Keys to Recycling Paper															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Steps to Improving Recycling</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Steps to Improving Recycling</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, diễn giả đề cập đến ba yếu tố quan trọng để cải thiện hệ thống tái chế:</p>   <p>"However, three essential keys need to power this movement include a more informed public, the development of improved technology, and a greater demand for recycled materials."</p>    <p>"Tuy nhiên, có ba yếu tố thiết yếu để thúc đẩy phong trào này, bao gồm <strong>nâng cao nhận thức cộng đồng</strong>, <strong>phát triển công nghệ</strong> và <strong>gia tăng nhu cầu đối với nguyên liệu tái chế</strong>."</p>    <p>Bài nghe tập trung vào <strong>các bước để cải thiện hệ thống tái chế</strong>, chứ không chỉ riêng về tái chế giấy hay công nghệ. Do đó, đáp án chính xác là <strong>Steps to Improving Recycling.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">Important Keys to Recycling Paper.</span> ❌ (Những yếu tố quan trọng trong việc tái chế giấy.) - Sai, vì bài nghe không chỉ nói về tái chế giấy mà còn nói về nhiều khía cạnh khác của việc tái chế.</li>            <li><span class="text-danger">Technological Advances Improve Recycling.</span> ❌ (Những tiến bộ công nghệ cải thiện tái chế.) - Sai, vì bài nghe có đề cập đến công nghệ, nhưng không phải là trọng tâm chính.</li>            <li><span class="text-success"><strong>Steps to Improving Recycling.</strong></span> ✅ (Các bước để cải thiện tái chế.) - Đúng, vì bài nghe trình bày các bước quan trọng giúp nâng cao hệ thống tái chế.</li>            <li><span class="text-danger">Recycling.</span> ❌ (Tái chế.) - Sai, vì tiêu đề này quá chung chung và không phản ánh trọng tâm của bài nghe.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: According to the article, paper materials that arie difficult to recycle include _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. carbon paper</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. document shred															</div>
+																				<div class="ps-4 mb-2">
+																	C. copy paper															</div>
+																				<div class="ps-4 mb-2">
+																	D. food wrappers															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>carbon paper</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, diễn giả đề cập đến các loại giấy khó tái chế:</p>   <p>"Local governments should educate the public on how to properly sort reusable materials from those, like wax paper, carbon paper, plastic laminated materials such as fast food wrappers that can't be recycled very easily."</p>    <p>"Chính quyền địa phương nên hướng dẫn công chúng cách phân loại vật liệu có thể tái sử dụng khỏi những loại khó tái chế, như <strong>giấy carbon</strong>, giấy phủ sáp và các vật liệu nhựa ép như bao bì thức ăn nhanh."</p>    <p>Bài nghe xác nhận rằng <strong>giấy carbon</strong> (carbon paper) là một trong những loại giấy khó tái chế. Do đó, đáp án chính xác là <strong>carbon paper.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">copy paper</span> ❌ (Giấy sao chép.) - Sai, vì bài nghe không đề cập đến việc giấy sao chép khó tái chế.</li>            <li><span class="text-danger">document shred</span> ❌ (Giấy vụn từ tài liệu.) - Sai, vì bài nghe không nói rằng giấy vụn khó tái chế.</li>            <li><span class="text-danger">food wrappers</span> ❌ (Bao bì thực phẩm.) - Sai, vì mặc dù bài nghe có nhắc đến bao bì thức ăn nhanh, nhưng câu hỏi yêu cầu chọn một loại giấy.</li>            <li><span class="text-success"><strong>carbon paper</strong></span> ✅ (Giấy carbon.) - Đúng, vì bài nghe xác nhận rằng giấy carbon khó tái chế.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question13">
+						<div class="fw-bold mb-2">
+							Câu 13: In some cases, recycling could be hazardous to the environment if special precautions are not taken because _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. there is no environmental safe methods.															</div>
+																				<div class="ps-4 mb-2">
+																	B. industrial emissions are sometimes created in the process.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. chemical waste is sometimes produced as a result.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. a great deal of energy is expended to create new products.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>chemical waste is sometimes produced as a result.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, diễn giả đề cập đến nguy cơ ô nhiễm môi trường do quá trình tái chế:</p>   <p>"Recycling paper materials can be expensive in both monetary and environmental terms. The difficulty in removing print from paper, the amount of energy expended during the process, and caustic waste that is sometimes produced are costs that companies incur that are then passed on to the consumer."</p>    <p>"Việc tái chế giấy có thể tốn kém cả về mặt tài chính và môi trường. Khó khăn trong việc loại bỏ mực in khỏi giấy, lượng năng lượng tiêu hao trong quá trình này, và <strong>chất thải hóa học đôi khi được tạo ra</strong> là những chi phí mà các công ty phải gánh chịu, sau đó chuyển sang cho người tiêu dùng."</p>    <p>Bài nghe xác nhận rằng việc tái chế có thể gây hại cho môi trường nếu không có biện pháp phòng ngừa đặc biệt, vì <strong>chất thải hóa học có thể được tạo ra</strong>. Do đó, đáp án chính xác là <strong>chemical waste is sometimes produced as a result.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">industrial emissions are sometimes created in the process.</span> ❌ (Khí thải công nghiệp đôi khi được tạo ra trong quá trình này.) - Sai, vì bài nghe không đề cập đến khí thải công nghiệp.</li>            <li><span class="text-success"><strong>chemical waste is sometimes produced as a result.</strong></span> ✅ (Chất thải hóa học đôi khi được tạo ra.) - Đúng, vì bài nghe xác nhận rằng quá trình tái chế có thể tạo ra chất thải hóa học.</li>            <li><span class="text-danger">a great deal of energy is expended to create new products.</span> ❌ (Lượng năng lượng lớn được sử dụng để tạo ra sản phẩm mới.) - Sai, vì tuy bài nghe đề cập đến năng lượng tiêu hao, nhưng đó không phải là yếu tố gây hại chính.</li>            <li><span class="text-danger">there is no environmental safe methods.</span> ❌ (Không có phương pháp nào an toàn cho môi trường.) - Sai, vì bài nghe không nói rằng không có phương pháp nào an toàn, mà chỉ nói về một số rủi ro môi trường.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question14">
+						<div class="fw-bold mb-2">
+							Câu 14: According to the lecture, the demand for recyclable materials in the manufacturing of new products is sometimes sluggish because _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. there is a lack of advanced technology to process the materials.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. some governments are unwilling to support expensive recycling methods.															</div>
+																				<div class="ps-4 mb-2">
+																	C. businesses do not invest enough money into research.															</div>
+																				<div class="ps-4 mb-2">
+																	D. there is a lack of low-cost loans.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>there is a lack of advanced technology to process the materials.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, diễn giả đề cập đến lý do tại sao nhu cầu đối với nguyên liệu tái chế đôi khi chậm lại:</p>   <p>"The final key is to increase demand for the growing surplus of resources waiting to be recycled. This process has appeared in various regions of the world where the technology to process the used materials lags far behind the amount being collected for recycling."</p>    <p>"Yếu tố cuối cùng là phải <strong>tăng nhu cầu đối với lượng tài nguyên tái chế đang chờ xử lý</strong>. Quá trình này đã xuất hiện ở nhiều khu vực trên thế giới, nơi mà <strong>công nghệ xử lý nguyên liệu tái chế còn lạc hậu</strong> so với số lượng được thu gom."</p>    <p>Bài nghe xác nhận rằng nhu cầu đối với nguyên liệu tái chế bị chậm lại vì <strong>thiếu công nghệ tiên tiến để xử lý nguyên liệu</strong>. Do đó, đáp án chính xác là <strong>there is a lack of advanced technology to process the materials.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">some governments are unwilling to support expensive recycling methods.</span> ❌ (Một số chính phủ không sẵn sàng hỗ trợ các phương pháp tái chế đắt đỏ.) - Sai, vì bài nghe không đề cập đến sự phản đối của chính phủ đối với các phương pháp tái chế.</li>            <li><span class="text-success"><strong>there is a lack of advanced technology to process the materials.</strong></span> ✅ (Thiếu công nghệ tiên tiến để xử lý nguyên liệu.) - Đúng, vì bài nghe xác nhận rằng công nghệ xử lý còn lạc hậu.</li>            <li><span class="text-danger">businesses do not invest enough money into research.</span> ❌ (Các doanh nghiệp không đầu tư đủ tiền vào nghiên cứu.) - Sai, vì bài nghe không đề cập đến việc thiếu đầu tư từ doanh nghiệp.</li>            <li><span class="text-danger">there is a lack of low-cost loans.</span> ❌ (Thiếu các khoản vay chi phí thấp.) - Sai, vì bài nghe không đề cập đến vấn đề vay vốn.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question15">
+						<div class="fw-bold mb-2">
+							Câu 15: Which is NOT one of the main keys to recycling as mentioned in the lecture?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. better technology															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. government regulation of waste</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. more demand for recycled materials															</div>
+																				<div class="ps-4 mb-2">
+																	D. removing ink from paper															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>government regulation of waste</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, diễn giả đề cập đến ba yếu tố chính để cải thiện hệ thống tái chế:</p>   <p>"However, three essential keys need to power this movement include a more informed public, the development of improved technology, and a greater demand for recycled materials."</p>    <p>"Tuy nhiên, có ba yếu tố thiết yếu để thúc đẩy phong trào này, bao gồm <strong>nâng cao nhận thức cộng đồng</strong>, <strong>phát triển công nghệ</strong> và <strong>gia tăng nhu cầu đối với nguyên liệu tái chế</strong>."</p>    <p>Bài nghe không đề cập đến <strong>quy định của chính phủ về rác thải</strong> như một trong những yếu tố chính. Do đó, đáp án chính xác là <strong>government regulation of waste.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>government regulation of waste</strong></span> ✅ (Quy định của chính phủ về rác thải.) - Đúng, vì bài nghe không đề cập đến yếu tố này như một trong ba yếu tố chính.</li>            <li><span class="text-danger">better technology</span> ❌ (Công nghệ tốt hơn.) - Sai, vì bài nghe xác nhận rằng phát triển công nghệ là một trong ba yếu tố quan trọng.</li>            <li><span class="text-danger">more demand for recycled materials</span> ❌ (Gia tăng nhu cầu đối với nguyên liệu tái chế.) - Sai, vì bài nghe nói rằng đây là một trong ba yếu tố chính để cải thiện hệ thống tái chế.</li>            <li><span class="text-danger">removing ink from paper</span> ❌ (Loại bỏ mực khỏi giấy.) - Sai, vì bài nghe đề cập đến điều này như một phần của công nghệ tái chế, nhưng không phải là một trong ba yếu tố chính.</li>    </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="12" id="progress-question-12">
+				   13				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="13" id="progress-question-13">
+				   14				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="14" id="progress-question-14">
+				   15				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

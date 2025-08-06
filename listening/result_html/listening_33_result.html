@@ -1,0 +1,641 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 33 - Part 3				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87751				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/15				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp3-1664883595_7f92b0ff392a0a2feef7.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Part 3 In this part, you will hear three talks, or lectures. The talks or lectures will be played once only. There are five questions for each talk or lecture.<br>
+For each question, choose the right answer, A, B, C, or D. Part 3 Questions 21 to 25 First, you will have some time to look at questions 21 to 25. Now we're ready to start. Listen, and answer questions 21 to 25.<br>
+You will hear the recording once only. Hello, and welcome to this recording brought to you by the British Council. Trains, past, present, and future, by John Russell.<br>
+Why did railways develop? Railways are not a modern invention, as most of us think. The idea of transporting things and people on rails has been around for a long time. Rails were made of wood, stone, or metal, and railway wagons were pulled by horses.<br>
+Some were even wind-powered and had sails. At the start of the Industrial Revolution in Britain, people needed to transport raw materials such as coal, so created a network of canals and rail links between towns. But canals and horsepower were a very slow way to move things around the country, so the speed of railway wagons needed to be increased.<br>
+How did steam engines help? By 1800, many industries were using steam engines designed by James Watt, from where we get the electrical measurement, Watt. Richard Trevithick, a Cornish engineer, refined Watt's invention, and after failing to build a steam-powered road vehicle, he designed the first locomotive for an ironworks in Wales. He called it a puffer, because of the noise it made, and on its first journey it travelled at almost eight kilometres an hour.<br>
+Unfortunately, it was so heavy that it broke the rails. It only made three journeys. But it had shown that steam engines could be used to move trains, and speeds began to increase.<br>
+When was the first accident? By 1829, locomotives were travelling at speeds of over 45 kilometres an hour, and the first public railway had been opened, the Stockton and Darlington Railway. The most famous early locomotive was the Rocket. In 1833, it won a competition, organised by the owners of the Manchester and Liverpool Railway, to find the best locomotive for their new line.<br>
+Unfortunately, during the competition, a Member of Parliament wasn't careful as he crossed the tracks, and the Rocket knocked him down. He died later. This was one of the first train accidents in history.<br>
+What was the golden age of steam? The next 130 years can be described as a golden age of steam. Railways were built all over the world, and the size, speed and comfort of trains continued to increase. By 1870, it was possible to cross America by train, and the building of railways in many other countries allowed people and progress to move quickly across the world.<br>
+Now you will have some time to review questions 21 to 25. Part 3. Questions 26 to 30. First, you will have some time to look at questions 26 to 30.<br>
+I come from the south of England, in the most densely populated corner of a small island, which you might think is full of people. The UK as a whole has 2.4 people per hectare. I have never gone hungry.<br>
+The only time when I wished there were less people is on rush hour trains. However, one of the most interesting findings of the census of 2001 was that a million people were missing, or at least there were a million people less than the authorities expected. Should we be happy that we have more space and less mouths to feed? I don't know.<br>
+As I start writing this article, the world population, according to the Office of Population Research at Princeton University, stands at 6,315,850,431. DOOM V1 In 1798, Robert Malthus wrote an essay which got economics the name of the Dismal Science. It was called The Principle of Population.<br>
+He said that it was impossible for the number of people to increase, and even worse, it was impossible for the standard of living to rise. The argument went like this. 1. Population naturally increases geometrically.<br>
+2, 4, 8, 16. 2. Food production increases arithmetically. 2, 4, 6, 8. 3. So population will be controlled by lack of food, the same as it is for animals.<br>
+Some people will always be starving. A lot of people disliked Malthus's point of view, often because it seemed to go against the idea of progress, which was so important for other social theories of the time. Anyway, the experience of the next two centuries shows that something must be wrong with the theory.<br>
+In the 19th century, world population rose from 1 to 1.7 billion. In the 20th, it increased to about 6 billion. Doom version 2. In 1961, J.G. Ballard wrote a story called Millennium.<br>
+It's about a world where the population has gone on increasing at 3% a year to reach a figure of at least 20 billion, although the true number is kept secret. To make space for growing food, everyone lives in giant cities where the buildings are divided into little cubicles. A single person can have four square meters, and a married couple six.<br>
+Everyone has enough to eat, but life is certainly very inconvenient. People spend most of the time waiting in queues for the bathroom or anywhere else they want to go. Now you will have some time to review questions 26 to 30.<br>
+Part three. Questions 31 to 35. First, you will have some time to look at questions 31 to 35.<br>
+Cosmetic or plastic surgery often evokes images of famous personalities wanting to alter their appearances through elective surgical procedures. However, reconstructive surgery is a procedure that makes a similar but different impact on the lives of many around the world. And many of these patients suffer from either congenital defects, like a cleft palate, or from injuries sustained in accidents or as a result of animal bites.<br>
+Some disfigurements can also be due to the effects of disease or infection. Yet the individual with such defects often bears more than just outward physical marks. Loss of hope and self-worth as well as acceptance are commonplace.<br>
+In the past, such procedures were only available in developed countries where the medical expertise and financial resources were available to afford such operations. However, a number of worldwide organizations made up of volunteers make regular visits to developing countries to provide reconstructive surgery to those who could not otherwise receive such care. In addition to the care they provide, these volunteer specialists also provide training to health care workers in these procedures so that local hospitals, nurses, and doctors can become self-sufficient.<br>
+The end results of such efforts have transformed lives. The patient now can live with some normalcy and hope for the future with less fear of being ostracized by neighbors and family. And the health care worker who performs the procedure perhaps feels a greater understanding and compassion for those who suffer from such defects.<br>
+There are many ways for people to assist in supporting these volunteer efforts. Although most people do not have the medical expertise to perform reconstructive surgery, they can still donate time, money, and supplies to such organizations. A quick search on the internet can get you started.<br>
+Now you will have some time to review questions 31 to 35. That is the end of Part 3. That is the end of the Listening Comprehension Test.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 3 Trong phần này, bạn sẽ nghe ba bài nói chuyện hoặc bài giảng. Các bài nói chuyện hoặc bài giảng sẽ chỉ được phát một lần duy nhất. Có năm câu hỏi cho mỗi bài nói chuyện hoặc bài giảng. Với mỗi câu hỏi, hãy chọn câu trả lời đúng: A, B, C hoặc D. Câu 21 đến 25 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 21 đến 25. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 21 đến 25. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Tàu hỏa: Quá khứ, hiện tại và tương lai Giới thiệu Xin chào và chào mừng bạn đến với bài ghi âm này, do Hội đồng Anh (British Council) thực hiện. Chủ đề hôm nay là "Tàu hỏa: Quá khứ, hiện tại và tương lai", do John Russell trình bày. Tại sao đường sắt phát triển? Nhiều người nghĩ rằng đường sắt là một phát minh hiện đại, nhưng thực ra không phải vậy. Ý tưởng vận chuyển hàng hóa và con người trên đường ray đã có từ rất lâu. Ban đầu, đường ray được làm bằng gỗ, đá hoặc kim loại, và các toa tàu được kéo bởi ngựa. Thậm chí, một số toa xe còn sử dụng sức gió và có cánh buồm. Vào thời kỳ đầu của cuộc Cách mạng Công nghiệp ở Anh, người ta cần vận chuyển nguyên liệu thô như than đá. Do đó, một mạng lưới kênh đào và tuyến đường sắt đã được xây dựng để kết nối các thị trấn. Tuy nhiên, việc di chuyển bằng kênh đào và sức ngựa quá chậm, vì vậy cần tăng tốc độ vận chuyển bằng đường sắt. Động cơ hơi nước đã giúp ích như thế nào? Vào năm 1800, nhiều ngành công nghiệp đã sử dụng động cơ hơi nước do James Watt thiết kế (tên của ông cũng được dùng để đặt đơn vị đo điện - Watt). Một kỹ sư người Cornwall, Richard Trevithick, đã cải tiến phát minh của Watt. Sau khi thất bại trong việc chế tạo một chiếc xe hơi chạy bằng hơi nước, ông đã thiết kế đầu máy xe lửa đầu tiên cho một nhà máy sắt thép ở xứ Wales. Ông đặt tên nó là "puffer" vì tiếng ồn phát ra khi vận hành. Trong chuyến đi đầu tiên, nó di chuyển gần 8 km/giờ, nhưng lại quá nặng và làm gãy đường ray. Nó chỉ chạy được ba chuyến. Tuy nhiên, phát minh này đã chứng minh rằng động cơ hơi nước có thể được sử dụng để kéo tàu, và tốc độ tàu ngày càng được cải thiện. Khi nào tai nạn tàu hỏa đầu tiên xảy ra? Đến năm 1829, đầu máy xe lửa đã có thể đạt tốc độ trên 45 km/giờ, và tuyến đường sắt công cộng đầu tiên - Đường sắt Stockton &amp; Darlington - đã được mở. Chiếc đầu máy xe lửa nổi tiếng nhất thời kỳ đầu là "Rocket". Năm 1833, nó giành chiến thắng trong một cuộc thi do chủ sở hữu tuyến đường sắt Manchester &amp; Liverpool tổ chức để tìm kiếm đầu máy tốt nhất cho tuyến đường mới của họ. Tuy nhiên, trong cuộc thi, một nghị sĩ không cẩn thận khi băng qua đường ray và bị Rocket đâm trúng. Ông ấy đã qua đời sau đó. Đây là một trong những tai nạn tàu hỏa đầu tiên trong lịch sử. Thời kỳ hoàng kim của tàu hơi nước là khi nào? 130 năm tiếp theo có thể được gọi là "thời kỳ hoàng kim" của tàu hơi nước. Đường sắt được xây dựng trên toàn thế giới, và kích thước, tốc độ, cũng như sự thoải mái của tàu hỏa không ngừng cải thiện. Đến năm 1870, con người đã có thể đi khắp nước Mỹ bằng tàu hỏa, và hệ thống đường sắt ở nhiều quốc gia khác cũng giúp con người di chuyển và phát triển nhanh chóng. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 21 đến 25. Câu 26 đến 30 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 26 đến 30. Dân số và tương lai của nhân loại Tôi đến từ miền nam nước Anh, một khu vực đông dân nhất trên một hòn đảo nhỏ, nơi mà bạn có thể nghĩ rằng dân số đã quá đông. Trung bình, Vương quốc Anh có khoảng 2,4 người trên mỗi hecta. Tôi chưa bao giờ bị đói. Thời điểm duy nhất tôi ước có ít người hơn là khi đi tàu vào giờ cao điểm. Tuy nhiên, một trong những phát hiện thú vị từ cuộc điều tra dân số năm 2001 là có khoảng một triệu người bị "mất tích", hoặc ít nhất là ít hơn một triệu người so với dự đoán của chính phủ. Vậy chúng ta có nên vui mừng vì có thêm không gian sống và ít miệng ăn hơn không? Tôi không chắc. Khi tôi bắt đầu viết bài này, dân số thế giới theo Văn phòng Nghiên cứu Dân số của Đại học Princeton là 6.315.850.431 người. Thuyết "diệt vong" của Malthus Năm 1798, Robert Malthus đã viết một bài luận khiến kinh tế học bị gán với cái tên "môn khoa học ảm đạm". **Bài viết mang tên "Nguyên lý về Dân số", trong đó ông lập luận rằng: 1. Dân số tăng trưởng theo cấp số nhân: 2, 4, 8, 16… 2. Sản lượng lương thực chỉ tăng theo cấp số cộng: 2, 4, 6, 8… 3. Vì vậy, dân số sẽ bị kiểm soát bởi tình trạng thiếu lương thực, giống như động vật trong tự nhiên. Nói cách khác, sẽ luôn có người bị đói. Nhiều người không đồng tình với quan điểm của Malthus, vì nó đi ngược lại ý tưởng về sự tiến bộ của xã hội. Hơn nữa, thực tế trong hai thế kỷ tiếp theo đã chứng minh có điều gì đó sai trong lý thuyết này. Dân số thế giới đã tăng từ 1 tỷ lên 1,7 tỷ vào thế kỷ 19. Vào thế kỷ 20, con số này đã tăng lên khoảng 6 tỷ người. Viễn cảnh "tận thế" phiên bản 2 Năm 1961, nhà văn J.G. Ballard đã viết câu chuyện "Millennium", mô tả một thế giới nơi dân số tiếp tục tăng 3% mỗi năm và đạt ít nhất 20 tỷ người. Để có chỗ trồng lương thực, mọi người sống trong các tòa nhà khổng lồ với những căn hộ chỉ rộng 4 mét vuông cho một người và 6 mét vuông cho một cặp vợ chồng. Mọi người đều có đủ ăn, nhưng cuộc sống vô cùng bất tiện. Họ dành phần lớn thời gian để xếp hàng chờ đến lượt trong nhà vệ sinh hoặc bất cứ nơi nào họ muốn đi. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 26 đến 30.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: The idea of rail transportation has appeared _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. recently															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. for ages</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. for 100 years															</div>
+																				<div class="ps-4 mb-2">
+																	D. for a short time															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>for ages.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn:</p>   <p>"Railways are not a modern invention, as most of us think. The idea of transporting things and people on rails has been around for a long time."</p>    <p>"Đường sắt không phải là một phát minh hiện đại như hầu hết chúng ta nghĩ. Ý tưởng vận chuyển hàng hóa và con người trên đường ray đã tồn tại <strong>từ rất lâu</strong>."</p>    <p>Bài nghe xác nhận rằng <strong>ý tưởng về đường sắt đã xuất hiện từ rất lâu</strong>. Do đó, đáp án chính xác là <strong>for ages.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>for ages.</strong></span> ✅ - Đúng, vì bài nghe nói rằng đường sắt đã tồn tại từ rất lâu.</li>            <li><span class="text-danger">recently.</span> ❌ - Sai, vì bài nghe xác nhận rằng đường sắt không phải là một phát minh hiện đại.</li>            <li><span class="text-danger">for 100 years.</span> ❌ - Sai, vì bài nghe không giới hạn thời gian cụ thể là 100 năm.</li>            <li><span class="text-danger">for a short time.</span> ❌ - Sai, vì bài nghe nhấn mạnh rằng đường sắt đã tồn tại từ rất lâu.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: Rails were always made of _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. wood, stone or metal</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. wood or stone															</div>
+																				<div class="ps-4 mb-2">
+																	C. metal or stone															</div>
+																				<div class="ps-4 mb-2">
+																	D. wood or metal															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>wood, stone or metal.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn:</p>   <p>"Rails were made of wood, stone, or metal, and railway wagons were pulled by horses."</p>    <p>"Đường ray được làm từ <strong>gỗ, đá hoặc kim loại</strong>, và các toa xe được kéo bởi ngựa."</p>    <p>Bài nghe xác nhận rằng <strong>đường ray có thể được làm từ gỗ, đá hoặc kim loại</strong>. Do đó, đáp án chính xác là <strong>wood, stone or metal.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">wood or metal.</span> ❌ - Sai, vì bài nghe nói rằng đường ray còn có thể được làm từ đá.</li>            <li><span class="text-success"><strong>wood, stone or metal.</strong></span> ✅ - Đúng, vì bài nghe xác nhận cả ba chất liệu này.</li>            <li><span class="text-danger">metal or stone.</span> ❌ - Sai, vì bài nghe nói rằng đường ray còn có thể được làm từ gỗ.</li>            <li><span class="text-danger">wood or stone.</span> ❌ - Sai, vì bài nghe nói rằng đường ray còn có thể được làm từ kim loại.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: Who invented the first steam engine for trains?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Richard Trevithick</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. James Watt															</div>
+																				<div class="ps-4 mb-2">
+																	C. Cornish Wales															</div>
+																				<div class="ps-4 mb-2">
+																	D. Iron Works															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Richard Trevithick.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn:</p>   <p>"Richard Trevithick, a Cornish engineer, refined Watt's invention, and after failing to build a steam-powered road vehicle, he designed the first locomotive for an ironworks in Wales."</p>    <p>"<strong>Richard Trevithick</strong>, một kỹ sư người Cornwall, đã cải tiến phát minh của Watt, và sau khi thất bại trong việc chế tạo một phương tiện chạy bằng hơi nước trên đường bộ, ông đã thiết kế <strong>đầu máy hơi nước đầu tiên</strong> cho một nhà máy luyện sắt ở Wales."</p>    <p>Bài nghe xác nhận rằng <strong>Richard Trevithick là người phát minh ra đầu máy hơi nước đầu tiên dành cho tàu hỏa</strong>. Do đó, đáp án chính xác là <strong>Richard Trevithick.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">James Watt.</span> ❌ - Sai, vì ông là người phát minh ra động cơ hơi nước nhưng không phải dành riêng cho tàu hỏa.</li>            <li><span class="text-success"><strong>Richard Trevithick.</strong></span> ✅ - Đúng, vì ông là người thiết kế đầu máy hơi nước đầu tiên cho tàu hỏa.</li>            <li><span class="text-danger">Iron Works.</span> ❌ - Sai, vì đây là địa điểm nơi đầu máy hơi nước đầu tiên được sử dụng, không phải người phát minh.</li>            <li><span class="text-danger">Cornish Wales.</span> ❌ - Sai, vì đây chỉ là địa danh, không phải là tên của một nhà phát minh.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: The Rocket first travelled on the _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Stockton and Liverpool Railway															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Manchester and Liverpool Railway</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Eurotunnel															</div>
+																				<div class="ps-4 mb-2">
+																	D. Stockton and Darlington Railway															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Manchester and Liverpool Railway.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn:</p>   <p>"The most famous early locomotive was the Rocket. In 1833, it won a competition, organised by the owners of the <strong>Manchester and Liverpool Railway</strong>, to find the best locomotive for their new line."</p>    <p>"Đầu máy hơi nước nổi tiếng nhất thời kỳ đầu là <strong>Rocket</strong>. Năm 1833, nó đã giành chiến thắng trong một cuộc thi do chủ sở hữu <strong>Manchester và Liverpool Railway</strong> tổ chức để tìm đầu máy tốt nhất cho tuyến đường sắt mới của họ."</p>    <p>Bài nghe xác nhận rằng <strong>Rocket lần đầu tiên chạy trên Manchester and Liverpool Railway</strong>. Do đó, đáp án chính xác là <strong>Manchester and Liverpool Railway.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">Stockton and Darlington Railway.</span> ❌ - Sai, vì Rocket không chạy trên tuyến đường này đầu tiên.</li>            <li><span class="text-success"><strong>Manchester and Liverpool Railway.</strong></span> ✅ - Đúng, vì Rocket giành chiến thắng trong cuộc thi của tuyến đường sắt này.</li>            <li><span class="text-danger">Eurotunnel.</span> ❌ - Sai, vì Eurotunnel là đường hầm dưới biển giữa Anh và Pháp, không liên quan đến Rocket.</li>            <li><span class="text-danger">Stockton and Liverpool Railway.</span> ❌ - Sai, vì không có tuyến đường sắt nào tên như vậy.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: When was the first accident?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. 1830</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. 1833															</div>
+																				<div class="ps-4 mb-2">
+																	C. 1933															</div>
+																				<div class="ps-4 mb-2">
+																	D. 1829															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>1830.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn:</p>   <p>"Unfortunately, during the competition, a Member of Parliament wasn't careful as he crossed the tracks, and the Rocket knocked him down. He died later. This was one of the first train accidents in history."</p>    <p>"Thật không may, trong cuộc thi, một thành viên Quốc hội đã không cẩn thận khi băng qua đường ray, và <strong>Rocket</strong> đã đâm vào ông ấy. Ông ấy qua đời sau đó. Đây là một trong những vụ tai nạn tàu hỏa đầu tiên trong lịch sử."</p>    <p>Bài nghe xác nhận rằng <strong>tai nạn tàu hỏa đầu tiên xảy ra vào năm 1830</strong>. Do đó, đáp án chính xác là <strong>1830.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">1833.</span> ❌ - Sai, vì đây là năm Rocket giành chiến thắng trong cuộc thi, không phải năm xảy ra tai nạn.</li>            <li><span class="text-danger">1829.</span> ❌ - Sai, vì đây là năm đầu máy hơi nước đạt tốc độ trên 45 km/h, không phải năm xảy ra tai nạn.</li>            <li><span class="text-success"><strong>1830.</strong></span> ✅ - Đúng, vì tai nạn tàu hỏa đầu tiên được ghi nhận xảy ra vào năm này.</li>            <li><span class="text-danger">1933.</span> ❌ - Sai, vì không có sự kiện nào liên quan đến tai nạn tàu hỏa đầu tiên vào năm này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: The population of the UK in 2001 _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. was less than the government thought.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. was impossible to count.															</div>
+																				<div class="ps-4 mb-2">
+																	C. was more than the government thought.															</div>
+																				<div class="ps-4 mb-2">
+																	D. was one million.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>was less than the government thought.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn:</p>   <p>"However, one of the most interesting findings of the census of 2001 was that a million people were missing, or at least there were a million people less than the authorities expected."</p>    <p>"Tuy nhiên, một trong những phát hiện thú vị nhất của cuộc điều tra dân số năm 2001 là có một triệu người bị thiếu, hoặc ít nhất dân số ít hơn một triệu người so với dự đoán của chính quyền."</p>    <p>Bài nghe xác nhận rằng <strong>dân số của Vương quốc Anh vào năm 2001 ít hơn so với dự đoán của chính phủ</strong>. Do đó, đáp án chính xác là <strong>was less than the government thought.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">was impossible to count.</span> ❌ - Sai, vì dân số vẫn có thể được kiểm đếm, chỉ là thấp hơn dự kiến.</li>            <li><span class="text-success"><strong>was less than the government thought.</strong></span> ✅ - Đúng, vì dân số thấp hơn dự đoán một triệu người.</li>            <li><span class="text-danger">was one million.</span> ❌ - Sai, vì con số một triệu đề cập đến sự thiếu hụt, không phải tổng dân số.</li>            <li><span class="text-danger">was more than the government thought.</span> ❌ - Sai, vì thực tế dân số ít hơn dự kiến.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: Malthus thought that the number of people _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. would stay the same because there would always be people dying of hunger.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. would go up very fast, much faster than the amount of food.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. would rise slowly together with the increase in food production.															</div>
+																				<div class="ps-4 mb-2">
+																	D. would rise moreslowly than the amount of food.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>would go up very fast, much faster than the amount of food.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn:</p>   <p>"1. Population naturally increases geometrically. 2, 4, 8, 16.   2. Food production increases arithmetically. 2, 4, 6, 8.   3. So population will be controlled by lack of food, the same as it is for animals."</p>    <p>"1. Dân số tự nhiên tăng theo cấp số nhân. 2, 4, 8, 16.   2. Sản lượng thực phẩm tăng theo cấp số cộng. 2, 4, 6, 8.   3. Vì vậy, dân số sẽ bị kiểm soát bởi sự thiếu hụt thực phẩm, giống như đối với động vật."</p>    <p>Bài nghe xác nhận rằng <strong>Malthus tin rằng dân số sẽ tăng rất nhanh, nhanh hơn nhiều so với lượng thực phẩm</strong>. Do đó, đáp án chính xác là <strong>would go up very fast, much faster than the amount of food.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>would go up very fast, much faster than the amount of food.</strong></span> ✅ - Đúng, vì Malthus tin rằng dân số tăng theo cấp số nhân trong khi thực phẩm chỉ tăng theo cấp số cộng.</li>            <li><span class="text-danger">would stay the same because there would always be people dying of hunger.</span> ❌ - Sai, vì Malthus không nói rằng dân số sẽ giữ nguyên.</li>            <li><span class="text-danger">would rise slowly together with the increase in food production.</span> ❌ - Sai, vì dân số theo lý thuyết của Malthus tăng nhanh hơn thực phẩm.</li>            <li><span class="text-danger">would rise more slowly than the amount of food.</span> ❌ - Sai, vì Malthus cho rằng dân số tăng nhanh hơn thực phẩm, không phải chậm hơn.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: When Malthus wrote his essay the world population was _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. just under one billion.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. 1.7 billion.															</div>
+																				<div class="ps-4 mb-2">
+																	C. 6 billion.															</div>
+																				<div class="ps-4 mb-2">
+																	D. 16 billion.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>just under one billion.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn:</p>   <p>"In the 19th century, world population rose from 1 to 1.7 billion. In the 20th, it increased to about 6 billion."</p>    <p>"Vào thế kỷ 19, dân số thế giới tăng từ <strong>gần 1 tỷ</strong> lên 1,7 tỷ. Vào thế kỷ 20, nó tăng lên khoảng 6 tỷ."</p>    <p>Malthus viết bài luận của mình vào năm 1798, tức là vào cuối thế kỷ 18. Khi đó, dân số thế giới <strong>vẫn dưới 1 tỷ</strong>. Do đó, đáp án chính xác là <strong>just under one billion.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>just under one billion.</strong></span> ✅ - Đúng, vì vào thời điểm Malthus viết bài luận, dân số thế giới vẫn dưới 1 tỷ.</li>            <li><span class="text-danger">1.7 billion.</span> ❌ - Sai, vì con số này chỉ đạt được vào thế kỷ 19.</li>            <li><span class="text-danger">6 billion.</span> ❌ - Sai, vì con số này chỉ đạt được vào thế kỷ 20.</li>            <li><span class="text-danger">16 billion.</span> ❌ - Sai, vì dân số thế giới chưa bao giờ đạt mức này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: The number of people in the world depends on _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. how long people live															</div>
+																				<div class="ps-4 mb-2">
+																	B. the standard of life															</div>
+																				<div class="ps-4 mb-2">
+																	C. the number of babies born															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. the number of babies born and how long people live</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>the number of babies born and how long people live.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn:</p>   <p>"The number of people in the world is determined by two main factors: the birth rate and life expectancy."</p>    <p>"Số lượng người trên thế giới được xác định bởi hai yếu tố chính: <strong>tỷ lệ sinh</strong> và <strong>tuổi thọ</strong>."</p>    <p>Bài nghe xác nhận rằng <strong>số lượng người trên thế giới phụ thuộc vào số trẻ em được sinh ra và thời gian con người sống</strong>. Do đó, đáp án chính xác là <strong>the number of babies born and how long people live.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">the number of babies born.</span> ❌ - Sai, vì đây chỉ là một trong hai yếu tố quyết định dân số thế giới.</li>            <li><span class="text-danger">how long people live.</span> ❌ - Sai, vì chỉ tuổi thọ không quyết định toàn bộ dân số.</li>            <li><span class="text-danger">the standard of life.</span> ❌ - Sai, vì tiêu chuẩn sống ảnh hưởng đến dân số gián tiếp, nhưng không phải yếu tố chính.</li>            <li><span class="text-success"><strong>the number of babies born and how long people live.</strong></span> ✅ - Đúng, vì đây là hai yếu tố chính quyết định dân số thế giới.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: A single person can have _____.						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 4 square metres and a married couple 60.															</div>
+																				<div class="ps-4 mb-2">
+																	B. 6 square metres and a married couple six.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. 4 square metres and a married couple six.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. 6 square metres and a married couple sick.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>4 square metres and a married couple six.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn:</p>   <p>"A single person can have four square meters, and a married couple six."</p>    <p>"Một người độc thân có thể có <strong>4 mét vuông</strong>, và một cặp vợ chồng có <strong>6 mét vuông</strong>."</p>    <p>Bài nghe xác nhận rằng <strong>một người độc thân có 4 mét vuông, và một cặp vợ chồng có 6 mét vuông</strong>. Do đó, đáp án chính xác là <strong>4 square metres and a married couple six.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>4 square metres and a married couple six.</strong></span> ✅ - Đúng, vì bài nghe xác nhận thông tin này.</li>            <li><span class="text-danger">6 square metres and a married couple six.</span> ❌ - Sai, vì một người độc thân chỉ có 4 mét vuông, không phải 6.</li>            <li><span class="text-danger">4 square metres and a married couple 60.</span> ❌ - Sai, vì một cặp vợ chồng chỉ có 6 mét vuông, không phải 60.</li>            <li><span class="text-danger">6 square metres and a married couple sick.</span> ❌ - Sai, vì thông tin này không chính xác và "sick" là lỗi sai chính tả.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: According the lecture, which situation would NOT be mentioned as an example for reconstructive surgery?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. A man lost part of his ear in a boating accident.															</div>
+																				<div class="ps-4 mb-2">
+																	B. A young child is severely burned in a house fire.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. A woman wants to change her kidney.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. A woman isn't satisfied with the shape of her stomach.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>A woman wants to change her kidney.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn:</p>   <p>"Reconstructive surgery is a procedure that makes a similar but different impact on the lives of many around the world. Many of these patients suffer from either congenital defects, like a cleft palate, or from injuries sustained in accidents or as a result of animal bites. Some disfigurements can also be due to the effects of disease or infection."</p>    <p>"Phẫu thuật tái tạo là một quy trình có tác động tương tự nhưng khác biệt đến cuộc sống của nhiều người trên thế giới. Nhiều bệnh nhân bị <strong>dị tật bẩm sinh</strong>, như sứt môi, hoặc <strong>chấn thương do tai nạn</strong> hoặc bị <strong>động vật cắn</strong>. Một số biến dạng cũng có thể do <strong>dịch bệnh hoặc nhiễm trùng</strong>."</p>    <p>Bài nghe đề cập đến các tình huống liên quan đến <strong>tai nạn, dị tật bẩm sinh và tổn thương do bệnh lý</strong>, nhưng không liên quan đến <strong>thay đổi nội tạng như thay thận</strong>. Do đó, đáp án chính xác là <strong>A woman wants to change her kidney.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">A young child is severely burned in a house fire.</span> ❌ - Sai, vì bỏng nặng là một trường hợp phổ biến trong phẫu thuật tái tạo.</li>            <li><span class="text-danger">A woman isn't satisfied with the shape of her stomach.</span> ❌ - Sai, mặc dù đây có thể là phẫu thuật thẩm mỹ, nhưng có thể liên quan đến tái tạo trong một số trường hợp.</li>            <li><span class="text-danger">A man lost part of his ear in a boating accident.</span> ❌ - Sai, vì mất một phần cơ thể do tai nạn là trường hợp phổ biến của phẫu thuật tái tạo.</li>            <li><span class="text-success"><strong>A woman wants to change her kidney.</strong></span> ✅ - Đúng, vì thay thận là một dạng cấy ghép nội tạng, không phải phẫu thuật tái tạo.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: What other effects do physical deformities have on the individual who bears them?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. a lack of self-worth</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. face losing															</div>
+																				<div class="ps-4 mb-2">
+																	C. inability to find work															</div>
+																				<div class="ps-4 mb-2">
+																	D. fewer educational opportunities															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>a lack of self-worth.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn:</p>   <p>"Yet the individual with such defects often bears more than just outward physical marks. Loss of hope and self-worth as well as acceptance are commonplace."</p>    <p>"Tuy nhiên, những người có khiếm khuyết như vậy thường không chỉ chịu đựng những dấu hiệu thể chất bên ngoài. Họ còn <strong>đánh mất hy vọng và giá trị bản thân</strong>, cũng như khó được chấp nhận."</p>    <p>Bài nghe xác nhận rằng <strong>những người có khiếm khuyết thể chất thường mất đi cảm giác tự trọng</strong>. Do đó, đáp án chính xác là <strong>a lack of self-worth.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>a lack of self-worth.</strong></span> ✅ - Đúng, vì bài nghe đề cập đến việc những người này thường mất đi cảm giác giá trị bản thân.</li>            <li><span class="text-danger">inability to find work.</span> ❌ - Sai, vì bài nghe không đề cập trực tiếp đến việc họ không thể tìm việc.</li>            <li><span class="text-danger">fewer educational opportunities.</span> ❌ - Sai, vì bài nghe không nói rằng họ gặp ít cơ hội giáo dục hơn.</li>            <li><span class="text-danger">face losing.</span> ❌ - Sai, vì "face losing" không có ý nghĩa rõ ràng trong ngữ cảnh này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question13">
+						<div class="fw-bold mb-2">
+							Câu 13: What other services do volunteers provide to the country where they perform reconstructive surgery?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. fund-raising activities															</div>
+																				<div class="ps-4 mb-2">
+																	B. regular visits															</div>
+																				<div class="ps-4 mb-2">
+																	C. physical therapy															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. local health care training</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>local health care training.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn:</p>   <p>"In addition to the care they provide, these volunteer specialists also provide training to health care workers in these procedures so that local hospitals, nurses, and doctors can become self-sufficient."</p>    <p>"Ngoài việc cung cấp dịch vụ chăm sóc, các chuyên gia tình nguyện này còn <strong>đào tạo nhân viên y tế địa phương</strong> về các quy trình này để bệnh viện, y tá và bác sĩ địa phương có thể <strong>tự chủ</strong>."</p>    <p>Bài nghe xác nhận rằng <strong>các tình nguyện viên không chỉ thực hiện phẫu thuật tái tạo mà còn đào tạo đội ngũ y tế địa phương</strong>. Do đó, đáp án chính xác là <strong>local health care training.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">fund-raising activities.</span> ❌ - Sai, vì bài nghe không đề cập đến việc các tình nguyện viên thực hiện gây quỹ.</li>            <li><span class="text-danger">physical therapy.</span> ❌ - Sai, vì bài nghe không đề cập đến liệu pháp vật lý trị liệu.</li>            <li><span class="text-success"><strong>local health care training.</strong></span> ✅ - Đúng, vì bài nghe xác nhận rằng họ đào tạo nhân viên y tế địa phương.</li>            <li><span class="text-danger">regular visits.</span> ❌ - Sai, vì bài nghe không nhắc đến việc thực hiện các chuyến thăm thường xuyên.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question14">
+						<div class="fw-bold mb-2">
+							Câu 14: How does this volunteer work benefit the providers of such surgical procedures?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Health care workers develop deeper understanding of the sufferings of others.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Doctors and nurses feel more self-confident.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Volunteers establish connections for future medical research.															</div>
+																				<div class="ps-4 mb-2">
+																	D. These experiences give doctors and nurses valuable in-field training opportunities.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Health care workers develop deeper understanding of the sufferings of others.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn:</p>   <p>"And the health care worker who performs the procedure perhaps feels a greater understanding and compassion for those who suffer from such defects."</p>    <p>"Và nhân viên y tế thực hiện các ca phẫu thuật có thể cảm nhận được <strong>sự thấu hiểu và lòng trắc ẩn sâu sắc hơn</strong> đối với những người chịu tổn thương do các khuyết tật này."</p>    <p>Bài nghe xác nhận rằng <strong>các nhân viên y tế tham gia vào công việc tình nguyện này phát triển sự thấu hiểu sâu sắc hơn về những người đang chịu đựng đau khổ</strong>. Do đó, đáp án chính xác là <strong>Health care workers develop deeper understanding of the sufferings of others.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">These experiences give doctors and nurses valuable in-field training opportunities.</span> ❌ - Sai, vì bài nghe không đề cập đến cơ hội đào tạo thực tế.</li>            <li><span class="text-danger">Volunteers establish connections for future medical research.</span> ❌ - Sai, vì bài nghe không đề cập đến việc xây dựng kết nối cho nghiên cứu y học trong tương lai.</li>            <li><span class="text-success"><strong>Health care workers develop deeper understanding of the sufferings of others.</strong></span> ✅ - Đúng, vì bài nghe nhấn mạnh sự phát triển lòng trắc ẩn của nhân viên y tế.</li>            <li><span class="text-danger">Doctors and nurses feel more self-confident.</span> ❌ - Sai, vì bài nghe không đề cập đến sự tự tin của bác sĩ và y tá.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question15">
+						<div class="fw-bold mb-2">
+							Câu 15: What is one way everyday people can help such causes?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. make financial contributions</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. adopt unwanted children															</div>
+																				<div class="ps-4 mb-2">
+																	C. search on the Internet															</div>
+																				<div class="ps-4 mb-2">
+																	D. educate themselves on the issues															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>make financial contributions.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn:</p>   <p>"Although most people do not have the medical expertise to perform reconstructive surgery, they can still donate time, money, and supplies to such organizations."</p>    <p>"Mặc dù hầu hết mọi người không có chuyên môn y tế để thực hiện phẫu thuật tái tạo, nhưng họ vẫn có thể <strong>quyên góp thời gian, tiền bạc và vật tư</strong> cho các tổ chức này."</p>    <p>Bài nghe xác nhận rằng <strong>mọi người có thể đóng góp tài chính để hỗ trợ các tổ chức thực hiện phẫu thuật tái tạo</strong>. Do đó, đáp án chính xác là <strong>make financial contributions.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">educate themselves on the issues.</span> ❌ - Sai, vì bài nghe không đề cập đến việc tự tìm hiểu về vấn đề.</li>            <li><span class="text-success"><strong>make financial contributions.</strong></span> ✅ - Đúng, vì bài nghe xác nhận rằng đóng góp tiền là một cách để giúp đỡ.</li>            <li><span class="text-danger">adopt unwanted children.</span> ❌ - Sai, vì bài nghe không nhắc đến việc nhận con nuôi.</li>            <li><span class="text-danger">search on the Internet.</span> ❌ - Sai, vì bài nghe không đề cập đến việc tìm kiếm thông tin trên Internet như một cách giúp đỡ.</li>    </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="12" id="progress-question-12">
+				   13				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="13" id="progress-question-13">
+				   14				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="14" id="progress-question-14">
+				   15				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

@@ -1,0 +1,634 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 18 - Part 3				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87738				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/15				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp3-1664873422_64013aad17f9889dfe60.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Part 3. In this part, you will hear three talks, or lectures. The talks or lectures will be played once only. There are five questions for each talk or lecture.<br>
+For each question, choose the right answer, A, B, C, or D. Part 3. Questions 21 to 25. First, you will have some time to look at questions 21 to 25. Now we're ready to start.<br>
+Listen and answer questions 21 to 25. You will hear the recording once only. Japan has slipped back into recession, leaving financial analysts to ponder over the implications for the global economy.<br>
+Japan's economy unexpectedly shrank for the second consecutive quarter. Two successive negative quarters officially puts a country in recession. The slide in the last quarter has taken economists by surprise.<br>
+Figures indicated that Japan's economy would grow by 2.1% in the last quarter. Instead, Gross Domestic Product, GDP, fell by 1.6% between July and September. Many economists attribute the fall to April's increase in sales tax from 5 to 8%.<br>
+Many Japanese consumers have tightened their purse strings and are simply not spending. World leaders are worried that Japan's slide back into recession could be ominous for the global economy. British leader David Cameron said the world was on the brink of a second economic disaster.<br>
+He told reporters he saw red warning lights for the global economy because of international instability and uncertainty. And a slowing of growth in emerging markets, especially Brazil and China. Mr. Cameron said the problems were plain to see.<br>
+He added the eurozone is teetering on the brink of a possible third recession, with high unemployment, falling growth and the real risk of falling prices. Emerging markets, which were the driver of growth in the early stages of the recovery, are now slowing down. This is Jacqueline Gunn reporting from Sardinia, Italy.<br>
+Now you will have some time to review questions 21 to 25. Part 3. Questions 26 to 30. First, you will have some time to look at questions 26 to 30.<br>
+Authorities in India's Bihar state have expelled around 600 high school students for cheating in their 10th grade examinations. The pupils used a novel but somewhat dangerous way to get help with their exam papers. Their parents scaled the walls of the school building and provided the answers to questions through the windows.<br>
+Photographs and video footage of this illegitimate technique have gone viral. They show dozens of parents clinging on to whatever they can on the walls to feed information to their children. Some of the parents were three stories up.<br>
+Teachers found many cheat sheets inside the classroom. Some had been folded up into paper airplanes and thrown through the window. Over 1.4 million 10th graders are taking the tests this week at more than 1,200 high schools across the state.<br>
+Bihar's Education Minister P.K. Shahi told reporters that schools faced a difficult job to ensure exams took place under the strictest of conditions. He said, It's virtually impossible to conduct fair examinations without the cooperation of parents. He added that it was not possible to monitor all parents who accompany their children to schools and other test centres.<br>
+The situation regarding parents helping their children cheat has become so prevalent that police officers are posted to each school. However, an official said, We can't use force to drive away the parents. Now you will have some time to review questions 26 to 30.<br>
+Part 3. Questions 31 to 35. First, you will have some time to look at questions 31 to 35. The World Health Organization, WHO, has announced for the first time that Southeast Asia is now free from polio.<br>
+The WHO certified 11 countries as being clear of the disease. The WHO website said, This is the fourth of six WHO regions to be certified, marking an important step towards global eradication of polio, a highly infectious virus that attacks the nervous system and can cause total paralysis in a matter of hours. With this step, 80% of the world's population now lives in certified, polio-free regions.<br>
+One of the newly certified countries is India, which as recently as 2009 was home to almost 50% of the world's polio cases. India hasn't seen a single polio case for the last three years. Polio is currently an incurable disease.<br>
+It leads to paralysis of the limbs and can kill anyone who contracts it. Dr. Poonam Ketlapal Singh, regional director for the WHO, said, This is a momentous victory for the millions of health workers who have worked with governments, non-governmental organisations, civil society and international partners to eradicate polio from the region. She added, Dr. Singh also cautioned against becoming complacent in the fight against the disease.<br>
+She said, Now you will have some time to review questions 31 to 35. <br>
+That is the end of part 3. That is the end of the Listening Comprehension Test.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 3 Trong phần này, bạn sẽ nghe ba bài nói hoặc bài giảng. Các bài nói hoặc bài giảng sẽ chỉ được phát một lần duy nhất. Mỗi bài có năm câu hỏi đi kèm. Với mỗi câu hỏi, hãy chọn đáp án đúng A, B, C hoặc D. Phần 3, câu hỏi 21 đến 25 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 21 đến 25. Bây giờ chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 21 đến 25. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Nhật Bản đã rơi vào suy thoái trở lại, khiến các nhà phân tích tài chính phải suy ngẫm về tác động đối với nền kinh tế toàn cầu. Nền kinh tế Nhật Bản bất ngờ suy giảm trong hai quý liên tiếp. Hai quý có tăng trưởng âm liên tiếp chính thức đặt một quốc gia vào tình trạng suy thoái. Sự sụt giảm trong quý vừa qua đã khiến các nhà kinh tế ngạc nhiên. Các số liệu cho thấy nền kinh tế Nhật Bản sẽ tăng trưởng 2,1% trong quý vừa rồi. Tuy nhiên, Tổng sản phẩm quốc nội (GDP) thực tế đã giảm 1,6% trong giai đoạn từ tháng 7 đến tháng 9. Nhiều nhà kinh tế cho rằng nguyên nhân là do việc tăng thuế tiêu dùng từ 5% lên 8% vào tháng 4. Nhiều người tiêu dùng Nhật Bản đã thắt chặt chi tiêu và đơn giản là không mua sắm nữa. Các nhà lãnh đạo thế giới lo ngại rằng sự suy thoái của Nhật Bản có thể là một dấu hiệu xấu cho nền kinh tế toàn cầu. Lãnh đạo Anh, David Cameron, cho biết thế giới đang đứng trước bờ vực của một cuộc khủng hoảng kinh tế lần thứ hai. Ông nói với các phóng viên rằng ông nhìn thấy "đèn cảnh báo đỏ" cho nền kinh tế toàn cầu do tình trạng bất ổn quốc tế và sự thiếu chắc chắn. Sự tăng trưởng chậm lại ở các thị trường mới nổi, đặc biệt là Brazil và Trung Quốc. Ông Cameron cho biết các vấn đề này rất rõ ràng. Ông nói thêm rằng khu vực đồng euro đang đứng trên bờ vực của một cuộc suy thoái lần thứ ba, với tỷ lệ thất nghiệp cao, tăng trưởng giảm sút và nguy cơ giảm phát thực sự. Các thị trường mới nổi, từng là động lực tăng trưởng trong giai đoạn đầu của sự phục hồi, hiện đang chậm lại. Đây là Jacqueline Gunn báo cáo từ Sardinia, Ý. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 21 đến 25. Phần 3, câu hỏi 26 đến 30 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 26 đến 30. Giới chức bang Bihar, Ấn Độ, đã đuổi học khoảng 600 học sinh trung học vì gian lận trong kỳ thi lớp 10 của họ. Các học sinh này đã sử dụng một phương thức gian lận mới nhưng khá nguy hiểm để được giúp đỡ trong bài thi của mình. Cha mẹ của họ đã trèo lên tường của tòa nhà trường học và cung cấp đáp án qua cửa sổ. Các bức ảnh và video ghi lại cảnh tượng gian lận này đã lan truyền mạnh mẽ. Chúng cho thấy hàng chục phụ huynh bám vào bất cứ thứ gì trên tường để đưa thông tin cho con cái của họ. Một số phụ huynh còn trèo lên tới tầng ba. Giáo viên đã tìm thấy nhiều mẩu giấy gian lận trong phòng thi. Một số được gấp lại thành máy bay giấy và ném qua cửa sổ. Hơn 1,4 triệu học sinh lớp 10 đang tham gia kỳ thi này trong tuần này tại hơn 1.200 trường trung học trên toàn bang. Bộ trưởng Giáo dục Bihar, P.K. Shahi, nói với các phóng viên rằng các trường học gặp khó khăn trong việc đảm bảo kỳ thi diễn ra nghiêm túc nhất có thể. Ông nói: "Thật sự rất khó để tổ chức một kỳ thi công bằng nếu không có sự hợp tác của phụ huynh." Ông nói thêm rằng không thể giám sát tất cả các phụ huynh đi cùng con đến trường và các trung tâm thi khác. Tình trạng phụ huynh giúp con gian lận đã trở nên phổ biến đến mức cảnh sát phải được bố trí tại mỗi trường học. Tuy nhiên, một quan chức cho biết: "Chúng tôi không thể sử dụng vũ lực để đuổi phụ huynh đi." Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 26 đến 30. Phần 3, câu hỏi 31 đến 35 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 31 đến 35. Tổ chức Y tế Thế giới (WHO) đã công bố lần đầu tiên rằng khu vực Đông Nam Á hiện không còn bệnh bại liệt. WHO đã chứng nhận 11 quốc gia không còn bệnh này. Trang web của WHO cho biết: "Đây là khu vực thứ tư trong số sáu khu vực của WHO được chứng nhận không có bại liệt, đánh dấu một bước quan trọng hướng tới mục tiêu xóa sổ bệnh bại liệt trên toàn cầu, một loại virus có khả năng lây nhiễm cao, tấn công hệ thần kinh và có thể gây tê liệt hoàn toàn trong vài giờ." Với bước tiến này, 80% dân số thế giới hiện đang sống trong các khu vực được chứng nhận không có bại liệt. Một trong những quốc gia mới được chứng nhận là Ấn Độ, nơi vào năm 2009 vẫn còn gần 50% số ca bại liệt trên thế giới. Ấn Độ đã không ghi nhận bất kỳ trường hợp nào trong ba năm qua. Bệnh bại liệt hiện không có thuốc chữa. Nó gây tê liệt tay chân và có thể gây tử vong cho bất kỳ ai mắc phải. Tiến sĩ Poonam Khetrapal Singh, giám đốc khu vực của WHO, nói: "Đây là một chiến thắng to lớn cho hàng triệu nhân viên y tế đã làm việc với chính phủ, các tổ chức phi chính phủ, xã hội dân sự và các đối tác quốc tế để xóa sổ bệnh bại liệt khỏi khu vực này." Bà cũng cảnh báo không nên tự mãn trong cuộc chiến chống lại căn bệnh này. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 31 đến 35. Đây là phần kết thúc của phần 3. Đây là phần kết thúc của bài kiểm tra Nghe Hiểu.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Who is thinking about implications for the global economy?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Japanese consumers															</div>
+																				<div class="ps-4 mb-2">
+																	B. everyone															</div>
+																				<div class="ps-4 mb-2">
+																	C. people with stocks															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. financial analysts</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>financial analysts</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói đề cập đến những ai đang xem xét tác động đối với nền kinh tế toàn cầu:</p>   <p>"Japan has slipped back into recession, leaving <strong>financial analysts</strong> to ponder over the implications for the global economy."</p>    <p>"Nhật Bản đã rơi vào suy thoái trở lại, khiến <strong>các nhà phân tích tài chính</strong> phải suy nghĩ về những tác động đối với nền kinh tế toàn cầu."</p>    <p>Bài nghe xác nhận rằng <strong>các nhà phân tích tài chính</strong> đang xem xét tác động đối với nền kinh tế toàn cầu. Do đó, đáp án chính xác là <strong>financial analysts.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">everyone</span> ❌ (Mọi người.) - Sai, vì bài nghe không nói rằng tất cả mọi người đều suy nghĩ về điều này.</li>       <li><span class="text-success"><strong>financial analysts</strong></span> ✅ (Các nhà phân tích tài chính.) - Đúng, vì bài nghe xác nhận rằng họ là những người đang đánh giá tác động.</li>       <li><span class="text-danger">people with stocks</span> ❌ (Những người sở hữu cổ phiếu.) - Sai, vì bài nghe không đề cập đến những người sở hữu cổ phiếu.</li>       <li><span class="text-danger">Japanese consumers</span> ❌ (Người tiêu dùng Nhật Bản.) - Sai, vì bài nghe chỉ nói rằng họ đang thắt chặt chi tiêu, không phải đang đánh giá tác động toàn cầu.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: By how much was Japan's economy expected to grow?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 1.6%															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. 2.1%</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. 1.2%															</div>
+																				<div class="ps-4 mb-2">
+																	D. 2.6%															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>2.1%</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói đề cập đến mức tăng trưởng kỳ vọng của nền kinh tế Nhật Bản:</p>   <p>"Figures indicated that Japan's economy would grow by <strong>2.1%</strong> in the last quarter."</p>    <p>"Các số liệu chỉ ra rằng nền kinh tế Nhật Bản được kỳ vọng sẽ tăng trưởng <strong>2,1%</strong> trong quý cuối cùng."</p>    <p>Bài nghe xác nhận rằng nền kinh tế Nhật Bản được dự báo sẽ tăng trưởng <strong>2.1%</strong>. Do đó, đáp án chính xác là <strong>2.1%.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">1.2%</span> ❌ (1,2%.) - Sai, vì bài nghe không nhắc đến mức tăng trưởng này.</li>       <li><span class="text-danger">1.6%</span> ❌ (1,6%.) - Sai, vì 1,6% là mức giảm GDP thực tế, không phải mức tăng trưởng dự kiến.</li>       <li><span class="text-success"><strong>2.1%</strong></span> ✅ (2,1%.) - Đúng, vì đây là con số dự báo tăng trưởng được đề cập trong bài nghe.</li>       <li><span class="text-danger">2.6%</span> ❌ (2,6%.) - Sai, vì bài nghe không đề cập đến mức tăng trưởng này.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What do economists blame for Japan's fall in GDP?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. a rise in sales tax</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. the global economy															</div>
+																				<div class="ps-4 mb-2">
+																	C. a lack of investment															</div>
+																				<div class="ps-4 mb-2">
+																	D. inflation															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>a rise in sales tax</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, nguyên nhân khiến GDP của Nhật Bản giảm được đề cập:</p>   <p>"Many economists attribute the fall to <strong>April's increase in sales tax</strong> from 5 to 8%."</p>    <p>"Nhiều nhà kinh tế cho rằng sự sụt giảm GDP là do <strong>việc tăng thuế bán hàng vào tháng 4</strong> từ 5% lên 8%."</p>    <p>Bài nghe xác nhận rằng nguyên nhân chính khiến GDP của Nhật Bản giảm là <strong>việc tăng thuế bán hàng</strong>. Do đó, đáp án chính xác là <strong>a rise in sales tax.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-success"><strong>a rise in sales tax</strong></span> ✅ (Việc tăng thuế bán hàng.) - Đúng, vì bài nghe xác nhận rằng đây là nguyên nhân chính dẫn đến sự sụt giảm GDP.</li>       <li><span class="text-danger">the global economy</span> ❌ (Nền kinh tế toàn cầu.) - Sai, vì mặc dù nền kinh tế toàn cầu có ảnh hưởng, nhưng bài nghe nhấn mạnh nguyên nhân chính là thuế bán hàng.</li>       <li><span class="text-danger">inflation</span> ❌ (Lạm phát.) - Sai, vì bài nghe không đề cập đến lạm phát là nguyên nhân chính.</li>       <li><span class="text-danger">a lack of investment</span> ❌ (Thiếu đầu tư.) - Sai, vì bài nghe không đề cập đến việc thiếu đầu tư.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What did David Cameron say the world was on the brink of?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. a recovery and boom															</div>
+																				<div class="ps-4 mb-2">
+																	B. a new age															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. a second economic disaster</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. financial collapse															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>a second economic disaster</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, David Cameron cảnh báo về nguy cơ kinh tế toàn cầu:</p>   <p>"British leader David Cameron said the world was on the brink of <strong>a second economic disaster</strong>."</p>    <p>"Lãnh đạo nước Anh, David Cameron, nói rằng thế giới đang đứng trước <strong>một thảm họa kinh tế lần thứ hai</strong>."</p>    <p>Bài nghe xác nhận rằng David Cameron cảnh báo thế giới có nguy cơ đối mặt với <strong>một thảm họa kinh tế thứ hai</strong>. Do đó, đáp án chính xác là <strong>a second economic disaster.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">a recovery and boom</span> ❌ (Một sự phục hồi và bùng nổ kinh tế.) - Sai, vì David Cameron cảnh báo về khủng hoảng, không phải phục hồi.</li>       <li><span class="text-danger">a new age</span> ❌ (Một kỷ nguyên mới.) - Sai, vì bài nghe không đề cập đến bất kỳ "kỷ nguyên mới" nào.</li>       <li><span class="text-success"><strong>a second economic disaster</strong></span> ✅ (Một thảm họa kinh tế lần thứ hai.) - Đúng, vì bài nghe xác nhận rằng David Cameron cảnh báo về điều này.</li>       <li><span class="text-danger">financial collapse</span> ❌ (Sự sụp đổ tài chính.) - Sai, vì bài nghe không đề cập cụ thể đến sự sụp đổ tài chính.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What did the speaker say was the driver of growth?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the European Union															</div>
+																				<div class="ps-4 mb-2">
+																	B. investment															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. emerging markets</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. the World Bank															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>emerging markets</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói đề cập đến yếu tố thúc đẩy tăng trưởng:</p>   <p>"Emerging markets, which were the <strong>driver of growth</strong> in the early stages of the recovery, are now slowing down."</p>    <p>"Các thị trường mới nổi, vốn là <strong>động lực thúc đẩy tăng trưởng</strong> trong giai đoạn đầu của quá trình phục hồi, hiện đang chững lại."</p>    <p>Bài nghe xác nhận rằng <strong>các thị trường mới nổi</strong> là động lực chính của tăng trưởng. Do đó, đáp án chính xác là <strong>emerging markets.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">the European Union</span> ❌ (Liên minh Châu Âu.) - Sai, vì bài nghe không đề cập đến EU là động lực tăng trưởng.</li>       <li><span class="text-danger">the World Bank</span> ❌ (Ngân hàng Thế giới.) - Sai, vì bài nghe không nói rằng Ngân hàng Thế giới là nhân tố thúc đẩy tăng trưởng.</li>       <li><span class="text-danger">investment</span> ❌ (Đầu tư.) - Sai, vì bài nghe nhấn mạnh vào thị trường mới nổi, không phải đầu tư nói chung.</li>       <li><span class="text-success"><strong>emerging markets</strong></span> ✅ (Các thị trường mới nổi.) - Đúng, vì bài nghe xác nhận rằng đây là yếu tố thúc đẩy tăng trưởng.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: How many students have been dislodged for their fault?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 10															</div>
+																				<div class="ps-4 mb-2">
+																	B. 60															</div>
+																				<div class="ps-4 mb-2">
+																	C. 14															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. 600</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>600</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói đề cập đến số lượng học sinh bị đuổi vì gian lận:</p>   <p>"Authorities in India's Bihar state have <strong>expelled around 600 high school students</strong> for cheating in their 10th grade examinations."</p>    <p>"Chính quyền bang Bihar, Ấn Độ, đã <strong>đuổi khoảng 600 học sinh trung học</strong> vì gian lận trong kỳ thi lớp 10."</p>    <p>Bài nghe xác nhận rằng khoảng <strong>600 học sinh</strong> đã bị đuổi vì gian lận. Do đó, đáp án chính xác là <strong>600.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">10</span> ❌ (10 học sinh.) - Sai, vì bài nghe xác nhận con số lớn hơn nhiều.</li>       <li><span class="text-danger">14</span> ❌ (14 học sinh.) - Sai, vì bài nghe không đề cập đến con số này.</li>       <li><span class="text-success"><strong>600</strong></span> ✅ (600 học sinh.) - Đúng, vì bài nghe xác nhận rằng khoảng 600 học sinh bị đuổi.</li>       <li><span class="text-danger">60</span> ❌ (60 học sinh.) - Sai, vì con số thực tế cao hơn nhiều.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What has happened to the videos and photos of this incident?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. They have disappeared.															</div>
+																				<div class="ps-4 mb-2">
+																	B. They were stolen.															</div>
+																				<div class="ps-4 mb-2">
+																	C. They have been made into a movie.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. They have gone viral.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>They have gone viral.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói đề cập đến tình trạng của các video và hình ảnh về vụ việc:</p>   <p>"Photographs and video footage of this illegitimate technique have <strong>gone viral</strong>."</p>    <p>"Các bức ảnh và video về phương thức gian lận này đã <strong>lan truyền rộng rãi</strong>."</p>    <p>Bài nghe xác nhận rằng các video và hình ảnh đã <strong>lan truyền rộng rãi</strong>. Do đó, đáp án chính xác là <strong>They have gone viral.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-success"><strong>They have gone viral.</strong></span> ✅ (Chúng đã lan truyền rộng rãi.) - Đúng, vì bài nghe xác nhận rằng hình ảnh và video đã được chia sẻ rộng rãi.</li>       <li><span class="text-danger">They have disappeared.</span> ❌ (Chúng đã biến mất.) - Sai, vì bài nghe nói rằng chúng đã lan truyền chứ không bị mất.</li>       <li><span class="text-danger">They were stolen.</span> ❌ (Chúng đã bị đánh cắp.) - Sai, vì bài nghe không đề cập đến việc đánh cắp video hay ảnh.</li>       <li><span class="text-danger">They have been made into a movie.</span> ❌ (Chúng đã được làm thành một bộ phim.) - Sai, vì bài nghe không nói gì về việc chuyển thành phim.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: Who is P.K Shahi?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. The minister of education</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. A student															</div>
+																				<div class="ps-4 mb-2">
+																	C. The school's head teacher															</div>
+																				<div class="ps-4 mb-2">
+																	D. A parent's leader															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>The minister of education</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói đề cập đến chức vụ của P.K. Shahi:</p>   <p>"Bihar's <strong>Education Minister</strong> P.K. Shahi told reporters that schools faced a difficult job to ensure exams took place under the strictest of conditions."</p>    <p>"Bộ trưởng Giáo dục bang Bihar, <strong>P.K. Shahi</strong>, nói với các phóng viên rằng các trường học đang gặp khó khăn trong việc đảm bảo kỳ thi diễn ra trong điều kiện nghiêm ngặt nhất."</p>    <p>Bài nghe xác nhận rằng <strong>P.K. Shahi là Bộ trưởng Giáo dục</strong>. Do đó, đáp án chính xác là <strong>The minister of education.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">A student</span> ❌ (Một học sinh.) - Sai, vì P.K. Shahi là một quan chức chính phủ, không phải học sinh.</li>       <li><span class="text-danger">The school's head teacher</span> ❌ (Hiệu trưởng nhà trường.) - Sai, vì bài nghe không nói rằng P.K. Shahi là hiệu trưởng.</li>       <li><span class="text-danger">A parent's leader</span> ❌ (Một lãnh đạo của phụ huynh.) - Sai, vì P.K. Shahi không đại diện cho phụ huynh.</li>       <li><span class="text-success"><strong>The minister of education</strong></span> ✅ (Bộ trưởng Giáo dục.) - Đúng, vì bài nghe xác nhận rằng P.K. Shahi là Bộ trưởng Giáo dục của bang Bihar.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What has been done to improve the situation?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. They've used the police.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. They've posted notice to each school.															</div>
+																				<div class="ps-4 mb-2">
+																	C. They've used cars to drive them away.															</div>
+																				<div class="ps-4 mb-2">
+																	D. They've sent mail to parents via post office.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>They've used the police.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói đề cập đến biện pháp được áp dụng để cải thiện tình hình:</p>   <p>"The situation regarding parents helping their children cheat has become so prevalent that <strong>police officers are posted to each school</strong>."</p>    <p>"Tình trạng phụ huynh giúp con em gian lận đã trở nên phổ biến đến mức <strong>cảnh sát đã được triển khai đến từng trường học</strong>."</p>    <p>Bài nghe xác nhận rằng <strong>cảnh sát đã được sử dụng</strong> để cải thiện tình hình. Do đó, đáp án chính xác là <strong>They've used the police.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">They've sent mail to parents via post office.</span> ❌ (Họ đã gửi thư cho phụ huynh qua bưu điện.) - Sai, vì bài nghe không đề cập đến việc gửi thư.</li>       <li><span class="text-danger">They've posted notice to each school.</span> ❌ (Họ đã đăng thông báo tại mỗi trường.) - Sai, vì bài nghe không nhắc đến việc đăng thông báo.</li>       <li><span class="text-success"><strong>They've used the police.</strong></span> ✅ (Họ đã sử dụng cảnh sát.) - Đúng, vì bài nghe xác nhận rằng cảnh sát đã được triển khai đến các trường học.</li>       <li><span class="text-danger">They've used cars to drive them away.</span> ❌ (Họ đã sử dụng ô tô để đuổi họ đi.) - Sai, vì bài nghe không nói về việc sử dụng ô tô để xua đuổi phụ huynh.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: What can schools not use to stop parents?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. electric fences															</div>
+																				<div class="ps-4 mb-2">
+																	B. legal prosecutions															</div>
+																				<div class="ps-4 mb-2">
+																	C. shock tactics															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. force</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>force</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói đề cập đến biện pháp mà các trường học không thể sử dụng để ngăn chặn phụ huynh:</p>   <p>"However, an official said, <strong>We can't use force</strong> to drive away the parents."</p>    <p>"Tuy nhiên, một quan chức nói rằng, <strong>chúng tôi không thể sử dụng vũ lực</strong> để đuổi phụ huynh đi."</p>    <p>Bài nghe xác nhận rằng <strong>các trường học không thể sử dụng vũ lực</strong> để ngăn chặn phụ huynh. Do đó, đáp án chính xác là <strong>force.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">legal prosecutions</span> ❌ (Truy tố pháp lý.) - Sai, vì bài nghe không nói rằng họ không thể truy tố pháp lý.</li>       <li><span class="text-danger">shock tactics</span> ❌ (Chiến thuật gây sốc.) - Sai, vì bài nghe không đề cập đến điều này.</li>       <li><span class="text-danger">electric fences</span> ❌ (Hàng rào điện.) - Sai, vì bài nghe không nói về việc sử dụng hàng rào điện.</li>       <li><span class="text-success"><strong>force</strong></span> ✅ (Vũ lực.) - Đúng, vì bài nghe xác nhận rằng họ không thể sử dụng vũ lực để đuổi phụ huynh đi.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: How many times has Asia been polio-free before?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. three															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. none</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. one															</div>
+																				<div class="ps-4 mb-2">
+																	D. two															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>none</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói đề cập đến lần đầu tiên châu Á không còn bệnh bại liệt:</p>   <p>"The World Health Organization, WHO, has announced for the first time that <strong>Southeast Asia is now free from polio</strong>."</p>    <p>"Tổ chức Y tế Thế giới (WHO) đã thông báo <strong>lần đầu tiên</strong> rằng khu vực Đông Nam Á hiện nay không còn bệnh bại liệt."</p>    <p>Bài nghe xác nhận rằng đây là <strong>lần đầu tiên</strong> Đông Nam Á được tuyên bố không còn bệnh bại liệt. Do đó, đáp án chính xác là <strong>none.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">three</span> ❌ (Ba lần.) - Sai, vì bài nghe xác nhận rằng đây là lần đầu tiên.</li>       <li><span class="text-success"><strong>none</strong></span> ✅ (Chưa từng.) - Đúng, vì bài nghe nói rằng đây là lần đầu tiên châu Á không còn bệnh bại liệt.</li>       <li><span class="text-danger">one</span> ❌ (Một lần.) - Sai, vì đây là lần đầu tiên.</li>       <li><span class="text-danger">two</span> ❌ (Hai lần.) - Sai, vì bài nghe xác nhận rằng chưa từng có lần nào trước đây.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: What does polio paralyse?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. society															</div>
+																				<div class="ps-4 mb-2">
+																	B. bacteria															</div>
+																				<div class="ps-4 mb-2">
+																	C. hope															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. arms and legs</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>arms and legs</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói đề cập đến tác động của bệnh bại liệt:</p>   <p>"Polio is currently an incurable disease. <strong>It leads to paralysis of the limbs</strong> and can kill anyone who contracts it."</p>    <p>"Bệnh bại liệt hiện tại không thể chữa khỏi. <strong>Nó dẫn đến tình trạng tê liệt chân tay</strong> và có thể gây tử vong cho bất kỳ ai mắc phải."</p>    <p>Bài nghe xác nhận rằng bệnh bại liệt <strong>gây tê liệt chân và tay</strong>. Do đó, đáp án chính xác là <strong>arms and legs.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">bacteria</span> ❌ (Vi khuẩn.) - Sai, vì bài nghe không nói rằng bệnh bại liệt làm tê liệt vi khuẩn.</li>       <li><span class="text-danger">hope</span> ❌ (Hy vọng.) - Sai, vì bài nghe không đề cập đến việc bại liệt ảnh hưởng đến hy vọng.</li>       <li><span class="text-success"><strong>arms and legs</strong></span> ✅ (Tay và chân.) - Đúng, vì bài nghe xác nhận rằng bệnh bại liệt gây tê liệt các chi.</li>       <li><span class="text-danger">society</span> ❌ (Xã hội.) - Sai, vì bài nghe không đề cập đến tác động trực tiếp lên xã hội.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question13">
+						<div class="fw-bold mb-2">
+							Câu 13: What kind of victory did a doctor say the eradication was?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. a good one															</div>
+																				<div class="ps-4 mb-2">
+																	B. a hard-fought one															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. a momentous one</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. a closely fought one															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>a momentous one</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, bác sĩ mô tả chiến thắng trong việc xóa sổ bệnh bại liệt:</p>   <p>"Dr. Poonam Ketlapal Singh, regional director for the WHO, said, <strong>This is a momentous victory</strong> for the millions of health workers who have worked with governments, non-governmental organisations, civil society and international partners to eradicate polio from the region."</p>    <p>"Tiến sĩ Poonam Ketlapal Singh, giám đốc khu vực của WHO, nói rằng, <strong>Đây là một chiến thắng trọng đại</strong> đối với hàng triệu nhân viên y tế đã hợp tác với chính phủ, các tổ chức phi chính phủ, xã hội dân sự và các đối tác quốc tế để xóa sổ bệnh bại liệt khỏi khu vực."</p>    <p>Bài nghe xác nhận rằng bác sĩ gọi đây là một <strong>chiến thắng trọng đại</strong>. Do đó, đáp án chính xác là <strong>a momentous one.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">a good one</span> ❌ (Một chiến thắng tốt.) - Sai, vì bài nghe sử dụng từ "momentous" để nhấn mạnh tầm quan trọng, không chỉ là "good".</li>       <li><span class="text-danger">a closely fought one</span> ❌ (Một chiến thắng sát sao.) - Sai, vì bài nghe không đề cập đến sự cạnh tranh gay gắt.</li>       <li><span class="text-danger">a hard-fought one</span> ❌ (Một chiến thắng khó khăn.) - Sai, vì bài nghe không sử dụng cụm từ này.</li>       <li><span class="text-success"><strong>a momentous one</strong></span> ✅ (Một chiến thắng trọng đại.) - Đúng, vì bài nghe xác nhận rằng đây là một chiến thắng quan trọng và đáng nhớ.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question14">
+						<div class="fw-bold mb-2">
+							Câu 14: What did Dr Singh warn against being?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. content															</div>
+																				<div class="ps-4 mb-2">
+																	B. ill															</div>
+																				<div class="ps-4 mb-2">
+																	C. a doctor &lt;br&gt;															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. satisfied</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>satisfied</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, bác sĩ Singh cảnh báo về một thái độ cần tránh:</p>   <p>"Dr. Singh also cautioned against <strong>becoming complacent</strong> in the fight against the disease."</p>    <p>"Tiến sĩ Singh cũng cảnh báo về việc <strong>trở nên tự mãn</strong> trong cuộc chiến chống lại căn bệnh này."</p>    <p>Từ "complacent" có nghĩa là "tự mãn" hoặc "hài lòng quá mức", đồng nghĩa với "satisfied" trong ngữ cảnh này. Do đó, đáp án chính xác là <strong>satisfied.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-success"><strong>satisfied</strong></span> ✅ (Hài lòng, tự mãn.) - Đúng, vì bài nghe xác nhận rằng bác sĩ Singh cảnh báo không nên tự mãn.</li>       <li><span class="text-danger">ill</span> ❌ (Bị bệnh.) - Sai, vì bài nghe không đề cập đến việc bị bệnh.</li>       <li><span class="text-danger">a doctor</span> ❌ (Một bác sĩ.) - Sai, vì bài nghe không nói về việc trở thành bác sĩ.</li>       <li><span class="text-danger">content</span> ❌ (Thoải mái, hài lòng.) - Sai, vì từ này không chính xác bằng "satisfied" trong bối cảnh bài nghe.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question15">
+						<div class="fw-bold mb-2">
+							Câu 15: How did Dr Singh describe the polio-free status of Asia?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. feline															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. frail</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. fallible															</div>
+																				<div class="ps-4 mb-2">
+																	D. futile															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>frail</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, bác sĩ Singh mô tả tình trạng không còn bệnh bại liệt ở châu Á:</p>   <p>"Dr. Singh also cautioned against becoming complacent in the fight against the disease. <strong>She said the polio-free status of Asia remains frail.</strong>"</p>    <p>"Tiến sĩ Singh cũng cảnh báo không nên trở nên tự mãn trong cuộc chiến chống lại căn bệnh này. <strong>Bà nói rằng tình trạng không còn bệnh bại liệt ở châu Á vẫn còn mong manh.</strong>"</p>    <p>Bài nghe xác nhận rằng <strong>tình trạng không còn bệnh bại liệt ở châu Á vẫn còn mong manh</strong>. Do đó, đáp án chính xác là <strong>frail.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">fallible</span> ❌ (Dễ mắc lỗi, không hoàn hảo.) - Sai, vì bài nghe không nói về khả năng mắc lỗi.</li>       <li><span class="text-success"><strong>frail</strong></span> ✅ (Mong manh, dễ bị tổn thương.) - Đúng, vì bài nghe xác nhận rằng tình trạng không còn bệnh bại liệt vẫn chưa vững chắc.</li>       <li><span class="text-danger">feline</span> ❌ (Liên quan đến mèo.) - Sai, vì bài nghe không đề cập gì đến mèo.</li>       <li><span class="text-danger">futile</span> ❌ (Vô ích, không có kết quả.) - Sai, vì bài nghe không nói rằng nỗ lực này là vô ích.</li>   </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="12" id="progress-question-12">
+				   13				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="13" id="progress-question-13">
+				   14				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="14" id="progress-question-14">
+				   15				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

@@ -1,0 +1,589 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 36 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87754				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/12				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp2-1664814399_205450f2c547cecace61.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>In this part, you will hear three conversations. The conversations will be played once only. There are four questions for each conversation.<br>
+For each question, choose the right answer A, B, C, or D. Part 2, questions 9 to 12. First, you will have some time to look at questions 9 to 12. Now we're ready to start.<br>
+Listen and answer questions 9 to 12. You will hear the recording once only.<br>
+Elena, before we talk about how a 16-year-old can write, direct, and star in her own film, tell me a bit about the character of Susie, the girl you played in your film, Stolen Dream.<br>
+She's artistic and doesn't really care what people think or say about her, or get upset about how people behave. I'm a lot like that too. I don't worry too much about other people's opinions of me.<br>
+So, is being free of worry a message you wanted to communicate to your audience? In a way, you need to be free. You shouldn't be tied to your background, where you were born, or anything you haven't chosen for yourself. People have dreams, and I guess I'm saying that they should have belief in themselves, that they can make those dreams come real.<br>
+It must have been an exciting atmosphere to work in. Was making the film like your own dream coming true? Definitely, although it wasn't easy. I had very little time or money.<br>
+People told me to relax, but I knew I couldn't. If I didn't work, no one else would. But after a week or so, because everyone on the film was facing the same challenge, we came together.<br>
+When we all left at the end, it was sad, because it was like a family breaking up. Tell me about a typical day's filming. I don't think there was a typical day, really.<br>
+Each day, I got up at five to start at six. I'd film two or three scenes in the morning, and the same again after lunch. That way, I had a goal and knew how much I was achieving each day.<br>
+Sometimes, if we needed to, we'd work on until late, till 3 a.m. one time. I really enjoyed my Sundays off. Now you will have some time to review questions 9 to 12.<br>
+Part 2. Questions 13 to 16. <br>
+First, you will have some time to look at questions 13 to 16. Now we're ready to start.<br>
+Listen and answer questions 13 to 16. You will hear the recording once only. I suppose the first question I have to ask you, Alan, is one you get fed up answering.<br>
+But here goes. What is a best boy? Well, I'm not sure why I'm called a best boy exactly, but I like to think it's because I'm the best at what I do. But the title is an American term used to describe the assistant to the man who works with the cameramen and the electricians on a film to make sure that the film is properly lit.<br>
+So how do you spend your time? Basically, what I do is work between the electrical department and production. I deal with the companies where the lights come from. And I'm also there on the film set making sure that everything runs smoothly, that the lighting is set up when the camera crew arrives to shoot the film.<br>
+And then I also help with the budget. We have to do time sheets, things like that. It's mostly paperwork, really.<br>
+When did you start working in the industry? About 15 years ago. I'd been an electrician and my first few film jobs were basic electrical ones. Then I moved over to this.<br>
+It sounds rather a complicated job to me. No, not really. I've never had to do anything out of the ordinary.<br>
+But filming on location does make things more intense. There's less control than in the studio and you can have problems with the weather. On my latest film, we were working in the hills and it would take us ages to get the equipment up there.<br>
+But I enjoyed it. It was a challenge. Is working on location a plus for you? Well, you see some great places.<br>
+But long working days and problems with production are far more common. There's a lot of responsibility with the job because there's so much money involved. If all the lighting goes wrong on one day, then obviously there'll be trouble.<br>
+The long hours are very unsociable, which is OK if you're single. But there's quite a lot of work abroad, which puts a lot of pressure on the family. I went away for five months once.<br>
+When I left, my son wasn't talking. And when I came back, he was. It varies though.<br>
+Some years you don't go away at all. <br>
+Now you will have some time to review questions 13 to 16. Part 2. Questions 17 to 20.<br>
+First you will have some time to look at questions 17 to 20. Now we're ready to start. Listen and answer questions 17 to 20.<br>
+You will hear the recording once only. Well, Maria, I have to say I was quite impressed by your essay. It's a big improvement on the last one.<br>
+Really? I'm glad. I put a lot more work into this one. I really spent ages on it.<br>
+And it shows. You've addressed most of the problems I pointed out last time. In particular, the style and language are much more appropriate for an academic essay.<br>
+So that aspect is OK? Absolutely. If you carry on like this, you shouldn't have any significant problems in that department. That's a relief.<br>
+I've been quite worried about that. Although I've been reading a lot of other essays to try to get the right style. Well, I'd say you've been successful.<br>
+There are just one or two minor things you could look at. Your punctuation's quite basic. It's really just full stops and commas and parentheses.<br>
+Brackets? Yes, brackets if you prefer. In academic writing, these are best used only occasionally, if at all. You use them rather too often.<br>
+OK, I see. And I'm sorry to mention it, but your spelling… I know, I know. But I'm working on a foreign computer.<br>
+The spell-checker doesn't work for English. Are you sure? Have you tried changing the setting to English? No, I haven't. Well, I should see if that's possible.<br>
+I haven't marked you down this time, but, well, some of my colleagues are a bit old-fashioned about spelling. I'd try to get that sorted out if I were you. OK, I understand.<br>
+I'll try to change the setting. Now you will have some time to review questions 17 to 20. That is the end of Part 2.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 2 Trong phần này, bạn sẽ nghe ba đoạn hội thoại. Mỗi đoạn hội thoại chỉ được phát một lần duy nhất. Có bốn câu hỏi cho mỗi đoạn hội thoại. Với mỗi câu hỏi, hãy chọn câu trả lời đúng: A, B, C hoặc D. Câu 9 đến 12 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 9 đến 12. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 9 đến 12. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Phỏng vấn với Elena – Đạo diễn trẻ tuổi Elena, trước khi nói về việc một cô gái 16 tuổi có thể viết kịch bản, đạo diễn và đóng vai chính trong bộ phim của mình như thế nào, hãy nói cho tôi biết một chút về nhân vật Susie – cô gái mà bạn đóng trong phim Stolen Dream. Susie là một cô gái nghệ thuật và không thực sự quan tâm đến việc người khác nghĩ hay nói gì về cô ấy. Cô ấy cũng không quá buồn khi người khác cư xử không tốt với mình. Tôi cũng khá giống với cô ấy. Tôi không quá lo lắng về việc người khác nghĩ gì về mình. Vậy việc không lo lắng về dư luận có phải là thông điệp bạn muốn truyền tải đến khán giả không? Theo một cách nào đó, bạn cần phải tự do. Bạn không nên bị ràng buộc bởi hoàn cảnh, nơi bạn sinh ra hay bất cứ điều gì mà bạn không thể tự chọn cho mình. Mọi người đều có ước mơ, và tôi đoán rằng tôi đang muốn nói rằng họ nên tin tưởng vào bản thân – rằng họ có thể biến ước mơ của mình thành hiện thực. Chắc hẳn bầu không khí làm việc rất thú vị. Vậy việc làm phim có giống như giấc mơ của bạn thành hiện thực không? Chắc chắn rồi, mặc dù nó không hề dễ dàng. Tôi có rất ít thời gian và tiền bạc. Mọi người bảo tôi nên thư giãn, nhưng tôi biết mình không thể. Nếu tôi không làm việc, thì sẽ không có ai làm cả. Nhưng sau khoảng một tuần, vì ai cũng phải đối mặt với thử thách như nhau, chúng tôi đã cùng nhau cố gắng. Lúc kết thúc, ai cũng buồn vì cảm giác như một gia đình bị chia cắt. Hãy kể về một ngày quay phim điển hình của bạn. Thực sự thì không có ngày nào giống nhau cả. Mỗi ngày, tôi dậy lúc 5 giờ sáng để bắt đầu quay lúc 6 giờ. Tôi quay hai hoặc ba cảnh vào buổi sáng, sau đó làm tương tự vào buổi chiều. Bằng cách đó, tôi có một mục tiêu rõ ràng và biết mình đã đạt được bao nhiêu mỗi ngày. Đôi khi, nếu cần, chúng tôi làm việc đến tận khuya – có lần đến 3 giờ sáng. Tôi thực sự rất trân trọng những ngày Chủ nhật được nghỉ ngơi. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 9 đến 12. Câu 13 đến 16 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 13 đến 16. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 13 đến 16. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Phỏng vấn với Alan – Công việc của một Best Boy Tôi đoán câu hỏi đầu tiên tôi phải hỏi bạn, Alan, là một câu mà bạn đã nghe rất nhiều lần. Nhưng tôi vẫn muốn hỏi: "Best Boy" là gì? Thực ra tôi cũng không chắc vì sao lại gọi như vậy, nhưng tôi thích nghĩ rằng đó là vì tôi giỏi nhất trong công việc của mình. Nhưng thực tế, "Best Boy" là một thuật ngữ trong ngành điện ảnh Mỹ, dùng để chỉ trợ lý của người làm việc với đội quay phim và đội điện để đảm bảo ánh sáng trong phim được thiết lập đúng cách. Công việc của bạn cụ thể là làm gì? Tôi chủ yếu làm việc giữa bộ phận điện và bộ phận sản xuất. Tôi liên hệ với các công ty cung cấp hệ thống chiếu sáng. Tôi cũng có mặt tại trường quay để đảm bảo mọi thứ diễn ra suôn sẻ và ánh sáng được chuẩn bị trước khi đoàn làm phim đến quay. Ngoài ra, tôi còn giúp quản lý ngân sách, theo dõi bảng chấm công, v.v. Thực tế, công việc chủ yếu là giấy tờ hành chính. Bạn đã bắt đầu làm việc trong ngành này từ khi nào? Khoảng 15 năm trước. Trước đó tôi là một thợ điện, và những công việc đầu tiên của tôi trong ngành phim cũng liên quan đến điện. Sau đó, tôi chuyển sang vị trí này. Công việc này có vẻ khá phức tạp. Không hẳn đâu. Tôi chưa bao giờ phải làm điều gì quá đặc biệt cả. Nhưng quay phim ngoại cảnh thì căng thẳng hơn nhiều. Mọi thứ ít được kiểm soát hơn so với khi quay trong studio, và thời tiết cũng có thể gây rắc rối. Trong bộ phim gần đây nhất, chúng tôi quay trên đồi, và việc đưa thiết bị lên đó mất rất nhiều thời gian. Nhưng tôi thích thử thách đó. Quay phim ngoại cảnh có phải là một điểm cộng với bạn không? Bạn được nhìn thấy nhiều nơi tuyệt vời. Nhưng giờ làm việc dài và các vấn đề sản xuất xảy ra thường xuyên hơn. Công việc này có trách nhiệm lớn, vì có rất nhiều tiền đầu tư vào dự án. Nếu hệ thống chiếu sáng bị lỗi một ngày, sẽ có rắc rối lớn. Ngoài ra, giờ làm việc không cố định, điều này không thành vấn đề nếu bạn còn độc thân. Nhưng với người có gia đình, công việc này có thể gây áp lực rất lớn. Có lần tôi phải xa nhà 5 tháng. Khi tôi đi, con trai tôi còn chưa biết nói. Khi tôi về, nó đã nói chuyện được rồi. Tuy nhiên, cũng có những năm tôi không phải đi đâu cả. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 13 đến 16. Câu 17 đến 20 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 17 đến 20. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 17 đến 20. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Phản hồi về bài luận của Maria Maria, tôi phải nói rằng tôi rất ấn tượng với bài luận của bạn. Nó là một sự cải thiện lớn so với bài trước. Thật sao? Tôi rất vui. Tôi đã dành nhiều thời gian hơn cho bài này. Và điều đó thể hiện rất rõ. Bạn đã sửa hầu hết những vấn đề mà tôi đã chỉ ra lần trước. Đặc biệt, phong cách và ngôn ngữ của bạn phù hợp hơn nhiều với một bài luận học thuật. Vậy khía cạnh đó ổn rồi chứ? Hoàn toàn ổn. Nếu bạn tiếp tục như thế này, bạn sẽ không gặp vấn đề gì lớn. Có một điều nhỏ tôi muốn bạn chú ý: dấu câu của bạn khá đơn giản. Bạn chỉ sử dụng dấu chấm, dấu phẩy và dấu ngoặc đơn. Ngoài ra, chính tả của bạn vẫn chưa tốt lắm. Tôi biết, nhưng tôi đang sử dụng một máy tính nước ngoài và trình kiểm tra chính tả không hỗ trợ tiếng Anh. Bạn đã thử thay đổi cài đặt sang tiếng Anh chưa? Chưa, tôi sẽ thử xem có được không. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 17 đến 20. Phần 2 kết thúc tại đây.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What does Elena talk about the character she played in the film?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. She has similar personality to Elena.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. She cares a lot of other people.															</div>
+																				<div class="ps-4 mb-2">
+																	C. She worried much about other people.															</div>
+																				<div class="ps-4 mb-2">
+																	D. She is not artistic.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>She has similar personality to Elena.</strong></span> ✅ (Cô ấy có tính cách giống Elena.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, Elena nói:</p>    <p>"She's artistic and doesn't really care what people think or say about her, or get upset about how people behave. I'm a lot like that too."</p>     <p>"Cô ấy rất nghệ thuật và <strong>không thực sự bận tâm đến những gì người khác nghĩ hoặc nói về mình</strong>, cũng không buồn vì cách cư xử của người khác. <strong>Tôi cũng giống như vậy</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>nhân vật trong phim có tính cách tương đồng với Elena</strong>. Do đó, đáp án chính xác là <strong>She has similar personality to Elena.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>She has similar personality to Elena.</strong></span> ✅ (Cô ấy có tính cách giống Elena.) - Đúng, vì bài nghe xác nhận rằng cả hai đều không bận tâm đến ý kiến của người khác.</li>                 <li><span class="text-danger">She worried much about other people.</span> ❌ (Cô ấy lo lắng nhiều về người khác.) - Sai, vì bài nghe nói rằng cô ấy không quan tâm đến ý kiến của người khác.</li>                 <li><span class="text-danger">She cares a lot of other people.</span> ❌ (Cô ấy quan tâm rất nhiều đến người khác.) - Sai, vì bài nghe khẳng định cô ấy không quan tâm đến suy nghĩ của người khác.</li>                 <li><span class="text-danger">She is not artistic.</span> ❌ (Cô ấy không có khiếu nghệ thuật.) - Sai, vì bài nghe nói rõ rằng cô ấy là một người nghệ thuật.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: What message does Elena want her film to communicate?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Be realistic your choice.															</div>
+																				<div class="ps-4 mb-2">
+																	B. Value your background.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Believe in other people.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Believe in your ability.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>Believe in your ability.</strong></span> ✅ (Hãy tin vào khả năng của bản thân.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, Elena nói:</p>    <p>"People have dreams, and I guess I'm saying that they should have belief in themselves, that they can make those dreams come real."</p>     <p>"Mọi người có ước mơ, và tôi nghĩ rằng tôi đang nói rằng <strong>họ nên tin vào bản thân mình</strong>, rằng họ có thể biến những ước mơ đó thành hiện thực."</p>      <p>Bài nghe xác nhận rằng <strong>Elena muốn truyền tải thông điệp về niềm tin vào khả năng của bản thân</strong>. Do đó, đáp án chính xác là <strong>Believe in your ability.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">Value your background.</span> ❌ (Trân trọng nguồn gốc của bạn.) - Sai, vì bài nghe nói rằng không nên bị ràng buộc bởi nguồn gốc, chứ không phải trân trọng nó.</li>                 <li><span class="text-success"><strong>Believe in your ability.</strong></span> ✅ (Hãy tin vào khả năng của bản thân.) - Đúng, vì bài nghe xác nhận rằng Elena muốn mọi người tin rằng họ có thể biến ước mơ thành hiện thực.</li>                 <li><span class="text-danger">Believe in other people.</span> ❌ (Tin vào người khác.) - Sai, vì thông điệp của Elena tập trung vào niềm tin vào bản thân, không phải vào người khác.</li>                 <li><span class="text-danger">Be realistic your choice.</span> ❌ (Hãy thực tế với lựa chọn của bạn.) - Sai, vì bài nghe không nhấn mạnh việc phải thực tế, mà nhấn mạnh niềm tin vào ước mơ.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What did Elena have to face up with?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Bad working atmosphere															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Financial problems</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Unqualified co-workers															</div>
+																				<div class="ps-4 mb-2">
+																	D. Bad weather															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>Financial problems.</strong></span> ✅ (Vấn đề tài chính.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, Elena nói:</p>    <p>"Definitely, although it wasn't easy. I had very little time or money."</p>     <p>"Chắc chắn rồi, mặc dù điều đó không hề dễ dàng. Tôi có <strong>rất ít thời gian và tiền bạc</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>Elena gặp vấn đề về tài chính khi làm phim</strong>. Do đó, đáp án chính xác là <strong>Financial problems.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>Financial problems.</strong></span> ✅ (Vấn đề tài chính.) - Đúng, vì bài nghe xác nhận rằng Elena có rất ít tiền để làm phim.</li>                 <li><span class="text-danger">Unqualified co-workers.</span> ❌ (Đồng nghiệp không đủ năng lực.) - Sai, vì bài nghe không đề cập đến việc cô ấy có đồng nghiệp không đủ năng lực.</li>                 <li><span class="text-danger">Bad working atmosphere.</span> ❌ (Môi trường làm việc tồi tệ.) - Sai, vì bài nghe nói rằng nhóm làm việc của cô ấy giống như một gia đình.</li>                 <li><span class="text-danger">Bad weather.</span> ❌ (Thời tiết xấu.) - Sai, vì bài nghe không nhắc đến thời tiết ảnh hưởng đến việc quay phim.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: How many scenes does Elena often film in the afternoon?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Two or six															</div>
+																				<div class="ps-4 mb-2">
+																	B. Five or six															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Two or three</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Two or five															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>Two or three.</strong></span> ✅ (Hai hoặc ba cảnh.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, Elena nói:</p>    <p>"I'd film two or three scenes in the morning, and the same again after lunch."</p>     <p>"Tôi quay <strong>hai hoặc ba cảnh vào buổi sáng</strong>, và cũng <strong>tương tự vào buổi chiều</strong> sau bữa trưa."</p>      <p>Bài nghe xác nhận rằng <strong>Elena thường quay hai hoặc ba cảnh vào buổi chiều</strong>. Do đó, đáp án chính xác là <strong>Two or three.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>Two or three.</strong></span> ✅ (Hai hoặc ba cảnh.) - Đúng, vì bài nghe xác nhận rằng số cảnh quay vào buổi chiều tương đương với buổi sáng là hai hoặc ba.</li>                 <li><span class="text-danger">Two or five.</span> ❌ (Hai hoặc năm cảnh.) - Sai, vì bài nghe không đề cập đến số lượng năm cảnh.</li>                 <li><span class="text-danger">Two or six.</span> ❌ (Hai hoặc sáu cảnh.) - Sai, vì số lượng cảnh quay được đề cập là hai hoặc ba.</li>                 <li><span class="text-danger">Five or six.</span> ❌ (Năm hoặc sáu cảnh.) - Sai, vì bài nghe không nhắc đến số lượng này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What does Alan have to do as his duty?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. shooting films															</div>
+																				<div class="ps-4 mb-2">
+																	B. making photos															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. doing timesheets</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. installing electricity															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>doing timesheets.</strong></span> ✅ (Làm bảng chấm công.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, Alan nói:</p>    <p>"And then I also help with the budget. We have to do time sheets, things like that. It's mostly paperwork, really."</p>     <p>"Sau đó, tôi cũng hỗ trợ với ngân sách. <strong>Chúng tôi phải làm bảng chấm công</strong> và những việc tương tự. Thực ra, công việc chủ yếu là giấy tờ."</p>      <p>Bài nghe xác nhận rằng <strong>Alan có nhiệm vụ làm bảng chấm công</strong>. Do đó, đáp án chính xác là <strong>doing timesheets.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">making photos.</span> ❌ (Chụp ảnh.) - Sai, vì bài nghe không đề cập đến việc Alan chụp ảnh.</li>                 <li><span class="text-danger">installing electricity.</span> ❌ (Lắp đặt hệ thống điện.) - Sai, vì Alan từng là thợ điện nhưng hiện tại không làm công việc này.</li>                 <li><span class="text-danger">shooting films.</span> ❌ (Quay phim.) - Sai, vì Alan làm việc với ánh sáng và ngân sách, không phải quay phim.</li>                 <li><span class="text-success"><strong>doing timesheets.</strong></span> ✅ (Làm bảng chấm công.) - Đúng, vì bài nghe xác nhận rằng Alan phải làm bảng chấm công như một phần trong công việc của mình.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: When did Alan start working in the industry?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. fifteen years ago</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. five years ago															</div>
+																				<div class="ps-4 mb-2">
+																	C. many years ago															</div>
+																				<div class="ps-4 mb-2">
+																	D. fifty years ago															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>fifteen years ago.</strong></span> ✅ (Mười lăm năm trước.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, Alan nói:</p>    <p>"About 15 years ago. I'd been an electrician and my first few film jobs were basic electrical ones."</p>     <p>"Khoảng <strong>15 năm trước</strong>. Tôi từng là một thợ điện và những công việc đầu tiên của tôi trong ngành điện ảnh đều liên quan đến điện."</p>      <p>Bài nghe xác nhận rằng <strong>Alan bắt đầu làm việc trong ngành điện ảnh từ 15 năm trước</strong>. Do đó, đáp án chính xác là <strong>fifteen years ago.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">five years ago.</span> ❌ (Năm năm trước.) - Sai, vì bài nghe nói rằng Alan bắt đầu làm việc 15 năm trước.</li>                 <li><span class="text-success"><strong>fifteen years ago.</strong></span> ✅ (Mười lăm năm trước.) - Đúng, vì bài nghe xác nhận rằng Alan đã làm trong ngành được 15 năm.</li>                 <li><span class="text-danger">fifty years ago.</span> ❌ (Năm mươi năm trước.) - Sai, vì con số chính xác là 15 năm, không phải 50 năm.</li>                 <li><span class="text-danger">many years ago.</span> ❌ (Nhiều năm trước.) - Sai, vì bài nghe đưa ra con số cụ thể là 15 năm.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What difficulties did Alan have in his last film?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. moving the equipment</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. shooting film in the studio															</div>
+																				<div class="ps-4 mb-2">
+																	C. finding the locations															</div>
+																				<div class="ps-4 mb-2">
+																	D. bad weather															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>moving the equipment.</strong></span> ✅ (Di chuyển thiết bị.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, Alan nói:</p>    <p>"On my latest film, we were working in the hills and it would take us ages to get the equipment up there."</p>     <p>"Trong bộ phim gần đây nhất của tôi, chúng tôi làm việc trên đồi và <strong>phải mất rất nhiều thời gian để đưa thiết bị lên đó</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>Alan gặp khó khăn trong việc di chuyển thiết bị lên đồi</strong>. Do đó, đáp án chính xác là <strong>moving the equipment.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">bad weather.</span> ❌ (Thời tiết xấu.) - Sai, vì bài nghe không đề cập đến việc thời tiết xấu gây khó khăn cho Alan.</li>                 <li><span class="text-success"><strong>moving the equipment.</strong></span> ✅ (Di chuyển thiết bị.) - Đúng, vì bài nghe xác nhận rằng Alan mất rất nhiều thời gian để di chuyển thiết bị lên đồi.</li>                 <li><span class="text-danger">shooting film in the studio.</span> ❌ (Quay phim trong trường quay.) - Sai, vì Alan nói rằng làm việc ngoài trời (trên đồi) là thách thức, không phải trong trường quay.</li>                 <li><span class="text-danger">finding the locations.</span> ❌ (Tìm địa điểm quay phim.) - Sai, vì bài nghe không đề cập đến việc khó khăn trong tìm địa điểm.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: For Alan, what are disadvantages of his job?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the criticism he receives															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. the effect on family life</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. so many challenges															</div>
+																				<div class="ps-4 mb-2">
+																	D. the amount of responsibilities															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>the effect on family life.</strong></span> ✅ (Ảnh hưởng đến cuộc sống gia đình.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, Alan nói:</p>    <p>"The long hours are very unsociable, which is OK if you're single. But there's quite a lot of work abroad, which puts a lot of pressure on the family. I went away for five months once. When I left, my son wasn't talking. And when I came back, he was."</p>     <p>"Giờ làm việc kéo dài khiến việc giao tiếp xã hội rất khó khăn, điều này không sao nếu bạn còn độc thân. Nhưng có rất nhiều công việc ở nước ngoài, <strong>gây áp lực lớn lên gia đình</strong>. Tôi từng đi xa trong 5 tháng. Khi tôi rời đi, con trai tôi chưa biết nói. Khi tôi trở về, nó đã biết nói rồi."</p>      <p>Bài nghe xác nhận rằng <strong>Alan cho rằng công việc của mình ảnh hưởng đến cuộc sống gia đình</strong>. Do đó, đáp án chính xác là <strong>the effect on family life.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">so many challenges.</span> ❌ (Quá nhiều thử thách.) - Sai, vì bài nghe không nói rằng những thử thách là điều bất lợi chính.</li>                 <li><span class="text-danger">the amount of responsibilities.</span> ❌ (Khối lượng trách nhiệm lớn.) - Sai, vì mặc dù công việc của Alan có nhiều trách nhiệm, nhưng bài nghe nhấn mạnh ảnh hưởng đến gia đình hơn.</li>                 <li><span class="text-danger">the criticism he receives.</span> ❌ (Những lời chỉ trích mà anh ấy nhận được.) - Sai, vì bài nghe không đề cập đến việc Alan bị chỉ trích.</li>                 <li><span class="text-success"><strong>the effect on family life.</strong></span> ✅ (Ảnh hưởng đến cuộc sống gia đình.) - Đúng, vì bài nghe xác nhận rằng công việc của Alan gây áp lực lớn lên gia đình.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: How is Maria's essay?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. similar to her previous one															</div>
+																				<div class="ps-4 mb-2">
+																	B. really perfect now															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. better than her previous one</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. worse than her previous one															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>better than her previous one.</strong></span> ✅ (Tốt hơn bài luận trước của cô ấy.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, giảng viên nói:</p>    <p>"Well, Maria, I have to say I was quite impressed by your essay. It's a big improvement on the last one."</p>     <p>"Maria này, tôi phải nói rằng tôi rất ấn tượng với bài luận của em. <strong>Đây là một sự cải thiện lớn so với bài luận trước</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>bài luận lần này của Maria tốt hơn bài trước</strong>. Do đó, đáp án chính xác là <strong>better than her previous one.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>better than her previous one.</strong></span> ✅ (Tốt hơn bài luận trước của cô ấy.) - Đúng, vì giảng viên xác nhận rằng bài luận này là một sự cải thiện lớn.</li>                 <li><span class="text-danger">worse than her previous one.</span> ❌ (Tệ hơn bài luận trước của cô ấy.) - Sai, vì bài nghe nói rằng bài luận này tốt hơn.</li>                 <li><span class="text-danger">similar to her previous one.</span> ❌ (Tương tự bài luận trước của cô ấy.) - Sai, vì bài nghe nói rõ rằng đây là một sự cải thiện lớn.</li>                 <li><span class="text-danger">really perfect now.</span> ❌ (Bây giờ thực sự hoàn hảo.) - Sai, vì bài nghe không nói rằng bài luận đã hoàn hảo, chỉ là cải thiện hơn trước.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: What makes the tutor impressed?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the punctuations															</div>
+																				<div class="ps-4 mb-2">
+																	B. the spelling															</div>
+																				<div class="ps-4 mb-2">
+																	C. the writing speed															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. the style and language</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>the style and language.</strong></span> ✅ (Phong cách và ngôn ngữ.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, giảng viên nói:</p>    <p>"You've addressed most of the problems I pointed out last time. In particular, the style and language are much more appropriate for an academic essay."</p>     <p>"Em đã khắc phục hầu hết các vấn đề mà tôi đã chỉ ra lần trước. Đặc biệt, <strong>phong cách và ngôn ngữ phù hợp hơn nhiều với một bài luận học thuật</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>giảng viên ấn tượng với phong cách và ngôn ngữ của bài luận</strong>. Do đó, đáp án chính xác là <strong>the style and language.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">the punctuations.</span> ❌ (Dấu câu.) - Sai, vì bài nghe chỉ ra rằng Maria vẫn cần cải thiện dấu câu.</li>                 <li><span class="text-danger">the spelling.</span> ❌ (Chính tả.) - Sai, vì bài nghe nói rằng Maria gặp vấn đề với chính tả do sử dụng máy tính không hỗ trợ kiểm tra chính tả tiếng Anh.</li>                 <li><span class="text-success"><strong>the style and language.</strong></span> ✅ (Phong cách và ngôn ngữ.) - Đúng, vì bài nghe xác nhận rằng giảng viên ấn tượng với sự cải thiện về phong cách và ngôn ngữ.</li>                 <li><span class="text-danger">the writing speed.</span> ❌ (Tốc độ viết.) - Sai, vì bài nghe không đề cập đến tốc độ viết của Maria.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: What does the tutor feel about Maria's use of English?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. perfect															</div>
+																				<div class="ps-4 mb-2">
+																	B. good															</div>
+																				<div class="ps-4 mb-2">
+																	C. bad															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. generally acceptable</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>generally acceptable.</strong></span> ✅ (Nhìn chung có thể chấp nhận được.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, giảng viên nói:</p>    <p>"Absolutely. If you carry on like this, you shouldn't have any significant problems in that department."</p>     <p>"Chắc chắn rồi. Nếu em tiếp tục như vậy, em sẽ <strong>không gặp phải vấn đề gì đáng kể</strong> trong khía cạnh này."</p>      <p>Bài nghe xác nhận rằng <strong>giảng viên thấy cách sử dụng tiếng Anh của Maria là chấp nhận được, không có vấn đề lớn</strong>. Do đó, đáp án chính xác là <strong>generally acceptable.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>generally acceptable.</strong></span> ✅ (Nhìn chung có thể chấp nhận được.) - Đúng, vì giảng viên nói rằng Maria sẽ không gặp vấn đề đáng kể nếu tiếp tục cải thiện.</li>                 <li><span class="text-danger">bad.</span> ❌ (Kém.) - Sai, vì bài nghe không cho thấy giảng viên đánh giá thấp khả năng sử dụng tiếng Anh của Maria.</li>                 <li><span class="text-danger">good.</span> ❌ (Tốt.) - Sai, vì giảng viên chỉ nói rằng Maria đã cải thiện, không khẳng định là tốt.</li>                 <li><span class="text-danger">perfect.</span> ❌ (Hoàn hảo.) - Sai, vì bài nghe không nói rằng Maria sử dụng tiếng Anh một cách hoàn hảo.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: How does Maria feel about it?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. She is very sad.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. She is relieved.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. She is sad a little.															</div>
+																				<div class="ps-4 mb-2">
+																	D. She is delighted.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>She is relieved.</strong></span> ✅ (Cô ấy cảm thấy nhẹ nhõm.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, Maria nói:</p>    <p>"That's a relief. I've been quite worried about that."</p>     <p>"<strong>Thật là nhẹ nhõm.</strong> Em đã khá lo lắng về điều đó."</p>      <p>Bài nghe xác nhận rằng <strong>Maria cảm thấy nhẹ nhõm khi nghe nhận xét từ giảng viên</strong>. Do đó, đáp án chính xác là <strong>She is relieved.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">She is very sad.</span> ❌ (Cô ấy rất buồn.) - Sai, vì bài nghe không cho thấy Maria buồn.</li>                 <li><span class="text-danger">She is sad a little.</span> ❌ (Cô ấy hơi buồn.) - Sai, vì Maria cảm thấy nhẹ nhõm, không phải buồn.</li>                 <li><span class="text-success"><strong>She is relieved.</strong></span> ✅ (Cô ấy cảm thấy nhẹ nhõm.) - Đúng, vì bài nghe xác nhận rằng Maria cảm thấy nhẹ nhõm sau khi nghe nhận xét.</li>                 <li><span class="text-danger">She is delighted.</span> ❌ (Cô ấy rất vui.) - Sai, vì Maria cảm thấy nhẹ nhõm hơn là vui sướng.</li>    </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

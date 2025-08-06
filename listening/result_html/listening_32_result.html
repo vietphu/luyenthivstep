@@ -1,0 +1,579 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 32 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87535				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/12				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp2-1664817262_1bc46b45b76625d16d89.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>In this part, you will hear three conversations. The conversations will be played once only. There are four questions for each conversation.<br>
+For each question, choose the right answer A, B, C, or D. Part 2, questions 9 to 12. First, you will have some time to look at questions 9 to 12. Now we're ready to start.<br>
+Listen and answer questions 9 to 12. You will hear the recording once only. <br>
+Good morning.<br>
+Tauber Insurance Company. How can I help you? Good morning. I want to alter my insurance policy.<br>
+Is that for your house, contents, or vehicle? My vehicle. Can you give me the number of the policy please? Certainly, I have it here in front of me. It's ZQW 5009.<br>
+And what make and model of car is it? It's a Mazda, a Mazda Marvel. And what's the CC rating? Sorry, what do you mean? How big is the engine? Is it 1,500 or 1,800 CC, for example? Oh, that. It's actually much bigger than that.<br>
+It's 2,500 CC. Thank you. Now, I just have to ask you a few questions to verify your identity.<br>
+What name is the policy under? Heathcote. Let me just bring that up on the computer. Yes.<br>
+Can I just confirm your first name please? Well, my first name is Lisa, but I'm known by my middle name, Marie. Right. I see both here, but Lisa is the one I want for ID purposes.<br>
+And your date of birth, Lisa? I mean, Marie. The 22nd of August, 1955. Correct.<br>
+Now you will have some time to review questions 9 to 12. Part 2, questions 13 to 16. First you will have some time to look at questions 13 to 16.<br>
+Now we're ready to start. Listen and answer questions 13 to 16. You will hear the recording once only.<br>
+Sebastian, you routinely jump across rooftops to get from A to B. Why exactly? It's always been a real passion for me, but I think it's become more than that. It's a part of my life. It's like asking someone, why are you walking? They say it's simply because they can, and for me it's the same with freerunning.<br>
+When we were young, my friend and I used to practice climbing around, just like any kids. We just kept moving, never stopped, until it turned into something special. First it turned into a lifestyle, and then into a real discipline.<br>
+Just watching you in action makes me tired. Do you have to be fit to be a freerunner? To start with, you don't have to be so fit. In fact, I often prefer beginners who start with not such a healthy body.<br>
+If you can't do stuff because your body is not ready, you naturally start at a low level. When you get somebody who has done some sport, they often want to do something too impressive, too soon. Just one wrong step could see you fall and splatter on the floor though.<br>
+Surely it's just too dangerous? Yeah, of course there is risk, but there is risk everywhere. Now you will have some time to review questions 13 to 16. Part 2, questions 17 to 20.<br>
+First you will have some time to look at questions 17 to 20. Now we're ready to start. Listen and answer questions 17 to 20.<br>
+You will hear the recording once only. Well, Catherine, I've only been on the course for a few weeks, but you're in your third and final year. Yes, there's light at the end of the tunnel.<br>
+It's hard doing it part-time. Have you enjoyed it? Oh, on balance, yes, very much. It's not perfect, of course.<br>
+The teaching staff vary in their commitment, but I think I've been lucky in getting the more dynamic ones. And most of the students are fine. There are a few oddballs.<br>
+And there's such a mix of backgrounds and expertise, which comes out in the really wide range of presentations we get. One downside is the number of books and journals we're expected to get through. Some weeks it's just been too much.<br>
+Yes, I'm finding that already. What have you particularly enjoyed? Hmm. One thing that struck me is how much each person is capable of contributing.<br>
+We have these online chat rooms and email lists so you can stay in touch with each other. But nobody says anything special. And then when we have the class sessions, suddenly everyone comes to life and you get some great exchanges of ideas.<br>
+Interesting. And what are you working on at the moment? We've got a tough assignment. They've given us a case study about a company's plans to rebrand.<br>
+And we have to go through all the figures, sales, research, etc., and comment on them. It's supposed to give us practice in drawing conclusions from the figures available, but it's hard. I know.<br>
+I'm not ready for that kind of thing yet. Now you will have some time to review questions 17 to 20. That is the end of Part 2.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 2 Trong phần này, bạn sẽ nghe ba đoạn hội thoại. Mỗi đoạn hội thoại chỉ được phát một lần duy nhất. Có bốn câu hỏi cho mỗi đoạn hội thoại. Với mỗi câu hỏi, hãy chọn câu trả lời đúng: A, B, C hoặc D. Câu 9 đến 12 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 9 đến 12. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 9 đến 12. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Chào buổi sáng. Công ty bảo hiểm Tauber. Tôi có thể giúp gì cho bạn? Chào buổi sáng. Tôi muốn thay đổi hợp đồng bảo hiểm của mình. Đó là bảo hiểm cho nhà ở, tài sản hay phương tiện của bạn? Cho phương tiện của tôi. Bạn có thể cung cấp số hợp đồng bảo hiểm không? Tất nhiên, tôi có nó ngay đây. Số hợp đồng là ZQW 5009. Xe của bạn là hãng và mẫu nào? Đó là một chiếc Mazda, mẫu Mazda Marvel. Và dung tích động cơ là bao nhiêu CC? Xin lỗi, ý bạn là gì? Tức là động cơ của xe có dung tích bao nhiêu? Ví dụ như 1.500 hay 1.800 CC? À, vậy à. Xe của tôi có động cơ 2.500 CC, lớn hơn nhiều. Cảm ơn bạn. Bây giờ tôi chỉ cần hỏi một vài câu để xác minh danh tính của bạn. Tên trên hợp đồng bảo hiểm là gì? Heathcote. Để tôi kiểm tra trên hệ thống… Vâng. Bạn có thể xác nhận tên đầu tiên của mình không? Tên đầu tiên của tôi là Lisa, nhưng tôi thường được gọi bằng tên đệm, Marie. Được rồi. Tôi thấy cả hai tên trên hệ thống, nhưng tôi cần dùng tên Lisa để xác minh danh tính. Và ngày sinh của bạn, Lisa? À không, Marie? Ngày 22 tháng 8 năm 1955. Chính xác. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 9 đến 12. Câu 13 đến 16 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 13 đến 16. Bây giờ chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 13 đến 16. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Sebastian, bạn thường xuyên nhảy qua mái nhà để di chuyển từ nơi này đến nơi khác. Tại sao vậy? Đó luôn là niềm đam mê thực sự của tôi, nhưng tôi nghĩ bây giờ nó còn hơn thế. Nó đã trở thành một phần trong cuộc sống của tôi. Giống như khi ai đó đi bộ – họ đi vì họ có thể, và với tôi, freerunning cũng vậy. Khi còn nhỏ, bạn tôi và tôi đã tập leo trèo, giống như bất kỳ đứa trẻ nào khác. Chúng tôi cứ tiếp tục, không bao giờ dừng lại, cho đến khi nó trở thành một điều gì đó đặc biệt. Ban đầu, nó chỉ là một thói quen, sau đó trở thành một lối sống, và cuối cùng là một môn nghệ thuật thực sự. Chỉ cần nhìn bạn thực hiện cũng khiến tôi thấy mệt rồi. Vậy bạn có cần phải có thể lực tốt để chơi freerunning không? Khi mới bắt đầu, bạn không cần phải quá khỏe. Thực tế, tôi thường thích những người mới bắt đầu với thể trạng không quá tốt. Nếu cơ thể bạn chưa sẵn sàng, bạn sẽ bắt đầu từ mức thấp, điều này giúp bạn an toàn hơn. Những người đã từng chơi thể thao thường muốn làm những động tác quá ấn tượng ngay từ đầu. Chỉ cần một bước sai, bạn có thể ngã xuống đất và chấn thương nghiêm trọng. Chắc chắn môn này quá nguy hiểm phải không? Ừ, tất nhiên có rủi ro, nhưng rủi ro thì ở đâu cũng có. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 13 đến 16. Câu 17 đến 20 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 17 đến 20. Bây giờ chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 17 đến 20. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Vậy, Catherine, tôi chỉ mới học khóa này vài tuần, nhưng bạn đã học đến năm thứ ba và cũng là năm cuối cùng rồi. Đúng vậy, cuối cùng cũng sắp xong. Học bán thời gian thật vất vả. Bạn có thích khóa học này không? Ồ, nhìn chung thì có, tôi rất thích. Tất nhiên, nó không hoàn hảo. Đội ngũ giảng viên có sự khác biệt về mức độ tận tâm, nhưng tôi nghĩ mình khá may mắn khi được học với những giảng viên nhiệt huyết nhất. Hầu hết sinh viên cũng rất ổn, mặc dù có một số người hơi kỳ quặc. Có sự kết hợp của nhiều nền tảng và trình độ khác nhau, điều này thể hiện rõ qua các bài thuyết trình đa dạng mà chúng tôi thực hiện. Một điều bất lợi là số lượng sách và tạp chí mà chúng tôi phải đọc – có những tuần thật sự quá tải. Ừ, tôi cũng đang cảm thấy điều đó. Bạn thích nhất điều gì? Một điều khiến tôi ngạc nhiên là mỗi người đều có đóng góp riêng. Chúng tôi có các phòng trò chuyện trực tuyến và danh sách email để giữ liên lạc với nhau. Nhưng khi học trực tuyến, mọi người không thực sự tham gia. Nhưng khi đến lớp, ai cũng sôi nổi, và chúng tôi có những cuộc trao đổi ý tưởng rất tuyệt vời. Thật thú vị. Vậy bạn đang làm bài tập gì vậy? Chúng tôi đang có một bài tập khó. Đó là một nghiên cứu tình huống về kế hoạch tái định vị thương hiệu của một công ty. Chúng tôi phải phân tích tất cả các số liệu, doanh thu, nghiên cứu, v.v. và đưa ra nhận xét. Bài tập này giúp chúng tôi luyện tập cách rút ra kết luận từ dữ liệu, nhưng thực sự rất khó. Mình biết chứ. Mình chưa sẵn sàng cho dạng bài như vậy. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 17 đến 20. Phần 2 kết thúc tại đây.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What is her insurance for?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Vehicle</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Job															</div>
+																				<div class="ps-4 mb-2">
+																	C. Land															</div>
+																				<div class="ps-4 mb-2">
+																	D. House															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Vehicle</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn hội thoại sau:</p>   <p>"Good morning. Tauber Insurance Company. How can I help you?"</p>   <p>"Good morning. I want to alter my insurance policy."</p>   <p>"Is that for your house, contents, or vehicle?"</p>   <p>"My vehicle."</p>    <p>"Chào buổi sáng. Công ty bảo hiểm Tauber. Tôi có thể giúp gì cho bạn?"</p>   <p>"Chào buổi sáng. Tôi muốn thay đổi hợp đồng bảo hiểm của mình."</p>   <p>"Đó là bảo hiểm cho nhà, tài sản hay <strong>xe cộ</strong>?"</p>   <p>"Cho <strong>xe cộ</strong> của tôi."</p>    <p>Bài nghe xác nhận rằng <strong>hợp đồng bảo hiểm của cô ấy là dành cho phương tiện (vehicle)</strong>. Do đó, đáp án chính xác là <strong>Vehicle.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">House</span> ❌ (Nhà cửa.) - Sai, vì cô ấy không đề cập đến bảo hiểm nhà.</li>            <li><span class="text-success"><strong>Vehicle</strong></span> ✅ (Phương tiện.) - Đúng, vì bài nghe xác nhận rằng bảo hiểm của cô ấy là cho xe cộ.</li>            <li><span class="text-danger">Land</span> ❌ (Đất đai.) - Sai, vì bài nghe không đề cập đến bảo hiểm đất đai.</li>            <li><span class="text-danger">Job</span> ❌ (Công việc.) - Sai, vì bài nghe không đề cập đến bảo hiểm công việc.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: What is number of the policy?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. XQW5009															</div>
+																				<div class="ps-4 mb-2">
+																	B. 2YY5009															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. ZQW5009</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. ZYW5009															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>ZQW5009</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn hội thoại sau:</p>   <p>"Can you give me the number of the policy please?"</p>   <p>"Certainly, I have it here in front of me. It's <strong>ZQW5009</strong>."</p>    <p>"Bạn có thể cung cấp số hợp đồng bảo hiểm cho tôi không?"</p>   <p>"Chắc chắn rồi, tôi có nó ngay trước mặt. Đó là <strong>ZQW5009</strong>."</p>    <p>Bài nghe xác nhận rằng <strong>số hợp đồng bảo hiểm là ZQW5009</strong>. Do đó, đáp án chính xác là <strong>ZQW5009.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>ZQW5009</strong></span> ✅ - Đúng, vì đây là số hợp đồng bảo hiểm được xác nhận trong bài nghe.</li>            <li><span class="text-danger">XQW5009</span> ❌ - Sai, vì chữ cái đầu tiên không phải là 'X' mà là 'Z'.</li>            <li><span class="text-danger">ZYW5009</span> ❌ - Sai, vì chữ cái ở giữa không phải là 'Y' mà là 'Q'.</li>            <li><span class="text-danger">2YY5009</span> ❌ - Sai, vì số hợp đồng không bắt đầu bằng số '2'.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: According to the man, what is the cc rating?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The power of the engine															</div>
+																				<div class="ps-4 mb-2">
+																	B. The price of the engine															</div>
+																				<div class="ps-4 mb-2">
+																	C. The length of the engine															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. The size of the engine</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>The size of the engine</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn hội thoại sau:</p>   <p>"And what's the CC rating?"</p>   <p>"Sorry, what do you mean?"</p>   <p>"How big is the engine? Is it 1,500 or 1,800 CC, for example?"</p>   <p>"Oh, that. It's actually much bigger than that. It's 2,500 CC."</p>    <p>"Vậy dung tích động cơ (CC rating) là bao nhiêu?"</p>   <p>"Xin lỗi, ý anh là gì?"</p>   <p>"Ý tôi là động cơ lớn bao nhiêu? Ví dụ như 1,500 hoặc 1,800 CC?"</p>   <p>"Ồ, cái đó à. Nó thực sự lớn hơn nhiều. Nó là 2,500 CC."</p>    <p>Bài nghe xác nhận rằng <strong>CC rating đề cập đến kích thước (dung tích) của động cơ</strong>. Do đó, đáp án chính xác là <strong>The size of the engine.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>The size of the engine</strong></span> ✅ - Đúng, vì bài nghe xác nhận rằng CC rating liên quan đến kích thước động cơ.</li>            <li><span class="text-danger">The power of the engine</span> ❌ - Sai, vì CC rating không đo công suất mà đo dung tích của động cơ.</li>            <li><span class="text-danger">The price of the engine</span> ❌ - Sai, vì bài nghe không đề cập đến giá của động cơ.</li>            <li><span class="text-danger">The length of the engine</span> ❌ - Sai, vì CC rating không đo chiều dài của động cơ.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What is true about the woman?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The name 'Marie' appears on ID.															</div>
+																				<div class="ps-4 mb-2">
+																	B. Her first name is Marie.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Her middle name is Lisa.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. The name 'Lisa' appears on ID.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>The name 'Lisa' appears on ID.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn hội thoại sau:</p>   <p>"Can I just confirm your first name please?"</p>   <p>"Well, my first name is Lisa, but I'm known by my middle name, Marie."</p>   <p>"Right. I see both here, but Lisa is the one I want for ID purposes."</p>    <p>"Tôi có thể xác nhận tên của bạn không?"</p>   <p>"À, tên đầu tiên của tôi là <strong>Lisa</strong>, nhưng tôi được gọi bằng tên đệm, <strong>Marie</strong>."</p>   <p>"Được rồi. Tôi thấy cả hai tên ở đây, nhưng tôi cần dùng <strong>Lisa</strong> cho mục đích xác minh ID."</p>    <p>Bài nghe xác nhận rằng <strong>tên 'Lisa' xuất hiện trên ID</strong>. Do đó, đáp án chính xác là <strong>The name 'Lisa' appears on ID.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">Her first name is Marie.</span> ❌ - Sai, vì tên đầu tiên của cô ấy là Lisa, không phải Marie.</li>            <li><span class="text-danger">Her middle name is Lisa.</span> ❌ - Sai, vì tên đệm của cô ấy là Marie, không phải Lisa.</li>            <li><span class="text-danger">The name 'Marie' appears on ID.</span> ❌ - Sai, vì ID sử dụng tên Lisa, không phải Marie.</li>            <li><span class="text-success"><strong>The name 'Lisa' appears on ID.</strong></span> ✅ - Đúng, vì nhân viên xác nhận rằng ID sử dụng tên Lisa.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What did Sebastian practise when he was young?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Fishing															</div>
+																				<div class="ps-4 mb-2">
+																	B. Running															</div>
+																				<div class="ps-4 mb-2">
+																	C. Cycling															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Climbing</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Climbing</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn hội thoại sau:</p>   <p>"When we were young, my friend and I used to practice climbing around, just like any kids."</p>    <p>"Khi còn nhỏ, tôi và bạn tôi đã từng luyện tập <strong>leo trèo</strong>, giống như bao đứa trẻ khác."</p>    <p>Bài nghe xác nhận rằng <strong>Sebastian đã luyện tập leo trèo khi còn nhỏ</strong>. Do đó, đáp án chính xác là <strong>Climbing.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">Running</span> ❌ - Sai, vì bài nghe không đề cập đến việc Sebastian luyện tập chạy.</li>            <li><span class="text-danger">Fishing</span> ❌ - Sai, vì bài nghe không nhắc đến câu cá.</li>            <li><span class="text-success"><strong>Climbing</strong></span> ✅ - Đúng, vì bài nghe xác nhận rằng Sebastian từng luyện tập leo trèo khi còn nhỏ.</li>            <li><span class="text-danger">Cycling</span> ❌ - Sai, vì bài nghe không nhắc đến việc đạp xe.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Sebastian says that he does free running because _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It is an individual activity.															</div>
+																				<div class="ps-4 mb-2">
+																	B. His parents asked him to do.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Other activities are boring.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. It feels like a natural activity for him.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>It feels like a natural activity for him.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn hội thoại sau:</p>   <p>"It's always been a real passion for me, but I think it's become more than that. It's a part of my life. It's like asking someone, why are you walking? They say it's simply because they can, and for me it's the same with freerunning."</p>    <p>"Đây luôn là một đam mê thực sự đối với tôi, nhưng tôi nghĩ nó đã trở thành nhiều hơn thế. Nó là một phần trong cuộc sống của tôi. Giống như khi bạn hỏi ai đó, 'Tại sao bạn đi bộ?' Họ sẽ nói đơn giản vì họ có thể, và đối với tôi, chạy tự do cũng như vậy."</p>    <p>Bài nghe xác nhận rằng <strong>Sebastian coi freerunning là một hoạt động tự nhiên đối với mình</strong>. Do đó, đáp án chính xác là <strong>It feels like a natural activity for him.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">Other activities are boring.</span> ❌ - Sai, vì bài nghe không đề cập đến việc anh ấy thấy các hoạt động khác nhàm chán.</li>            <li><span class="text-success"><strong>It feels like a natural activity for him.</strong></span> ✅ - Đúng, vì Sebastian nói rằng freerunning là một phần tự nhiên trong cuộc sống của anh ấy.</li>            <li><span class="text-danger">It is an individual activity.</span> ❌ - Sai, vì bài nghe không nói rằng anh ấy chọn freerunning chỉ vì nó là một hoạt động cá nhân.</li>            <li><span class="text-danger">His parents asked him to do.</span> ❌ - Sai, vì bài nghe không đề cập đến việc cha mẹ yêu cầu anh ấy làm điều này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: According to Sebastian, a free running beginner _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. usually starts at a low level.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. has a healthy body.															</div>
+																				<div class="ps-4 mb-2">
+																	C. wants to do something impressive soon.															</div>
+																				<div class="ps-4 mb-2">
+																	D. has to be fit.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>usually starts at a low level.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn hội thoại sau:</p>   <p>"To start with, you don't have to be so fit. In fact, I often prefer beginners who start with not such a healthy body. If you can't do stuff because your body is not ready, you naturally start at a low level."</p>    <p>"Ban đầu, bạn không cần phải quá khỏe. Thực tế, tôi thường thích những người mới bắt đầu mà cơ thể không quá khỏe mạnh. Nếu bạn chưa thể làm nhiều thứ vì cơ thể chưa sẵn sàng, thì bạn sẽ <strong>bắt đầu ở một mức độ thấp</strong> một cách tự nhiên."</p>    <p>Bài nghe xác nhận rằng <strong>người mới bắt đầu freerunning thường bắt đầu ở mức độ thấp</strong>. Do đó, đáp án chính xác là <strong>usually starts at a low level.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">has to be fit.</span> ❌ - Sai, vì bài nghe nói rằng người mới bắt đầu không cần phải quá khỏe.</li>            <li><span class="text-danger">has a healthy body.</span> ❌ - Sai, vì bài nghe đề cập rằng một số người mới bắt đầu có thể không có cơ thể khỏe mạnh.</li>            <li><span class="text-success"><strong>usually starts at a low level.</strong></span> ✅ - Đúng, vì bài nghe xác nhận rằng người mới bắt đầu thường bắt đầu ở mức độ thấp.</li>            <li><span class="text-danger">wants to do something impressive soon.</span> ❌ - Sai, vì bài nghe nói rằng những người đã từng chơi thể thao có xu hướng muốn làm điều ấn tượng quá sớm, nhưng không phải người mới bắt đầu.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: What kind of risk is mentioned?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Bleeding															</div>
+																				<div class="ps-4 mb-2">
+																	B. Leg breaking															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. Splattering</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Spraining															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Splattering</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn hội thoại sau:</p>   <p>"Just one wrong step could see you fall and <strong>splatter</strong> on the floor though. Surely it's just too dangerous?"</p>    <p>"Chỉ cần một bước đi sai lầm, bạn có thể <strong>ngã mạnh</strong> xuống sàn. Điều đó chắc chắn là quá nguy hiểm?"</p>    <p>Bài nghe xác nhận rằng <strong>rủi ro được nhắc đến là ngã mạnh xuống sàn (splattering)</strong>. Do đó, đáp án chính xác là <strong>Splattering.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>Splattering</strong></span> ✅ - Đúng, vì bài nghe nói rằng nếu bước sai, có thể ngã mạnh xuống sàn.</li>            <li><span class="text-danger">Bleeding</span> ❌ - Sai, vì bài nghe không đề cập đến việc chảy máu.</li>            <li><span class="text-danger">Leg breaking</span> ❌ - Sai, vì bài nghe không nhắc đến việc gãy chân.</li>            <li><span class="text-danger">Spraining</span> ❌ - Sai, vì bài nghe không đề cập đến bong gân.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What does Katherine say about the teachers?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. They vary in commitment.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. They assign a wide variety of tasks.															</div>
+																				<div class="ps-4 mb-2">
+																	C. They rarely say anything special.															</div>
+																				<div class="ps-4 mb-2">
+																	D. They prefer case study assignment.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>They vary in commitment.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Katherine nói:</p>   <p>"It's not perfect, of course. <strong>The teaching staff vary in their commitment</strong>, but I think I've been lucky in getting the more dynamic ones."</p>    <p>"Tất nhiên, nó không hoàn hảo. <strong>Đội ngũ giảng dạy có mức độ tận tâm khác nhau</strong>, nhưng tôi nghĩ mình đã may mắn khi có được những giáo viên năng động hơn."</p>    <p>Bài nghe xác nhận rằng <strong>các giáo viên có mức độ tận tâm khác nhau</strong>. Do đó, đáp án chính xác là <strong>They vary in commitment.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">They assign a wide variety of tasks.</span> ❌ - Sai, vì bài nghe không đề cập đến việc giáo viên giao nhiều loại bài tập khác nhau.</li>            <li><span class="text-danger">They prefer case study assignment.</span> ❌ - Sai, vì bài nghe không nói rằng giáo viên thích bài tập nghiên cứu tình huống.</li>            <li><span class="text-danger">They rarely say anything special.</span> ❌ - Sai, vì bài nghe không đề cập đến việc giáo viên ít khi nói điều gì đặc biệt.</li>            <li><span class="text-success"><strong>They vary in commitment.</strong></span> ✅ - Đúng, vì Katherine xác nhận rằng mức độ tận tâm của giáo viên là khác nhau.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: What does Katherine dislike about the course?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. The number of books to get through</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. The online chat rooms															</div>
+																				<div class="ps-4 mb-2">
+																	C. The attitude of her lectures															</div>
+																				<div class="ps-4 mb-2">
+																	D. The student presentations															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>The number of books to get through.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Katherine nói:</p>   <p>"One downside is the number of books and journals we're expected to get through. Some weeks it's just been too much."</p>    <p>"Một điều không thích là <strong>số lượng sách và tạp chí mà chúng tôi phải đọc</strong>. Có những tuần thực sự quá tải."</p>    <p>Bài nghe xác nhận rằng <strong>Katherine không thích số lượng sách phải đọc</strong>. Do đó, đáp án chính xác là <strong>The number of books to get through.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">The student presentations.</span> ❌ - Sai, vì bài nghe không đề cập đến việc cô ấy không thích bài thuyết trình của sinh viên.</li>            <li><span class="text-success"><strong>The number of books to get through.</strong></span> ✅ - Đúng, vì Katherine than phiền về số lượng sách phải đọc.</li>            <li><span class="text-danger">The attitude of her lecturers.</span> ❌ - Sai, vì bài nghe không nói rằng cô ấy không thích thái độ của giảng viên.</li>            <li><span class="text-danger">The online chat rooms.</span> ❌ - Sai, vì Katherine không nói rằng cô ấy không thích phòng chat trực tuyến.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: What is her case study assignment about?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. A re-branding plan</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. A relocation proposal															</div>
+																				<div class="ps-4 mb-2">
+																	C. A marketing campaign &lt;br&gt;															</div>
+																				<div class="ps-4 mb-2">
+																	D. A strategy for going international															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>A re-branding plan.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Katherine nói:</p>   <p>"We've got a tough assignment. They've given us a case study about a company's plans to rebrand."</p>    <p>"Chúng tôi có một bài tập khó. Họ đã giao cho chúng tôi một nghiên cứu tình huống về <strong>kế hoạch tái thương hiệu của một công ty</strong>."</p>    <p>Bài nghe xác nhận rằng <strong>nhiệm vụ nghiên cứu tình huống của cô ấy là về kế hoạch tái thương hiệu</strong>. Do đó, đáp án chính xác là <strong>A re-branding plan.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">A strategy for going international.</span> ❌ - Sai, vì bài nghe không đề cập đến việc mở rộng ra quốc tế.</li>            <li><span class="text-success"><strong>A re-branding plan.</strong></span> ✅ - Đúng, vì bài tập của cô ấy là về kế hoạch tái thương hiệu.</li>            <li><span class="text-danger">A marketing campaign.</span> ❌ - Sai, vì bài nghe không nhắc đến chiến dịch marketing.</li>            <li><span class="text-danger">A relocation proposal.</span> ❌ - Sai, vì bài nghe không nói đến kế hoạch di dời công ty.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: What does she have to do in her assignment?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Drawing conclusions</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Negotiating conflicts															</div>
+																				<div class="ps-4 mb-2">
+																	C. Explaining reasons for decisions															</div>
+																				<div class="ps-4 mb-2">
+																	D. Combining theory and practice															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Drawing conclusions.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Katherine nói:</p>   <p>"It's supposed to give us practice in <strong>drawing conclusions</strong> from the figures available, but it's hard."</p>    <p>"Bài tập này nhằm giúp chúng tôi thực hành <strong>rút ra kết luận</strong> từ các số liệu có sẵn, nhưng nó rất khó."</p>    <p>Bài nghe xác nhận rằng <strong>trong bài tập của cô ấy, cô phải rút ra kết luận từ dữ liệu</strong>. Do đó, đáp án chính xác là <strong>Drawing conclusions.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">Negotiating conflicts.</span> ❌ - Sai, vì bài nghe không đề cập đến việc đàm phán xung đột.</li>            <li><span class="text-danger">Combining theory and practice.</span> ❌ - Sai, vì bài nghe không nói rằng cô ấy phải kết hợp lý thuyết và thực hành.</li>            <li><span class="text-success"><strong>Drawing conclusions.</strong></span> ✅ - Đúng, vì bài tập yêu cầu cô ấy rút ra kết luận từ các số liệu.</li>            <li><span class="text-danger">Explaining reasons for decisions.</span> ❌ - Sai, vì bài nghe không đề cập đến việc giải thích lý do cho quyết định.</li>    </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

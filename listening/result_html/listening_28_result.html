@@ -1,0 +1,494 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 28 - Part 1				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87747				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/8				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp1-1664863506_e509b97b8666eaa821dd.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>This is the Vietnamese Standardized Test of English Proficiency Listening Comprehension Test. You will listen to a number of different recordings, and you will have to answer questions based on what you hear.<br>
+There will be time for you to read the questions and check your work. All the recordings will be played once only. Part 1 In this part, you will hear eight short recordings.<br>
+The recordings will be played once only. There is one question following each recording. For each question, choose the right answer A, B, C, or D. Now, let's listen to the example.<br>
+On the recording, you might hear... Hello. This is the travel agency returning your call. You left a message about the holiday you've booked, asking which meals are included in the cost during your stay at Sunny Hotel.<br>
+Lunch and dinner are free, but if you wish to have breakfast in the hotel, you will need to pay an extra amount of money depending on what you order. Let me know if I can help you with any other information. Goodbye.<br>
+You will read... Which meal is not included in the price of the holiday? A. Breakfast B. Lunch C. Dinner D. All The correct answer is A. Breakfast. First, you will have some time to look at questions 1 to 8. Now we're ready to start. Listen and answer questions 1 to 8.&nbsp;<br>
+1. What was the weather like on Emma's holiday?<br>
+Did you enjoy your holiday in Australia, Emma? Yes, but it was wet most of the time.<br>
+Really? Isn't it always hot in Australia? Hmm, not when I was there.&nbsp;<br>
+2. How will Mary travel to Scotland?&nbsp;<br>
+Are you taking the train to Scotland tomorrow, Mary? No, I'm driving there. It's cheaper.<br>
+Why don't you go by coach? Oh, no. It takes seven hours.&nbsp;<br>
+3. Where are the shoes? Mum, have you seen my brown shoes? Yes, they're under the table.<br>
+No, they're not. I left them on the chair this morning, but they're not there now. There they are, under the window.<br>
+4. What was in the woman's bag?&nbsp;<br>
+Was there anything valuable in the bag that was stolen, madam? Yes, it had my purse in it, and my keys. Anything else? Well, luckily I was wearing my glasses, so no, nothing else.&nbsp;<br>
+5. Which film is the man talking about?&nbsp;<br>
+I'm sure I've seen this film before.<br>
+That bit where she's standing on the bridge watching the sunset reminded me.&nbsp;<br>
+6. What should the woman do first?<br>
+Well, you put the washing powder in the machine. Is that before or after you put the clothes in? Oh, it's after you put them in.<br>
+And then remember to switch it on at the wall when you're ready.&nbsp;<br>
+7. What is David going to do this weekend?<br>
+Could you help me paint my flat this weekend, David? Oh, sorry, I'm going sailing. I decided to enjoy myself for a change.<br>
+I spent last weekend helping my mum do her garden, and I need to repair the car next weekend.&nbsp;<br>
+8. How did the man get to work today? Sorry I'm late. I never know whether to take the Underground or drive.<br>
+I was held up in a traffic jam for half an hour, and then, when I got to work, the car park was full. I think I'll have to move nearer so I can walk or use my bike. Now you will have some time to review Questions 1 to 8. That is the end of Part 1.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Đây là bài thi Nghe hiểu của Kỳ thi Đánh giá năng lực tiếng Anh chuẩn Việt Nam (VSTEP). Bạn sẽ nghe một số đoạn ghi âm khác nhau và sẽ phải trả lời các câu hỏi dựa trên những gì bạn nghe được. Bạn sẽ có thời gian để đọc các câu hỏi và kiểm tra lại câu trả lời của mình. Tất cả các đoạn ghi âm chỉ được phát một lần duy nhất. Phần 1 Trong phần này, bạn sẽ nghe tám đoạn ghi âm ngắn. Các đoạn ghi âm sẽ chỉ được phát một lần. Có một câu hỏi sau mỗi đoạn ghi âm. Với mỗi câu hỏi, hãy chọn câu trả lời đúng: A, B, C hoặc D. Bây giờ, chúng ta sẽ nghe một ví dụ. Trong đoạn ghi âm, bạn có thể nghe thấy: Xin chào. Đây là đại lý du lịch gọi lại cho bạn. Bạn đã để lại tin nhắn hỏi về kỳ nghỉ mà bạn đã đặt, cụ thể là các bữa ăn được bao gồm trong chi phí lưu trú tại khách sạn Sunny. Bữa trưa và bữa tối đều miễn phí, nhưng nếu bạn muốn ăn sáng tại khách sạn, bạn sẽ cần phải trả thêm phí, tùy thuộc vào món ăn bạn gọi. Hãy cho tôi biết nếu tôi có thể giúp gì thêm. Tạm biệt. Bạn sẽ đọc được câu hỏi sau: Bữa ăn nào không được bao gồm trong giá của kỳ nghỉ? A. Bữa sáng B. Bữa trưa C. Bữa tối D. Tất cả các bữa ăn Câu trả lời đúng là A. Bữa sáng. Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 1 đến 8. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 1 đến 8. Câu hỏi 1: Thời tiết trong kỳ nghỉ của Emma như thế nào? Bạn có thích kỳ nghỉ ở Úc không, Emma? Có, nhưng hầu hết thời gian trời mưa. Thật sao? Chẳng phải Úc lúc nào cũng nóng sao? Ừm, không phải khi tôi ở đó. Câu hỏi 2: Mary sẽ đi đến Scotland bằng phương tiện gì? Mary, ngày mai bạn sẽ đi Scotland bằng tàu hỏa à? Không, tôi sẽ lái xe đến đó. Đi như vậy rẻ hơn. Sao bạn không đi bằng xe khách? Ồ không! Đi xe khách mất đến bảy tiếng đồng hồ lận. Câu hỏi 3: Đôi giày đang ở đâu? Mẹ ơi, mẹ có thấy đôi giày màu nâu của con không? Có, nó ở dưới bàn đấy. Không, không có. Sáng nay con để nó trên ghế, nhưng bây giờ không thấy đâu cả. Kia kìa, nó ở dưới cửa sổ. Câu hỏi 4: Trong túi của người phụ nữ có gì? Thưa bà, trong chiếc túi bị mất có gì giá trị không ạ? Có, trong đó có ví của tôi và chìa khóa nữa. Còn gì khác không? À, may mắn là tôi đang đeo kính, nên không còn thứ gì quan trọng nữa. Câu hỏi 5: Người đàn ông đang nói về bộ phim nào? Tôi chắc chắn là tôi đã xem bộ phim này trước đây rồi. Cảnh cô ấy đứng trên cây cầu ngắm hoàng hôn làm tôi nhớ lại. Câu hỏi 6: Người phụ nữ nên làm gì đầu tiên? Đầu tiên, bạn hãy cho bột giặt vào máy giặt. Là trước hay sau khi cho quần áo vào? Ồ, là sau khi bạn cho quần áo vào. Và nhớ bật công tắc trên tường khi bạn đã sẵn sàng nhé. Câu hỏi 7: Cuối tuần này David sẽ làm gì? Cuối tuần này bạn có thể giúp tôi sơn lại căn hộ không, David? Ồ, xin lỗi nhé, tôi sẽ đi chèo thuyền. Tôi quyết định thư giãn một chút. Cuối tuần trước tôi đã giúp mẹ làm vườn, và cuối tuần sau tôi còn phải sửa xe nữa. Câu hỏi 8: Hôm nay người đàn ông đã đi làm bằng phương tiện gì? Xin lỗi tôi đến muộn. Tôi không bao giờ biết nên đi tàu điện ngầm hay lái xe. Tôi bị kẹt trong một vụ tắc đường suốt nửa tiếng đồng hồ, và rồi khi đến chỗ làm, bãi đậu xe đã chật kín. Tôi nghĩ mình sẽ phải chuyển nhà đến gần chỗ làm hơn để có thể đi bộ hoặc đạp xe. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 1 đến 8. Phần 1 kết thúc tại đây.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What was the weather like on Emma's holiday?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It's windy.															</div>
+																				<div class="ps-4 mb-2">
+																	B. It's hot.															</div>
+																				<div class="ps-4 mb-2">
+																	C. It's sunny.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. It's wet.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>It's wet.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Emma được hỏi về thời tiết trong kỳ nghỉ của cô ấy:</p>   <p>"Did you enjoy your holiday in Australia, Emma?"</p>   <p>"Yes, but it was wet most of the time."</p>   <p>"Bạn có thích kỳ nghỉ ở Úc không, Emma?"</p>   <p>"Có, nhưng <strong>trời mưa hầu hết thời gian</strong>."</p>    <p>Bài nghe xác nhận rằng thời tiết trong kỳ nghỉ của Emma chủ yếu là <strong>ẩm ướt</strong>. Do đó, đáp án chính xác là <strong>It's wet.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">It's hot.</span> ❌ (Trời nóng.) - Sai, vì Emma nói rằng thời tiết ẩm ướt, không phải nóng.</li>            <li><span class="text-danger">It's sunny.</span> ❌ (Trời nắng.) - Sai, vì bài nghe không đề cập đến việc trời nắng.</li>            <li><span class="text-success"><strong>It's wet.</strong></span> ✅ (Trời ẩm ướt.) - Đúng, vì Emma nói rằng trời mưa hầu hết thời gian.</li>            <li><span class="text-danger">It's windy.</span> ❌ (Trời có gió.) - Sai, vì bài nghe không nhắc đến gió.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: How will Mary travel to Scotland?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. by coach															</div>
+																				<div class="ps-4 mb-2">
+																	B. by train															</div>
+																				<div class="ps-4 mb-2">
+																	C. by taxi															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. by car</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>by car</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Mary được hỏi về cách cô ấy sẽ đi đến Scotland:</p>   <p>"Are you taking the train to Scotland tomorrow, Mary?"</p>   <p>"No, I'm driving there. It's cheaper."</p>   <p>"Bạn sẽ đi tàu đến Scotland vào ngày mai phải không, Mary?"</p>   <p>"Không, tôi sẽ <strong>lái xe</strong> đến đó. Nó rẻ hơn."</p>    <p>Bài nghe xác nhận rằng Mary sẽ đi đến Scotland <strong>bằng ô tô</strong>. Do đó, đáp án chính xác là <strong>by car.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">by coach</span> ❌ (Bằng xe khách.) - Sai, vì Mary không chọn đi xe khách.</li>            <li><span class="text-success"><strong>by car</strong></span> ✅ (Bằng ô tô.) - Đúng, vì Mary nói rằng cô ấy sẽ lái xe đến Scotland.</li>            <li><span class="text-danger">by train</span> ❌ (Bằng tàu hỏa.) - Sai, vì Mary từ chối đi tàu.</li>            <li><span class="text-danger">by taxi</span> ❌ (Bằng taxi.) - Sai, vì bài nghe không nhắc đến việc đi taxi.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: Where are the shoes?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. under the window</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. on the window															</div>
+																				<div class="ps-4 mb-2">
+																	C. on the chair															</div>
+																				<div class="ps-4 mb-2">
+																	D. under the table															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>under the window</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, một người hỏi về vị trí của đôi giày:</p>   <p>"Mum, have you seen my brown shoes?"</p>   <p>"Yes, they're under the table."</p>   <p>"No, they're not. I left them on the chair this morning, but they're not there now."</p>   <p>"There they are, under the window."</p>    <p>"Mẹ ơi, mẹ có thấy đôi giày màu nâu của con không?"</p>   <p>"Có, chúng ở dưới bàn."</p>   <p>"Không, không có. Con đã để chúng trên ghế sáng nay, nhưng bây giờ chúng không còn ở đó nữa."</p>   <p>"Chúng ở kia, <strong>dưới cửa sổ</strong>."</p>    <p>Bài nghe xác nhận rằng đôi giày ở <strong>dưới cửa sổ</strong>. Do đó, đáp án chính xác là <strong>under the window.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>under the window</strong></span> ✅ (Dưới cửa sổ.) - Đúng, vì bài nghe xác nhận vị trí cuối cùng của đôi giày là dưới cửa sổ.</li>            <li><span class="text-danger">under the table</span> ❌ (Dưới bàn.) - Sai, vì ban đầu mẹ nói vậy nhưng thực tế đôi giày không ở đó.</li>            <li><span class="text-danger">on the chair</span> ❌ (Trên ghế.) - Sai, vì người nói đã để giày trên ghế nhưng sau đó chúng không còn ở đó nữa.</li>            <li><span class="text-danger">on the window</span> ❌ (Trên cửa sổ.) - Sai, vì đôi giày không ở trên cửa sổ mà là dưới cửa sổ.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What was in the woman's bag?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. some keys and a purse															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. a purse and some keys</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. a pair of glasses and a purse															</div>
+																				<div class="ps-4 mb-2">
+																	D. some keys and a pair of glasses															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>a purse and some keys</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người phụ nữ được hỏi về những gì có trong chiếc túi bị đánh cắp:</p>   <p>"Was there anything valuable in the bag that was stolen, madam?"</p>   <p>"Yes, it had my purse in it, and my keys."</p>   <p>"Anything else?"</p>   <p>"Well, luckily I was wearing my glasses, so no, nothing else."</p>    <p>"Có thứ gì giá trị trong chiếc túi bị đánh cắp không, thưa bà?"</p>   <p>"Có, trong đó có <strong>ví tiền</strong> của tôi và <strong>chìa khóa</strong>."</p>   <p>"Còn gì khác không?"</p>   <p>"May mắn là tôi đang đeo kính, nên không, không có gì khác."</p>    <p>Bài nghe xác nhận rằng trong túi có <strong>ví tiền và chìa khóa</strong>. Do đó, đáp án chính xác là <strong>a purse and some keys.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">a pair of glasses and a purse</span> ❌ (Một cặp kính và một chiếc ví.) - Sai, vì kính không có trong túi, người phụ nữ đang đeo kính.</li>            <li><span class="text-success"><strong>a purse and some keys</strong></span> ✅ (Một chiếc ví và một số chìa khóa.) - Đúng, vì bài nghe xác nhận có ví tiền và chìa khóa trong túi.</li>            <li><span class="text-danger">some keys and a pair of glasses</span> ❌ (Một số chìa khóa và một cặp kính.) - Sai, vì kính không có trong túi.</li>            <li><span class="text-danger">some keys and a purse</span> ❌ (Một số chìa khóa và một chiếc ví.) - Sai, vì trật tự từ không ảnh hưởng nhưng cần giữ đúng theo cách diễn đạt trong bài nghe.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: Which film is the man talking about?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. a woman walking on the bridge															</div>
+																				<div class="ps-4 mb-2">
+																	B. a woman walking on the bridge															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. a woman standing on the bridge</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. a man standing on the bridge															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>a woman standing on the bridge</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người đàn ông mô tả cảnh trong bộ phim mà anh ta nhớ:</p>   <p>"I'm sure I've seen this film before. That bit where she's <strong>standing on the bridge</strong> watching the sunset reminded me."</p>   <p>"Tôi chắc chắn rằng tôi đã xem bộ phim này trước đây. Cảnh đó, nơi cô ấy <strong>đứng trên cây cầu</strong> ngắm hoàng hôn, khiến tôi nhớ ra."</p>    <p>Bài nghe xác nhận rằng bộ phim có cảnh <strong>một người phụ nữ đứng trên cây cầu</strong>. Do đó, đáp án chính xác là <strong>a woman standing on the bridge.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">a woman walking on the bridge</span> ❌ (Một người phụ nữ đi bộ trên cây cầu.) - Sai, vì bài nghe nói rằng cô ấy đứng trên cầu, không phải đi bộ.</li>            <li><span class="text-success"><strong>a woman standing on the bridge</strong></span> ✅ (Một người phụ nữ đứng trên cây cầu.) - Đúng, vì bài nghe xác nhận rằng cô ấy đang đứng trên cầu.</li>            <li><span class="text-danger">a woman walking on the bridge</span> ❌ (Một người phụ nữ đi bộ trên cây cầu.) - Sai, đây là lựa chọn trùng lặp.</li>            <li><span class="text-danger">a man standing on the bridge</span> ❌ (Một người đàn ông đứng trên cây cầu.) - Sai, vì bài nghe nói về một người phụ nữ, không phải một người đàn ông.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: What should the woman do first?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. put the clothes in the machine</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. put the washing powder in the machine															</div>
+																				<div class="ps-4 mb-2">
+																	C. switch the machine on															</div>
+																				<div class="ps-4 mb-2">
+																	D. put water in the machine															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>put the clothes in the machine</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người phụ nữ hỏi về thứ tự các bước giặt đồ:</p>   <p>"Well, you put the washing powder in the machine."</p>   <p>"Is that before or after you put the clothes in?"</p>   <p>"Oh, it's after you put them in."</p>    <p>"Vậy, bạn cho bột giặt vào máy."</p>   <p>"Đó là trước hay sau khi cho quần áo vào?"</p>   <p>"Ồ, nó là <strong>sau</strong> khi bạn cho quần áo vào."</p>    <p>Bài nghe xác nhận rằng bước đầu tiên là <strong>cho quần áo vào máy giặt trước</strong>. Do đó, đáp án chính xác là <strong>put the clothes in the machine.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">put the washing powder in the machine</span> ❌ (Cho bột giặt vào máy.) - Sai, vì bột giặt được cho vào sau khi đã bỏ quần áo vào.</li>            <li><span class="text-danger">put water in the machine</span> ❌ (Cho nước vào máy.) - Sai, vì bài nghe không đề cập đến việc cần cho nước vào.</li>            <li><span class="text-danger">switch the machine on</span> ❌ (Bật máy giặt.) - Sai, vì máy giặt được bật sau khi đã bỏ quần áo và bột giặt vào.</li>            <li><span class="text-success"><strong>put the clothes in the machine</strong></span> ✅ (Cho quần áo vào máy giặt.) - Đúng, vì đây là bước đầu tiên theo hướng dẫn trong bài nghe.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What is David going to do this weekend?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. repair the car															</div>
+																				<div class="ps-4 mb-2">
+																	B. paint the flat															</div>
+																				<div class="ps-4 mb-2">
+																	C. do the gardening															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. go sailing</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>go sailing</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, David được hỏi về kế hoạch cuối tuần của anh ấy:</p>   <p>"Could you help me paint my flat this weekend, David?"</p>   <p>"Oh, sorry, I'm going sailing. I decided to enjoy myself for a change."</p>    <p>"Cậu có thể giúp tôi sơn căn hộ cuối tuần này không, David?"</p>   <p>"Ồ, xin lỗi, tôi sẽ <strong>đi chèo thuyền buồm</strong>. Tôi quyết định thư giãn một chút."</p>    <p>Bài nghe xác nhận rằng David sẽ <strong>đi chèo thuyền buồm</strong> vào cuối tuần. Do đó, đáp án chính xác là <strong>go sailing.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">repair the car</span> ❌ (Sửa xe.) - Sai, vì David nói rằng anh ấy sẽ sửa xe vào tuần sau, không phải cuối tuần này.</li>            <li><span class="text-success"><strong>go sailing</strong></span> ✅ (Đi chèo thuyền buồm.) - Đúng, vì bài nghe xác nhận rằng David sẽ đi chèo thuyền vào cuối tuần.</li>            <li><span class="text-danger">paint the flat</span> ❌ (Sơn căn hộ.) - Sai, vì David từ chối lời đề nghị sơn căn hộ.</li>            <li><span class="text-danger">do the gardening</span> ❌ (Làm vườn.) - Sai, vì David nói rằng anh ấy đã giúp mẹ làm vườn vào cuối tuần trước, không phải tuần này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: How did the man get to work today?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. by car</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. by bus															</div>
+																				<div class="ps-4 mb-2">
+																	C. by bicycle															</div>
+																				<div class="ps-4 mb-2">
+																	D. by the underground															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>by car</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người đàn ông mô tả cách anh ấy đi làm hôm nay:</p>   <p>"Sorry I'm late. I never know whether to take the Underground or drive. I was held up in a traffic jam for half an hour, and then, when I got to work, the car park was full."</p>    <p>"Xin lỗi tôi đến muộn. Tôi không bao giờ biết nên đi tàu điện ngầm hay lái xe. Tôi đã bị kẹt xe trong nửa giờ, và sau đó, khi đến nơi làm việc, bãi đậu xe đã chật kín."</p>    <p>Bài nghe xác nhận rằng người đàn ông đi làm bằng <strong>ô tô</strong> nhưng gặp phải kẹt xe. Do đó, đáp án chính xác là <strong>by car.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>by car</strong></span> ✅ (Bằng ô tô.) - Đúng, vì anh ấy nói rằng bị kẹt xe trên đường đi làm.</li>            <li><span class="text-danger">by bicycle</span> ❌ (Bằng xe đạp.) - Sai, vì bài nghe không đề cập đến việc anh ấy đi xe đạp.</li>            <li><span class="text-danger">by bus</span> ❌ (Bằng xe buýt.) - Sai, vì bài nghe không nhắc đến xe buýt.</li>            <li><span class="text-danger">by the underground</span> ❌ (Bằng tàu điện ngầm.) - Sai, vì mặc dù anh ấy nhắc đến việc cân nhắc đi tàu điện ngầm, nhưng thực tế anh ấy đã lái xe.</li>    </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

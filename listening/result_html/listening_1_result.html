@@ -1,0 +1,683 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 01 - Part 1				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87722				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/8				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp1-1642953803_eb7ab6f2e8dead6de076.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>This is the Vietnamese Standardized Test of English Proficiency, Listening Comprehension Test. You will listen to a number of different recordings, and you will have to answer questions based on what you hear. There will be time for you to read the questions and check your work.<br>
+All the recordings will be played once only.&nbsp;<br>
+Part 1 In this part, you will hear eight short recordings. The recordings will be played once only.<br>
+There is one question following each recording. For each question, choose the right answer A, B, C, or D. Now, let's listen to the example. On the recording, you might hear, Hello, this is the travel agency returning your call.<br>
+You left a message about the holiday you've booked, asking which meals are included in the cost during your stay at Sunny Hotel. Lunch and dinner are free, but if you wish to have breakfast in the hotel, you will need to pay an extra amount of money, depending on what you order. Let me know if I can help you with any other information.<br>
+Goodbye. You will read, Which meal is not included in the price of the holiday? A. Breakfast B. Lunch C. Dinner D. All The correct answer is A, breakfast. First, you will have some time to look at questions 1 to 8. Now, we're ready to start.<br>
+Listen, and answer questions 1 to 8.<br>
+1. This is your captain speaking. At this time, we request that all mobile phones, pagers, radios, and remote-controlled toys be turned off for the rest of the flight, as these items might interfere with the navigational and communication equipment on this aircraft. We are landing in Amsterdam in 10 minutes.<br>
+It is now 4.40 local time.&nbsp;<br>
+2. If you do not know the exact course information, you may search by subject, course level, course number, and even section number, and place courses on your preferred sections list. First, you must select the term each time you enter this page.<br>
+For example, this term's code is 1-5-F-A-C-A-S. Then enter up to five subjects. You may also enter course levels, course numbers, and even section numbers.<br>
+3. Thank you for calling Dragon Restaurant. You have reached the automatic call-in service of our restaurant. To find out about our menu, press 1. To reserve a table, press 2. To ask about our other services, press 3. To speak to the staff, press 0. Thank you, and have a good day.<br>
+4. Well, the fact that swimming doesn't interest you does not mean it's a boring form of exercise. It just means it's not suitable for you. I myself find jogging or riding a bike very boring.<br>
+Swimming is great, but it's just not for everybody. It involves a lot of skills like breathing and shaping your body. At first, these skills may take some time to learn.<br>
+But when you're used to them, like me, there's nothing to compare with slipping through the water. It's like flying.&nbsp;<br>
+5. Wash and rinse the rice really well until the water is clear.<br>
+Place the rice in a saucepan with double the amount of water and a little salt and stir. Bring to a boil. Then turn the heat way down and cover the pan tightly with a lid.<br>
+Cook on the lowest heat possible for 10 to 15 minutes without uncovering the pan.&nbsp;<br>
+6. If the camera charging light is not lit, the battery is still charging as long as it is connected to the wall outlet. If some trouble occurs while using the camera battery charger, immediately shut off the power by disconnecting the plug from the wall outlet.<br>
+7. Buses display route numbers, names, and final destinations in lighted signs above the windshield. If you'd like the bus operator to stop for you, just stand up and give a friendly wave as the bus approaches. Be sure to stay on the curb, though.<br>
+Please catch your bus at any official Capital Metro bus stop while the route is on detour. Alert your bus operator by waving as the vehicle approaches and prior to boarding, confirm route name and number by checking the digital marquee.&nbsp;<br>
+8. The address of Buckingham Palace is Buckingham Palace, London SW1A1AA You can get there by several different types of public transportation.<br>
+If you go by train, stop at London Victoria. If you go by underground, stop at Victoria, Green Park, and Hyde Park Corner. If you go by bus, take numbers 11, 211, C1, or C10 and stop at Buckingham Palace Road.<br>
+If you go by coach, stop at Victoria Coach Station. It is a 10 minute walk away from the palace. Now you will have some time to review questions 1 to 8. That is the end of part 1.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Đây là bài kiểm tra đánh giá năng lực tiếng Anh VSTEP, phần kiểm tra nghe hiểu. Bạn sẽ nghe một số đoạn ghi âm khác nhau và trả lời các câu hỏi dựa trên nội dung đã nghe.<br>
+Sẽ có thời gian để bạn đọc câu hỏi và kiểm tra lại câu trả lời của mình.<br>
+Tất cả các đoạn ghi âm chỉ được phát một lần duy nhất.<br>
+Phần 1<br>
+Trong phần này, bạn sẽ nghe tám đoạn ghi âm ngắn. Các đoạn ghi âm sẽ chỉ được phát một lần duy nhất.<br>
+Mỗi đoạn ghi âm có một câu hỏi đi kèm. Với mỗi câu hỏi, hãy chọn đáp án đúng A, B, C hoặc D.<br>
+Bây giờ, hãy lắng nghe ví dụ. Trong đoạn ghi âm, bạn có thể nghe:<br>
+"Xin chào, đây là đại lý du lịch phản hồi cuộc gọi của bạn.<br>
+Bạn đã để lại lời nhắn về kỳ nghỉ bạn đã đặt, hỏi về các bữa ăn được bao gồm trong chi phí khi lưu trú tại khách sạn Sunny.<br>
+Bữa trưa và bữa tối là miễn phí, nhưng nếu bạn muốn ăn sáng tại khách sạn, bạn sẽ cần trả thêm một khoản tiền tùy theo món bạn chọn.<br>
+Hãy cho tôi biết nếu tôi có thể giúp bạn với bất kỳ thông tin nào khác.<br>
+Tạm biệt."<br>
+Bạn sẽ đọc:<br>
+Câu hỏi: Bữa ăn nào không được bao gồm trong giá của kỳ nghỉ?<br>
+A. Bữa sáng<br>
+B. Bữa trưa<br>
+C. Bữa tối<br>
+D. Tất cả<br>
+Đáp án đúng là A, bữa sáng.<br>
+Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 1 đến 8.<br>
+Bây giờ, chúng ta sẵn sàng bắt đầu.<br>
+Hãy lắng nghe và trả lời các câu hỏi từ 1 đến 8.<br>
+Đây là cơ trưởng đang nói.<br>
+Tại thời điểm này, chúng tôi yêu cầu tất cả điện thoại di động, máy nhắn tin, radio và đồ chơi điều khiển từ xa phải được tắt cho đến hết chuyến bay, vì những thiết bị này có thể gây nhiễu với hệ thống điều hướng và liên lạc của máy bay.<br>
+Chúng ta sẽ hạ cánh xuống Amsterdam trong 10 phút.<br>
+Hiện tại là 4 giờ 40 phút theo giờ địa phương.<br>
+Nếu bạn không biết chính xác thông tin khóa học, bạn có thể tìm kiếm theo môn học, cấp độ khóa học, mã khóa học, hoặc thậm chí số phần học, và đặt các khóa học vào danh sách ưu tiên của bạn.<br>
+Trước tiên, bạn phải chọn học kỳ mỗi khi truy cập trang này.<br>
+Ví dụ, mã học kỳ này là 1-5-F-A-C-A-S. Sau đó, nhập tối đa năm môn học. Bạn cũng có thể nhập cấp độ khóa học, mã khóa học, và số phần học.<br>
+Cảm ơn bạn đã gọi đến nhà hàng Dragon.<br>
+Bạn đã kết nối với dịch vụ trả lời tự động của nhà hàng chúng tôi.<br>
+Để biết thực đơn, nhấn 1. Để đặt bàn, nhấn 2.<br>
+Để hỏi về các dịch vụ khác, nhấn 3. Để nói chuyện với nhân viên, nhấn 0.<br>
+Cảm ơn và chúc bạn một ngày tốt lành.<br>
+Việc bạn không thích bơi lội không có nghĩa đó là một môn thể thao nhàm chán. Điều đó chỉ có nghĩa là nó không phù hợp với bạn.<br>
+Bản thân tôi thấy chạy bộ hoặc đạp xe rất nhàm chán.<br>
+Bơi lội rất tuyệt vời, nhưng nó không dành cho tất cả mọi người.<br>
+Nó đòi hỏi nhiều kỹ năng như thở và điều chỉnh tư thế cơ thể. Ban đầu, những kỹ năng này có thể mất thời gian để học.<br>
+Nhưng khi bạn đã quen với chúng, giống như tôi, không có gì có thể so sánh được với cảm giác trượt qua làn nước. Nó giống như đang bay.<br>
+Rửa sạch và vo gạo thật kỹ cho đến khi nước trong.<br>
+Cho gạo vào nồi với lượng nước gấp đôi lượng gạo và một ít muối, sau đó khuấy đều. Đun sôi.<br>
+Sau đó, giảm lửa xuống mức nhỏ nhất và đậy kín nắp nồi.<br>
+Nấu ở mức lửa thấp nhất có thể trong 10 đến 15 phút mà không mở nắp.<br>
+Nếu đèn báo sạc của máy ảnh không sáng, nghĩa là pin vẫn đang sạc miễn là nó còn được kết nối với ổ điện.<br>
+Nếu gặp sự cố khi sử dụng bộ sạc pin máy ảnh, hãy ngay lập tức ngắt kết nối với nguồn điện để đảm bảo an toàn.<br>
+Các xe buýt hiển thị số tuyến, tên và điểm đến cuối cùng trên biển báo phát sáng phía trên kính chắn gió.<br>
+Nếu bạn muốn tài xế xe buýt dừng lại đón, hãy đứng lên và vẫy tay một cách thân thiện khi xe buýt đến gần. Nhưng hãy nhớ đứng trên vỉa hè.<br>
+Vui lòng bắt xe buýt tại bất kỳ trạm dừng chính thức nào của Capital Metro khi tuyến đường đang được điều chỉnh.<br>
+Báo hiệu cho tài xế xe buýt bằng cách vẫy tay khi xe đến gần, và trước khi lên xe, hãy xác nhận tên và số tuyến bằng cách kiểm tra bảng điện tử.<br>
+Địa chỉ của cung điện Buckingham là Buckingham Palace, London SW1A1AA.<br>
+Bạn có thể đến đó bằng nhiều phương tiện giao thông công cộng khác nhau.<br>
+Nếu đi bằng tàu hỏa, hãy xuống tại London Victoria.<br>
+Nếu đi bằng tàu điện ngầm, hãy xuống tại Victoria, Green Park hoặc Hyde Park Corner.<br>
+Nếu đi bằng xe buýt, hãy bắt các tuyến số 11, 211, C1 hoặc C10 và xuống tại đường Buckingham Palace Road.<br>
+Nếu đi bằng xe khách, hãy xuống tại bến xe Victoria Coach Station.<br>
+Từ đó, bạn có thể đi bộ khoảng 10 phút để đến cung điện.<br>
+Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 1 đến 8.<br>
+Đây là phần kết thúc của phần 1.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What time will the plane land?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. 4.50</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. 10.00															</div>
+																				<div class="ps-4 mb-2">
+																	C. 10.30															</div>
+																				<div class="ps-4 mb-2">
+																	D. 4.40															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>
+<p><span class="text-success"><strong>4.50</strong></span></p>
+<p><strong>Giải thích chi tiết:</strong></p>
+<p>Trong bài nghe, phi công thông báo:
+"This is your captain speaking. At this time, we request that all mobile phones, pagers, radios, and remote-controlled toys be turned off for the rest of the flight, as these items might interfere with the navigational and communication equipment on this aircraft. We are landing in Amsterdam in 10 minutes. It is now 4.40 local time."</p>
+<p><strong>Dịch nghĩa:</strong></p>
+<p>"Đây là cơ trưởng của bạn đang nói. Tại thời điểm này, chúng tôi yêu cầu tất cả điện thoại di động, máy nhắn tin, radio và đồ chơi điều khiển từ xa phải được tắt trong suốt phần còn lại của chuyến bay, vì những thiết bị này có thể gây nhiễu cho hệ thống định vị và liên lạc trên máy bay. Chúng tôi sẽ hạ cánh xuống Amsterdam sau 10 phút. Bây giờ là 4.40 theo giờ địa phương."</p>
+<p>Phi công thông báo <strong>hiện tại là 4.40</strong> và máy bay sẽ <strong>hạ cánh sau 10 phút</strong>, vì vậy ta có <strong>4.40 + 10 phút = 4.50</strong>, đây là đáp án chính xác.</p>
+<p><strong>Phân tích các lựa chọn:</strong></p>
+<ul>
+    <li><span class="text-danger">4.40 ❌</span> – Sai, đây là thời gian hiện tại, không phải thời gian hạ cánh.</li>
+    <li><span class="text-danger">10.00 ❌</span> – Sai, không có thông tin nào trong bài nghe đề cập đến thời gian này.</li>
+    <li><span class="text-success"><strong>4.50 ✅</strong></span> – Đúng, máy bay sẽ hạ cánh sau 10 phút từ 4.40.</li>
+    <li><span class="text-danger">10.30 ❌</span> – Sai, thời gian này không liên quan đến thông tin trong bài nghe.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: What is the code of the term?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 50SACAS															</div>
+																				<div class="ps-4 mb-2">
+																	B. 50FACAF															</div>
+																				<div class="ps-4 mb-2">
+																	C. 15SHCAF															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. 15FACAS</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>
+<p><span class="text-success"><strong>15FACAS</strong></span></p>
+
+<p><strong>Giải thích chi tiết:</strong></p>
+<p>Trong bài nghe, thông tin về mã học kỳ được đề cập:</p>
+<p>"If you do not know the exact course information, you may search by subject, course level, course number, and even section number, and place courses on your preferred sections list. First, you must select the term each time you enter this page. <strong>For example, this term's code is 1-5-F-A-C-A-S.</strong> Then enter up to five subjects. You may also enter course levels, course numbers, and even section numbers."</p>
+
+<p><strong>Dịch nghĩa:</strong></p>
+<p>"Nếu bạn không biết chính xác thông tin khóa học, bạn có thể tìm kiếm theo môn học, cấp độ khóa học, số khóa học và thậm chí cả số phần học, rồi thêm vào danh sách các phần học ưu tiên. Đầu tiên, bạn phải chọn mã học kỳ mỗi khi truy cập trang này. <strong>Ví dụ, mã học kỳ này là 1-5-F-A-C-A-S.</strong> Sau đó, bạn có thể nhập tối đa năm môn học. Bạn cũng có thể nhập cấp độ khóa học, số khóa học và thậm chí cả số phần học."</p>
+
+<p>Mã học kỳ trong bài nghe được đọc là <strong>1-5-F-A-C-A-S</strong>, điều này tương ứng với <strong>15FACAS</strong>.</p>
+
+<p><strong>Phân tích các lựa chọn:</strong></p>
+<ul>
+    <li><span class="text-danger">50SACAS ❌</span> – Sai, không trùng khớp với mã trong bài nghe.</li>
+    <li><span class="text-danger">50FACAF ❌</span> – Sai, mã trong bài nghe không có "50" và có "S" ở cuối thay vì "F".</li>
+    <li><span class="text-success"><strong>15FACAS ✅</strong></span> – Đúng, trùng khớp hoàn toàn với mã trong bài nghe.</li>
+    <li><span class="text-danger">15SHCAF ❌</span> – Sai, khác hoàn toàn so với mã trong bài nghe.</li>
+</ul>
+							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What should you do to book a table?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. press 2</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. press 0															</div>
+																				<div class="ps-4 mb-2">
+																	C. press 3															</div>
+																				<div class="ps-4 mb-2">
+																	D. press 1															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>
+<p><strong><span class="text-success">press 2</span></strong></p>
+
+<p><strong>Giải thích chi tiết:</strong></p>
+<p>Trong bài nghe, thông tin về cách đặt bàn tại nhà hàng được đề cập:</p>
+<p>"Thank you for calling Dragon Restaurant. You have reached the automatic call-in service of our restaurant. <strong>To find out about our menu, press 1. To reserve a table, press 2. To ask about our other services, press 3. To speak to the staff, press 0.</strong> Thank you, and have a good day."</p>
+
+<p><strong>Dịch nghĩa:</strong></p>
+<p>"Cảm ơn bạn đã gọi đến Nhà hàng Dragon. Bạn đã kết nối với hệ thống trả lời tự động của nhà hàng. <strong>Để tìm hiểu về thực đơn, nhấn phím 1. Để đặt bàn, nhấn phím 2. Để hỏi về các dịch vụ khác, nhấn phím 3. Để nói chuyện với nhân viên, nhấn phím 0.</strong> Cảm ơn và chúc bạn một ngày tốt lành."</p>
+
+<p>Theo thông tin trong bài nghe, để <strong>đặt bàn</strong>, người nghe cần <strong>nhấn phím 2</strong>.</p>
+
+<p><strong>Phân tích các lựa chọn:</strong></p>
+<ul>
+    <li><strong><span class="text-danger">press 0 ❌</span></strong> – Sai, nhấn phím 0 là để nói chuyện với nhân viên.</li>
+    <li><strong><span class="text-danger">press 1 ❌</span></strong> – Sai, nhấn phím 1 là để tìm hiểu về thực đơn.</li>
+    <li><strong><span class="text-success">press 2 ✅</span></strong> – Đúng, nhấn phím 2 là để đặt bàn.</li>
+    <li><strong><span class="text-danger">press 3 ❌</span></strong> – Sai, nhấn phím 3 là để hỏi về các dịch vụ khác.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What does the man think about swimming?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. It is exciting for him.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. It is a boring exercise.															</div>
+																				<div class="ps-4 mb-2">
+																	C. It is more tiring than riding.															</div>
+																				<div class="ps-4 mb-2">
+																	D. It requires short-term training.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>
+<p><span class="text-success"><strong>It is exciting for him.</strong></span></p>
+
+<p><strong>Giải thích chi tiết:</strong></p>
+<p>Trong bài nghe, người đàn ông bày tỏ quan điểm về bơi lội:</p>
+<p>"Well, the fact that swimming doesn't interest you does not mean it's a boring form of exercise. It just means it's not suitable for you. I myself find jogging or riding a bike very boring. Swimming is great, but it's just not for everybody. It involves a lot of skills like breathing and shaping your body. At first, these skills may take some time to learn. But when you're used to them, like me, there's nothing to compare with slipping through the water. It's like flying."</p>
+<p>"Việc bạn không hứng thú với bơi lội không có nghĩa là nó là một bài tập nhàm chán. Nó chỉ đơn giản là không phù hợp với bạn. Bản thân tôi thấy chạy bộ hoặc đạp xe rất chán. Bơi lội rất tuyệt, nhưng không dành cho tất cả mọi người. Nó đòi hỏi nhiều kỹ năng như kiểm soát hơi thở và điều chỉnh cơ thể. Ban đầu, những kỹ năng này có thể mất một chút thời gian để học. Nhưng khi bạn quen với chúng, giống như tôi, thì không gì có thể sánh bằng cảm giác lướt qua làn nước. Nó giống như bay vậy."</p>
+
+<p>Người đàn ông cho rằng bơi lội <strong>không nhàm chán</strong>, thậm chí còn so sánh nó với việc <strong>bay</strong>, thể hiện rằng anh ấy thấy bơi lội rất thú vị. Do đó, đáp án chính xác là <strong>It is exciting for him.</strong></p>
+
+<p><strong>Phân tích các lựa chọn:</strong></p>
+<ul>
+    <li><span class="text-danger">It requires short-term training.</span> ❌ (Bơi lội yêu cầu đào tạo ngắn hạn.) - Sai, vì anh ấy nói rằng học bơi có thể mất một chút thời gian, không phải là đào tạo ngắn hạn.</li>
+    <li><span class="text-danger">It is a boring exercise.</span> ❌ (Bơi lội là một bài tập nhàm chán.) - Sai, vì anh ấy khẳng định bơi lội <strong>không nhàm chán</strong> và thực sự rất tuyệt.</li>
+    <li><span class="text-danger">It is more tiring than riding.</span> ❌ (Bơi lội mệt hơn đạp xe.) - Sai, vì anh ấy không so sánh mức độ mệt mỏi giữa bơi lội và đạp xe, chỉ nói rằng đạp xe <strong>rất chán</strong>.</li>
+    <li><span class="text-success"><strong>It is exciting for him.</strong></span> ✅ (Bơi lội rất thú vị đối với anh ấy.) - Đúng, vì anh ấy mô tả bơi lội giống như đang bay, thể hiện sự hào hứng.</li>
+</ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What is the purpose of the message?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. how to fry rice															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. how to cook rice</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. how to wash rice															</div>
+																				<div class="ps-4 mb-2">
+																	D. how to heat rice															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>
+<p><span class="text-success"><strong>how to cook rice</strong></span></p>
+
+<p><strong>Giải thích chi tiết:</strong></p>
+<p>Trong bài nghe, hướng dẫn về cách nấu cơm được đề cập:</p>
+<p>"Wash and rinse the rice really well until the water is clear. Place the rice in a saucepan with double the amount of water and a little salt and stir. Bring to a boil. Then turn the heat way down and cover the pan tightly with a lid. Cook on the lowest heat possible for 10 to 15 minutes without uncovering the pan."</p>
+<p>"Rửa và xả gạo thật kỹ cho đến khi nước trong. Đặt gạo vào nồi với lượng nước gấp đôi và một ít muối, sau đó khuấy đều. Đun sôi. Sau đó giảm nhiệt xuống mức thấp nhất và đậy chặt nắp nồi. Nấu ở lửa nhỏ nhất trong khoảng 10 đến 15 phút mà không mở nắp."</p>
+
+<p>Thông điệp này cung cấp <strong>hướng dẫn về cách nấu cơm</strong>, từ bước rửa gạo, đong nước, đun sôi đến hạ nhiệt và nấu chín. Do đó, đáp án chính xác là <strong>how to cook rice</strong>.</p>
+
+<p><strong>Phân tích các lựa chọn:</strong></p>
+<ul>
+    <li><span class="text-danger">how to fry rice</span> ❌ (Cách chiên cơm.) - Sai, vì không có bước nào liên quan đến việc chiên cơm trong bài nghe.</li>
+    <li><span class="text-danger">how to wash rice</span> ❌ (Cách rửa gạo.) - Sai, vì dù có bước rửa gạo nhưng thông điệp chính là hướng dẫn nấu cơm.</li>
+    <li><span class="text-danger">how to heat rice</span> ❌ (Cách hâm nóng cơm.) - Sai, vì bài nghe không đề cập đến việc hâm nóng cơm mà hướng dẫn nấu cơm từ đầu.</li>
+    <li><span class="text-success"><strong>how to cook rice</strong></span> ✅ (Cách nấu cơm.) - Đúng, vì bài nghe hướng dẫn đầy đủ các bước để nấu cơm.</li>
+</ul>
+							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Who is probably the audience of this message?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. camera owners</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. lift riders															</div>
+																				<div class="ps-4 mb-2">
+																	C. wall climbers															</div>
+																				<div class="ps-4 mb-2">
+																	D. computer users															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>
+<p><span class="text-success"><strong>camera owners</strong></span></p>
+
+<p><strong>Giải thích chi tiết:</strong></p>
+<p>Trong bài nghe, thông tin về việc sử dụng bộ sạc máy ảnh được đề cập:</p>
+<p>"If the camera charging light is not lit, the battery is still charging as long as it is connected to the wall outlet. If some trouble occurs while using the camera battery charger, immediately shut off the power by disconnecting the plug from the wall outlet."</p>
+<p>"Nếu đèn báo sạc của máy ảnh không sáng, điều đó có nghĩa là pin vẫn đang sạc miễn là nó được cắm vào ổ điện. Nếu gặp sự cố khi sử dụng bộ sạc pin máy ảnh, hãy ngay lập tức tắt nguồn bằng cách rút phích cắm ra khỏi ổ điện."</p>
+
+<p>Thông điệp này đưa ra <strong>hướng dẫn sử dụng bộ sạc pin máy ảnh</strong>, do đó đối tượng của thông điệp này là <strong>những người sở hữu máy ảnh</strong>.</p>
+
+<p><strong>Phân tích các lựa chọn:</strong></p>
+<ul>
+    <li><span class="text-danger">lift riders</span> ❌ (Người đi thang máy.) - Sai, vì thông điệp không liên quan đến việc sử dụng thang máy.</li>
+    <li><span class="text-danger">wall climbers</span> ❌ (Người leo núi nhân tạo.) - Sai, vì nội dung không liên quan đến hoạt động leo núi.</li>
+    <li><span class="text-success"><strong>camera owners</strong></span> ✅ (Người sở hữu máy ảnh.) - Đúng, vì thông điệp hướng dẫn cách sạc pin máy ảnh.</li>
+    <li><span class="text-danger">computer users</span> ❌ (Người sử dụng máy tính.) - Sai, vì thông tin không đề cập đến máy tính hay cách sử dụng máy tính.</li>
+</ul>
+							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What is mainly discussed in the recording?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. How to seek for destination on the bus map															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. How to get around using the local bus service</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. How to alert the driver on the digital marquee															</div>
+																				<div class="ps-4 mb-2">
+																	D. How to make a detour in using the bus service															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>
+<p><span class="text-success"><strong>How to get around using the local bus service</strong></span></p>
+
+<p><strong>Giải thích chi tiết:</strong></p>
+<p>Trong bài nghe, thông tin về cách sử dụng dịch vụ xe buýt địa phương được đề cập:</p>
+<p>"Buses display route numbers, names, and final destinations in lighted signs above the windshield. If you'd like the bus operator to stop for you, just stand up and give a friendly wave as the bus approaches. Be sure to stay on the curb, though. Please catch your bus at any official Capital Metro bus stop while the route is on detour. Alert your bus operator by waving as the vehicle approaches and prior to boarding, confirm route name and number by checking the digital marquee."</p>
+<p>"Các xe buýt hiển thị số tuyến, tên tuyến và điểm đến cuối cùng trên các biển hiệu sáng phía trên kính chắn gió. Nếu bạn muốn tài xế dừng xe, hãy đứng lên và vẫy tay một cách thân thiện khi xe buýt đến gần. Tuy nhiên, hãy chắc chắn rằng bạn vẫn đứng trên vỉa hè. Hãy đón xe buýt tại bất kỳ điểm dừng chính thức nào của Capital Metro khi tuyến đường đang được điều chỉnh. Hãy báo hiệu cho tài xế xe buýt bằng cách vẫy tay khi xe đến gần và trước khi lên xe, hãy xác nhận tên và số tuyến bằng cách kiểm tra bảng điện tử."</p>
+
+<p>Thông điệp này cung cấp <strong>hướng dẫn về cách sử dụng dịch vụ xe buýt địa phương</strong>, bao gồm cách nhận biết tuyến xe, cách đón xe, và cách báo hiệu cho tài xế. Do đó, đáp án chính xác là <strong>How to get around using the local bus service</strong>.</p>
+
+<p><strong>Phân tích các lựa chọn:</strong></p>
+<ul>
+    <li><span class="text-success"><strong>How to get around using the local bus service</strong></span> ✅ (Cách di chuyển bằng dịch vụ xe buýt địa phương.) - Đúng, vì bài nghe hướng dẫn chi tiết về cách sử dụng xe buýt.</li>
+    <li><span class="text-danger">How to make a detour in using the bus service</span> ❌ (Cách đi đường vòng khi sử dụng xe buýt.) - Sai, vì bài nghe chỉ nhắc đến việc đón xe khi có điều chỉnh lộ trình, không phải hướng dẫn đi đường vòng.</li>
+    <li><span class="text-danger">How to seek for destination on the bus map</span> ❌ (Cách tìm điểm đến trên bản đồ xe buýt.) - Sai, vì không có thông tin nào về bản đồ xe buýt trong bài nghe.</li>
+    <li><span class="text-danger">How to alert the driver on the digital marquee</span> ❌ (Cách báo hiệu tài xế qua bảng điện tử.) - Sai, vì bảng điện tử chỉ dùng để kiểm tra tuyến xe, không phải để báo hiệu cho tài xế.</li>
+</ul>
+							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: Who may this message be prepared for?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. underground riders															</div>
+																				<div class="ps-4 mb-2">
+																	B. park visitors															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. palace visitors</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. bus riders															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>
+<p><span class="text-success"><strong>palace visitors</strong></span></p>
+
+<p><strong>Giải thích chi tiết:</strong></p>
+<p>Trong bài nghe, thông tin về cách đến Cung điện Buckingham được đề cập:</p>
+<p>"The address of Buckingham Palace is Buckingham Palace, London SW1A1AA. You can get there by several different types of public transportation. If you go by train, stop at London Victoria. If you go by underground, stop at Victoria, Green Park, and Hyde Park Corner. If you go by bus, take numbers 11, 211, C1, or C10 and stop at Buckingham Palace Road. If you go by coach, stop at Victoria Coach Station. It is a 10-minute walk away from the palace."</p>
+<p>"Địa chỉ của Cung điện Buckingham là Buckingham Palace, London SW1A1AA. Bạn có thể đến đó bằng nhiều phương tiện giao thông công cộng khác nhau. Nếu đi bằng tàu hỏa, hãy dừng tại London Victoria. Nếu đi bằng tàu điện ngầm, hãy dừng tại Victoria, Green Park hoặc Hyde Park Corner. Nếu đi bằng xe buýt, hãy đi các tuyến số 11, 211, C1 hoặc C10 và xuống tại Buckingham Palace Road. Nếu đi bằng xe khách, hãy dừng tại Victoria Coach Station, cách cung điện 10 phút đi bộ."</p>
+
+<p>Thông điệp này cung cấp <strong>hướng dẫn về cách đến Cung điện Buckingham</strong>, do đó đối tượng của thông điệp này là <strong>khách tham quan cung điện</strong>.</p>
+
+<p><strong>Phân tích các lựa chọn:</strong></p>
+<ul>
+    <li><span class="text-danger">bus riders</span> ❌ (Người đi xe buýt.) - Sai, vì thông tin không chỉ dành riêng cho người đi xe buýt mà còn nhiều phương tiện khác.</li>
+    <li><span class="text-danger">park visitors</span> ❌ (Khách tham quan công viên.) - Sai, vì không nhắc đến công viên nào, mà là Cung điện Buckingham.</li>
+    <li><span class="text-danger">underground riders</span> ❌ (Người đi tàu điện ngầm.) - Sai, mặc dù có nhắc đến tàu điện ngầm nhưng không phải đối tượng chính của thông điệp.</li>
+    <li><span class="text-success"><strong>palace visitors</strong></span> ✅ (Khách tham quan cung điện.) - Đúng, vì toàn bộ thông tin tập trung vào hướng dẫn khách tham quan Cung điện Buckingham.</li>
+</ul>
+							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

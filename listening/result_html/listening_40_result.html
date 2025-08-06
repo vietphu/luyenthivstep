@@ -1,0 +1,591 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 40 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87759				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/12				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp2-1664815959_31112466adf38bfb4cb2.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>In this part, you will hear three conversations. The conversations will be played once only. There are four questions for each conversation.<br>
+For each question, choose the right answer A, B, C, or D. Part 2, questions 9 to 12. First, you will have some time to look at questions 9 to 12. Now we're ready to start.<br>
+Listen and answer questions 9 to 12. You will hear the recording once only. <br>
+Excuse me, do you have any keys or money in your pockets? No, no, I think I've taken everything out.<br>
+Okay, go ahead and walk through the body scanner. Will I feel anything? No, sir. Just walk through and keep your hands in the air.<br>
+Okay. We need to do some additional screening. Sorry, sir.<br>
+Please come this way. Did I... did you find something? Relax, sir. Okay? I'm going to open your carry-on bag.<br>
+As I'm going through it, please do not try to touch it. But, I mean... Let's see here. First of all, sir, you can't take any liquids like this bottled water past this point.<br>
+Well, I really can't drink any other kind of water. Sierra Springs is the only bottled water I drink. Sorry, sorry, sir.<br>
+And, sir, what's this? No, no, sir, you cannot bring a lighter on the plane. But I don't smoke. Well, you still can't bring it on the plane.<br>
+Yeah, but I have it just in case of emergencies. You know, as an emergency fire starter in case the plane crashes into a dark forest. Sir, you'll have to leave that here.<br>
+What's this? Well, that's my pocket knife. A pocket knife? It's almost a foot long. Well, it's a special knife given to me by my grandfather, but I only use it to peel apples and fruit, you know, things like that.<br>
+Sir, I'm sorry, but you can't take that on the plane. In fact, do you have any other prohibited items in your bag? Well, I don't... I mean, didn't you read the sign back there explaining all the items that were not allowed on board? Well, I started to read it, and then I got a little distracted. A little? Sir, how many times have you flown on an airplane? Uh, it's been a while.<br>
+I think the last time I traveled by plane was about, uh, 1960... Sir, why don't you come with me? What? I think my supervisor would like to ask you a few questions. Oh, no. Now you will have some time to review questions 9 to 12.<br>
+Part 2, questions 13 to 16. First, you will have some time to look at questions 13 to 16. Now we're ready to start.<br>
+Listen and answer questions 13 to 16. You will hear the recording once only. <br>
+I would like to tell you a little bit about some things I like, and then a little bit about some things I don't like.<br>
+First of all, I really enjoy exercising. Some of my favorite types of exercise are swimming, especially in rivers in the country and in big oceans because I like to jump over the waves. I also really enjoy dancing.<br>
+I like dancing to American music because that's what I know best, and I also like salsa and merengue, which are more Latin types of music. I also like to walk in the woods and to explore. I like to walk through forests, and I like to hear rivers.<br>
+I enjoy meeting new people, too. I like to find out about different ways of life, what different people think, where they're from, and how they live. Probably one of my favorite things are animals.<br>
+I really love dogs and cats and horses. When I was little, I always tried to talk my mom into letting me have more animals, but usually she wouldn't. So I think now that I'm going to have my own house, I'll try to get lots of animals.<br>
+Some things that I don't really like are rude people. Sometimes people are not very nice to strangers, and that makes me feel bad. I also don't really like driving.<br>
+I tend to get pretty bored in the car, and it seems like it just takes a long time to get there. One final thing I don't really like is waiting. Sometimes I'm not a very patient person, and I just like to hurry things up.<br>
+Now you will have some time to review questions 13 to 16. Part 2, questions 17 to 20. First, you will have some time to look at questions 17 to 20.<br>
+Now we're ready to start. Listen and answer questions 17 to 20. You will hear the recording once only.<br>
+Hi, may I help you? Yeah, you see, I need some flowers for my wife. Let me guess, you forgot your anniversary and you're trying to make things up, right? Oh, yeah, is it that obvious? Well, yeah, we see men like you all the time that are so involved in the work that they simply forget about it. Well, in this case, it's not like that.<br>
+Sure, what do you need? Well, I'd like to get a dozen roses with some greenery and a very nice card. Do you really think a dozen roses is going to cut it? Well... I mean, if my husband forgot our anniversary, he'd be in the doghouse for sure. You need at least two dozen roses, a dozen balloons, and a romantic evening at an expensive restaurant.<br>
+Well, I only have $10. $10? Well, that will buy you a single rose and a hamburger at McDonald's, but that's it. Wait, I actually have $12 and... Wait, hang on, let me see here... 32 cents, so that might be... Forget playing golf this weekend.<br>
+Your wife is way more important. Oh, no. Oh, no, my wife is out in the parking lot looking for me.<br>
+Oh, and she's looking this way. Please, please help me. She'll wring my neck for sure.<br>
+Okay, okay, let's see. Please, please. Well, it looks like I can arrange a small bouquet of roses.<br>
+Okay. A couple are a little wilted. Oh, that's okay.<br>
+But that's the best I can do. Oh, yes, oh, yes, that's fine. And I can also attach a small card and tie a nice ribbon around the flowers.<br>
+Oh, that would be great. You're a lifesaver. I'll put you on my Christmas card list forever.<br>
+Okay, okay, that'll be $12 even. Oh, you're an angel. Thank you, thank you.<br>
+Oh, no. What? Now she's parked in front of your store waiting for me. I'm dead meat.<br>
+Do you have a back door? No. It looks like you need to face the music and just talk to her. I can't, I can't.<br>
+She'll probably be very understanding. After you promise to wash... You don't know my wife. Well, you need to promise to wash the dishes and clean the bathroom for the next six months.<br>
+Get out there and be a man. Could you call an ambulance just in case? This could get ugly. Man.<br>
+Now you will have some time to review questions 17 to 20. That is the end of part two.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 2 Trong phần này, bạn sẽ nghe ba đoạn hội thoại. Mỗi đoạn hội thoại chỉ được phát một lần duy nhất. Có bốn câu hỏi cho mỗi đoạn hội thoại. Với mỗi câu hỏi, hãy chọn câu trả lời đúng: A, B, C hoặc D. Câu 9 đến 12 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 9 đến 12. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 9 đến 12. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Kiểm tra an ninh sân bay Xin lỗi, ông có chìa khóa hoặc tiền trong túi không? Không, không. Tôi nghĩ là tôi đã lấy hết ra rồi. Được rồi, hãy đi qua máy quét cơ thể. Tôi có cảm thấy gì không? Không, thưa ông. Chỉ cần đi qua và giơ tay lên. Được rồi. Chúng tôi cần kiểm tra thêm. Xin lỗi, thưa ông. Vui lòng đi theo lối này. Tôi có... Có phải các anh đã tìm thấy thứ gì đó không? Bình tĩnh, thưa ông. Tôi sẽ kiểm tra hành lý xách tay của ông. Trong khi tôi kiểm tra, vui lòng không chạm vào túi nhé. Nhưng mà... Hãy xem nào. Trước tiên, ông không được mang chất lỏng như chai nước này qua điểm kiểm tra. Nhưng tôi thực sự không thể uống loại nước nào khác. Sierra Springs là loại nước duy nhất tôi uống. Xin lỗi, thưa ông. Và đây là gì? Không, thưa ông, ông không được mang theo bật lửa lên máy bay. Nhưng tôi không hút thuốc. Dù vậy, ông vẫn không được mang nó lên máy bay. Nhưng tôi có nó trong trường hợp khẩn cấp, ví dụ như nếu máy bay rơi vào một khu rừng tối tăm... Thưa ông, ông phải để nó lại đây. Còn cái này? Đó là dao bỏ túi của tôi. Dao bỏ túi? Nó dài gần một foot (khoảng 30 cm)! Đó là món quà của ông tôi tặng, nhưng tôi chỉ dùng nó để gọt táo và hoa quả, chỉ có vậy thôi. Thưa ông, tôi rất tiếc, nhưng ông không thể mang nó lên máy bay. Thực ra, ông có mang theo vật dụng bị cấm nào khác không? Tôi không... Ý tôi là... Ông có đọc biển báo ở phía sau nói về các vật dụng bị cấm mang lên máy bay không? À, tôi đã bắt đầu đọc, nhưng sau đó tôi bị phân tâm một chút... "Một chút" sao? Thưa ông, ông đã đi máy bay bao nhiêu lần rồi? Ờ... Lần cuối cùng tôi đi máy bay là vào khoảng... 1960... Thưa ông, tại sao ông không đi theo tôi? Gì cơ? Tôi nghĩ giám sát viên của tôi muốn hỏi ông một vài câu. Ôi không... Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 9 đến 12. Câu 13 đến 16 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 13 đến 16. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 13 đến 16. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Những điều tôi thích và không thích Tôi muốn chia sẻ một chút về những điều tôi thích và một chút về những điều tôi không thích. Trước tiên, tôi rất thích tập thể dục. Một trong những hoạt động yêu thích của tôi là bơi lội, đặc biệt là trong các con sông ở vùng quê hoặc biển lớn, vì tôi thích nhảy qua những con sóng. Tôi cũng rất thích khiêu vũ. Tôi thích khiêu vũ với nhạc Mỹ vì đó là thứ tôi quen thuộc nhất, nhưng tôi cũng thích salsa và merengue, hai thể loại nhạc Latin. Ngoài ra, tôi thích đi dạo trong rừng và khám phá thiên nhiên. Tôi thích đi qua những khu rừng, lắng nghe tiếng chảy của sông suối. Tôi cũng thích gặp gỡ những người mới, tìm hiểu về cách sống của họ, họ đến từ đâu và họ sống như thế nào. Một trong những điều tôi yêu thích nhất là động vật. Tôi thực sự yêu chó, mèo và ngựa. Khi còn nhỏ, tôi luôn cố gắng thuyết phục mẹ cho nuôi thêm thú cưng, nhưng mẹ thường không đồng ý. Bây giờ, khi tôi có nhà riêng, tôi sẽ nuôi thật nhiều thú cưng. Những điều tôi không thích bao gồm những người thô lỗ. Đôi khi, có những người không cư xử tốt với người lạ, và điều đó khiến tôi cảm thấy không vui. Tôi cũng không thích lái xe, vì tôi cảm thấy chán khi phải ngồi trong ô tô quá lâu. Cuối cùng, tôi không thích chờ đợi. Tôi không phải là người kiên nhẫn, và tôi luôn muốn mọi thứ diễn ra nhanh hơn. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 13 đến 16. Câu 17 đến 20 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 17 đến 20. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 17 đến 20. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Mua hoa tặng vợ Xin chào, tôi có thể giúp gì cho anh? Vâng, tôi cần mua hoa cho vợ. Để tôi đoán nhé, anh quên mất ngày kỷ niệm và đang cố bù đắp đúng không? À... Ừm... Có vẻ như vậy sao? Vâng, tôi thường thấy rất nhiều người đàn ông giống anh. Vậy anh cần gì? Tôi muốn mua một tá hoa hồng, kèm theo một ít lá xanh và một tấm thiệp đẹp. Anh nghĩ một tá hoa hồng là đủ sao? Nếu chồng tôi quên ngày kỷ niệm, anh ấy chắc chắn sẽ "ngủ ngoài sân" đấy! Anh cần ít nhất hai tá hoa hồng, một chục quả bóng bay, và một bữa tối lãng mạn tại một nhà hàng đắt tiền. Nhưng tôi chỉ có 10 đô. 10 đô? Anh chỉ mua được một bông hoa và một suất hamburger ở McDonald's thôi. Ồ không, vợ tôi đang ở ngoài bãi đỗ xe! Cô ấy đang tìm tôi! Anh cần đối mặt với cô ấy thôi. Không! Tôi cần một lối thoát! Anh chỉ cần hứa sẽ rửa bát và dọn nhà vệ sinh trong sáu tháng, thế là ổn! Gọi xe cấp cứu đi, chuyện này sắp trở nên căng thẳng rồi... Phần 2 kết thúc tại đây.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What is the first item that the man has in his carry-on bag?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. a large bottle of shampoo															</div>
+																				<div class="ps-4 mb-2">
+																	B. wine															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. water</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. medication															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>water.</strong></span> ✅ (Nước.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, nhân viên an ninh nói:</p>    <p>"First of all, sir, you can't take any liquids like this bottled water past this point."</p>     <p>"Trước hết, thưa ông, ông không thể mang theo bất kỳ chất lỏng nào, như <strong>chai nước này</strong>, qua điểm kiểm tra."</p>      <p>Bài nghe xác nhận rằng <strong>vật dụng đầu tiên mà người đàn ông có trong hành lý xách tay là một chai nước</strong>. Do đó, đáp án chính xác là <strong>water.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>water.</strong></span> ✅ (Nước.) - Đúng, vì bài nghe xác nhận rằng vật đầu tiên được phát hiện trong hành lý của anh ấy là một chai nước.</li>                 <li><span class="text-danger">medication.</span> ❌ (Thuốc.) - Sai, vì bài nghe không đề cập đến thuốc trong hành lý của anh ấy.</li>                 <li><span class="text-danger">a large bottle of shampoo.</span> ❌ (Một chai dầu gội lớn.) - Sai, vì bài nghe không đề cập đến dầu gội đầu.</li>                 <li><span class="text-danger">wine.</span> ❌ (Rượu vang.) - Sai, vì bài nghe không nhắc đến việc anh ấy mang theo rượu vang.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: The man is arrying a lighter because he ______						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. has the habit of keeping it															</div>
+																				<div class="ps-4 mb-2">
+																	B. he forgot to take it out of his bag															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. is worried about his safety</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. enjoys smoking cigarettes															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>is worried about his safety.</strong></span> ✅ (Anh ấy lo lắng về sự an toàn của mình.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người đàn ông nói:</p>    <p>"Yeah, but I have it just in case of emergencies. You know, as an emergency fire starter in case the plane crashes into a dark forest."</p>     <p>"Vâng, nhưng tôi mang nó theo <strong>phòng khi khẩn cấp</strong>. Anh biết đấy, để làm bật lửa trong trường hợp máy bay rơi xuống một khu rừng tối."</p>      <p>Bài nghe xác nhận rằng <strong>người đàn ông mang theo bật lửa vì lo lắng về sự an toàn của mình</strong>. Do đó, đáp án chính xác là <strong>is worried about his safety.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">enjoys smoking cigarettes.</span> ❌ (Thích hút thuốc lá.) - Sai, vì anh ấy khẳng định rằng mình không hút thuốc.</li>                 <li><span class="text-success"><strong>is worried about his safety.</strong></span> ✅ (Lo lắng về sự an toàn của mình.) - Đúng, vì anh ấy nói rằng mang bật lửa để phòng trường hợp khẩn cấp.</li>                 <li><span class="text-danger">he forgot to take it out of his bag.</span> ❌ (Anh ấy quên lấy nó ra khỏi túi.) - Sai, vì anh ấy cố tình mang theo bật lửa, không phải do quên.</li>                 <li><span class="text-danger">has the habit of keeping it.</span> ❌ (Có thói quen giữ nó.) - Sai, vì anh ấy không nói rằng mình có thói quen giữ bật lửa.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What is the next illegal item the man has with him?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. firecrackers															</div>
+																				<div class="ps-4 mb-2">
+																	B. a paper knife															</div>
+																				<div class="ps-4 mb-2">
+																	C. a live snake															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. a huge knife</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>a huge knife.</strong></span> ✅ (Một con dao lớn.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, nhân viên an ninh nói:</p>    <p>"A pocket knife? It's almost a foot long."</p>     <p>"Một con dao bỏ túi? Nó dài gần một foot!"</p>      <p>Bài nghe xác nhận rằng <strong>vật dụng tiếp theo mà người đàn ông có trong hành lý là một con dao rất lớn</strong>. Do đó, đáp án chính xác là <strong>a huge knife.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">a live snake.</span> ❌ (Một con rắn sống.) - Sai, vì bài nghe không đề cập đến việc anh ấy mang theo một con rắn.</li>                 <li><span class="text-danger">firecrackers.</span> ❌ (Pháo.) - Sai, vì bài nghe không nói rằng anh ấy mang theo pháo.</li>                 <li><span class="text-success"><strong>a huge knife.</strong></span> ✅ (Một con dao lớn.) - Đúng, vì bài nghe xác nhận rằng anh ấy mang theo một con dao dài gần một foot.</li>                 <li><span class="text-danger">a paper knife.</span> ❌ (Một con dao rọc giấy.) - Sai, vì con dao mà anh ấy mang theo quá lớn để là dao rọc giấy.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: The man received this item from _______						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. a close friend															</div>
+																				<div class="ps-4 mb-2">
+																	B. a stranger															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. a relative</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. a shop															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>a relative.</strong></span> ✅ (Một người thân.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người đàn ông nói:</p>    <p>"Well, it's a special knife given to me by my grandfather, but I only use it to peel apples and fruit, you know, things like that."</p>     <p>"Vâng, đây là một con dao đặc biệt <strong>do ông tôi tặng</strong>, nhưng tôi chỉ dùng nó để gọt táo và trái cây thôi."</p>      <p>Bài nghe xác nhận rằng <strong>người đàn ông nhận con dao này từ ông của mình, tức là một người thân</strong>. Do đó, đáp án chính xác là <strong>a relative.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">a close friend.</span> ❌ (Một người bạn thân.) - Sai, vì bài nghe nói rằng con dao này được ông của anh ấy tặng, không phải bạn thân.</li>                 <li><span class="text-success"><strong>a relative.</strong></span> ✅ (Một người thân.) - Đúng, vì bài nghe xác nhận rằng ông của anh ấy đã tặng con dao này.</li>                 <li><span class="text-danger">a stranger.</span> ❌ (Một người lạ.) - Sai, vì con dao này không phải do người lạ tặng.</li>                 <li><span class="text-danger">a shop.</span> ❌ (Một cửa hàng.) - Sai, vì anh ấy không mua con dao này từ cửa hàng.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What type of exercise does the speaker like?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Jumping rope															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Swimming</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Mountain biking															</div>
+																				<div class="ps-4 mb-2">
+																	D. Running															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>Swimming.</strong></span> ✅ (Bơi lội.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"First of all, I really enjoy exercising. Some of my favorite types of exercise are swimming, especially in rivers in the country and in big oceans because I like to jump over the waves."</p>     <p>"Trước hết, tôi thực sự thích tập thể dục. Một số môn thể dục yêu thích của tôi là <strong>bơi lội</strong>, đặc biệt là ở các con sông trong vùng nông thôn và ở đại dương lớn, vì tôi thích nhảy qua các con sóng."</p>      <p>Bài nghe xác nhận rằng <strong>diễn giả thích bơi lội</strong>. Do đó, đáp án chính xác là <strong>Swimming.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>Swimming.</strong></span> ✅ (Bơi lội.) - Đúng, vì bài nghe xác nhận rằng diễn giả thích bơi lội.</li>                 <li><span class="text-danger">Jumping rope.</span> ❌ (Nhảy dây.) - Sai, vì bài nghe không đề cập đến việc diễn giả thích nhảy dây.</li>                 <li><span class="text-danger">Mountain biking.</span> ❌ (Đạp xe leo núi.) - Sai, vì bài nghe không nói rằng diễn giả thích đạp xe leo núi.</li>                 <li><span class="text-danger">Running.</span> ❌ (Chạy bộ.) - Sai, vì bài nghe không nhắc đến việc diễn giả thích chạy bộ.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: What does the speaker say she will do in her new house?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Have many animals</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Keep it very clean															</div>
+																				<div class="ps-4 mb-2">
+																	C. Avoid letting strangers come in															</div>
+																				<div class="ps-4 mb-2">
+																	D. Invite people to visit															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>Have many animals.</strong></span> ✅ (Nuôi nhiều động vật.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"So I think now that I'm going to have my own house, I'll try to get lots of animals."</p>     <p>"Vì vậy, tôi nghĩ rằng bây giờ khi tôi có nhà riêng, tôi sẽ cố gắng <strong>nuôi thật nhiều động vật</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>diễn giả muốn nuôi nhiều động vật trong ngôi nhà mới của mình</strong>. Do đó, đáp án chính xác là <strong>Have many animals.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>Have many animals.</strong></span> ✅ (Nuôi nhiều động vật.) - Đúng, vì bài nghe xác nhận rằng diễn giả muốn có nhiều động vật trong nhà.</li>                 <li><span class="text-danger">Invite people to visit.</span> ❌ (Mời mọi người đến thăm.) - Sai, vì bài nghe không đề cập đến việc diễn giả sẽ mời người khác đến nhà.</li>                 <li><span class="text-danger">Keep it very clean.</span> ❌ (Giữ nhà rất sạch sẽ.) - Sai, vì bài nghe không nói về việc giữ nhà sạch sẽ.</li>                 <li><span class="text-danger">Avoid letting strangers come in.</span> ❌ (Tránh để người lạ vào nhà.) - Sai, vì bài nghe không đề cập đến điều này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: Why does the speaker dislike driving?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. She gets car sick.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. She is impatient.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. She feels cramped.															</div>
+																				<div class="ps-4 mb-2">
+																	D. She dislikes traffic.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>She is impatient.</strong></span> ✅ (Cô ấy thiếu kiên nhẫn.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"One final thing I don't really like is waiting. Sometimes I'm not a very patient person, and I just like to hurry things up."</p>     <p>"Một điều cuối cùng mà tôi không thực sự thích là <strong>chờ đợi</strong>. Đôi khi tôi không phải là một người kiên nhẫn, và tôi chỉ muốn mọi thứ diễn ra nhanh hơn."</p>      <p>Bài nghe xác nhận rằng <strong>diễn giả không thích lái xe vì cô ấy thiếu kiên nhẫn và cảm thấy mất thời gian</strong>. Do đó, đáp án chính xác là <strong>She is impatient.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>She is impatient.</strong></span> ✅ (Cô ấy thiếu kiên nhẫn.) - Đúng, vì bài nghe xác nhận rằng cô ấy không thích chờ đợi.</li>                 <li><span class="text-danger">She dislikes traffic.</span> ❌ (Cô ấy không thích giao thông.) - Sai, vì bài nghe không đề cập đến việc cô ấy ghét giao thông.</li>                 <li><span class="text-danger">She gets car sick.</span> ❌ (Cô ấy bị say xe.) - Sai, vì bài nghe không nói rằng cô ấy bị say xe.</li>                 <li><span class="text-danger">She feels cramped.</span> ❌ (Cô ấy cảm thấy chật chội.) - Sai, vì bài nghe không nhắc đến việc cô ấy cảm thấy chật chội khi lái xe.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: What is the main topic of this talk?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Exercise															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Personal preferences</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Experiences in life															</div>
+																				<div class="ps-4 mb-2">
+																	D. Hobbies															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>Personal preferences.</strong></span> ✅ (Sở thích cá nhân.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"I would like to tell you a little bit about some things I like, and then a little bit about some things I don't like."</p>     <p>"Tôi muốn kể cho bạn một chút về <strong>những thứ tôi thích</strong>, và sau đó là một chút về <strong>những thứ tôi không thích</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>chủ đề chính của cuộc nói chuyện là sở thích cá nhân của diễn giả</strong>, bao gồm cả những thứ cô ấy thích và không thích. Do đó, đáp án chính xác là <strong>Personal preferences.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">Experiences in life.</span> ❌ (Những trải nghiệm trong cuộc sống.) - Sai, vì bài nghe không tập trung vào trải nghiệm cuộc sống mà chỉ nói về sở thích cá nhân.</li>                 <li><span class="text-success"><strong>Personal preferences.</strong></span> ✅ (Sở thích cá nhân.) - Đúng, vì bài nghe xoay quanh những thứ diễn giả thích và không thích.</li>                 <li><span class="text-danger">Hobbies.</span> ❌ (Sở thích.) - Sai, vì bài nghe không chỉ nói về sở thích mà còn đề cập đến những điều cô ấy không thích.</li>                 <li><span class="text-danger">Exercise.</span> ❌ (Tập thể dục.) - Sai, vì mặc dù có nhắc đến tập thể dục, nhưng đó không phải là chủ đề chính.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: Why does the man want to buy flowers for his wife?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He wants to surprise his wife for her birthday.															</div>
+																				<div class="ps-4 mb-2">
+																	B. His wife has just received a nice job promotion.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. The man didn't remember the day they got married.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. His wife has just graduated.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>The man didn't remember the day they got married.</strong></span> ✅ (Người đàn ông đã quên ngày cưới của họ.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, nhân viên cửa hàng hoa nói:</p>    <p>"Let me guess, you forgot your anniversary and you're trying to make things up, right?"</p>     <p>"Để tôi đoán nhé, anh quên ngày kỷ niệm của mình và đang cố gắng bù đắp, đúng không?"</p>      <p>Người đàn ông đáp lại một cách bối rối, xác nhận rằng <strong>anh ấy quên ngày cưới của mình</strong>. Do đó, đáp án chính xác là <strong>The man didn't remember the day they got married.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">He wants to surprise his wife for her birthday.</span> ❌ (Anh ấy muốn làm vợ bất ngờ nhân ngày sinh nhật.) - Sai, vì bài nghe không đề cập đến sinh nhật của vợ anh ấy.</li>                 <li><span class="text-danger">His wife has just received a nice job promotion.</span> ❌ (Vợ anh ấy vừa nhận được một sự thăng chức tốt.) - Sai, vì bài nghe không nhắc đến việc thăng chức.</li>                 <li><span class="text-success"><strong>The man didn't remember the day they got married.</strong></span> ✅ (Người đàn ông đã quên ngày cưới của họ.) - Đúng, vì bài nghe xác nhận rằng anh ấy quên ngày kỷ niệm.</li>                 <li><span class="text-danger">His wife has just graduated.</span> ❌ (Vợ anh ấy vừa tốt nghiệp.) - Sai, vì bài nghe không đề cập đến việc tốt nghiệp.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: Near the beginning of the conversation, what is one thing that the woman suggests the man do for his wife?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. buy twelve gorgeous roses.															</div>
+																				<div class="ps-4 mb-2">
+																	B. purchase a couple of beautiful balloons.															</div>
+																				<div class="ps-4 mb-2">
+																	C. buy a single rose.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. take his wife to an elegant restaurant.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>take his wife to an elegant restaurant.</strong></span> ✅ (Dẫn vợ đến một nhà hàng sang trọng.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, nhân viên cửa hàng hoa nói:</p>    <p>"You need at least two dozen roses, a dozen balloons, and a romantic evening at an expensive restaurant."</p>     <p>"Anh cần ít nhất hai tá hoa hồng, một tá bóng bay, và một <strong>buổi tối lãng mạn tại một nhà hàng sang trọng</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>người phụ nữ gợi ý rằng người đàn ông nên đưa vợ mình đến một nhà hàng sang trọng</strong>. Do đó, đáp án chính xác là <strong>take his wife to an elegant restaurant.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>take his wife to an elegant restaurant.</strong></span> ✅ (Dẫn vợ đến một nhà hàng sang trọng.) - Đúng, vì bài nghe xác nhận rằng đây là một trong những điều mà người phụ nữ gợi ý.</li>                 <li><span class="text-danger">purchase a couple of beautiful balloons.</span> ❌ (Mua một vài quả bóng bay đẹp.) - Sai, vì mặc dù người phụ nữ nhắc đến bóng bay, nhưng không phải điều đầu tiên cô ấy gợi ý.</li>                 <li><span class="text-danger">buy twelve gorgeous roses.</span> ❌ (Mua 12 bông hồng tuyệt đẹp.) - Sai, vì người phụ nữ đề nghị anh ấy mua hai tá hoa hồng, không phải mười hai bông.</li>                 <li><span class="text-danger">buy a single rose.</span> ❌ (Mua một bông hồng duy nhất.) - Sai, vì bài nghe không đề cập đến việc mua một bông hồng duy nhất.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: Why does the man panic when seeing his wife outside the store?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. She will realize he spaced their important day.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. His wife will think he is buying the flowers for someone else.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Her finding him in the flower shop will spoil the surprise.															</div>
+																				<div class="ps-4 mb-2">
+																	D. She will think he is in love with the florist.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>She will realize he spaced their important day.</strong></span> ✅ (Cô ấy sẽ nhận ra rằng anh ấy đã quên ngày quan trọng của họ.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người đàn ông nói với sự hoảng loạn:</p>    <p>"Oh no. Oh no, my wife is out in the parking lot looking for me. Oh, and she's looking this way. Please, please help me. She'll wring my neck for sure."</p>     <p>"Ôi không. Ôi không, vợ tôi đang ở ngoài bãi đậu xe tìm tôi. Và cô ấy đang nhìn về phía này. Làm ơn, làm ơn giúp tôi. Cô ấy sẽ giết tôi mất."</p>      <p>Bài nghe xác nhận rằng <strong>người đàn ông hoảng sợ vì vợ anh ấy sẽ nhận ra rằng anh ấy đã quên ngày kỷ niệm của họ</strong>. Do đó, đáp án chính xác là <strong>She will realize he spaced their important day.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>She will realize he spaced their important day.</strong></span> ✅ (Cô ấy sẽ nhận ra rằng anh ấy đã quên ngày quan trọng của họ.) - Đúng, vì bài nghe xác nhận rằng người đàn ông lo lắng vì vợ anh ấy sẽ nhận ra điều này.</li>                 <li><span class="text-danger">Her finding him in the flower shop will spoil the surprise.</span> ❌ (Việc cô ấy tìm thấy anh ấy trong cửa hàng hoa sẽ làm hỏng sự bất ngờ.) - Sai, vì anh ấy không có kế hoạch làm cô ấy bất ngờ.</li>                 <li><span class="text-danger">His wife will think he is buying the flowers for someone else.</span> ❌ (Vợ anh ấy sẽ nghĩ rằng anh ấy mua hoa cho người khác.) - Sai, vì bài nghe không đề cập đến sự hiểu lầm này.</li>                 <li><span class="text-danger">She will think he is in love with the florist.</span> ❌ (Cô ấy sẽ nghĩ rằng anh ấy đang yêu người bán hoa.) - Sai, vì bài nghe không có chi tiết nào về điều này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: What is the most plausible ending to the conversation?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The man happily congratulates his wife.															</div>
+																				<div class="ps-4 mb-2">
+																	B. The man's wife graciously accepts the dozen roses the man buys for her.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. The man begs his wife to forgive him when he comes out of the shop.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. The florist delivers the flowers for the man because he is embarrassed.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>The man begs his wife to forgive him when he comes out of the shop.</strong></span> ✅ (Người đàn ông cầu xin vợ tha thứ khi anh ấy bước ra khỏi cửa hàng.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người đàn ông tỏ ra hoảng loạn khi nhìn thấy vợ mình và nói:</p>    <p>"Oh no. Oh no, my wife is out in the parking lot looking for me. Oh, and she's looking this way. Please, please help me. She'll wring my neck for sure."</p>     <p>"Ôi không. Ôi không, vợ tôi đang ở ngoài bãi đậu xe tìm tôi. Và cô ấy đang nhìn về phía này. Làm ơn, làm ơn giúp tôi. Cô ấy sẽ giết tôi mất."</p>      <p>Người phụ nữ bán hoa sau đó nói:</p>    <p>"It looks like you need to face the music and just talk to her."</p>     <p>"Có vẻ như anh cần đối mặt với sự thật và nói chuyện với cô ấy."</p>      <p>Điều này xác nhận rằng <strong>khi bước ra khỏi cửa hàng, người đàn ông có khả năng sẽ cầu xin vợ tha thứ</strong>. Do đó, đáp án chính xác là <strong>The man begs his wife to forgive him when he comes out of the shop.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">The man's wife graciously accepts the dozen roses the man buys for her.</span> ❌ (Vợ anh ấy vui vẻ nhận lấy bó hoa 12 bông mà anh ấy mua cho cô ấy.) - Sai, vì bài nghe không đề cập đến phản ứng của vợ anh ấy.</li>                 <li><span class="text-success"><strong>The man begs his wife to forgive him when he comes out of the shop.</strong></span> ✅ (Người đàn ông cầu xin vợ tha thứ khi anh ấy bước ra khỏi cửa hàng.) - Đúng, vì bài nghe xác nhận rằng anh ấy đang rất lo sợ.</li>                 <li><span class="text-danger">The florist delivers the flowers for the man because he is embarrassed.</span> ❌ (Người bán hoa giao hoa giúp anh ấy vì anh ấy xấu hổ.) - Sai, vì bài nghe không đề cập đến việc người bán hoa giao hoa thay anh ấy.</li>                 <li><span class="text-danger">The man happily congratulates his wife.</span> ❌ (Người đàn ông vui vẻ chúc mừng vợ mình.) - Sai, vì anh ấy đang hoảng sợ, không phải vui vẻ.</li>    </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

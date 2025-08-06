@@ -1,0 +1,584 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 41 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87760				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/12				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp2-1664816483_cbddd866738059d7fa90.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>In this part, you will hear three conversations. The conversations will be played once only. There are four questions for each conversation.<br>
+For each question, choose the right answer A, B, C, or D. Part 2, questions 9 to 12. First, you will have some time to look at questions 9 to 12. Now we're ready to start.<br>
+Listen and answer questions 9 to 12. You will hear the recording once only. <br>
+My daily schedule as a dental hygienist is a little complicated.<br>
+That's because it's different every day. Monday, I don't go into work until late in the afternoon, so I have time to spend most of the day doing washing of clothes, shopping, and my banking. I leave for work around 4 o'clock in the afternoon and work from 5 to 9 p.m. Tuesday, I wake up at 6.30 a.m. and leave for work at 7.30. My first patient is scheduled for 8.15. Each patient is allotted 45 minutes.<br>
+Lunch break is 12.30 to 1.30. I finish up at 5 p.m. and get home at around 6 p.m. Wednesday starts an hour earlier. I wake up at 5.30 a.m., leave for work at 6.30, and see my first patient at 7 a.m. I also finish early on Wednesday at 12 noon. Thursday is the same schedule as Tuesday, getting up at 6.30 a.m., leaving for work at 7.30, and seeing my first patient at 8.15. I get home about 6 p.m. in the evening.<br>
+Friday is another early start. I wake up at 5.30 a.m., leave the house at 6.30, and finish up my last patient at 3 o'clock in the afternoon. I like to get finished early on Friday.<br>
+That is a typical work week for me. Now you will have some time to review questions 9 to 12. <br>
+Part 2, Questions 13 to 16.<br>
+First you will have some time to look at questions 13 to 16. Now we're ready to start. Listen and answer questions 13 to 16.<br>
+You will hear the recording once only. Hi sis, I just came over to drop off the DVDs you wanted and... Hey, wow! Where did you get all this stuff? I bought it. So what do you think of my new entertainment center? And the widescreen TV? Bought it.<br>
+And my new DVD player. Here, let me show you my stereo. You can really rock the house with this one.<br>
+But where did you get the dough to buy all this? You didn't borrow money from Mom and Dad again, did you? Of course not. I got it with this. This? Let me see that.<br>
+Have you been using Dad's credit card again? No, silly. It's mine. It's a student credit card.<br>
+A student credit card? How in the world did you get one of these? I got an application in the mail. Well, why did you get one in the first place? Listen, times are changing, and having a credit card helps you build a credit rating, control spending, and even buy things that you can't pay with cash. Like the plane ticket I got recently.<br>
+What plane ticket? Oh yeah, my roommate and I are going to Hawaii over the school break, and of course I need some new clothes for that, so... I don't want to hear it. How does having a student credit card control spending? It sounds like you've spent yourself into a hole. Anyway, student credit cards just lead to impulse spending, as I can see here, and the interest rates of student credit cards are usually sky high, and if you miss a payment, the rates, well, just jump.<br>
+The credit card has a credit limit... Of $20,000? No, not quite that high. Anyway... I've heard enough. Did I tell you we now get digital cable with over 100 channels? Oh, and here's your birthday present, a new MP3 player.<br>
+Yeah... No, don't tell me. Charged on the credit card. Listen, hey, I don't think having a student credit card is a bad idea, but this is ridiculous.<br>
+And how in the world are you going to pay off your credit card bill? Uh, with my birthday money? It's coming up in a week. Hey, let's sit down and talk about how you're going to pay things back, and maybe we can come up with a budget that will help you get out of this mess. That's the least I can do.<br>
+Now you will have some time to review questions 13 to 16. Part 2, questions 17 to 20. <br>
+First you will have some time to look at questions 17 to 20.<br>
+Now we're ready to start. Listen, and answer questions 17 to 20. You will hear the recording once only.<br>
+Hi, welcome to Joe's Hamburger Restaurant, home of the One Pound Super Deluxe Hot and Spicy Cheeseburger. Will this be for here or to go? Uh, to go. Okay, what would you like today? Would you like to try the One Pound Super Hot and Spicy Cheeseburger? I don't think so.<br>
+I'd probably have heartburn for a week after downing that monster. Well, it's our house special this week, and it comes with fries and a large specialty drink called Everything But The Kitchen Sink. A what? Everything But The Kitchen Sink? What in the world is that? Well, it's a little mix of everything in a large cup.<br>
+Pepsi, Sprite, Fanta Orange, and Lemonade, with crust ice and a scoop of ice cream. Now that sounds disgusting. Hey, it'll grow on you.<br>
+Nah, I think I'll just order a hamburger with some mustard and lettuce and a glass of water. Boring. Hey, would you care for anything else, like a side order of amazing cheesy onion rings? No, thank you.<br>
+Onion rings usually don't agree with me. Hmm, okay. Your total comes to $10.90. $10.90? For just a hamburger? You gotta be kidding! Well, the One Pound Super Deluxe Hamburger is $9.<br>
+Hey, I didn't order a One Pound Burger. I just wanted a simple burger, that's all. Well, sir, Joe's Hamburger Restaurant only serves One Pound Burgers.<br>
+Man. The One Pound Super Hot and Spicy, the One Pound Barbecue Burger, and the One Pound Bacon Cheeseburger. The One Pound... No, no, those are all huge.<br>
+Well, sir, if you really want something smaller, yeah, you should order from the kids' menu. The Half Pound Super Hot and Spicy Burger, the Half Pound Barbecue Burger, the Half Pound Bacon Cheeseburger, the Half Pound... No, those are still giant burgers. Well, in these parts, we are hearty eaters.<br>
+Okay, but you said my total was $10.90, but the burger only comes to $10. What about the other $0.90? Well, sir, we only serve natural spring water from yonder hills. Okay, okay.<br>
+I'll take the giant burger and a bottle of your spring water. The sandwich should feed me for a week. Now you will have some time to review questions 17 to 20.<br>
+That is the end of Part 2.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 2 Trong phần này, bạn sẽ nghe ba đoạn hội thoại. Mỗi đoạn hội thoại chỉ được phát một lần duy nhất. Có bốn câu hỏi cho mỗi đoạn hội thoại. Với mỗi câu hỏi, hãy chọn câu trả lời đúng: A, B, C hoặc D. Câu 9 đến 12 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 9 đến 12. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 9 đến 12. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Lịch trình làm việc hàng ngày của một chuyên viên vệ sinh răng miệng Lịch làm việc hàng ngày của tôi với tư cách là một chuyên viên vệ sinh răng miệng hơi phức tạp. Bởi vì mỗi ngày lại khác nhau. Thứ Hai, tôi không đi làm cho đến chiều muộn, nên tôi dành phần lớn ngày để giặt quần áo, đi mua sắm và thực hiện các giao dịch ngân hàng. Tôi rời nhà lúc 4 giờ chiều và làm việc từ 5 giờ đến 9 giờ tối. Thứ Ba, tôi thức dậy lúc 6:30 sáng, rời nhà lúc 7:30 và gặp bệnh nhân đầu tiên lúc 8:15. Mỗi bệnh nhân được phân bổ 45 phút. Giờ nghỉ trưa là từ 12:30 đến 1:30, và tôi kết thúc lúc 5 giờ chiều, về nhà vào khoảng 6 giờ tối. Thứ Tư bắt đầu sớm hơn một giờ. Tôi thức dậy lúc 5:30 sáng, rời nhà lúc 6:30, và gặp bệnh nhân đầu tiên lúc 7 giờ sáng. Hôm nay tôi cũng kết thúc sớm vào lúc 12 giờ trưa. Thứ Năm có lịch trình giống như Thứ Ba, thức dậy lúc 6:30 sáng, rời nhà lúc 7:30, gặp bệnh nhân đầu tiên lúc 8:15, và về nhà lúc 6 giờ tối. Thứ Sáu cũng bắt đầu sớm. Tôi thức dậy lúc 5:30 sáng, rời nhà lúc 6:30, và gặp bệnh nhân cuối cùng lúc 3 giờ chiều. Tôi thích kết thúc công việc sớm vào thứ Sáu. Đó là một tuần làm việc điển hình của tôi. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 9 đến 12. Câu 13 đến 16 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 13 đến 16. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 13 đến 16. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Thẻ tín dụng sinh viên Chào em gái! Chị đến để trả lại đĩa DVD mà em mượn và... Này, wow! Em lấy đâu ra đống đồ này vậy? Em mua đó. Thế chị nghĩ gì về hệ thống giải trí mới của em? Và cái TV màn hình rộng này? Em cũng mới mua đó. Còn cả đầu đĩa DVD mới này nữa. Đây, để em cho chị xem dàn loa của em. Cực chất luôn! Nhưng mà em lấy đâu ra tiền để mua tất cả những thứ này? Đừng nói là lại vay tiền bố mẹ nữa nhé? Dĩ nhiên là không. Em mua bằng cái này. Cái này? Đưa chị xem nào. Đừng nói là em lại dùng thẻ tín dụng của bố nữa nhé? Không, ngốc ạ! Đây là thẻ tín dụng sinh viên của em. Thẻ tín dụng sinh viên? Sao em có được thứ này? Em nhận được đơn đăng ký qua thư. Thế sao em lại muốn có thẻ tín dụng ngay từ đầu? Nghe này, thời thế thay đổi rồi. Có thẻ tín dụng giúp em xây dựng điểm tín dụng, kiểm soát chi tiêu, và mua những thứ mà không thể thanh toán bằng tiền mặt. Như là vé máy bay em vừa mua. Khoan đã, vé máy bay gì? Ồ đúng rồi, em quên nói. Em và bạn cùng phòng sẽ đi Hawaii vào kỳ nghỉ sắp tới. Và tất nhiên, em cũng cần mua quần áo mới để đi du lịch nữa... Chị không muốn nghe thêm nữa! Em bảo là thẻ tín dụng giúp kiểm soát chi tiêu á? Chị thấy nó chỉ khiến em vung tiền không kiểm soát thôi! Với lại, lãi suất của thẻ tín dụng sinh viên thường rất cao, nếu em trễ hạn thanh toán, nó sẽ tăng vọt. Giới hạn tín dụng của em là bao nhiêu? $20.000 à? Không, không cao đến mức đó. Dù sao thì... Chị nghe đủ rồi. Chị nói cho em biết nhé, giờ chị đã có truyền hình kỹ thuật số hơn 100 kênh. Và đây là quà sinh nhật của em – một máy nghe nhạc MP3 mới. Chờ đã... Đừng nói với chị là... Ừ, đúng rồi, mua bằng thẻ tín dụng. Nghe này, chị không nghĩ rằng thẻ tín dụng sinh viên là một ý tồi, nhưng mà như thế này thì quá đáng lắm. Vậy em tính trả nợ bằng cách nào? Ờ... Bằng tiền sinh nhật của em chăng? Sinh nhật em sắp đến rồi mà. Được rồi, hãy ngồi xuống và bàn về cách trả nợ. Có lẽ chúng ta có thể lập một kế hoạch chi tiêu giúp em thoát khỏi tình trạng này. Đó là điều ít nhất chị có thể làm. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 13 đến 16. Câu 17 đến 20 Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 17 đến 20. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 17 đến 20. Bạn sẽ chỉ được nghe đoạn ghi âm một lần duy nhất. Nhà hàng bánh burger khổng lồ Xin chào! Chào mừng đến với Nhà hàng Joe’s Burger, nơi có món Burger siêu cay đặc biệt nặng 1 pound. Anh muốn dùng tại đây hay mang đi? Ờ... Mang đi. Anh có muốn thử Burger siêu cay 1 pound không? Tôi không nghĩ vậy... Chắc tôi sẽ bị đau dạ dày cả tuần nếu ăn hết cái bánh khổng lồ đó. Món này là đặc sản của quán tuần này, đi kèm với khoai tây chiên và một ly nước đặc biệt có tên là "Mọi thứ trừ bồn rửa bát". Gì cơ? "Mọi thứ trừ bồn rửa bát"? Cái quái gì vậy? À, đó là một ly nước trộn tất cả mọi thứ – Pepsi, Sprite, Fanta Cam, Nước chanh, đá bào, và một viên kem. Nghe... ghê quá. Anh cứ thử đi, rồi sẽ quen thôi. Không, tôi chỉ muốn một chiếc hamburger với mù tạt và rau xà lách, kèm một ly nước lọc. Anh thật chán! Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 17 đến 20. Phần 2 kết thúc tại đây.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: What hours does the speaker work on Monday?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 8:15 AM to 5 PM															</div>
+																				<div class="ps-4 mb-2">
+																	B. 7 AM to 12 PM															</div>
+																				<div class="ps-4 mb-2">
+																	C. Noon to 6 PM															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. 5 PM to 9 PM</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>5 PM to 9 PM.</strong></span> ✅ (Từ 5 giờ chiều đến 9 giờ tối.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"Monday, I don't go into work until late in the afternoon, so I have time to spend most of the day doing washing of clothes, shopping, and my banking. I leave for work around 4 o'clock in the afternoon and work from 5 to 9 p.m."</p>     <p>"Vào thứ Hai, tôi không đi làm cho đến chiều muộn, vì vậy tôi có thời gian dành cả ngày để giặt giũ, mua sắm và làm ngân hàng. Tôi rời nhà lúc khoảng 4 giờ chiều và làm việc từ <strong>5 giờ chiều đến 9 giờ tối</strong>."</p>      <p>Bài nghe xác nhận rằng <strong>người nói làm việc từ 5 giờ chiều đến 9 giờ tối vào thứ Hai</strong>. Do đó, đáp án chính xác là <strong>5 PM to 9 PM.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">Noon to 6 PM.</span> ❌ (Từ trưa đến 6 giờ tối.) - Sai, vì bài nghe nói rõ rằng cô ấy làm việc từ 5 đến 9 giờ tối.</li>                 <li><span class="text-danger">8:15 AM to 5 PM.</span> ❌ (Từ 8:15 sáng đến 5 giờ chiều.) - Sai, vì đây là lịch làm việc của cô ấy vào thứ Ba và thứ Năm, không phải thứ Hai.</li>                 <li><span class="text-danger">7 AM to 12 PM.</span> ❌ (Từ 7 giờ sáng đến 12 giờ trưa.) - Sai, vì lịch này thuộc về thứ Tư, không phải thứ Hai.</li>                 <li><span class="text-success"><strong>5 PM to 9 PM.</strong></span> ✅ (Từ 5 giờ chiều đến 9 giờ tối.) - Đúng, vì bài nghe xác nhận rằng đó là giờ làm việc của cô ấy vào thứ Hai.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: On which two days does the speaker have the same schedule?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Wednesday and Thursday															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. Tuesday and Thursday</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. Monday and Tuesday															</div>
+																				<div class="ps-4 mb-2">
+																	D. Thursday and Friday															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>Tuesday and Thursday.</strong></span> ✅ (Thứ Ba và Thứ Năm.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"Tuesday, I wake up at 6.30 a.m. and leave for work at 7.30. My first patient is scheduled for 8.15. Each patient is allotted 45 minutes. Lunch break is 12.30 to 1.30. I finish up at 5 p.m. and get home at around 6 p.m."</p>     <p>"Thursday is the same schedule as Tuesday, getting up at 6.30 a.m., leaving for work at 7.30, and seeing my first patient at 8.15. I get home about 6 p.m. in the evening."</p>      <p>Bài nghe xác nhận rằng <strong>lịch trình của người nói vào Thứ Ba và Thứ Năm là giống nhau</strong>. Do đó, đáp án chính xác là <strong>Tuesday and Thursday.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">Monday and Tuesday.</span> ❌ (Thứ Hai và Thứ Ba.) - Sai, vì lịch làm việc của Thứ Hai khác hoàn toàn so với Thứ Ba.</li>                 <li><span class="text-danger">Wednesday and Thursday.</span> ❌ (Thứ Tư và Thứ Năm.) - Sai, vì lịch làm việc của Thứ Tư khác với Thứ Năm.</li>                 <li><span class="text-success"><strong>Tuesday and Thursday.</strong></span> ✅ (Thứ Ba và Thứ Năm.) - Đúng, vì bài nghe xác nhận rằng hai ngày này có cùng lịch trình.</li>                 <li><span class="text-danger">Thursday and Friday.</span> ❌ (Thứ Năm và Thứ Sáu.) - Sai, vì lịch của Thứ Sáu kết thúc sớm hơn so với Thứ Năm.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: What is the main purpose of the speaker talk?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. To compare the work of doctors and dentists															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. To describe a typical week at work</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. To explain the details of a day at work															</div>
+																				<div class="ps-4 mb-2">
+																	D. To discuss the importance of the job															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>To describe a typical week at work.</strong></span> ✅ (Mô tả một tuần làm việc điển hình.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói bắt đầu bằng cách giới thiệu về lịch trình làm việc của mình:</p>    <p>"My daily schedule as a dental hygienist is a little complicated. That's because it's different every day."</p>     <p>"Lịch trình làm việc hàng ngày của tôi với tư cách là một nhân viên vệ sinh răng miệng khá phức tạp. Đó là vì nó khác nhau mỗi ngày."</p>      <p>Người nói tiếp tục mô tả chi tiết lịch trình làm việc từ Thứ Hai đến Thứ Sáu, cho thấy rằng <strong>mục đích chính của bài nói là để mô tả một tuần làm việc điển hình</strong>. Do đó, đáp án chính xác là <strong>To describe a typical week at work.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">To discuss the importance of the job.</span> ❌ (Thảo luận về tầm quan trọng của công việc.) - Sai, vì bài nghe không tập trung vào tầm quan trọng của công việc mà chỉ mô tả lịch làm việc.</li>                 <li><span class="text-danger">To compare the work of doctors and dentists.</span> ❌ (So sánh công việc của bác sĩ và nha sĩ.) - Sai, vì bài nghe không có sự so sánh nào giữa bác sĩ và nha sĩ.</li>                 <li><span class="text-success"><strong>To describe a typical week at work.</strong></span> ✅ (Mô tả một tuần làm việc điển hình.) - Đúng, vì toàn bộ bài nghe tập trung vào việc mô tả lịch trình làm việc trong một tuần.</li>                 <li><span class="text-danger">To explain the details of a day at work.</span> ❌ (Giải thích chi tiết về một ngày làm việc.) - Sai, vì bài nghe mô tả cả tuần làm việc, không chỉ một ngày.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What does the speaker think of her work?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It is too complicated to remember.															</div>
+																				<div class="ps-4 mb-2">
+																	B. She enjoys sleeping late every morning.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. It is difficult to describe her schedule.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. She enjoys helping the patients.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>It is difficult to describe her schedule.</strong></span> ✅ (Rất khó để mô tả lịch trình của cô ấy.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người nói đề cập:</p>    <p>"My daily schedule as a dental hygienist is a little complicated. That's because it's different every day."</p>     <p>"Lịch trình làm việc hàng ngày của tôi với tư cách là một nhân viên vệ sinh răng miệng khá <strong>phức tạp</strong>. Đó là vì nó khác nhau mỗi ngày."</p>      <p>Bài nghe xác nhận rằng <strong>người nói cảm thấy lịch trình làm việc của mình khó mô tả vì nó thay đổi theo từng ngày</strong>. Do đó, đáp án chính xác là <strong>It is difficult to describe her schedule.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">She enjoys sleeping late every morning.</span> ❌ (Cô ấy thích ngủ muộn mỗi sáng.) - Sai, vì bài nghe cho thấy cô ấy dậy sớm vào nhiều ngày trong tuần.</li>                 <li><span class="text-success"><strong>It is difficult to describe her schedule.</strong></span> ✅ (Rất khó để mô tả lịch trình của cô ấy.) - Đúng, vì bài nghe xác nhận rằng lịch trình của cô ấy thay đổi mỗi ngày và khá phức tạp.</li>                 <li><span class="text-danger">She enjoys helping the patients.</span> ❌ (Cô ấy thích giúp đỡ bệnh nhân.) - Sai, vì bài nghe không đề cập đến điều này.</li>                 <li><span class="text-danger">It is too complicated to remember.</span> ❌ (Nó quá phức tạp để nhớ.) - Sai, vì bài nghe chỉ nói rằng lịch trình phức tạp, không nói rằng cô ấy không thể nhớ nó.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: According to the conversation, which item did the woman NOT purchase with her credit card?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. a digital camera</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. DVD player															</div>
+																				<div class="ps-4 mb-2">
+																	C. a stereo															</div>
+																				<div class="ps-4 mb-2">
+																	D. a TV															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>a digital camera.</strong></span> ✅ (Một máy ảnh kỹ thuật số.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người phụ nữ liệt kê các món đồ cô ấy đã mua:</p>    <p>"So what do you think of my new entertainment center? And the widescreen TV? Bought it. And my new DVD player. Here, let me show you my stereo."</p>     <p>"Vậy anh nghĩ gì về <strong>trung tâm giải trí</strong> mới của tôi? Và <strong>chiếc TV màn hình rộng</strong>? Tôi đã mua nó. Và <strong>đầu DVD</strong> mới của tôi. Đây, để tôi cho anh xem <strong>dàn âm thanh</strong> của tôi."</p>      <p>Bài nghe xác nhận rằng cô ấy đã mua một <strong>TV, đầu DVD và dàn âm thanh (stereo)</strong>, nhưng không đề cập đến việc mua <strong>máy ảnh kỹ thuật số (digital camera)</strong>. Do đó, đáp án chính xác là <strong>a digital camera.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>a digital camera.</strong></span> ✅ (Một máy ảnh kỹ thuật số.) - Đúng, vì bài nghe không đề cập đến việc cô ấy mua máy ảnh kỹ thuật số.</li>                 <li><span class="text-danger">DVD player.</span> ❌ (Đầu DVD.) - Sai, vì cô ấy đã nói rằng mình mua một đầu DVD.</li>                 <li><span class="text-danger">a TV.</span> ❌ (Một TV.) - Sai, vì cô ấy đã nói rằng mình mua một chiếc TV màn hình rộng.</li>                 <li><span class="text-danger">a stereo.</span> ❌ (Một dàn âm thanh.) - Sai, vì cô ấy cũng đã mua một dàn âm thanh.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: What is one reason to explain why the woman obtained a student credit card?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. She hopes to establish a good credit rating.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. She wants to buy things at a discount using the card.															</div>
+																				<div class="ps-4 mb-2">
+																	C. She doesn't want to borrow from her parents.															</div>
+																				<div class="ps-4 mb-2">
+																	D. She can be financially independent.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>She hopes to establish a good credit rating.</strong></span> ✅ (Cô ấy hy vọng xây dựng điểm tín dụng tốt.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người phụ nữ nói:</p>    <p>"Listen, times are changing, and having a credit card helps you build a credit rating, control spending, and even buy things that you can't pay with cash."</p>     <p>"Nghe này, thời đại đang thay đổi, và việc có một thẻ tín dụng giúp bạn <strong>xây dựng điểm tín dụng</strong>, kiểm soát chi tiêu, và thậm chí mua những thứ mà bạn không thể thanh toán bằng tiền mặt."</p>      <p>Bài nghe xác nhận rằng <strong>người phụ nữ muốn có thẻ tín dụng để xây dựng điểm tín dụng tốt</strong>. Do đó, đáp án chính xác là <strong>She hopes to establish a good credit rating.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">She wants to buy things at a discount using the card.</span> ❌ (Cô ấy muốn mua hàng giảm giá bằng thẻ.) - Sai, vì bài nghe không đề cập đến việc cô ấy sử dụng thẻ để mua hàng giảm giá.</li>                 <li><span class="text-success"><strong>She hopes to establish a good credit rating.</strong></span> ✅ (Cô ấy hy vọng xây dựng điểm tín dụng tốt.) - Đúng, vì bài nghe xác nhận rằng cô ấy muốn xây dựng điểm tín dụng.</li>                 <li><span class="text-danger">She doesn't want to borrow from her parents.</span> ❌ (Cô ấy không muốn vay tiền từ cha mẹ.) - Sai, vì bài nghe không đề cập đến lý do này.</li>                 <li><span class="text-danger">She can be financially independent.</span> ❌ (Cô ấy có thể tự lập về tài chính.) - Sai, vì bài nghe không nói rằng cô ấy muốn dùng thẻ để độc lập tài chính.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What does the woman imply about how she plans on resolving her credit card problems?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. She is going to return the items she purchased on the card.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. She hopes that someone will give her the money.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. She plans on getting rid of her student credit cards.															</div>
+																				<div class="ps-4 mb-2">
+																	D. She'll get a part-time job.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>She hopes that someone will give her the money.</strong></span> ✅ (Cô ấy hy vọng ai đó sẽ đưa tiền cho mình.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, khi được hỏi về cách trả nợ thẻ tín dụng, người phụ nữ nói:</p>    <p>"Uh, with my birthday money? It's coming up in a week."</p>     <p>"Ừm, bằng <strong>tiền sinh nhật của tôi</strong>? Sinh nhật tôi sắp đến trong một tuần."</p>      <p>Bài nghe xác nhận rằng <strong>người phụ nữ dự định dùng tiền sinh nhật (từ người khác tặng) để trả nợ thẻ tín dụng</strong>. Do đó, đáp án chính xác là <strong>She hopes that someone will give her the money.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>She hopes that someone will give her the money.</strong></span> ✅ (Cô ấy hy vọng ai đó sẽ đưa tiền cho mình.) - Đúng, vì cô ấy dự định dùng tiền sinh nhật để trả nợ.</li>                 <li><span class="text-danger">She plans on getting rid of her student credit cards.</span> ❌ (Cô ấy dự định bỏ thẻ tín dụng sinh viên.) - Sai, vì bài nghe không nói rằng cô ấy sẽ ngừng sử dụng thẻ.</li>                 <li><span class="text-danger">She'll get a part-time job.</span> ❌ (Cô ấy sẽ kiếm một công việc bán thời gian.) - Sai, vì bài nghe không đề cập đến việc cô ấy sẽ đi làm thêm để trả nợ.</li>                 <li><span class="text-danger">She is going to return the items she purchased on the card.</span> ❌ (Cô ấy sẽ trả lại những món đồ đã mua bằng thẻ.) - Sai, vì bài nghe không nói rằng cô ấy định trả lại hàng.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: What is the man going to do for the woman to help her manage her money?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. show her how she can apply for low-interest student credit cards															</div>
+																				<div class="ps-4 mb-2">
+																	B. help her find a better paying job to cover her expenses															</div>
+																				<div class="ps-4 mb-2">
+																	C. teach her how to shop wisely															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. teach her how to prepare a financial management plan</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>teach her how to prepare a financial management plan.</strong></span> ✅ (Dạy cô ấy cách lập kế hoạch quản lý tài chính.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, người đàn ông nói:</p>    <p>"Hey, let's sit down and talk about how you're going to pay things back, and maybe we can come up with a budget that will help you get out of this mess. That's the least I can do."</p>     <p>"Này, hãy ngồi xuống và nói về cách bạn sẽ trả nợ, và có thể chúng ta sẽ lập một <strong>kế hoạch ngân sách</strong> để giúp bạn thoát khỏi tình trạng này. Đó là điều ít nhất tôi có thể làm."</p>      <p>Bài nghe xác nhận rằng <strong>người đàn ông sẽ giúp người phụ nữ lập kế hoạch quản lý tài chính để trả nợ</strong>. Do đó, đáp án chính xác là <strong>teach her how to prepare a financial management plan.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">help her find a better paying job to cover her expenses.</span> ❌ (Giúp cô ấy tìm một công việc lương cao hơn để trang trải chi phí.) - Sai, vì bài nghe không đề cập đến việc tìm việc làm.</li>                 <li><span class="text-success"><strong>teach her how to prepare a financial management plan.</strong></span> ✅ (Dạy cô ấy cách lập kế hoạch quản lý tài chính.) - Đúng, vì bài nghe xác nhận rằng người đàn ông sẽ giúp cô ấy lập kế hoạch ngân sách.</li>                 <li><span class="text-danger">show her how she can apply for low-interest student credit cards.</span> ❌ (Chỉ cho cô ấy cách đăng ký thẻ tín dụng sinh viên lãi suất thấp.) - Sai, vì bài nghe không đề cập đến thẻ tín dụng mới.</li>                 <li><span class="text-danger">teach her how to shop wisely.</span> ❌ (Dạy cô ấy cách mua sắm thông minh.) - Sai, vì bài nghe tập trung vào việc lập kế hoạch tài chính hơn là mua sắm.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: Why does the customer not buy the recommended sandwich at the beginning of the conversation?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. He fears the food will make him sick.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. He is not interested in ordering a burger.															</div>
+																				<div class="ps-4 mb-2">
+																	C. It is too expensive.															</div>
+																				<div class="ps-4 mb-2">
+																	D. It is not tasty.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>He fears the food will make him sick.</strong></span> ✅ (Anh ấy sợ món ăn sẽ làm anh ấy bị đau bụng.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, nhân viên cửa hàng nói:</p>    <p>"Would you like to try the One Pound Super Hot and Spicy Cheeseburger?"</p>     <p>"Anh có muốn thử món <strong>One Pound Super Hot and Spicy Cheeseburger</strong> không?"</p>      <p>Khách hàng từ chối và nói:</p>    <p>"I don't think so. I'd probably have heartburn for a week after downing that monster."</p>     <p>"Tôi không nghĩ vậy. Tôi có thể sẽ bị <strong>ợ nóng suốt một tuần</strong> sau khi ăn con quái vật đó."</p>      <p>Bài nghe xác nhận rằng <strong>khách hàng không mua chiếc bánh burger được đề xuất vì sợ nó sẽ khiến anh ấy bị đau bụng (ợ nóng)</strong>. Do đó, đáp án chính xác là <strong>He fears the food will make him sick.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">It is too expensive.</span> ❌ (Nó quá đắt.) - Sai, vì khách hàng không từ chối do giá cả.</li>                 <li><span class="text-danger">He is not interested in ordering a burger.</span> ❌ (Anh ấy không hứng thú với việc gọi burger.) - Sai, vì sau đó anh ấy vẫn gọi một chiếc burger.</li>                 <li><span class="text-danger">It is not tasty.</span> ❌ (Nó không ngon.) - Sai, vì khách hàng không nói rằng món ăn không ngon.</li>                 <li><span class="text-success"><strong>He fears the food will make him sick.</strong></span> ✅ (Anh ấy sợ món ăn sẽ làm anh ấy bị đau bụng.) - Đúng, vì bài nghe xác nhận rằng anh ấy lo ngại bị ợ nóng sau khi ăn.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: How does the specialty drink get its name?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It is prepared in the kitchen sink.															</div>
+																				<div class="ps-4 mb-2">
+																	B. It contains chicken soup.															</div>
+																				<div class="ps-4 mb-2">
+																	C. It comes in a very large cup.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. It contains a wide range of ingredients.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>It contains a wide range of ingredients.</strong></span> ✅ (Nó chứa nhiều loại nguyên liệu khác nhau.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, nhân viên cửa hàng nói:</p>    <p>"Well, it's a little mix of everything in a large cup. Pepsi, Sprite, Fanta Orange, and Lemonade, with crushed ice and a scoop of ice cream."</p>     <p>"À, nó là <strong>sự kết hợp của nhiều thứ</strong> trong một chiếc cốc lớn. Gồm Pepsi, Sprite, Fanta cam, nước chanh, đá bào và một muỗng kem."</p>      <p>Bài nghe xác nhận rằng <strong>đồ uống đặc biệt có tên gọi đó vì nó chứa nhiều loại nguyên liệu khác nhau</strong>. Do đó, đáp án chính xác là <strong>It contains a wide range of ingredients.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>It contains a wide range of ingredients.</strong></span> ✅ (Nó chứa nhiều loại nguyên liệu khác nhau.) - Đúng, vì bài nghe xác nhận đồ uống có nhiều thành phần khác nhau.</li>                 <li><span class="text-danger">It is prepared in the kitchen sink.</span> ❌ (Nó được pha chế trong bồn rửa bát.) - Sai, vì tên gọi của đồ uống không liên quan đến bồn rửa.</li>                 <li><span class="text-danger">It contains chicken soup.</span> ❌ (Nó chứa súp gà.) - Sai, vì bài nghe không đề cập đến súp gà.</li>                 <li><span class="text-danger">It comes in a very large cup.</span> ❌ (Nó được phục vụ trong một chiếc cốc rất lớn.) - Sai, vì dù nó được phục vụ trong cốc lớn, nhưng lý do chính cho tên gọi là do có nhiều thành phần.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: Why was the man surprised by the price of his meal?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He thought the drink should have been included.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. He felt the meal was way overpriced.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. It was lower than he had expected.															</div>
+																				<div class="ps-4 mb-2">
+																	D. He was charged for two sandwiches instead of one.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>He felt the meal was way overpriced.</strong></span> ✅ (Anh ấy cảm thấy bữa ăn quá đắt.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, khi nhân viên tính tiền, khách hàng phản ứng:</p>    <p>"Your total comes to $10.90."</p>     <p>"Tổng cộng là 10,90 đô."</p>      <p>Khách hàng ngạc nhiên và nói:</p>    <p>"$10.90? For just a hamburger? You gotta be kidding!"</p>     <p>"10,90 đô? Chỉ cho một chiếc hamburger thôi á? Anh đùa tôi à!"</p>      <p>Bài nghe xác nhận rằng <strong>người đàn ông ngạc nhiên vì anh ấy cảm thấy bữa ăn quá đắt</strong>. Do đó, đáp án chính xác là <strong>He felt the meal was way overpriced.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-danger">He thought the drink should have been included.</span> ❌ (Anh ấy nghĩ rằng đồ uống đáng lẽ phải được bao gồm.) - Sai, vì bài nghe không đề cập đến việc đồ uống có bao gồm hay không.</li>                 <li><span class="text-success"><strong>He felt the meal was way overpriced.</strong></span> ✅ (Anh ấy cảm thấy bữa ăn quá đắt.) - Đúng, vì khách hàng ngạc nhiên khi phải trả 10,90 đô chỉ cho một chiếc burger.</li>                 <li><span class="text-danger">He was charged for two sandwiches instead of one.</span> ❌ (Anh ấy bị tính tiền hai chiếc sandwich thay vì một.) - Sai, vì bài nghe không nhắc đến việc anh ấy bị tính nhầm hai suất ăn.</li>                 <li><span class="text-danger">It was lower than he had expected.</span> ❌ (Giá thấp hơn anh ấy mong đợi.) - Sai, vì anh ấy cảm thấy giá quá cao chứ không phải thấp.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: What does the customer decide to do at the end of the conversation?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He plans to come back at weekend.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. He orders something from the restaurant menu.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. He decides to look for another place to eat.															</div>
+																				<div class="ps-4 mb-2">
+																	D. He plans to come in a week when the prices are lower.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>    <p><span class="text-success"><strong>He orders something from the restaurant menu.</strong></span> ✅ (Anh ấy gọi món từ thực đơn của nhà hàng.)</p>      <p><strong>Giải thích chi tiết:</strong></p>    <p>Trong bài nghe, sau khi ngạc nhiên về giá cả, khách hàng nói:</p>    <p>"Okay, okay. I'll take the giant burger and a bottle of your spring water. The sandwich should feed me for a week."</p>     <p>"Được rồi, được rồi. Tôi sẽ lấy chiếc burger khổng lồ và một chai nước suối của các anh. Cái bánh này chắc đủ ăn trong một tuần."</p>      <p>Bài nghe xác nhận rằng <strong>cuối cùng khách hàng vẫn quyết định gọi món từ thực đơn của nhà hàng</strong>. Do đó, đáp án chính xác là <strong>He orders something from the restaurant menu.</strong></p>      <p><strong>Phân tích các lựa chọn:</strong></p>    <ul>                 <li><span class="text-success"><strong>He orders something from the restaurant menu.</strong></span> ✅ (Anh ấy gọi món từ thực đơn của nhà hàng.) - Đúng, vì cuối cùng anh ấy chọn mua chiếc burger khổng lồ và nước suối.</li>                 <li><span class="text-danger">He plans to come back at weekend.</span> ❌ (Anh ấy dự định quay lại vào cuối tuần.) - Sai, vì bài nghe không đề cập đến việc anh ấy sẽ quay lại vào cuối tuần.</li>                 <li><span class="text-danger">He decides to look for another place to eat.</span> ❌ (Anh ấy quyết định tìm một nơi khác để ăn.) - Sai, vì anh ấy không rời đi mà vẫn gọi món.</li>                 <li><span class="text-danger">He plans to come in a week when the prices are lower.</span> ❌ (Anh ấy dự định quay lại sau một tuần khi giá rẻ hơn.) - Sai, vì bài nghe không đề cập đến việc giá cả sẽ giảm trong tuần tới.</li>    </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

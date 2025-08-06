@@ -1,0 +1,492 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 31 - Part 1				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87750				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/8				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp1-1664863626_20ff466799e078eab6db.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>This is the Vietnamese Standardized Test of English Proficiency Listening Comprehension Test.<br>
+You will listen to a number of different recordings, and you will have to answer questions based on what you hear. There will be time for you to read the questions and check your work. All the recordings will be played once only.<br>
+In this part, you will hear eight short recordings. The recordings will be played once only. There is one question following each recording.<br>
+For each question, choose the right answer A, B, C, or D. Now, let's listen to the example. On the recording, you might hear... Hello, this is the travel agency returning your call. You left a message about the holiday you've booked, asking which meals are included in the cost during your stay at Sunny Hotel.<br>
+Lunch and dinner are free, but if you wish to have breakfast in the hotel, you will need to pay an extra amount of money, depending on what you order. Let me know if I can help you with any other information. Goodbye.<br>
+You will read... Which meal is not included in the price of the holiday? A. Breakfast B. Lunch C. Dinner D. All The correct answer is A, breakfast. First, you will have some time to look at questions 1 to 8. Now we're ready to start. Listen and answer questions 1 to 8.&nbsp;<br>
+1. When will the football match start next week?<br>
+Does the football match start at quarter past 12 every week? No, it was early this week.<br>
+It usually begins at 10. So, it'll be the usual time next week. Yes.<br>
+2. Which box of chocolates do they buy? Which box of chocolates shall we get Mum for her birthday? Those round boxes with the flowers on are nice. Yes, but that square box is cheaper. But it's Mum's birthday! Let's get the big round one.<br>
+We've got enough money. OK.&nbsp;<br>
+3. When's Wendy's birthday? Wendy, you're 21 on Saturday, aren't you? No, my birthday's on May the 18th.<br>
+Well, Saturday is the 18th. No, it's not. It's the 16th.<br>
+4. Which tie does the man choose? Which tie shall I wear for the interview? Do you think my blue silk one would look all right? A bit boring. I'd wear something with a small pattern. Squares or spots.<br>
+Something like that. Oh, I don't know. I think I'll wear the plain one.<br>
+5. What time is the appointment?&nbsp;<br>
+Dr Brown's clinic. Can I help you? Yes. Can I have an appointment to see the doctor, please? Well, he's free at quarter past 11 today or tomorrow at quarter past 10 or 5 to 2. I'll come tomorrow afternoon.<br>
+Thank you.&nbsp;<br>
+6. How did the film end?&nbsp;<br>
+And in this film, a young man and his girlfriend try to rob a bank so they can afford to get married and go round the world together. But he gets caught outside the bank and their dream never comes true.<br>
+7. What time does the train to Rome leave? Excuse me, what time does this train leave? This train leaves for Paris at 5 to 3. Paris? Isn't it the Rome train? No, that goes at 25 past 3 from platform 4.&nbsp;<br>
+8. What is broken?&nbsp;<br>
+I'm terribly sorry, Mum. I've just broken something. Oh, dear.<br>
+What was it? Well, I got up too quickly from the table to answer the phone and knocked one of your plates onto the floor. At least it wasn't your new lamp. Oh, I thought I heard a crash.<br>
+Now you will have some time to review questions 1 to 8. That is the end of part 1.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Đây là bài thi Nghe hiểu của Kỳ thi Đánh giá năng lực tiếng Anh chuẩn Việt Nam (VSTEP). Bạn sẽ nghe một số đoạn ghi âm khác nhau và sẽ phải trả lời các câu hỏi dựa trên những gì bạn nghe được. Bạn sẽ có thời gian để đọc các câu hỏi và kiểm tra lại câu trả lời của mình. Tất cả các đoạn ghi âm chỉ được phát một lần duy nhất. Phần 1 Trong phần này, bạn sẽ nghe tám đoạn ghi âm ngắn. Các đoạn ghi âm sẽ chỉ được phát một lần duy nhất. Có một câu hỏi sau mỗi đoạn ghi âm. Với mỗi câu hỏi, hãy chọn câu trả lời đúng: A, B, C hoặc D. Ví dụ Bây giờ, chúng ta sẽ nghe một ví dụ. Trong đoạn ghi âm, bạn có thể nghe thấy: Xin chào. Đây là đại lý du lịch gọi lại cho bạn. Bạn đã để lại tin nhắn hỏi về kỳ nghỉ mà bạn đã đặt, cụ thể là các bữa ăn được bao gồm trong chi phí lưu trú tại khách sạn Sunny. Bữa trưa và bữa tối đều miễn phí, nhưng nếu bạn muốn ăn sáng tại khách sạn, bạn sẽ cần phải trả thêm phí, tùy thuộc vào món ăn bạn gọi. Hãy cho tôi biết nếu tôi có thể giúp gì thêm. Tạm biệt. Bạn sẽ đọc được câu hỏi sau: Bữa ăn nào không được bao gồm trong giá của kỳ nghỉ? A. Bữa sáng B. Bữa trưa C. Bữa tối D. Tất cả các bữa ăn Câu trả lời đúng là A. Bữa sáng. Trước tiên, bạn sẽ có một chút thời gian để xem trước các câu hỏi từ 1 đến 8. Bây giờ, chúng ta đã sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 1 đến 8. Câu hỏi 1: Khi nào trận đấu bóng đá sẽ bắt đầu vào tuần tới? Trận đấu bóng đá có bắt đầu lúc 12 giờ 15 mỗi tuần không? Không, tuần này nó bắt đầu sớm hơn. Thường thì nó bắt đầu lúc 10 giờ. Vậy tuần tới cũng sẽ diễn ra vào giờ như bình thường nhỉ? Đúng vậy. Câu hỏi 2: Họ mua hộp sô-cô-la nào? Chúng ta mua hộp sô-cô-la nào cho mẹ nhân dịp sinh nhật đây? Những hộp tròn có họa tiết hoa trông đẹp đấy. Ừ, nhưng hộp vuông kia rẻ hơn mà. Nhưng đây là sinh nhật mẹ mà! Hãy mua hộp tròn lớn đi. Chúng ta có đủ tiền mà. Được thôi. Câu hỏi 3: Sinh nhật của Wendy là ngày nào? Wendy, thứ Bảy này cậu tròn 21 tuổi phải không? Không, sinh nhật mình vào ngày 18 tháng 5 cơ. Nhưng thứ Bảy là ngày 18 mà. Không phải đâu. Thứ Bảy là ngày 16. Câu hỏi 4: Người đàn ông chọn chiếc cà vạt nào? Mình nên đeo cà vạt nào để đi phỏng vấn nhỉ? Cậu nghĩ chiếc cà vạt lụa màu xanh của mình có ổn không? Trông hơi đơn điệu. Mình nghĩ cậu nên đeo cái có họa tiết nhỏ, như hình vuông hoặc chấm bi chẳng hạn. Ồ, mình không biết nữa. Mình nghĩ mình sẽ đeo cái trơn vậy. Câu hỏi 5: Cuộc hẹn với bác sĩ là vào lúc mấy giờ? Phòng khám của bác sĩ Brown. Tôi có thể giúp gì cho bạn? Tôi muốn đặt lịch hẹn với bác sĩ. Hôm nay bác sĩ trống lúc 11 giờ 15, hoặc ngày mai lúc 10 giờ 15 hoặc 1 giờ 55 chiều. Tôi sẽ đến vào chiều mai. Cảm ơn bạn. Câu hỏi 6: Bộ phim kết thúc như thế nào? Trong bộ phim này, một chàng trai trẻ và bạn gái của anh ta cố gắng cướp ngân hàng để có tiền kết hôn và đi du lịch vòng quanh thế giới. Nhưng anh ấy bị bắt ngay bên ngoài ngân hàng, và giấc mơ của họ không bao giờ thành hiện thực. Câu hỏi 7: Chuyến tàu đi Rome khởi hành lúc mấy giờ? Xin lỗi, cho tôi hỏi chuyến tàu này khởi hành lúc mấy giờ? Tàu này đi Paris, khởi hành lúc 2 giờ 55 phút. Paris? Chẳng phải đây là tàu đi Rome sao? Không, tàu đi Rome khởi hành lúc 3 giờ 25 phút từ sân ga số 4. Câu hỏi 8: Cái gì bị vỡ? Mẹ ơi, con rất xin lỗi. Con vừa làm vỡ một thứ gì đó. Ôi trời, cái gì vậy? Con đứng dậy quá nhanh khỏi bàn để nghe điện thoại và vô tình làm rơi một cái đĩa của mẹ xuống sàn. Ít nhất nó không phải là chiếc đèn mới của mẹ. Ồ, mẹ cứ tưởng nghe thấy tiếng đổ vỡ. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 1 đến 8. Phần 1 kết thúc tại đây.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: When will the football match start next week?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. at twelve o'clock															</div>
+																				<div class="ps-4 mb-2">
+																	B. at quarter to twelve															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. at ten o'clock</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. at quarter past twelve															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>at ten o'clock</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn hội thoại sau:</p>   <p>"Does the football match start at quarter past 12 every week?"</p>   <p>"No, it was early this week. It usually begins at 10. So, it'll be the usual time next week."</p>    <p>"Trận bóng đá có bắt đầu lúc 12:15 mỗi tuần không?"</p>   <p>"Không, tuần này nó diễn ra sớm hơn. Thông thường nó bắt đầu lúc <strong>10:00</strong>. Vì vậy, tuần tới nó sẽ diễn ra vào thời gian thông thường."</p>    <p>Bài nghe xác nhận rằng <strong>trận đấu bóng đá sẽ bắt đầu vào lúc 10:00 vào tuần tới</strong>. Do đó, đáp án chính xác là <strong>at ten o'clock.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">at quarter to twelve</span> ❌ (Lúc 11:45.) - Sai, vì bài nghe không đề cập đến giờ này.</li>            <li><span class="text-danger">at quarter past twelve</span> ❌ (Lúc 12:15.) - Sai, vì đây là thời gian được hỏi ban đầu, nhưng câu trả lời khẳng định rằng trận đấu bắt đầu lúc 10:00.</li>            <li><span class="text-success"><strong>at ten o'clock</strong></span> ✅ (Lúc 10:00.) - Đúng, vì bài nghe xác nhận rằng trận đấu thường bắt đầu lúc 10:00.</li>            <li><span class="text-danger">at twelve o'clock</span> ❌ (Lúc 12:00.) - Sai, vì bài nghe xác nhận rằng trận đấu bắt đầu lúc 10:00.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: Which box of chocolates do they buy?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. the small square one with flowers															</div>
+																				<div class="ps-4 mb-2">
+																	B. the big square one with flowers															</div>
+																				<div class="ps-4 mb-2">
+																	C. the small round one with flowers															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. the big round one with flowers</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>the big round one with flowers</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn hội thoại sau:</p>   <p>"Which box of chocolates shall we get Mum for her birthday?"</p>   <p>"Those round boxes with the flowers on are nice."</p>   <p>"Yes, but that square box is cheaper."</p>   <p>"But it's Mum's birthday! Let's get the big round one. We've got enough money."</p>   <p>"OK."</p>    <p>"Chúng ta nên mua hộp sô cô la nào cho mẹ nhân dịp sinh nhật?"</p>   <p>"Những hộp tròn có hoa trông rất đẹp."</p>   <p>"Ừ, nhưng hộp vuông kia rẻ hơn."</p>   <p>"Nhưng đây là sinh nhật của mẹ! Hãy mua <strong>hộp tròn lớn</strong>. Chúng ta có đủ tiền mà."</p>   <p>"Được rồi."</p>    <p>Bài nghe xác nhận rằng họ đã quyết định mua <strong>hộp tròn lớn có hoa</strong>. Do đó, đáp án chính xác là <strong>the big round one with flowers.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">the small round one with flowers</span> ❌ (Hộp tròn nhỏ có hoa.) - Sai, vì họ đã chọn hộp tròn lớn, không phải hộp nhỏ.</li>            <li><span class="text-success"><strong>the big round one with flowers</strong></span> ✅ (Hộp tròn lớn có hoa.) - Đúng, vì bài nghe xác nhận rằng họ chọn hộp này.</li>            <li><span class="text-danger">the small square one with flowers</span> ❌ (Hộp vuông nhỏ có hoa.) - Sai, vì họ chọn hộp tròn, không phải hộp vuông.</li>            <li><span class="text-danger">the big square one with flowers</span> ❌ (Hộp vuông lớn có hoa.) - Sai, vì họ chọn hộp tròn lớn, không phải hộp vuông lớn.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: When's Wendy's birthday?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. on May the eight															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. on May the eighteenth</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. on May the sixteenth															</div>
+																				<div class="ps-4 mb-2">
+																	D. on May the twenty-first															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>on May the eighteenth</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn hội thoại sau:</p>   <p>"Wendy, you're 21 on Saturday, aren't you?"</p>   <p>"No, my birthday's on May the 18th."</p>   <p>"Well, Saturday is the 18th."</p>   <p>"No, it's not. It's the 16th."</p>    <p>"Wendy, cậu tròn 21 tuổi vào thứ Bảy này, đúng không?"</p>   <p>"Không, sinh nhật của mình vào <strong>ngày 18 tháng 5</strong>."</p>   <p>"Nhưng thứ Bảy là ngày 18 mà."</p>   <p>"Không, thứ Bảy là ngày 16."</p>    <p>Bài nghe xác nhận rằng <strong>sinh nhật của Wendy là vào ngày 18 tháng 5</strong>. Do đó, đáp án chính xác là <strong>on May the eighteenth.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">on May the sixteenth</span> ❌ (Ngày 16 tháng 5.) - Sai, vì Wendy khẳng định rằng sinh nhật cô ấy là vào ngày 18 tháng 5.</li>            <li><span class="text-success"><strong>on May the eighteenth</strong></span> ✅ (Ngày 18 tháng 5.) - Đúng, vì bài nghe xác nhận rằng đây là ngày sinh nhật của Wendy.</li>            <li><span class="text-danger">on May the twenty-first</span> ❌ (Ngày 21 tháng 5.) - Sai, vì bài nghe không đề cập đến ngày này.</li>            <li><span class="text-danger">on May the eight</span> ❌ (Ngày 8 tháng 5.) - Sai, vì bài nghe xác nhận rằng sinh nhật Wendy là vào ngày 18 tháng 5.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: Which tie does the man choose?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. a plain tie</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. a tie with some squares															</div>
+																				<div class="ps-4 mb-2">
+																	C. a tie with some sports															</div>
+																				<div class="ps-4 mb-2">
+																	D. a blue silk tie															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>a plain tie</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn hội thoại sau:</p>   <p>"Which tie shall I wear for the interview? Do you think my blue silk one would look all right?"</p>   <p>"A bit boring. I'd wear something with a small pattern. Squares or spots. Something like that."</p>   <p>"Oh, I don't know. I think I'll wear the plain one."</p>    <p>"Mình nên đeo cà vạt nào cho buổi phỏng vấn nhỉ? Cậu nghĩ chiếc cà vạt lụa màu xanh của mình có ổn không?"</p>   <p>"Hơi đơn điệu. Mình nghĩ cậu nên đeo cái có họa tiết nhỏ, như ô vuông hoặc chấm tròn chẳng hạn."</p>   <p>"Ồ, mình không chắc. Mình nghĩ mình sẽ đeo <strong>cái trơn</strong>."</p>    <p>Bài nghe xác nhận rằng <strong>người đàn ông chọn chiếc cà vạt trơn</strong>. Do đó, đáp án chính xác là <strong>a plain tie.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">a blue silk tie</span> ❌ (Một chiếc cà vạt lụa màu xanh.) - Sai, vì người đàn ông đã cân nhắc nhưng không chọn nó.</li>            <li><span class="text-danger">a tie with some squares</span> ❌ (Một chiếc cà vạt có họa tiết ô vuông.) - Sai, vì nhân vật nữ gợi ý loại này nhưng người đàn ông không chọn.</li>            <li><span class="text-danger">a tie with some sports</span> ❌ (Một chiếc cà vạt có họa tiết thể thao.) - Sai, vì bài nghe không đề cập đến loại cà vạt này.</li>            <li><span class="text-success"><strong>a plain tie</strong></span> ✅ (Một chiếc cà vạt trơn.) - Đúng, vì người đàn ông quyết định chọn chiếc cà vạt trơn.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What time is the appointment?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 05:02 pm															</div>
+																				<div class="ps-4 mb-2">
+																	B. 10:15 am															</div>
+																				<div class="ps-4 mb-2">
+																	C. 11:15 am															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. 01:50 pm</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>01:50 pm</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn hội thoại sau:</p>   <p>"Dr Brown's clinic. Can I help you?"</p>   <p>"Yes. Can I have an appointment to see the doctor, please?"</p>   <p>"Well, he's free at quarter past 11 today or tomorrow at quarter past 10 or 5 to 2."</p>   <p>"I'll come tomorrow afternoon. Thank you."</p>    <p>"Phòng khám của bác sĩ Brown. Tôi có thể giúp gì cho bạn?"</p>   <p>"Vâng. Tôi có thể đặt lịch hẹn gặp bác sĩ không?"</p>   <p>"Ông ấy rảnh vào lúc <strong>11:15 hôm nay</strong>, hoặc <strong>10:15 sáng mai</strong>, hoặc <strong>1:50 chiều mai</strong>."</p>   <p>"Tôi sẽ đến vào buổi chiều mai. Cảm ơn."</p>    <p>Bài nghe xác nhận rằng <strong>cuộc hẹn được đặt vào lúc 1:50 chiều (01:50 pm)</strong>. Do đó, đáp án chính xác là <strong>01:50 pm.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">10:15 am</span> ❌ (10:15 sáng.) - Sai, vì đây là một trong những lựa chọn, nhưng người đặt lịch hẹn vào buổi chiều.</li>            <li><span class="text-danger">11:15 am</span> ❌ (11:15 sáng.) - Sai, vì đây là thời gian bác sĩ rảnh hôm nay, nhưng bệnh nhân chọn buổi chiều ngày mai.</li>            <li><span class="text-danger">05:02 pm</span> ❌ (5:02 chiều.) - Sai, vì bài nghe không đề cập đến thời gian này.</li>            <li><span class="text-success"><strong>01:50 pm</strong></span> ✅ (1:50 chiều.) - Đúng, vì bệnh nhân đã chọn lịch hẹn vào buổi chiều mai.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: How did the film end?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The couple try to rob a bank.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. The young man is arrested.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. The couple travel around the world.															</div>
+																				<div class="ps-4 mb-2">
+																	D. The couple get married.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>The young man is arrested.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn mô tả kết thúc của bộ phim:</p>   <p>"And in this film, a young man and his girlfriend try to rob a bank so they can afford to get married and go round the world together. But he gets caught outside the bank and their dream never comes true."</p>    <p>"Trong bộ phim này, một chàng trai trẻ và bạn gái của anh ấy cố gắng cướp ngân hàng để có đủ tiền kết hôn và đi du lịch vòng quanh thế giới cùng nhau. <strong>Nhưng anh ấy bị bắt bên ngoài ngân hàng</strong> và giấc mơ của họ không bao giờ trở thành hiện thực."</p>    <p>Bài nghe xác nhận rằng <strong>chàng trai trẻ bị bắt</strong>. Do đó, đáp án chính xác là <strong>The young man is arrested.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">The couple try to rob a bank.</span> ❌ (Cặp đôi cố gắng cướp ngân hàng.) - Sai, vì đây là tình tiết trong phim nhưng không phải là kết thúc.</li>            <li><span class="text-success"><strong>The young man is arrested.</strong></span> ✅ (Chàng trai trẻ bị bắt.) - Đúng, vì bài nghe xác nhận rằng anh ấy bị bắt bên ngoài ngân hàng.</li>            <li><span class="text-danger">The couple get married.</span> ❌ (Cặp đôi kết hôn.) - Sai, vì kế hoạch kết hôn không thành hiện thực.</li>            <li><span class="text-danger">The couple travel around the world.</span> ❌ (Cặp đôi đi du lịch vòng quanh thế giới.) - Sai, vì giấc mơ này không thành sự thật.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What time does the train to Rome leave?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 02:55															</div>
+																				<div class="ps-4 mb-2">
+																	B. 02:35															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. 03:25</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. 04:00															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>03:25</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn hội thoại sau:</p>   <p>"Excuse me, what time does this train leave?"</p>   <p>"This train leaves for Paris at 5 to 3."</p>   <p>"Paris? Isn't it the Rome train?"</p>   <p>"No, that goes at 25 past 3 from platform 4."</p>    <p>"Xin lỗi, chuyến tàu này khởi hành lúc mấy giờ?"</p>   <p>"Chuyến tàu này đi Paris khởi hành lúc <strong>2:55</strong>."</p>   <p>"Paris? Đây không phải là tàu đi Rome sao?"</p>   <p>"Không, tàu đi Rome khởi hành lúc <strong>3:25</strong> từ sân ga số 4."</p>    <p>Bài nghe xác nhận rằng <strong>chuyến tàu đi Rome khởi hành lúc 3:25</strong>. Do đó, đáp án chính xác là <strong>03:25.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">02:55</span> ❌ (2:55 chiều.) - Sai, vì đây là giờ khởi hành của chuyến tàu đi Paris, không phải tàu đi Rome.</li>            <li><span class="text-danger">02:35</span> ❌ (2:35 chiều.) - Sai, vì bài nghe không đề cập đến thời gian này.</li>            <li><span class="text-success"><strong>03:25</strong></span> ✅ (3:25 chiều.) - Đúng, vì đây là giờ khởi hành của chuyến tàu đi Rome.</li>            <li><span class="text-danger">04:00</span> ❌ (4:00 chiều.) - Sai, vì bài nghe không đề cập đến thời gian này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: What is broken?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. a lamp															</div>
+																				<div class="ps-4 mb-2">
+																	B. a phone															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. a plate</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. a table															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>a plate</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, có đoạn hội thoại sau:</p>   <p>"I'm terribly sorry, Mum. I've just broken something."</p>   <p>"Oh, dear. What was it?"</p>   <p>"Well, I got up too quickly from the table to answer the phone and knocked one of your plates onto the floor."</p>   <p>"At least it wasn't your new lamp."</p>    <p>"Mẹ ơi, con xin lỗi. Con vừa làm vỡ một thứ gì đó."</p>   <p>"Ôi trời, đó là gì vậy?"</p>   <p>"Con đứng dậy quá nhanh để nghe điện thoại và đã làm rơi một <strong>chiếc đĩa</strong> của mẹ xuống sàn."</p>   <p>"Ít ra nó không phải là cái đèn mới của con."</p>    <p>Bài nghe xác nhận rằng <strong>vật bị vỡ là một chiếc đĩa</strong>. Do đó, đáp án chính xác là <strong>a plate.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>a plate</strong></span> ✅ (Một chiếc đĩa.) - Đúng, vì bài nghe xác nhận rằng chiếc đĩa bị làm rơi xuống sàn.</li>            <li><span class="text-danger">a table</span> ❌ (Một cái bàn.) - Sai, vì bài nghe không đề cập đến việc cái bàn bị vỡ.</li>            <li><span class="text-danger">a lamp</span> ❌ (Một cái đèn.) - Sai, vì bài nghe xác nhận rằng cái đèn không bị vỡ.</li>            <li><span class="text-danger">a phone</span> ❌ (Một chiếc điện thoại.) - Sai, vì bài nghe không đề cập đến việc điện thoại bị vỡ.</li>    </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

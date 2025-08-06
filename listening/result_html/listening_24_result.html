@@ -1,0 +1,643 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 24 - Part 3				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87743				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/15				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp3-1664880417_0e928bf2a1ae946bc5b1.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Part 3 In this part, you will hear three talks, or lectures. The talks or lectures will be played once only. There are five questions for each talk or lecture.<br>
+For each question, choose the right answer, A, B, C, or D. Part 3 Questions 21 to 25 First, you will have some time to look at questions 21 to 25. Now we're ready to start. Listen, and answer questions 21 to 25.<br>
+You will hear the recording once only. I want to talk about learning languages. I've lived in many different countries, both in Western Europe, the Middle East, and now here in Hong Kong.<br>
+And during all of that time, I've learned five or six different languages, to one degree or another. I love learning languages. Not only are they important when you move to a country, I just find them fascinating.<br>
+Before I came to Hong Kong, I lived in Barcelona, Spain for ten years. And when I first arrived, the most important thing was being able to communicate with people locally. I don't attend classes.<br>
+I don't think I'm particularly good in classes. I prefer to learn by just talking to people, finding out what I need to say, by looking at dictionaries, and listening carefully. Other things that helped me when I first moved to Spain were watching the typical kinds of programs we see every day on channels around the world.<br>
+For example, the weather. This is great because they always say the same things, so you can really quickly hear the same words repeated again and again, and the pictures help of course. Other types of program that helped me learn Spanish quickly were things like game shows, where the same thing happens.<br>
+They have a catchphrase or a slogan that they repeat endlessly when contestants win or when they're called to compete. As well as that, I used to pick up the Spanish newspapers. First of all, I just accepted there was no way I was going to understand anything but one or two words.<br>
+But gradually, I found that I learned lots of new things about this. I was interested because I wanted to know what was happening in the country I lived in. But I also knew that I could learn a lot of language this way, so I'd take a dictionary with me sometimes, or I'd notice a word and I'd ask other people what it meant.<br>
+Anyway, by far the best practice I ever had was just talking to people in the street or in shops, where I'd rehearse in my head what I wanted to say beforehand before I went in. Usually I made a right mess of it first of all, but after you get over the embarrassment, it's quite funny really, and people are very sympathetic and supporting in most cases. It took me a long time to develop a good level of Spanish.<br>
+I lived there for ten years, and I think I'm very fluent now, but I think for the first two years that I was there, it was quite a struggle to hold a decent conversation. There were always lots of words and expressions that I didn't pick up on. In particular were the colloquial expressions, idioms, that kind of thing, that people use in everyday talk, but you don't necessarily see written down.<br>
+I didn't find those very easy to learn at all. But it was a lot of fun, and people, as I said, are really supporting when they know that you're genuinely interested in learning their language. Now you will have some time to review questions 21 to 25.<br>
+Part three, questions 26 to 30. First, you will have some time to look at questions 26 to 30. Hello ladies and gentlemen.<br>
+It gives me great pleasure to introduce our keynote speaker for today's plenary address, Dr. Howard Miller. Dr. Miller, Professor of Sociology at Washington University, has written numerous articles and books on the issues facing older Americans in our grand society for the past 15 years. Dr. Miller? Thank you for that introduction.<br>
+Today I'd like to preface my remarks from a story from my own life, which I feel highlights our common concerns that bring us here together. Several years ago, when my grandparents were well into their 80s, they were faced with the reality of no longer being able to adequately care for themselves. My grandfather spoke of his greatest fear, that of leaving the only home they had known for the past 60 years.<br>
+Fighting back the tears, he spoke proudly of the fact that he had built their home from the ground up, and that he had pounded every nail and laid every brick in the process. The prospect of having to sell their home and give up their independence and move into a retirement home was an extremely traumatic experience for them. It was, in my grandfather's own words, like having a limb severed off.<br>
+He was quite emphatic, exclaiming that he felt he wasn't important anymore. For them and some older Americans, their so-called golden years are at times not so pleasant, for this period can mean the decline of not only one's health, but the loss of identity and self-worth. In many societies, this self-identity is closely related with our social status, occupation, material possessions, or independence.<br>
+Furthermore, we often live in societies that value that which is new or in vogue, and our own usage of lexicon in the English language often does not bode well for older Americans. I mean, how would your family react if you came home tonight, elated, exclaiming, hey, come to the living room and see the old black and white TV I brought? Unfortunately, the word old conjures up images of the need to replace or discard. Now, many of the lectures given at this conference have focused on the issues of pension reform, medical care, and the development of public facilities for senior citizens.<br>
+And while these are vital issues that must be addressed, I'd like to focus my comments on an underlying issue that will affect the overall success of the other programs mentioned. This has to do with realigning our perspectives on what it means to be part of this group and finding meaningful roles the elderly can play and should play in our societies. First of all, I'd like to talk about... Bạn đang thi tại website luyệnthivistep.vn Now you will have some time to review questions 26 to 30.<br>
+Part 3. Questions 31 to 35. First, you will have some time to look at questions 31 to 35. Good morning.<br>
+Today I'm going to talk about how to study. Now, you probably think you know all about that, right? You've been studying for years and I expect some of you are fantastic at studying, really organised and good at concentrating, but there's always room for improvement and your exams aren't far away. So these tips are for all of you.<br>
+Right, so what's the best way to study? Well, first of all, it's a good idea to have some kind of plan or timetable. This could be for the week or a longer revision timetable for an exam from one month to six months. Yes, if you're studying for an important exam, it's important to think long term.<br>
+Draw up a timetable, but revise it often. If it's not going to plan, you may have to rethink it. Next, think about your environment.<br>
+Make sure the place where you're going to study is comfortable with enough light, air, etc. Not too hot, not too cold. Make sure there are no distracting noises around, such as television.<br>
+If you think you concentrate better listening to music, experiment and see if it's really true. Some people really do seem to work better with music in the background, especially classical music, but for many people it spoils their concentration. However, if you have to work near a TV, you might have to use headphones to play music to drown out the sound of the TV.<br>
+In this case, find out what kind of music works best for you. Maybe something without words. By the way, you might think you work fine with a TV on, but again, experiment.<br>
+You might be surprised at how much better you work away from a TV. Oh, and the other thing is the Internet. Text messages, Twitter, Facebook, etc.<br>
+Forget about all of that while you're studying. No, really, you can ignore it for an hour or so. It won't be the end of the world if you don't reply to a message immediately.<br>
+Now you will have some time to review questions 31 to 35. That is the end of Part 3. That is the end of the Listening Comprehension Test.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 3 Trong phần này, bạn sẽ nghe ba bài nói hoặc bài giảng. Mỗi bài nói hoặc bài giảng sẽ chỉ được phát một lần. Mỗi bài có năm câu hỏi. Đối với mỗi câu hỏi, hãy chọn đáp án đúng A, B, C hoặc D. Câu 21 đến 25 Trước tiên, bạn sẽ có một chút thời gian để đọc câu hỏi 21 đến 25. Bây giờ chúng ta đã sẵn sàng để bắt đầu. Hãy lắng nghe và trả lời các câu hỏi 21 đến 25. Tôi muốn nói về việc học ngôn ngữ. Tôi đã sống ở nhiều quốc gia khác nhau, từ Tây Âu, Trung Đông, và bây giờ là Hồng Kông. Trong suốt thời gian đó, tôi đã học năm hoặc sáu ngôn ngữ ở nhiều mức độ khác nhau. Tôi rất thích học ngôn ngữ. Không chỉ vì chúng quan trọng khi bạn chuyển đến một quốc gia mới, mà tôi còn thấy chúng rất thú vị. Trước khi đến Hồng Kông, tôi đã sống ở Barcelona, Tây Ban Nha trong mười năm. Khi tôi mới đến, điều quan trọng nhất là có thể giao tiếp với người dân địa phương. Tôi không tham gia lớp học vì tôi nghĩ mình không giỏi khi học trong lớp. Tôi thích học bằng cách nói chuyện trực tiếp, tra từ điển, và chú ý lắng nghe. Những điều khác giúp tôi học tiếng Tây Ban Nha nhanh hơn là xem các chương trình truyền hình phổ biến, như dự báo thời tiết. Đây là một phương pháp tuyệt vời, vì họ luôn nói những câu giống nhau, giúp tôi nhanh chóng học được từ vựng. Ngoài ra, tôi cũng thích xem chương trình trò chơi, nơi có các khẩu hiệu được lặp đi lặp lại khi người chơi thắng hoặc được gọi tên. Tôi cũng đọc báo Tây Ban Nha. Ban đầu, tôi không hiểu gì, nhưng dần dần, tôi học được nhiều từ mới. Tôi cũng mang theo từ điển, hoặc hỏi những người xung quanh khi gặp một từ lạ. Nhưng phương pháp hiệu quả nhất đối với tôi là giao tiếp với mọi người ngoài đường hoặc trong các cửa hàng. Tôi luôn luyện tập trước trong đầu những gì mình sẽ nói, nhưng khi nói ra, tôi thường mắc lỗi. Tuy nhiên, sau khi vượt qua sự xấu hổ, tôi thấy điều đó khá vui, và người dân thường rất thông cảm, giúp đỡ tôi. Mất hai năm để tôi có thể nói chuyện trôi chảy bằng tiếng Tây Ban Nha. Nhưng những biểu cảm thông dụng, thành ngữ, hay tiếng lóng rất khó để học, vì chúng không thường xuất hiện trong sách vở. Nhìn chung, đó là một trải nghiệm thú vị, và người dân luôn hỗ trợ nếu họ thấy bạn thực sự muốn học ngôn ngữ của họ. Bây giờ bạn sẽ có một chút thời gian để kiểm tra lại các câu hỏi 21 đến 25. Câu 26 đến 30 Trước tiên, bạn sẽ có một chút thời gian để đọc câu hỏi 26 đến 30. Bây giờ chúng ta đã sẵn sàng để bắt đầu. Hãy lắng nghe và trả lời các câu hỏi 26 đến 30. Xin chào quý vị và các bạn. Tôi xin giới thiệu diễn giả chính của hội nghị hôm nay - Tiến sĩ Howard Miller. Ông là Giáo sư Xã hội học tại Đại học Washington, và đã viết nhiều bài báo và cuốn sách về những vấn đề mà người cao tuổi Mỹ đang phải đối mặt trong 15 năm qua. Tiến sĩ Miller, xin mời ông. Cảm ơn phần giới thiệu. Hôm nay, tôi muốn bắt đầu bằng một câu chuyện cá nhân, câu chuyện mà tôi nghĩ sẽ làm nổi bật những mối quan tâm chung của chúng ta. Cách đây vài năm, khi ông bà tôi đã ngoài 80 tuổi, họ phải đối mặt với thực tế rằng họ không thể tự chăm sóc bản thân nữa. Ông tôi rất sợ hãi khi phải rời xa ngôi nhà mà họ đã sống trong suốt 60 năm. Ông rất tự hào vì đã tự tay xây dựng từng viên gạch, từng cây đinh trong ngôi nhà đó. Khi phải bán nhà và chuyển đến viện dưỡng lão, ông nói đó giống như bị mất đi một phần cơ thể. Ông cảm thấy rằng mình không còn quan trọng nữa. Với nhiều người cao tuổi, "những năm tháng vàng" không phải lúc nào cũng đẹp đẽ, mà đó là sự suy giảm sức khỏe, danh tính và giá trị bản thân. Trong xã hội ngày nay, giá trị bản thân thường gắn liền với nghề nghiệp, tài sản và sự tự lập. Tuy nhiên, chúng ta lại đánh giá cao những thứ mới mẻ, và từ "cũ" thường mang nghĩa cần được thay thế. Ví dụ, nếu hôm nay bạn về nhà và nói "Hãy xem chiếc TV đen trắng cũ mà tôi mới mua!", chắc chắn gia đình bạn sẽ rất ngạc nhiên. Từ "cũ" thường gợi lên hình ảnh của sự lỗi thời và bị bỏ đi. Vì vậy, trong khi nhiều hội thảo tập trung vào lương hưu, chăm sóc y tế và cơ sở vật chất cho người già, tôi muốn nhấn mạnh một vấn đề quan trọng hơn: Chúng ta cần thay đổi cách nhìn nhận về người cao tuổi và tìm ra vai trò phù hợp cho họ trong xã hội. Bây giờ bạn sẽ có một chút thời gian để kiểm tra lại các câu hỏi 26 đến 30. Câu 31 đến 35 Trước tiên, bạn sẽ có một chút thời gian để đọc câu hỏi 31 đến 35. Bây giờ chúng ta đã sẵn sàng để bắt đầu. Hãy lắng nghe và trả lời các câu hỏi 31 đến 35. Chào buổi sáng. Hôm nay, tôi sẽ nói về cách học tập hiệu quả. Có thể bạn nghĩ rằng mình đã biết hết, nhưng vẫn có nhiều cách để cải thiện. Kỳ thi của các bạn đang đến gần, vì vậy những mẹo này sẽ giúp ích cho tất cả mọi người. Đầu tiên, hãy lập kế hoạch học tập. Điều này có thể là kế hoạch hàng tuần, hoặc lịch ôn thi dài hạn từ một đến sáu tháng. Thứ hai, tạo một môi trường học tập tốt. Tránh tiếng ồn, đảm bảo ánh sáng đủ, và không quá nóng hoặc quá lạnh. Một số người thích nghe nhạc khi học, nhưng hãy thử nghiệm xem điều đó có thực sự giúp ích không. Và quan trọng nhất, tắt điện thoại và đừng để bị phân tâm bởi tin nhắn hay mạng xã hội. Bây giờ bạn sẽ có một chút thời gian để kiểm tra lại các câu hỏi 31 đến 35. Đây là phần kết thúc của Phần 3. Đây cũng là phần kết thúc của bài kiểm tra kỹ năng nghe hiểu.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Which continent has the speaker not lived in?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. South America</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Europe															</div>
+																				<div class="ps-4 mb-2">
+																	C. Asia															</div>
+																				<div class="ps-4 mb-2">
+																	D. Middle East															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>South America</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói liệt kê các khu vực mà anh ấy đã sống:</p>   <p>"I've lived in many different countries, both in Western Europe, the Middle East, and now here in Hong Kong."</p>   <p>"Tôi đã sống ở nhiều quốc gia khác nhau, cả ở Tây Âu, Trung Đông và bây giờ là ở Hồng Kông."</p>    <p>Bài nghe xác nhận rằng người nói đã sống ở châu Âu, Trung Đông và hiện tại đang ở châu Á, nhưng không đề cập đến Nam Mỹ. Do đó, đáp án chính xác là <strong>South America.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">Asia</span> ❌ (Châu Á.) - Sai, vì người nói đang sống ở Hồng Kông, thuộc châu Á.</li>            <li><span class="text-danger">Europe</span> ❌ (Châu Âu.) - Sai, vì người nói đã sống ở Tây Âu.</li>            <li><span class="text-success"><strong>South America</strong></span> ✅ (Nam Mỹ.) - Đúng, vì bài nghe không nhắc đến việc người nói đã sống ở Nam Mỹ.</li>            <li><span class="text-danger">Middle East</span> ❌ (Trung Đông.) - Sai, vì người nói đã sống ở Trung Đông.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: Which two things does the speaker do to learn a new language?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. speak to native speakers and watch TV															</div>
+																				<div class="ps-4 mb-2">
+																	B. go to classes and speak to people															</div>
+																				<div class="ps-4 mb-2">
+																	C. watch TV and listen to the radio															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. speak to people and use a dictionary</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>speak to people and use a dictionary</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói mô tả cách anh ấy học một ngôn ngữ mới:</p>   <p>"I don't attend classes. I don't think I'm particularly good in classes. I prefer to learn by just talking to people, finding out what I need to say, by looking at dictionaries, and listening carefully."</p>   <p>"Tôi không tham gia các lớp học. Tôi không nghĩ rằng tôi giỏi trong lớp học. Tôi thích học bằng cách nói chuyện với mọi người, tìm hiểu những gì tôi cần nói, bằng cách tra cứu từ điển và lắng nghe cẩn thận."</p>    <p>Bài nghe xác nhận rằng người nói học ngôn ngữ bằng cách <strong>nói chuyện với mọi người</strong> và <strong>dùng từ điển</strong>. Do đó, đáp án chính xác là <strong>speak to people and use a dictionary.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">go to classes and speak to people</span> ❌ (Tham gia lớp học và nói chuyện với mọi người.) - Sai, vì người nói không tham gia lớp học mà tự học qua giao tiếp.</li>            <li><span class="text-success"><strong>speak to people and use a dictionary</strong></span> ✅ (Nói chuyện với mọi người và dùng từ điển.) - Đúng, vì người nói đề cập rõ ràng rằng anh ấy học bằng cách nói chuyện với mọi người và sử dụng từ điển.</li>            <li><span class="text-danger">watch TV and listen to the radio</span> ❌ (Xem TV và nghe radio.) - Sai, vì người nói có đề cập đến việc xem TV nhưng không nhắc đến nghe radio.</li>            <li><span class="text-danger">speak to native speakers and watch TV</span> ❌ (Nói chuyện với người bản xứ và xem TV.) - Sai, mặc dù người nói có nói về việc giao tiếp với người bản xứ, nhưng anh ấy không nói xem TV là cách chính để học.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: Why does the speaker think watching game shows is useful?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. Because the language is repetitive.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. Because contestants are always winning.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Because of the pictures.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Because the games shows are interesting.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Because the language is repetitive.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói giải thích lý do tại sao xem chương trình trò chơi giúp học ngôn ngữ:</p>   <p>"Other types of program that helped me learn Spanish quickly were things like game shows, where the same thing happens. They have a catchphrase or a slogan that they repeat endlessly when contestants win or when they're called to compete."</p>   <p>"Các loại chương trình khác giúp tôi học tiếng Tây Ban Nha nhanh chóng là những chương trình trò chơi, nơi mà mọi thứ diễn ra theo cùng một cách. Chúng có một khẩu hiệu hoặc câu nói mà họ lặp đi lặp lại không ngừng khi thí sinh thắng hoặc khi họ được gọi tham gia."</p>    <p>Bài nghe xác nhận rằng người nói cho rằng chương trình trò chơi hữu ích vì <strong>ngôn ngữ được lặp đi lặp lại</strong>. Do đó, đáp án chính xác là <strong>Because the language is repetitive.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">Because of the pictures.</span> ❌ (Bởi vì có hình ảnh.) - Sai, vì người nói đề cập đến hình ảnh khi xem dự báo thời tiết, không phải chương trình trò chơi.</li>            <li><span class="text-danger">Because contestants are always winning.</span> ❌ (Bởi vì thí sinh luôn chiến thắng.) - Sai, vì người nói không đề cập đến việc thí sinh luôn thắng mà nhấn mạnh vào việc lặp lại ngôn ngữ.</li>            <li><span class="text-success"><strong>Because the language is repetitive.</strong></span> ✅ (Bởi vì ngôn ngữ được lặp lại.) - Đúng, vì người nói giải thích rằng các chương trình trò chơi giúp học ngôn ngữ vì khẩu hiệu hoặc câu nói được lặp lại nhiều lần.</li>            <li><span class="text-danger">Because the game shows are interesting.</span> ❌ (Bởi vì các chương trình trò chơi thú vị.) - Sai, mặc dù chương trình có thể thú vị, nhưng lý do chính mà người nói nhấn mạnh là sự lặp lại của ngôn ngữ.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: What does the speaker say about using newspapers?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It was easy to learn a lot of new words quickly.															</div>
+																				<div class="ps-4 mb-2">
+																	B. Other people could explain new words the writer found.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. It was difficult to understand.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. A lot of things were happening in the country.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>It was difficult to understand.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói mô tả trải nghiệm của mình khi sử dụng báo để học ngôn ngữ:</p>   <p>"First of all, I just accepted there was no way I was going to understand anything but one or two words."</p>   <p>"Lúc đầu, tôi chỉ chấp nhận rằng không có cách nào để tôi có thể hiểu bất cứ điều gì ngoài một hoặc hai từ."</p>    <p>Bài nghe xác nhận rằng người nói thấy rất khó để hiểu báo khi mới bắt đầu. Do đó, đáp án chính xác là <strong>It was difficult to understand.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">It was easy to learn a lot of new words quickly.</span> ❌ (Dễ dàng học nhiều từ mới nhanh chóng.) - Sai, vì người nói nói rằng ban đầu chỉ hiểu được một hoặc hai từ, chứ không phải dễ dàng học nhiều từ mới nhanh chóng.</li>            <li><span class="text-danger">A lot of things were happening in the country.</span> ❌ (Có rất nhiều điều đang xảy ra trong đất nước.) - Sai, mặc dù người nói quan tâm đến những gì đang diễn ra, nhưng điều anh ấy nhấn mạnh là sự khó hiểu của báo.</li>            <li><span class="text-danger">Other people could explain new words the writer found.</span> ❌ (Những người khác có thể giải thích các từ mới mà người viết tìm thấy.) - Sai, người nói có hỏi người khác về một số từ, nhưng không nói rằng đó là cách chính để học từ mới từ báo.</li>            <li><span class="text-success"><strong>It was difficult to understand.</strong></span> ✅ (Rất khó để hiểu.) - Đúng, vì người nói chấp nhận rằng ban đầu anh ấy không thể hiểu gì ngoài một hoặc hai từ.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: What does the speaker say about talking to people in the street?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. they are friendly															</div>
+																				<div class="ps-4 mb-2">
+																	B. people reacted negatively															</div>
+																				<div class="ps-4 mb-2">
+																	C. the embarrassment made it a failure															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. preparation was necessary</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>preparation was necessary</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói mô tả trải nghiệm khi nói chuyện với người dân địa phương:</p>   <p>"Anyway, by far the best practice I ever had was just talking to people in the street or in shops, where I'd rehearse in my head what I wanted to say beforehand before I went in."</p>   <p>"Dù sao đi nữa, cách luyện tập tốt nhất mà tôi từng có là nói chuyện với mọi người trên đường phố hoặc trong cửa hàng, nơi tôi sẽ <strong>tập dượt trong đầu</strong> những gì tôi muốn nói trước khi bước vào."</p>    <p>Bài nghe xác nhận rằng người nói thấy việc chuẩn bị trước là cần thiết trước khi giao tiếp. Do đó, đáp án chính xác là <strong>preparation was necessary.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>preparation was necessary</strong></span> ✅ (Chuẩn bị trước là cần thiết.) - Đúng, vì người nói nói rằng anh ấy tập dượt trong đầu những gì muốn nói trước khi giao tiếp.</li>            <li><span class="text-danger">the embarrassment made it a failure</span> ❌ (Sự xấu hổ khiến nó thất bại.) - Sai, mặc dù người nói đề cập đến việc ban đầu mắc lỗi, nhưng anh ấy không nói rằng điều đó khiến việc giao tiếp thất bại.</li>            <li><span class="text-danger">people reacted negatively</span> ❌ (Mọi người phản ứng tiêu cực.) - Sai, vì người nói không đề cập đến phản ứng tiêu cực từ người bản xứ.</li>            <li><span class="text-danger">they are friendly</span> ❌ (Họ thân thiện.) - Sai, mặc dù người nói có đề cập rằng mọi người thường hỗ trợ khi anh ấy cố gắng nói chuyện, nhưng trọng tâm của câu trả lời là việc chuẩn bị trước.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: Some of you are probably fantastic at studying, really organized and _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. intelligent															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. good at concentrating</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. worried of the exam															</div>
+																				<div class="ps-4 mb-2">
+																	D. well improved															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>good at concentrating</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói đề cập đến những người học tập tốt:</p>   <p>"You've been studying for years and I expect some of you are fantastic at studying, really organised and good at concentrating..."</p>   <p>"Bạn đã học trong nhiều năm và tôi mong rằng một số bạn rất giỏi trong việc học tập, thực sự có tổ chức và <strong>giỏi tập trung</strong>..."</p>    <p>Bài nghe xác nhận rằng người nói mô tả những người học tốt là có tổ chức và giỏi tập trung. Do đó, đáp án chính xác là <strong>good at concentrating.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>good at concentrating</strong></span> ✅ (Giỏi tập trung.) - Đúng, vì người nói đề cập trực tiếp rằng những người học tốt có tổ chức và giỏi tập trung.</li>            <li><span class="text-danger">well improved</span> ❌ (Cải thiện tốt.) - Sai, vì người nói không đề cập đến việc cải thiện mà nhấn mạnh vào sự tập trung.</li>            <li><span class="text-danger">worried of the exam</span> ❌ (Lo lắng về kỳ thi.) - Sai, vì người nói không đề cập đến việc lo lắng về kỳ thi trong ngữ cảnh này.</li>            <li><span class="text-danger">intelligent</span> ❌ (Thông minh.) - Sai, vì người nói không nhấn mạnh vào trí thông minh mà tập trung vào khả năng tổ chức và tập trung.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: A revision timetable could be?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. 16 days															</div>
+																				<div class="ps-4 mb-2">
+																	B. a year															</div>
+																				<div class="ps-4 mb-2">
+																	C. from one to six weeks															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. one to six months</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>one to six months</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói đề cập đến thời gian lập kế hoạch ôn tập:</p>   <p>"This could be for the week or a longer revision timetable for an exam from one month to six months."</p>   <p>"Điều này có thể áp dụng cho một tuần hoặc một thời gian ôn tập dài hơn cho kỳ thi, từ một tháng đến sáu tháng."</p>    <p>Bài nghe xác nhận rằng thời gian lập kế hoạch ôn tập có thể kéo dài từ <strong>một đến sáu tháng</strong>. Do đó, đáp án chính xác là <strong>one to six months.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">from one to six weeks</span> ❌ (Từ một đến sáu tuần.) - Sai, vì người nói đề cập đến kế hoạch ôn tập có thể kéo dài từ một đến sáu tháng, không phải sáu tuần.</li>            <li><span class="text-success"><strong>one to six months</strong></span> ✅ (Một đến sáu tháng.) - Đúng, vì người nói nói rằng kế hoạch ôn tập có thể kéo dài từ một đến sáu tháng.</li>            <li><span class="text-danger">a year</span> ❌ (Một năm.) - Sai, vì người nói không đề cập đến kế hoạch ôn tập kéo dài một năm.</li>            <li><span class="text-danger">16 days</span> ❌ (16 ngày.) - Sai, vì kế hoạch ôn tập mà người nói đề cập không có khoảng thời gian này.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: If you're studying for an important exam, it's important to think _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. longer revision															</div>
+																				<div class="ps-4 mb-2">
+																	B. of result															</div>
+																				<div class="ps-4 mb-2">
+																	C. of revision															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. long term</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>long term</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói đề cập đến tầm quan trọng của việc lập kế hoạch ôn tập:</p>   <p>"Yes, if you're studying for an important exam, it's important to think long term."</p>   <p>"Đúng vậy, nếu bạn đang học cho một kỳ thi quan trọng, điều quan trọng là phải <strong>suy nghĩ dài hạn</strong>."</p>    <p>Bài nghe xác nhận rằng khi học cho một kỳ thi quan trọng, cần phải suy nghĩ <strong>dài hạn</strong>. Do đó, đáp án chính xác là <strong>long term.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>long term</strong></span> ✅ (Dài hạn.) - Đúng, vì người nói nhấn mạnh tầm quan trọng của việc suy nghĩ dài hạn khi ôn tập cho kỳ thi quan trọng.</li>            <li><span class="text-danger">of result</span> ❌ (Về kết quả.) - Sai, vì người nói không đề cập đến việc tập trung vào kết quả mà là suy nghĩ dài hạn.</li>            <li><span class="text-danger">of revision</span> ❌ (Về việc ôn tập.) - Sai, vì người nói nhấn mạnh vào tư duy dài hạn, không chỉ riêng việc ôn tập.</li>            <li><span class="text-danger">longer revision</span> ❌ (Ôn tập lâu hơn.) - Sai, vì cụm từ này không xuất hiện trong bài nghe, và ý chính của người nói là về việc lập kế hoạch dài hạn.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: Make sure the place where you're going to study is _____, with no distracting _____						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. enough light/ radio															</div>
+																				<div class="ps-4 mb-2">
+																	B. convenient/ people															</div>
+																				<div class="ps-4 mb-2">
+																	C. comfortable/ people															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. comfortable / noises</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>comfortable / noises</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói đề cập đến môi trường học tập lý tưởng:</p>   <p>"Make sure the place where you're going to study is comfortable with enough light, air, etc. Not too hot, not too cold. Make sure there are no distracting noises around, such as television."</p>   <p>"Hãy đảm bảo rằng nơi bạn học tập <strong>thoải mái</strong>, có đủ ánh sáng, không khí, v.v. Không quá nóng, không quá lạnh. Hãy đảm bảo rằng không có <strong>tiếng ồn gây xao nhãng</strong> xung quanh, chẳng hạn như TV."</p>    <p>Bài nghe xác nhận rằng nơi học tập cần <strong>thoải mái</strong> và không có <strong>tiếng ồn gây mất tập trung</strong>. Do đó, đáp án chính xác là <strong>comfortable / noises.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>comfortable / noises</strong></span> ✅ (Thoải mái / tiếng ồn.) - Đúng, vì người nói nhấn mạnh rằng nơi học cần thoải mái và không có tiếng ồn gây mất tập trung.</li>            <li><span class="text-danger">convenient/ people</span> ❌ (Tiện lợi / con người.) - Sai, vì người nói không đề cập đến sự tiện lợi hay sự xuất hiện của người khác.</li>            <li><span class="text-danger">enough light/ radio</span> ❌ (Đủ ánh sáng / đài phát thanh.) - Sai, vì mặc dù người nói đề cập đến ánh sáng nhưng không nhấn mạnh vào việc loại bỏ tiếng radio.</li>            <li><span class="text-danger">comfortable/ people</span> ❌ (Thoải mái / con người.) - Sai, vì người nói tập trung vào việc tránh tiếng ồn, không phải tránh con người.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: If you have to work near a TV, you might have to use _____ to drown out the sound of the TV.						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. headphones</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. telephone															</div>
+																				<div class="ps-4 mb-2">
+																	C. phones															</div>
+																				<div class="ps-4 mb-2">
+																	D. remote control															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>headphones</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người nói đề cập đến cách giảm tiếng ồn từ TV khi học tập:</p>   <p>"However, if you have to work near a TV, you might have to use headphones to play music to drown out the sound of the TV."</p>   <p>"Tuy nhiên, nếu bạn phải học gần TV, bạn có thể phải sử dụng <strong>tai nghe</strong> để phát nhạc nhằm át tiếng TV."</p>    <p>Bài nghe xác nhận rằng nếu bạn phải học gần TV, bạn nên sử dụng <strong>tai nghe</strong> để giảm tiếng ồn. Do đó, đáp án chính xác là <strong>headphones.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>headphones</strong></span> ✅ (Tai nghe.) - Đúng, vì người nói khuyên sử dụng tai nghe để át tiếng ồn từ TV.</li>            <li><span class="text-danger">remote control</span> ❌ (Điều khiển từ xa.) - Sai, vì điều khiển từ xa không thể giúp át tiếng ồn từ TV.</li>            <li><span class="text-danger">telephone</span> ❌ (Điện thoại.) - Sai, vì điện thoại không được đề cập như một cách để giảm tiếng ồn từ TV.</li>            <li><span class="text-danger">phones</span> ❌ (Điện thoại.) - Sai, vì người nói đề cập cụ thể đến tai nghe chứ không phải điện thoại.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: What is the main topic of this address?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The problem of providing adequate medical care for the elderly															</div>
+																				<div class="ps-4 mb-2">
+																	B. The growing crisis of inadequate retirement pensions for the future															</div>
+																				<div class="ps-4 mb-2">
+																	C. The problem of retirement in the American society															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. The need to reevaluate our attitudes towards senior citizens</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>The need to reevaluate our attitudes towards senior citizens</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, diễn giả nhấn mạnh về thái độ đối với người cao tuổi:</p>   <p>"And while these are vital issues that must be addressed, I'd like to focus my comments on an underlying issue that will affect the overall success of the other programs mentioned. This has to do with realigning our perspectives on what it means to be part of this group and finding meaningful roles the elderly can play and should play in our societies."</p>   <p>"Và mặc dù đây là những vấn đề quan trọng cần được giải quyết, tôi muốn tập trung vào một vấn đề cơ bản sẽ ảnh hưởng đến sự thành công chung của các chương trình khác đã đề cập. Điều này liên quan đến việc <strong>định hình lại quan điểm của chúng ta về người cao tuổi</strong> và tìm ra những vai trò có ý nghĩa mà họ có thể và nên đảm nhận trong xã hội."</p>    <p>Bài nghe xác nhận rằng bài phát biểu tập trung vào <strong>sự cần thiết phải đánh giá lại thái độ của chúng ta đối với người cao tuổi</strong>. Do đó, đáp án chính xác là <strong>The need to reevaluate our attitudes towards senior citizens.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">The growing crisis of inadequate retirement pensions for the future</span> ❌ (Cuộc khủng hoảng ngày càng gia tăng về lương hưu không đầy đủ trong tương lai.) - Sai, vì diễn giả không tập trung vào lương hưu mà vào cách nhìn nhận người cao tuổi.</li>            <li><span class="text-danger">The problem of providing adequate medical care for the elderly</span> ❌ (Vấn đề cung cấp dịch vụ y tế đầy đủ cho người cao tuổi.) - Sai, vì mặc dù dịch vụ y tế quan trọng, nhưng bài phát biểu không tập trung vào vấn đề này.</li>            <li><span class="text-success"><strong>The need to reevaluate our attitudes towards senior citizens</strong></span> ✅ (Sự cần thiết phải đánh giá lại thái độ của chúng ta đối với người cao tuổi.) - Đúng, vì diễn giả nhấn mạnh đến việc thay đổi quan điểm về người cao tuổi trong xã hội.</li>            <li><span class="text-danger">The problem of retirement in the American society</span> ❌ (Vấn đề về nghỉ hưu trong xã hội Mỹ.) - Sai, vì bài phát biểu nói về thái độ đối với người cao tuổi chứ không chỉ riêng vấn đề nghỉ hưu.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: What was the speaker's purpose in sharing the story about his grandfather?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. to describe the lack of public facilities designed for the elderly															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. to illustrate the preoccupations of older citizens with growing older</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. to highlight the difficulties of 5 finding affordable housing in the future															</div>
+																				<div class="ps-4 mb-2">
+																	D. to give example of an elderly who is in need of social concern															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>to illustrate the preoccupations of older citizens with growing older</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, diễn giả kể về câu chuyện của ông nội mình:</p>   <p>"The prospect of having to sell their home and give up their independence and move into a retirement home was an extremely traumatic experience for them. It was, in my grandfather's own words, like having a limb severed off. He was quite emphatic, exclaiming that he felt he wasn't important anymore."</p>   <p>"Viễn cảnh phải bán ngôi nhà của họ, từ bỏ sự độc lập và chuyển vào viện dưỡng lão là một trải nghiệm cực kỳ đau buồn đối với họ. Theo lời ông nội tôi, điều đó giống như bị cắt đi một phần cơ thể. Ông nhấn mạnh rằng ông cảm thấy mình không còn quan trọng nữa."</p>    <p>Bài nghe xác nhận rằng diễn giả chia sẻ câu chuyện này để <strong>minh họa những lo lắng của người cao tuổi khi già đi</strong>. Do đó, đáp án chính xác là <strong>to illustrate the preoccupations of older citizens with growing older.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">to highlight the difficulties of finding affordable housing in the future</span> ❌ (Để làm nổi bật những khó khăn trong việc tìm nhà ở giá cả phải chăng trong tương lai.) - Sai, vì câu chuyện không tập trung vào vấn đề tài chính hay tìm nhà ở.</li>            <li><span class="text-success"><strong>to illustrate the preoccupations of older citizens with growing older</strong></span> ✅ (Để minh họa những lo lắng của người cao tuổi khi già đi.) - Đúng, vì diễn giả kể câu chuyện để nhấn mạnh sự lo lắng của người cao tuổi về việc mất đi sự độc lập.</li>            <li><span class="text-danger">to describe the lack of public facilities designed for the elderly</span> ❌ (Để mô tả sự thiếu hụt các cơ sở công cộng dành cho người cao tuổi.) - Sai, vì bài nghe không đề cập đến sự thiếu hụt cơ sở hạ tầng.</li>            <li><span class="text-danger">to give example of an elderly who is in need of social concern</span> ❌ (Để đưa ra ví dụ về một người cao tuổi cần được quan tâm xã hội.) - Sai, vì diễn giả không chỉ nói về một trường hợp cần được giúp đỡ mà nhấn mạnh đến cảm giác chung của người già.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question13">
+						<div class="fw-bold mb-2">
+							Câu 13: Which of the following statements did Dr. Milter NOT mentioned when speaking of senior citizens' "golden years"?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. A person's declining health contributes to a feeling of inadequacy.															</div>
+																				<div class="ps-4 mb-2">
+																	B. Self-identity is related to social status and material possessions.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. The loss of a person's self-identity is most prevalent in one's advancing years.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. Self-worth is often tied to one's profession and social standing.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>The loss of a person's self-identity is most prevalent in one's advancing years.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Dr. Miller nói về những vấn đề mà người cao tuổi phải đối mặt trong "những năm tháng vàng son":</p>   <p>"For them and some older Americans, their so-called golden years are at times not so pleasant, for this period can mean the decline of not only one's health, but the loss of identity and self-worth."</p>   <p>"Đối với họ và một số người cao tuổi khác, 'những năm tháng vàng' đôi khi không hề dễ chịu, vì giai đoạn này có thể đồng nghĩa với sự suy giảm không chỉ về sức khỏe mà còn về bản sắc và giá trị bản thân."</p>    <p>Bài nghe xác nhận rằng Dr. Miller đề cập đến sự suy giảm sức khỏe, giá trị bản thân và sự gắn kết giữa bản sắc cá nhân với địa vị xã hội. Tuy nhiên, ông không nói rằng <strong>sự mất đi bản sắc cá nhân là điều phổ biến nhất khi con người già đi</strong>. Do đó, đáp án chính xác là <strong>The loss of a person's self-identity is most prevalent in one's advancing years.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>The loss of a person's self-identity is most prevalent in one's advancing years.</strong></span> ✅ (Sự mất đi bản sắc cá nhân là điều phổ biến nhất khi con người già đi.) - Đúng, vì Dr. Miller không nhấn mạnh rằng đây là điều phổ biến nhất khi già đi.</li>            <li><span class="text-danger">A person's declining health contributes to a feeling of inadequacy.</span> ❌ (Sự suy giảm sức khỏe của một người góp phần vào cảm giác không đủ năng lực.) - Sai, vì Dr. Miller đã đề cập đến sự suy giảm sức khỏe là một trong những yếu tố gây ảnh hưởng đến người cao tuổi.</li>            <li><span class="text-danger">Self-worth is often tied to one's profession and social standing.</span> ❌ (Giá trị bản thân thường gắn liền với nghề nghiệp và địa vị xã hội.) - Sai, vì Dr. Miller đã nói về việc bản sắc cá nhân gắn liền với địa vị xã hội và nghề nghiệp.</li>            <li><span class="text-danger">Self-identity is related to social status and material possessions.</span> ❌ (Bản sắc cá nhân liên quan đến địa vị xã hội và tài sản vật chất.) - Sai, vì bài nghe có đề cập đến việc bản sắc cá nhân bị ảnh hưởng bởi địa vị xã hội và tài sản.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question14">
+						<div class="fw-bold mb-2">
+							Câu 14: What do you think the speaker will talk about in the next part of his address?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The need of paying more attention to the eider's health problem.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. He contributions the elderly can make in our societies.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. The swelling burden of supporting welfare programs in the future.															</div>
+																				<div class="ps-4 mb-2">
+																	D. Our responsibility of building retirement homes for our graying society.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>The contributions the elderly can make in our societies.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, diễn giả đề cập đến nội dung sẽ thảo luận tiếp theo:</p>   <p>"I'd like to focus my comments on an underlying issue that will affect the overall success of the other programs mentioned. This has to do with realigning our perspectives on what it means to be part of this group and finding meaningful roles the elderly can play and should play in our societies."</p>   <p>"Tôi muốn tập trung vào một vấn đề cốt lõi sẽ ảnh hưởng đến sự thành công chung của các chương trình khác đã đề cập. Điều này liên quan đến việc điều chỉnh lại quan điểm của chúng ta về việc trở thành một phần của nhóm này và tìm ra những vai trò có ý nghĩa mà người cao tuổi có thể và nên đảm nhận trong xã hội của chúng ta."</p>    <p>Bài nghe xác nhận rằng diễn giả sẽ thảo luận về <strong>đóng góp mà người cao tuổi có thể thực hiện trong xã hội</strong>. Do đó, đáp án chính xác là <strong>The contributions the elderly can make in our societies.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-success"><strong>The contributions the elderly can make in our societies.</strong></span> ✅ (Những đóng góp mà người cao tuổi có thể thực hiện trong xã hội.) - Đúng, vì diễn giả nói về việc tìm ra những vai trò có ý nghĩa cho người cao tuổi.</li>            <li><span class="text-danger">The swelling burden of supporting welfare programs in the future.</span> ❌ (Gánh nặng ngày càng tăng trong việc hỗ trợ các chương trình phúc lợi trong tương lai.) - Sai, vì diễn giả không đề cập đến gánh nặng phúc lợi xã hội mà nhấn mạnh vào đóng góp của người cao tuổi.</li>            <li><span class="text-danger">Our responsibility of building retirement homes for our graying society.</span> ❌ (Trách nhiệm của chúng ta trong việc xây dựng viện dưỡng lão cho xã hội đang già hóa.) - Sai, vì diễn giả không tập trung vào việc xây dựng viện dưỡng lão.</li>            <li><span class="text-danger">The need of paying more attention to the elder's health problem.</span> ❌ (Sự cần thiết của việc quan tâm hơn đến vấn đề sức khỏe của người cao tuổi.) - Sai, vì mặc dù sức khỏe là một vấn đề quan trọng, nhưng diễn giả không tập trung vào chủ đề này trong phần tiếp theo.</li>    </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question15">
+						<div class="fw-bold mb-2">
+							Câu 15: Where does this plenary address most likely take place?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. at a university															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. at a conference center</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. at a retirement home															</div>
+																				<div class="ps-4 mb-2">
+																	D. at a hospital															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>at a conference center</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người giới thiệu diễn giả nói:</p>   <p>"Hello ladies and gentlemen. It gives me great pleasure to introduce our keynote speaker for today's plenary address, Dr. Howard Miller."</p>   <p>"Xin chào quý vị. Tôi rất vinh dự được giới thiệu diễn giả chính của bài phát biểu toàn thể ngày hôm nay, Tiến sĩ Howard Miller."</p>    <p>Bài nghe xác nhận rằng đây là một <strong>bài phát biểu toàn thể</strong> (plenary address), thuật ngữ thường được sử dụng trong các hội nghị. Do đó, đáp án chính xác là <strong>at a conference center.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>            <li><span class="text-danger">at a retirement home</span> ❌ (Tại một viện dưỡng lão.) - Sai, vì bài phát biểu không diễn ra trong một viện dưỡng lão.</li>            <li><span class="text-success"><strong>at a conference center</strong></span> ✅ (Tại một trung tâm hội nghị.) - Đúng, vì bài phát biểu toàn thể thường được tổ chức tại các trung tâm hội nghị.</li>            <li><span class="text-danger">at a hospital</span> ❌ (Tại một bệnh viện.) - Sai, vì bài nghe không đề cập đến bệnh viện.</li>            <li><span class="text-danger">at a university</span> ❌ (Tại một trường đại học.) - Sai, vì mặc dù diễn giả là một giáo sư, nhưng bài phát biểu không diễn ra tại trường đại học.</li>    </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="12" id="progress-question-12">
+				   13				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="13" id="progress-question-13">
+				   14				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="14" id="progress-question-14">
+				   15				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>

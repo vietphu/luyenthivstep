@@ -1,0 +1,586 @@
+<!DOCTYPE html><html lang="vi" data-bs-theme="auto"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/image/favicon/favicon.ico" type="image/x-icon">
+<title>Xem lại bài Nghe VSTEP | Luyện đề VSTEP</title>
+<link rel="stylesheet" href="/assets/theme/dashkit/assets/css/theme.bundle.css">
+<link rel="stylesheet" href="/assets/datatables/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="/assets/css/user.css">
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3SBM3LJGHF"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-3SBM3LJGHF');
+</script>	<style type="text/css">
+	#offcanvasTranscript,
+	#offcanvasTranslation {
+		width: 100%;
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		#offcanvasTranscript,
+		#offcanvasTranslation {
+			width: 70% !important;
+			max-width: 700px;
+		}
+	}
+	.question-block {
+		background-color: #f9f9f9;
+		border-radius: 6px;
+		padding: 1rem;
+	}
+	del.text-danger {
+		font-weight: bold;
+	}
+	span.text-success {
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	<div class="container">
+		<!-- Nút thu gọn menu trên mobile -->
+		<button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Mở menu điều hướng">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Logo trang web -->
+		<a class="navbar-brand me-auto order-lg-first" href="/">
+			<img src="/assets/image/luyenthivstep-logo.webp" width="24" height="24" alt="Logo Luyện thi VSTEP" class="navbar-brand-img">
+			<span class="ps-1 color-brand fw-bold">LUYỆN THI VSTEP</span>
+		</a>
+
+		<div class="navbar-user order-lg-1">
+											<div class="dropdown">
+					<a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="avatar-title rounded-circle">
+							PH						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-2 shadow-sm border-0">
+						<h6 class="dropdown-header">Xin chào 👋</h6>
+						<a href="/user/general" class="dropdown-item text-muted">Tài khoản: VSTEP203118</a>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/history" class="dropdown-item">📝 Lịch sử thi</a>
+						<a href="/practice/history" class="dropdown-item">📊 Lịch sử luyện đề</a>
+						<a href="/user/writing" class="dropdown-item">✍️ Bài thi viết</a>
+						<a href="/user/speaking" class="dropdown-item">🎤 Bài thi nói</a>
+
+						<div class="dropdown-divider"></div>
+						<h6 class="dropdown-header">Chế độ hiển thị</h6>
+						<div class="px-3 pb-2">
+							<div class="btn-group w-100" role="group" aria-label="Chuyển chế độ hiển thị">
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="light" aria-label="Giao diện sáng">
+									<i class="fe fe-sun"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary" data-bs-theme-value="dark" aria-label="Giao diện tối">
+									<i class="fe fe-moon"></i>
+								</button>
+								<button class="btn btn-sm btn-outline-secondary active" data-bs-theme-value="auto" aria-label="Tự động">
+									<i class="fe fe-monitor"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="dropdown-divider"></div>
+						<a href="/user/logout" class="dropdown-item text-danger"><i class="fe fe-log-out me-2"></i> Đăng xuất</a>
+					</div>
+				</div>
+					</div>
+
+
+		<div class="collapse navbar-collapse me-lg-auto order-lg-0" id="navbar">
+
+			<!-- Danh sách menu chính -->
+			<ul class="navbar-nav me-lg-auto">
+
+				<!-- Dropdown Luyện đề -->
+				<li class="nav-item dropdown">
+					<a class="nav-link fw-bold dropdown-toggle active" href="#" id="practiceSidebar" role="button" data-bs-toggle="dropdown">
+						Luyện đề
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="practiceSidebar">
+						<li><a href="/practice" class="dropdown-item">Danh sách đề</a></li>
+						<li><a href="/practice/listening" class="dropdown-item">Luyện đề nghe</a></li>
+						<li><a href="/practice/reading" class="dropdown-item">Luyện đề đọc</a></li>
+						<li><a href="/practice/writing" class="dropdown-item">Luyện đề viết</a></li>
+						<li><a href="/practice/speaking" class="dropdown-item">Luyện đề nói</a></li>
+					</ul>
+				</li>
+
+				
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/exam">
+							Thi thử						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/goi-on-luyen-cham-thi-vstep">
+							Gói cước						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/lich-thi-vstep">
+							Lịch thi						</a>
+					</li>
+									<li class="nav-item">
+						<a class="nav-link fw-bold " href="/bai-viet-vstep">
+							Bài viết						</a>
+					</li>
+				
+			</ul>
+		</div>
+
+	</div>
+</nav>
+	<div class="bg-white border-bottom shadow-sm sticky-top z-1 px-3 py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center mb-2 text-center text-md-start">
+			<div class="col-12 col-md-3 mb-2 mb-md-0">
+				<button id="btn-back" class="btn btn-outline-secondary btn-sm">
+					⬅️ Quay lại danh sách mã đề
+				</button>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🧾 Xem lại đề nghe mã số 17 - Part 2				</span>
+				<span class="fw-bold text-muted small d-block">
+					🆔 Mã bài làm: #L87737				</span>
+			</div>
+			<div class="col-12 col-md-3 text-center">
+				<span class="fw-bold text-muted small d-block">
+					🎯 Số câu đúng: <span class="text-primary">0</span>/12				</span>
+				<span class="fw-bold text-muted small d-block">
+					📊 Điểm: <span class="text-primary">0</span>/10
+				</span>
+			</div>
+			<div class="col-12 col-md-3 text-md-end">
+				<span class="small text-muted fw-bold d-block">
+					👋 Xin chào, phuneo				</span>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-between align-items-stretch gap-2">
+			<div class="flex-grow-1">
+				<audio controls="" class="w-100" style="height: 40px; min-height: 40px;">
+					<source src="/assets/nhch/listening/bac3/lp2-1664818217_5a239536725f46d30459.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="d-flex gap-2 flex-wrap align-items-center">
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranscript">
+					👀 Transcript
+				</button>
+				<button class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTranslation">
+					🌐 Dịch tiếng Việt
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<div class="main-content pb-5 pb-md-7">
+
+		
+		<div class="container">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranscript">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Transcript</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>In this part, you will hear three conversations. The conversations will be played once only. There are four questions for each conversation.<br>
+For each question, choose the right answer, A, B, C, or D. Part 2, questions 9 to 12. First, you will have some time to look at questions 9 to 12. Now we're ready to start.<br>
+Listen and answer questions 9 to 12. You will hear the recording once only. <br>
+Good evening, Geoff.<br>
+Hi. Perhaps you could tell me a bit about your background. Where are you from exactly? Well, I was actually born in 1958, up in the north of England.<br>
+My parents came to live in Britain after the war. Sounds great. We moved south to London after that.<br>
+We were completely broke, and I did all sorts of odd jobs to try and make money. Goodness, how dramatic. But I was lucky.<br>
+I discovered karate. Ah, how exactly? There was a school trip. Nothing special, really.<br>
+But we went to this sports centre. And I just thought, that's for me. Just like that? Yup.<br>
+Anyway, I started training. I found myself a Japanese coach, and things just happened. I found it came naturally to me.<br>
+And I worked my way up till I found myself in Taiwan for the world championships. That was in 1982. And you won? Yeah.<br>
+Suddenly, I was world heavyweight champion. It was great. And you were world champion at that weight, five times in all? Yup, that's right.<br>
+And then you retired? Well, I didn't have much choice. And now you've got other projects on the go all around the country, and even abroad. Yeah, we're going from strength to strength.<br>
+Now you will have some time to review questions 9 to 12. Part 2, questions 13 to 16. First you will have some time to look at questions 13 to 16.<br>
+Now we're ready to start. Listen, and answer questions 13 to 16. You will hear the recording once only.<br>
+Hello, West Bay Hotel, can I help you? Oh, good morning. I'm ringing about your advertisement in the Evening Gazette. Is that the one for temporary staff? That's right.<br>
+Could you tell me what kind of staff you're looking for? We're looking for waiters at the moment. Right. What are the hours of work? There are two different shifts.<br>
+There is a day shift from 7 to 2, and a late shift from 4 till 11. What about time off? You get one day off. Do you know what the rates of pay are? Yes, I've got them here.<br>
+You get £5.50 an hour, and that includes a break. Oh, good. Yes, so let's see.<br>
+I get £231 a week. You'd also get tips. Our guests tend to be quite generous.<br>
+Is there a uniform? What about clothes? Yes, I forgot to mention that. You need to wear a white shirt, just a plain one, and dark trousers. One last thing.<br>
+I don't know what the starting date is. Just a minute. I think it's sometime around the end of June.<br>
+Yes, the 28th, in time for the summer. That's great. I'm available from the 10th.<br>
+Well, thanks very much for your help. You're welcome. Bye.<br>
+Bye. Now you will have some time to review questions 13 to 16. Part 2. Questions 17 to 20.<br>
+First you will have some time to look at questions 17 to 20. Now we're ready to start. Listen and answer questions 17 to 20.<br>
+You will hear the recording once only. Hi. May I speak to the Archives Librarian? I'm the Archives Librarian.<br>
+What can I help you with? Well, actually, I'm not a student here. Are you the... Sorry, I don't remember your name, but the librarian over there asked me about giving someone access to the Jacobson Collection. Is that you? Yes, that's right.<br>
+See, my paper is on the development of the coal mining industry. Did your librarian explain what our system is here? A little. She told me to make sure I brought my college ID so I could get in the door.<br>
+Yes, well, I'll need to take a copy of it, too. Even our own students who look at items from our archive collections have to leave a copy of their ID with us. You'll also have to sign into the archives room whenever you enter and sign out whenever you leave.<br>
+There's a desk, you know, for security. I'll be careful. Thank you.<br>
+The other thing is, the things in the Jacobson Collection are over a hundred years old, so I'll have to ask you to wear special gloves while handling the books. Also, I'm afraid you won't be able to photocopy anything. I figured that.<br>
+Can I, I don't know, take a picture or something? Well, I can't let you take a picture, but we have scans, images of all the pages in the collection.<br>
+Well, I guess given how rare these things are... Okay, so you want a copy of my ID, and then can you tell me how to get to the archives room so I can get started?<br>
+Now you will have some time to review questions 17 to 20. That is the end of Part 2.</p>
+	</div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTranslation">
+	<div class="offcanvas-header">
+		<span class="offcanvas-title fw-bold">Dịch tiếng Việt</span>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body" style="white-space: pre-wrap;">
+		<p>Phần 2 Trong phần này, bạn sẽ nghe ba cuộc hội thoại. Các cuộc hội thoại sẽ chỉ được phát một lần duy nhất. Mỗi cuộc hội thoại có bốn câu hỏi đi kèm. Với mỗi câu hỏi, hãy chọn đáp án đúng A, B, C hoặc D. Phần 2, Câu hỏi 9 đến 12 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 9 đến 12. Bây giờ chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 9 đến 12. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Chào buổi tối, Geoff. Chào. Có thể anh nói một chút về bản thân không? Anh đến từ đâu vậy? Tôi sinh năm 1958, ở miền Bắc nước Anh. Cha mẹ tôi chuyển đến Anh sau chiến tranh. Nghe hay đấy. Sau đó chúng tôi chuyển xuống London. Lúc đó chúng tôi hoàn toàn không có tiền, và tôi đã làm đủ loại công việc lặt vặt để kiếm sống. Ôi trời, nghe thật căng thẳng. Nhưng tôi may mắn. Tôi đã phát hiện ra karate. Ồ, bằng cách nào vậy? Có một chuyến đi thực tế của trường. Không có gì đặc biệt cả. Nhưng chúng tôi đến một trung tâm thể thao. Và tôi chỉ nghĩ rằng, đây chính là thứ dành cho tôi. Chỉ đơn giản vậy thôi? Đúng thế. Dù sao thì, tôi bắt đầu tập luyện. Tôi tìm được một huấn luyện viên người Nhật Bản, và mọi thứ cứ diễn ra. Tôi nhận ra mình có năng khiếu với nó. Và tôi cứ tiếp tục cho đến khi tôi thấy mình ở Đài Loan tham gia giải vô địch thế giới. Đó là vào năm 1982. Và anh đã chiến thắng? Đúng. Đột nhiên, tôi trở thành nhà vô địch hạng nặng thế giới. Thật tuyệt vời. Và anh đã giữ danh hiệu vô địch thế giới hạng cân đó năm lần? Đúng vậy. Rồi anh giải nghệ? À, tôi không có nhiều lựa chọn. Và bây giờ anh có nhiều dự án khác trên khắp đất nước và thậm chí cả ở nước ngoài? Đúng vậy, chúng tôi đang phát triển mạnh mẽ hơn bao giờ hết. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 9 đến 12. Phần 2, Câu hỏi 13 đến 16 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 13 đến 16. Bây giờ chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 13 đến 16. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Xin chào, khách sạn West Bay, tôi có thể giúp gì cho bạn? Ồ, chào buổi sáng. Tôi đang gọi về quảng cáo của khách sạn trên Evening Gazette. Đó có phải là tin tuyển dụng nhân viên tạm thời không? Đúng vậy. Anh có thể cho tôi biết loại nhân viên mà khách sạn đang tìm không? Chúng tôi đang tìm nhân viên phục vụ bàn vào lúc này. Được rồi. Giờ làm việc như thế nào? Có hai ca làm việc khác nhau. Ca ngày từ 7 giờ sáng đến 2 giờ chiều và ca tối từ 4 giờ đến 11 giờ đêm. Còn ngày nghỉ thì sao? Bạn sẽ được nghỉ một ngày trong tuần. Bạn có biết mức lương là bao nhiêu không? Vâng, tôi có đây. Bạn sẽ nhận được 5,50 bảng một giờ, và điều đó bao gồm cả thời gian nghỉ. Ồ, tốt quá. Để tôi xem nào... Tôi sẽ nhận được 231 bảng mỗi tuần. Bạn cũng sẽ nhận được tiền tip. Khách của chúng tôi thường khá hào phóng. Có đồng phục không? Còn quần áo thì sao? Vâng, tôi quên đề cập đến điều đó. Bạn cần mặc áo sơ mi trắng, chỉ là một chiếc áo trơn, và quần dài màu tối. Một điều cuối cùng, tôi không biết ngày bắt đầu là khi nào. Chờ một chút. Tôi nghĩ là khoảng cuối tháng sáu. Đúng rồi, ngày 28, kịp cho mùa hè. Tuyệt quá. Tôi có thể làm từ ngày 10. Cảm ơn rất nhiều vì đã giúp đỡ. Không có gì, tạm biệt. Tạm biệt. Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 13 đến 16. Phần 2, Câu hỏi 17 đến 20 Trước tiên, bạn sẽ có một chút thời gian để xem các câu hỏi từ 17 đến 20. Bây giờ chúng ta sẵn sàng bắt đầu. Hãy lắng nghe và trả lời các câu hỏi từ 17 đến 20. Bạn sẽ chỉ nghe đoạn ghi âm một lần duy nhất. Xin chào, tôi có thể nói chuyện với Thủ thư Lưu trữ không? Tôi là Thủ thư Lưu trữ. Tôi có thể giúp gì cho bạn? À, thực ra, tôi không phải là sinh viên ở đây. Anh có phải là... xin lỗi, tôi không nhớ tên anh, nhưng thủ thư bên kia đã hỏi tôi về việc cho ai đó tiếp cận Bộ sưu tập Jacobson. Có phải anh không? Vâng, đúng vậy. Tôi đang viết bài nghiên cứu về sự phát triển của ngành khai thác than. Thủ thư của bạn đã giải thích hệ thống của các bạn ở đây chưa? Một chút. Cô ấy nói tôi nên mang theo thẻ sinh viên để có thể vào cửa. Đúng vậy, tôi cũng cần sao chép thẻ của bạn nữa. Ngay cả sinh viên của chúng tôi khi xem các tài liệu trong bộ sưu tập lưu trữ cũng phải để lại bản sao thẻ của họ với chúng tôi. Bạn cũng sẽ phải ký vào sổ khi vào phòng lưu trữ và ký ra khi rời đi. Có một bàn dành riêng để kiểm soát an ninh. Tôi sẽ cẩn thận. Cảm ơn anh. Một điều nữa, các tài liệu trong Bộ sưu tập Jacobson đã hơn một trăm năm tuổi, vì vậy tôi phải yêu cầu bạn đeo găng tay đặc biệt khi xử lý sách. Ngoài ra, tôi e rằng bạn không thể photocopy bất kỳ thứ gì. Tôi cũng đoán vậy. Tôi có thể chụp ảnh hay gì đó không? Không, tôi không thể để bạn chụp ảnh, nhưng chúng tôi có bản quét, hình ảnh của tất cả các trang trong bộ sưu tập. Ừm, tôi đoán là với mức độ hiếm của những tài liệu này... Được rồi, vậy anh cần một bản sao thẻ của tôi, rồi sau đó anh có thể chỉ cho tôi cách đến phòng lưu trữ để tôi có thể bắt đầu không? Bây giờ bạn sẽ có một chút thời gian để xem lại các câu hỏi từ 17 đến 20. Đây là phần kết thúc của Phần 2.</p>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question1">
+						<div class="fw-bold mb-2">
+							Câu 1: Where was Geoff Thompson born?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. In London.															</div>
+																				<div class="ps-4 mb-2">
+																	B. In Britain.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. In the North of England.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. In the South of London.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>In the North of England.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Geoff Thompson nói về nơi sinh của mình:</p>   <p>"Well, I was actually born in 1958, <strong>up in the north of England</strong>."</p>    <p>"À, tôi thực sự được sinh ra vào năm 1958, <strong>ở phía bắc nước Anh</strong>."</p>    <p>Bài nghe xác nhận rằng Geoff Thompson được sinh ra <strong>ở phía bắc nước Anh</strong>. Do đó, đáp án chính xác là <strong>In the North of England.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">In London.</span> ❌ (Ở London.) - Sai, vì Geoff Thompson nói rằng sau này gia đình anh ấy mới chuyển đến London.</li>       <li><span class="text-success"><strong>In the North of England.</strong></span> ✅ (Ở phía bắc nước Anh.) - Đúng, vì Geoff Thompson nói rằng anh ấy sinh ra ở phía bắc nước Anh.</li>       <li><span class="text-danger">In the South of London.</span> ❌ (Ở phía nam London.) - Sai, vì gia đình anh ấy chỉ chuyển đến London sau này, không phải nơi sinh ra.</li>       <li><span class="text-danger">In Britain.</span> ❌ (Ở Anh.) - Sai, vì câu này không đủ cụ thể. Geoff Thompson xác nhận rằng anh ấy sinh ra ở phía bắc nước Anh.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question2">
+						<div class="fw-bold mb-2">
+							Câu 2: How did he know about karate?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. His friend introduced it to him.															</div>
+																				<div class="ps-4 mb-2">
+																	B. He discovered karate by himself.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. He's interested in karate owning to a sports center during a school visit.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. He knew it when moving to London.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>He's interested in karate owing to a sports center during a school visit.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Geoff Thompson kể về cách anh ấy biết đến karate:</p>   <p>"There was a school trip. Nothing special, really. But we went to this <strong>sports centre</strong>. And I just thought, that's for me."</p>    <p>"Có một chuyến đi thực tế của trường. Thực ra cũng không có gì đặc biệt. Nhưng chúng tôi đã đến <strong>trung tâm thể thao</strong>. Và tôi nghĩ, đây chính là dành cho mình."</p>    <p>Bài nghe xác nhận rằng Geoff Thompson quan tâm đến karate sau khi đến một trung tâm thể thao trong chuyến đi thực tế của trường. Do đó, đáp án chính xác là <strong>He's interested in karate owing to a sports center during a school visit.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">He discovered karate by himself.</span> ❌ (Anh ấy tự khám phá ra karate.) - Sai, vì anh ấy biết đến karate khi đến trung tâm thể thao trong chuyến đi thực tế của trường.</li>       <li><span class="text-success"><strong>He's interested in karate owing to a sports center during a school visit.</strong></span> ✅ (Anh ấy quan tâm đến karate nhờ trung tâm thể thao trong chuyến đi thực tế của trường.) - Đúng, vì bài nghe xác nhận điều này.</li>       <li><span class="text-danger">His friend introduced it to him.</span> ❌ (Bạn của anh ấy giới thiệu cho anh ấy.) - Sai, vì bài nghe không đề cập đến việc bạn bè giới thiệu karate cho Geoff.</li>       <li><span class="text-danger">He knew it when moving to London.</span> ❌ (Anh ấy biết đến karate khi chuyển đến London.) - Sai, vì anh ấy đã biết đến karate trước khi gia đình chuyển đến London.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question3">
+						<div class="fw-bold mb-2">
+							Câu 3: When did he take part in the World Championships in Taiwan?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. In 1972.															</div>
+																				<div class="ps-4 mb-2">
+																	B. After starting training with a British coach.															</div>
+																				<div class="ps-4 mb-2">
+																	C. In 1980.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. In 1982.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>In 1982.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Geoff Thompson nói về thời điểm tham gia Giải vô địch thế giới tại Đài Loan:</p>   <p>"I worked my way up till I found myself in Taiwan for the <strong>world championships</strong>. That was in <strong>1982</strong>."</p>    <p>"Tôi đã luyện tập không ngừng cho đến khi tôi có mặt tại Đài Loan để tham gia <strong>giải vô địch thế giới</strong>. Đó là vào năm <strong>1982</strong>."</p>    <p>Bài nghe xác nhận rằng Geoff Thompson tham gia Giải vô địch thế giới ở Đài Loan vào năm <strong>1982</strong>. Do đó, đáp án chính xác là <strong>In 1982.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">In 1972.</span> ❌ (Năm 1972.) - Sai, vì bài nghe nói rằng anh ấy tham gia vào năm 1982, không phải 1972.</li>       <li><span class="text-danger">In 1980.</span> ❌ (Năm 1980.) - Sai, vì năm 1980 không được đề cập trong bài nghe.</li>       <li><span class="text-success"><strong>In 1982.</strong></span> ✅ (Năm 1982.) - Đúng, vì bài nghe xác nhận rằng Geoff Thompson tham gia Giải vô địch thế giới vào năm 1982.</li>       <li><span class="text-danger">After starting training with a British coach.</span> ❌ (Sau khi bắt đầu luyện tập với một huấn luyện viên người Anh.) - Sai, vì anh ấy đã luyện tập với một huấn luyện viên người Nhật chứ không phải người Anh.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question4">
+						<div class="fw-bold mb-2">
+							Câu 4: How many times has he got the World Champion?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Two times.															</div>
+																				<div class="ps-4 mb-2">
+																	B. Four times.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Three times.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Five times.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Five times.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, Geoff Thompson nói về số lần giành chức vô địch thế giới:</p>   <p>"And you were world champion at that weight, <strong>five times</strong> in all?"</p>   <p>"Yup, that's right."</p>    <p>"Và anh đã vô địch thế giới ở hạng cân đó tổng cộng <strong>năm lần</strong> đúng không?"</p>   <p>"Đúng vậy."</p>    <p>Bài nghe xác nhận rằng Geoff Thompson đã giành chức vô địch thế giới <strong>năm lần</strong>. Do đó, đáp án chính xác là <strong>Five times.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">Two times.</span> ❌ (Hai lần.) - Sai, vì bài nghe xác nhận rằng anh ấy đã vô địch nhiều hơn hai lần.</li>       <li><span class="text-danger">Three times.</span> ❌ (Ba lần.) - Sai, vì số lần vô địch của anh ấy nhiều hơn ba lần.</li>       <li><span class="text-danger">Four times.</span> ❌ (Bốn lần.) - Sai, vì bài nghe xác nhận rằng Geoff đã vô địch nhiều hơn bốn lần.</li>       <li><span class="text-success"><strong>Five times.</strong></span> ✅ (Năm lần.) - Đúng, vì bài nghe xác nhận rằng Geoff Thompson đã giành chức vô địch thế giới năm lần.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question5">
+						<div class="fw-bold mb-2">
+							Câu 5: Which position does this hotel need?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. A full-time waiter.															</div>
+																				<div class="ps-4 mb-2">
+																	B. A part-time receptionist.															</div>
+																				<div class="ps-4 mb-2">
+																	C. A stable staff.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. A temporary staff.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>A temporary staff.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người gọi điện hỏi về vị trí tuyển dụng tại khách sạn:</p>   <p>"I'm ringing about your advertisement in the Evening Gazette."</p>   <p>"Is that the one for <strong>temporary staff</strong>?"</p>   <p>"That's right."</p>    <p>"Tôi đang gọi về quảng cáo tuyển dụng trên tờ Evening Gazette."</p>   <p>"Có phải là vị trí <strong>nhân viên tạm thời</strong> không?"</p>   <p>"Đúng vậy."</p>    <p>Bài nghe xác nhận rằng khách sạn đang tuyển dụng <strong>nhân viên tạm thời</strong>. Do đó, đáp án chính xác là <strong>A temporary staff.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-success"><strong>A temporary staff.</strong></span> ✅ (Nhân viên tạm thời.) - Đúng, vì khách sạn đang tuyển dụng vị trí nhân viên tạm thời.</li>       <li><span class="text-danger">A stable staff.</span> ❌ (Nhân viên ổn định.) - Sai, vì bài nghe nói rõ rằng đây là vị trí tạm thời, không phải cố định.</li>       <li><span class="text-danger">A part-time receptionist.</span> ❌ (Lễ tân bán thời gian.) - Sai, vì bài nghe không đề cập đến vị trí lễ tân.</li>       <li><span class="text-danger">A full-time waiter.</span> ❌ (Phục vụ toàn thời gian.) - Sai, vì bài nghe không nói rằng đây là vị trí phục vụ toàn thời gian.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question6">
+						<div class="fw-bold mb-2">
+							Câu 6: What about the hour of work?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. There's a day shift from 7 to 2 and a late shift from 4 till 11.															</div>
+																				<div class="ps-4 mb-2">
+																	B. There is only afternoon shift.															</div>
+																				<div class="ps-4 mb-2">
+																	C. There are two shifts and two days off.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. There are two shifts and one day off.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>There are two shifts and one day off.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người tuyển dụng nói về giờ làm việc:</p>   <p>"There are two different shifts. There is a <strong>day shift from 7 to 2</strong>, and a <strong>late shift from 4 till 11</strong>."</p>   <p>"What about time off?"</p>   <p>"You get <strong>one day off</strong>."</p>    <p>"Có hai ca làm việc khác nhau. Một ca ban ngày từ <strong>7 giờ sáng đến 2 giờ chiều</strong>, và một ca tối từ <strong>4 giờ chiều đến 11 giờ đêm</strong>."</p>   <p>"Thế còn thời gian nghỉ thì sao?"</p>   <p>"Bạn sẽ có <strong>một ngày nghỉ</strong>."</p>    <p>Bài nghe xác nhận rằng có <strong>hai ca làm việc và một ngày nghỉ</strong>. Do đó, đáp án chính xác là <strong>There are two shifts and one day off.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">There are two shifts and two days off.</span> ❌ (Có hai ca làm việc và hai ngày nghỉ.) - Sai, vì bài nghe xác nhận chỉ có một ngày nghỉ.</li>       <li><span class="text-success"><strong>There are two shifts and one day off.</strong></span> ✅ (Có hai ca làm việc và một ngày nghỉ.) - Đúng, vì bài nghe xác nhận điều này.</li>       <li><span class="text-danger">There's a day shift from 7 to 2 and a late shift from 4 till 11.</span> ❌ (Có một ca làm từ 7 đến 2 và một ca tối từ 4 đến 11.) - Sai, vì mặc dù thông tin này đúng nhưng không đề cập đến ngày nghỉ, chưa đầy đủ.</li>       <li><span class="text-danger">There is only afternoon shift.</span> ❌ (Chỉ có ca chiều.) - Sai, vì bài nghe đề cập có cả ca ngày và ca tối.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question7">
+						<div class="fw-bold mb-2">
+							Câu 7: What does the woman mention about the uniform?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. It's prepared by the hotel.															</div>
+																				<div class="ps-4 mb-2">
+																	B. He needs wear uniform five days a week.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. He needs a white shirt and dark trousers.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. He needs to wear dark clothes.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>He needs a white shirt and dark trousers.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người tuyển dụng nói về đồng phục:</p>   <p>"Is there a uniform? What about clothes?"</p>   <p>"Yes, I forgot to mention that. You need to wear a <strong>white shirt</strong>, just a plain one, and <strong>dark trousers</strong>."</p>    <p>"Có đồng phục không? Còn về trang phục thì sao?"</p>   <p>"À, tôi quên nhắc đến. Bạn cần mặc một <strong>chiếc áo sơ mi trắng</strong>, loại đơn giản thôi, và <strong>quần tối màu</strong>."</p>    <p>Bài nghe xác nhận rằng nhân viên cần mặc <strong>áo sơ mi trắng và quần tối màu</strong>. Do đó, đáp án chính xác là <strong>He needs a white shirt and dark trousers.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">It's prepared by the hotel.</span> ❌ (Đồng phục do khách sạn chuẩn bị.) - Sai, vì bài nghe không nói rằng khách sạn cung cấp đồng phục.</li>       <li><span class="text-danger">He needs to wear dark clothes.</span> ❌ (Anh ấy cần mặc đồ tối màu.) - Sai, vì anh ấy chỉ cần mặc quần tối màu, còn áo phải là màu trắng.</li>       <li><span class="text-success"><strong>He needs a white shirt and dark trousers.</strong></span> ✅ (Anh ấy cần mặc áo sơ mi trắng và quần tối màu.) - Đúng, vì bài nghe xác nhận thông tin này.</li>       <li><span class="text-danger">He needs to wear uniform five days a week.</span> ❌ (Anh ấy cần mặc đồng phục năm ngày một tuần.) - Sai, vì bài nghe không đề cập đến số ngày phải mặc đồng phục.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question8">
+						<div class="fw-bold mb-2">
+							Câu 8: When does he start his job?						</div>
+
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">A. On the 28th of June.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	B. On the 10th of May.															</div>
+																				<div class="ps-4 mb-2">
+																	C. On the 10th of June.															</div>
+																				<div class="ps-4 mb-2">
+																	D. At the end of May.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>On the 28th of June.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người tuyển dụng đề cập đến ngày bắt đầu công việc:</p>   <p>"One last thing. I don't know what the starting date is."</p>   <p>"Just a minute. I think it's sometime around the end of June. Yes, <strong>the 28th</strong>, in time for the summer."</p>    <p>"Một điều cuối cùng. Tôi không biết ngày bắt đầu công việc là khi nào."</p>   <p>"Chờ một chút. Tôi nghĩ là vào khoảng cuối tháng 6. Đúng rồi, ngày <strong>28</strong>, kịp cho mùa hè."</p>    <p>Bài nghe xác nhận rằng ngày bắt đầu công việc là <strong>ngày 28 tháng 6</strong>. Do đó, đáp án chính xác là <strong>On the 28th of June.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">At the end of May.</span> ❌ (Cuối tháng 5.) - Sai, vì bài nghe xác nhận rằng công việc bắt đầu vào cuối tháng 6, không phải tháng 5.</li>       <li><span class="text-danger">On the 10th of May.</span> ❌ (Ngày 10 tháng 5.) - Sai, vì bài nghe không đề cập đến ngày này.</li>       <li><span class="text-danger">On the 10th of June.</span> ❌ (Ngày 10 tháng 6.) - Sai, vì bài nghe xác nhận rằng ngày bắt đầu là ngày 28 tháng 6, không phải ngày 10.</li>       <li><span class="text-success"><strong>On the 28th of June.</strong></span> ✅ (Ngày 28 tháng 6.) - Đúng, vì bài nghe xác nhận rằng công việc bắt đầu vào ngày này.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question9">
+						<div class="fw-bold mb-2">
+							Câu 9: What does the man plan to write his paper on?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. The collection of rare books.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. The local coal industry.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. The preservation of old books.															</div>
+																				<div class="ps-4 mb-2">
+																	D. The famous archives librarian.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>The local coal industry.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người đàn ông nói về chủ đề bài nghiên cứu của mình:</p>   <p>"See, my paper is on the development of the <strong>coal mining industry</strong>."</p>    <p>"Thực ra, bài nghiên cứu của tôi là về sự phát triển của <strong>ngành khai thác than</strong>."</p>    <p>Bài nghe xác nhận rằng người đàn ông đang viết bài nghiên cứu về <strong>ngành công nghiệp khai thác than</strong>. Do đó, đáp án chính xác là <strong>The local coal industry.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">The preservation of old books.</span> ❌ (Việc bảo tồn sách cổ.) - Sai, vì bài nghe không đề cập đến chủ đề này.</li>       <li><span class="text-success"><strong>The local coal industry.</strong></span> ✅ (Ngành công nghiệp khai thác than địa phương.) - Đúng, vì bài nghe xác nhận rằng bài nghiên cứu của anh ấy là về ngành khai thác than.</li>       <li><span class="text-danger">The famous archives librarian.</span> ❌ (Thủ thư lưu trữ nổi tiếng.) - Sai, vì bài nghe không đề cập đến việc nghiên cứu về một thủ thư.</li>       <li><span class="text-danger">The collection of rare books.</span> ❌ (Bộ sưu tập sách hiếm.) - Sai, vì bài nghe không đề cập đến sách hiếm mà tập trung vào ngành công nghiệp than.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question10">
+						<div class="fw-bold mb-2">
+							Câu 10: What security procedures does the librarian tell the man he must follow?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. Show her his ID card.															</div>
+																				<div class="ps-4 mb-2">
+																	B. Show her his note cards before leaving.															</div>
+																				<div class="ps-4 mb-2">
+																	C. Pay a fee.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">D. Allow his ID card to be copied; sign in and out of the archives room.</span> <i class="fe fe-check text-success"></i>
+															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>Allow his ID card to be copied; sign in and out of the archives room.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, thủ thư nói về các thủ tục an ninh mà người đàn ông phải tuân theo:</p>   <p>"Yes, well, I'll need to <strong>take a copy of your ID</strong>, too. Even our own students who look at items from our archive collections have to leave a copy of their ID with us."</p>   <p>"You'll also have to <strong>sign into the archives room whenever you enter and sign out whenever you leave</strong>. There's a desk, you know, for security."</p>    <p>"Đúng vậy, tôi cũng cần <strong>sao chép thẻ ID của anh</strong>. Ngay cả sinh viên của chúng tôi khi muốn xem tài liệu lưu trữ cũng phải để lại một bản sao thẻ ID."</p>   <p>"Anh cũng phải <strong>ký tên khi vào phòng lưu trữ và ký tên khi rời đi</strong>. Có một bàn an ninh để kiểm soát."</p>    <p>Bài nghe xác nhận rằng người đàn ông phải <strong>cho phép sao chép thẻ ID và ký tên khi vào và ra khỏi phòng lưu trữ</strong>. Do đó, đáp án chính xác là <strong>Allow his ID card to be copied; sign in and out of the archives room.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">Show her his note cards before leaving.</span> ❌ (Cho thủ thư xem thẻ ghi chú trước khi rời đi.) - Sai, vì bài nghe không đề cập đến việc này.</li>       <li><span class="text-danger">Show her his ID card.</span> ❌ (Xuất trình thẻ ID của anh ấy.) - Sai, vì thủ thư yêu cầu sao chép thẻ ID, không chỉ đơn thuần là xuất trình.</li>       <li><span class="text-danger">Pay a fee.</span> ❌ (Trả một khoản phí.) - Sai, vì bài nghe không đề cập đến việc phải trả phí.</li>       <li><span class="text-success"><strong>Allow his ID card to be copied; sign in and out of the archives room.</strong></span> ✅ (Cho phép sao chép thẻ ID; ký tên khi vào và ra khỏi phòng lưu trữ.) - Đúng, vì bài nghe xác nhận các yêu cầu này.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question11">
+						<div class="fw-bold mb-2">
+							Câu 11: Why did the librarian mention the age of the books?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. They are value books.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">B. They need to be handled with gloves.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	C. They were added to the collection recently.															</div>
+																				<div class="ps-4 mb-2">
+																	D. The man can only look at photographs of them.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>They need to be handled with gloves.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, thủ thư nói về lý do phải đeo găng tay khi xử lý sách:</p>   <p>"The other thing is, the things in the Jacobson Collection are over <strong>a hundred years old</strong>, so I'll have to ask you to <strong>wear special gloves</strong> while handling the books."</p>    <p>"Một điều nữa là, các tài liệu trong Bộ sưu tập Jacobson có tuổi đời hơn <strong>một trăm năm</strong>, vì vậy tôi sẽ yêu cầu anh <strong>đeo găng tay đặc biệt</strong> khi xử lý sách."</p>    <p>Bài nghe xác nhận rằng sách cần được <strong>xử lý bằng găng tay</strong> vì chúng đã rất cũ. Do đó, đáp án chính xác là <strong>They need to be handled with gloves.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-success"><strong>They need to be handled with gloves.</strong></span> ✅ (Chúng cần được xử lý bằng găng tay.) - Đúng, vì thủ thư yêu cầu đeo găng tay khi chạm vào sách.</li>       <li><span class="text-danger">The man can only look at photographs of them.</span> ❌ (Người đàn ông chỉ có thể xem ảnh của chúng.) - Sai, vì người đàn ông có thể xem trực tiếp sách nếu đeo găng tay.</li>       <li><span class="text-danger">They were added to the collection recently.</span> ❌ (Chúng mới được thêm vào bộ sưu tập gần đây.) - Sai, vì sách đã có tuổi đời hơn một trăm năm.</li>       <li><span class="text-danger">They are value books.</span> ❌ (Chúng là sách có giá trị.) - Sai, vì mặc dù sách có giá trị, nhưng lý do được đề cập là vì chúng đã rất cũ.</li>   </ul>							</div>
+											</div>
+									
+					<div class="mb-4 pb-3 border-bottom bg-light rounded question-block" id="question12">
+						<div class="fw-bold mb-2">
+							Câu 12: How did the man collect his needed information about his paper?						</div>
+
+																				<div class="ps-4 mb-2">
+																	A. He took a picture.															</div>
+																				<div class="ps-4 mb-2">
+																	B. He photocopied these books.															</div>
+																				<div class="ps-4 mb-2">
+																	<span class="text-success">C. He scanned these images.</span> <i class="fe fe-check text-success"></i>
+															</div>
+																				<div class="ps-4 mb-2">
+																	D. He could just look them.															</div>
+						
+						                            <hr class="text-gray-400">
+							<div class="mt-4">
+								<strong>Giải thích:</strong> <p><strong>Đáp án:</strong></p>   <p><span class="text-success"><strong>He scanned these images.</strong></span></p>    <p><strong>Giải thích chi tiết:</strong></p>   <p>Trong bài nghe, người đàn ông hỏi về cách thu thập thông tin từ các tài liệu:</p>   <p>"Can I, I don't know, take a picture or something?"</p>   <p>"Well, I can't let you take a picture, but we have <strong>scans, images of all the pages</strong> in the collection."</p>    <p>"Tôi có thể, ừm, chụp ảnh tài liệu hay gì đó không?"</p>   <p>"À, tôi không thể để anh chụp ảnh, nhưng chúng tôi có <strong>các bản quét, hình ảnh của tất cả các trang</strong> trong bộ sưu tập."</p>    <p>Bài nghe xác nhận rằng người đàn ông <strong>quét hình ảnh của các trang tài liệu</strong>. Do đó, đáp án chính xác là <strong>He scanned these images.</strong></p>    <p><strong>Phân tích các lựa chọn:</strong></p>   <ul>       <li><span class="text-danger">He took a picture.</span> ❌ (Anh ấy đã chụp ảnh.) - Sai, vì thủ thư không cho phép anh ấy chụp ảnh.</li>       <li><span class="text-success"><strong>He scanned these images.</strong></span> ✅ (Anh ấy đã quét những hình ảnh này.) - Đúng, vì thủ thư nói rằng họ có bản quét của tất cả các trang.</li>       <li><span class="text-danger">He could just look them.</span> ❌ (Anh ấy chỉ có thể nhìn chúng.) - Sai, vì anh ấy có thể sử dụng bản quét để xem tài liệu.</li>       <li><span class="text-danger">He photocopied these books.</span> ❌ (Anh ấy đã photocopy những cuốn sách này.) - Sai, vì thủ thư không cho phép sao chép tài liệu.</li>   </ul>							</div>
+											</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div id="practice-progress-footer" class="bg-white border-top shadow-sm fixed-bottom p-2 px-3">
+	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+		
+		<!-- Tiến trình câu hỏi -->
+		<div class="d-flex flex-wrap justify-content-center gap-1">
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="0" id="progress-question-0">
+				   1				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="1" id="progress-question-1">
+				   2				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="2" id="progress-question-2">
+				   3				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="3" id="progress-question-3">
+				   4				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="4" id="progress-question-4">
+				   5				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="5" id="progress-question-5">
+				   6				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="6" id="progress-question-6">
+				   7				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="7" id="progress-question-7">
+				   8				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="8" id="progress-question-8">
+				   9				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="9" id="progress-question-9">
+				   10				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="10" id="progress-question-10">
+				   11				</a>
+											<a class="btn btn-footer btn mx-1 btn-outline-secondary" href="#" data-index="11" id="progress-question-11">
+				   12				</a>
+					</div>
+
+		<!-- Nút chức năng -->
+		<div class="d-flex flex-wrap justify-content-center gap-2 mt-2 mt-md-0">
+			<a href="/practice/listening" class="btn btn-outline-primary fw-bold">
+				🚀 Tiếp tục luyện đề
+			</a>
+			<a href="/practice/listening/history" class="btn btn-outline-secondary fw-bold">
+				📜 Lịch sử làm bài
+			</a>
+		</div>
+
+	</div>
+</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/theme/dashkit/assets/js/theme.bundle.js"></script>
+<script>
+	function applyTheme(theme) {
+		document.documentElement.setAttribute('data-bs-theme', theme);
+		localStorage.setItem('theme', theme);
+
+		// Cập nhật class active
+		document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+			if (button.getAttribute('data-bs-theme-value') === theme) {
+				button.classList.add('active');
+			} else {
+				button.classList.remove('active');
+			}
+		});
+	}
+
+	// Gán sự kiện click cho các nút
+	document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
+		button.addEventListener('click', function () {
+			const theme = this.getAttribute('data-bs-theme-value');
+			applyTheme(theme);
+		});
+	});
+
+	// Khởi động: áp dụng theme đã lưu hoặc auto
+	const savedTheme = localStorage.getItem('theme') || 'auto';
+	applyTheme(savedTheme);
+</script>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.getElementById('btn-back').addEventListener('click', function () {
+			if (confirm("Bạn có chắc chắn muốn quay lại danh sách đề không?")) {
+				window.location.href = "/practice/listening";
+			}
+		});
+	});
+
+	document.querySelectorAll('[id^="progress-question-"]').forEach(btn => {
+		btn.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			const index = this.dataset.index ?? this.id.replace('progress-question-', '');
+			const target = document.getElementById('question' + (parseInt(index) + 1));
+
+			if (target) {
+				const yOffset = -120; // bù trừ navbar
+				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			}
+		});
+	});
+</script>
+
+
+</body></html>
